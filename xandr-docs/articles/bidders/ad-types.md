@@ -9,7 +9,7 @@ a screen where you can select which ad types you want to receive. By
 
 
 
-Clicking the Ad Types tab accesses
+Clicking the Ad Types tab accesses 
 a screen where you can select which ad types you want to receive. By
 default, all ad types are included: Banner, Video, Native, and
 Audio. You can remove specific ad types by **unchecking** the
