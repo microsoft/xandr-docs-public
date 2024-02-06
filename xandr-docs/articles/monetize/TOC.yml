@@ -1,0 +1,1722 @@
+- name: Microsoft Monetize Product Documentation
+  href: index.yml
+- name: Getting Started
+  items:
+  - name: About Monetize
+    href: about-monetize.md
+  - name: Object Hierarchy
+    href: object-hierarchy.md
+  - name: Getting Started with Ad Server
+    href: getting-started-with-adserver.md
+  - name: Monetize API
+    href: digital-platform-ui-api-info.md
+- name: Network Guide
+  items:
+  - name: Overview
+    href: network-guide.md
+  - name: Targeting Lists
+    items:
+    - name: Working with Targeting Lists
+      href: working-with-targeting-lists.md
+    - name: Managing Your Targeting Lists
+      href: managing-your-targeting-lists.md
+    - name: Create a Domain List or App List
+      href: create-a-domain-list-or-app-list.md
+    - name: Update a Domain List or App List
+      href: update-a-domain-list-or-app-list.md
+    - name: Explore Domain Lists or App Lists
+      href: explore-domain-lists-or-app-lists.md
+  - name: Third-Party Inventory
+    items:
+    - name: Working with Third-Party Inventory
+      href: working-with-third-party-inventory.md
+    - name: Traffic Quality
+      href: traffic-quality.md
+    - name: Exchanges and Aggregators
+      items: 
+      - name: Overview
+        href: exchanges-and-aggregators.md
+      - name: Google Ad Manager
+        href: doubleclick-ad-exchange-adx.md
+      - name: Sync User ID with External Partners
+        href: user-id-syncing-with-external-partners.md
+      - name: Asynchronous Usersync Pixels
+        href: asynchronous-usersync-pixels.md
+  - name: Key/Value Targeting
+    items:
+    - name: Getting Started with Key/Value Targeting
+      href: getting-started-with-key-value-targeting.md
+    - name: Pre-Defining Targeting Keys and Values
+      href: pre-defining-targeting-keys-and-values.md
+  - name: Network Ad Quality
+    items:
+    - name: Working with Network Ad Quality
+      href: working-with-network-ad-quality.md
+    - name: Network Ad Quality Screen
+      href: network-ad-quality-screen.md
+    - name: Update Your Network Profile
+      href: update-your-network-profile.md
+    - name: Create a Publisher Template
+      href: create-a-publisher-template.md
+    - name: Ad Server Settings
+      href: ad-server-settings.md
+    - name: Ad Quality Order of Operations
+      href: ad-quality-order-of-operations.md
+    - name: Opt Out of Gambling Ads
+      href: opt-out-of-gambling-ads.md
+  - name: Ad Quality and Creative Standards
+    href: ad-quality-and-creative-standards.md
+  - name: Network Tools
+    items:
+    - name: Working with Network Tools
+      href: working-with-network-tools.md
+    - name: Managing Your Inventory Reselling Exposure
+      href: managing-your-inventory-reselling-exposure.md
+    - name: Manage Custom Content Categories
+      href: manage-custom-content-categories.md
+    - name: Managing Custom Creative and Placement Sizes
+      href: managing-custom-creative-and-placement-sizes.md
+    - name: Capping Daily Spend on Third-Party Inventory (Safety Budget)
+      href: capping-daily-spend-on-third-party-inventory-safety-budget.md
+    - name: Managing Targeting Templates
+      href: managing-targeting-templates.md
+    - name: Working with Third-Party Buying Filters
+      href: working-with-third-party-buying-filters.md
+    - name: Managing Notification Recipients
+      href: managing-notification-recipients.md
+    - name: Creative Templates
+      href: creative-templates.md
+    - name: Viewing Your Object Limits
+      href: viewing-your-object-limits.md
+    - name: Viewing Your Target Limits
+      href: viewing-your-target-limits.md
+    - name: Manage Network Priorities
+      href: manage-network-priorities.md
+    - name: Create a Third-Party Network Pixel for Your Creatives
+      href: create-a-third-party-network-pixel-for-your-creatives.md
+    - name: Create a VAST Extension
+      href: create-a-vast-extension.md
+  - name: Managing User Logins and Permissions
+    items:
+    - name: Microsoft Identity Platform Login
+      href: microsoft-identity-platform-login.md
+    - name: Microsoft Identity Platform Login Troubleshooting
+      href: microsoft-identity-platform-login-troubleshooting.md
+    - name: Managing User Logins and Permissions
+      items:
+       - name: Overview 
+         href: managing-user-logins-and-permissions.md
+       - name: Manage Your Username and Password
+         href: manage-your-username-and-password.md
+       - name: Partner Single Sign-on Access
+         href: learn-about-partner-single-sign-on-access.md
+       - name: Create a User
+         href: create-a-user.md
+       - name: Edit a Network User
+         href: edit-a-network-user.md
+    - name: Roles
+      items:
+      - name: Getting Started with Roles
+        href: getting-started-with-roles.md
+      - name: Working with Roles
+        items:
+        - name: Overview
+          href: working-with-roles.md
+        - name: Create a Custom Role
+          href: create-a-custom-role.md
+        - name: Role Capabilities
+          href: role-capabilities.md
+    - name: Network Users Screen
+      href: network-users-screen.md
+  - name: Network Operations
+    items:
+    - name: Partner Fees
+      items:
+      - name: Overview
+        href: partner-fees.md
+      - name: Create a Partner Fee
+        href: create-a-partner-fee.md
+      - name: Manage Partner Fees
+        href: manage-partner-fees.md
+      - name: Apply a Partner Fee to a Line Item
+        href: apply-a-partner-fee-to-a-line-item.md
+      - name: Fee Type
+        href: fee-type.md
+      - name: Fee Calculations
+        href: fee-calculations.md
+      - name: Migrating from Broker Fees to Partner Fees
+        href: migrating-from-broker-fees-to-partner-fees.md
+      - name: Broker Fees
+        href: broker-fees.md
+    - name: Currency Support
+      href: currency-support.md
+    - name: Network Revenue and Billing Your Clients
+      href: network-revenue-and-billing-your-clients.md
+    - name: Reporting Labels
+      href: reporting-labels.md
+- name: Partner Center Guide
+  items:
+  - name: Overview
+    href: partner-center-guide.md
+  - name: Managing Relationships with Buyers
+    items:
+    - name: Overview
+      href: managing-relationships-with-buyers.md
+    - name: Partner Center Screen - Seller View
+      href: partner-center-screen-seller-view.md
+    - name: Partnership Details Screen - Seller View
+      href: partnership-details-screen-seller-view.md
+    - name: Customize Your Seller Profile
+      href: customize-your-seller-profile.md
+    - name: Set Default Buyer Settings
+      href: set-default-buyer-eligibility-allowed-payment-types-and-targeting-access.md
+    - name: Edit Default Buyer Settings
+      href: edit-buyer-eligibility-allowed-payment-types-and-targeting-access.md
+    - name: Set Targeting Access Privileges
+      href: set-targeting-access-privileges.md
+  - name: Managing Relationships with Sellers
+    items:
+    - name: Overview
+      href: managing-relationships-with-sellers.md
+    - name: Partner Center Screen - Buyer View
+      href: partner-center-screen-buyer-view.md
+    - name: Partnership Details Screen - Buyer View
+      href: partnership-details-screen-buyer-view.md
+    - name: Customize Your Buyer Profile
+      href: customize-your-buyer-profile.md
+    - name: Set Seller Defaults
+      href: set-seller-defaults.md
+    - name: Edit Seller Defaults
+      href: edit-seller-defaults.md
+    - name: Xandr Direct for Buyers
+      href: appnexus-direct-for-buyers.md
+  - name: Selling Deals
+    items:
+    - name: Overview
+      href: selling-deals.md
+    - name: Create a Package
+      href: create-a-package.md
+    - name: Manage Your Packages
+      href: manage-your-packages.md
+    - name: Share Your Packages with Buyers
+      href: share-your-packages-with-buyers.md
+    - name: Create a Custom Deal
+      href: create-a-custom-deal.md
+    - name: Override Ad Quality Settings on a Deal
+      href: override-ad-quality-settings-on-a-deal.md
+    - name: Manage Your Deals with Buyers
+      href: manage-your-deals-with-buyers.md
+    - name: Negotiate Deals with Buyers
+      href: negotiate-deals-with-buyers.md
+    - name: Understanding Buyer Seat IDs
+      href: understanding-buyer-seat-ids.md
+    - name: External DSPs Using Buyer Seat IDs
+      href: external-dsps-using-buyer-seat-ids.md
+    - name: Deal Best Practices for Sellers
+      href: deal-best-practices-for-sellers.md
+    - name: Sell-Side Reporting on Deals
+      href: sell-side-reporting-on-deals.md
+    - name: Deal Auction Mechanics
+      href: deal-auction-mechanics.md
+    - name: Deal Auction Mechanics for Second-Price Auction
+      href: deal-auction-mechanics-for-second-price-auction.md
+    - name: Deal Sync with DV360 - Publisher Guide
+      href: deal-sync-with-dv360-publisher-guide.md
+    - name: DV360 Buyer UI Deal Acceptance Workflows
+      href: dv360-buyer-deal-acceptance-wf.md
+    - name: Deal Sync with DV360 - FAQ
+      href: deal-sync-with-dv360-faq.md
+    - name: Deal Sync with Trade Desk - Publisher Guide
+      href: deal-sync-with-trade-desk-publisher-guide.md
+    - name: Deal Sync with Trade Desk - FAQ
+      href: deal-sync-with-trade-desk-faq.md
+    - name: Deals FAQ
+      href: deals-faq.md
+  - name: Selling Curated Deals
+    items:
+    - name: Overview
+      href: selling-curated-deals.md
+    - name: Curated Deals
+      href: curated-deals.md
+  - name: Buying Deals
+    items:
+    - name: Overview
+      href: buying-deals.md
+    - name: Get Deals from Seller Packages
+      href: get-deals-from-seller-packages.md
+    - name: Negotiate Deals with Sellers
+      href: negotiate-deals-with-sellers.md
+    - name: Manage Your Deals with Sellers
+      href: manage-your-deals-with-sellers.md
+    - name: Control Your Deals with Sellers
+      href: control-your-deals-with-sellers.md
+    - name: Deal Best Practices for Buyers
+      href: deal-best-practices-for-buyers.md
+    - name: Buy-Side Reporting on Deals
+      href: buy-side-reporting-on-deals.md
+    - name: Google Ad Manager Deal Auction Mechanics
+      href: adx-deal-auction-mechanics.md
+  - name: Understanding Bid Rejections
+    href: understanding-bid-rejections.md
+- name: Buying Guide
+  items: 
+  - name: Overview
+    href: buying-guide.md
+  - name: Ad Buying with Xandr
+    href: ad-buying-with-xandr.md
+  - name: Basic Buy-side Setup Procedures
+    href: basic-buy-side-setup-procedures.md
+  - name: Understanding the Debug Auction
+    href: understanding-the-debug-auction.md
+  - name: Automatic Archiving of Buy-Side Objects
+    href: automatic-archiving-of-buy-side-objects.md
+  - name: Advertisers
+    items:
+    - name: Working with Advertisers
+      href: working-with-advertisers.md
+    - name: Create an Advertiser
+      href: create-an-advertiser.md
+    - name: Digital Services Act
+      href: digital-services-act.md
+    - name: Explore and Manage Advertisers
+      href: explore-and-manage-advertisers.md
+    - name: View Advertiser Details
+      href: view-advertiser-details.md
+  - name: Insertion Orders
+    items:
+    - name: Working with Insertion Orders
+      href: working-with-insertion-orders.md
+    - name: Explore Insertion Orders
+      href: explore-insertion-orders.md
+    - name: View Insertion Order Details
+      href: view-insertion-order-details.md
+    - name: Create an Insertion Order
+      href: create-an-insertion-order.md
+    - name: Update Insertion Orders
+      href: update-insertion-orders.md
+    - name: Explore Global Insertion Orders
+      href: explore-global-insertion-orders.md
+    - name: Create a Legacy Insertion Order
+      href: create-a-legacy-insertion-order.md
+    - name: View Legacy Insertion Order Details
+      href: view-legacy-insertion-order-details.md
+  - name: Line items
+    items:
+    - name: Working with Line Items
+      href: working-with-line-items.md
+    - name: Explore Line Items
+      href: explore-line-items.md
+    - name: Augmented Line Items (ALI)
+      href: augmented-line-items-ali.md
+    - name: Creating an Augmented Line Item
+      items:
+      - name: Create an Augmented Line Item
+        href: create-an-augmented-line-item-ali.md
+      - name: Navigate to the Create New Line Item Screen
+        href: navigate-to-the-create-a-new-line-item-screen-monetize.md
+      - name: Add Basic Line Item Details
+        href: add-basic-line-item-details.md
+      - name: Set Up Line Item Budgeting and Scheduling
+        href: set-up-line-item-budgeting-and-scheduling.md
+      - name: Underspend Budget Rollover
+        href: underspend-budget-rollover.md
+      - name: Set Up Line Item Optimization
+        href: set-up-line-item-optimization.md
+      - name: Set Up Line Item Inventory and Brand Safety
+        href: set-up-line-item-inventory-and-brand-safety.md
+      - name: Setting Up Geography Targeting for a Line Item
+        items:
+        - name: Set Up Geography Targeting for a Line Item
+          href: set-up-geography-targeting-for-a-line-item.md
+        - name: Additional Geo Restrictions
+          href: additional-geo-restrictions-ali.md
+        - name: Postal Code Lists
+          href: postal-code-lists.md
+      - name: Enable Cross-Device Targeting and Measurement for a Line Item
+        href: enable-cross-device-targeting-and-measurement-for-a-line-item.md
+      - name: Set Up Segment Targeting on a Line Item
+        href: set-up-segment-targeting-on-a-line-item.md
+      - name: Set Line Item Frequency and Recency Caps
+        href: set-line-item-frequency-and-recency-caps.md
+      - name: Set Up Viewability and Environment Targeting for a Line Item
+        href: set-up-viewability-and-environment-targeting-for-a-line-item.md
+      - name: Associate Creatives with a Line Item
+        href: associate-creatives-with-a-line-item.md
+      - name: Configuring Programmable Split
+        items:
+        - name: Configure a Programmable Split
+          href: configure-a-programmable-split.md
+        - name: Create a Programmable Split
+          href: create-a-programmable-split.md
+        - name: Set Split Targeting
+          href: set-split-targeting.md
+        - name: Set Split Priority
+          href: set-split-priority.md
+        - name: Set Spend Allocation and Capping on a Split
+          href: set-spend-allocation-and-capping-on-a-split.md
+        - name: Use Segment Targeting with a Split
+          href: use-segment-targeting-with-a-split.md
+        - name: Assign Creatives to a Split
+          href: assign-creatives-to-a-split.md
+        - name: Pass Custom Macros to a Split
+          href: pass-custom-macros-to-a-split.md
+        - name: Use User Test Groups with a Split
+          href: use-user-test-groups-with-a-split.md
+      - name: Apply a Partner Fee to a Line Item
+        href: apply-a-partner-fee-to-a-line-item.md
+      - name: Add Reporting Labels and Comments to a Line Item
+        href: add-reporting-labels-and-comments-to-a-line-item.md
+    - name: Programmatic Guaranteed Buying Line Items
+      items:
+      - name: Overview
+        href: programmatic-guaranteed-buying-line-items.md
+      - name: Create a Programmatic Guaranteed Buying Line Item
+        href: create-a-programmatic-guaranteed-buying-line-item.md
+      - name: Metrics for PG Buying Line Items
+        href: metrics-for-programmatic-guaranteed-buying-line-items.md
+      - name: Troubleshoot your PG Buying Line Item Bid Performance
+        href: troubleshoot-your-programmatic-guaranteed-buying-line-item-bid-performance.md
+      - name: Bid Performance Messages for Programmatic Guaranteed Buying Line Items
+        href: bid-performance-messages-for-programmatic-guaranteed-buying-line-items.md
+    - name: Deal Line Item
+      items:
+      - name: Create a Deal Line Item
+        href: create-a-deal-line-item.md
+      - name: Understanding Multi-Buyer Deals
+        href: understanding-multi-buyer-deals.md
+      - name: Set Up Multi-Buyer Deals
+        href: set-up-multi-buyer-deals.md
+    - name: Create a Standard Line Item
+      href: create-a-standard-line-item.md
+    - name: Update Line Items
+      href: update-line-items.md
+    - name: Viewing Visual Success Data
+      href: viewing-visual-success-data.md
+    - name: View Line Item Details
+      href: view-line-item-details.md
+    - name: Add a Performance Goal to a Line Item
+      href: add-a-performance-goal-to-a-line-item.md
+    - name: Understanding Performance Goals
+      href: understanding-performance-goals.md
+    - name: Using Performance Goals with CPM Booked Revenue
+      href: using-performance-goals-with-cpm-booked-revenue.md
+    - name: Using Minimum Margin to Balance Margin and Delivery
+      href: using-minimum-margin-to-balance-margin-and-delivery.md
+    - name: Peer Approval
+      href: peer-approval.md
+    - name: Cross-Device Targeting and Measurement
+      items: 
+      - name: Overview
+        href: cross-device-targeting-and-measurement.md
+      - name: Use Cases for Cross-Device Targeting and Measurement
+        href: use-cases-for-cross-device-targeting.md
+      - name: Set Up Cross-Device Attribution
+        href: set-up-cross-device-attribution.md
+      - name: Cross-Device Reporting
+        href: cross-device-reporting.md
+    - name: Explore Global Line Items
+      href: explore-global-line-items.md
+  - name: Improve Performance with Visual Success
+    href: improve-performance-with-visual-success.md
+  - name: Programmable Splits
+    items:
+    - name: Working with Programmable Splits
+      href: working-with-programmable-splits.md
+    - name: Understanding Splits
+      href: understanding-splits.md
+    - name: Configure a Programmable Split
+      href: configure-a-programmable-split.md
+    - name: Update Splits
+      href: update-splits.md
+    - name: Import or Export Split CSVs
+      href: import-or-export-split-csvs.md
+    - name: Explore Splits
+      href: explore-splits.md
+    - name: Split FAQ
+      href: split-faqs.md
+  - name: Campaigns
+    items:
+    - name: Working with Campaigns
+      href: working-with-campaigns.md
+    - name: Explore Campaigns
+      href: explore-campaigns.md
+    - name: View Campaign Details
+      href: view-campaign-details.md
+    - name: Create a Campaign
+      href: create-a-campaign.md
+    - name: Create a Deal Campaign
+      href: create-a-deal-campaign.md
+    - name: Update Campaigns
+      href: update-campaigns.md
+    - name: Associate Creatives to Campaigns
+      href: associate-creatives-to-campaigns.md
+    - name: Buying Strategies
+      items:
+      - name: Overview
+        href: buying-strategies.md
+      - name: CPC and CPA Payment Types
+        href: cpc-and-cpa-payment-types.md
+      - name: Defer to Line Item
+        href: defer-to-line-item.md
+    - name: Bidding Priority
+      href: bidding-priority.md
+  - name: Budgeting and Pacing
+    items:
+    - name: Overview
+      href: budgeting-and-pacing.md
+    - name: Key Budgeting and Pacing Concepts
+      href: key-budgeting-and-pacing-concepts.md
+    - name: Why Use Budgeting?
+      href: why-use-budgeting.md
+    - name: Difficulties with Exact Budgeting
+      href: difficulties-with-exact-budgeting.md
+    - name: Daily Pacing
+      href: daily-pacing.md
+    - name: Line Item Budgeting vs. Campaign Budgeting
+      href: line-item-budgeting-vs-campaign-budgeting.md
+    - name: Line Item Pacing vs. Campaign Pacing
+      href: line-item-pacing-vs-campaign-pacing.md
+  - name: Segments
+    items:
+    - name: Working with Segments
+      href: working-with-segments.md
+    - name: Onboarding Your Audience Data
+      items:
+      - name: Overview
+        href: onboarding-your-audience-data.md
+      - name: Client-Side Segmentation
+        href: client-side-segmentation.md
+      - name: Create a Segment Pixel
+        href: create-a-segment-pixel.md
+      - name: Export a Segment Pixel
+        href: export-a-segment-pixel.md
+    - name: Birthday Cookies
+      href: birthday-cookies.md
+    - name: Segment Pixels - Advanced
+      href: segment-pixels-advanced.md
+    - name: Segment Modifier
+      items:
+      - name: Overview
+        href: segment-modifier.md
+      - name: Segment Modifier Testing Guidelines
+        href: segment-modifier-testing-guidelines.md
+    - name: Pass in User Data Offline
+      items:
+      - name: Overview
+        href: pass-in-user-data-offline.md
+      - name: User ID Mapping
+        href: user-id-mapping-with-getuid-and-mapuid.md
+      - name: User Mapping Visual
+        href: user-mapping-visual-and-walk-through.md
+      - name: Server Side Cookie Store
+        href: server-side-cookie-store.md
+    - name: Location Manager
+      items:
+      - name: Overview
+        href: location-manager.md
+      - name: Geo Radius Segments
+        href: geo-radius-segments.md
+  - name: The Universal Pixel
+    items:
+    - name: Overview
+      href: the-universal-pixel.md
+    - name: Universal Pixel Basic Implementation
+      href: universal-pixel-basic-implementation.md
+    - name: Universal Pixel Code Structure
+      href: universal-pixel-code-structure.md
+    - name: Events and Parameters
+      items:
+      - name: Using Events and Parameters
+        href: using-events-and-parameters.md
+      - name: Create Event Code from the UI
+        href: create-event-code-from-the-ui.md
+      - name: Create Event Code Manually
+        href: create-event-code-manually.md
+      - name: Standard Events and Parameters
+        href: standard-events-and-parameters.md
+      - name: Create Custom Events and Parameters
+        href: create-custom-events-and-parameters.md
+    - name: Universal Pixel Audiences and Conversions
+      items:
+      - name: Overview
+        href: universal-pixel-audiences-and-conversions.md
+      - name: Set Up Audiences with Universal Pixel
+        href: set-up-audiences-with-universal-pixel.md
+      - name: Set Up Conversions with Universal Pixel
+        href: set-up-conversions-with-universal-pixel.md
+      - name: Universal Pixel Rule Conditions
+        href: universal-pixel-rule-conditions.md
+    - name: Universal Pixel Reporting
+      href: universal-pixel-reporting.md
+    - name: Universal Pixel Object Limits
+      href: universal-pixel-object-limits.md
+  - name: Conversion Pixels
+    items:
+    - name: Working with Conversion Pixels
+      href: working-with-conversion-pixels.md
+    - name: Create a Conversion Pixel
+      href: create-a-conversion-pixel.md
+    - name: Export Conversion Pixels
+      href: export-conversion-pixels.md
+    - name: Test Conversion Pixel and Attribution
+      href: test-conversion-pixel-and-attribution.md
+    - name: Conversion Attribution
+      items:
+      - name: Overview
+        href: conversion-attribution.md
+      - name: Offline Conversion Attribution
+        href: offline-conversion-attribution.md
+    - name: Conversion Pixels Advanced
+      href: conversion-pixels-advanced.md
+    - name: Reporting on Conversions
+      href: reporting-on-conversions.md
+    - name: Server-Side Conversion Pixels
+      href: server-side-conversion-pixels.md
+    - name: Set Up a Combined Segment and Conversion Pixel
+      href: set-up-a-combined-segment-and-conversion-pixel.md
+  - name: Impressions and Click Trackers
+    items:
+    - name: Working with Impression and Click Trackers
+      href: working-with-impression-and-click-trackers.md
+    - name: Create a Click Tracker
+      href: create-a-click-tracker.md
+    - name: Create an Impression Tracker
+      href: create-an-impression-tracker.md
+  - name: APAC Supply Information - Platform Inventory by Seller
+    href: apac-supply-information-platform-inventory-by-seller.md
+  - name: Trader Home
+    items:
+    - name: Working with Trader Home
+      href: working-with-trader-home.md
+    - name: Explore Trader Home
+      href: explore-trader-home.md
+    - name: Update Trader Home
+      href: update-trader-home.md
+    - name: Adding Insertion Orders to Trader Home
+      href: adding-insertion-orders-to-trader-home.md
+  - name: Mobile
+    items:
+    - name: Welcome to Mobile
+      href: welcome-to-mobile.md
+    - name: Mobile Ad Call Reference
+      items:
+      - name: Overview
+        href: mobile-ad-call-reference.md
+      - name: Mobile Carrier Codes
+        href: mobile-carrier-codes.md
+      - name: Testing Client-Side Impression Tracking
+        href: testing-client-side-impression-tracking.md
+    - name: A Comparison of Mobile App vs. Web
+      href: a-comparison-of-mobile-vs-web.md
+    - name: Adapting Display Strategies to Mobile Buying
+      href: adapting-display-strategies-to-mobile-buying.md
+    - name: Mobile Inventory
+      items:
+      - name: Buying Mobile Inventory
+        href: buying-mobile-inventory.md
+      - name: Buy Mobile Inventory Directly from a Publisher
+        href: buy-mobile-inventory-directly-from-a-publisher.md
+      - name: Buy Mobile Inventory via RTB
+        href: buy-mobile-inventory-via-rtb.md
+      - name: Managing Mobile Discrepancies
+        href: managing-mobile-discrepancies.md
+      - name: Run Rich Media Creatives on Mobile Inventory
+        href: run-rich-media-creatives-on-mobile-inventory.md
+      - name: Running Cost per Install Offers
+        href: running-cost-per-install-offers.md
+      - name: Set Up Third-Party Mobile App Install Tracking
+        href: set-up-third-party-mobile-app-install-tracking.md
+    - name: Mobile-Specific Reporting
+      href: mobile-specific-reporting.md
+    - name: Mobile Debug Auction Tips
+      href: mobile-debug-auction-tips.md
+    - name: Limitations of Mobile Buying
+      items:
+      - name: Technical Limitations of Mobile Buying
+        href: technical-limitations-of-mobile-buying.md
+      - name: Mobile Targeting and Attribution Challenges
+        href: mobile-targeting-and-attribution-challenges.md
+    - name: Mobile Creative Auditing
+      href: mobile-creative-auditing.md
+    - name: Mobile Buying FAQ
+      href: mobile-buying-faq.md
+  - name: Video Inventory
+    items:
+    - name: Buying Video Inventory
+      href: buying-video-inventory.md
+    - name: Video Creative Best Practices
+      href: video-creative-best-practices.md
+    - name: Video Campaign Best Practices
+      href: video-campaign-best-practices.md
+    - name: Upload a Hosted Video Creative
+      href: upload-a-hosted-video-creative.md
+    - name: Troubleshooting VAST Creatives
+      href: troubleshooting-vast-creative-display-issues.md
+    - name: VAST Check
+      href: vast-check.md
+    - name: Video Inventory Recommendations
+      href: video-inventory-recommendations.md
+    - name: Use Recommendations to Target Video Inventory
+      href: use-recommendations-to-target-video-inventory.md
+    - name: OTT Video Inventory
+      items:
+      - name: Buying OTT Video Inventory
+        href: buying-ott-video-inventory.md
+      - name: OTT Video Creative Specifications
+        href: ott-video-creative-specifications.md
+      - name: Buying ESPN Inventory
+        href: buying-espn-inventory.md
+      - name: Buying Hulu Inventory
+        href: buying-hulu-inventory.md
+      - name: CTV Video Buying Best Practices
+        href: ctv-video-buying-best-practices.md
+    - name: Best Practices for Buying Google Ad Manager Inventory
+      href: best-practices-for-buying-google-adx-inventory.md
+    - name: Vertical Video Creatives
+      href: vertical-video-creatives.md
+    - name: Comparison of Video Complete Buying Strategies
+      href: comparison-of-video-complete-buying-strategies.md
+  - name: Audio Inventory
+    items:
+    - name: Buying Audio Inventory
+      href: buying-audio-inventory.md
+    - name: Buying Spotify Audio Inventory
+      href: buying-spotify-audio-inventory.md
+    - name: Buying Triton Audio Inventory
+      href: buying-triton-audio-inventory.md
+  - name: Microsoft Inventory
+    items:
+    - name: Buying Microsoft Inventory
+      href: buying-microsoft-inventory.md
+    - name: Buying MSN Inventory
+      href: buying-msn-inventory.md
+    - name: Buying Microsoft Casual Games (Windows O&O Apps)
+      href: buying-microsoft-casual-games-windows-o-o-apps.md
+    - name: Buying Microsoft Deals
+      href: buying-microsoft-deals.md
+    - name: Buying Microsoft Outlook.com Inventory
+      href: buying-microsoft-outlook-com-inventory.md
+    - name: Buying Microsoft Video Inventory
+      href: buying-microsoft-video-inventory.md
+    - name: Buying Microsoft Windows App Inventory
+      href: buying-microsoft-windows-3rd-party-appnetwork-inventory.md
+    - name: Programmatic Buying on Xbox for Marketers
+      href: programmatic-buying-on-xbox-for-marketers.md
+  - name: Native Inventory
+    items:
+    - name: Buying Native Inventory
+      href: buying-native-inventory.md
+    - name: Native Inventory Seller Specifications
+      href: native-inventory-seller-specifications.md
+    - name: Buying GumGum Inventory
+      href: buying-gumgum-inventory.md
+    - name: Buying Seedtag Inventory
+      href: buying-seedtag-inventory.md
+  - name: Political Advertising
+    href: political-advertising.md
+  - name: Campaign Monitor
+    href: campaign-monitor.md
+  - name: Guaranteed Delivery
+    items:
+    - name: Overview
+      href: guaranteed-delivery.md
+    - name: Create a Guaranteed Delivery Line Item
+      href: create-a-guaranteed-delivery-line-item.md
+    - name: Using Multiple Campaigns with a Guaranteed Line Item
+      href: using-multiple-campaigns-with-a-guaranteed-line-item.md
+    - name: Guaranteed Delivery Auction Mechanics
+      href: guaranteed-delivery-auction-mechanics.md
+    - name: Guaranteed Delivery Pacing
+      href: guaranteed-delivery-pacing.md
+    - name: Open Dynamic Allocation and Flexible Priorities
+      href: open-dynamic-allocation-and-flexible-priorities.md
+    - name: Forecast-Shaped Pacing
+      href: forecast-shaped-pacing.md
+  - name: Data Marketplace
+    items:
+    - name: Data Marketplace Overview
+      href: data-marketplace-overview.md
+    - name: Data Marketplace Partners and Contact Information
+      href: data-marketplace-partners-and-contact-information.md
+    - name: Data Cost Calculation Mechanics
+      href: data-cost-calculation-mechanics.md
+    - name: Data Marketplace FAQ(s)
+      href: data-marketplace-faq.md
+- name: Buy-Side Targeting
+  items:
+  - name: Overview
+    href: buy-side-targeting.md
+  - name: App Targeting
+    href: app-targeting.md
+  - name: Ad Pod Targeting
+    href: targeting-ad-pods.md
+  - name: Apply a Targeting Template
+    href: apply-a-targeting-template.md
+  - name: Content Category Targeting
+    href: content-category-targeting.md
+  - name: Daypart Targeting
+    href: daypart-targeting.md
+  - name: Demography Targeting
+    items:
+    - name: Overview
+      href: demography-targeting.md
+    - name: Age and Gender Targeting for Third-Party Inventory
+      href: age-and-gender-targeting-for-third-party-inventory.md
+  - name: Supply Type Targeting
+    href: supply-type-targeting.md
+  - name: Device Type Targeting
+    href: device-type-targeting-ali.md
+  - name: Direct Inventory Targeting
+    href: direct-inventory-targeting.md
+  - name: Direct Inventory Targeting (ALI)
+    href: direct-inventory-targeting-ali.md
+  - name: Domain Targeting
+    href: domain-targeting.md
+  - name: Frequency and Recency Caps
+    items:
+    - name: Overview
+      href: frequency-and-recency-caps.md
+    - name: Applying Frequency and Recency Caps
+      href: applying-frequency-and-recency-caps.md
+    - name: Set a Frequency Cap
+      href: set-a-frequency-cap.md
+    - name: Set a Recency Cap
+      href: set-a-recency-cap.md
+    - name: Frequency and Recency Examples
+      href: frequency-and-recency-examples.md
+    - name: Advanced Frequency Management
+      href: advanced-frequency-management.md
+  - name: Geography Targeting
+    items:
+    - name: Overview
+      href: geography-targeting.md
+    - name: How Geography Targeting Works
+      href: how-geography-targeting-works.md
+    - name: Invalid Postal and ZIP Codes
+      href: invalid-postal-codes.md
+    - name: Changes to Geography Objects
+      href: changes-to-geography-objects.md
+  - name: Inventory Performance Targeting
+    href: inventory-performance-targeting.md
+  - name: Inventory Quality Targeting
+    href: inventory-quality-targeting.md
+  - name: Inventory Targeting (ALI)
+    items:
+    - name: Overview
+      href: inventory-targeting-ali.md
+    - name: Deal Targeting (ALI)
+      href: deal-targeting-ali.md
+    - name: Direct Inventory Targeting (ALI)
+      href: direct-inventory-targeting-ali.md
+    - name: Inventory Lists (ALI)
+      items:
+      - name: Overview
+        href: inventory-lists-ali-only.md
+      - name: Migrate Targeting List to Inventory List
+        href: migrate-targeting-list-to-inventory-list.md
+  - name: Key/Value Targeting
+    href: key-value-targeting.md
+  - name: Listen-Through Targeting
+    href: listen-through-targeting.md
+  - name: Mobile User Segment Targeting
+    href: mobile-user-segment-targeting.md
+  - name: Page Properties Targeting
+    href: page-properties-targeting.md
+  - name: Query String Targeting via Placement Tags and Segments
+    href: query-string-targeting-via-placement-tags-and-segments.md
+  - name: Segment Targeting
+    href: segment-targeting.md
+  - name: System Targeting
+    href: system-targeting.md
+  - name: Target Inventory on the Microsoft Advertising Exchange
+    items:
+    - name: Overview
+      href: target-inventory-on-the-microsoft-advertising-exchange.md
+    - name: Microsoft Advertising Exchange Inventory
+      href: microsoft-advertising-exchange-inventory.md
+    - name: Setting Up 24/7 Media Inventory Through the Microsoft Ad Exchange
+      href: setting-up-24-7-media-inventory-through-the-microsoft-ad-exchange.md
+  - name: Target Inventory on the Yahoo Ad Exchange
+    href: target-inventory-on-the-yahoo-ad-exchange.md
+  - name: Test and Control Targeting
+    href: test-and-control-targeting.md
+  - name: Third-Party Inventory Targeting
+    href: third-party-inventory-targeting.md
+  - name: Video Completion Rate Targeting
+    href: video-completion-rate-targeting.md
+  - name: Video Content Targeting
+    href: video-content-targeting.md
+  - name: Video Player Targeting
+    href: video-player-targeting.md
+  - name: Video Targeting
+    href: video-targeting.md
+  - name: Viewability Targeting
+    href: viewability-targeting.md           
+- name: Creatives
+  items: 
+  - name: Working with Creatives
+    href: working-with-creatives.md
+  - name: Exploring Creatives
+    items:
+    - name: Overview
+      href: exploring-creatives.md
+    - name: Creative Types
+      items: 
+      - name: Video Creatives
+        href: video-creatives.md
+      - name: Audio Creatives
+        href: audio-creatives.md
+      - name: Native Creatives
+        href: native-creatives.md
+      - name: Banner and HTML5 Creatives
+        href: banner-and-html5-creatives.md
+    - name: Creative Standards
+      items:
+      - name: Overview
+        href: creative-standards.md
+      - name: Sherlock - Creative Quality Control
+        href: sherlock-creative-quality-control.md
+    - name: Creative Branding
+      items:
+      - name: Overview
+        href: creative-branding.md
+      - name: Competitive Exclusions
+        href: competitive-exclusions.md
+      - name: Exclude Competitive Brands for a Creative
+        href: exclude-competitive-brands-for-a-creative.md
+      - name: Exclude Competitive Offer Categories for a Creative
+        href: exclude-competitive-offer-categories-for-a-creative.md
+  - name: Adding and Updating Creatives
+    items:
+    - name: Creative Guidelines and Specifications
+      items:
+      - name: Overview
+        href: creative-guidelines-and-specifications.md
+      - name: Video Creative Guidelines and Specifications
+        href: video-creative-guidelines-and-specifications.md
+      - name: Audio Creative Guidelines and Specifications
+        href: audio-creative-guidelines-and-specifications.md
+      - name: HTML5 Creative Guidelines and Specifications
+        href: html5-creative-guidelines-and-specifications.md
+      - name: Native Creative Asset Specifications
+        href: native-creative-asset-specifications.md
+      - name: Creative Character Specifications
+        href: creative-character-specifications.md
+      - name: Creative CTV Guidelines and Specifications
+        href: creative-ctv-guidelines-and-specifications.md
+    - name: Creative Spreadsheet Conventions
+      href: creative-spreadsheet-conventions.md
+    - name: Add a Creative
+      href: add-a-creative.md
+    - name: Add Creatives in Bulk
+      href: add-creatives-in-bulk.md
+    - name: Update Creatives in bulk
+      href: update-creatives-in-bulk.md
+    - name: Supported VAST Features
+      href: supported-vast-features.md
+    - name: Companions
+      href: companions.md
+    - name: Dynamic Landing Pages
+      href: dynamic-landing-pages.md
+    - name: Associate Line Items with a Creative
+      href: associate-line-items-with-a-creative.md
+    - name: Creative Rotation (ALI)
+      href: creative-rotation-ali.md
+    - name: Creative Rotation
+      href: creative-rotation-standard-line-item-and-guaranteed-delivery-line-item.md
+    - name: Smart Image Adjustments for Native Creatives
+      href: smart-image-adjustments-for-native-creatives.md
+    - name: Publisher Requirements for Smart Image Adjustments
+      href: publisher-requirements-for-smart-image-adjustments.md
+  - name: Tracking for Creatives
+    items:
+    - name: Configuring Tracking for Creatives
+      href: configuring-tracking-for-creatives.md
+    - name: Click Tracking
+      items:
+      - name: Overview
+        href: click-tracking.md
+      - name: Click Track Test
+        href: click-track-test.md
+      - name: Test Click Tracking Manually
+        href: test-click-tracking-manually.md
+    - name: Third-Party Tracking Pixels for Creatives
+      items:
+      - name: Overview
+        href: third-party-tracking-pixels-for-creatives.md
+      - name: Create a Third-Party Network Pixel for Your Creatives
+        href: create-a-third-party-network-pixel-for-your-creatives.md
+      - name: Create a Third-Party Advertiser Pixel for Your Creatives
+        href: create-a-third-party-advertiser-pixel-for-your-creatives.md
+    - name: Associate Segment Pixels with Creatives
+      href: associate-segment-pixels-with-creatives.md
+    - name: Moat Video Viewability Measurement
+      href: moat-video-viewability-measurement.md
+  - name: Auditing Creatives
+    items:
+    - name: Overview
+      href: auditing-creatives.md
+    - name: Select an Audit Option for a Creative
+      href: select-an-audit-option-for-a-creative.md
+    - name: Self-Auditing Creatives
+      href: self-auditing-creatives.md
+    - name: Creative Audit Best Practices
+      href: best-practices-for-submitting-creatives-for-audit.md
+    - name: General Guidelines for Passing Creative Audits
+      href: general-creative-guidelines-to-pass-auditing.md
+    - name: Google Ad Manager Creative Audit Process
+      items:
+      - name: Overview
+        href: adx-creative-audit-process.md
+      - name: Google Ad Manager Disapproval Reasons
+        href: adx-disapproval-reasons.md
+      - name: Resubmit Creatives for Google Ad Manager Auditing
+        href: resubmit-creatives-for-adx-auditing.md
+  - name: Creative Templates
+    items:
+    - name: Overview
+      href: creative-templates.md
+    - name: Managing Creative Templates
+      href: managing-creative-templates.md
+    - name: Create a Custom Creative Template
+      href: create-a-custom-creative-template.md
+    - name: Duplicate an Existing Custom Creative Template
+      href: duplicate-an-existing-custom-creative-template.md
+    - name: Update a Custom Creative Template
+      href: update-a-custom-creative-template.md
+    - name: Delete a Custom Creative Template
+      href: delete-a-custom-creative-template.md
+    - name: Applying Media Types and Templates to Banner Creatives
+      href: applying-media-types-and-templates-to-banner-creatives.md
+  - name: Creative Macros
+    items:
+    - name: Overview
+      href: creative-macros.md
+    - name: Create a Placement Tag Macro
+      href: create-a-placement-tag-macro.md
+    - name: Auto Macro Insertion
+      href: auto-macro-insertion.md
+    - name: Supported Creative Macros
+      href: supported-creative-macros.md
+  - name: Troubleshooting Creatives
+    href: troubleshooting-creatives.md
+  - name: Creative FAQ
+    href: creative-faq.md
+- name: Selling Guide
+  items:
+  - name: Overview
+    href: selling-guide.md
+  - name: Prebid Server Premium
+    items:
+    - name: Overview
+      href: prebid-server-premium.md
+    - name: Prebid Server Premium Setup
+      items:
+      - name: Setting Up Prebid Server Premium
+        href: set-up-prebid-server-premium.md
+      - name: Integrate with PSP
+        items:
+        - name: Overview
+          href: integrate-with-psp.md
+        - name: Integrate Web/Mobile Web with PSP
+          href: integrate-web-mobile-web-with-psp.md
+        - name: Integrate Apps with PSP
+          href: integrate-apps-with-psp.md
+        - name: Integrate Accelerated Mobile Pages with PSP
+          href: integrate-accelerated-mobile-pages-with-psp.md
+      - name: Add or Edit PSP Global Settings
+        href: add-or-edit-psp-global-settings.md
+      - name: Add or Edit a Demand Partner
+        href: add-or-edit-a-demand-partner.md
+      - name: Add, Edit, or Delete a PSP Configuration
+        items: 
+        - name: Overview
+          href: add-edit-or-delete-a-psp-configuration.md
+        - name: Create a New PSP Configuration
+          href: create-a-psp-configuration.md
+        - name: Manage a PSP Configuration
+          href: manage-a-psp-configuration.md
+        - name: Manage PSP Configurations in Bulk
+          href: manage-psp-configurations-in-bulk.md
+      - name: Prebid Server Premium Data Passthrough
+        href: prebid-server-premium-data-passthrough.md
+      - name: Prebid Server Premium Identity & User Syncing
+        href: prebid-server-premium-identity-and-user-syncing.md
+      - name: Price Bucket Currency
+        href: price-bucket-currency.md
+      - name: Video Guidance
+        href: video-guidance.md
+    - name: Prebid Server Premium Demand Partner Integrations
+      href: prebid-server-premium-demand-partner-integrations.md
+    - name: Prebid Server Premium Analytics
+      href: prebid-server-premium-analytics.md
+  - name: Explore the Monetization Dashboard
+    href: explore-the-monetization-dashboard.md
+  - name: Publishers
+    items:
+    - name: Working with Publishers
+      href: working-with-publishers.md
+    - name: Create a Publisher
+      href: create-a-publisher.md
+    - name: Explore Publishers
+      href: explore-publishers.md
+    - name: Update Publishers
+      href: update-publishers.md
+    - name: Native Assembly
+      items:
+      - name: Overview
+        href: native-assembly.md
+      - name: Configuring a Native Assembly
+        href: configuring-a-native-assembly.md
+      - name: Navigate to the Native Assembly Gallery
+        href: navigate-to-the-native-assembly-gallery.md
+      - name: Create a Native Assembly
+        href: create-a-native-assembly.md
+      - name: Native Assembly Renderer Best Practices
+        href: native-assembly-renderer-best-practices.md
+      - name: Native Assembly Object Placeholders
+        href: native-assembly-object-placeholders.md
+      - name: Enable Native Assembly for the Server Side
+        href: enable-native-assembly-for-the-server-side.md
+      - name: Native Assembly FAQ
+        href: native-assembly-faq.md
+    - name: Publisher Requirements for Smart Image Adjustments
+      href: publisher-requirements-for-smart-image-adjustments.md
+    - name: Monetize Insights
+      items:
+      - name: Monetize Insights for Publishers
+        href: monetize-insights-for-publishers.md
+      - name: Monetize Insights for Total Revenue
+        href: monetize-insights-total-revenue.md
+      - name: Ad Quality
+        href: monetize-insights-ad-quality.md
+      - name: Deals
+        href: monetize-insights-deals.md
+      - name: Demand Issues
+        href: monetize-insights-demand-issues.md
+      - name: Floor Rule
+        href: monetize-insights-floor-rules.md
+  - name: Placement Groups
+    items:
+    - name: Working with Placement Groups
+      href: working-with-placement-groups.md
+    - name: Create a Placement Group
+      href: create-a-placement-group.md
+    - name: Update a Placement Group
+      href: update-a-placement-group.md
+    - name: Move a Placement to a Different Placement Group
+      href: move-a-placement-to-a-different-placement-group.md
+  - name: Placements
+    items:
+    - name: Working with Placements
+      href: working-with-placements.md
+    - name: Create a Placement
+      href: create-a-placement.md
+    - name: Create a Placement for Third-Party Ad Server Pacing
+      href: create-a-placement-for-third-party-ad-server-pacing.md
+    - name: Explore Placements
+      href: explore-placements.md
+    - name: Update a Placement
+      href: update-a-placement.md
+    - name: Assign a Default Creative to a Placement
+      href: assign-a-default-creative-to-a-placement.md
+    - name: Serve Default Creatives Instead of PSAs
+      href: serve-default-creatives-instead-of-psas.md
+    - name: Export Placement Tags
+      href: export-placement-tags.md
+    - name: Placement Tag Parameters
+      href: placement-tag-parameters.md
+    - name: Using Promo Sizes
+      href: using-promo-sizes.md
+    - name: Onboarding Audio Supply
+      href: onboarding-audio-supply.md
+    - name: Onboarding Mobile Supply
+      href: onboarding-mobile-supply.md
+    - name: Onboarding Video Supply
+      href: onboarding-video-supply.md
+    - name: Xandr's Seller Tag (AST)
+      items:
+      - name: Working with Xandr's Seller Tag (AST)
+        href: working-with-seller-tag.md
+      - name: Buy-Side Page Caps
+        href: buy-side-page-caps.md
+      - name: Competitive Exclusions
+        href: competitive-exclusions.md
+      - name: Sell-Side Page Caps
+        href: sell-side-page-caps.md
+      - name: Target Your Inventory with Roadblocking
+        href: target-your-inventory-with-roadblocking.md
+    - name: Default PSAs
+      href: default-psas.md
+    - name: Rich Media and High Impact Formats
+      href: rich-media-and-high-impact-formats.md
+    - name: Vertical Video Formats
+      href: vertical-video-formats.md
+    - name: Blanking FAQ
+      href: blanking-faq.md
+  - name: Payment Rules
+    items:
+    - name: Working with Payment Rules
+      href: working-with-payment-rules.md
+    - name: Create Payment Rules
+      href: create-payment-rules.md
+    - name: Update Payment Rules
+      href: update-payment-rules.md
+    - name: Base and Conditional Rules
+      href: base-and-conditional-rules.md
+  - name: Ad Quality
+    items:
+    - name: Working with Ad Quality
+      href: working-with-publisher-ad-quality.md
+    - name: Improving Ad Quality on Your Inventory
+      href: improving-ad-quality-on-your-inventory.md
+    - name: Choosing the Most Useful Ad Quality Rules
+      href: choosing-the-most-useful-ad-quality-rules.md
+    - name: Platform-Wide Banning
+      href: platform-wide-banning.md
+    - name: Block a Brand Using Ad Quality Rules
+      href: block-a-brand-using-ad-quality-rules.md
+    - name: Explore Publisher Ad Quality
+      href: explore-publisher-ad-quality.md
+    - name: Create a Custom Profile
+      href: create-a-custom-profile.md
+    - name: Create Publisher Ad Quality Rules
+      href: create-publisher-ad-quality-rules.md
+  - name: Yield Management
+    items:
+    - name: Working with Yield Management
+      href: working-with-yield-management.md
+    - name: Understanding Yield Management
+      href: understanding-yield-management.md
+    - name: Create a Floor Rule
+      href: create-a-floor-rule.md
+    - name: Update Floor Rules
+      href: update-floor-rules.md
+    - name: Floor Rule Targeting
+      href: floor-rule-targeting.md
+    - name: Create a Bias Rule
+      href: create-a-bias-rule.md
+    - name: Update Bias Rules
+      href: update-bias-rules.md
+    - name: Floor Optimization
+      href: floor-optimization.md
+  - name: Video Inventory
+    items:
+    - name: Sell-Side Video Overview
+      href: sell-side-video-overview.md
+    - name: Selling In-Stream Video
+      items: 
+      - name: Overview
+        href: selling-in-stream-video.md
+      - name: Planning In-Stream Video Placements
+        href: planning-in-stream-video-placements.md
+      - name: Configure a Placement for In-Stream Video
+        href: configure-a-placement-for-in-stream-video.md
+      - name: Options for Defining Video Auction Settings
+        href: options-for-defining-video-auction-settings.md
+      - name: Universally Required Information for Video Requests
+        href: universally-required-parameters-for-video-requests.md
+      - name: Integrating In-Stream Video with Header Bidding or OpenRTB
+        href: integrating-in-stream-video-with-header-bidding-or-open-rtb.md
+      - name: In-Stream Video with Tags
+        items:
+        - name: Integrating In-Stream Video with Tags
+          href: integrating-in-stream-video-with-tags.md
+        - name: Export Video Placement Tags
+          href: export-video-placement-tags.md
+        - name: Create and Customize a Video Placement Tag
+          href: create-and-customize-a-video-placement-tag.md
+        - name: Required Tag Parameters for Desktop and Mobile Web Inventory
+          href: required-parameters-for-mobile-web-inventory.md
+        - name: Required Tag Parameters for Android and iOS Inventory
+          href: required-parameters-for-android-and-ios-inventory.md
+        - name: Required Tag Parameters for CTV Inventory
+          href: required-parameters-for-ctv-inventory.md
+        - name: Target Video Attributes via Query String Parameters
+          href: target-video-attributes-via-query-string-parameters.md
+    - name: Outstream Video
+      items:
+      - name: Quickstart Guide - Set Up Outstream Video
+        href: outstream-video-quickstart-guide.md
+      - name: Configure Placements for Outstream Video
+        href: configure-placements-for-outstream-video.md
+      - name: Publisher Notifications for Outstream Video Events
+        href: publisher-notifications-for-outstream-video-events.md
+      - name: Outstream Video Player Options
+        href: outstream-video-player-options.md
+    - name: Ad Podding for Publishers
+      href: ad-podding-for-publishers.md
+    - name: Video Players
+      href: video-players.md
+  - name: Managed Inventory
+    items:
+    - name: Reselling Managed Inventory
+      href: reselling-managed-inventory.md
+    - name: Inventory Self-Classification
+      href: inventory-self-classification.md
+    - name: Content Categories
+      href: content-categories.md
+    - name: Automotive Content Categories
+      href: automotive-content-categories.md
+    - name: Selling Inventory on a CPC and CPA Basis
+      href: selling-inventory-on-a-cpc-and-cpa-basis.md
+    - name: Publisher Analysis - Cross Network CPA and CPC
+      href: publisher-analysis-cross-network-cpa-and-cpc.md
+  - name: Selling Programmatic Guaranteed Deals
+    href: programmatic-guaranteed-selling-line-items.md
+  - name: Selling Your Inventory Through Mediation
+    items:
+    - name: Overview
+      href: mediation-selling-your-inventory-through-mediation.md
+    - name: How Auctions Work for Sellers
+      href: mediation-how-auctions-work-for-sellers.md
+    - name: Mediation Networks
+      href: mediation-networks.md
+    - name: Mediation Bids
+      href: mediation-bids.md
+    - name: Mediation Bid Setup Best Practices
+      href: mediation-bid-setup-best-practices.md
+    - name: Integrating for Mediation
+      href: mediation-integrating-for-mediation.md
+    - name: Mediation FAQs
+      href: mediation-faqs.md
+    - name: Set Up Mobile In-App Video Mediation
+      href: mediation-set-up-mobile-in-app-video-mediation.md
+  - name: PG Deal With Third-Party Ad Server Pacing And Tag Integration
+    items:
+    - name: Create a PG Deal With Third-Party Ad Server Pacing And Tag Integration
+      href: create-a-programmatic-guaranteed-selling-line-item-ssp.md
+    - name: Navigate to the Create New Programmatic Guaranteed Deal Screen
+      href: navigate-to-the-create-a-new-deal-line-item-screen-monetize.md
+  - name: Programmatic Guaranteed Deal
+    items:
+    - name: Create a Programmatic Guaranteed Deal
+      href: create-a-programmatic-guaranteed-selling-line-item.md
+    - name: Navigate to the Create New Programmatic Guaranteed Deal Screen
+      href: navigate-to-the-create-a-new-deal-line-item-screen-monetize.md
+    - name: Choose the Programmatic Guaranteed Deal Type
+      href: choose-the-programmatic-guaranteed-deal-type.md
+    - name: Add Basic Line Item Details to Traffic a Programmatic Guaranteed Deal
+      href: add-basic-line-item-details-to-traffic-a-programmatic-guaranteed-deal.md
+    - name: Set Up Line Item Inventory and Brand Safety
+      items:
+      - name: Setting Up Line Item Inventory and Brand Safety
+        href: set-up-line-item-inventory-and-brand-safety-pgli-monetize.md
+      - name: Inventory Targeting
+        href: inventory-targeting-pgli.md
+    - name: Set Line Item Frequency and Recency Caps
+      href: set-line-item-frequency-and-recency-caps.md
+    - name: Programmatic Guaranteed Selling Line Item Targeting
+      href: programmatic-guaranteed-selling-line-item-targeting.md
+    - name: Define Deal Creative Criteria
+      href: define-deal-creative-criteria.md
+    - name: Add Reporting Labels and Comments to a Line Item
+      href: add-reporting-labels-and-comments-to-a-line-item.md
+  - name: Guaranteed Delivery (GDALI)
+    items:
+    - name: Overview
+      href: guaranteed-delivery-gdali.md
+    - name: Create a Guaranteed Delivery Line Item (GDALI)
+      href: create-a-guaranteed-delivery-line-item-gdali.md
+    - name: Guaranteed Delivery Line Item FAQ (GDALI)
+      href: guaranteed-delivery-line-item-faq-gdali.md
+  - name: Floor Prices
+    href: floor-prices.md
+  - name: Inventory Standards and Auditing
+    href: inventory-standards-and-auditing.md
+  - name: Inventory Forecasting
+    href: inventory-forecasting.md
+  - name: Cookie Privacy 
+    items:
+    - name: Cookie Privacy Settings
+      href: cookie-privacy-settings.md
+    - name: Cookie Viewer
+      href: viewing-managing-cookie-segments.md
+  - name: Global Privacy Platform
+    href: global-privacy-platform.md
+  - name: Seller Creative Review
+    items:
+    - name: Overview
+      href: seller-creative-review.md
+    - name: Set Up Seller Creative Review
+      href: set-up-seller-creative-review.md
+    - name: Seller Creative Review List
+      href: seller-creative-review-list.md
+    - name: Approve and Reject Creatives
+      href: approve-and-reject-creatives.md
+- name: Viewability
+  items:
+  - name: Introduction to Viewability
+    href: introduction-to-viewability.md
+  - name: Reporting on Viewability
+    href: reporting-on-viewability.md
+  - name: vCPM Payment Type
+    href: vcpm-payment-type.md
+  - name: Measurement of Video Viewability using VPAID Wrapper
+    href: video-viewability.md
+  - name: Improve Low Viewability Performance
+    href: improve-low-viewability-performance.md
+  - name: Native Viewability Integration for Sell-Side Providers
+    href: native-viewability-integration-for-sell-side-providers.md
+  - name: Ad Viewability - Description of Methodology (DOM)
+    href: ad-viewability-description-of-methodology-dom.md
+  - name: Viewability FAQ
+    href: viewability-faq.md
+- name: Guaranteed Outcomes
+  items:
+  - name: Overview
+    href: guaranteed-outcomes.md
+  - name: Guaranteed Outcomes Limitations
+    href: guaranteed-outcomes-limitations.md
+  - name: How Guaranteed Outcomes Work
+    href: how-guaranteed-outcomes-work.md
+  - name: Guaranteed Outcomes Auction Mechanics
+    href: guaranteed-outcomes-auction-mechanics.md
+  - name: Understanding Payment Conversion Rates
+    href: understanding-payment-conversion-rates.md
+  - name: Guaranteed Outcomes Results Over Time (Examples)
+    href: guaranteed-outcomes-results-over-time-examples.md
+  - name: Supported Viewability Standards for Guaranteed Outcomes
+    href: supported-viewability-standards-for-guaranteed-outcomes.md
+  - name: Supported Video Completion Standards
+    href: supported-video-completion-standards.md
+  - name: Configuring a Line Item to Buy Guaranteed Outcomes
+    href: configuring-a-line-item-to-buy-guaranteed-outcomes.md
+  - name: Reporting on Guaranteed Outcomes
+    href: reporting-on-guaranteed-outcomes.md
+  - name: Viewability Rates for Guaranteed Views
+    href: understanding-viewability-rates-for-guaranteed-views.md
+  - name: Billing and Costs for Guaranteed Outcomes
+    href: understanding-billing-and-costs-for-guaranteed-outcomes.md
+  - name: Analyzing CTR and Conversion Rate for Guaranteed Outcomes
+    href: analyzing-ctr-and-conversion-rate-for-guaranteed-outcomes.md
+  - name: Using a Viewability Rate Target for Guaranteed Views
+    href: using-a-viewability-rate-target-for-guaranteed-views.md
+  - name: Monthly Prediction Variability Data
+    href: monthly-prediction-variability-data.md
+- name: Monitoring
+  items:
+  - name: Overview
+    href: monitoring.md
+  - name: Monitor Line Items
+    items:
+    - name: Overview
+      href: monitor-line-items.md
+    - name: View Line Item Details
+      href: view-line-item-details-smw.md
+    - name: Line Item Settings
+      href: line-item-settings.md
+  - name: Troubleshoot Line Items
+    items:
+    - name: Overview
+      href: troubleshoot-line-items.md
+    - name: Impression Funnel
+      href: impression-funnel.md
+  - name: Troubleshooting Reports
+    href: troubleshooting-reports.md
+  - name: Sample Bid Requests
+    href: sample-bid-requests.md
+- name: Optimization Guide
+  items: 
+  - name: Overview
+    href: optimization-guide.md
+  - name: Understanding Optimization
+    href: understanding-optimization.md
+  - name: Prerequisite Knowledge
+    href: prerequisite-knowledge.md
+  - name: Optimization In-Depth
+    items:
+    - name: Overview
+      href: optimization-in-depth.md
+    - name: Optimization Buying Strategies
+      href: optimization-buying-strategies.md
+    - name: What is a Venue?
+      href: what-is-a-venue.md
+    - name: Targeted Learn
+      items:
+      - name: Overview
+        href: targeted-learn.md
+      - name: Shorten the Targeted Learn Phase Using Bid Type Reports
+        href: shorten-the-targeted-learn-phase-using-bid-type-reports.md
+      - name: Targeted Learn FAQ
+        href: targeted-learn-faq.md
+    - name: What is an Optimization Node?
+      href: what-is-an-optimization-node.md
+    - name: Learn Budget
+      href: learn-budget.md
+    - name: What is Valuation?
+      href: what-is-valuation.md
+    - name: Optimization Levers
+      href: optimization-levers.md
+    - name: Cadence Modifier and the Chaos Factor
+      href: cadence-modifier-and-the-chaos-factor.md
+    - name: Sell-Side Optimization
+      href: sell-side-optimization.md
+    - name: Dynamic Learn Percentage
+      href: dynamic-learn-percentage.md
+    - name: Give Up Price
+      href: give-up-price.md
+    - name: Impression-to-Click, Click-To-Conversion Optimization
+      href: impression-to-click-click-to-conversion-optimization.md
+  - name: Engineered Features
+    href: engineered-features.md
+- name: Optimization Guide - ALI
+  items:
+  - name: Overview
+    href: optimization-guide-ali.md
+  - name: Adaptive Pacing
+    href: adaptive-pacing.md
+  - name: Lifetime Pacing
+    href: lifetime-pacing.md
+  - name: Discovery
+    href: discovery.md
+  - name: Valuation
+    href: valuation.md
+  - name: Ways to Improve Click-Through Rate (CTR) Performance
+    href: ways-to-improve-ctr-performance.md
+- name: Billing
+  items:
+  - name: Overview
+    href: billing.md
+  - name: Digital Buying
+    items: 
+    - name: Overview
+      href: digital-buying.md
+    - name: Understanding Your Invoice
+      href: understanding-your-invoice.md
+    - name: Understanding Your Pricing Terms
+      items:
+      - name: Overview
+        href: understanding-your-pricing-terms.md
+      - name: Buyer Auction Service Charge Mechanics
+        href: buyer-auction-service-charge-mechanics.md
+      - name: Charges for Buyers
+        href: charges-for-buyers.md
+      - name: Charges for Sellers
+        href: charges-for-sellers.md
+    - name: Reconciling Your Invoice with Reporting
+      href: reconciling-your-invoice-with-reporting.md
+    - name: Payment
+      items:
+      - name: Overview
+        href: payment-to-xandr.md
+      - name: Credit Limit Overview
+        href: credit-limit-overview.md
+    - name: Integrated Pre Payment Functionality
+      href: integrated-pre-payment-functionality.md
+  - name: Digital Selling
+    items:
+    - name: Overview
+      href: digital-selling.md
+    - name: Understanding Your Seller Statement
+      href: understanding-your-seller-statement.md
+    - name: Reconciling your Seller Statement with Reporting
+      href: reconciling-your-seller-statement-with-reporting.md
+    - name: Getting Paid
+      href: getting-paid-by-xandr.md
+  - name: Understanding Invalid Traffic
+    href: understanding-invalid-traffic.md
+  - name: Foreign Exchange Margin
+    href: foreign-exchange-margin.md
+  - name: Currency Support
+    href: currency-support.md
+  - name: Billing and Settlement FAQ
+    href: billing-faq.md
+- name: Reporting Guide
+  items:
+  - name: General Reporting Concepts
+    items:
+    - name: Overview
+      href: general-reporting-concepts.md
+    - name: Dimensions, Metrics, Filtering, and Grouping
+      href: dimensions-metrics-filtering-and-grouping.md
+    - name: Dates and Times in Reporting
+      href: dates-and-times-in-reporting.md
+    - name: Transactional Reporting Options
+      href: transactional-reporting-options.md
+    - name: Report Throttling
+      href: report-throttling.md
+    - name: Impression Counting
+      href: impression-counting.md
+  - name: Analytics Reporting
+    items:
+    - name: Network Reporting
+      items:
+      - name: Buyer Bid Error Report
+        href: buyer-bid-error-report.md
+      - name: Buyer Geo Analytics Report
+        href: buyer-geo-analytics-report.md
+      - name: Buyer Segment Performance Report
+        href: buyer-segment-performance-report.md
+      - name: Buyer Untargeted Segment Performance Report
+        href: buyer-untargeted-segment-performance-report.md
+      - name: Carrier Analytics Report
+        href: carrier-analytics-report.md
+      - name: Curator Analytics Report
+        href: curator-analytics-report.md
+      - name: Curator Bid Error Report
+        href: curator-bid-error-report.md
+      - name: Curator Segment Performance Report
+        href: curator-segment-performance-report.md
+      - name: Data Usage Report
+        href: data-usage-report.md
+      - name: Device Analytics Report
+        href: device-analytics-report.md
+      - name: Identifiers - Distinct ID Report
+        href: identifiers--distinct-id-report.md
+      - name: Identifiers - ID Combinations Report
+        href: identifiers--id-combinations-report.md
+      - name: Key Value Analytics Report
+        href: key-value-analytics-report.md
+      - name: Multi-Key Value Analytics Report
+        href: multi-key-value-analytics-report.md
+      - name: Multi-Buyer Seller Deal Metrics
+        href: multi-buyer-seller-deal-metrics.md
+      - name: Network Analytics Report
+        href: network-analytics-report.md
+      - name: Network Attributed Conversions Report
+        href: member-attributed-conversions-report.md
+      - name: Network Audio Analytics Report
+        href: network-audio-analytics-report.md
+      - name: Network Site Domain Performance Report
+        href: network-site-domain-performance-report.md
+      - name: Network Video Analytics Report
+        href: network-video-analytics-report.md
+      - name: Network Video Mediation Demand Report
+        href: network-video-mediation-demand-report.md
+      - name: Prebid Server Premium Health Analytics Report
+        href: prebid-server-premium-health-analytics-report.md
+      - name: Prebid Server Premium Seller Analytics Report
+        href: prebid-server-premium-seller-analytics.md
+      - name: Seller Bid Error Report
+        href: seller-bid-error-report.md
+      - name: Seller Brand Review Report
+        href: seller-brand-review-report.md
+      - name: Seller CMP Analytics Report
+        href: seller-cmp-analytics-report.md
+      - name: Seller Deal Metrics
+        href: seller-deal-metrics.md
+      - name: Seller Fill and Delivery Network Report
+        href: seller-fill-and-delivery-network-report.md
+      - name: Seller Site Domain Report
+        href: seller-site-domain-report.md
+      - name: Podded Video
+        items:
+        - name: Reporting on Podded Video
+          href: reporting-on-podded-video.md
+        - name: Seller Podded Video
+          href: seller-podded-video-report.md
+        - name: Seller Slot Analytics
+          href: seller-slot-analytics-report.md
+      - name: Seller Detected Site Domain Report
+        href: seller-detected-site-domain-report.md
+      - name: Seller Segment Performance Report
+        href: seller-segment-performance-report.md
+      - name: Network Video Error Report
+        href: network-video-error-report.md
+      - name: Engagement Metrics Report
+        href: engagement-metrics-report.md
+      - name: Universal Content Categories Report
+        href: universal-content-categories-report.md
+      - name: Video Ad Pod Report
+        href: video-ad-pod-report.md
+      - name: Video Inventory Availability Report
+        href: video-inventory-availability-report.md
+      - name: Vendor Usage Report
+        href: vendor-usage-report.md
+    - name: Advertiser Reporting
+      items:
+      - name: Advertiser Analytics Report
+        href: advertiser-analytics-report.md
+      - name: Advertiser Video Analytics Report
+        href: advertiser-video-analytics-report.md
+      - name: Advertiser Attributed Conversions Report
+        href: advertiser-attributed-conversions-report.md
+      - name: Buyer Deal Metrics
+        href: buyer-deal-metrics.md
+      - name: Buyer Video Error Report
+        href: buyer-video-error-report.md
+      - name: Creative Frequency and Recency Report
+        href: creative-frequency-and-recency-report.md
+      - name: Site Domain Performance
+        href: site-domain-performance.md
+    - name: Publisher Reporting
+      items:
+      - name: Publisher Analytics
+        href: publisher-analytics.md
+      - name: Publisher Video Analytics Report
+        href: publisher-video-analytics-report.md
+      - name: Seller Fill and Delivery Publisher Report
+        href: seller-fill-and-delivery-publisher-report.md
+      - name: Seller Site Domain Report
+        href: seller-site-domain-report.md
+      - name: Seller Video Error Report
+        href: seller-video-error-report.md
+  - name: Billing Reporting
+    items:
+    - name: Completed Creative Audits Report
+      href: completed-creative-audits-report.md
+    - name: Buying Billing Report
+      href: buying-billing-report.md
+    - name: Curator Billing Report
+      href: curator-billing-report.md
+    - name: Selling Billing Report
+      href: selling-billing-report.md
+  - name: Audience Analytics
+    items: 
+    - name: Overview
+      href: audience-analytics.md
+    - name: Creative Frequency and Recency Report
+      href: creative-frequency-and-recency-report.md
+    - name: Buyer Reach and Frequency Report
+      href: buyer-reach-and-frequency-report.md
+  - name: Advertiser and Publisher User Reporting
+    href: advertiser-and-publisher-user-reporting.md
+  - name: Availability of Reporting Data
+    href: availability-of-reporting-data.md
+  - name: Report Discrepancies
+    items:
+    - name: Overview
+      href: report-discrepancies.md
+    - name: What to Check if You Suspect a Discrepancy
+      href: what-to-check-if-you-suspect-a-report-discrepancy.md
+    - name: Prepare to Request a Report Discrepancy Investigation
+      href: prepare-to-file-a-report-discrepancy-support-case.md
+    - name: Requirements for Filing a Support Case for Report Discrepancies
+      href: requirements-for-filing-a-support-case-for-report-discrepancies.md
+- name: Apps
+  items:
+  - name: grapeshot
+    href: grapeshot.md
+  - name: comScore Agent
+    href: comscore-agent.md
+- name: Release Notes
+  items:
+  - name: Overview
+    href: release-notes.md
+  - name: November 16, 2023 - Monetize Insights, Total Revenue
+    href: release-notes-20231116.md
+  - name: April 11, 2023 - GA for Creative Manager
+    href: release-notes-20230411.md
+  - name: January 9, 2023 - Open Beta for Monetize Insights, Bid Rejections
+    href: release-notes-20230109.md
+  - name: December 7, 2022 - Budget Rollover for Line Items
+    href: release-notes-20221207-1.md
+  - name: October 27, 2022 - Open Beta for Native Assembly
+    href: release-notes-20221027.md
+  - name: February 17, 2022 - Enhancements to the ALI Setup Experience
+    href: release-notes-20220217.md
+  - name: January 18, 2022 - Vendor Usage Report UI
+    href: release-notes-20220118.md
+  - name: August 26, 2021 - Cross Device Targeting for Europe - API Changes
+    href: release-notes-20210826-1.md
+  - name: June 14, 2021 - Introducing a New ALI
+    href: release-notes-20210614.md
+  - name: June 9, 2021 - Open Beta for Video Inventory Recommendations
+    href: release-notes-20210609.md
+  - name: May 3, 2021 - Imps Matched and Bid Requests Will Be Sampled at a 10% Rate - Deal Metrics
+    href: release-notes-20210503.md
+  - name: April 28, 2021 - Reinforcing Privacy Controls Through a Cookie-Free Domain
+    href: release-notes-20210428.md
+  - name: April 14, 2021 - New Ad Quality Technical Attribute
+    href: release-notes-20210414.md

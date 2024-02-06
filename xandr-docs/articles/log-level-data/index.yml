@@ -1,0 +1,49 @@
+### YamlMime:Landing
+
+title: Log Level Data Feeds
+summary: Welcome to Log Level Data Feeds Developer Documentation! All the information you need to get started with various data feeds is right here. You can click one of the titles below or refer to the Table of Contents (TOC) on the left for complete documentation.
+metadata:
+  title: Log Level Data Feeds
+  description: Discover various reference docs about Log-Level Data Feeds
+  ms.topic: landing-page
+  ms.author: rupambaruah
+  ms.service: microsoft-monetize
+  ms.date: 12/01/2023
+
+landingContent:
+  - title: Let's Get Started
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Getting started
+            url: log-level-data-feeds.md
+  - title: Batch Log Level Data
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Batch Log Level Data
+            url: batch-log-level-data.md
+      - linkListType: how-to-guide
+        links:
+          - text: Install and Configure Protocol Buffer
+            url: log-level-data-protocol-buffers.md
+          - text: Set Up Cloud Export
+            url: log-level-data-cloud-export.md
+  - title: Log Level Feeds
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Auction Categories Feed
+            url: auction-categories-feed.md
+          - text: Bid Landscape Feed
+            url: bid-landscape-feed.md
+          - text: Buyer Transparency Feed
+            url: buyer-transparency-feed.md
+          - text: Curator Feed
+            url: curator-feed.md
+          - text: Key Value Auction Feed
+            url: key-value-auction-feed.md
+          - text: Standard Feed
+            url: standard-feed.md
+          - text: Universal Pixel Feed
+            url: standard-feed.md

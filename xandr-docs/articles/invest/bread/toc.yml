@@ -1,0 +1,10 @@
+- name: Microsoft Invest Product Documentation
+  tocHref: /xandr/articles/invest/
+  topicHref: /xandr/articles/invest/index
+  items:  
+  - name: Getting Started
+    tocHref: /xandr/articles/invest/
+    topicHref: /xandr/articles/invest/about-invest
+  - name: Working with Member Settings
+    tocHref: /xandr/articles/invest/
+    topicHref: /xandr/articles/invest/managing-notification-recipients

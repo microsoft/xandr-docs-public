@@ -1,0 +1,125 @@
+### YamlMime:Landing
+
+title: Yield Analytics UI Documentation
+summary: Welcome to the Yield Analytics UI Documentation! All the information you need to get started with the Yield Analytics UI is right here. You can click one of the titles below or refer to the Table of Contents (TOC) on the left for complete documentation.
+metadata:
+  title: Yield Analytics UI
+  description: Discover various modules of the Yield Analytics UI
+  ms.topic: landing-page
+  ms.author: rupambaruah
+  ms.service: microsoft-monetize
+  ms.date: 10/28/2023
+
+landingContent:
+  - title: Let's Get Started
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Yield Analytics Overview
+            url: yield-analytics-overview.md  
+      - linkListType: how-to-guide
+        links: 
+          - text: Setting Up Permissions
+            url: setting-up-permissions.md
+  - title: Products
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Anatomy of the Products Dashboard Page
+            url: anatomy-of-the-products-dashboard-page.md
+          - text: Best Practices
+            url: best-practices-product-group.md
+      - linkListType: how-to-guide
+        links:
+          - text: Create a Product
+            url: create-a-product.md
+          - text: Edit the Details of a Product
+            url: edit-the-details-of-a-product.md
+          - text: Analyze Product Overlaps
+            url: analyze-product-overlaps.md
+  - title: Reports
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: About Reporting
+            url: about-reporting.md
+          - text: Anatomy of the Reports Tab
+            url: anatomy-of-the-reports-tab.md
+          - text: Best Practices
+            url: best-practices-reporting-product-strategy.md
+      - linkListType: how-to-guide
+        links:
+          - text: Create a New Report
+            url: create-a-new-report.md
+          - text: Change How a Report is Displayed
+            url: change-how-a-report-is-displayed.md
+          - text: Schedule a Report to be Sent
+            url: schedule-a-report-to-be-sent.md
+  - title: Orders
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: About the Orders Tab
+            url: about-the-orders-tab.md
+          - text: Anatomy of the Orders Dashboard Page
+            url: anatomy-of-the-orders-dashboard-page.md
+      - linkListType: how-to-guide
+        links:
+          - text: Find Orders
+            url: find-orders.md
+          - text: Find an Order Line
+            url: find-an-order-line.md
+          - text: Evaluate the Yield of an Order
+            url: evaluate-the-yield-of-an-order.md
+  - title: Capacity
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: About Forecasts and Adjustments
+            url: about-forecasts-and-adjustments.md
+          - text: Anatomy of the Capacity Dashboard Page
+            url: anatomy-of-the-capacity-dashboard-page.md
+      - linkListType: how-to-guide
+        links:
+          - text: Check Impression Capacity for a Product Group
+            url: check-impression-capacity-for-a-product-group.md
+          - text: Add a Manual Adjustment to a Product
+            url: add-a-manual-adjustment-to-a-product.md
+          - text: Edit a Seasonal Adjustment for a Seasonal Product
+            url: edit-a-seasonal-adjustment-for-a-seasonal-product.md            
+  - title: Working with Scenarios
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: About Using Scenario Manager
+            url: about-using-scenario-manager.md
+          - text: Anatomy of the Scenario Manager Page
+            url: anatomy-of-the-scenario-manager-page.md
+      - linkListType: how-to-guide
+        links:
+          - text: View and Work With Scenario Manager
+            url: view-and-work-with-scenario-manager.md
+          - text: Run an Existing Order Through Scenario Manager
+            url: run-an-existing-order-through-scenario-manager.md
+          - text: Interpreting Scenario Manager Results
+            url: interpreting-scenario-manager-results.md
+  - title: Administration
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Add a New User
+            url: add-a-new-user.md
+          - text: Add a User Group
+            url: add-a-user-group.md
+          - text: Working with Saved Reports
+            url: working-with-saved-reports.md
+  - title: Additional Resources
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: User Preferences
+            url: user-preferences.md
+          - text: At-Risk Management Chart and Solution Paths
+            url: at-risk-management-chart-and-solution-paths.md
+          - text: Glossary
+            url: glossary.md

@@ -1,0 +1,45 @@
+---
+title: Network Users Screen
+description: The article explains how the Network Users screen details network-level users, enabling access, editing, and activation/deactivation of specific user details as necessary.
+ms.date: 10/28/2023
+---
+
+# Network users screen
+
+The Network Users screen shows you basic information about your network-level users, provides access to additional details about specific users, and lets you edit or activate/deactivate specific network-level users.
+
+## Viewing network user details
+
+Navigate to the **Member Users** screen (hover over your member name in the upper-right corner of the menu bar and click **Member Users**). You'll see the following details about each user:
+
+- **ID:** The unique user identification number of the user.
+- **Username:** The unique name by which the system knows the user.
+- **Name:** The user's actual name.
+- **Email:** The user's email address.
+- **User Role:** This is the user's role, which determines the areas and functions that each user can access. For details on available roles, see [Getting Started with Roles](getting-started-with-roles.md).
+
+## Viewing a specific network user's details
+
+To view the details of a specific Network User, select the user in the table. This reveals the **User Details** section, which provides the following additional details about the user:
+
+- **ID** The unique user ID.
+- **Name** The user's name.
+- **Status** Whether the user is active or inactive.
+- **Email** The email address associated with the user.
+- **Phone** The user's phone number.
+- **User Role** The role the user has been assigned to. The role determines the type of access the user has within the system.
+- **Permitted Advertisers/Publishers** If the user's role is Network Advertiser Manager or Network Publisher Manager, this is the list of specific advertisers or publishers that the user is permitted to access.
+
+## Editing an existing user
+
+To edit an existing user, select the user in the table and click **Full Edit**. Further details are available in [Edit a Network User](edit-a-network-user.md).
+
+## Activating/deactivating users
+
+To activate or deactivate one or more users, check the box to the left of the row of each user that you want to change and select the **More Actions** button. Choose
+**Activate** or **Deactivate** from the drop-down list. Further details are available at [Create a User](create-a-user.md).
+
+<!--## Related topics
+
+- [Create a User](create-a-user.md)
+- [Edit a Network User](edit-a-network-user.md)-->

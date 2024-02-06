@@ -1,0 +1,143 @@
+{
+  "build": {
+    "content": [
+      {
+        "src": "articles",
+        "dest": ".",
+        "files": [
+          "**/*.md",
+          "**/*.yml",
+          "**/docfx.json"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**",
+          
+          "_repo.en-us/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices.md",
+          "SECURITY.md"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.svg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**",
+          "**/docfx.json",
+          "_repo.en-us/**"
+        ]
+      }
+    ],
+    "overwrite": [],
+    "externalReference": [],
+    "globalMetadata": {
+      "layout": "Conceptual",
+      "breadcrumb_path": "/xandr/breadcrumb/toc.json",
+      "extendBreadcrumb": false,
+      "feedback_system": "None",
+      "permissioned-type": "public"
+    },
+    "fileMetadata": {
+      "ms.service": {
+        "articles/invest/*.md": "microsoft-invest",
+        "articles/ja-jp/*.md": "microsoft-invest",
+        "articles/seller-tag/*.md": "microsoft-monetize",
+        "articles/ott-ctv/*.md": "microsoft-monetize",
+        "articles/data-science-toolkit/*.md": "microsoft-monetize",
+        "articles/yield-analytics-api/*.md": "microsoft-monetize",
+        "articles/mobile-sdk/*.md": "microsoft-monetize",
+        "articles/supply-partners/*.md": "microsoft-monetize",
+        "articles/yield-analytics-ui/*.md": "microsoft-monetize",
+        "articles/curate/*.md": "microsoft-curate",
+        "articles/bidders/*.md": "bidder",
+        "articles/data-providers/*.md": "microsoft-monetize",
+        "articles/industry-reference/*.md": "microsoft-monetize",
+        "articles/customer-support/*.md": "microsoft-monetize",
+        "articles/digital-platform-api/*.md": "microsoft-monetize",
+        "articles/monetize/*.md": "microsoft-monetize",
+        "articles/log-level-data/*.md": "microsoft-monetize",
+        "articles/policies-regulations/*.md": "microsoft-monetize",
+        "articles/training-resources/*.md": "microsoft-monetize"
+        
+      },
+      "author": {
+        "articles/invest/*.md": "rupambaruah-xandr",
+        "articles/ja-jp/*.md": "rupambaruah-xandr",
+        "articles/seller-tag/*.md": "rupambaruah-xandr",
+        "articles/ott-ctv/*.md": "rupambaruah-xandr",
+        "articles/data-science-toolkit/*.md": "rupambaruah-xandr",
+        "articles/yield-analytics-api/*.md": "rupambaruah-xandr",
+        "articles/mobile-sdk/*.md": "shivannis",
+        "articles/supply-partners/*.md": "rupambaruah-xandr",
+        "articles/yield-analytics-ui/*.md": "rupambaruah-xandr",
+        "articles/curate/*.md": "rupambaruah-xandr",
+        "articles/bidders/*.md": "rupambaruah-xandr",
+        "articles/data-providers/*.md": "rupambaruah-xandr",
+        "articles/log-level-data/*.md": "rupambaruah-xandr",
+        "articles/industry-reference/*.md": "rupambaruah-xandr",
+        "articles/customer-support/*.md": "rupambaruah-xandr",
+        "articles/digital-platform-api/*.md": "rupambaruah-xandr",
+        "articles/monetize/*.md": "rupambaruah-xandr",
+        "articles/policies-regulations/*.md": "rupambaruah-xandr",
+        "articles/training-resources/*.md": "rupambaruah-xandr"
+      },
+      "ms.author": {
+        "articles/invest/*.md": "rupambaruah",
+        "articles/ja-jp/*.md": "rupambaruah",
+        "articles/seller-tag/*.md": "rupambaruah",
+        "articles/ott-ctv/*.md": "rupambaruah",
+        "articles/data-science-toolkit/*.md": "rupambaruah",
+        "articles/yield-analytics-api/*.md": "rupambaruah",
+        "articles/mobile-sdk/*.md": "shsrinivasan",
+        "articles/supply-partners/*.md": "rupambaruah",
+        "articles/yield-analytics-ui/*.md": "rupambaruah",
+        "articles/curate/*.md": "rupambaruah",
+        "articles/bidders/*.md": "rupambaruah",
+        "articles/data-providers/*.md": "rupambaruah",
+        "articles/log-level-data/*.md": "rupambaruah",
+        "articles/industry-reference/*.md": "rupambaruah",
+        "articles/customer-support/*.md": "rupambaruah",
+        "articles/digital-platform-api/*.md": "rupambaruah",
+        "articles/monetize/*.md": "rupambaruah",
+        "articles/policies-regulations/*.md": "rupambaruah",
+        "articles/training-resources/*.md": "rupambaruah"
+      },
+    "ms.topic": {
+        "articles/invest/*.md": "reference",
+        "articles/ja-jp/*.md": "reference",
+        "articles/seller-tag/*.md": "reference",
+        "articles/ott-ctv/*.md": "reference",
+        "articles/data-science-toolkit/*.md": "reference",
+        "articles/yield-analytics-api/*.md": "reference",
+        "articles/mobile-sdk/*.md": "reference",
+        "articles/supply-partners/*.md": "reference",
+        "articles/yield-analytics-ui/*.md": "reference",
+        "articles/curate/*.md": "reference",
+        "articles/bidders/*.md": "reference",
+        "articles/data-providers/*.md": "reference",
+        "articles/log-level-data/*.md": "reference",
+        "articles/industry-reference/*.md": "reference",
+        "articles/customer-support/*.md": "reference",
+        "articles/digital-platform-api/*.md": "reference",
+        "articles/monetize/*.md": "reference",
+        "articles/policies-regulations/*.md": "reference",
+        "articles/training-resources/*.md": "reference"
+      }
+    }, 
+    "template": [],
+    "dest": "xandr-docs"
+  }
+}

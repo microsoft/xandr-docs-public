@@ -1,0 +1,30 @@
+### YamlMime:Landing
+
+title: Policies and Regulations
+summary: Xandr Platform services are subject to various terms and conditions that govern the relationship between Xandr and its customers. The Xandr Service Policies, Privacy Regulations, Platform Terms of Service and Online Terms are confidential and tied to specific contracts between Xandr and its customers. For access, customers need to make a request through the Customer Support Portal or through their Account Manager.
+metadata:
+  title: Policies and Regulations
+  description: Xandr policies and general industry regulations
+  ms.topic: landing-page
+  ms.author: rupambaruah
+  ms.service: microsoft-monetize
+  ms.date: 09/12/2023
+
+landingContent:
+  - title: Disclosure and Regulation
+    linkLists:
+      - linkListType: reference
+        links:            
+          - text: Third Party Providers
+            url: third-party-providers.md
+          - text: Online Advertising Self-Regulatory Organizations
+            url: online-advertising-self-regulatory-organizations.md
+  - title: Additional Resources
+    linkLists:
+      - linkListType: reference
+        links:            
+          - text: Customer Support Portal
+            url: https://help.xandr.com/
+          - text: Customer Support Portal Guide Book
+            url: ../customer-support/index.yml
+

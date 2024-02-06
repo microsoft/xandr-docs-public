@@ -1,0 +1,158 @@
+---
+title : Bidders - Country Service
+description : Learn how the read-only Country Service allows you to see information about the countries registered in the Xandr system.
+ms.date : 11/20/2023
+
+---
+
+
+# Bidders - Country service
+
+The read-only Country Service allows you to see information about the
+countries registered in the Xandr system. You
+can use this service to retrieve the IDs for targeting in [profiles](legacy-bidder-profile-service.md).
+
+## REST API
+
+| HTTP Method | Endpoint                                | Description                                       |
+|-------------|-----------------------------------------|---------------------------------------------------|
+| GET         | [https://api.adnxs.com/country](https://api.adnxs.com/country)           | View all countries.                               |
+| GET         | [https://api.adnxs.com/country?id=ID](https://api.adnxs.com/country?id=ID)    | View a specific country.                          |
+| GET         | [https://api.adnxs.com/country?name=NAME](https://api.adnxs.com/country?name=NAME) | View a specific country.                          |
+| GET         | [https://api.adnxs.com/country?code=CODE](https://api.adnxs.com/country?code=CODE) | View a specific country.                          |
+| GET         | [https://api.adnxs.com/country/meta](https://api.adnxs.com/country/meta)      | Find out which fields you can filter and sort by. |
+
+## JSON fields
+
+| Field | Type   | Description                   |
+|-------|--------|-------------------------------|
+| `code`  | enum   | The [ISO code](https://dev.maxmind.com/geoip/release-notes/2022#geoip-legacy-databases-have-been-retired) for the country. |
+| `id`    | int    | The ID of the country.        |
+| `name`  | string | The name of the country.      |
+
+## Examples
+
+**View all countries**
+
+``` 
+$ curl -b cookies -c cookies 'https://api.adnxs.com/country'
+{
+    "response": {
+        "status": "OK",
+        "count": 250,
+        "start_element": null,
+        "num_elements": null,
+        "countries": [
+            {
+                "id": 1,
+                "name": "Anonymous Proxy",
+                "code": "A1"
+            },
+            {
+                "id": 2,
+                "name": "Satellite Provider",
+                "code": "A2"
+            },
+            {
+                "id": 3,
+                "name": "Other Country",
+                "code": "O1"
+            },
+            ...
+        ],
+        "dbg_info": {
+            ...
+        }
+    }
+}         
+```
+
+**View a specific country by ID**
+
+``` 
+$ curl -b cookies -c cookies 'https://api.adnxs.com/country?id=59'
+{
+    "response": {
+        "status": "OK",
+        "count": 1,
+        "start_element": null,
+        "num_elements": null,
+        "country": {
+            "id": 59,
+            "name": "Germany",
+            "code": "DE"
+        },
+        "dbg_info": {
+            ...
+        }
+    }
+}
+```
+
+**View a specific country by code**
+
+``` 
+$ curl -b cookies -c cookies 'https://api.adnxs.com/country?code=DE'
+{
+    "response": {
+        "status": "OK",
+        "count": 1,
+        "start_element": null,
+        "num_elements": null,
+        "countries": [
+            {
+                "id": 59,
+                "name": "Germany",
+                "code": "DE"
+            }
+        ],
+        "dbg_info": {
+            ...
+        }
+    }
+}
+```
+
+**View all countries that contain "United" in their names**
+
+``` 
+$ curl -b cookies -c cookies 'https://api.adnxs.com/country?like_name=United'
+{
+    "response": {
+        "status": "OK",
+        "count": 5,
+        "start_element": null,
+        "num_elements": null,
+        "countries": [
+            {
+                "id": 5,
+                "name": "United Arab Emirates",
+                "code": "AE"
+            },
+            {
+                "id": 80,
+                "name": "United Kingdom",
+                "code": "GB"
+            },
+            {
+                "id": 229,
+                "name": "Tanzania, United Republic of",
+                "code": "TZ"
+            },
+            {
+                "id": 232,
+                "name": "United States Minor Outlying Islands",
+                "code": "UM"
+            },
+            {
+                "id": 233,
+                "name": "United States",
+                "code": "US"
+            }
+        ],
+        "dbg_info": {
+            ...
+        }
+    }
+}     
+```

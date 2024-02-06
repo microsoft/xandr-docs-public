@@ -1,0 +1,110 @@
+- name: Digital Platform API Internal Services
+  href: index.yml
+- name: Access Control Policy APIs
+  items:
+  - name: Access Platform User Role Service
+    href: ../access-platform-user-role-service.md
+  - name: Access Policy Group Service
+    href: ../access-policy-group-service.md
+  - name: Access Policy Member Config Service
+    href: ../access-policy-member-config-service.md
+  - name: Access Policy Object Team Service
+    href: ../access-policy-object-team-service.md
+  - name: Access Policy Resource Service
+    href: ../access-policy-resource-service.md
+  - name: Access Policy User Service
+    href: ../access-policy-user-service.md
+  - name: Access Resource Dependency Service
+    href: ../access-resource-dependency-service.md
+- name: Access Member Config Service
+  href: ../access-member-config-service.md
+- name: Adjustment Service
+  href: ../adjustment-service.md
+- name: Admin Custom Report
+  href: ../admin-custom-report.md
+- name: Admin Log-Level Report
+  href: ../admin-log-level-report.md
+- name: App Asset Service
+  href: ../app-asset-service.md
+- name: App Contract Service
+  href: ../app-contract-service.md
+- name: App Email Service
+  href: ../app-email-service.md
+- name: ASI Member Settings Service
+  href: ../asi-member-settings-service.md
+- name: Batch Segment Config Service
+  href: ../batch-segment-config-service.md
+- name: Batch Segment Service - Sample PHP Script
+  href: ../batch-segment-service-sample-php-script.md
+- name: Bulk Campaign Profile Service
+  href: ../bulk-campaign-profile-service.md
+- name: Buy-Side Forecasting Service
+  href: ../buy-side-forecasting-service.md
+- name: Campaign UI Service
+  href: ../campaign-ui-service.md
+- name: Carrier Netblock Service
+  href: ../carrier-netblock-service.md
+- name: Config Platform Service
+  href: ../config-platform-service.md
+- name: Creative Custom Request Partner Service
+  href: ../creative-custom-request-partner-service.md
+- name: Creative Custom Request Template Service
+  href: ../creative-custom-request-template-service.md
+- name: Creative Custom Request Template Parameters
+  href: ../creative-custom-request-template-parameters.md
+- name: Creative Custom Request Template Type Service
+  href: ../creative-custom-request-template-type-service.md
+- name: Content Search Service
+  href: ../content-search-service.md
+- name: Developer Data Service
+  href: ../developer-data-service.md
+- name: Email Template Service
+  href: ../email-template-service.md
+- name: Entitlement Type Service
+  href: ../entitlement-type-service.md
+- name: Line Item Reporting Service
+  href: ../line-item-reporting-service.md
+- name: Member Contract Service
+  href: ../member-contract-service.md
+- name: Member Currency Service
+  href: ../member-currency-service.md
+- name: Member DC Setting Service
+  href: ../member-dc-setting-service.md
+- name: Member Multi Click Service
+  href: ../member-multi-click-service.md
+- name: Member Relation Service
+  href: ../member-relation-service.md
+- name: Report Member Access Service
+  href: ../report-member-access-service.md
+- name: Report Service - Internal
+  items:
+  - name: Advertiser Frequency Report
+    href: ../advertiser-frequency-report.md
+  - name: Buyer Untargeted Segment Performance Report
+    href: ../buyer-untargeted-segment-performance-report.md
+  - name: Network Creative Search
+    href: ../network-creative-search.md
+- name: Seller Member Group Service
+  href: ../seller-member-group-service.md
+- name: Sld Use Subdomain Service
+  href: ../sld-use-subdomain-service.md
+- name: Sync Report Service
+  items:
+  - name: Overview
+    href: ../sync-report-service.md
+  - name: Segment Overlap Report
+    href: ../segment-overlap-report.md
+  - name: Seller Report
+    href: ../seller-report.md
+- name: Tango Email Service
+  href: ../tango-email-service.md
+- name: Targeted Segment Analytics Report
+  href: ../targeted-segment-analytics-report.md
+- name: Terms Service
+  href: ../terms-service.md
+- name: User DRT Service
+  href: ../user-drt-service.md
+- name: User UI Service
+  href: ../user-ui-service.md
+- name: YM Floor Filter Service
+  href: ../ym-floor-filter-service.md

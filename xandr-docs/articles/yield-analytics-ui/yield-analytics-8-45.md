@@ -1,0 +1,13 @@
+---
+title: Yield Analytics 8.45
+description: This page covers fixes/improvements/additions and integrations affected in Yield Analytics 8.45.
+ms.date: 10/28/2023
+ms.custom: yield-analytics-ui
+---
+
+# Yield Analytics 8.45
+
+| Fixes, Improvements and Additions | Integrations Affected |
+|--|--|
+| Email addresses used within the Yield Analytics application have been updated to use new [Xandr addresses](https://about.ads.microsoft.com/en-us/solutions/xandr/xandr-premium-programmatic-advertising). This will include automated emails of reports and password resets. | All |
+| Bug Fix: Channel Revenue for the Monetize (AppNexus) SSP integration has been corrected to support new data format. | SSP: Monetize |

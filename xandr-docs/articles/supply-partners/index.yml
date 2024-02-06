@@ -1,0 +1,75 @@
+### YamlMime:Landing
+
+title: Supply Partners Reference Documentation
+summary: Welcome to the Supply Partners Reference Documentation! All the information you need to get started as a Supply Partner is right here. You can click one of the titles below or refer to the Table of Contents (TOC) on the left for complete documentation.
+metadata:
+  title: Supply Partners Reference Documentation
+  description: Discover various resources for Supply Partners
+  ms.topic: landing-page
+  ms.author: rupambaruah
+  ms.service: microsoft-monetize
+  ms.date: 10/25/2023
+
+landingContent:
+  - title: Let's Get Started
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Integration with Supply Partners
+            url: how-integration-works.md
+      - linkListType: how-to-guide
+        links:
+          - text: Steps of Integration Process
+            url: integration-process.md
+  - title: OpenRTB Specs
+    linkLists:
+      - linkListType: reference
+        links:            
+          - text: Incoming Bid Request from SSPs
+            url: incoming-bid-request-from-ssps.md
+          - text: Outgoing Bid Response to SSPs
+            url: outgoing-bid-response-to-ssps.md
+          - text: IAB Content Taxonomy Support
+            url: iab-content-taxonomy-support.md
+          - text: Client Hints for SSP Clients
+            url: client-hints-for-ssp-clients.md
+          - text: RTB Eligibility Requirements
+            url: rtb-eligibility-requirements.md
+  
+  - title: Best Practices
+    linkLists:
+      - linkListType: concept
+        links:            
+          - text: Sell-Side Object Hierarchy
+            url: understanding-the-sell-side-object-hierarchy.md
+          
+          
+      - linkListType: how-to-guide
+        links:
+          - text: Synchronize Your Inventory Structure using UI
+            url: use-the-ui-to-synchronize-your-inventory-structure.md
+          - text: Synchronize Your Inventory Structure using API
+            url: use-the-api-to-synchronize-your-inventory-structure.md
+          
+  - title: Additional Resources
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: External Seller Troubleshooting
+            url: external-seller-troubleshooting.md
+          - text: Xandr Supply Partner Support
+            url: xandr-supply-partner-support.md
+      - linkListType: how-to-guide
+        links:
+          - text: Selling Deals on Xandr
+            url: selling-deals-on-xandr.md
+          - text: User ID Mapping
+            url: user-id-mapping.md
+  - title: Supply Integration (Legacy Content)
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Bid Request
+            url: bid-request.md
+          - text: Bid Response
+            url: bid-response.md

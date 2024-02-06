@@ -1,0 +1,35 @@
+### YamlMime:Landing
+
+title: Yield Analytics API Reference Documentation
+summary: Welcome to Yield Analytics API Reference Documentation! All the information you need to get started with the Yield Analytics API is right here. You can click one of the titles below or refer to the Table of Contents (TOC) on the left for complete documentation.
+metadata:
+  title: Yield Analytics API Reference Documentation
+  description: Discover various reference docs about Yield Analytics API
+  ms.topic: landing-page
+  ms.author: rupambaruah
+  ms.service: microsoft-monetize
+  ms.date: 10/24/2023
+
+landingContent:
+  - title: Let's Get Started
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview
+            url: yield-analytics-api.md  
+      - linkListType: tutorial
+        links:
+          - text: Using Postman with Yield Analytics API
+            url: using-postman-with-the-yield-analytics-api.md 
+  - title: API Reference Documentation
+    linkLists:
+      - linkListType: reference
+        links:            
+          - text: Attribute Service
+            url: attribute-service.md
+          - text: Data Service
+            url: data-service.md
+          - text: Insertion Order Service
+            url: insertion-order-service.md
+          - text: Query Engine Service
+            url: query-engine-service.md

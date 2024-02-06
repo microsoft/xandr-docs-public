@@ -1,0 +1,321 @@
+- name: Bidder Reference Documentation
+  href: index.yml
+- name: Getting Started
+  items:
+  - name: Auction Overview
+    href: the-big-picture.md
+  - name: Bidding Use Case with Fees
+    href: bidding-use-case-with-fees.md
+  - name: Price Reduction Mechanics
+    href: price-reduction-mechanics.md
+  
+ # - name: Xandr's Digital Platform UI
+   # href: xandr-s-digital-platform-ui.md
+- name: Bidder Platform UI
+  items:
+  - name: Overview
+    href: bidder-platform-user-interface.md
+  - name: Profiles
+    items:
+    - name: Bidder Profile
+      items:
+      - name: Creating a New Bidder Profile
+        href: creating-a-new-bidder-profile.md
+      - name: Bidder Profile Targeting Options
+        items:
+        - name: Countries
+          href: countries.md
+        - name: Domain Lists
+          href: domain-lists.md
+        - name: Ad Types
+          href: ad-types.md
+        - name: Supply Types
+          href: supply-types.md
+        - name: Exchanges and Members
+          href: exchanges-and-members.md
+        - name: Unknown Users
+          href: unknown-users.md
+        - name: Sensitive Attributes
+          href: sensitive-attributes.md
+      - name: Editing a Bidder Profile
+        href: editing-a-bidder-profile.md
+    - name: Additional Functions
+      href: additional-functions.md
+  - name: Creatives
+    items:
+    - name: Overview
+      href: creatives-screen.md
+    - name: Filters
+      href: filters.md
+    - name: Columns
+      href: columns.md
+    - name: Actions
+      href: actions.md
+  - name: Reporting
+    items:
+    - name: Overview
+      href: reporting-screen.md
+    - name: Platform Buyer Report
+      href: platform-buyer-report.md
+    - name: Bidder Billing Report
+      href: bidder-billing-report.md
+    - name: Bidder Bid Error Report
+      href: bidder-bid-error-report.md
+    - name: Completed Creatives Audits Report
+      href: completed-creatives-audits-report.md
+    - name: Your Reports
+      href: your-reports.md
+    - name: Impression Counting
+      href: impression-counting.md
+  - name: Metrics
+    href: metrics-screen.md
+  - name: Deal
+    href: deal-screen.md
+  - name: Seat
+    href: seat-screen.md
+- name: Bidder Platform Operations
+  items:
+  - name: Inventory Quality and Auditing
+    items: 
+    - name: Overview
+      href: inventory-quality.md
+    - name: Inventory Quality Control Implementation
+      href: technical-implementation-of-inventory-quality-control.md
+  - name: Creative Standards and Auditing
+    items:
+    - name: Overview
+      href: creative-standards-and-auditing.md
+    - name: Creative Audit Feedback
+      href: creative-audit-feedback.md
+    - name: AdX Guidelines and Restrictions
+      href: adx-feedback-and-faq.md
+    - name: Microsoft Guidelines and Restrictions
+      href: microsoft-feedback-and-faq.md
+    - name: International Creatives
+      href: international-creatives.md
+    - name: Sherlock - Creative Quality Control
+      href: sherlock-creative-quality-control.md
+    - name: Creative Approval - Implementation
+      href: creative-approval---implementation.md
+    - name: Native Creative Smart Image Adjustments
+      href: smart-image-adjustments-for-native-creatives---bidders.md
+- name: Microsoft Monetize Supply for External Demand Partners
+  items:
+  - name: Overview
+    href: xandr-monetize-supply-for-external-demand-partners.md
+  - name: DV360 Buying Guide
+    href: dv360-buying-guide.md
+  - name: DV360 Buyer UI Deal Acceptance Workflows
+    href: dv360-buyer-ui-deal-acceptance-workflows.md
+  - name: Deal Sync with DV360 - Publisher Guide 
+    href: deal-sync-with-dv360---publisher-guide.md
+  - name: Trade Desk Buying Guide
+    href: trade-desk-buying-guide.md
+  - name: Deal Sync with Trade Desk - Publisher Guide
+    href: deal-sync-with-trade-desk---publisher-guide.md
+- name: Bidder Integration
+  items:
+  - name: Overview
+    href: integrate-a-bidder.md
+  - name: Creative Setup & Audit
+    items:
+    - name: Quick Start Creative Buying Guide
+      href: quick-start-creative-buying-guide.md
+    - name: Add a Creative
+      href: add-a-creative.md
+    - name: Click Tracking and Cache-Busting Examples for Top Ad Servers
+      href: click-tracking-and-cache-busting-examples.md
+    - name: Selecting the Correct Template for Your Creative
+      href: selecting-the-correct-template-for-your-creative.md
+    - name: VAST Check
+      href: vast-check.md
+    - name: Native Ad Markup Bidding
+      href: native-ad-markup-bidding.md
+    - name: Banner Ad Markup Bidding
+      href: banner-ad-markup-bidding.md
+  - name: Auction Configuration & Feedback
+    items:
+    - name: Simulate Traffic on a TinyTag
+      href: simulate-traffic-on-a-tinytag.md
+    - name: Process the Bid Request
+      href: process-the-bid-request.md
+    - name: Submit a Bid Response
+      href: submit-a-bid-response.md
+    - name: Receive a Notify Request
+      href: receive-a-notify-request.md
+    - name: Deals for Bidder
+      items:
+      - name: Overview
+        href: deals-for-bidders.md
+      - name: Deal Auction Mechanics
+        href: deal-auction-mechanics.md
+      - name: Programmatic Guaranteed Deals for Bidder
+        href: programmatic-guaranteed-deals-for-bidders.md
+    - name: Mobile for Bidder
+      href: mobile-for-bidders.md
+  - name: Expandables and Rich Media
+    href: expandables-and-rich-media.md
+- name: Microsoft Inventory Buying Guide
+  items:  
+  - name: Buying Microsoft Casual Games (Windows O&O Apps)
+    href: buying-microsoft-casual-games--windows-o-o-apps.md
+  - name: Buying Microsoft Deals
+    href: buying-microsoft-deals.md
+  - name: Buying Microsoft Outlook.com Inventory
+    href: buying-microsoft-outlook-com-inventory.md
+  - name: Buying MSN Inventory
+    href: buying-msn-inventory.md
+  - name: Microsoft Windows App Inventory for Bidder
+    href: microsoft-windows-app-inventory-for-bidders.md
+- name: Bidding Protocol
+  items: 
+  - name: Overview
+    href: bidding-protocol.md
+  - name: Outgoing Bid Request to Bidder
+    href: outgoing-bid-request-to-bidders.md
+  - name: Incoming Bid Response from Bidder
+    href: incoming-bid-response-from-bidders.md
+  - name: Bid Error Codes
+    href: bid-error-codes.md
+  - name: Loss Reason Codes
+    href: loss-reason-codes.md
+  - name: Ready Requests
+    href: ready-request.md
+  - name: Notify Request
+    href: notify-request.md
+  - name: Click Request
+    href: click-request.md
+  - name: Audit Notify Request
+    href: audit-notify-request.md
+  - name: IAB Content Taxonomy Support
+    href: iab-content-taxonomy-support.md
+- name: AppNexus Bidding Protocol
+  items:
+  - name: Overview
+    href: appnexus-bidding-protocol.md
+  - name: Bid Request
+    href: bid-request.md
+  - name: Bid Response
+    href: bid-response.md
+  - name: Submitting a No-Bid Response
+    href: submitting-a-no-bid-response.md
+  - name: Click Response
+    href: click-response.md
+  - name: Responding to a MegaTag Bid Request
+    href: responding-to-a-megatag-bid-request.md
+  - name: MegaTag Technical Overview
+    href: megatag-technical-overview.md
+- name: User ID Mapping
+  items:
+  - name: Overview
+    href: user-id-mapping.md
+  - name: Synchronize Your User IDs
+    href: synchronize-your-user-ids.md
+- name: Batch Server-Side Segmentation
+  items:
+  - name: Overview
+    href: batch-server-side-segmentation.md
+  - name: Batch Segment Service API
+    href: batch-segment-service.md
+  - name: Initial BSS Account Setup
+    href: initial-bss-account-setup.md
+  - name: Uploading Segment Data Using BSS
+    items: 
+    - name: Overview
+      href: uploading-segment-data-using-bss.md
+    - name: BSS Avro File Format
+      href: bss-avro-file-format.md
+    - name: Legacy BSS File Format
+      href: legacy-bss-file-format.md
+    - name: Batch Segment Service Best Practices 
+      href: batch-segment-service-best-practices.md
+    - name: Troubleshooting BSS Uploads
+      href: troubleshooting-bss-uploads.md
+    - name: Passive Segment Upload Using AWS S3
+      href: passive-segment-upload-using-aws-s3.md
+    - name: Verifying Segment Uploads
+      href: verifying-segment-uploads.md
+    - name: Troubleshooting Invalid Users
+      href: troubleshooting-invalid-users.md
+- name: Guaranteed Outcomes
+  items:
+  - name: Overview
+    href: guaranteed-outcomes.md
+  - name: Guaranteed Outcomes Bidder Integration Guide
+    href: guaranteed-outcomes-bidder-integration-guide.md
+  - name: Monthly Prediction Variability Data
+    href: monthly-prediction-variability-data.md
+- name: Impression Bus API
+  href: ../impression-bus/TOC.yml
+- name: FAQs
+  items: 
+  - name: Ad Quality Profile
+    href: ad-quality-profile---faq.md
+  - name: Bidder Instance
+    href: bidder-instance---faq.md
+  - name: Bidder Profile
+    href: bidder-profile---faq.md
+  - name: Bidder Transparent Auction
+    href: bidder-transparent-auction-faq.md
+  - name: Bid Request
+    href: bid-request---faq.md
+  - name: Bid Response
+    href: bid-response---faq.md
+  - name: Common Discrepancy Causes
+    href: common-discrepancy-causes---faq.md
+  - name: Creative
+    href: creative---faq.md
+  - name: Creative Troubleshooting
+    href: creative-troubleshooting-faq.md
+  - name: Datacenter
+    href: datacenter---faq.md
+  - name: Deal Sync with DV360
+    href: deal-sync-with-dv360---faq.md
+  - name: Deal Sync with Trade Desk
+    href: deal-sync-with-trade-desk---faq.md
+  - name: Debugging
+    href: debugging---faq.md
+  - name: Enhanced Bidder Profile
+    href: frequently-asked-questions-faq-for-enhanced-bidder-profiles.md
+  - name: Geo Variable Information
+    href: geo-variable-information.md
+  - name: Getting Started
+    href: getting-started---faq.md
+  - name: Identify Impression and Spending Rules
+    href: identify-impression-and-spending-rules---faq.md
+  - name: Inventory
+    href: inventory---faq.md
+  - name: Metrics
+    href: metrics---faq.md
+  - name: Notify Request
+    href: notify-request---faq.md
+  - name: Object Limits
+    href: object-limits---faq.md
+  - name: Optimization
+    href: optimization---faq.md
+  - name: Optimized Bid Stream
+    href: optimized-bid-stream-faq.md
+  - name: Other
+    href: other---faq.md
+  - name: QPS
+    href: qps-faq.md
+  - name: Rich Media
+    href: rich-media---faq.md
+  - name: Supply Type Detection
+    href: supply-type-detection---faq.md
+  - name: User Data
+    href: user-data---faq.md
+  - name: Video Creative
+    href: video-creative-faq.md
+  - name: Viewability
+    href: viewability-faq.md
+#- name: Communications
+ # href: communications.md
+- name: Research Discrepancies
+  href: research-discrepancies---faq.md
+- name: Rich Media Creatives on Mobile
+  href: rich-media-creatives-on-mobile.md
+- name: Supported Currencies
+  href: supported-currencies.md
+- name: Best Practices
+  href: bidder-best-practices.md

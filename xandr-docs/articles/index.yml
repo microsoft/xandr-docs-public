@@ -1,0 +1,140 @@
+### YamlMime:Hub
+
+title: Xandr Platform Documentation
+summary: Discover the documentation for the products and services of Xandr platform so that you may realise the full potential of executing programmatic advertising campaigns across screens and tapping into engaged audiences.
+# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-bi | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
+# brand: power-bi
+brand: m365
+
+metadata:
+  title: Xandr Platform Documentation
+  description: Discover the documentation of Xandr’s platform offerings - products and services that enable you to unlock the full value of running programmatic advertising campaigns across screens and tapping into engaged audiences.
+  ms.service: microsoft-invest
+  ms.topic: hub-page
+  author: rupambaruah-xandr
+  ms.author: rupambaruah
+  ms.date: 12/12/2023
+  featureFlags:
+  - clicktale
+highlightedContent:
+  items:
+    # Card
+    - title: Ad Tech and Online Advertising
+      itemType: quickstart
+      url: industry-reference/index.yml
+    # Card
+    - title: Policies and Regulations
+      itemType: reference
+      url: policies-regulations/index.yml
+    # Card
+    - title: Microsoft Advertising's Learning Lab
+      itemType: training
+      url: training-resources/training-microsoft-advertising-learning-lab.md
+    # Card
+    - title: Customer Support Portal Guide
+      itemType: tutorial
+      url: customer-support/index.yml
+additionalContent:
+  sections:
+    - title: Browse Product Offerings
+      items:
+      # Card
+      - title: Microsoft Invest
+        summary: (Powered by Xandr)
+        links:
+          - url: invest/index.yml
+            text: Product Documentation
+          - url: invest/release-notes.md
+            text: Release Notes
+      # Card
+      - title: Microsoft Monetize
+        summary: (Powered by Xandr)
+        links:
+          - url: monetize/index.yml
+            text: Product Documentation
+          - url: monetize/release-notes.md
+            text: Release Notes
+      # Card
+      - title: Microsoft Curate
+        summary: (Powered by Xandr)
+        links:
+          - url: curate/index.yml
+            text: Product Documentation
+          - url: curate/release-notes-curate.md
+            text: Release Notes
+    - title: API Reference Documentation
+      items:
+        # Card
+        - title: Digital Platform API
+          links:
+            - text: Overview
+              url: digital-platform-api/index.yml
+            - text: References
+              url: digital-platform-api/reference.md
+        # Card
+        - title: Impression Bus API
+          links:
+            - text: Overview
+              url: bidders/impression-bus-api.md
+            - text: References
+              url: impression-bus/index.yml
+            #- text: Release Notes
+             # url: bidders/xandr-bidder-release-notes.md
+        # Card
+        - title: Yield Analytics API
+          links:
+            - text: Overview
+              url: yield-analytics-api/index.yml
+            - text: References
+              url: yield-analytics-api/attribute-service.md
+        # Card
+        #- title: Release Notes
+          #links:
+           # - text: Digital Platform API Release Notes (Work in Progress)
+             # url: getting-started/index.yml
+            #- text: Impression Bus API Release Notes
+             # url: bidders/xandr-bidder-release-notes.md
+
+    - title: Additional Resources and Developer Documentation
+      items:
+        # Card
+        - title: Bidder
+          summary: Reference documentation of Bidder - the decisioning brain that calculates real-time auction bids
+          url: bidders/index.yml
+        # Card
+        - title: Seller Tag
+          summary: Reference documentation of Seller Tag - a lightweight JavaScript SDK
+          url: seller-tag/index.yml
+        # Card
+        - title: Mobile SDK
+          summary: Developer guide to facilitate a fast, convenient way to monetize mobile apps
+          url: mobile-sdk/index.yml
+        # Card
+        - title: Log Level Data Feeds
+          summary: Reference documentation for log level data feeds for in-depth analysis and reporting that requires event-level granularity
+          url: log-level-data/index.yml
+        # Card
+        - title: Supply Partners
+          summary: Integration documentation for Supply Partners to increase publishers access to major sources of demand
+          url: supply-partners/index.yml
+        # Card
+        - title: Data Providers
+          summary: Reference documentation on the processes and options for integrating data, sharing data with a buyer, and maintaining data on the platform
+          url: data-providers/index.yml
+        # Card
+        - title: Yield Analytics UI
+          summary: Reference documentation on the functionalities of the Yield Analytics that you can perform in UI
+          url: yield-analytics-ui/index.yml
+        # Card
+        - title: Data Science Toolkit
+          summary: Reference documentation to enhance bidding strategy, improve measurement and testing capabilities using Data Science
+          url: data-science-toolkit/index.yml
+        # Card
+        - title: OTT and CTV Video Integrations
+          summary: Integration guide for various OTT hardware platforms, including CTV
+          url: ott-ctv/index.yml
+        # Card
+        - title: Digital Platform API (Internal)
+          summary: These services are accessible to Microsoft employees only
+          url: digital-platform-api/digital-platform-api-internal-services/index.yml
+    

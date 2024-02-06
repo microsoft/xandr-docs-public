@@ -1,0 +1,145 @@
+### YamlMime:Landing
+
+title: Microsoft Monetize Product Documentation
+summary: Welcome to Microsoft Microsoft Monetize Product Documentation! All the information you need to work in Monetize is right here. You can click one of the titles below or refer to the Table of Contents (TOC) on the left for complete documentation.
+metadata:
+  title: Microsoft Monetize Product Documentation
+  description: Discover various modules of Microsoft Monetize
+  ms.topic: landing-page
+  ms.author: rupambaruah
+  ms.service: app-service
+  ms.date: 1/19/2024
+
+landingContent:
+  - title: Let's Get Started
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: About Monetize
+            url: about-monetize.md    
+          - text: Object Hierarchy
+            url: object-hierarchy.md
+      - linkListType: reference
+        links:
+          - text: Monetize API
+            url: digital-platform-ui-api-info.md
+  - title: Network Guide
+    linkLists:
+      - linkListType: concept
+        links:            
+          - text: Single Credential Login and MFA
+            url: single-credential-login-and-multi-factor-authentication-mfa.md
+          - text: Microsoft Identity Platform Login
+            url: microsoft-identity-platform-login.md
+      - linkListType: how-to-guide
+        links:
+          - text: Working with Roles
+            url: getting-started-with-roles.md
+  - title: Buying Guide
+    linkLists:
+      - linkListType: concept
+        links:            
+          - text: Ad Buying
+            url: ad-buying-with-xandr.md
+      - linkListType: how-to-guide
+        links:
+          - text: Basic Buy Side Setup Procedures
+            url: basic-buy-side-setup-procedures.md
+          - text: Working with Advertisers
+            url: working-with-advertisers.md
+  - title: Selling Guide
+    linkLists:
+      - linkListType: concept
+        links:            
+          - text: Explore the Monetization Dashboard
+            url: explore-the-monetization-dashboard.md
+      - linkListType: how-to-guide
+        links:
+          - text: Working with Publishers
+            url: working-with-publishers.md
+          - text: Create a Guaranteed Delivery Line Item (GDALI)
+            url: create-a-guaranteed-delivery-line-item-gdali.md
+  - title: ALI Optimization
+    linkLists:
+      - linkListType: concept
+        links:            
+          - text: What is ALI Optimization?
+            url: optimization-guide-ali.md
+      - linkListType: how-to-guide
+        links:
+          - text: Adaptive Pacing
+            url: adaptive-pacing.md
+          - text: Improve Click-Through Rate (CTR)
+            url: ways-to-improve-ctr-performance.md
+  - title: Optimization
+    linkLists:
+      - linkListType: concept
+        links:            
+          - text: Understanding Optimization
+            url: understanding-optimization.md
+      - linkListType: reference
+        links:
+          - text: Optimization Levers
+            url: optimization-levers.md
+          - text: Cadence Modifier and the Chaos Factor
+            url: cadence-modifier-and-the-chaos-factor.md
+  - title: Creatives
+    linkLists:
+      - linkListType: concept
+        links:            
+          - text: Working with Creatives
+            url: working-with-creatives.md
+      - linkListType: how-to-guide
+        links:
+          - text: Troubleshooting Creatives
+            url: troubleshooting-creatives.md
+          - text: Auditing Creatives
+            url: auditing-creatives.md
+  - title: Guaranteed Outcomes
+    linkLists:
+      - linkListType: concept
+        links:            
+          - text: What are Guaranteed Outcomes?
+            url: guaranteed-outcomes.md
+      - linkListType: how-to-guide
+        links:
+          - text: How Guaranteed Outcomes Work
+            url: how-guaranteed-outcomes-work.md
+          - text: Auction Mechanics
+            url: guaranteed-outcomes-auction-mechanics.md
+  - title: Viewability
+    linkLists:
+      - linkListType: concept
+        links:            
+          - text: Ad Viewability
+            url: ad-viewability-description-of-methodology-dom.md
+      - linkListType: how-to-guide
+        links:
+          - text: Improve Low Viewability Performance
+            url: improve-low-viewability-performance.md
+          - text: Measure Video Viewability
+            url: video-viewability.md
+  - title: Monitoring
+    linkLists:
+      - linkListType: concept
+        links:            
+          - text: Monitor Line Items
+            url: monitor-line-items.md
+      - linkListType: how-to-guide
+        links:
+          - text: View Line Item Details
+            url: view-line-item-details-smw.md
+          - text: Troubleshoot Line Items
+            url: troubleshoot-line-items.md
+  - title: Reporting
+    linkLists:
+      - linkListType: concept
+        links:            
+          - text: Reporting Concepts
+            url: dimensions-metrics-filtering-and-grouping.md
+      - linkListType: how-to-guide
+        links:
+          - text: Report Throttling 
+            url: report-throttling.md
+          - text: Impression Counting
+            url: impression-counting.md

@@ -1,0 +1,59 @@
+- name: Microsoft Advertising
+  tocHref: /advertising/
+  topicHref: /advertising/index
+  items:
+   - name: Xandr Platform
+     #tocHref: /xandr-docs/
+     topicHref: /xandr/articles/index
+     items:
+       - name: Bidder
+         tocHref: /xandr/articles/bidders/
+         topicHref: /xandr/articles/bidders/index
+       - name: Microsoft Monetize
+         tocHref: /xandr/articles/monetize/
+         topicHref: /xandr/articles/monetize/index
+       - name: Digital Platform API
+         tocHref: /xandr/articles/digital-platform-api/
+         topicHref: /xandr/articles/digital-platform-api/index
+       - name: Microsoft Invest
+         tocHref: /xandr/articles/invest/
+         topicHref: /xandr/articles/invest/index
+       - name: Microsoft Curate
+         tocHref: /xandr/articles/curate/
+         topicHref: /xandr/articles/curate/index
+       - name: Customer Support
+         tocHref: /xandr/articles/customer-support/
+         topicHref: /xandr/articles/customer-support/index
+       - name: Data Providers
+         tocHref: /xandr/articles/data-providers/
+         topicHref: /xandr/articles/data-providers/index
+       - name: Data Science Toolkit
+         tocHref: /xandr/articles/data-science-toolkit/
+         topicHref: /xandr/articles/data-science-toolkit/index
+       - name: Impression Bus API
+         tocHref: /xandr/articles/impression-bus/
+         topicHref: /xandr/articles/impression-bus/index
+       - name: Industry Reference
+         tocHref: /xandr/articles/industry-reference/
+         topicHref: /xandr/articles/industry-reference/index
+       - name: Log Level Data
+         tocHref: /xandr/articles/log-level-data/
+         topicHref: /xandr/articles/log-level-data/index
+       - name: Mobile SDK
+         tocHref: /xandr/articles/mobile-sdk/
+         topicHref: /xandr/articles/mobile-sdk/index
+       - name: OTT and CTV
+         tocHref: /xandr/articles/ott-ctv/
+         topicHref: /xandr/articles/ott-ctv/index
+       - name: Seller Tag
+         tocHref: /xandr/articles/seller-tag/
+         topicHref: /xandr/articles/seller-tag/index
+       - name: Supply Partners
+         tocHref: /xandr/articles/supply-partners/
+         topicHref: /xandr/articles/supply-partners/index
+       - name: Yield Analytics API
+         tocHref: /xandr/articles/yield-analytics-api/
+         topicHref: /xandr/articles/yield-analytics-api/index
+       - name: Yield Analytics UI
+         tocHref: /xandr/articles/yield-analytics-ui/
+         topicHref: /xandr/articles/yield-analytics-ui/index

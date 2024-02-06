@@ -1,0 +1,19 @@
+---
+title: Microsoft Invest - Universal Pixel Reporting
+description: Learn about universal pixel activity from activity reporting available, along with a number of reports and feeds in Universal Pixels page.   
+ms.date: 10/28/2023
+---
+
+
+# Microsoft Invest - Universal pixel reporting
+
+In addition to the activity reporting available from the
+**Universal Pixels** page, a number of
+reports and feeds contain information about universal pixel activity.
+
+- [Advertiser Analytics Report](advertiser-analytics-report.md)
+- [Advertiser Attributed Conversions Report](advertiser-attributed-conversions-report.md)
+- [Buyer Segment Performance Report](buyer-segment-performance-report.md)
+- [Member Attributed Conversions Report](member-attributed-conversions-report.md)
+- [Member Site Domain Performance Report](network-site-domain-performance-report.md)
+- [Log-Level Data Feeds](../log-level-data/log-level-data-feeds.md)

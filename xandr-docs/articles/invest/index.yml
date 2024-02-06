@@ -1,0 +1,119 @@
+### YamlMime:Landing
+
+title: Microsoft Invest Product Documentation
+summary: Welcome to Microsoft Invest (powered by Xandr) Product Documentation! All the information you need to work in Invest is right here. You can click one of the titles below or refer to the Table of Contents (TOC) on the left for complete documentation.
+metadata:
+  title: Microsoft Invest Product Documentation
+  description: Discover various modules of Microsoft Invest
+  ms.topic: landing-page
+  ms.author: rupambaruah
+  ms.service: microsoft-invest
+  ms.date: 10/10/2023
+
+landingContent:
+  - title: Lets Get Started
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: About Microsoft Invest
+            url: about-invest.md     
+          - text: Object Hierarchy
+            url: object-hierarchy.md
+      - linkListType: reference
+        links:
+          - text: Microsoft Invest API
+            url: digital-platform-ui-api-info.md
+  - title: Member Settings
+    linkLists:
+      - linkListType: concept
+        links:           
+          - text: Microsoft Identity Platform Login
+            url: microsoft-identity-platform-login.md
+      - linkListType: how-to-guide
+        links:
+          - text: Working with Roles
+            url: getting-started-with-roles.md
+  - title: Buying Guide
+    linkLists:
+      - linkListType: concept
+        links:            
+          - text: Ad Buying
+            url: ad-buying-with-xandr.md
+      - linkListType: how-to-guide
+        links:
+          - text: Basic Buy Side Setup Procedures
+            url: basic-buy-side-setup-procedures.md
+          - text: Working with Advertisers
+            url: working-with-advertisers.md
+  - title: ALI Optimization
+    linkLists:
+      - linkListType: concept
+        links:            
+          - text: What is ALI Optimization?
+            url: optimization-guide-ali.md
+      - linkListType: how-to-guide
+        links:
+          - text: Adaptive Pacing
+            url: adaptive-pacing.md
+          - text: Improve Click-Through Rate (CTR)
+            url: ways-to-improve-ctr-performance.md
+  - title: Creatives
+    linkLists:
+      - linkListType: concept
+        links:            
+          - text: Working with Creatives
+            url: working-with-creatives.md
+      - linkListType: how-to-guide
+        links:
+          - text: Troubleshooting Creatives
+            url: troubleshooting-creatives.md
+          - text: Auditing Creatives
+            url: auditing-creatives.md
+  - title: Guaranteed Outcomes
+    linkLists:
+      - linkListType: concept
+        links:            
+          - text: What are Guaranteed Outcomes?
+            url: guaranteed-outcomes.md
+      - linkListType: how-to-guide
+        links:
+          - text: How Guaranteed Outcomes work?
+            url: how-guaranteed-outcomes-work.md
+          - text: Auction Mechanics
+            url: guaranteed-outcomes-auction-mechanics.md
+  - title: Viewability
+    linkLists:
+      - linkListType: concept
+        links:            
+          - text: Ad Viewability
+            url: ad-viewability-description-of-methodology-dom.md
+      - linkListType: how-to-guide
+        links:
+          - text: Improve Low Viewability Performance
+            url: improve-low-viewability-performance.md
+          - text: Measure Video Viewability
+            url: video-viewability.md
+  - title: Planner
+    linkLists:
+      - linkListType: concept
+        links:            
+          - text: What is Planner?
+            url: planner.md
+      - linkListType: how-to-guide
+        links:
+          - text: Create and Activate a Plan
+            url: create-and-activate-a-plan.md
+          - text: Planner Troubleshooting
+            url: planner-troubleshooting.md
+  - title: Reporting
+    linkLists:
+      - linkListType: concept
+        links:            
+          - text: Reporting Concepts
+            url: dimensions-metrics-filtering-and-grouping.md
+      - linkListType: how-to-guide
+        links:
+          - text: Report Throttling 
+            url: report-throttling.md
+          - text: Impression Counting
+            url: impression-counting.md

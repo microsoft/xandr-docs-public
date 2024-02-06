@@ -1,0 +1,306 @@
+- name: Yield Analytics UI Documentation
+  href: index.yml
+- name: Getting Started
+  href: yield-analytics-overview.md
+- name: Setting Up Permissions
+  href: setting-up-permissions.md
+- name: Common Journey Maps
+  items:
+  - name: Overview
+    href: common-journey-maps.md
+  - name: Dealing with Campaign Under-Delivery
+    href: dealing-with-campaign-under-delivery.md
+  - name: Fulfilling a Proposed Campaign
+    href: fulfilling-a-proposed-campaign.md
+  - name: Pricing a Proposed Campaign
+    href: pricing-a-proposed-campaign.md
+  - name: Common Report Configurations
+    href: common-report-configurations.md
+- name: Availability Lookup
+  items:
+  - name: Overview
+    href: availability-lookup.md
+  - name: Availability Lookup - Quick Start Guide
+    href: availability-lookup-quick-start-guide.md
+  - name: Lookup Builder
+    href: lookup-builder.md
+  - name: Lookup Results
+    href: lookup-results.md
+  - name: Batch Builder
+    href: batch-builder.md
+  - name: Batch Queue
+    href: batch-queue.md
+- name: Products 
+  items:
+  - name: Overview
+    href: products-overview.md
+  - name: Products Dashboard
+    items:
+    - name: Anatomy of the Products Dashboard Page
+      href: anatomy-of-the-products-dashboard-page.md
+    - name: Anatomy of the Find Products Page
+      href: anatomy-of-the-find-products-page.md
+    - name: Anatomy of the Audience Planner Page
+      href: anatomy-of-the-audience-planner-page.md
+    - name: Anatomy of the Product Visibility Page
+      href: anatomy-of-the-product-visibility-page.md
+  - name: Find and View a List of Products
+    href: find-and-view-a-list-of-products.md
+  - name: Product Overlaps
+    items:
+    - name: Analyze Product Overlaps
+      href: analyze-product-overlaps.md
+    - name: Overlap Types
+      href: overlap-types.md
+  - name: Product Creation
+    items:
+    - name: Create a Product
+      href: create-a-product.md
+    - name: Builder Tab
+      href: builder-tab.md
+  - name: Organize Products
+    href: organize-products.md
+  - name: View the Full Details of a Product
+    href: view-the-full-details-of-a-product.md
+  - name: Edit the Details of a Product
+    href: edit-the-details-of-a-product.md
+  - name: Best Practices - Product Group
+    href: best-practices-product-group.md
+- name: Reports 
+  items: 
+  - name: Overview
+    href: reports-overview.md
+  - name: About Reporting
+    href: about-reporting.md
+  - name: Reports Tab
+    items:
+    - name: Anatomy of the Reports Tab
+      href: anatomy-of-the-reports-tab.md
+    - name: Create a New Report
+      href: create-a-new-report.md
+    - name: Open and Edit an Existing Report
+      href: open-and-edit-an-existing-report.md
+    - name: Change How a Report is Displayed
+      href: change-how-a-report-is-displayed.md
+    - name: Compare Two Data Sets
+      href: compare-two-data-sets.md
+    - name: Save and Share a Report
+      href: save-and-share-a-report.md
+    - name: Schedule a Report to be Sent
+      href: schedule-a-report-to-be-sent.md
+    - name: Modify a Report's Schedule
+      href: modify-a-report-s-schedule.md
+    - name: Export a Report
+      href: export-a-report.md 
+  - name: Reporting Options for Dimension, Primary, and Secondary Metrics
+    href: reporting-options-for-dimension-primary-and-secondary-metrics.md
+  - name: Best Practices - Reporting Product Strategy
+    href: best-practices-reporting-product-strategy.md
+  - name: Top Reports
+    href: top-reports.md
+  - name: Reports as Pivot Table
+    href: reports-as-pivot-table.md
+- name: Orders 
+  items:
+  - name: Overview
+    href: orders-overview.md
+  - name: About the Orders Tab
+    href: about-the-orders-tab.md
+  - name: Orders Dashboard
+    items:
+    - name: Anatomy of the Orders Dashboard Page
+      href: anatomy-of-the-orders-dashboard-page.md
+    - name: Check Consumed Impressions
+      href: check-consumed-impressions.md
+    - name: Check Order Performance
+      href: check-order-performance.md
+    - name: Check Revenue Against Goal
+      href: check-revenue-against-goal.md
+    - name: View Order Information for a Specific Parent Product
+      href: view-order-information-for-a-specific-parent-product.md
+  - name: Find Orders
+    href: find-orders.md
+  - name: Anatomy of the Order Visibility Page
+    href: anatomy-of-the-order-visibility-page.md
+  - name: Find an Order Line
+    href: find-an-order-line.md
+  - name: Anatomy of the Order Line Visibility Page
+    href: anatomy-of-the-order-line-visibility-page.md
+  - name: View the Full Details of an Order or Order Line
+    href: view-the-full-details-of-an-order-or-order-line.md
+  - name: Solve Delivery Issues with Order Line Visibility
+    href: solve-delivery-issues-with-order-line-visibility.md
+  - name: Evaluate Orders
+    items:
+    - name: Anatomy of the Evaluate Orders Page
+      href: anatomy-of-the-evaluate-orders-page.md
+    - name: Evaluate the Yield of an Order
+      href: evaluate-the-yield-of-an-order.md
+    - name: Anatomy of the Evaluate Orders Search Page
+      href: anatomy-of-the-evaluate-orders-search-page.md
+  - name: Import Order Template
+    href: import-order-template.md
+- name: Capacity 
+  items:
+  - name: Overview
+    href: capacity-overview.md
+  - name: About Forecasts and Adjustments
+    href: about-forecasts-and-adjustments.md
+  - name: Capacity Dashboard
+    items:
+    - name: Anatomy of the Capacity Dashboard
+      href: anatomy-of-the-capacity-dashboard-page.md
+    
+    - name: Yield Analytics Seasonality FAQs
+      href: yield-analytics-seasonality-faqs.md
+    
+  - name: Anatomy of the Forecast Visibility Page
+    href: forecast-visibility-page-anatomy.md
+  - name: View Your Products Forecast
+    href: view-your-products-forecast.md
+  - name: Anatomy of the Forecast Management Page
+    href: anatomy-of-the-forecast-management-page.md
+  - name: Adjustments
+    items:
+    - name: Adding and Editing Adjustments
+      href: adding-and-editing-adjustments.md
+    - name: Add a Manual Adjustment to a Product
+      href: add-a-manual-adjustment-to-a-product.md
+    - name: Edit a Manual Adjustment
+      href: edit-a-manual-adjustment.md
+    - name: Edit a Seasonal Adjustment for a Seasonal Product
+      href: edit-a-seasonal-adjustment-for-a-seasonal-product.md
+- name: Working With Scenarios 
+  items:
+  - name: Overview
+    href: working-with-scenarios-overview.md
+  - name: About Using Scenario Manager
+    href: about-using-scenario-manager.md
+  - name: View and Work With Scenario Manager
+    href: view-and-work-with-scenario-manager.md
+  - name: Scenario Manager
+    items:
+    - name: Anatomy of the Scenario Manager Page
+      href: anatomy-of-the-scenario-manager-page.md
+    - name: Run an Existing Order Line Through Scenario Manager
+      href: run-an-existing-order-line-through-scenario-manager.md
+    - name: Run an Existing Order Through Scenario Manager
+      href: run-an-existing-order-through-scenario-manager.md
+    - name: Run a Potential Order Through Scenario Manager
+      href: run-a-potential-order-through-scenario-manager.md
+  - name: Interpreting Scenario Manager Results
+    href: interpreting-scenario-manager-results.md
+- name: Ad Servers
+  items:
+  - name: Freewheel Priority Values in Yield Analytics
+    href: freewheel-priority-values-in-yield-analytics.md
+  - name: Working With Multiple Ad Servers
+    href: working-with-multiple-ad-servers.md
+- name: User Preferences
+  href: user-preferences.md
+- name: Administration 
+  items:
+  - name: Overview
+    href: administration-overview.md
+  - name: Working With Users
+    href: working-with-users.md
+  - name: Working With User Groups
+    href: working-with-user-groups.md
+  - name: Working with Saved Reports
+    href: working-with-saved-reports.md
+- name: Integrations
+  items:
+  - name: DFP sales managers Yield Analytics extension
+    href: working-with-the-yield-analytics-extension-for-dfp-sales-manager.md
+  - name: Ad-Juster Discrepancy
+    href: frequently-asked-questions-faqs.md
+- name: Channel Management
+  items:
+  - name: Overview
+    href: channel-management.md
+  - name: Working with Channel Metrics
+    href: working-with-channel-metrics.md
+- name: At-Risk Management Chart and Solution Paths
+  href: at-risk-management-chart-and-solution-paths.md
+- name: Availability Dashboard
+  items:
+  - name: Anatomy of the Availability Pages
+    href: anatomy-of-the-availability-dashboard-page.md
+  - name: Check Availability
+    href: check-availability-for-a-combination-of-targeting-attributes.md
+  - name: Availability Overview (Old Workflow)
+    href: availability-overview-old-workflow.md
+- name: Saved Availability Lookups
+  items:
+  - name: Working With Saved Availability Lookups
+    href: working-with-saved-availability-lookups.md
+  - name: Schedule an Availability Lookup
+    href: schedule-an-availability-lookup.md
+  - name: View and Search for Saved Availability Lookups
+    href: view-and-search-for-saved-availability-lookups.md
+  - name: Remove the Scheduling From a Saved Lookup
+    href: remove-the-scheduling-from-a-saved-lookup.md
+  - name: Delete a Saved Lookup
+    href: delete-a-saved-lookup.md
+- name: Glossary
+  href: glossary.md
+- name: Release Notes
+  items:
+  - name: Yield Analytics 8.79
+    href: yield-analytics-8-79.md
+  - name: Yield Analytics 8.76
+    href: yield-analytics-8-76.md
+  - name: Yield Analytics 8.73
+    href: yield-analytics-8-73.md
+  - name: Yield Analytics 8.72
+    href: yield-analytics-8-72.md
+  - name: Yield Analytics 8.71
+    href: yield-analytics-8-71.md
+  - name: Yield Analytics 8.70
+    href: yield-analytics-8-70.md
+  - name: Yield Analytics 8.60
+    href: yield-analytics-8-60.md
+  - name: Yield Analytics 8.56
+    href: yield-analytics-8-56.md
+  - name: Yield Analytics 8.55
+    href: yield-analytics-8-55.md
+  - name: Yield Analytics 8.48
+    href: yield-analytics-8-48.md
+  - name: Yield Analytics 8.45
+    href: yield-analytics-8-45.md
+  - name: Yield Analytics 8.44
+    href: yield-analytics-8-44.md
+  - name: Yield Analytics 8.43
+    href: yield-analytics-8-43.md
+  - name: Yield Analytics 8.40
+    href: yield-analytics-8-40.md
+  - name: Yield Analytics 8.26
+    href: yield-analytics-8-26.md
+  - name: Yield Analytics 8.16
+    href: yield-analytics-8-16.md
+  - name: Yield Analytics 8.9
+    href: yield-analytics-8-9.md
+  - name: Yield Analytics 8.1
+    href: yield-analytics-8-1.md
+  - name: Yield Analytics 8.0
+    href: yield-analytics-8-0.md
+  - name: Yield Analytics 7.26
+    href: yield-analytics-7-26.md
+  - name: Yield Analytics 7.20
+    href: yield-analytics-7-20.md
+  - name: Yield Analytics 7.17
+    href: yield-analytics-7-17.md
+  - name: Yield Analytics 7.16
+    href: yield-analytics-7-16.md
+  - name: Yield Analytics 7.15
+    href: yield-analytics-7-15.md
+  - name: Yield Analytics 7.14
+    href: yield-analytics-7-14.md
+  - name: Yield Analytics 7.13
+    href: yield-analytics-7-13.md
+  - name: Yield Analytics 7.6
+    href: yield-analytics-7-6.md
+  - name: Yield Analytics 7.3
+    href: yield-analytics-7-3.md
+  - name: Yield Analytics 7.2
+    href: yield-analytics-7-2.md

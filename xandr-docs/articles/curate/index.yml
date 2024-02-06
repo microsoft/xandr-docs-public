@@ -1,0 +1,122 @@
+### YamlMime:Landing
+
+title: Microsoft Curate Product Documentation
+summary: Welcome to Microsoft Curate (powered by Xandr) Product Documentation! All the information you need to work in Curate is right here. You can click one of the titles below or refer to the Table of Contents (TOC) on the left for complete documentation.
+metadata:
+  title: Microsoft Curate Product Documentation
+  description: Discover various modules of Microsoft Curate
+  ms.topic: landing-page
+  ms.author: rupambaruah
+  ms.service: microsoft-curate
+  ms.date: 11/17/2023
+
+landingContent:
+  - title: Let's Get Started
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: About Curate
+            url: about-curate.md     
+          - text: Object Hierarchy
+            url: object-hierarchy.md
+      - linkListType: reference
+        links:
+          - text: Microsoft Curate API
+            url: digital-platform-ui-api-info.md
+      - linkListType: how-to-guide
+        links:
+          - text: Managing User Logins and Permissions
+            url: managing-user-logins-and-permissions.md
+  - title: Partner Center Guide
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Understanding Bid Rejections
+            url: understanding-bid-rejections.md
+      - linkListType: how-to-guide
+        links:
+          - text: Customize Your Seller Profile
+            url: customize-your-seller-profile.md
+          - text: Customize Your Buyer Profile
+            url: customize-your-buyer-profile.md
+          
+  - title: Curated Deals
+    linkLists:
+      - linkListType: concept
+        links:            
+          - text: Curated Deals
+            url: curated-deals.md
+          - text: Curated Deal Floors
+            url: curated-deal-floors.md
+      - linkListType: how-to-guide
+        links:
+          - text: Create a Curated Deal Line Item
+            url: create-a-curated-deal-line-item.md
+          - text: Deal Lists for Curated Deals
+            url: deal-lists-for-curated-deals.md
+  - title: Buying Guide
+    linkLists:
+      - linkListType: concept
+        links:            
+          - text: The Universal Pixel
+            url: the-universal-pixel.md
+          - text: Microsoft Advertising Exchange Inventory
+            url: microsoft-advertising-exchange-inventory.md
+      - linkListType: how-to-guide
+        links:
+          - text: Explore and Manage Advertisers
+            url: explore-and-manage-advertisers.md
+          - text: Explore Insertion Orders
+            url: explore-insertion-orders.md
+  - title: Monitoring
+    linkLists:
+      - linkListType: concept
+        links:            
+          - text: Line Item Settings
+            url: line-item-settings.md
+          - text: Impression Funnel
+            url: curate-impression-funnel.md
+      - linkListType: how-to-guide
+        links:
+          - text: Monitor Line Items
+            url: monitor-line-items.md
+          - text: Troubleshooting Reports
+            url: curate-troubleshooting-reports.md
+  - title: Viewability
+    linkLists:
+      - linkListType: concept
+        links:            
+          - text: Ad Viewability - Description of Methodology (DOM)
+            url: ad-viewability-description-of-methodology-dom.md
+      - linkListType: overview
+        links:
+          - text: Measurement of Video Viewability using VPAID Wrapper
+            url: video-viewability.md
+          - text: Reporting on Viewability
+            url: reporting-on-viewability.md
+  - title: Reporting Guide
+    linkLists:
+      - linkListType: concept
+        links:            
+          - text: Dimensions, Metrics, Filtering, and Grouping
+            url: dimensions-metrics-filtering-and-grouping.md
+          - text: Availability of Reporting Data
+            url: availability-of-reporting-data.md
+      - linkListType: overview
+        links:
+          - text: Curator Analytics Report
+            url: curator-analytics-report.md
+          - text: Member Video Analytics Report
+            url: network-video-analytics-report.md
+  - title: Planner
+    linkLists:
+      - linkListType: concept
+        links:            
+          - text: What is Planner?
+            url: planner.md
+      - linkListType: how-to-guide
+        links:
+          - text: Create and Activate a Plan
+            url: create-and-activate-a-plan.md
+          - text: Planner Troubleshooting
+            url: planner-troubleshooting.md

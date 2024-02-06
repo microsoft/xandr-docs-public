@@ -1,0 +1,124 @@
+### YamlMime:Landing
+
+title: Impression Bus API
+summary: Welcome to Impression Bus API Reference documentation! All the information you need to get started with the Impression Bus API is right here. You can click one of the titles below or refer to the Table of Contents (TOC) on the left for complete documentation.
+metadata:
+  title: Impression Bus API
+  description: Discover various reference docs about Impression Bus API
+  ms.topic: landing-page
+  ms.author: rupambaruah
+  ms.service: microsoft-monetize
+  ms.date: 11/30/2023
+
+landingContent:
+  - title: Let's Get Started
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview
+            url: ../bidders/impression-bus-api.md
+          #- text: Breaking Changes
+          #  url: ../bidders/breaking-changes.md
+      - linkListType: quickstart
+        links:
+          - text: API Semantics
+            url: ../bidders/api-semantics.md
+          - text: Usage Constraints
+            url: ../bidders/api-usage-constraints.md
+         # - text: Best Practices
+          #  url: ../bidders/api-best-practices.md
+  - title: Authentication Service
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview
+            url: ../bidders/authentication-service.md
+      - linkListType: reference
+        links:
+          - text: Account Recovery Service
+            url: ../bidders/account-recovery-service.md
+  - title: Bidder API Service
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview
+            url: ../bidders/bidder-api-services.md
+      - linkListType: reference
+        links:
+          - text: Bidder Service
+            url: ../bidders/bidder-service.md
+          - text: Bidder Instance Service
+            url: ../bidders/bidder-instance-service.md
+  - title: Enhanced Bidder Profiles
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview
+            url: ../bidders/enhanced-bidder-profiles.md
+      - linkListType: how-to-guide
+        links:
+          - text: Bidder Profile Migration Guide
+            url: ../bidders/bidder-profile-migration-guide.md
+          - text: API Use Cases
+            url: ../bidders/api-use-cases-for-enhanced-bidder-profiles.md
+  - title: Creative API Service
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview
+            url: ../bidders/creative-api-services.md
+      - linkListType: reference
+        links:
+          - text: Creative Service
+            url: ../bidders/creative-service.md
+          - text: Creative Template Service
+            url: ../bidders/creative-template-service.md 
+          - text: Creative Search Service
+            url: ../bidders/creative-search-service.md 
+  - title: Report Service
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview
+            url: ../bidders/report-service.md
+      - linkListType: reference
+        links:
+          - text: Bidder Bid Error Report API
+            url: ../bidders/bidder-bid-error-report-api.md
+          - text: Bidder Platform Buyer Report
+            url: ../bidders/bidder-platform-buyer-report.md            
+  - title: Sell-Side Service
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview
+            url: ../bidders/sell-side-services.md
+      - linkListType: reference
+        links:
+          - text: TinyTag Service
+            url: ../bidders/tinytag-service.md
+          - text: Preemptive Tags
+            url: ../bidders/preemptive-tags.md    
+  - title: Deal API Services
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Deal Buyer Access Service
+            url: ../bidders/deal-buyer-access-service.md
+          - text: Package Buyer Access Service
+            url: ../bidders/package-buyer-access-service.md
+          - text: Deal from Package Service
+            url: ../bidders/deal-from-package-service.md
+  - title: Read-Only Services
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Country Service
+            url: ../bidders/country-service.md
+          - text: Device Make Service
+            url: ../bidders/device-make-service.md
+          - text: Device Model Service
+            url: ../bidders/device-model-service.md
+          - text: Postal Code Service
+            url: ../bidders/postal-code-service.md      
+          
