@@ -1,0 +1,631 @@
+- name: Digital Platform API Documentation
+  href: index.yml
+- name: Getting Started
+  items:
+  - name: API Getting Started
+    href: api-getting-started.md
+  - name: API Onboarding Process
+    href: api-onboarding-process.md
+  - name: API Semantics
+    href: api-semantics.md
+  - name: API Best Practices
+    href: api-best-practices.md
+- name: Tutorials
+  items:
+  - name: API Authentication
+    href: 04---api-authentication.md
+  - name: Token-Based Authentication
+    href: token-based-api-authentication.md
+  - name: Throttling, Pagination and Filtering
+    href: 05---throttling-pagination-and-filtering.md
+  - name: API Usage Constraints
+    href: api-usage-constraints.md
+  - name: API Timezones
+    href: api-timezones.md
+  - name: Report Pagination
+    href: report-pagination.md
+  - name: Breaking Changes
+    href: breaking-changes.md
+  - name: Helpful JSON Tools
+    href: helpful-json-tools.md
+- name: Ad Tech Concepts
+  items:
+  - name: Network Relationship Diagram
+    href: network-relationship-diagram.md
+  - name: Buy-Side Overview
+    href: 02---buy-side-overview.md
+  - name: Sell-Side Overview
+    href: 03---sell-side-overview.md
+  - name: Member Configuration
+    href: 06---member-configuration.md
+  - name: Advertiser Configuration
+    href: 07---advertiser-configuration.md
+  - name: Insertion Orders and Line Items
+    href: 08---insertion-orders-and-line-items.md
+  - name: Creatives
+    href: 09---creatives.md
+  - name: Segment and Conversion Pixels
+    href: 10---segment-and-conversion-pixels.md
+  - name: Targeting Profiles
+    href: 11---targeting-profiles.md
+  - name: Publisher Configuration
+    href: 12---publisher-configuration.md
+  - name: Sites and Placements
+    href: 13---sites-and-placements.md
+  
+- name: Process Guides
+  items:
+  - name: Buy-Side Setup
+    href: buy-side-setup.md
+  - name: Buy-Side Setup with the Augmented Line Item
+    href: buy-side-setup-with-the-augmented-line-item.md
+  - name: Buying Microsoft Outlook.com Inventory
+    items:
+    - name: Add a Microsoft Outlook Creative via the API
+      href: add-a-microsoft-outlook-creative-via-the-api.md
+    - name: Check the Audit Status of an Outlook Creative via the API
+      href: check-the-audit-status-of-an-outlook-creative-via-the-api.md
+    - name: Create an Outlook Campaign via the API
+      href: create-an-outlook-campaign-via-the-api.md
+  - name: Custom Key Value Targeting
+    href: custom-key-value-targeting.md
+  - name: Working with Roles using the API
+    items:
+    - name: Overview
+      href: working-with-roles-using-the-api.md
+    - name: Add a User to a Role using the API
+      href: add-a-user-to-a-role-using-the-api.md
+    - name: Create a Custom Role using the API
+      href: create-a-custom-role-using-the-api.md
+    - name: View System Resources using the API
+      href: view-system-resources-using-the-api.md
+  - name: Sell-Side Setup
+    href: sell-side-setup.md
+  - name: Deal Line Item API Setup Guide
+    href: deal-line-item-api-setup-guide.md
+  - name: Curated Deal Line Item API Setup Guide
+    href: curated-deal-line-item-api-setup-guide.md
+  - name: Publisher GDALI API Setup Guide
+    href: publisher-gdali-api-setup-guide.md
+  - name: GDLI to GDALI Migration
+    href: gdli-to-gdali-migration.md
+  - name: Real-Time Signals Service (Formerly APD)
+    items:
+    - name: Overview
+      href: real-time-signals-service--formerly-apd-.md
+    - name: RTSS Use Cases
+      href: rtss-use-cases.md
+    - name: RTSS Best Practices
+      href: rtss-best-practices.md
+    - name: RTSS Limitations
+      href: rtss-limitations.md
+    - name: Troubleshooting RTSS
+      href: troubleshooting-rtss.md
+    - name: Real-Time Signals Service API Reference
+      href: real-time-signals-service-api-reference.md
+  - name: API Setup Guide
+    items:
+    - name: Programmatic Guaranteed Deal with Third-Party Ad Server
+      href: programmatic-guaranteed-deal-for-monetize-ssp--third-party-ad-server-pacing--tag-integration--api-setup-guide.md
+    - name: Microsoft Monetize Ad Server for Programmatic Guaranteed Deal
+      href: programmatic-guaranteed-deal-through-monetize-ad-server-api-setup-guide.md
+    - name: Multi-Buyer Deals
+      href: multi-buyer-deals-api-setup.md
+- name: API References
+  items:
+  - name: Overview
+    href: reference.md
+  - name: Apps Marketplace Services
+    items:
+    - name: App Installation Service
+      href: app-installation-service.md
+    - name: Plugin Service
+      href: plugin-service.md
+    - name: Plugin Instance Service
+      href: plugin-instance-service.md
+    - name: User Verification Service
+      href: user-verification-service.md
+    - name: Developer Service
+      href: developer-service.md
+  - name: Authentication Services
+    items:
+    - name: Overview
+      href: authentication-service.md
+    - name: Account Recovery Service
+      href: account-recovery-service.md
+  - name: Buy-Side Services
+    items:
+    - name: Advertiser Service
+      href: advertiser-service.md
+    - name: Audience Data Services
+      items:
+      - name: Segment Service
+        href: segment-service.md
+      - name: Conversion Pixel Service
+        href: conversion-pixel-service.md
+      - name: Batch Segment Service
+        href: batch-segment-service.md
+      - name: Batch Server-Side Segmentation
+        items:
+        - name: Overview
+          href: batch-server-side-segmentation.md
+        - name: Initial BSS Account Setup
+          href: initial-bss-account-setup.md
+        - name: Uploading Segment Data Using BSS
+          items:
+          - name: Overview
+            href: uploading-segment-data-using-bss.md
+          - name: BSS Avro File Format
+            href: bss-avro-file-format.md
+          - name: Legacy BSS File Format
+            href: legacy-bss-file-format.md
+        - name: Batch Segment Service Best Practices
+          href: batch-segment-service-best-practices.md
+        - name: Troubleshooting BSS Uploads
+          href: troubleshooting-bss-uploads.md
+        - name: Passive Segment Upload Using AWS S3
+          href: passive-segment-upload-using-aws-s3.md
+        - name: Verifying Segment Uploads
+          href: verifying-segment-uploads.md
+        - name: Troubleshooting Invalid Users
+          href: troubleshooting-invalid-users.md
+      - name: Streaming Server-Side Segmentation
+        items:
+        - name: Overview
+          href: streaming-server-side-segmentation.md
+        - name: Instant Audience Service
+          href: instant-audience-service.md
+        - name: Check Usage Statistics
+          href: check-usage-statistics.md
+    - name: Broker Service
+      href: broker-service.md
+    - name: Campaign Service
+      href: campaign-service.md
+    - name: Creative Service
+      items:
+      - name: Overview
+        href: creative-service.md
+      - name: Creative HTML Service
+        href: creative-html-service.md
+      - name: Creative Upload Service - File Format
+        href: creative-upload-service---file-format.md
+      - name: Creative Search Service
+        href: creative-search-service.md
+      - name: Click Tracker Service
+        href: click-tracker-service.md
+      - name: Pixel Template Service
+        href: pixel-template-service.md
+      - name: Impression Tracker Service
+        href: impression-tracker-service.md
+      - name: Creative Folder Service
+        href: creative-folder-service.md
+      - name: Tag Parser Service
+        href: tag-parser-service.md
+      - name: Creative Macro Check Service
+        href: creative-macro-check-service.md
+      - name: Creative Template Service
+        href: creative-template-service.md
+      - name: Selecting the Correct Template for Your Creative
+        href: selecting-the-correct-template-for-your-creative.md
+    - name: Creative VAST Service
+      items:
+      - name: Overview
+        href: creative-vast-service.md
+      - name: VAST Extension Template Service
+        href: vast-extension-template-service.md
+    - name: Deal Buyer Setting Service
+      href: deal-buyer-setting-service.md
+    - name: Deal From Package Service
+      href: deal-from-package-service.md
+    - name: Deal List Service
+      href: deal-list-service.md
+    - name: Domain List Service
+      href: domain-list-service.md
+    - name: Hourly Pacing Overrides Service
+      href: hourly-pacing-overrides-service.md
+    - name: Insertion Order Service
+      href: insertion-order-service.md
+    - name: Inventory List Item Service
+      href: inventory-list-item-service.md
+    - name: Inventory List Service
+      href: inventory-list-service.md
+    - name: IP Range List Service
+      href: ip-range-list-service.md
+    - name: Line Item Service
+      href: line-item-service.md
+    - name: Line Item Service - ALI
+      href: line-item-service---ali.md
+    - name: Mobile App Instance List Service
+      href: mobile-app-instance-list-service.md
+    - name: Optimization Override Service
+      href: optimization-override-service.md
+    - name: Partner Fee Service
+      href: partner-fee-service.md
+    - name: Postal Code List Service
+      href: postal-code-list-service.md
+    - name: Registration Form Service
+      href: registration-form-service.md
+    - name: Splits Service
+      items:
+      - name: Overview
+        href: splits-service.md
+      - name: Splits Service Troubleshooting
+        href: splits-service-troubleshooting.md
+    - name: Third-Party Pixel Service
+      href: third-party-pixel-service.md
+    - name: Validate Inventory Item Service
+      href: validate-inventory-item-service.md
+    - name: Universal Pixel Service
+      href: universal-pixel-service.md
+    - name: Geo Polygon Segment Service
+      href: geo-polygon-segment-service.md
+  - name: Change Log Services
+    href: change-log-services.md
+  - name: Identity Service
+    items:
+    - name: Overview
+      href: identity-service.md
+    - name: Identity Type Service
+      href: identity-type-service.md
+    - name: Identity Type Participant Service
+      href: identity-type-participant-service.md
+  - name: Member Service
+    items:
+    - name: Overview
+      href: member-service.md
+    - name: Member Profile Service
+      href: member-profile-service.md
+  - name: Profile Service
+    items:
+    - name: Overview
+      href: profile-service.md
+    - name: Frequency for the API
+      href: frequency-for-the-api.md
+    - name: User Group Pattern Service
+      href: user-group-pattern-service.md
+  - name: Moat Video Viewability Setup - API
+    href: moat-video-viewability-setup---api.md
+  - name: Read-Only Services
+    items:
+    - name: Ad Server Service
+      href: ad-server-service.md
+    - name: Brand Company Service
+      href: brand-company-service.md
+    - name: Brand Service
+      href: brand-service.md
+    - name: Browser Service
+      href: browser-service.md
+    - name: Carrier Service
+      href: carrier-service.md
+    - name: Category Service
+      href: category-service.md
+    - name: City Service
+      href: city-service.md
+    - name: Country Service
+      href: country-service.md
+    - name: Creative Format Service
+      href: creative-format-service.md
+    - name: Currency Service
+      href: currency-service.md
+    - name: Deal Buyer Access Service
+      href: deal-buyer-access-service.md
+    - name: Delivery Type Service
+      href: delivery-type-service.md
+    - name: Designated Market Area Service
+      href: designated-market-area-service.md
+    - name: Device Make Service
+      href: device-make-service.md
+    - name: Device Model Service
+      href: device-model-service.md
+    - name: Domain Audit Status Service
+      href: domain-audit-status-service.md
+    - name: Duration Service
+      href: duration-service.md
+    - name: Genre Service
+      href: genre-service.md
+    - name: Inventory Attribute Service
+      href: inventory-attribute-service.md
+    - name: Inventory Resold Service
+      href: inventory-resold-service.md
+    - name: Label Service
+      href: label-service.md
+    - name: Language Service
+      href: language-service.md
+    - name: Lookup Service
+      href: lookup-service.md
+    - name: Media Subtype Service
+      href: media-subtype-service.md
+    - name: Media Type Service
+      href: media-type-service.md
+    - name: Mobile App Instance Service
+      href: mobile-app-instance-service.md
+    - name: Mobile App Service
+      href: mobile-app-service.md
+    - name: Mobile App Store Service
+      href: mobile-app-store-service.md
+    - name: Native Custom Key Service
+      href: native-custom-key-service.md
+    - name: Network Service
+      href: network-service.md
+    - name: Object Limit Service
+      href: object-limit-service.md
+    - name: Offline Attribution Product Group Service
+      href: offline-attribution-product-group-service.md
+    - name: Operating System Extended Service
+      href: operating-system-extended-service.md
+    - name: Operating System Family Service
+      href: operating-system-family-service.md
+    - name: Operating System Service
+      href: operating-system-service.md
+    - name: Package Buyer Access Service
+      href: package-buyer-access-service.md
+    - name: Platform Member Service
+      href: platform-member-service.md
+    - name: Political District Service
+      href: political-district-service.md
+    - name: Postal Code Service
+      href: postal-code-service.md
+    - name: Profile Summary Service
+      href: profile-summary-service.md
+    - name: Program Type Service
+      href: program-type-service.md
+    - name: Rating Service
+      href: rating-service.md
+    - name: Region Service
+      href: region-service.md
+    - name: Report Status Service
+      href: report-status-service.md
+    - name: Search Service
+      href: search-service.md
+    - name: Technical Attribute Service
+      href: technical-attribute-service.md
+  - name: Reporting Services
+    items:
+    - name: Report Service
+      items:
+      - name: Overview
+        href: report-service.md
+      - name: Advertiser Analytics
+        href: advertiser-analytics.md
+      - name: Advertiser Attributed Conversions
+        href: advertiser-attributed-conversions.md
+      - name: Advertiser Creative Frequency and Recency
+        href: advertiser-creative-frequency-and-recency.md
+      - name: Bulk Reporting Feeds
+        items:
+        - name: Overview
+          href: bulk-reporting-feeds.md
+        - name: Network Analytics Feed
+          href: network-analytics-feed.md
+        - name: Clicktrackers Feed
+          href: clicktrackers-feed.md
+        - name: Feed Status Service
+          href: feed-status-service.md
+      - name: Buyer Bid Error Report
+        href: buyer-bid-error-report.md
+      - name: Buyer Deal Metrics
+        href: buyer-deal-metrics.md
+      - name: Buyer Engagement Report
+        href: buyer-engagement-report.md
+      - name: Buyer Reach and Frequency Report
+        href: buyer-reach-and-frequency-report.md
+      - name: Buyer Segment Performance Report
+        href: buyer-segment-performance-report.md
+      - name: Buying Billing Report
+        href: buying-billing-report.md
+      - name: Completed Creative Audits Report
+        href: completed-creative-audits-report.md
+      - name: Conversion Pixel Last Fire
+        href: conversion-pixel-last-fire.md
+      - name: Curator Analytics Report
+        href: curator-analytics-report.md
+      - name: Curator Bid Error Report
+        href: curator-bid-error-report.md
+      - name: Curator Segment Performance Report
+        href: curator-segment-performance-report.md
+      - name: Data Usage Report
+        href: data-usage-report.md
+      - name: Engagement Metrics Reporting
+        href: engagement-metrics-report.md
+      - name: Forecast Report
+        href: forecast-report.md
+      - name: Geo Analytics Report
+        href: geo-analytics-report.md
+      - name: Identifiers - Distinct ID Report
+        href: identifiers--distinct-id-report.md
+      - name: Identifiers - ID Combinations Report
+        href: identifiers--id-combinations-report.md
+      - name: Insertion Order Frequency Report
+        href: insertion-order-frequency-report.md
+      - name: Inventory Availability Report
+        href: inventory-availability-report.md
+      - name: Key Value Analytics Report
+        href: key-value-analytics-report.md
+      - name: Line Item Frequency Report
+        href: line-item-frequency-report.md
+      - name: Multi-Buyer Seller Deal Metrics
+        href: multi-buyer-seller-deal-metrics.md
+      - name: Multi Key Value Analytics Report
+        href: multi-key-value-analytics-report.md
+      - name: Network Advertiser Analytics
+        href: network-advertiser-analytics.md
+      - name: Network Advertiser Video Analytics
+        href: network-advertiser-video-analytics.md
+      - name: Network Analytics
+        href: network-analytics.md
+      - name: Network Attributed Conversions
+        href: network-attributed-conversions.md
+      - name: Network Audio Analytics
+        href: network-audio-analytics.md
+      - name: Network Billing
+        href: network-billing.md
+      - name: Network Carrier Analytics
+        href: network-carrier-analytics.md
+      - name: Network Creative Frequency and Recency
+        href: network-creative-frequency-and-recency.md
+      - name: Network Device Analytics
+        href: network-device-analytics.md
+      - name: Network Publisher Analytics
+        href: network-publisher-analytics.md
+      - name: Network Publisher Video Analytics
+        href: network-publisher-video-analytics.md
+      - name: Network Site Domain Performance
+        href: network-site-domain-performance.md
+      - name: Network Video Analytics
+        href: network-video-analytics.md
+      - name: Network Video Error Analytics Reporting
+        href: network-video-error-analytics-report.md
+      - name: Network Video Inventory Availability Report
+        href: network-video-inventory-availability-report.md
+      - name: Nielsen Digital Ad Ratings - Audience Profile Report
+        href: nielsen-digital-ad-ratings---audience-profile-report.md
+      - name: Nielsen Digital Ad Ratings - Site/Split Report
+        href: nielsen-digital-ad-ratings---site-split-report.md
+      - name: Offline Attribution Report
+        href: offline-attribution-report.md
+      - name: Prebid Server Premium Health Analytics
+        href: prebid-server-premium-health-analytics.md
+      - name: Prebid Server Premium Seller Analytics
+        href: prebid-server-premium-seller-analytics.md
+      - name: Publisher Analytics
+        href: publisher-analytics.md
+      - name: Publisher Brand Review Report
+        href: publisher-brand-review-report.md
+      - name: Segment Loads Report
+        href: segment-loads-report.md
+      - name: Seller Bid Error Report
+        href: seller-bid-error-report.md
+      - name: Seller Brand Review Report
+        href: seller-brand-review-report.md
+      - name: Seller CMP Analytics Report
+        href: seller-cmp-analytics-report.md
+      - name: Seller Deal Metrics Report
+        href: seller-deal-metrics-report.md
+      - name: Seller Detected Site Domain Report
+        href: seller-detected-site-domain-report.md
+      - name: Seller Fill and Delivery Network Report
+        href: seller-fill-and-delivery-network-report.md
+      - name: Seller Fill and Delivery Publisher Report
+        href: seller-fill-and-delivery-publisher-report.md
+      - name: Seller Segment Performance Report
+        href: seller-segment-performance-report.md
+      - name: Seller Site Domain Report
+        href: seller-site-domain-report.md
+      - name: Reporting on Podded Video
+        items:
+        - name: Overview
+          href: reporting-on-podded-video.md
+        - name: Seller Pod Analytics Report
+          href: seller-podded-video-report.md
+        - name: Seller Slot Analytics Report
+          href: seller-slot-analytics-report.md
+      - name: Selling Billing Report
+        href: selling-billing-report.md
+      - name: Site Domain Performance Report
+        href: site-domain-performance-report.md
+      - name: Vendor Usage Report
+        href: vendor-usage-report.md
+      - name: Video Ad Pod Report
+        href: video-ad-pod-report.md
+      - name: Video Mediation Demand Report
+        href: video-mediation-demand-report.md
+    - name: Saved Report Service
+      href: saved-report-service.md
+  - name: User Service
+    href: user-service.md
+  - name: Sell-Side Services
+    items:
+    - name: Ad Profile Service
+      href: ad-profile-service.md
+    - name: Ad Quality Rule Service
+      href: ad-quality-rule-service.md
+    - name: Content Category Service
+      href: content-category-service.md
+    - name: Deal Service
+      href: deal-service.md
+    - name: External Inventory Code Service
+      href: external-inventory-code-service.md
+    - name: Inventory Forecasting Services
+      href: inventory-forecasting-services.md
+    - name: Line Item Service - GDALI
+      href: line-item-service---gdali.md
+    - name: Mediation Services
+      items:
+      - name: Overview
+        href: mediation-services.md
+      - name: Mediated Network Service
+        href: mediated-network-service.md
+      - name: Mediated Bid Service
+        href: mediated-bid-service.md
+    - name: Native Layout Service
+      href: native-layout-service.md
+    - name: Package Service
+      href: package-service.md
+    - name: Payment Rule Service
+      href: payment-rule-service.md
+    - name: Placement Service
+      href: placement-service.md
+    - name: Placement Set Service
+      href: placement-set-service.md
+    - name: Prebid Server Premium Services
+      items:
+      - name: Overview
+        href: prebid-server-premium-services.md
+      - name: Long Form Video Service
+        href: long-form-video-service.md
+      - name: Prebid Server Premium Config Services
+        items:
+        - name: Overview
+          href: prebid-server-premium-config-services.md
+        - name: Ad Server Category Mapping Service
+          href: adserver-category-mapping-service.md
+        - name: Ad Sizes Service
+          href: ad-sizes-service.md
+        - name: Bidder Info Service
+          href: bidder-info-service.md
+        - name: Config Service
+          href: config-service.md
+        - name: Cross-Partner Settings Service
+          href: cross-partner-settings-service.md
+        - name: Demand Partner Schema Service
+          href: demand-partner-schema-service.md
+        - name: Demand Partner Service
+          href: demand-partner-service.md
+        - name: Operating System-Families Service
+          href: operating-system-families-service.md
+        - name: Prebid Demand Partner Params Service
+          href: prebid-demand-partner-params-service.md
+        - name: Primary Ad Server Service
+          href: primary-ad-server-service.md
+    - name: Publisher Service
+      href: publisher-service.md
+    - name: Seller Creative Review Service
+      href: seller-creative-review-service.md
+    - name: Site Service
+      href: site-service.md
+    - name: Targeting Key Service
+      href: targeting-key-service.md
+    - name: Targeting Value Service
+      href: targeting-value-service.md
+    - name: Visibility Profile Service
+      href: visibility-profile-service.md
+    - name: Yield Management
+      items:
+      - name: Overview
+        href: yield-management.md
+      - name: Yield Management Profile Service
+        href: yield-management-profile-service.md
+      - name: Yield Management Floor Service
+        href: yield-management-floor-service.md
+      - name: Yield Management Bias Service
+        href: yield-management-bias-service.md
+      - name: Yield Management Auction Tier Service
+        href: yield-management-auction-tier-service.md
+      - name: Buyer Group Service
+        href: buyer-group-service.md
+  - name: Shared Platform Privacy Service
+    href: privacy-service.md
+- name: Freewheel change in Demand Creative API
+  href: freewheel-demand-creative-api-changes.md
+- name: API Support
+  href: xandr-api-support.md

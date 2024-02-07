@@ -1,0 +1,65 @@
+### YamlMime:Landing
+
+title: Digital Platform API
+summary: Welcome to the Digital Platform API Documentation! All the information you need about Digital Platform API is right here. You can click one of the titles below or refer to the Table of Contents (TOC) on the left for complete documentation.
+metadata:
+  title: Digital Platform API
+  description: Discover various resources for Digital Platform API
+  ms.topic: landing-page
+  ms.author: rupambaruah
+  ms.service: app-service
+  ms.date: 01/10/2024
+
+landingContent:
+  - title: Let's Get Started
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Getting Started
+            url: api-getting-started.md
+          - text: API Onboarding Process
+            url: api-onboarding-process.md
+      - linkListType: tutorial
+        links:
+          - text: API Usage Constraints
+            url: api-usage-constraints.md
+          - text: Helpful JSON Tools
+            url: helpful-json-tools.md
+          - text: Token-based API Authentication
+            url: token-based-api-authentication.md
+          - text: API Best Practices
+            url: api-best-practices.md
+  - title: Process Guides
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Buy-Side Setup
+            url: buy-side-setup.md
+          - text: Sell-Side Setup
+            url: sell-side-setup.md
+          - text: Deal Line Item API Setup Guide
+            url: deal-line-item-api-setup-guide.md
+          - text: Microsoft Monetize Ad Server for Programmatic Guaranteed Deal
+            url: programmatic-guaranteed-deal-through-monetize-ad-server-api-setup-guide.md
+      - linkListType: reference
+        links:
+          - text: Custom Key Value Targeting
+            url: custom-key-value-targeting.md
+          - text: Working with Roles using the API
+            url: working-with-roles-using-the-api.md
+  - title: References
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Authentication Service
+            url: authentication-service.md
+          - text: Creative Service
+            url: creative-service.md
+          - text: Line Item Service
+            url: line-item-service.md
+          - text: Member Service
+            url: member-service.md
+          - text: Profile Service
+            url: profile-service.md
+          - text: Report Service
+            url: report-service.md
