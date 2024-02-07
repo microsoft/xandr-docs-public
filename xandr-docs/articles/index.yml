@@ -95,24 +95,27 @@ additionalContent:
             #- text: Impression Bus API Release Notes
              # url: bidders/xandr-bidder-release-notes.md
 
-    - title: Additional Resources and Developer Documentation
+    - title: Developer Documentation
       items:
-        # Card
-        - title: Bidder
-          summary: Reference documentation of Bidder - the decisioning brain that calculates real-time auction bids
-          url: bidders/index.yml
-        # Card
-        - title: Seller Tag
-          summary: Reference documentation of Seller Tag - a lightweight JavaScript SDK
-          url: seller-tag/index.yml
         # Card
         - title: Mobile SDK
           summary: Developer guide to facilitate a fast, convenient way to monetize mobile apps
           url: mobile-sdk/index.yml
         # Card
+        - title: Seller Tag
+          summary: Reference documentation of Seller Tag - a lightweight JavaScript SDK
+          url: seller-tag/index.yml
+        # Card
         - title: Log Level Data Feeds
           summary: Reference documentation for log level data feeds for in-depth analysis and reporting that requires event-level granularity
           url: log-level-data/index.yml
+          
+    - title: Additional Resources
+      items:
+        # Card
+        - title: Bidder
+          summary: Reference documentation of Bidder - the decisioning brain that calculates real-time auction bids
+          url: bidders/index.yml
         # Card
         - title: Supply Partners
           summary: Integration documentation for Supply Partners to increase publishers access to major sources of demand
