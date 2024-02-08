@@ -2,6 +2,7 @@
 title: May 22, 2023 - Platform Support Additional CTV Identifiers
 description: In this article, learn how LG Unique Device ID and Vizio Advertising ID can be utilized for frequency capping, audience onboarding, and reporting purposes.
 ms.date: 10/28/2023
+ms.topic: release-notes
 ---
 
 # May 22, 2023: Platform support additional CTV identifiers

@@ -2,6 +2,7 @@
 title: Open Beta for Native Assembly
 description: Find the release note for Native Assembly.
 ms.date: 10/28/2023
+ms.topic: release-notes
 ---
 
 # Open Beta for Native Assembly

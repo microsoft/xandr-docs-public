@@ -50,7 +50,6 @@
     "fileMetadata": {
       "ms.service": {
         "invest/*.md": "microsoft-invest",
-        "ja-jp/*.md": "microsoft-invest",
         "seller-tag/*.md": "microsoft-monetize",
         "ott-ctv/*.md": "microsoft-monetize",
         "data-science-toolkit/*.md": "microsoft-monetize",
@@ -72,7 +71,6 @@
       },
       "author": {
         "invest/*.md": "rupambaruah-xandr",
-        "ja-jp/*.md": "rupambaruah-xandr",
         "seller-tag/*.md": "rupambaruah-xandr",
         "ott-ctv/*.md": "rupambaruah-xandr",
         "data-science-toolkit/*.md": "rupambaruah-xandr",
@@ -93,7 +91,6 @@
       },
       "ms.author": {
         "invest/*.md": "rupambaruah",
-        "ja-jp/*.md": "rupambaruah",
         "seller-tag/*.md": "rupambaruah",
         "ott-ctv/*.md": "rupambaruah",
         "data-science-toolkit/*.md": "rupambaruah",
@@ -113,25 +110,24 @@
         "training-resources/*.md": "rupambaruah"
       },
     "ms.topic": {
-        "invest/*.md": "reference",
-        "ja-jp/*.md": "reference",
+        "invest/*.md": "concept-article",
         "seller-tag/*.md": "reference",
         "ott-ctv/*.md": "reference",
-        "data-science-toolkit/*.md": "reference",
+        "data-science-toolkit/*.md": "tutorial",
         "yield-analytics-api/*.md": "reference",
         "mobile-sdk/*.md": "reference",
-        "supply-partners/*.md": "reference",
+        "supply-partners/*.md": "concept-article",
         "yield-analytics-ui/*.md": "reference",
-        "curate/*.md": "reference",
-        "bidders/*.md": "reference",
-        "data-providers/*.md": "reference",
+        "curate/*.md": "concept-article",
+        "bidders/*.md": "concept-article",
+        "data-providers/*.md": "concept-article",
         "log-level-data/*.md": "reference",
-        "industry-reference/*.md": "reference",
-        "customer-support/*.md": "reference",
+        "industry-reference/*.md": "concept-article",
+        "customer-support/*.md": "tutorial",
         "digital-platform-api/*.md": "reference",
-        "monetize/*.md": "reference",
-        "policies-regulations/*.md": "reference",
-        "training-resources/*.md": "reference"
+        "monetize/*.md": "concept-article",
+        "policies-regulations/*.md": "concept-article",
+        "training-resources/*.md": "tutorial"
       }
     }, 
     "template": [],

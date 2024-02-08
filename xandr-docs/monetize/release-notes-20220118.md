@@ -2,6 +2,7 @@
 title: Microsoft Monetize - Vendor Usage Report UI
 description: Find the release note for the new Vendor Usage Report introduced in the UI.
 ms.date: 10/28/2023
+ms.topic: release-notes
 ---
 
 # Microsoft Monetize - Vendor usage report UI

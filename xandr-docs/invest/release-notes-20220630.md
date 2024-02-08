@@ -2,6 +2,7 @@
 title: June 30, 2022 - Alpha Testing for Underspend Budget Rollover
 description: Find the release note for the new budgeting feature introduced for alpha testing - Underspend Budget Rollover.
 ms.date: 10/28/2023
+ms.topic: release-notes
 ---
 
 # June 30, 2022: Alpha testing for underspend budget rollover

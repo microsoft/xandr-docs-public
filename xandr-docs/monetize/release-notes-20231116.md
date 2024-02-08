@@ -2,6 +2,7 @@
 title: November 16, 2023 - Monetize Insights, Total Revenue
 description: Learn how the Total Revenue tab can be used by the Microsoft Monetize SSP and Ad Server clients in this page.  
 ms.date: 10/28/2023
+ms.topic: release-notes
 ---
 
 

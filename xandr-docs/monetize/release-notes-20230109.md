@@ -2,6 +2,7 @@
 title: Open Beta for Monetize Insights, Bid Rejections
 description: Find the release note for the updates made to Monetize Insights.
 ms.date: 10/28/2023
+ms.topic: release-notes
 ---
 
 # Open Beta for Monetize Insights, bid rejections

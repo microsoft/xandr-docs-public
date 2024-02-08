@@ -2,6 +2,7 @@
 title: May 2, 2022 - Buyer Engagement Report
 description: Find the release note for the new report introduced in the UI - Buyer Engagement Report.
 ms.date: 10/28/2023
+ms.topic: release-notes
 ---
 
 # May 2, 2022: Buyer engagement report

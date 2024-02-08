@@ -2,6 +2,7 @@
 title: Microsoft Monetize - Enhancements to the ALI Setup Experience
 description: Find the release note for updates made to the augmented line item page.
 ms.date: 10/28/2023
+ms.topic: release-notes
 ---
 
 # Microsoft Monetize - Enhancements to the ALI setup experience
