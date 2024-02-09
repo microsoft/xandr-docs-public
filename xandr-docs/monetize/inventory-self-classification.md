@@ -11,7 +11,7 @@ ms.date: 10/28/2023
 We strongly encourage all networks to self-audit their inventory for sensitive attributes and [Content Categories](content-categories.md). Assigning content categories to your placement groups and placements allows you to better target your direct inventory. It can also be useful when [Reselling Managed Inventory](reselling-managed-inventory.md). Assigning sensitive attributes will ensure that your managed advertisers only serve on inventory that meets their specifications. Also, buyers have the option to target your inventory based on whether or not you have self-classified it, so the more inventory you self-classify the more demand you will see.
 
 > [!WARNING]
-> If you sell toolbar, browser plug-in, or related inventory, you must self-classify the inventory as such through this tool. See below for more information. Undeclared toolbar inventory will be suspended within 72 hours as per Microsoft Advertising [Policies for Selling](https://microsoftapc.sharepoint.com/teams/Microsoft AdvertisingServicePolicies/SitePages/Policies-for-Selling.aspx) (login required).
+> If you sell toolbar, browser plug-in, or related inventory, you must self-classify the inventory as such through this tool. See below for more information. Undeclared toolbar inventory will be suspended within 72 hours as per Microsoft Advertising [Part of Service Policies](../policies-regulations/index.yml)
 
 ## Self-reviewing and targeting direct inventory
 
@@ -23,11 +23,11 @@ You can review at the placement group or placement level for each publisher. Pla
 
 ## Child-directed sites
 
-For special rules that apply to identifying child-directed sites, see our [COPPA Policy](https://microsoftapc.sharepoint.com/teams/Microsoft AdvertisingServicePolicies/SitePages/Policies-for-Selling.aspx#child-directed-inventory-policy) (login required).
+For special rules that apply to identifying child-directed sites, see our [Part of Service Policies](../policies-regulations/index.yml)
 
 ## Toolbars, browser plug-ins, and similar content
 
-In order to sell toolbar inventory, the toolbar must comply with our [prohibited content policy](https://microsoftapc.sharepoint.com/teams/Microsoft AdvertisingServicePolicies/SitePages/Policies-for-Selling.aspx) (login required). Specifically, the toolbar must not obscure or interfere with the publisher's ads and must have user consent. Additionally, sellers must:
+In order to sell toolbar inventory, the toolbar must comply with our [Part of Service Policies](../policies-regulations/index.yml). Specifically, the toolbar must not obscure or interfere with the publisher's ads and must have user consent. Additionally, sellers must:
 
 - Segregate toolbar/browser plugging inventory from other inventory on different tags
 - Pass the underlying domain (not the toolbar domain) to Microsoft Advertising

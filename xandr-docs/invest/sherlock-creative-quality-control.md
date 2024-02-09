@@ -15,7 +15,7 @@ We utilize our own automated creative scanning system, Sherlock, to detect malic
 
 ## Malware policy
 
-We have developed an [Anti-malvertising Policy](https://microsoftapc.sharepoint.com/teams/Microsoft AdvertisingServicePolicies/SitePages/Policies-for-Buying.aspx) (login required) to ensure that our clients are taking all the necessary steps to keep the Microsoft Advertising platform safe.
+We have developed an [Part of Service Policies](../policies-regulations/index.yml) to ensure that our clients are taking all the necessary steps to keep the Microsoft Advertising platform safe.
 
 ## Contacting our team
 

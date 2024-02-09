@@ -24,7 +24,7 @@ Identification either by ID or by member and code (see [Calling TinyTags Via Co
 | `test` | Used to run a test auction. Xandr does not transaction the impression in a test auction and nothing is logged. The content of the ad is also ignored. | `test=1` |
 | `debug_node` | Used on a debug impression to direct the bid request to a specific bidder instance. Set debug_node to the id of the bidder instance from the [Bidder Instance Service](bidder-instance-service.md). | `debug_node=25` |
 | `size` | Required if not already set on the TinyTag. This parameter will NOT override a preset size format; widthXheight. | `300x250` |
-| `referrer` | The URL of the page containing the TinyTag.<br>**Note**: If Xandr detects that this URL misrepresents the inventory (i.e., it is not the actual URL for the impression), we may turn off this feature for the TinyTag. For more details about prohibited sell-side practices, see [Policies for Selling](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Selling.aspx) (login required). | `https%3A//mysite.com` |
+| `referrer` | The URL of the page containing the TinyTag.<br>**Note**: If Xandr detects that this URL misrepresents the inventory (i.e., it is not the actual URL for the impression), we may turn off this feature for the TinyTag. For more details about prohibited sell-side practices, see [Part of Service Policies](../policies-regulations/index.yml). | `https%3A//mysite.com` |
 | `age` | Can pass numerical age, birth year, or hyphenated age range. | `56, 1974, or 25-35` |
 | `gender` | Possible values: m, f for male, female | `m` |
 | `reserve` | The reserve price for this inventory. This parameter WILL override a preset price. | `5.00` |

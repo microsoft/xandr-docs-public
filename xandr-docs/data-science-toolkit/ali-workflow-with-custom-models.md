@@ -81,7 +81,7 @@ Item. Instructions for associating a custom model with an ALI can be found in th
 
 ### Targeting IP addresses
 
-Customers in countries that conform to GDPR regulations should be aware that when targeting IP addresses or IP ranges, either in your line item, Bonsai tree, or logistic regression model, there is a possibility the address may be truncated. Please see our [privacy policy documentation](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Privacy-and-the-Xandr-Platform.aspx#ip-truncation) (login required) for details on this process.
+Customers in countries that conform to GDPR regulations should be aware that when targeting IP addresses or IP ranges, either in your line item, Bonsai tree, or logistic regression model, there is a possibility the address may be truncated. Please see our [Part of Service Policies](../policies-regulations/index.yml) for details on this process.
 
 ### Multiple custom models
 

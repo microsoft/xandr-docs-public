@@ -43,7 +43,7 @@ For more detailed information about how browsers load web pages, see [How Browse
 In order for our clients to meet their transparency, notice and choice/consent requirements under the GDPR and the existing ePrivacy Directive, Microsoft Advertising supports the [IAB Europe Transparency & Consent Framework](https://iabeurope.eu/transparency-consent-framework/) (the "Framework"). This is a reference for publishers using the macros to surface notice, transparency and choice to end users located in the EEA and signal approved vendors and, where necessary, pass consent, to Microsoft Advertising and demand sources and their vendors through the Microsoft Advertising platform. This resource should not be construed as legal advice and Microsoft Advertising makes no guarantees about compliance with any law or regulation. Please note that because every company and its collection, use, and storage of personal data is different, you should also seek independent legal advice relating to obligations under European regulations, including the GDPR and the existing ePrivacy Directive. Only a lawyer can provide you with legal advice specifically tailored to your situation. Nothing in this guide is intended to provide you with, or should be used as a substitute for, legal advice tailored to your business.
 
 > [!NOTE]
-> Our [Service Policies](https://microsoftapc.sharepoint.com/teams/Microsoft AdvertisingServicePolicies) (login required) (for Buying, Selling, and Data Providers) include privacy-specific obligations of which you should be aware.
+> Our [Part of Service Policies](../policies-regulations/index.yml) (for Buying, Selling, and Data Providers) include privacy-specific obligations of which you should be aware.
 
 ### `${GDPR_APPLIES}`
 

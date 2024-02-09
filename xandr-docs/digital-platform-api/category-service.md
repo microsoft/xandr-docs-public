@@ -25,7 +25,7 @@ Sellers will categorize sites and placements using the [Content Category Service
 > [!NOTE]
 > The fields `countries_and_brands` and `countries_and_regions` defined below are being used by our system to allow gambling-related creatives to serve in the countries and regions where they're legally allowed, putting us in compliance with applicable laws.
 >
-> - For more information about our official gambling-related policies, see our [buy-side](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Buying.aspx) (login required) and [sell-side](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Selling.aspx) (login required) gambling policies.
+> - For more information about our official gambling-related policies, see our [Part of Service Policies](../policies-regulations/index.yml) gambling policies.
 > - For more information on how allowlisting works by country and region, contact [Customer Support](https://help.xandr.com/s/login/).
 
 | Field | Type | Description |

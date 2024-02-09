@@ -12,7 +12,7 @@ Our API is continually changing. The vast majority of changes simply add new fun
 This page explains what changes qualify as breaking changes to our API. It also gives examples of changes that do not qualify as breaking changes.
 
 > [!IMPORTANT]
-> We reserve the right to fix bugs, adjust functionality to comply with our [Service Policies](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies) and legal obligations, and change features and products in alpha and beta without providing early notice.
+> We reserve the right to fix bugs, adjust functionality to comply with our [Part of Service Policies](../policies-regulations/index.yml) and legal obligations, and change features and products in alpha and beta without providing early notice.
 
 ## Breaking changes
 

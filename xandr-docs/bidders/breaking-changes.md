@@ -12,7 +12,7 @@ functionality, but occasionally we introduce "breaking changes" that may require
 This page explains what changes qualify as "breaking changes" to our impression bus API and our bidding protocol. It also gives you examples of changes that do not quality as breaking changes.
 
 > [!NOTE]
-> Xandr reserves the right to fix bugs, adjust functionality to comply with our [service policies](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies) (login required) and legal obligations, and change features and products in alpha and beta without providing early notice.
+> Xandr reserves the right to fix bugs, adjust functionality to comply with our [Part of Service Policies](../policies-regulations/index.yml) and legal obligations, and change features and products in alpha and beta without providing early notice.
 
 ## Impression bus API
 

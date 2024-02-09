@@ -45,12 +45,14 @@
       "layout": "Conceptual",
       "breadcrumb_path": "/xandr/breadcrumb/toc.json",
       "feedback_system": "None",
-      "permissioned-type": "public"
+      "permissioned-type": "public",
+      "uhfHeaderId": "MSDocsHeader-xandr"
     },
     "fileMetadata": {
       "ms.service": {
         "invest/*.md": "microsoft-invest",
         "seller-tag/*.md": "microsoft-monetize",
+        "ja-jp/*.md": "microsoft-monetize",
         "ott-ctv/*.md": "microsoft-monetize",
         "data-science-toolkit/*.md": "microsoft-monetize",
         "yield-analytics-api/*.md": "microsoft-monetize",
@@ -72,6 +74,7 @@
       "author": {
         "invest/*.md": "rupambaruah-xandr",
         "seller-tag/*.md": "rupambaruah-xandr",
+        "ja-jp/*.md": "rupambaruah-xandr",
         "ott-ctv/*.md": "rupambaruah-xandr",
         "data-science-toolkit/*.md": "rupambaruah-xandr",
         "yield-analytics-api/*.md": "rupambaruah-xandr",
@@ -92,6 +95,7 @@
       "ms.author": {
         "invest/*.md": "rupambaruah",
         "seller-tag/*.md": "rupambaruah",
+        "ja-jp/*.md": "rupambaruah",
         "ott-ctv/*.md": "rupambaruah",
         "data-science-toolkit/*.md": "rupambaruah",
         "yield-analytics-api/*.md": "rupambaruah",
@@ -111,6 +115,7 @@
       },
     "ms.topic": {
         "invest/*.md": "concept-article",
+        "ja-jp/*.md": "concept-article",
         "seller-tag/*.md": "reference",
         "ott-ctv/*.md": "reference",
         "data-science-toolkit/*.md": "tutorial",

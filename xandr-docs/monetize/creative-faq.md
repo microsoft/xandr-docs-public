@@ -52,4 +52,4 @@ Currently, the creative preview in Full Edit is not intended to be fully functio
 
 ## Gambling creatives
 
-Please see our [Policies for Buying](https://microsoftapc.sharepoint.com/teams/Microsoft AdvertisingServicePolicies/SitePages/Policies-for-Buying.aspx) (login required) for information on what kinds of gambling ads are allowed to serve and under what conditions.
+Please see our [Part of Service Policies](../policies-regulations/index.yml) for information on what kinds of gambling ads are allowed to serve and under what conditions.

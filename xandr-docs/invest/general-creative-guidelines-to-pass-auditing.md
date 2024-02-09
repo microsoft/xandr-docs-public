@@ -17,11 +17,11 @@ Microsoft Advertising makes significant efforts to prevent malvertising on the p
 Microsoft Advertising Sherlock is an automated creative quality control system that continuously monitors creatives serving on Microsoft Advertising for malvertising threats. Sherlock detects malware and viruses and enforces domain blocklists. It may also check ad tags to verify they are from approved third-party ad servers.
 
 Malvertising threats identified by Sherlock will be immediately deactivated. For more information, see
-[Sherlock: Creative Quality Control](./sherlock-creative-quality-control.md) and [Policies for Buying](https://microsoftapc.sharepoint.com/teams/Microsoft AdvertisingServicePolicies/SitePages/Policies-for-Buying.aspx) (login required).
+[Sherlock: Creative Quality Control](./sherlock-creative-quality-control.md) and [Part of Service Policies](../policies-regulations/index.yml).
 
 ## Creative content
 
-To learn more about the content and offer types that we prohibit, see [Policies for Buying](https://microsoftapc.sharepoint.com/teams/Microsoft AdvertisingServicePolicies/SitePages/Policies-for-Buying.aspx) (login required).
+To learn more about the content and offer types that we prohibit, see [Part of Service Policies](../policies-regulations/index.yml).
 
 - **Language**: It's recommended that the language of the landing page match the language of the creative. For example, if the creative is in Spanish, the landing page should also be in Spanish. However, by default, Microsoft Advertising will assign a language that best represents the targeted users.
 - **Offer Categories**: Audited creatives will be assigned a brand category based on the content of the landing page.
@@ -37,7 +37,7 @@ To learn more about the content and offer types that we prohibit, see [Policies 
 
 - Clicking on a creative must not initiate a download of any file type.
 - Landing pages must meet the following criteria:
-  - The landing page content must meet all the guidelines listed in our [Policies for Buying](https://microsoftapc.sharepoint.com/teams/Microsoft AdvertisingServicePolicies/SitePages/Policies-for-Buying.aspx) (login required).
+  - The landing page content must meet all the guidelines listed in our [Part of Service Policies](../policies-regulations/index.yml).
   - The landing page must be live and functional at the time of audit.
   - The landing page must be viewable from any one of the IP addresses that we use to perform our creative audits, which are listed in the Creative Troubleshooting FAQ. For more information, see the **Creative Doesn't Display** section in [Creative Troubleshooting FAQ](../bidders/creative-troubleshooting-faq.md).
 

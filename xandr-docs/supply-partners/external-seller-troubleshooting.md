@@ -53,7 +53,7 @@ The following steps will guide you through troubleshooting non-delivery in the o
 
 ## Malware or policy violation escalations
 
-Any escalations regarding malware or violations of our [policies for buying](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Buying.aspx) (login required) can be submitted to our Anti-Malvertising Team via the [Customer Portal](https://help.xandr.com/s/login/) under the category **Anti-Malvertising**. This team will be able to review the offending creative and domain for platform-blocklist purposes.
+Any escalations regarding malware or violations of our [Part of Service Policies](../policies-regulations/index.yml) can be submitted to our Anti-Malvertising Team via the [Customer Portal](https://help.xandr.com/s/login/) under the category **Anti-Malvertising**. This team will be able to review the offending creative and domain for platform-blocklist purposes.
 
 - **Domains**: If the escalation involves a specific domain or list of domains, please make sure to include the reason for flagging the
   domain, as well as a report from a third party scanning vendor (such as [The Media Trust](https://www.themediatrust.com/) or [RiskIQ](https://www.riskiq.com/)) if applicable.

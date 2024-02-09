@@ -12,7 +12,7 @@ We utilize our own automated creative scanning system system, Sherlock, to detec
 
 ## Anti-Malvertising policy for buyers
 
-We have developed an [anti-malvertising policy](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Malware-Policy.aspx) (login required) whose goal is to ensure that our clients are making all necessary efforts to keep our platform safe. Select the above link and read this policy carefully to understand your responsibilities.
+We have developed an [Part of Service Policies](../policies-regulations/index.yml) whose goal is to ensure that our clients are making all necessary efforts to keep our platform safe. Select the above link and read this policy carefully to understand your responsibilities.
 
 ## Malware issues or questions
 

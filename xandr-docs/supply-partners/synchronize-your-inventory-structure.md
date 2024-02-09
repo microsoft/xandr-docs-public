@@ -23,6 +23,6 @@ If inventory is not properly categorized and becomes non-detectable by
 Domain Detection, this will result in the inventory being unsellable via
 Xandr, because without proper inventory grouping
 and classification Xandr cannot reliably enforce
-its [Policies for Selling](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Selling.aspx) (login required). 
+its [Part of Service Policies](../policies-regulations/index.yml). 
 
 Use the [UI to synchronize your inventory structure](use-the-ui-to-synchronize-your-inventory-structure.md) and [Use the API to synchronize your inventory structure](use-the-api-to-synchronize-your-inventory-structure.md) pages to introduce you to the basic sell-side object hierarchy and then walk you through the process of mapping your supply to these Xandr objects using Xandr UI or the API.

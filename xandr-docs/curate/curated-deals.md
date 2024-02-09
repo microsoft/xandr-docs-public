@@ -39,5 +39,5 @@ Please reach out to your Microsoft Advertising account manager to learn more abo
 
 ## Related topics
 
-- [Create a Curated Deal Line Item](create-a-curated-deal-line-item.md) (login required)
-- [Curator Reporting](curator-reporting.md) (login required)
+- [Create a Curated Deal Line Item](create-a-curated-deal-line-item.md) 
+- [Curator Reporting](curator-reporting.md) 

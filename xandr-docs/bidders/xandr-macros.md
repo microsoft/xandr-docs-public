@@ -82,7 +82,7 @@ Xandr supports the following creative macros when adding creatives using the [C
 > US state law, European regulations, including the GDPR and the existing ePrivacy Directive. Only a lawyer can provide you with legal advice specifically tailored to your situation. Nothing in this guide is
 > intended to provide you with, or should be used as a substitute for, legal advice tailored to your business.
 >
-> Note that our [Service Policies](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Xandr-Service-Policies.aspx) (for Buying, Selling, and Data Providers) include privacy-specific obligations of which you should be aware. These Service Policies have been updated effective 1st of January 2023.
+> Note that our [Part of Service Policies](../policies-regulations/index.yml) (for Buying, Selling, and Data Providers) include privacy-specific obligations of which you should be aware. These Service Policies have been updated effective 1st of January 2023.
 
 | Macro | Description |
 |--|--|

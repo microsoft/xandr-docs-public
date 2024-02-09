@@ -25,7 +25,7 @@ Here's a visualization of the relationship between objects:
 
 The two most important objects for Supply Partners to focus on are
 publishers and placements. Since Domain Detection may shut off tags that
-send URLs violating our [Policies for Selling](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Selling.aspx) (login required),
+send URLs violating our [Part of Service Policies](../policies-regulations/index.yml),
 you can protect yourself by splitting out inventory in the most granular
 way possible, into publishers and tags. This way, if one tag gets turned
 off for what Xandr considers “bad” inventory, it

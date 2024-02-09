@@ -65,7 +65,7 @@ Xandr has categories of sites that will not serve impressions, but unauditable d
 >
 > In the past, filtered impressions on inventory flagged as violating platform standards would serve blanks. Now, these impressions follow seller preferences for impressions with no demand. As with all impressions that follow this workflow, sellers will be charged the applicable fee.
 > [!NOTE]
-> See [Policies for Selling](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Selling.aspx) (Login required) for policies that apply globally on Xandr's platform.
+> See [Part of Service Policies](../policies-regulations/index.yml) for policies that apply globally on Xandr's platform.
 
 Xandr works hard to create a safe and trusted ad marketplace. We use various methods to continuously monitor traffic that passes through our Impression Bus, whether it comes from Xandr tags, white-labeled tags, or third-party ad tags. This includes, but is not limited to, direct publisher relationships and media buys placed with other ad servers, networks, platforms and supply sources.
 
@@ -76,7 +76,7 @@ audit status (see [Creative Standards and Auditing](./creative-standards-and-au
 
 #### Restricted content
 
-In keeping with our inventory standards, there are categories of sites that Xandr will not serve impressions. These categories are outlined clearly in our Service Policies, under [Policies for Selling](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Selling.aspx) (login required).
+In keeping with our inventory standards, there are categories of sites that Xandr will not serve impressions. These categories are outlined clearly in our Service Policies, under [Part of Service Policies](../policies-regulations/index.yml).
 
 #### Unauditable inventory
 
@@ -103,14 +103,14 @@ These are qualities of a site or page that advertisers may wish to exclude from 
 - **Incentivized clicks**: Sites or parts of sites containing content, such as links, to be clicked on by live users who subsequently receive some reward or incentive.
 - **Non-English languages**: Sites where a significant portion of the text appears in a language other than English, and the site appears targeted to a non-English-speaking audience.
 - **Streaming media**: Sites or parts of sites containing streaming music, or embedded videos or flash games.
-- **Toolbars, plug-ins or extensions**: Ad-supported browser plug-in inventory installed with user consent. More information on compliant toolbars can be found under [Policies for Selling](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Selling.aspx) (Login required).
+- **Toolbars, plug-ins or extensions**: Ad-supported browser plug-in inventory installed with user consent. More information on compliant toolbars can be found under [Part of Service Policies](../policies-regulations/index.yml).
 - **Contextual nudity**: Non-sexual, non-vulgar nudity that appears as an incidental aspect of the site without being the focus of it.
 
 #### Intended audience
 
 This category is used to indicate the age range of the target audience for the content on the site. A site falls into **General audiences** unless it contains content that is specifically targeted toward children, young adults, or the 18+ category. (18+, also called “mature”, does not include so-called “adult” content, i.e. pornography.)
 
-- **Children**: A site or part of a site whose content is specifically targeted toward children. For special rules that apply to child-directed sites, see the COPPA FAQs in our [Policies for Selling](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Selling.aspx) (Login required).
+- **Children**: A site or part of a site whose content is specifically targeted toward children. For special rules that apply to child-directed sites, see the COPPA FAQs in our [Part of Service Policies](../policies-regulations/index.yml).
 - **Young Adults**: A site or part of a site whose content is specifically targeted toward young adults.
 - **General Audiences**: A site or part of a site which has no particular intended audience and whose content is appropriate for all ages.
 - **Mature (18+)**: A site or part of a site whose content is not appropriate for children or young adults under 18.

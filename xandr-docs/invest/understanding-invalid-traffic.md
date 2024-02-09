@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 Invalid traffic, while low on the platform due to proactive monitoring, is a legitimate concern for buyers and sellers of digital advertising. As part of the effort to combat this, in March of 2018 we implemented policies that streamline the refund process for buyers (excluding bidders) who have purchased invalid traffic.
 
 > [!NOTE]
-> Full details of the current policy can be found in our [Fraud Credit Policy](https://microsoftapc.sharepoint.com/teams/Microsoft AdvertisingServicePolicies/SitePages/Fraud-Credit-Policy.aspx) (login required).
+> Full details of the current policy can be found in our [Part of Service Policies](../policies-regulations/index.yml).
 
 ## Claim submission
 
