@@ -68,7 +68,8 @@
         "monetize/*.md": "microsoft-monetize",
         "log-level-data/*.md": "microsoft-monetize",
         "policies-regulations/*.md": "microsoft-monetize",
-        "training-resources/*.md": "microsoft-monetize"
+        "training-resources/*.md": "microsoft-monetize",
+        "finance/*.md": "microsoft-monetize"
         
       },
       "author": {
@@ -90,7 +91,8 @@
         "digital-platform-api/*.md": "rupambaruah-xandr",
         "monetize/*.md": "rupambaruah-xandr",
         "policies-regulations/*.md": "rupambaruah-xandr",
-        "training-resources/*.md": "rupambaruah-xandr"
+        "training-resources/*.md": "rupambaruah-xandr",
+        "finance/*.md": "shivannis"
       },
       "ms.author": {
         "invest/*.md": "rupambaruah",
@@ -111,7 +113,8 @@
         "digital-platform-api/*.md": "rupambaruah",
         "monetize/*.md": "rupambaruah",
         "policies-regulations/*.md": "rupambaruah",
-        "training-resources/*.md": "rupambaruah"
+        "training-resources/*.md": "rupambaruah",
+        "finance/*.md": "shsrinivasan"
       },
     "ms.topic": {
         "invest/*.md": "concept-article",
@@ -132,7 +135,8 @@
         "digital-platform-api/*.md": "reference",
         "monetize/*.md": "concept-article",
         "policies-regulations/*.md": "concept-article",
-        "training-resources/*.md": "tutorial"
+        "training-resources/*.md": "tutorial",
+        "finance/*.md": "reference"
       }
     }, 
     "template": [],

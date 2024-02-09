@@ -1,0 +1,43 @@
+### YamlMime:Landing
+
+title: Finance Reference Documentation
+summary: Welcome to Finance Reference Documentation! All the information you need to get started is right here. You can click one of the titles below or refer to the Table of Contents (TOC) on the left for complete documentation.
+metadata:
+  title: Finance Reference Documentation
+  description: Discover various reference docs about Finance Reference Documentation
+  ms.topic: landing-page
+  ms.author: shsrinivasan
+  ms.service: microsoft-monetize
+  ms.date: 12/01/2023
+
+landingContent:
+  - title: Let's Get Started
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview
+            url: billing.md
+      - linkListType: how-to-guide
+        links:
+          - text: Digital Buying
+            url: digital-buying.md
+          - text: Digital Selling
+            url: digital-selling.md
+  - title: Foreign Exchange Margin
+    linkLists:
+      - linkListType: reference
+        links:            
+          - text: Foreign Exchange Margin Process
+            url: foreign-exchange-margin.md
+  - title: Currency support
+    linkLists:
+      - linkListType: reference
+        links:            
+          - text: Base and supported currency
+            url: currency-support.md
+  - title: Best Practices
+    linkLists:
+      - linkListType: reference
+        links:            
+          - text: Billing and Settlement FAQ
+            url: billing-faq.md

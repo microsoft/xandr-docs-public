@@ -1,0 +1,48 @@
+- name: Finance Reference Documentation
+  href: index.yml
+- name: Getting Started
+  items:
+    - name: Finance
+      href: billing.md
+- name: Digital Buying
+  items:
+    - name: Overview
+      href: digital-buying.md
+    - name: Understanding Your Invoice
+      href: understanding-your-invoice.md
+    - name: Pricing Terms
+      items:
+      - name: Understanding Your Pricing Terms
+        href: understanding-your-pricing-terms.md
+      - name: Buyer Auction Service Charge Mechanics
+        href: buyer-auction-service-charge-mechanics.md
+      - name: Charges for Buyers
+        href: charges-for-buyers.md
+      - name: Charges for Sellers
+        href: charges-for-sellers.md
+    - name: Reconciling Your Invoice with Reporting
+      href: reconciling-your-invoice-with-reporting.md
+    - name: Payment
+      href: payment-to-xandr.md
+    - name: Credit Limit Overview
+      href: credit-limit-overview.md
+    - name: Integrated Pre Payment Functionality
+      href: integrated-pre-payment-functionality.md
+- name: Digital Selling
+  items:
+    - name: Overview
+      href: digital-selling.md
+    - name: Understanding Your Seller Statement
+      href: understanding-your-seller-statement.md
+    - name: Reconciling your Seller Statement with Reporting
+      href: reconciling-your-seller-statement-with-reporting.md
+    - name: Getting Paid
+      href: getting-paid-by-xandr.md
+- name: Understanding Invalid Traffic
+  href: understanding-invalid-traffic.md
+- name: Foreign Exchange Margin
+  href: foreign-exchange-margin.md
+- name: Currency Support
+  href: currency-support.md
+- name: Billing and Settlement FAQ
+  href: billing-faq.md

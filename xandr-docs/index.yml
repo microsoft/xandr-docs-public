@@ -140,4 +140,8 @@ additionalContent:
         - title: Digital Platform API (Internal)
           summary: These services are accessible to Microsoft employees only
           url: digital-platform-api/digital-platform-api-internal-services/index.yml
+        # Card
+        - title: Finance
+          summary: Reference documentation of Finance -  serves as the clearinghouse by paying inventory sellers and then billing buyers.
+          url: finance/index.yml
     
