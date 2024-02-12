@@ -21,7 +21,7 @@ The Digital Platform API supports HTTP Protocol version 1.1 or later. While some
 
 ## API endpoints
 
-The URL for the production API endpoint is: [https://api.appnexus.com](https://api.appnexus.com/). (Xandr products are powered by AppNexus technology.) Please note that non-secure access to the product API (HTTP) is not available.
+The URL for the production API endpoint is: [https://api.appnexus.com](https://api.appnexus.com/). Please note that non-secure access to the product API (HTTP) is not available.
 
 Changes made with this API affect the production environment. Only authorized users should alter information or settings in this environment.
 

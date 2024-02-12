@@ -71,7 +71,7 @@ Please follow the procedures in the sections below for the cloud vendor you'd li
 
 ### Microsoft Azure Blob Storage
 
-1. Create an [Azure storage account](/storage/common/storage-account-create?tabs=azure-portal) which will host one or more storage containers.
+1. Create an [Azure storage account](/azure/storage/common/storage-account-create) which will host one or more storage containers.
 
 1. Create an [Azure Blob storage container](/azure/storage/blobs/storage-blobs-introduction) inside your storage account which will serve as a drop box for log-level data from the Xandr Cloud Export system.
 
@@ -85,7 +85,7 @@ Please follow the procedures in the sections below for the cloud vendor you'd li
 
     | Setting | Description |
     |---|---|
-    | **Storage Account** | Name of the [Azure storage account](/storage/common/storage-account-create?tabs=azure-portal) created in step 1. |
+    | **Storage Account** | Name of the [Azure storage account](/azure/storage/common/storage-account-create) created in step 1. |
     | **Container** | Name of the [Azure Blob storage container](/azure/storage/blobs/storage-blobs-introduction) created in step 2. |
     | **Manifest Path** | Root for manifest files (e.g., */manifests*). This file path does not support macros. |
     | **Feed Path** | Feed path with macros (e.g., */feeds/%FEED_NAME%/%YEAR%/%MONTH%/%DAY%/%HOUR%/%TIMESTAMP%*) |
