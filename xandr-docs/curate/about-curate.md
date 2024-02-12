@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # About Microsoft Curate
 
-Microsoft Curate (powered by Microsoft Advertising) lets curators use their proprietary assets to enhance the value of a seller’s inventory and create unique offerings for buyers.
+Microsoft Curate lets curators use their proprietary assets to enhance the value of a seller’s inventory and create unique offerings for buyers.
 
 ## Benefits
 

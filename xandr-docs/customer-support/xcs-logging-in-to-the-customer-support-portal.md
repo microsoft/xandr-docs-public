@@ -16,7 +16,7 @@ If you do not already have a portal account, please visit the [Login](https:/
 Once your account is set, you can access the Customer Support Portal by going directly to the [Login](https://help.xandr.com/) page and entering your Email and Password.
 
 > [!NOTE]
-> The portal account is separate from and [Documentation Portal](https://docs.xandr.com/) accounts. You will need to log in to each system separately. Note that each account may have a different password.
+> The portal account is separate from [Documentation Portal](https://learn.microsoft.com/en-us/xandr/) accounts. You will need to log in to each system separately. Note that each account may have a different password.
 
 ## Related topics
 

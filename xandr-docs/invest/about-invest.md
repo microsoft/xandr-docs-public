@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 
 # About Microsoft Invest
 
-Microsoft Invest (powered by Microsoft Advertising) is a strategic buying platform built for the needs of today’s advertisers looking to invest in upper-funnel buying and drive business results. Microsoft Invest brings power, high performance, and an end-to-end approach to advertising technology, with a commitment to buyer success.
+Microsoft Invest is a strategic buying platform built for the needs of today’s advertisers looking to invest in upper-funnel buying and drive business results. Microsoft Invest brings power, high performance, and an end-to-end approach to advertising technology, with a commitment to buyer success.
 
 ## Benefits
 
