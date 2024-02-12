@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Safety Budget and Third-Party Inventory
-description: A safety budget limits daily media cost spend on third-party inventory. It can be set to an amount that is 5-10 times your anticipated daily spend. 
+description: Learn how to set and manage a safety budget, which can be 5-10 times the daily spend. A safety budget limits daily media cost spend on third-party inventory.
 ms.date: 10/28/2023
 ---
 

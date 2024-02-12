@@ -300,7 +300,7 @@ GDALIs support "page-level" roadblocks, where one impression is recorded for the
 >
 > To serve a roadblock, one creative for each size must be eligible to serve on the page. All creatives will serve if ad slots are available. If more than one creative per size exists, creatives will rotate through a single ad slot. There can be more ad slots available than there are creatives to fill them.
 
-For more on roadblocking, see [Target Your Inventory with Roadblocking](../monetize/target-your-inventory-with-roadblocking.md) (customer login required).
+For more on roadblocking, see [Target Your Inventory with Roadblocking](../monetize/target-your-inventory-with-roadblocking.md).
 
 | Field | Type | Description |
 |:---|:---|:---|

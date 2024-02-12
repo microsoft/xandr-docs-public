@@ -73,7 +73,7 @@ should be adhered to:
   multiple platforms outside of Xandr, giving a
   unified view of the user across a larger portion of internet traffic.
   For more information, see "User ID Syncing" in
-   documentation (client login required).
+   documentation.
 - **Make sure clients are targeting just your segments on a single
   campaign**: Campaigns that are actively targeting segments belonging
   to multiple data providers may have data billing issues down the line

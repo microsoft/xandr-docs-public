@@ -45,8 +45,8 @@ Model). The conditions can be based on a set of Bonsai features and feature valu
 - Take a close look at the [Bonsai Features](bonsai-language-features.md) that are available.
 - Sketch how you want to use tree features to determine outputs.
 - Be sure to take advantage of reporting data in identifying the right features and values:
-  - [Standard Reporting](../invest/reporting-guide.md) (customer login required)
-  - [Log-Level Data Feeds](../log-level-data/log-level-data-feeds.md) (customer login required)
+  - [Standard Reporting](../invest/reporting-guide.md) 
+  - [Log-Level Data Feeds](../log-level-data/log-level-data-feeds.md) 
 
 Example: Decision tree for bid pricing
 

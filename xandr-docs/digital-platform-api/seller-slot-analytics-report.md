@@ -48,7 +48,7 @@ To run a report for a custom time frame, set the `start_date` and `end_date` fie
 | `advertiser_name` | string | no | `My Advertiser` | The name of the advertiser whose creative was served. |
 | `advertiser` | string | no |`My Advertiser (789)` | The name of the advertiser followed by the ID (AppNexus format). |
 | `ad_slot_position` | string | yes | `"Outro Bumper"` | The chronological order of an ad within its ad pod (placement set). |
-| `advertiser_default_currency` | string | yes | `Member's default currency` | The default currency to be used for the advertiser. This will be a three-letter code that you can retrieve from the read-only [Currency Service](./currency-service.md). See [Currency Support](../monetize/currency-support.md) in the UI documentation for details about the concept (customer login required).<br><br>As a best practice, align currency to the billing currency in order to achieve the best possible local currency experience. |
+| `advertiser_default_currency` | string | yes | `Member's default currency` | The default currency to be used for the advertiser. This will be a three-letter code that you can retrieve from the read-only [Currency Service](./currency-service.md). See [Currency Support](../monetize/currency-support.md) in the UI documentation for details about the concept.<br><br>As a best practice, align currency to the billing currency in order to achieve the best possible local currency experience. |
 | `advertiser_default_exchange_rate` | double | yes |  | The exchange rate on day of event. Rate is updated daily at 4 PM GMT. |
 | `buyer_seat` | string | Yes | `My Buyer Seat (DSP Name)` | The display name for the buyer seat code. |
 | `browser` | string | no | `webOS Browser (33)` | The name of the browser. |

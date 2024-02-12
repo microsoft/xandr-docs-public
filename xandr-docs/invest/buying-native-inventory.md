@@ -20,11 +20,11 @@ For specific information on individual sellers, see [Native Inventory Seller Spe
 
 ## Step 1. Ensure you are in native sellers' allowlists
 
-Some native sellers require you to go through a quick buyer audit before they'll grant access to their inventory. Here is a list of sellers and their allowlist requirements:
+Some native sellers require you to go through a quick buyer audit before they grant access to their inventory. Here is a list of sellers and their allowlist requirements:
 
 | Native Seller | Are you in an allowlist? | How to be put in an allowlist |
 |:-|:-|:-|
-| Ligatus | You must be in an allowlist to buy Ligatus inventory. You can determine whether you're eligible to serve on Ligatus by checking your settings in Partner Center. See the [Partner Center Guide](./partner-center-guide.md) documentation for more information. | Please reach out to [rta@ligatus.com](mailto:rta@ligatus.com) for allowlist approval. |
+| Ligatus | You must be in an allowlist to buy Ligatus inventory. You can determine whether you're eligible to serve on Ligatus by checking your settings in Partner Center. See the [Partner Center Guide](./partner-center-guide.md) documentation for more information. | Reach out to [rta@ligatus.com](mailto:rta@ligatus.com) for allowlist approval. |
 | Sanoma Finland | If you have not previously bought Sanoma Finland via Microsoft Advertising, you are not yet in an allowlist. | Reach out to [programmatic@sanoma.com](mailto:appnexus@triplelift.com). |
 | TripleLift | If you have not previously bought TripleLift via Microsoft Advertising, you are not yet in an allowlist. | Reach out to [appnexus@triplelift.com](mailto:appnexus@triplelift.com). |
 
@@ -41,23 +41,21 @@ The following sellers do not currently have any allowlist requirements:
 
 ## Step 2. Upload native creatives
 
-Navigate to the **Creative Manager** screen, click **Create New** > **Single creative**.
-This will bring up the **Create New Creative** dialog.
+Navigate to the **Creative Manager** screen, click **Create New** > **Single creative**. This will bring up the **Create New Creative** dialog.
 
 To maximize reach for your creatives across native inventory sources, here are some general guidelines we recommend:
 
-|     Field    |                Microsoft Advertising Guidelines               |
-|:-------------|:----------------------------------------------|
-| Title        | 25 character maximum                          |
-| Body         | 300 character maximum                         |
-| Logo         | 1:1 aspect ratio                              |
-| Image        | 1.91:1 aspect ratio 1200x627 200 KB max       |
+| Field | Xandr Guidelines |
+|:---|:---|
+| Title | 25 character maximum |
+| Body | 300 character maximum |
+| Logo | 1:1 aspect ratio |
+| Image | 1.91:1 aspect ratio<br>1200x627<br>200 KB max |
 | Sponsored By | 25 character maximum (brand of advertisement) |
 
 If a parameter is not mentioned in the table above, enter whatever values make sense for your campaign.
 
-For detailed information on additional fields and uploading a native
-creative see [Add a Creative](add-a-creative.md) and [Add Creatives in Bulk](./add-creatives-in-bulk.md). You can also review our [Native Buy-Side Best Practices](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Microsoft Advertising/Buy-Side-Native-Best-Practices.pdf).
+For detailed information on additional fields and uploading a native creative see [Add a Creative](add-a-creative.md) and [Add Creatives in Bulk](./add-creatives-in-bulk.md). You can also review our [Native Buy-Side Best Practices](https://download.microsoft.com/download/e/e/5/ee544211-092a-45c4-8076-57b5c5aaceb3/28%20Dec%202023/Buy-Side-Native-Best-Practices.pdf).
 
 > [!WARNING]
 > Do not use JavaScript piggyback pixels on native creatives. Only image pixels can be used on native creatives.

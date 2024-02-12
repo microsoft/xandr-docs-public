@@ -10,7 +10,7 @@ Here is a quick guide to help get you, as an Xandr bidder customer, up-and-runni
 
 ## Audit criteria
 
-You will greatly increase the publishers you can reach if you have your creatives audited. Read the Creative Standards page in the UI (customer login required) to make sure your creatives are audited and ready to serve.
+You will greatly increase the publishers you can reach if you have your creatives audited. Read the Creative Standards page in the UI to make sure your creatives are audited and ready to serve.
 
 ## Set up creatives
 

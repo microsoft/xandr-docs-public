@@ -542,7 +542,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/plugin' | json-pp
                         "js_api_version":"",
                         "name":"Plugin 1",
                         "description":"",
-                        "icon_url":"https:\/\/wiki.xandr.com\/download\/attachments\/34406872\/an-labs-symbol.png?
+                        "icon_url":"https:\/\/abc.example.com\/download\/attachments\/34406872\/an-labs-symbol.png?
                                                  version=1&modificationDate=1327610813446",
                         "proxy_url":"https:\/\/www.xandr.com"
                     }

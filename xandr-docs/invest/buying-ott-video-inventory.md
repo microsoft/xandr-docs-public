@@ -11,15 +11,15 @@ Microsoft Invest allows you to buy or sell ad inventory on OTT ("over-the-top") 
 OTT premium digital video:
 
 - is delivered via an IP-enabled device.
-- is a high-quality format available programmatically, with completion rates as high as 90%
-- is typically consumed in a full-screen setting, with engaged viewers watching premium video content
-- can be delivered on desktop, mobile, gaming consoles, and streaming devices as well as to Smart TVs and set-top boxes
+- is a high-quality format available programmatically, with completion rates as high as 90%.
+- is typically consumed in a full-screen setting, with engaged viewers watching premium video content.
+- can be delivered on desktop, mobile, gaming consoles, and streaming devices as well as to Smart TVs and set-top boxes.
 
 Microsoft Advertising offers a programmatic platform that allows for buying OTT video inventory at scale. Based on our access to Microsoft Advertising Media's extensive premium video supply sources and their audiences, we are currently developing advanced first-party/third-party programmatic audience targeting, measurement, and attribution capabilities, allowing household-level demographic and audience targeting across CTV supply.
 
 ## Getting started
 
-Currently, OTT video inventory is primarily available through Deals, and it only supports VAST video creatives. (VAST video creatives wrapped in VPAID are not generally supported on OTT video inventory.) Standard video reporting is available for impressions, quartiles, and completion rates. You should contact your Microsoft Advertising account manager for help with initial outreach to key publishers and deal setup.
+Currently, OTT video inventory is primarily available through Deals, and it only supports VAST video creatives. VAST video creatives wrapped in VPAID are generally not supported on OTT video inventory. Standard video reporting is available for impressions, quartiles, and completion rates. You should contact your Microsoft Advertising account manager for help with initial outreach to key publishers and deal setup.
 
 ## Targeting
 
@@ -29,4 +29,4 @@ As a workaround for user-based targeting on CTV devices, Microsoft Advertising s
 
 ## Next steps
 
-Documentation will be updated as the video product offering evolves. If you have further questions, please reach out to your Microsoft Advertising account manager.
+Documentation will be updated as the video product offering evolves. If you have further questions, reach out to your Microsoft Advertising account manager.

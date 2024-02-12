@@ -4,7 +4,7 @@ description: This report shows the number of creatives audited for an advertiser
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Completed creative audits report
+# Microsoft Invest - Completed Creative Audits report
 
 The Completed Creative Audits Report provides insight into the number of creatives that have completed the Microsoft Advertising audit process, and the associated charges. Use this report to find out:
 
@@ -12,18 +12,15 @@ The Completed Creative Audits Report provides insight into the number of creativ
 - The number of creatives that have been audited for a specific advertiser
 - Which of your creatives have completed audit
 - The amount you are being charged for creative audits
-- The number of standard versus priority creative audits you havecompleted
-  See below for instructions on retrieving this report.
+- The number of standard versus priority creative audits you have completed. See below for instructions on retrieving this report.
 
-**Time frame**
+## Time frame
 
 All dates and times are given in UTC.
 
-**Time ranges**
+### Time ranges
 
-Time ranges define the time period of the data extracted for the report. The following is a complete list of time ranges available for reports.
-
-However, all time ranges are not available for every report.
+Time ranges define the time period of the data extracted for the report. The following is a complete list of time ranges available for reports. However, all time ranges are not available for every report.
 
 - Custom
 - Current Hour
@@ -48,15 +45,14 @@ However, all time ranges are not available for every report.
 - Month to Yesterday
 - Lifetime
 
-**Intervals**
+### Intervals
 
 Intervals determine how your data is grouped together into rows in the report response. The following is a complete list of intervals available for reports. However, all intervals are not available for every report.
 
 - Hourly: Data is grouped into rows by the hour.
 - Daily: Data is grouped into rows by the day.
 - Monthly: Data is grouped into rows by the month.
-- Cumulative: Data is grouped together in one figure, covering the
-  entire selected time range.
+- Cumulative: Data is grouped together in one figure, covering the entire selected time range.
 
 ## Dimensions
 
@@ -83,7 +79,8 @@ Intervals determine how your data is grouped together into rows in the report re
 Follow these steps to run your report.
 
 1. Select **Reporting** from the appropriate top menu (depending on how your account has been configured).
-    1. Or, from the Publishers top menu, click on **Prebid Server Premium** > **Analytics** > **Prebid Server Analytics**
+   <br>Or<br>
+   From the Publishers top menu, click on **Prebid Server Premium** > **Analytics** > **Prebid Server Analytics**.
 
 1. Select the relevant report from the list. The **Report** screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
    > [!IMPORTANT]
@@ -95,7 +92,7 @@ Follow these steps to run your report.
     > [!WARNING]
     > The more dimensions you group by, the larger the data set that is returned. Larger data sets can take substantially longer to process. Be sure to group using only the dimensions you need.
 
-1. Choose a delivery option. Once you've selected your filters andgrouped by your chosen dimensions, you need to choose a delivery method. Available delivery methods include:
+1. Choose a delivery option. Once you've selected your filters and grouped by your chosen dimensions, you need to choose a delivery method. Available delivery methods include:
 
     - **Run now, show results in screen**: For smaller amounts of data, you may want to view the report as soon as possible in your browser. You can download the report in XLSX, CSV, Excel/TSV and JSON format. However, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file.
 
@@ -113,6 +110,6 @@ Follow these steps to run your report.
 
 1. Click **Run report** to send your report request.
 
-## Related topics
+## Related topic
 
 - [Member Reporting](network-reporting.md)

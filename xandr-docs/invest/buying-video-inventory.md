@@ -10,8 +10,7 @@ This page provides you with a suggested workflow to optimize the new enhancement
 
 ## Step 1. Add VAST video creatives
 
-You can either opt to have Microsoft Advertising host your VAST creatives, or add creatives hosted by a third-party provider. For more
-information, see  see [Add a Creative](./add-a-creative.md) and [Add Creatives in Bulk](add-creatives-in-bulk.md).
+You can either opt to have Microsoft Advertising host your VAST creatives, or add creatives hosted by a third-party provider. For more information, see [Add a Creative](./add-a-creative.md) and [Add Creatives in Bulk](add-creatives-in-bulk.md).
 
 > [!NOTE]
 > A contract addendum must be signed prior to hosting with Microsoft Advertising. Contact your Microsoft Advertising representative for more information.
@@ -20,7 +19,7 @@ information, see  see [Add a Creative](./add-a-creative.md) and [Add Creatives i
 
 Create your ad campaign by following the [Basic Buy-side Setup Procedures](basic-buy-side-setup-procedures.md).
 
-### Step 3. Target inventory and Target video (optional)
+## Step 3. Target inventory and Target video (optional)
 
 You can target your own managed video inventory or third-party inventory. Set video targeting parameters to target specific types of inventory. For more information, see [Video Targeting](video-targeting.md).
 

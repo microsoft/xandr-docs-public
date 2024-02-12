@@ -1,10 +1,10 @@
 ---
 title: Microsoft Invest - Advertiser Video Analytics Report
-description: Use the report to view video event metrics for a specific advertiser.
+description: Use the Advertiser Video Analytics report to view video event metrics for a specific advertiser.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Advertiser video analytics report
+# Microsoft Invest - Advertiser Video Analytics report
 
 The Advertiser Video Analytics report can be used to view video event metrics for a specific advertiser. To view such metrics across multiple advertisers and publishers, use the [Member Video Analytics Report](./network-video-analytics-report.md).
 
@@ -12,7 +12,7 @@ The Advertiser Video Analytics report can be used to view video event metrics fo
 
 All dates and times are given in UTC.
 
-**Time ranges**
+### Time ranges
 
 Time ranges define the time period of the data extracted for the report. The following is a complete list of time ranges available for reports.
 
@@ -41,7 +41,7 @@ However, all time ranges are not available for every report.
 - Month to Yesterday
 - Lifetime
 
-**Intervals**
+### Intervals
 
 Intervals determine how your data is grouped together into rows in the report response. The following is a complete list of intervals available for reports. However, all intervals are not available for every report.
 
@@ -52,11 +52,11 @@ Intervals determine how your data is grouped together into rows in the report re
 
 For more information about how quickly report data is processed, see [Availability of Reporting Data](./availability-of-reporting-data.md).
 
-**Data retention period**
+### Data retention period
 
 Data in this report is retained for 420 days.
 
-**Currency 2.0**
+### Currency 2.0
 
 > [!NOTE]
 > By enabling **Currency 2.0**, you can select a currency for each individual report if you prefer not to use **USD** as the default currency. The report will show all the monetary fields in your report using the selected currency. For example, if you select **Advertiser**, click the **Currency 2.0** toggle to enable it, and select **Japanese Yen (JPY)** from the **Currency** menu, the report will show all monetary data in JPY, including data associated with child objects such as line items.
@@ -84,7 +84,7 @@ Data in this report is retained for 420 days.
 | Application ID | No | A targetable Apple App Store ID, Google Play package name, or Windows application ID. |
 | Buying Currency | No | The currency used by the buyer. This dimension is available only when Currency 2.0 is disabled. |
 | Clearing Event | Yes | The clearing event associated with the impression. <br> - Impressions <br> - Views - Standard Display <br> - Views - Standard Display - Moat <br> - Views - Custom Display - 100pv1s <br> - Views - Custom Display - 100pv1s - Moat <br> - Views - Standard Video <br> - Views - Custom Video - 100pv50pd|
-| Supply Type | Yes | The seller-classified channel to denominate supply in terms of web, mobile-optimized web, and mobile app impressions. Possible values are 'web', mobile_app, and mobile_web. |
+| Supply Type | Yes | The seller-classified channel to denominate supply in terms of web, mobile-optimized web, and mobile app impressions. Possible values are web, mobile_app, and mobile_web. |
 | Video Context | Yes | The context of the video creative, e.g., 'pre-roll'. |
 | Video Playback Method | Yes | The playback method for the creative, e.g, 'auto-start, sound on'. |
 | Video Player Size | Yes | The size of the player based on pixel width, e.g., 'small', 'medium', 'large'. |
@@ -100,7 +100,14 @@ Data in this report is retained for 420 days.
 > [!NOTE]
 >
 > - You can also filter on a particular number of impressions using the **Minimum Impressions** filter.
-> - The data for the video related dimensions (Video Content Duration, Video Content Genre, Video Content Language, Video Content Network, Video Content Rating, Video Delivery Type, and Video Program Type) are only available if the publisher has implemented video taxonomy.
+> - The data for the following video related dimensions are only available if the publisher has implemented video taxonomy:
+  > - Video Content Duration
+  > - Video Content Genre
+  > - Video Content Language
+  > - Video Content Network
+  > - Video Content Rating
+  > - Video Delivery Type
+  > - Video Program Type
 
 ## Metrics
 
@@ -171,7 +178,8 @@ Data in this report is retained for 420 days.
 Follow these steps to run your report.
 
 1. Select **Reporting** from the appropriate top menu (depending on how your account has been configured).
-    1. Or, from the Publishers top menu, click on **Prebid Server Premium** > **Analytics** > **Prebid Server Analytics**
+   <br>Or<br>
+   From the Publishers top menu, click on **Prebid Server Premium** > **Analytics** > **Prebid Server Analytics**
 1. Select the relevant report from the list. The **Report** screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
    > [!IMPORTANT]
    > For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](./dimensions-metrics-filtering-and-grouping.md).
@@ -195,6 +203,6 @@ Follow these steps to run your report.
     - **Name this report**: Give this report with its current settings a name for future reference.
 1. Click **Run report** to send your report request.
 
-## Related topics
+## Related topic
 
 - [Member Reporting](./network-reporting.md)

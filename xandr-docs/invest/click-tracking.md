@@ -43,7 +43,7 @@ For example:
 <a href="https://www.cnn.com" target="_blank"><img src="media/Ad-MediumRectangle-300x250.png" width="300" height="250"></a>
 ```
 
-The anchor tag contains a "href" or hyperlink reference, which in this case is cnn.com. When the creative is clicked, the browser will redirect to cnn.com. The landing page will load as specified by the `target` parameter, which in this case is "\_blank", to indicate that the page should load in a new window or tab. In order for a third-party tag to track clicks, the `${CLICK_URL_ENC}` macro must be implemented. When an impression is delivered, the macro will be replaced with a dynamically-generated click tracker. The click tracker loads only when the creative is clicked. To achieve this, the macro should be placed right before the creative's landing page as shown here:
+The anchor tag contains a "href" or hyperlink reference, which in this case is cnn.com. When the creative is clicked, the browser will redirect to cnn.com. The landing page will load as specified by the `target` parameter, which in this case is `"_blank"`, to indicate that the page should load in a new window or tab. In order for a third-party tag to track clicks, the `${CLICK_URL_ENC}` macro must be implemented. When an impression is delivered, the macro will be replaced with a dynamically-generated click tracker. The click tracker loads only when the creative is clicked. To achieve this, the macro should be placed right before the creative's landing page as shown here:
 
 ```
 <a href="${CLICK_URL_ENC}https://www.cnn.com" target="_blank"><img src="media/Ad-MediumRectangle-300x250.png" width="300" height="250"></a>
@@ -66,8 +66,8 @@ For a URL-HTML, URL-JS, raw-HTML, or raw-JS creative, you will need to include o
 
 | Macro | Description |
 |:---|:---|
-| `${CLICK_URL}` | The click tracking url. |
-| `${CLICK_URL_ENC}` | The encoded click tracking url (only necessary for some third-party ad servers) |
+| `${CLICK_URL}` | The click tracking URL. |
+| `${CLICK_URL_ENC}` | The encoded click tracking URL (only necessary for some third-party ad servers) |
 
 Although an encoded version is available for certain ad servers, you'll most likely want to include the `${CLICK_URL}` macro. For example:
 
@@ -99,7 +99,7 @@ server every time the tag is called, so you are accurately counting impressions.
 | Creative loads landing page in the same browser window | Creative interfers with the browser navigation. |
 | Click tracker did not fire | Creative responded to clicking normally but did not load the clicktracking URL. |
 
-In order to properly track clicks, all hosted HTML5 creatives must refer the click tag parameter in the URL of the creative when it is served. Also when the creative is clicked, it should open specific the landing page defined in your setup.
+In order to properly track clicks, all hosted HTML5 creatives must refer to the click tag parameter in the URL of the creative when it is served. Also when the creative is clicked, it should open specific the landing page defined in your setup.
 
 Creative designers can either use their own code to ensure that the reference is present, or use helper code provided in the Microsoft Advertising HTML5 library.
 

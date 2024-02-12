@@ -92,7 +92,7 @@ GDPR and the existing ePrivacy Directive. Only a lawyer can provide you
 with legal advice specifically tailored to your situation. Nothing in
 this guide is intended to provide you with, or should be used as a
 substitute for, legal advice tailored to your business. **Note our**
- [Service Policies](https://wiki.xandr.com/display/policies/Home) (login required) **(for Buying,
+[Part of Service Policies](../policies-regulations/index.yml) **(for Buying,
 Selling, and Data Providers) include privacy-specific obligations of
 which you should be aware.**
 

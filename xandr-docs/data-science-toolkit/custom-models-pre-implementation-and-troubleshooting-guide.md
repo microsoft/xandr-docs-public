@@ -78,7 +78,7 @@ the line item and its parent objects are: 
   do the next steps suggested on that tab help open up spend? More on
   the troubleshooting tab can be found <a
   href="https://staging.invest.xandr.com/docs/troubleshoot-your-augmented-line-item-delivery-and-bid-performance"
-  class="xref" target="_blank">here</a> (login required).
+  class="xref" target="_blank">here</a>.
 
 For additional information on troubleshooting your augmented line item
 please see our [Troubleshoot Your Augmented line item Delivery and Bid Performance](../invest/troubleshoot-your-augmented-line-item-delivery-and-bid-performance.md) documentation. 

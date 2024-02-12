@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 The Buying Billing Report allows you to manage internal invoicing for your advertisers across both managed and third-party buying.
 
-If you would like to use this report to analyze your Microsoft Advertising invoice, see [Understanding Your Invoice](understanding-your-invoice.md). (Login required.)
+If you would like to use this report to analyze your Microsoft Advertising invoice, see [Understanding Your Invoice](understanding-your-invoice.md). 
 
 ## Time frame
 

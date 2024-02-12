@@ -25,7 +25,7 @@ Follow the steps outlined in [Add a Creative](./add-a-creative.md) and [Add Crea
 
 ## Spotify supply
 
-The following are the specifications of available Spotify Microsoft Advertising Member id: **3860** Spotify AB supply:
+The following are the specifications of available Spotify Microsoft Advertising Member ID: **3860** Spotify AB supply:
 
 - 15 to 30 second Audio spots played instream during ad breaks between songs.
 - Played through Spotify's mobile app on iOS and Android powered phones and tablets.
@@ -51,6 +51,6 @@ Standard creative reporting is available for Spotify Audio.
 
 **Supported metrics** include: imps, clicks, conversions or installs, CTR, conversion rate, revenue, cost, profit, total network RPM, total RPM, CPM, PPM
 
-**Grouping** is available by: app id, deal id, age & gender (only if made available to buyer), geo (down to metro codes), device type (phone, tablet, etc), connection type (wifi, broadband), carrier for broadband (at&t, verizon, etc), device model, operating system, browser, buyer user segments, user frequency & recency.
+**Grouping** is available by: app ID, deal ID, age & gender (only if made available to buyer), geo (down to metro codes), device type (phone, tablet, etc), connection type (wifi, broadband), carrier for broadband (at&t, verizon, etc), device model, operating system, browser, buyer user segments, user frequency & recency.
 
 Upload **3rd party pixels** with the creative to track: 25% complete, 50% complete, 75% complete, 100% complete. Automated quartile reporting coming soon.

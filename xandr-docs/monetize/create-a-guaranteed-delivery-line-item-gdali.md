@@ -279,4 +279,4 @@ To save the GDALI, click one of the following options in the **Save and Reserve*
 ## Related topics
 
 - [Guaranteed Delivery (GDALI)](guaranteed-delivery-gdali.md)
-- [Guaranteed Delivery Line Item FAQ (GDALI)](guaranteed-delivery-line-item-faq-gdali.md) (login required)
+- [Guaranteed Delivery Line Item FAQ (GDALI)](guaranteed-delivery-line-item-faq-gdali.md) 

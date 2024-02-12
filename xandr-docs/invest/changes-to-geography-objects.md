@@ -4,7 +4,6 @@ description: This page is automatically updated every two weeks with geolocation
 ms.date: 10/28/2023
 ---
 
-
 # Microsoft Invest - Changes to geography objects
 
 This page is automatically updated when geolocation data is refreshed every two weeks from [Digital Envoy](https://www.digitalelement.com/). It's also updated occasionally to detail upcoming major changes that require users to update their targeting to avoid delivery issues.
@@ -15,7 +14,7 @@ There are no major changes currently scheduled.
 
 ## History of recent changes
 
-The table below provides a summary of recent additions, deactivations, and modifications of geography objects that are available for targeting. A geography object may be modified if its name has changed or if has been reassigned to another country or region. For a detailed list of changes, please review this CSV: [Geography Change Log](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Microsoft Advertising/Geography-Change-Log.csv).
+The table below provides a summary of recent additions, deactivations, and modifications of geography objects that are available for targeting. A geography object may be modified if its name has changed or if has been reassigned to another country or region. For a detailed list of changes, please review this CSV: [Geography Change Log](https://download.microsoft.com/download/1/8/f/18ff1fdc-ac04-48d1-9fa2-e18f3d48e33d/Geography-Change-Log.csv).
 
 ### Recent Changes
 

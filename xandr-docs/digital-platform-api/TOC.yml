@@ -85,6 +85,8 @@
     href: deal-line-item-api-setup-guide.md
   - name: Curated Deal Line Item API Setup Guide
     href: curated-deal-line-item-api-setup-guide.md
+  - name: Curated Deal Ad Quality API Setup Guide
+    href: curated-deal-ad-quality-api-setup-guide.md
   - name: Publisher GDALI API Setup Guide
     href: publisher-gdali-api-setup-guide.md
   - name: GDLI to GDALI Migration

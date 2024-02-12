@@ -18,14 +18,11 @@ Seedtag has office and exclusive agreements with Publishers in the below countri
 - Italy
 - Mexico
 
-This page will guide you through the process required to display your creative via Seedtag inventory.
-
-There are several steps you need to take to get started.
+This page will guide you through the process required to display your creative via Seedtag inventory. There are several steps you need to take to get started.
 
 ## Set up seedtag as an eligible partner
 
-Before you can sell through Seedtag you need to set them up as an eligible partner. For instructions on setting up a relationship with
-Seedtag, see [Managing Relationships with Sellers](./managing-relationships-with-sellers.md).
+Before you can sell through Seedtag you need to set them up as an eligible partner. For instructions on setting up a relationship with Seedtag, see [Managing Relationships with Sellers](./managing-relationships-with-sellers.md).
 
 ## Send your creative to seedtag
 
@@ -34,9 +31,7 @@ implemented. You must send your creative (preferably as a PSD file) to [programm
 
 ## Request the creation of a deal ID to seedtag
 
-Contact Seedtag at [programmatic@seedtag.com](mailto:programmatic@seedtag.com) to request a deal ID.
-Please specify your buyer ID and the type of audience you're looking
-for.
+Contact Seedtag at [programmatic@seedtag.com](mailto:programmatic@seedtag.com) to request a deal ID. Specify your buyer ID and the type of audience you're looking for.
 
 ## Set up your line item
 
@@ -61,15 +56,15 @@ Navigate to the **Creative Manager** screen. Click on the **Create New** button 
 - Template: **Microsoft Advertising: Standard**
 - Size: Select **New** from the dropdown list. Enter a **width** of **600** and a **height** of **105**
 - Name: Self-classify the creative with the accurate brand.
-  <br> In the Tag field, paste in the tag you received from Seedtag when you sent your creative. You will need to edit the tag. Your tag will contain a section like this:
+  <br>In the Tag field, paste in the tag you received from Seedtag when you sent your creative. You will need to edit the tag. Your tag will contain a section like this:
 
-  ``` pre
+  ```
   /** PUT THE FINAL URL BETWEEN QUOTES **/ var targetUrl = "https://LandingPageUrl.com"; /** /PUT THE FINAL URL BETWEEN QUOTES **/ 
   ```
 
   Replace the `targetURL` value with your URL:
 
-  ``` pre
+  ```
   /** PUT THE FINAL URL BETWEEN QUOTES **/ var targetUrl = "https://YourCampignUrl.com"; /** /PUT THE FINAL URL BETWEEN QUOTES **/ 
   ```
 

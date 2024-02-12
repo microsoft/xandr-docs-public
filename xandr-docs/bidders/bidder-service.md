@@ -38,7 +38,7 @@ In bidder sandbox environments, all functionality is available for integration p
 | `bid_uri` | yes (on add) | string(255) | The URI for bid requests (for example, `/bid`). |
 | `notify_uri` | no | string (255) | The URI for notification requests (for example, `/notify`). Use null, not an empty string, to set this to blank.<br><br>**Note:**<br> - The `notify_uri` must be a relative URI. Xandr does not currently support putting the `bid_uri` and `notify_uri` on separate hosts.<br> - If null, the bidder does not receive notify requests. |
 | `click_uri` | no | string(255) | The URI for click requests (for example, `/click`). Use null, not an empty string, to set this to blank. See [Click Request](click-request.md). |
-| `pixel_uri` | no | string(255) | The URI for pixel requests (for example, `/pixel`). Use null, not an empty string, to set this to blank. See Pixel Request (login required). |
+| `pixel_uri` | no | string(255) | The URI for pixel requests (for example, `/pixel`). Use null, not an empty string, to set this to blank. See Pixel Request. |
 | `ready_uri` | yes (on add) | string(50) | The URI for a [Bidder Instance](bidder-instance-service.md) status check (for example, `/ready`). |
 | `audit_notify_uri` | no | string(255) | The URI for passing creative auditing updates (eg https://send.mycompany.com/auditnotifyrequests) |
 | `parent_profile_id` | no | int | The ID of the parent bidder profile. Bidder profiles can be used to filter bid request traffic that reaches a bidder. See [Legacy Bidder Profile Service](legacy-bidder-profile-service.md) and [Bidder Profile - FAQ](bidder-profile---faq.md). |

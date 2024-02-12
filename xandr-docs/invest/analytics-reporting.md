@@ -1,5 +1,5 @@
 ---
-title: Microsoft Invest - Performance Analytics Reporting
+title: Microsoft Invest - Analytics Reporting
 description: This article lists reports that help you to analyze the performance of advertisers, publishers, or your own business ranging from stats to log-level data feeds.
 ms.date: 10/28/2023
 ---

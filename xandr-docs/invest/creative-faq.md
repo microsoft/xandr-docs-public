@@ -90,6 +90,6 @@ following URL to serve your creative:
 
 ## Gambling creatives
 
-Please see our [Policies for Buying](https://microsoftapc.sharepoint.com/teams/Microsoft AdvertisingServicePolicies/SitePages/Policies-for-Buying.aspx) (login required) for information on what kinds of gambling ads are allowed to serve and
+Please see our [Policies for Buying](https://microsoftapc.sharepoint.com/teams/Microsoft AdvertisingServicePolicies/SitePages/Policies-for-Buying.aspx) for information on what kinds of gambling ads are allowed to serve and
 under what conditions.
 

@@ -12,18 +12,12 @@ The purpose of the Augmented Line Item (ALI) is to streamline a trader's workflo
 
 ## Advantages of ALI
 
-When using ALI, you have access to a suite of powerful algorithms and
-tools that help you save time and achieve improved performance against
-your client's goals. ALI delivers the following benefits to traders:
+When using ALI, you have access to a suite of powerful algorithms and tools that help you save time and achieve improved performance against your client's goals. ALI delivers the following benefits to traders:
 
 - Efficient workflows and algorithms.
 - Powerful optimization.
 - Optimal utilization of budget while reaching an optimized state.
-- Access to the streamlined Programmable Splits interface which allows
-  you to leverage the power of [custom models](../data-science-toolkit/custom-models.md) (formerly
-  AppNexus Programmable Bidder) and execute
-  highly-customized trading strategies. This enables you to achieve your
-  client's goals without needing to write code.
+- Access to the streamlined Programmable Splits interface which allows   you to leverage the power of [custom models](../data-science-toolkit/custom-models.md) (formerly AppNexus Programmable Bidder) and execute highly-customized trading strategies. This enables you to achieve your client's goals without needing to write code.
 
 ## ALI setup procedures
 

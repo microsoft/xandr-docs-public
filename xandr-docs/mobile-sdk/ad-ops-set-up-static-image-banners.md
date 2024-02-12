@@ -13,7 +13,7 @@ For developer-focused banner documentation, see [Show Banners](show-banners-on-i
 
 ## Creative settings
 
-Use the following settings to set up your creative (see “Add Interstitial Creatives” in the UI documentation (customer login required) for more information):
+Use the following settings to set up your creative (see “Add Interstitial Creatives” in the UI documentation for more information):
 
 1. Under **Creative Content**, choose a **Third-party creative** type.
 2. Choose a **Creative format** of Third Party URL.
@@ -23,7 +23,7 @@ Use the following settings to set up your creative (see “Add Interstitial Crea
 
 ## Placement settings
 
-Use the following settings to set up your placement (see "Create a Placement" in the UI documentation (customer login required) for more information):
+Use the following settings to set up your placement (see "Create a Placement" in the UI documentation for more information):
 
 1. Set the **Supply Type** to **Mobile Application**.
 2. Set the **Media Type** to **Banner**.

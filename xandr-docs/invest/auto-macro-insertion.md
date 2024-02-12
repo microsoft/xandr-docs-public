@@ -25,8 +25,7 @@ Microsoft Advertising can automatically insert the `${CLICK_URL}` and `${CACHEBU
 Feel free to submit a [support ticket](https://help.xandr.com/) if you'd like to have a specific tag type added to our supported list. When creating the support ticket, be sure to provide:
 
 - the name of the ad server that these tags appear on.
-- the exact parameters used to traffic the `${CLICK_URL}` and
-  `${CACHEBUSTER}` macros.
+- the exact parameters used to traffic the `${CLICK_URL}` and `${CACHEBUSTER}` macros.
 
 ## Related topics
 

@@ -30,7 +30,7 @@ For advertiser’s safety, Xandr provides two modes of inventory auditing. First
   > [!NOTE]
   > **Disclaimer**
   >
-  > While we believe that our audited domains are of a high quality, the nature of the internet is such that we cannot provide any guarantee regarding the nature or content of any inventory sold on the platform. For questions about this, or to report miscategorized inventory, or inventory that should be banned under our blocklist criteria, contact us via the [Customer Support form](https://help.xandr.com/) (select "Inventory Quality" as the request type). (Customer login required.)
+  > While we believe that our audited domains are of a high quality, the nature of the internet is such that we cannot provide any guarantee regarding the nature or content of any inventory sold on the platform. For questions about this, or to report miscategorized inventory, or inventory that should be banned under our blocklist criteria, contact us via the [Customer Support form](https://help.xandr.com/) (select "Inventory Quality" as the request type).
 
 ## Standards
 

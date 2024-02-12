@@ -9,8 +9,8 @@ ms.date: 10/28/2023
 Instead of using the default metrics, calculate CTR and Conversion Rate for Guaranteed Outcomes using Clearing Event Units.
 
 - To calculate CTR, use Clicks / Clearing Event Units.
-- To calculate Conversion Rate use Conversions / Clearing Event Units.
+- To calculate Conversion Rate, use Conversions / Clearing Event Units.
 
-## Related topics
+## Related topic
 
 - [Guaranteed Outcomes](./guaranteed-outcomes.md)

@@ -33,9 +33,7 @@ The following are guidelines specific to creative standards required for Google 
 ## Campaign targeting
 
 - Category targeting is possible for video, but it is not reflected in reporting.
-- You can target Google Ad Manager inventory by position, but it is NOT
-  recommended. In the **Video** section under **Targeting**, leave the default
-  **Any position** selected.
+- You can target Google Ad Manager inventory by position, but it is NOT recommended. In the **Video** section under **Targeting**, leave the default **Any position** selected.
 
   For more information about video targeting, see [Video Targeting](video-targeting.md).
 
@@ -44,4 +42,3 @@ The following are guidelines specific to creative standards required for Google 
 - [Buying Video Inventory](buying-video-inventory.md)
 - [Upload a Hosted Video Creative](upload-a-hosted-video-creative.md)
 - [VAST Check](vast-check.md)
-

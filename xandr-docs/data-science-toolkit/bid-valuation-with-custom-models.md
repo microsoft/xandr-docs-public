@@ -34,7 +34,7 @@ In the equation above Val(Event) represents the value of an event and Pr(Event) 
 
 In the case of media buying, EV is linked to a single event, such as a viewed impression, a user click, or user conversion, where the event has a specific value to the buyer, the Val(Event) variable. The Val(Event) value could be fixed or accrue over time given certain factors, such as customer lifetime value.
 
-With the [optimization model](../monetize/optimization-guide-ali.md) (login required), clients are asked to predict the EV of an impression entirely or modify the Xandr optimized bid value. However, in most cases, clients may only wish to provide a portion of the EV calculation based on the data that they are able to model, rather than replace the entire calculation given the limited data that they may have. Custom models solve this issue, enabling clients to override specific components of the optimization equation.
+With the [optimization model](../monetize/optimization-guide-ali.md), clients are asked to predict the EV of an impression entirely or modify the Xandr optimized bid value. However, in most cases, clients may only wish to provide a portion of the EV calculation based on the data that they are able to model, rather than replace the entire calculation given the limited data that they may have. Custom models solve this issue, enabling clients to override specific components of the optimization equation.
 
 EV can be the value of one model type or the product of multiple model types. The calculation for EV is dependent on the Goal Type set on your Line Item. For example, if your Augmented Line Item had a Goal Type of CPC, then your EV could be comprised of an ev_click custom model or a click_imp custom model or both.
 

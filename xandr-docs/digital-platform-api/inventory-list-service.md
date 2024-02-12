@@ -13,7 +13,7 @@ can then be associated with line items for targeting. Use the Inventory List Ser
 ## REST API
 
 > [!NOTE]
-> To edit an inventory list in the API based on the ID of the inventory list in the UI (login required), you must first obtain the `id` of the list via the API using the following `GET` call:
+> To edit an inventory list in the API based on the ID of the inventory list in the UI, you must first obtain the `id` of the list via the API using the following `GET` call:
 >
 > ```
 > GET https://api.appnexus.com/inventory-list?inventory_url_list_id=[CONSOLE_UI_LIST_ID]

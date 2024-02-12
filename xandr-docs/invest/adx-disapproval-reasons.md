@@ -4,7 +4,6 @@ description: This article explains the reasons for creatives getting rejected. T
 ms.date: 10/28/2023
 ---
 
-
 # Microsoft Invest - Google Ad Manager disapproval reasons
 
 You may receive a disapproval reason from Google Ad Manager for various reasons.
@@ -22,7 +21,7 @@ Use the table below to better understand why your creative was rejected. The dis
 | 6 | ad_size_does_not_match_ad_slot | The creative size when rendered does not match the declaration. | Ensure that the correct creative size has been associated with the creative. |
 | 7 | no_border | Creatives with a white background require a contrasting border, which was missing. | Add a clearly defined border to the creative. |
 | 8 | fourth_party_browser_cookies | The creative attempts to set cookies from a fourth party that is not certified. | Ensure that the creative is setting cookies from a certified fourth party. |
-| 9 | lso_objects | The creative sets an [LSO object](https://en.wikipedia.org/wiki/Local_shared_object), such as Flash cookies, browser helper objects, or HTML5 Local Storage. | Remove all LSO objects. |
+| 9 | lso_objects | The creative sets an LSO object, such as Flash cookies, browser helper objects, or HTML5 Local Storage. | Remove all LSO objects. |
 | 10 | blank_creative | The creative renders a blank at the time of Google Ad Manager's audit. | Ensure that the creative is viewable by all users. |
 | 11 | destination_urls_undeclared | The creative uses rotation, but not all the destination URLs were declared. | Provide the missing destination URLs. |
 | 12 | problem_with_click_macro | There is a problem with the way the click macro is used. **Note**: All creatives must contain the Google Ad Manager `CLICK_URL_MACRO`. It must exist to pass the programmatic audit. It must be able to pass a human audit. Microsoft Advertising automatically appends this to every bid response for Google Ad Manager. | Submit a [support](https://help.xandr.com/s/login/) request. |
@@ -50,17 +49,11 @@ Use the table below to better understand why your creative was rejected. The dis
 | 34 | invalid_ssl_declaration | SSL support declared but not working correctly. <br>Google Ad Manager allows buyers to bid on secure inventory. If your creative is submitted as a secure creative, then Microsoft Advertising will pass back a secure flag in the bid response. If Google Ad Manager finds that your creative is not actually SSL supported, it will be rejected. </br>| Remove any unsecure content from the creative. |
 | 35 | direct_download_in_ad | Rich Media - Direct Download in Ad (For example, a PDF download). <br>A direct download that results from clicking on the creative goes against the Google Ad Manager and Microsoft Advertising policy. </br>| Remove any direct downloads from the creative. |
 
-If you can't locate your disapproval reason in the table above, you may find it in the **Disapproved ad reasons**
-column of the [Google Ad Manager's Troubleshoot
-disapproved ads](https://support.google.com/authorizedbuyers/answer/6272857?hl=en) page.
+If you can't locate your disapproval reason in the table above, you may find it in the **Disapproved ad reasons** column of the [Google Ad Manager's Troubleshoot disapproved ads](https://support.google.com/authorizedbuyers/answer/6272857?hl=en) page.
 
-If you don't see your disapproval reason listed there, you may be able to find it in [Google's Snippet Status Report](https://support.google.com/authorizedbuyers/answer/10063840?hl=en#:~:text=and%20additional%20information.-,Disapproved%20ad%20reasons,may%20be%20disapproved%20by%20Google). In the
-Snippet Status Report, search for "`enum DisapprovalReason`". The full list of Google Ad Manager disapproval reasons is contained with curly brackets {} followed by `enum DisapprovalReason`.
+If you don't see your disapproval reason listed there, you may be able to find it in [Google's Snippet Status Report](https://support.google.com/authorizedbuyers/answer/10063840?hl=en#:~:text=and%20additional%20information.-,Disapproved%20ad%20reasons,may%20be%20disapproved%20by%20Google). In the Snippet Status Report, search for "`enum DisapprovalReason`". The full list of Google Ad Manager disapproval reasons is contained with curly brackets {} followed by `enum DisapprovalReason`.
 
-The disapproval reasons are in all caps. An explanation of the
-disapproval reason appears above each approval code, which is demarcated by two slashes (//). For example, the LENGTH_OF_IMAGE_ANIMATION
-disapproval code corresponds to the //The length of the image animation is longer than allowed disapproval
-reason. ID numbers have been assigned to each disapproval reason. For example,`LENGTH_OF_IMAGE_ANIMATION`` = 1`.
+The disapproval reasons are in all caps. An explanation of the disapproval reason appears above each approval code, which is demarcated by two slashes (//). For example, the LENGTH_OF_IMAGE_ANIMATION disapproval code corresponds to the //The length of the image animation is longer than allowed disapproval reason. ID numbers have been assigned to each disapproval reason. For example, `LENGTH_OF_IMAGE_ANIMATION`` = 1`.
 
 ## Related topics
 

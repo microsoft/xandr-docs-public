@@ -10,7 +10,7 @@ Guaranteed delivery line items help you meet delivery goals and serve budgets ev
 
 ## New Guaranteed Delivery Augmented Line Item (GDALI)
 
-Microsoft Advertising now offers a Guaranteed Delivery Augmented Line Item (GDALI) that is based on Microsoft Advertising's Augmented Line Item (ALI) and associated with the Seamless Insertion Order. The new GDALI offers similar features to the legacy guaranteed delivery line item (GDLI), but by consolidating onto the ALI framework, we have improved the feature set available for guaranteed delivery and provided a more intuitive workflow and user experience. For more information on the introduction of GDALIs, see [Guaranteed Delivery Line Item FAQ (GDALI)](guaranteed-delivery-line-item-faq-gdali.md) (login required).
+Microsoft Advertising now offers a Guaranteed Delivery Augmented Line Item (GDALI) that is based on Microsoft Advertising's Augmented Line Item (ALI) and associated with the Seamless Insertion Order. The new GDALI offers similar features to the legacy guaranteed delivery line item (GDLI), but by consolidating onto the ALI framework, we have improved the feature set available for guaranteed delivery and provided a more intuitive workflow and user experience. For more information on the introduction of GDALIs, see [Guaranteed Delivery Line Item FAQ (GDALI)](guaranteed-delivery-line-item-faq-gdali.md).
 
 For instructions on creating a GDALI, see [Create a Guaranteed Delivery Line Item (GDALI)](create-a-guaranteed-delivery-line-item-gdali.md).
 
@@ -34,4 +34,4 @@ For examples of how GDALIs with these delivery types behave in auctions, see [Gu
 ## Related topics
 
 - [Create a Guaranteed Delivery Line Item (GDALI)](create-a-guaranteed-delivery-line-item-gdali.md)
-- [Guaranteed Delivery Line Item FAQ (GDALI)](guaranteed-delivery-line-item-faq-gdali.md) (login required)
+- [Guaranteed Delivery Line Item FAQ (GDALI)](guaranteed-delivery-line-item-faq-gdali.md)

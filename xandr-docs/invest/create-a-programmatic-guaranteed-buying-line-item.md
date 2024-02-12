@@ -171,8 +171,7 @@ following parts:
 - **Spend Breakdown** - The media cost and the Buyer Auction Service
   Charge (BASC) charged by Microsoft Advertising. For more
   information on BASC, see [Understanding
-  Your Pricing Terms](understanding-your-pricing-terms.md)
-   (separate login required).
+  Your Pricing Terms](understanding-your-pricing-terms.md).
 - **Partner Fees** - Third-party fees associated with the line item.
 - **Revenue** - The projected margin based on the line item's revenue
   type.

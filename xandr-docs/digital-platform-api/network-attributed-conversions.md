@@ -12,7 +12,7 @@ The **Network Attributed Conversions** report allows you to view conversion pixe
 > [!NOTE]
 > Conversion pixels are used to track actions on advertisers' web pages, such as registering or making a purchase. They can be configured to pass dynamic order ID values, which help networks reconcile with advertisers. Once a conversion pixel fires, Xandr determines if the conversion can be attributed (tied to a creative that the user viewed or clicked previously). A post-click conversion is attributed to the last click on a creative associated with the conversion pixel. A post-view conversion is attributed to the last impression of a creative associated with the conversion pixel. For a hybrid pixel, the conversion is attributed to the last click or, if there were no clicks, the last impression of a creative associated with the conversion pixel.
 >
-> For more details about our attribution process, see [Conversion Attribution](../monetize/conversion-attribution.md) in the UI documentation (customer login required).
+> For more details about our attribution process, see [Conversion Attribution](../monetize/conversion-attribution.md) in the UI documentation.
 
 For instructions on retrieving a report, please see [Report Service](./report-service.md) or the [example](./report-service.md) below.
 

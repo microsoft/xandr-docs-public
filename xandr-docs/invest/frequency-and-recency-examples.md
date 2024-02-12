@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Frequency and Recency Examples
-description: You can combine frequency and recency settings or use either of these to provide an ideal user experience and minimize overexposure.
+description: Combine frequency and recency settings or use either of these to provide an ideal user experience and minimize overexposure.
 ms.date: 10/28/2023
 ---
 
@@ -23,17 +23,17 @@ You can combine these frequency settings with recency settings to further limit 
 
 Here are some other examples that pertain specifically to frequency capping:
 
-Example 1
+### Example 1
 
 You have a line item with four creatives attached: A, B, C, D. Each creative has a frequency cap of one impression per day, but the insertion order has no frequency limit. User Bill fits the line items's targeting parameters. He visits mysite.com and is shown creative A. Bill then visits coolsite.com and is shown creative D, then C, and finally B. When more than one creative is eligible, any one of them could be shown randomly. At this point, there are no creatives left that meet frequency eligibility and the line item does not serve to Bill again until the end of the 24-hour period.
 
 In this case, you may want to set recency caps at the insertion order or line item level to prevent Bill from seeing creatives D, C, and B in one visit to coolsite.com. Setting recency caps will spread out the delivery of all creatives attached to this line item.
 
-Example 2
+### Example 2
 
 Let's say each creative has a frequency cap of one impression per day, but the line item has a frequency cap of two impressions per day. Bill sees creative B and C (chosen at random) and the line item is maxed out until the 24-hour window resets.
 
-Example 3
+### Example 3
 
 Bill fits the targeting for two line items (1 and 2). The line items share some of the same creatives.
 
@@ -48,8 +48,6 @@ Here are the frequency caps:
 | B | 1 impression per day |
 | C | 1 impression per day |
 
-<br>
-
 | Line Item 2 / CPM=$2 | Frequency=1 impression per day |
 |:---|:---|
 | A | 1 impression per day |
@@ -61,7 +59,7 @@ If there are no other advertisers bidding on Bill, the first impression is won b
 
 This can get far more complex as you add line items, creatives, and more nuanced frequency caps, such as "once per hour."
 
-Example 4
+### Example 4
 
 Let's say you want to bid a CPM of $3 for the first time per day that a user sees a creative ($1 for viewings 2 - 4, and $0.50 for any further viewings). You can set up three identical line items with different CPMs and frequency caps as follows:
 
