@@ -1,40 +1,26 @@
 ---
 title: SafeFrame API Reference
-description: SafeFrame is a managed, API-enabled iframe.
+description: Explore SafeFrame—API-enabled iframe ensures secure communication, data safety, and efficient interaction with Xandr's sf-ext.js on a secondary domain.
 ms.custom: seller-tag
 ms.date: 10/28/2023
 ---
 
-
 # SafeFrame API reference
 
-SafeFrame is a managed, API-enabled iframe. It opens a line of
-communication between the publisher page content and the
-iframe-contained external content, such as ads. It operates in a
-secondary domain provided by the Host, and ideally established on a
-content delivery network (CDN). This secondary domain serves as an
-agnostic processing space between the host and external party. Any
-information that the External Party needs to know about the Host domain
-is accessed by request, using the SafeFrame API. This API is used to
-communicate between the host site and external content, using
-Xandr's solution for SafeFrame: sf-ext.js. This
-was built with AST, but is delivered as a separate component.
+SafeFrame is a managed, API-enabled iframe. It opens a line of communication between the publisher page content and the
+iframe-contained external content, such as ads. It operates in a secondary domain provided by the Host, and ideally established on a content delivery network (CDN). This secondary domain serves as an agnostic processing space between the host and external party. Any information that the External Party needs to know about the Host domain is accessed by request, using the SafeFrame API. This API is used to communicate between the host site and external content, using
+Xandr's solution for SafeFrame: sf-ext.js. This was built with AST, but is delivered as a separate component.
 
-SafeFrame feature has many benefits. This includes consumer protection,
-publisher control and efficiency.
+SafeFrame feature has many benefits. This includes consumer protection, publisher control and efficiency.
 
 ## SafeFrame and video
 
-For video customers, SafeFrame is currently only supported for Outstream
-video placements. If you decide to use this functionality, make sure
-that you follow the guidelines for setting up on-page tags for outstream
-video in the Xandr Help center at [http://docs.xandr.com](https://docs.xandr.com/)
+For video customers, SafeFrame is currently only supported for Outstream video placements. If you decide to use this functionality, make sure that you follow the guidelines for setting up on-page tags for outstream video in the [Microsoft Advertising Help center](../index.yml).
 
 ## Implementation and functions
 
 - This pertains to the API that is accessible by creatives.
-- The following functions are available for communication. These
-  functions are implemented as per [IAB Spec](https://www.iab.com/wp-content/uploads/2014/08/SafeFrames_v1.1_final.pdf).
+- The following functions are available for communication. These functions are implemented as per [IAB Spec](https://www.iab.com/wp-content/uploads/2014/08/SafeFrames_v1.1_final.pdf).
 
 | Function | Description |
 |---|---|
@@ -79,11 +65,7 @@ var tag = apntag.defineTag({
 
 **apntag.setSafeFrameConfig({param})**
 
-This function can be used to configure SafeFrame. We have given two
-options, `allowExpansionByPush` and `allowExpansionByOverlay` for
-SafeFrame expand API. Configuration by this function will change the
-return values of `$sf.ext.supports` function. Publisher can revoke
-expand permissions from here.
+This function can be used to configure SafeFrame. We have given two options, `allowExpansionByPush` and  `allowExpansionByOverlay` for SafeFrame expand API. Configuration by this function will change the return values of `$sf.ext.supports` function. Publisher can revoke expand permissions from here.
 
 **Parameters**
 
@@ -131,10 +113,7 @@ The following examples show how to use the API functions for SafeFrame.
 
 **$sf.ext.register(width, height, callbackFn)**
 
-The SafeFrame External API register function registers the function to
-accept SafeFrame external party API calls. External party creative
-declares the initial (collapsed) width and height and callback function,
-which informs the external content about various status details. 
+The SafeFrame External API register function registers the function to accept SafeFrame external party API calls. External party creative declares the initial (collapsed) width and height and callback function, which informs the external content about various status details.
 
 **Parameters**
 

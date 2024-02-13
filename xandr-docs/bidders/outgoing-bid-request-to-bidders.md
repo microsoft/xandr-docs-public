@@ -471,7 +471,7 @@ We support the following fields in the `device` object.
 | `make` | string | Specifies the make of the device.  |
 | `model` | string | Specifies the model of the device.  |
 | `os` | string | Specifies operating system of the device. If passed, this overrides the operating system in the ua field. The following are the possible values in the os field:<br> - "Unknown"<br> - "Android"<br> - "Apple iOS"<br> - "Apple Mac"<br> - "Microsoft Windows"<br> - "Blackberry OS"<br> - "Microsoft Mobile"<br> - "Linux"<br> - "Symbian OS"<br> - "Chrome OS"<br> - "PlayStation 4 OS"<br> - "Firefox OS"<br> - "Roku OS" |
-| `language` | string | Specifies the browser language; use [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) or [ISO 3166 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) codes. |
+| `language` | string | Specifies the browser language; use ISO 639-1 or ISO 3166 alpha-2 codes. |
 | `lmt` | integer | "Limit Ad Tracking" signal commercially endorsed (e.g., iOS, Android), where 0=tracking is unrestricted, 1=tracking must be limited per commercial guidelines. |
 | `carrier` | string | Specifies carrier for the device.  |
 | `connectiontype` | integer | Specifies the detected data connection type for the device using IAB values. We support the following values today:<br> - `0`: Unknown<br> - `3`: Cellular Network – Unknown Generation |
@@ -488,8 +488,8 @@ We support the following fields in the `geo` object:
 |:---|:---|:---|
 | `lat` | float | Specifies the latitude of the device, as derived from the device's location services. This can range from `-90` to `90`. South is negative. |
 | `lon` | float | Specifies the longitude of the device, as derived from the device's location services. This can range from -`180` to `180`. West is negative. |
-| `country` | string | Specifies the country name, according to [ISO-3166-1 Alpha-3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3). |
-| `region` | string | Region code using [ISO-3166-2](https://en.wikipedia.org/wiki/ISO_3166-2); 2-letter state code if USA. |
+| `country` | string | Specifies the country name, according to ISO-3166-1 Alpha-3. |
+| `region` | string | Region code using ISO-3166-2; 2-letter state code if USA. |
 | `city` | string | Specifies the city name. Omitted if seller visibility settings prohibit sharing. |
 | `zip` | string | Specifies the ZIP or postal code where the device is located. Omitted if seller visibility settings prohibit sharing. |
 | `metro` | string | Contains a code for the user's designated market area based on their IP address (if the IP address can be determined). |

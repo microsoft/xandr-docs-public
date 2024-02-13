@@ -26,7 +26,7 @@ This document includes the necessary information for supply partners to review, 
     - [Object Hierarchy](./understanding-the-sell-side-object-hierarchy.md)
     - [Inventory Mapping](./synchronize-your-inventory-structure.md)
     - [User Sync](./user-id-mapping.md)
-    - [Ads.txt/App-Ads.txt](https://docs.xandr.com/csh?context=89626949)
+    - [Ads.txt/App-Ads.txt](../industry-reference/xandr-support-for-ads-txt-and-app-ads-txt.md)
     - [Deals](./selling-deals-on-xandr.md) (If applicable)
 
 > [!NOTE]
@@ -58,6 +58,7 @@ This document includes the necessary information for supply partners to review, 
 - Use the [Publisher Service](../digital-platform-api/publisher-service.md) to create publishers that are mapped to your inventory.
 
 > [!NOTE]
+>
 > - The `code` field is required for all external sellers at both the publisher and placement levels and is highly recommended for all other sellers to ensure that your inventory is as granular as possible so
 > that it can be investigated accurately for quality issues, and specifically for domain detectability. This step will help you to split your inventory into highly detectable and less detectable tags, allowing you to isolate the impacts of non-detectable domains on the rest of your inventory's viability.
 > - In order to create or edit publishers in  or the [API](../digital-platform-api/api-getting-started.md), you have to declare the [Inventory Relationship](./inventory-relationship-faq.md). The requested information is basic business information about how the inventory is accessed and will be used to support Xandr's inventory quality efforts. For a complete list of fields and their usage requirements, please refer to the [Publisher Service](../digital-platform-api/publisher-service.md) documentation.

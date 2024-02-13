@@ -1,7 +1,8 @@
 ---
-title: Video Creatives (JP)
+title: Microsoft Invest - Video Creatives (JP)
 description: You can host or traffic video creatives through third-party ad servers. Video creatives have higher conversion rates and can be configured in various ways. 
 ms.date: 10/28/2023
+ms.custom: ja-jp
 ---
 
 # Video creatives (JP)

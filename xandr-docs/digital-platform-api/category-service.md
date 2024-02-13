@@ -47,7 +47,7 @@ Sellers will categorize sites and placements using the [Content Category Service
 | `brand_id` | int | The ID of the brand. |
 | `brand_name` | string | The name of the brand. |
 | `brand` | multi_object | An object containing information about the brand allowlisted in this country. For more information, see [Brand](#brand) below. |
-| `country` | string | A 2-character string referencing the country in which the brand is allowlisted. For a list of supported codes, see the [ISO 3166-1 country codes](https://en.wikipedia.org/wiki/ISO_3166-1). |
+| `country` | string | A 2-character string referencing the country in which the brand is allowlisted.|
 
 ### Brand
 

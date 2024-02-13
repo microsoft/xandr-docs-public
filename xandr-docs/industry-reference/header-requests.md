@@ -39,7 +39,7 @@ I wanted to see an actual browser request so I downloaded the Firefox add-on [Li
     | OPTIONS | Returns the possible actions that a particular server accepts for a particular resource | If you wanted to see what capabilities the NY Times was giving you. For example, the NY Times might only allow you to add comments and not delete them, so DELETE would not be returned as an action you could perform |
     | CONNECT | Used to create a secure connection (https) | If you were signing up for the NY Times online and needed to input your credit card information, this is the request your browser would make to get a secure connection |
 
-1. **Headers:** These contain the operating parameters of the HTTP Request. Examples of headers are what kind of language your browser accepts, content types, character fields, etc. Wikipedia has a pretty comprehensive list of possible headers [here](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields).
+1. **Headers:** These contain the operating parameters of the HTTP Request. Examples of headers are what kind of language your browser accepts, content types, character fields, etc. Wikipedia has a pretty comprehensive list of possible headers that you can explore.
 
 1. **An Empty Line**
 

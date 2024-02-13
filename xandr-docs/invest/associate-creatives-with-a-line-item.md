@@ -21,10 +21,7 @@ From the **Creatives** section, you can associate creatives with an augmented li
    | **Manually weight creatives**           | Rotation is based on a user-supplied weight.                              |
    | **Inherit creative weight from splits** | Rotation is based on a user-supplied weight defined per split.            |
 
-    If you're using a [custom model](https://docs.xandr.com/bundle/data-science-toolkit/page/custom-models.html) to deliver creatives,
-    a message will display in the
-    **Creatives** section identifying
-    the model attached.
+    If you're using a [custom model](../data-science-toolkit/custom-models.md) to deliver creatives, a message will display in the **Creatives** section identifying the model attached.
 
 1. Associate the appropriate creatives to your ALI
     by doing one of the following:

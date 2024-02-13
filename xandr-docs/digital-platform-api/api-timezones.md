@@ -24,8 +24,6 @@ Reporting currently defaults to Eastern Time except for Network Billing, which i
 > - Asia/Katmandu
 > - Indian/Cocos
 > - Australia/Adelaide
->
-> For more examples of non-integer timezones, see this [List of UTC time offsets](https://en.wikipedia.org/wiki/List_of_UTC_time_offsets) (search for ":30" for examples).
 
 ## Member service
 

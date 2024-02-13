@@ -28,7 +28,7 @@ Microsoft Advertising can measure lift on a high level or guide performance test
 
 ## Testing best practices
 
-The best way to test segment modifier (or any buying strategy) is to use the Test/Control method, also known as [A/B testing](https://en.wikipedia.org/wiki/A/B_testing).
+The best way to test segment modifier (or any buying strategy) is to use the Test/Control method, also known as A/B testing.
 
 Here are the recommendations for designing a test:
 

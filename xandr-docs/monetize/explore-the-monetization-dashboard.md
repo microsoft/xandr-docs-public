@@ -11,7 +11,7 @@ different sections of the Dashboard.
 
 > [!NOTE]
 > The data on the **Monetization Dashboard** is not updated in real time. The most recent data on the Dashboard will be from the previous day (in
-> [UTC](http://en.wikipedia.org/wiki/Coordinated_Universal_Time)). The delay is necessary because we pull some reporting data from external systems. Data is always displayed in UTC. The data does not reflect revenue associated with fixed fee direct line items, or otherwise allocated via adjustments. Use the [Network Analytics Report](network-analytics-report.md) for a complete view of your revenue.
+> UTC). The delay is necessary because we pull some reporting data from external systems. Data is always displayed in UTC. The data does not reflect revenue associated with fixed fee direct line items, or otherwise allocated via adjustments. Use the [Network Analytics Report](network-analytics-report.md) for a complete view of your revenue.
 
 ## Get to the dashboard
 

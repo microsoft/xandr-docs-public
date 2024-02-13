@@ -33,7 +33,7 @@ The offset will usually be 0. However, a negative value may be useful as a secur
 
 **Example using categorical features from online advertising**
 
-Online advertising has many categorical features, that is, features that can have many possible values. Some examples include browser, domain, and day of the week. These features are usually represented with ["one-hot"](https://en.wikipedia.org/wiki/One-hot) encoding (using ["dummy variables"](https://en.wikipedia.org/wiki/Dummy_variable_%28statistics%29)), meaning that x1 would be 1 if "browser = safari" and 0 if not, x2 would be 1 if "browser = firefox", and so on.
+Online advertising has many categorical features, that is, features that can have many possible values. Some examples include browser, domain, and day of the week. These features are usually represented with "one-hot" encoding (using "dummy variables"), meaning that x1 would be 1 if "browser = safari" and 0 if not, x2 would be 1 if "browser = firefox", and so on.
 
 If we put this into the logistic regression formula, we get:
 

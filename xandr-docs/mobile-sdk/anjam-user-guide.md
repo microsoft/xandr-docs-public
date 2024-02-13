@@ -7,7 +7,7 @@ ms.date : 10/28/2023
 
 # ANJAM user guide
 
-The Advertiser to Native JavaScript API for Mobile, or 'ANJAM', gives mobile creatives access to additional features that are not provided by [MRAID](https://www.iab.com/guidelines/mraid/ ). This includes the ability to perform [deep linking](http://en.wikipedia.org/wiki/Mobile_deep_linking).
+The Advertiser to Native JavaScript API for Mobile, or 'ANJAM', gives mobile creatives access to additional features that are not provided by [MRAID](https://www.iab.com/guidelines/mraid/ ). This includes the ability to perform deep linking.
 
 > [!NOTE]
 > Mobile creatives running in iframes can use MRAID alongside this API.

@@ -32,7 +32,7 @@ Features include:
 > [!TIP]
 > Before you can use the Batch Segment Service, you'll need to get it set up. See [Initial BSS Account Setup](initial-bss-account-setup.md) for instructions.
 > [!IMPORTANT]
-> [Gzip](https://en.wikipedia.org/wiki/Gzip) is the only file compression method supported by this service.
+> **Gzip** is the only file compression method supported by this service.
 
 ## Workflow
 

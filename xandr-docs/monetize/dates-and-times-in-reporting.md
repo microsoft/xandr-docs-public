@@ -22,7 +22,7 @@ entire network/member, or for individual advertisers.
   **Timezone** menu (under
   **Basic**)
 - Billing data is always in
-  [UTC](https://en.wikipedia.org/wiki/Coordinated_Universal_Time). However, you can always select
+  UTC. However, you can always select
   the desired time zone when running a report.
 
 ## Member time zones
@@ -53,9 +53,9 @@ zone.
 ## A note on eastern daylight time and eastern standard time
 
 In our reporting system, ET (Eastern Time) will automatically take
-Daylight Saving Time into account. Eastern Daylight Time ([EDT](https://en.wikipedia.org/wiki/Eastern_Time_Zone#Eastern_Daylight_Time)) will always mean UTC - 4 hours.
+Daylight Saving Time into account. Eastern Daylight Time (EDT) will always mean UTC - 4 hours.
 Eastern Standard Time
-([EST](https://en.wikipedia.org/wiki/Eastern_Time_Zone)) will always mean UTC - 5 hours.
+(EST) will always mean UTC - 5 hours.
 
 ## Daylight savings and reporting
 

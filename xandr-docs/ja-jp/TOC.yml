@@ -1,0 +1,22 @@
+- name: Japanese Reference Documentation
+  href: index.yml
+- name: Getting Started
+  items:
+  - name: Video Creatives
+    href: video-creatives.md
+  - name: Creative Types
+    href: creative-types.md
+  - name: Create a Guaranteed Delivery Line Item GDALI
+    href: create-a-guaranteed-delivery-line-item-gdali.md
+  - name: Audio Creatives
+    href: audio-creatives.md
+  - name: Banner and HTML5 Creatives
+    href: banner-and-html5-creatives.md
+  - name: Guaranteed Delivery GDALI
+    href: guaranteed-delivery-gdali.md
+  - name: Guaranteed Delivery Line Item FAQ GDALI
+    href: guaranteed-delivery-line-item-faq-gdali.md
+  - name: Native Creatives
+    href: native-creatives.md
+  - name: Publisher GDALI API Setup Guide
+    href: publisher-gdali-api-setup-guide.md

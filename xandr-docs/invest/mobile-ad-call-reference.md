@@ -33,9 +33,9 @@ Since this ad call is for mobile app inventory, attempts to pass web site domain
 The mobile ad call accepts the query string parameters shown below. For examples of mobile ad call requests, see the [Examples](#examples) at the bottom of the page.
 
 > [!IMPORTANT]
-> Note that device ID fields are case sensitive.
+> Device ID fields are case sensitive.
 > [!NOTE]
-> Several of these parameters need to be URL encoded. For more information about URL encoding, see this [Wikipedia article](https://en.wikipedia.org/wiki/Percent-encoding).
+> Several of these parameters need to be URL encoded.
 
 | Parameter | Type | Required? | Description |
 |:---|:---|:---|:---|
@@ -49,7 +49,7 @@ The mobile ad call accepts the query string parameters shown below. For examples
 | `devmodel` | string | No | Model of the device requesting an ad. |
 | `LimitAdTrackingEnabled` | boolean | No | If `true`, the user has set the system-level preference to not receive behaviorally targeted ads. Allowed values: `true`, `false`, `1`, or `0`.<br> **Tip:** For more information about the system-level ads preferences on iOS, see [Opt out of interest-based ads from iAd](https://support.apple.com/en-us/HT202074).<br>For more information about the system-level ads preferences on Android, see [Advertising ID](https://developers.google.com/android/reference/com/google/android/gms/ads/identifier/AdvertisingIdClient). |
 | `dnt` | boolean | No | **Note: This field is deprecated, and may be removed in the future.** Use the `LimitAdTrackingEnabled` flag instead.<br>If `true`, the user has set the system-level preference to not receive behaviorally targeted ads. Allowed values: `true`, `false`, `1`, or `0`. |
-| `devtime` | int | No | The time on the device, measured in seconds since the epoch, or [UNIX Time](https://en.wikipedia.org/wiki/Unix_time). |
+| `devtime` | int | No | The time on the device, measured in seconds since the epoch, or UNIX Time. |
 | `devtz` | string | No | The device's timezone. |
 | `md5udid` | string | No | The MD5 hash of the `ANDROID_ID`. This should only be sent for Android devices. This should be URL encoded. |
 | `sha1udid` | string | No | The SHA1 hash of the `ANDROID_ID`. This should only be sent for Android devices. This should be URL encoded.. |

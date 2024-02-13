@@ -89,7 +89,7 @@ As a guide to how postal codes should be formatted for each country, consult the
 
 If your list contains postal codes that do not exist in our database, you will be presented with an error message and given the chance to correct and resubmit any invalid postal codes. Some common formatting errors that may generate an error message are:
 
-- **Excel-truncated zeros:** Excel may truncate leading zeros frompostal codes if they are numeric (e.g., 06514 becomes 6514). However, an alphanumeric postal code such as "0AH 135" would not be affected.
+- **Excel-truncated zeros:** Excel may truncate leading zeros from postal codes if they are numeric (e.g., 06514 becomes 6514). However, an alphanumeric postal code such as "0AH 135" would not be affected.
 - **Country:** Postal codes can only be added for one country at a time.
 - **US zip codes:** Only 5-digit zip codes are accepted.
 

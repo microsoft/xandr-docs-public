@@ -45,7 +45,7 @@ The read-only Category Service allows you to view all categories that are regist
 | `brand_id` | int | The ID of the brand. |
 | `brand_name` | string | The name of the brand. |
 | `brand` | multi_object | An object containing information about the brand allowlisted in this country. For more information, see "[Brand](#regions-and-brands)" below. |
-| `country` | string | A 2-character string referencing the country in which the brand is allowlisted. For a list of supported codes, see the [ISO 3166-1 country codes](https://en.wikipedia.org/wiki/ISO_3166-1). |
+| `country` | string | A 2-character string referencing the country in which the brand is allowlisted. For a list of supported codes, refer the ISO 3166-1 country codes. |
 
 ### Regions and brands
 

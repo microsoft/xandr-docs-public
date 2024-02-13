@@ -35,7 +35,7 @@ the database since the last call that you made to the service, make sure to use 
 | `id` | int | The ID of the postal code. |
 | `code` | string | The postal code can be an alphanumeric string of up to 14 characters and can contain a space or hyphen. |
 | `country_id` | string | The ID of the country. |
-| `country_code` | string | The [ISO Alpha-2 code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) for the country to which the city belongs. You can use the [Country Service](country-service.md) to retrieve a complete list of country codes. |
+| `country_code` | string | The ISO Alpha-2 code for the country to which the city belongs. You can use the [Country Service](country-service.md) to retrieve a complete list of country codes. |
 | `country_name` | string | The name of the country to which the city belongs. You can use the [Country Service](country-service.md) to retrieve a complete list of country names. |
 | `last_modified` | timestamp | The date and time when the postal code was last modified. |
 | `active` | Boolean | Designates whether the postal code is active. If `true`, the postal code is active and available for targeting. If `false`, there is no geo-location data for the postal code and so targeting is not possible.<br><br>**Note:**<br>The postal codes may occasionally become active or inactive based on changes to IP addressing or changes in geolocation technologies, as well as changes to geographical borders. |

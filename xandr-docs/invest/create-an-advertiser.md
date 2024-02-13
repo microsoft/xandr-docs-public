@@ -152,7 +152,7 @@ enter any optional advanced settings that are useful.
     maximum of 50 characters.
   - To show just the advertiser's name with the member's address, enter
     the name but leave the rest of the fields blank. For more about
-    receiving advertiser- and/or insertion order-specific invoices, see [Understanding Your Invoice](https://wiki.appnexus.com/display/finance/Understanding%2bYour%2bInvoice).
+    receiving advertiser- and/or insertion order-specific invoices, see [Understanding Your Invoice](understanding-your-invoice.md).
 
     > [!TIP]
     > You may also choose to include a billing code on your insertion order-specific invoices. For more details, see [Create an Insertion Order](create-an-insertion-order.md).

@@ -23,7 +23,7 @@ For optimal results, it is strongly recommended to implement the best practices 
 > [!NOTE]
 > The Batch Segment Service requires configuration prior to use. Please consult [Initial BSS Account Setup](initial-bss-account-setup.md) to learn how to configure it for your seat.
 > [!IMPORTANT]
-> [Gzip](https://en.wikipedia.org/wiki/Gzip) is the only file compression method supported by this service.
+> **Gzip** is the only file compression method supported by this service.
 
 ## Add a segment file for processing
 

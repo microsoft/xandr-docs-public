@@ -1,7 +1,8 @@
 ---
-title: Native Creatives (JP)
+title: Microsoft Monetize - Native Creatives (JP)
 description: The article guides users on hosting various types of native creatives, including video, audio, banner, carousel, and app install.
 ms.date: 10/28/2023
+ms.custom: ja-jp
 ---
 
 # ative creatives (JP)

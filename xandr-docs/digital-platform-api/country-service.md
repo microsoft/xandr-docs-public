@@ -26,7 +26,7 @@ can use this service to retrieve the ID for targeting in campaigns (see `country
 |:---|:---|:---|
 | `id` | int | The ID of the country. |
 | `name` | string | The name of the country. |
-| `code` | string | The [ISO code](https://en.wikipedia.org/wiki/ISO_3166) for the country. |
+| `code` | string | The ISO code for the country. |
 | `active` | Boolean | If true, the country is available for targeting. If false, there is no geolocation data for the country and so delivery is not possible. |
 
 ## Examples

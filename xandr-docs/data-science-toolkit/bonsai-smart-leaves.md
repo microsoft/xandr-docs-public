@@ -13,7 +13,7 @@ ms.date: 10/28/2023
 You use the [Bonsai Language](the-bonsai-language.md) to write decision tree logic for custom predictive models. Each branch leads to a node, or "leaf", that evaluates to a simple numeric value representing the bid. Instead of evaluating a single static value, smart leaves evaluate a bid value that's dynamically modified based on a specified ad performance or delivery metric. Smart leaves also allow you to name individual leaves with an arbitrary string value. This is available in the [standard feed](../log-level-data/standard-feed.md) to aid debugging and performance analysis.  
 
 > [!NOTE]
-> Smart leaves are defined using a form similar to [YAML](https://en.wikipedia.org/wiki/YAML), a human-readable data serialization format.
+> Smart leaves are defined using a form similar to YAML, a human-readable data serialization format.
 
 ## compute() syntax
 

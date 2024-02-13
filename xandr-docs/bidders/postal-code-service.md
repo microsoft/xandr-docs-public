@@ -30,7 +30,7 @@ The Postal Code Service is a read-only service. This service can be used to retr
 |---|---|---|
 | `active` | boolean | Designates whether the postal code is active. If `true`, the postal code is active and available for targeting. If `false`, there is no geo-location data for the postal code and so targeting is not possible. |
 | `code` | string | The postal code can be an alphanumeric strings of up to 14 characters and can contain a space or hyphen. |
-| `country_code` | string | The [ISO Alpha-2 code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) for the country to which the city belongs. You can use the [Country Service](country-service.md) to retrieve a complete list of country codes. |
+| `country_code` | string | The ISO Alpha-2 code for the country to which the city belongs. You can use the [Country Service](country-service.md) to retrieve a complete list of country codes. |
 | `country_id` | string | The ID of the country. |
 | `country_name` | string | The name of the country to which the city belongs. You can use the [Country Service](country-service.md) to retrieve a complete list of country names. |
 | `id` | int | The ID of the postal code. |

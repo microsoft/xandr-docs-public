@@ -116,7 +116,7 @@ The following table shows content targeting options in DV360 and provides guida
 
 | Content Type | Limitations | Tips and Recommendations |
 |--|--|--|
-| [Brand Safety](https://support.google.com/displayvideo/answer/3032915?hl=en) | Using brand safety segments from IAS and DoubleVerify can sometimes cause limited reach if Xandr inventory is not yet categorized or is mis-categorized. | DV360 uses a crawler that checks aspects of all websites/apps and provides a digital content label. For more information on how inventory is labeled, see [Digital content labels in Display & Video 360](https://docs.xandr.com/bundle/xandr-bidders/page/dv360-buying-guide.html) in the DV360 Help. We recommend adhering to the [Domain Transparency Recommendations](https://docs.xandr.com/bundle/xandr-bidders/page/dv360-buying-guide.html#DV360BuyingGuide-DomainTransparencyRecommendations) domain transparency guidance laid out in the next section. |
+| [Brand Safety](https://support.google.com/displayvideo/answer/3032915?hl=en) | Using brand safety segments from IAS and DoubleVerify can sometimes cause limited reach if Xandr inventory is not yet categorized or is mis-categorized. | DV360 uses a crawler that checks aspects of all websites/apps and provides a digital content label. For more information on how inventory is labeled, see [Digital content labels in Display & Video 360](https://support.google.com/displayvideo/answer/2735881?hl=en&sjid=1732881213029061792-AP) in the DV360 Help. We recommend adhering to the [Domain transparency recommendations](#domain-transparency-recommendations)) domain transparency guidance laid out in the next section. |
 | [App, Channel, and Website](https://support.google.com/displayvideo/answer/2650521?hl=en) | N/A | N/A |
 | [Keyword](https://support.google.com/displayvideo/answer/2697825?hl=en) | For keywords to work, pages need to be crawlable. | We recommend a minimum of 100 branded keywords and/or 100 generic keywords. Ask the advertiser for their top converting keywords from Adwords. |
 | [Category](https://support.google.com/displayvideo/answer/2697826?hl=en) | DV360 does not read Xandr's content categories in the bid request. | We recommend targeting top categories to improve reach. |
@@ -154,7 +154,7 @@ The following graphic shows how to identify the creative ID and audit status for
 
 ## Buyer identification using buyer seat IDs
 
-DV360 supports Xandr's [Buyer Seat ID](https://docs.xandr.com/bundle/monetize_monetize-standard/page/topics/understanding-buyer-seat-ids html) feature. Previously, member breakouts and virtual seats were used for each DV360 buyer. However, they are no longer used for each DV360 buyer. Deals should be set up using DV360 Partner IDs, which Xandr sellers can find in the Partner Center.
+DV360 supports Xandr's [Buyer Seat ID](../monetize/understanding-buyer-seat-ids.md) feature. Previously, member breakouts and virtual seats were used for each DV360 buyer. However, they are no longer used for each DV360 buyer. Deals should be set up using DV360 Partner IDs, which Xandr sellers can find in the Partner Center.
 
 Buyers can find their DV360 Partner ID in two ways, as shown in the following graphic. Inspect the URL, which takes the form [https://displayvideo.google.com/#ng_nav/p/xxxx](https://displayvideo.google.com/#ng_nav/p/%2aXXXXX.%2a). `XXXXX` is typically a 5-digit number representing the partner ID.
 

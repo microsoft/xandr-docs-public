@@ -21,7 +21,7 @@ Use the table below to better understand why your creative was rejected. The dis
 | 6 | ad_size_does_not_match_ad_slot | The creative size when rendered does not match the declaration. | Ensure that the correct creative size has been associated with the creative. |
 | 7 | no_border | Creatives with a white background require a contrasting border, which was missing. | Add a clearly defined border to the creative. |
 | 8 | fourth_party_browser_cookies | The creative attempts to set cookies from a fourth party that is not certified. | Ensure that the creative is setting cookies from a certified fourth party. |
-| 9 | lso_objects | The creative sets an [LSO object](https://en.wikipedia.org/wiki/Local_shared_object), such as Flash cookies, browser helper objects, or HTML5 Local Storage. | Remove all LSO objects. |
+| 9 | lso_objects | The creative sets an LSO (Local Shared Object), such as Flash cookies, browser helper objects, or HTML5 Local Storage. | Remove all LSO objects. |
 | 10 | blank_creative | The creative renders a blank at the time of Google Ad Manager's audit. | Ensure that the creative is viewable by all users. |
 | 11 | destination_urls_undeclared | The creative uses rotation, but not all the destination URLs were declared. | Provide the missing destination URLs. |
 | 12 | problem_with_click_macro | There is a problem with the way the click macro is used. <br><br> **Note**: All creatives must contain the Google Ad Manager `CLICK_URL_MACRO`. It must exist to pass the programmatic audit. It must be able to pass a human audit. Microsoft Advertising automatically appends this to every bid response for Google Ad Manager. | Submit a [support request](https://help.xandr.com/). |

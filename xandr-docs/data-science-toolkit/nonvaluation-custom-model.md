@@ -30,7 +30,7 @@ Please note the following restrictions:
 
 - Macros are case-sensitive.
 - Keys and values can contain Unicode text that must not be bigger than 100 utf-8 encoded bytes in total.
-- The parser applies the [NFC Unicode transformation](https://en.wikipedia.org/wiki/Unicode_equivalence#Normal_forms) and may change the Unicode codepoints and the resulting utf-8 encoded result. The best way to avoid unpredictable behavior is to always use NFC-normalized text both in the key and value.
+- The parser applies the NFC Unicode transformation and may change the Unicode codepoints and the resulting utf-8 encoded result. The best way to avoid unpredictable behavior is to always use NFC-normalized text both in the key and value.
 - There may be no more than two macros per leaf.
 
 > [!NOTE]

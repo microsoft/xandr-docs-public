@@ -44,7 +44,7 @@
         href: create-a-custom-role.md
       - name: Role Capabilities
         href: role-capabilities.md
-      - name: Xandr Invest DSP Roles
+      - name: Microsoft Invest DSP Roles
         href: xandr-invest-dsp-roles.md
     - name: Member Users Screen
       href: network-users-screen.md
@@ -88,7 +88,7 @@
       href: traffic-quality.md
 - name: Buying Guide
   items:
-  - name: Ad Buying with Xandr
+  - name: Ad Buying with Microsoft Advertising
     href: ad-buying-with-xandr.md
   - name: Basic Buy-side Setup Procedures
     href: basic-buy-side-setup-procedures.md
@@ -748,7 +748,7 @@
       href: partnership-details-screen-buyer-view.md
     - name: Customize Your Buyer Profile
       href: customize-your-buyer-profile.md
-    - name: Xandr Direct for Buyers
+    - name: Microsoft Advertising Direct for Buyers
       href: appnexus-direct-for-buyers.md
   - name: Buying Deals
     items:
@@ -1002,7 +1002,7 @@
           href: release-notes-20221207-1.md
         - name: October 25, 2022 - New Data Provider in Data Marketplace
           href: release-notes-20221025-1.md
-        - name: October 25, 2022 - Launch of new Xandr Data Marketplace Resources
+        - name: October 25, 2022 - Launch of new Microsoft Advertising Data Marketplace Resources
           href: release-notes-20221025-2.md
         - name: June 30, 2022 - Alpha Testing for Underspend Budget Rollover
           href: release-notes-20220630.md

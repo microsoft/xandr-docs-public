@@ -2,6 +2,7 @@
 title: Create a Guaranteed Delivery Line Item (GDALI) (JP)
 description: In this article, find information on how to create and set up a guaranteed delivery line item to meet delivery goals and serve budgets evenly and in full.
 ms.date: 10/28/2023
+ms.custom: ja-jp
 ---
 
 # Create a Guaranteed Delivery Line Item (GDALI) (JP)
@@ -199,23 +200,8 @@ To set up line item budgeting and scheduling:
     - **My Audience Segments**: Click the arrow to open the **My Segments** tab of the **Add Segments** screen (for more information, see [Set Up Segment Targeting on a Line Item](../monetize/set-up-segment-targeting-on-a-line-item.md)).
     - **Third Party Segments**: Click the arrow to open the **Third Party Segments** tab in the **Add Segment** screen (for more information, see [Set Up Segment Targeting on a Line Item](../monetize/set-up-segment-targeting-on-a-line-item.md)).
 
-1. **Frequency and Recency**: To set frequency and recency caps, set **Caps** to the **on** position (for more information, see [Frequency and Recency Caps](../monetize/frequency-and-recency-caps.md)):
-    - To set **Frequency** (how many):
-
-      1. Enter a number for imps per (impressions per interval) and select an appropriate interval in the drop-down.
-      1. (Optional) Click **+ Add another cap** to add additional frequency caps.
-
-      For more information, see [Set a Frequency Cap](../monetize/set-a-frequency-cap.md).
-
-    - To set **Recency** (how often):
-
-      1. Click **+ Add another cap**.
-      1. Enter a whole number after **1 imp per** and select an appropriate interval in the drop-down.
-
-      For more information, see [Set a Recency Cap](../monetize/set-a-recency-cap.md).
-
+1. **Frequency and Recency**: To set frequency and recency caps, set **Caps** to the **on** position (for more information, see [Frequency and Recency Caps](../monetize/frequency-and-recency-caps.md
     - **Serve only 1 imp per page**: Set this to the on position if you want to limit the number of impressions that an individual advertiser can serve on a page in multi-tag auctions.
-
     - **Include users without cookies**: Set this to the on position if you want to serve impressions to unidentified users.
 
       > [!NOTE]
@@ -276,7 +262,3 @@ To save the GDALI, click one of the following options in the **Save and Reserve*
 - **Reserve and Duplicate** – When this option is chosen, the line item will be saved and reserved, and you will be redirected to a new **Create New Guaranteed Delivery Line Item** screen with the previous line item's settings pre-populated.
 - **Reserve and Create New Line Item** - When this option is chosen, the line item will be saved and reserved, and you will be redirected to a new, blank **Create New Guaranteed Delivery Line Item** screen under the same advertiser.
 
-## Related topics
-
-- [Guaranteed Delivery (GDALI)](../monetize/guaranteed-delivery-gdali.md)
-- [Guaranteed Delivery Line Item FAQ (GDALI)](../monetize/guaranteed-delivery-line-item-faq-gdali.md)

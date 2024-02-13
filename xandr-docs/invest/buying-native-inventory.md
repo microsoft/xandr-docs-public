@@ -45,7 +45,7 @@ Navigate to the **Creative Manager** screen, click **Create New** > **Single cre
 
 To maximize reach for your creatives across native inventory sources, here are some general guidelines we recommend:
 
-| Field | Xandr Guidelines |
+| Field | Microsoft Advertising Guidelines |
 |:---|:---|
 | Title | 25 character maximum |
 | Body | 300 character maximum |

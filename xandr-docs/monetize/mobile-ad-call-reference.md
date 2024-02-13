@@ -45,7 +45,7 @@ examples of mobile ad call requests, see the [examples](#examples) at the bottom
 > Note that device ID fields are case sensitive.
 
 > [!NOTE]
-> Several of these parameters need to be URL encoded. For more information about URL encoding, see this [Wikipedia article](https://en.wikipedia.org/wiki/Percent-encoding).
+> Several of these parameters need to be URL encoded.
 
 | Parameter | Type | Required? | Description |
 |---|---|---|---|
@@ -55,7 +55,7 @@ examples of mobile ad call requests, see the [examples](#examples) at the bottom
 | connection_type | string | No | The type of network used by the device. Allowed values are `"wifi"` or `"wan"`. |
 | devmake | string | No | Manufacturer of the device requesting an ad. |
 | devmodel | string | No | Model of the device requesting an ad. |
-| devtime | int | No | The time on the device, measured in seconds since the epoch, or [UNIX Time](https://en.wikipedia.org/wiki/Unix_time). |
+| devtime | int | No | The time on the device, measured in seconds since the epoch, or UNIX Time. |
 | devtz | string | No | The device's timezone. |
 | dnt | boolean | No | **Note**: **This field is deprecated, and may be removed in the future.** Use the `LimitAdTrackingEnabled` flag instead.<br>If `true`, the user has set the system-level preference to not receive behaviorally targeted ads. Allowed values: `true`, `false`, `1`, or `0`. |
 | id | int | Yes | The unique ID of the placement where the ad will serve. If you'd rather not pass the raw placement ID, you can pass in a combination of `member` and `inv_code` parameters. For more information, see the documentation for those parameters. |

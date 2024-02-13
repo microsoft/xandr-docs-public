@@ -14,9 +14,7 @@ This page describes a typical Bonsai custom model workflow and provides code exa
 
 ## Step 1: Identify your requirements
 
-You will write your custom model as a [decision tree](https://en.wikipedia.org/wiki/Decision_tree), where branches of the tree express
-conditions that lead to specific outputs (bid prices in the case of a Bid Price Model and bid multipliers in the case of a Bid Modifier
-Model). The conditions are written in our [Bonsai language](the-bonsai-language.md) and based on a set of [Bonsai Features](bonsai-language-features.md) and feature values. Before writing your tree:
+You will write your custom model as a decision tree, where branches of the tree express conditions that lead to specific outputs (bid prices in the case of a Bid Price Model and bid multipliers in the case of a Bid Modifier Model). The conditions are written in our [Bonsai language](the-bonsai-language.md) and based on a set of [Bonsai Features](bonsai-language-features.md) and feature values. Before writing your tree:
 
 - Take a close look at the Bonsai Features that are available.
 - Sketch how you want to use tree features to determine outputs.

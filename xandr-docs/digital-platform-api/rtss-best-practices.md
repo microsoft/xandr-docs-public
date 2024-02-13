@@ -68,7 +68,7 @@ The following table shows the relationship between `seg_ttl` and `expiry` in the
 ## OLC and geo-targeting
 
 RTSS uploads will accept any string that represents a valid OLC. By shortening the OLC code provided, you can specify a less precise area
-and increase your targeting zone. We recommend using a minimum of 4 symbols for OLC codes (an approximately [110km block](https://en.wikipedia.org/wiki/Open_Location_Code#Specification)), and a maximum of 8 symbols (an approximately [275m block](https://en.wikipedia.org/wiki/Open_Location_Code#Specification)).
+and increase your targeting zone. We recommend using a minimum of 4 symbols for OLC codes (an approximately 110km block, and a maximum of 8 symbols (an approximately 275m block)).
 
 RTSS will use Lat/Long for location whenever it is provided at the time of impression, and will fall back to IP address otherwise. Lat/Long is usually only provided via in-app impressions, when the user has explicitly granted permission to the application to identify location of the device.
 

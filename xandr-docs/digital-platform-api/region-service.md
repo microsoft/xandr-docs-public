@@ -29,7 +29,7 @@ The read-only Region Service allows you to see information about the regions and
 | `country_id` | int | The ID of the country to which the region belongs. |
 | `country_name` | string | The name of the country to which the region belongs. You can use the [Country Service](country-service.md) to retrieve a complete list of country names. |
 | `id` | int | The ID of the region. |
-| `iso_3166_2` | string | The [ISO 3166-2](https://en.wikipedia.org/wiki/ISO_3166-2) code for the region. |
+| `iso_3166_2` | string | The ISO 3166-2 code for the region. |
 | `name` | string | The name of the region. |
 | `sales_tax_rate_pct` | float | Sales tax for member in region acting as buyer. |
 

@@ -43,7 +43,7 @@ Here is the win rate of a $0.10 CPM bid for a similar randomly selected slice of
 
 ### Our solution
 
-Given these challenges, and the requirement that we maintain the even delivery rate required by sellers, we forego attempting to update bidders in real-time and instead dynamically estimate the request rates and win rates algorithmically, based on a statistical analysis of sample data. Specifically, we use a [Logistic regression](https://simple.wikipedia.org/wiki/Logistic_regression), which is a fancy way of saying that we use a mathematical model to guess the probability of an event given some other data.
+Given these challenges, and the requirement that we maintain the even delivery rate required by sellers, we forego attempting to update bidders in real-time and instead dynamically estimate the request rates and win rates algorithmically, based on a statistical analysis of sample data. Specifically, we use a Logistic regression, which is a fancy way of saying that we use a mathematical model to guess the probability of an event given some other data.
 
 In addition to mathematical modeling of request rates and win rates, we do a few other things to make sure that guaranteed line items meet publisher commitments:
 

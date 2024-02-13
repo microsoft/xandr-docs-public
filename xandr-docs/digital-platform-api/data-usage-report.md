@@ -30,7 +30,7 @@ To run a report for a custom time frame, set the `start_date` and `end_date` fie
 
 | Column | Type | Filter? | Example | Description |
 |:---|:---|:---|:---|:---|
-| `geo_country_code` | string | yes | `"CA"` | A two-character string denoting the country associated with the impression. For a complete listing of allowed values, see [ISO 3166-1 country codes](https://en.wikipedia.org/wiki/ISO_3166-1). |
+| `geo_country_code` | string | yes | `"CA"` | A two-character string denoting the country associated with the impression.|
 | `campaign` | string | no | `"Prospect Campaign (31)"` | **Deprecated** (as of October 17, 2016). |
 | `data_provider` | string | no | `"Peer 39 (Data Provider) (517)"` | **Deprecated** (as of October 17, 2016). |
 | `geo_country` | string | yes | `"US"` | The code of the geographical country associated with the impression. |

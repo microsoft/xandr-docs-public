@@ -22,7 +22,7 @@ This read-only service shows you the list of language IDs that you can use in th
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `code` | string | The code for the language. (2 letter ISO-639-1 codes as given in<br>[https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).) |
+| `code` | string | The 2 letter ISO-639-1 code for the language.|
 | `id` | int | The ID of the language. |
 | `last_activity` | timestamp | The date and time of the last update to the language entry. |
 | `name` | string | The name of the language. |

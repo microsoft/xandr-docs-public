@@ -27,7 +27,7 @@ Microsoft Advertising ID for user identification and frequency capping purposes.
 
 ## Device targeting and reporting caveats
 
-In some cases, mobile device targeting (and subsequent reporting) will display logical inconsistencies. For example, an iPhone could be mapped to an iPad [user agent](https://en.wikipedia.org/wiki/User_agent) (UA). This inconsistency can occur because of the following technical issues:
+In some cases, mobile device targeting (and subsequent reporting) will display logical inconsistencies. For example, an iPhone could be mapped to an iPad user agent (UA). This inconsistency can occur because of the following technical issues:
 
 - We look up OS and Browser from the UA ourselves, but we retrieve device info from a third party. The two sources are not logically verified.
 - OpenRTB integrations allow suppliers to override individual device fields.

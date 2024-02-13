@@ -1,0 +1,43 @@
+### YamlMime:Landing
+
+title: Japanese Reference Documentation
+summary: Welcome to Japanese Reference Documentation! All the information you need to get started is right here. You can click one of the titles below or refer to the Table of Contents (TOC) on the left for complete documentation.
+metadata:
+  title: Japanese Reference Documentation
+  description: Discover various reference docs for Japanese Reference Documentation
+  ms.topic: landing-page
+  ms.author: shsrinivasan
+  ms.service: microsoft-monetize
+  ms.date: 12/01/2023
+
+landingContent:
+  - title: Let's Get Started
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview
+            url: video-creatives.md
+  - title: Creative Types
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview
+            url: creative-types.md
+  - title: Create a Guaranteed Delivery Line Item-GDALI
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview
+            url: create-a-guaranteed-delivery-line-item-gdali.md
+  - title: Audio Creatives
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview
+            url: audio-creatives.md
+  - title: Banner and HTML5 Creatives
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview
+            url: banner-and-html5-creatives.md

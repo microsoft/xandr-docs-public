@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 > [!NOTE]
 > This topic applies only to Standard Line Items. A new version of this document that is applicable to Augmented Line Items will be available at a later date.
 
-There are several different ways to buy mobile inventory using Xandr. The procedures are similar, but they vary slightly depending on how you want to buy. The documents in the **Campaign Setup** section show you how to set up your campaigns for each of these scenarios.
+There are several different ways to buy mobile inventory using Microsoft Advertising. The procedures are similar, but they vary slightly depending on how you want to buy. The documents in the **Campaign Setup** section show you how to set up your campaigns for each of these scenarios.
 
 The documents in the **Working with Mobile Advertisers** section give you the information you need in order to work with mobile advertisers. It covers topics from running cost per install offers (also known as cost per download) to managing discrepancies. The [Related Topics](#related-topics) section below lists other documentation available in this section.
 
@@ -17,7 +17,7 @@ The documents in the **Working with Mobile Advertisers** section give you the in
 
 - [Buy Mobile Inventory via RTB](buy-mobile-inventory-via-rtb.md)
 
-  Target other networks on the Xandr platform with your campaigns in real time. This requires setting up a line item targeting third-party mobile inventory using the normal buying workflow. Difficulty level: Easiest.
+  Target other networks on the Microsoft Advertising platform with your campaigns in real time. This requires setting up a line item targeting third-party mobile inventory using the normal buying workflow. Difficulty level: Easiest.
 
 - [Run Rich Media Creatives on Mobile Inventory](run-rich-media-creatives-on-mobile-inventory.md)  
 

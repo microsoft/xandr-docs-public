@@ -38,15 +38,15 @@ conjunction with a buying strategy that uses Xandr's optimization, like "Optimiz
 
 ### Step 1: Identify your requirements
 
-You will write your custom model as a [decision tree](https://en.wikipedia.org/wiki/Decision_tree), where branches of the tree express
+You will write your custom model as a decision tree, where branches of the tree express
 conditions that lead to specific outputs (bid prices in the case of a Bid Price Model and bid multipliers in the case of a Bid Modifier
 Model). The conditions can be based on a set of Bonsai features and feature values. Before writing your tree:
 
 - Take a close look at the [Bonsai Features](bonsai-language-features.md) that are available.
 - Sketch how you want to use tree features to determine outputs.
 - Be sure to take advantage of reporting data in identifying the right features and values:
-  - [Standard Reporting](../invest/reporting-guide.md) 
-  - [Log-Level Data Feeds](../log-level-data/log-level-data-feeds.md) 
+  - [Standard Reporting](../invest/reporting-guide.md)
+  - [Log-Level Data Feeds](../log-level-data/log-level-data-feeds.md)
 
 Example: Decision tree for bid pricing
 

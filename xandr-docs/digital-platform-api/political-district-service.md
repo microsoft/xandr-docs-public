@@ -56,7 +56,7 @@ The `postal_codes` object contains the following fields:
 | `code` | string | The postal code, which can be an alphanumeric string containing 5 characters. |
 | `country_id` | int | The ID associated with the country. |
 | `active` | string | The status of the postal code, which highlights if the postal code is `active`/`inactive`. |
-| `country_code` | string | The [ISO Alpha-2 code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) for the country to which the city belongs. To retrieve a complete list of country codes, see [Country Service](country-service.md). |
+| `country_code` | string | The ISO Alpha-2 code for the country to which the city belongs. To retrieve a complete list of country codes, see [Country Service](country-service.md). |
 | `country_name` | string | The name of the country to which the city belongs. To retrieve a complete list of country names, see [Country Service](country-service.md). |
 
 #### Political district object

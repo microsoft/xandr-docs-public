@@ -171,8 +171,7 @@ $ curl -b cookies -c cookies -X POST --data-binary @creative 'https://api.appnex
 
 ## Raw HTML and JavaScript
 
-Raw HTML and JavaScript  ("format" values of "raw-html" and "raw-js", respectively) can be complicated by certain characters within the HTML or JavaScript which will conflict with the JSON syntax. All special characters, double-quotes in particular, should be "escaped" (see
-[https://en.wikipedia.org/wiki/Escape_character](https://en.wikipedia.org/wiki/Escape_character)) with a backslash ("\\). The example below shows how to upload a simple HTML creative.
+Raw HTML and JavaScript  ("format" values of "raw-html" and "raw-js", respectively) can be complicated by certain characters within the HTML or JavaScript which will conflict with the JSON syntax. All special characters, double-quotes in particular, should be "escaped" with a backslash ("\\). The example below shows how to upload a simple HTML creative.
 
 > [!NOTE]
 > Any line returns must be encoded as "\r\n" since including actual line returns results in invalid JSON syntax.

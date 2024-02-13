@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 Segment pixels use information about a user, such as webpages they visit, actions they take, or qualities such as gender, location, and
 wealth, to assign that user to a group called a segment. Segment data is written to and extracted from the server-side cookie store via segment pixels.
 
-If you're new to the concept of pixels, we recommend you read a little more about [Cookies](https://en.wikipedia.org/wiki/HTTP_cookie), which are text files associated with specific domains that live in your browser and contain information such as how many times you have been served a particular ad by the domain adserver.com, or what's in your shopping cart from myfavoritestore.com.
+If you're new to the concept of pixels, we recommend you read a little more about Cookies, which are text files associated with specific domains that live in your browser and contain information such as how many times you have been served a particular ad by the domain adserver.com, or what's in your shopping cart from myfavoritestore.com.
 
 Microsoft Advertising segment pixels look something like this:
 

@@ -1,7 +1,8 @@
 ---
-title: Banner and HTML5 Creatives (JP)
+title: Microsoft Monetize - Banner and HTML5 Creatives (JP)
 description: Learn what are Banner Creatives and HTML5 Creatives and how you can host them.
 ms.date: 10/28/2023
+ms.custom: ja-jp
 ---
 
 

@@ -41,7 +41,7 @@ Data retention period for this report is 60 days.
 | `buyer_member_id` | int | yes | `643` | The ID of the member that used the data provided by the third-party vendor (e.g., user segment providers). |
 | `geo_country` | string | yes | `"US"` | The code of the geographical country associated with the impression. |
 | `geo_country_name` | string | no | `"United States"` | The name of the geographical country associated with the impression. |
-| `geo_country_code` | string | yes | `"CA"` | A two-character string denoting the country associated with the impression. For a complete listing of allowed values, see [ISO 3166-1 country codes](https://en.wikipedia.org/wiki/ISO_3166-1). |
+| `geo_country_code` | string | yes | `"CA"` | A two-character string denoting the country associated with the impression.|
 | `campaign_id` | int | yes | `31` | The ID of the campaign associated with the impression that used third-party data targeting. |
 | `campaign_name` | string | no | `"Prospect Campaign"` | The name of the campaign associated with the impression that used third-party data targeting. |
 | `campaign` | string | no | `"Prospect Campaign (31)"` | The name and ID of the campaign associated with the impression. |

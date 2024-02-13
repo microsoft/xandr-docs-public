@@ -6,9 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Getting started with roles
 
-As a company doing business with Microsoft Advertising, it's possible that you have more than one user responsible for your company's interaction with the system, whether that interaction is through the UI or the API. You may have several users who are responsible for different
-advertisers and publishers, and for different aspects of working with those advertisers and publishers. In creating and managing your
-interactions, you want to ensure that you have the right users responsible for the right parts of the system. User access control with roles gives you the ability to restrict user permissions based on the user's specific business needs.
+As a company doing business with Microsoft Advertising, it's possible that you have more than one user responsible for your company's interaction with the system, whether that interaction is through the UI or the API. You may have several users who are responsible for different advertisers and publishers, and for different aspects of working with those advertisers and publishers. In creating and managing your interactions, you want to ensure that you have the right users responsible for the right parts of the system. User access control with roles gives you the ability to restrict user permissions based on the user's specific business needs.
 
 ## Roles
 

@@ -39,8 +39,7 @@ If you are interested in a package but would like to ask the seller to make modi
 
 ## Step 3. Target deals
 
-If you generated a deal from a package, your deal ID is displayed in the **Selected Packages**
-section. Target deals using line item deal targeting. For more information, see [Deal Targeting (ALI)](./deal-targeting-ali.md).
+If you generated a deal from a package, your deal ID is displayed in the **Selected Packages** section. Target deals using line item deal targeting. For more information, see [Deal Targeting (ALI)](./deal-targeting-ali.md).
 
 ## Related topics
 

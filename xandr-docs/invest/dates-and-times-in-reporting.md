@@ -14,7 +14,7 @@ describes how to change your member or advertiser's default time zone.
 Currently, most time zones for Microsoft Invest objects are set to Eastern U.S. time by default (UTC - 4 hours or UTC - 5 hours, depending on daylight savings). You can change this time zone for your entire network/member, or for individual advertisers.
 
 - You can select a different time zone for any report using the **Timezone** menu (under **Basic**)
-- Billing data is always in [UTC](https://en.wikipedia.org/wiki/Coordinated_Universal_Time). However, you can always select the desired time zone when running a report.
+- Billing data is always in UTC. However, you can always select the desired time zone when running a report.
 
 ### Member time zones
 
@@ -30,7 +30,7 @@ When you change an advertiser's time zone, you can choose to apply the change to
 
 ## A note on Eastern Daylight Time and Eastern Standard Time
 
-In our reporting system, ET (Eastern Time) will automatically take Daylight Saving Time into account. Eastern Daylight Time ([EDT](https://en.wikipedia.org/wiki/Eastern_Daylight_Time)) will always mean UTC - 4 hours. Eastern Standard Time ([EST](https://en.wikipedia.org/wiki/Eastern_Time_Zone)) will always mean UTC - 5 hours.
+In our reporting system, ET (Eastern Time) will automatically take Daylight Saving Time into account. Eastern Daylight Time (EDT) will always mean UTC - 4 hours. Eastern Standard Time (EST) will always mean UTC - 5 hours.
 
 ## Daylight savings and reporting
 

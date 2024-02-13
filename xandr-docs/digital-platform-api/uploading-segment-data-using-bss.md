@@ -23,7 +23,7 @@ You have two options when creating a data file for BSS: The [Legacy BSS File For
 
 Note that your data file must meet the following requirements:
 
-- Uses the [Latin1](https://en.wikipedia.org/wiki/ISO/IEC_8859-1) character set.
+- Uses the Latin1 character set.
 - Is a maximum of 0.5GB.
 
 ## Request an upload URL and job ID

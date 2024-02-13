@@ -233,7 +233,7 @@ If you leave off the **append=true** flag in your query string, your current lis
 ```
 
 > [!NOTE]
-> Domains you upload must generally conform to the [URI spec](https://www.ietf.org/rfc/rfc3986.txt) to be accepted by our API. In practical terms, you probably don't need to worry about this requirement unless you're trying to upload Internationalized Domain Names, in which case you should ensure that any domains that include non-ASCII characters are encoded with [Punycode](https://en.wikipedia.org/wiki/Punycode) before upload.
+> Domains you upload must generally conform to the [URI spec](https://www.ietf.org/rfc/rfc3986.txt) to be accepted by our API. In practical terms, you probably don't need to worry about this requirement unless you're trying to upload Internationalized Domain Names, in which case you should ensure that any domains that include non-ASCII characters are encoded with Punycode before upload.
 
 ### Step 3: Profile
 

@@ -41,6 +41,6 @@ To learn more about the content and offer types that we prohibit, see [Part of S
   - The landing page must be live and functional at the time of audit.
   - The landing page must be viewable from any one of the IP addresses that we use to perform our creative audits, which are listed in the Creative Troubleshooting FAQ. For more information, see the **Creative Doesn't Display** section in [Creative Troubleshooting FAQ](../bidders/creative-troubleshooting-faq.md).
 
-## Related topics
+## Related topic
 
 - [Auditing Creatives](./auditing-creatives.md)
