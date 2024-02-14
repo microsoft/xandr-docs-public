@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Buy Microsoft Outlook.com Inventory
-description: In this article, learn about Microsoft Outlook.com inventory's volume, availability, creative specifications, and targeting instructions.
+description: Explore information on Microsoft Outlook.com inventory's volume, availability, creative specifications, and targeting instructions.
 ms.date: 10/28/2023
 ---
 
@@ -55,5 +55,4 @@ For instructions on how to target the Outlook app, see [Buying Microsoft Windows
 
 ## More questions?
 
-If you have any further questions about buying Outlook.com inventory, please contact your Microsoft Advertising account representative.
-
+If you have any further questions about buying Outlook.com inventory, contact your Microsoft Advertising account representative.

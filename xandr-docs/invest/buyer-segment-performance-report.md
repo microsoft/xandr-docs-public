@@ -60,8 +60,7 @@ Intervals determine how your data is grouped together into rows in the report re
 
 ## Data retention period
 
-This report's data is retained for 45 days. For more information about how quickly reporting data is processed, see [Availability
-of Reporting Data](availability-of-reporting-data.md).
+This report's data is retained for 45 days. For more information about how quickly reporting data is processed, see [Availability of Reporting Data](availability-of-reporting-data.md).
 
 ## Dimensions
 

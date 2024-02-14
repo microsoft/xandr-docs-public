@@ -18,7 +18,7 @@ With **Microsoft Advertising Exchange**, Microsoft Advertising offers exclusive 
 
 ## Targeting Microsoft inventory
 
-To target Microsoft inventory, you need to create an inventory list that includes the **Microsoft Advertising Exchange (280)** advertiser. See [Inventory Lists](inventory-lists-ali-only.md) for full details.
+To target Microsoft inventory, you need to create an inventory list that includes the **Microsoft Advertising Exchange (280)** advertiser. For full details, see [Inventory Lists](inventory-lists-ali-only.md).
 
 > [!NOTE]
 > **For Standard (Legacy) Line Item Targeting**

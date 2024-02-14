@@ -139,6 +139,7 @@ The following codes appear in the `bid_reject_reason` column to indicate why a b
 | `176` | NEC_CURATED_MEMBER_CATEGORY_BANNED | `361` | BRR_BLOCKED_BY_CURATED_MEMBER_CATEGORY | Creative category banned on curator member |
 | `177` | NEC_CURATED_MEMBER_ADSERVER_BANNED | `362` | BRR_BLOCKED_BY_CURATED_MEMBER_ADSERVER | Creative adserver banned on curator member |
 | `178` | NEC_CURATED_MEMBER_LANGUAGE_BANNED | `363` | BRR_BLOCKED_BY_CURATED_MEMBER_LANGUAGE | Creative language banned on curator member |
+| `179` | NEC_BID_DSA_TRANSPARENCY_FAIL | `422` | BRR_BID_DSA_TRANSPARENCY_FAIL | Bid rejected due to failing transparency check |
 | `201` | NEC_RESP_WRONG_AUCTION_ID | `220` | BRR_RESP_WRONG_AUCTION_ID | Auction ID does not match request |
 | `202` | NEC_MEMBER_MISSING | `221` | BRR_MEMBER_MISSING | No member ID sent in response |
 | `203` | NEC_MEMBER_INACTIVE | `222` | BRR_MEMBER_INACTIVE | Inactive member |

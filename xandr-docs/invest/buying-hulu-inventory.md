@@ -14,4 +14,4 @@ To buy OTT inventory serving on Hulu:
 
 ## Related topic
 
-- [OTT Video Creative Specifications](ott-video-creative-specifications.md)
+[OTT Video Creative Specifications](ott-video-creative-specifications.md)

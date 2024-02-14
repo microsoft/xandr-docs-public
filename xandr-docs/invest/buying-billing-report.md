@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 The Buying Billing Report allows you to manage internal invoicing for your advertisers across both managed and third-party buying.
 
-If you would like to use this report to analyze your Microsoft Advertising invoice, see [Understanding Your Invoice](understanding-your-invoice.md). 
+If you would like to use this report to analyze your Microsoft Advertising invoice, see [Understanding Your Invoice](understanding-your-invoice.md).
 
 ## Time frame
 
@@ -117,7 +117,7 @@ Intervals determine how your data is grouped together into rows in the report re
 
 | Value | Name | Definition |
 |:--|:--|:--|
-| 5 | Kept | Your creative served on managed inventory. <br/> **Note:** We currently only display cost for Creative Overage Fee. All other monetary metrics are set to zero out by design. |
+| 5 | Kept | Your creative served on managed inventory. <br><br> **Note:** We currently only display cost for Creative Overage Fee. All other monetary metrics are set to zero out by design. |
 | 7 | RTB | Your creative served on third-party inventory. |
 | 9 | External Impression | An impression from an impression tracker. |
 | 10 | External Click | A click from a click tracker. |

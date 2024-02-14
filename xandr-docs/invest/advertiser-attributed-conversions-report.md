@@ -63,7 +63,7 @@ This report can retrieve data for the last 90 days.
 | Campaign | Yes | The campaign that purchased this impression. (Does not apply to all advertisers.) |
 | Split | Yes | The name and ID of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any rows with a campaign name, the Split column (if included) will be null. |
 | Creative | Yes | The creative that served on this impression. For more information about creatives, see [Working with Creatives](working-with-creatives.md). |
-| Impression Type | Yes | The type of impression. For more information, see [Impression Types](#impression-types) |
+| Impression Type | Yes | The type of impression. For more information, see [Impression Types](#impression-types). |
 | Conversion Pixel | Yes | The conversion pixel which was fired in this conversion event. For more information about conversion pixels, see [Working with Conversion Pixels](working-with-conversion-pixels.md). |
 | Post Click/Post View Conversion | Yes | Whether the conversion was a post-click (PC) or post-view (PV) conversion. |
 | Post Click/Post View Revenue | No | Whether the revenue generated was from a post-click (PC) or post-view (PV) conversion. |

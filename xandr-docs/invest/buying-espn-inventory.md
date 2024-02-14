@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Buy an ESPN inventory
 
-To buy OTT inventory serving on ESPN Video On Demand on CTV or ESPN Live Streaming Video (on Desktop, Mobile App and CTV), you need to:
+To buy OTT inventory serving on ESPN Video On Demand on CTV or ESPN Live Streaming Video (on Desktop, Mobile App, and CTV), you need to:
 
 1. Make sure your video creatives meet the following requirements:
     - Format: MP4 with AAC audio
@@ -25,4 +25,4 @@ To buy OTT inventory serving on ESPN Video On Demand on CTV or ESPN Live Streami
 
 ## Related topic
 
-- [OTT Video Creative Specifications](ott-video-creative-specifications.md)
+[OTT Video Creative Specifications](ott-video-creative-specifications.md)

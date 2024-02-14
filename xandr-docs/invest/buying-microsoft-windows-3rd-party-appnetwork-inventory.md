@@ -21,7 +21,7 @@ Microsoft Windows 3rd Party AppNetwork inventory is fully integrated with the Mi
 > Supply type is a targeting attribute designated by the seller that may not reflect actual device type.
 
 - Available globally - top markets are United States, Brazil, United Kingdom, France, Vietnam.
-- 13 billion monthly impressions worldwide
+- 13 billion monthly impressions worldwide.
 
 > [!TIP]
 > Inventory Research with specific break-downs of Windows App inventory by size & country can be accessed via the Network tab then filtering for Supply Type = "App" within seller Microsoft Advertising Exchange (280).
@@ -61,7 +61,7 @@ Ad Quality:
 - [Microsoft CAP](https://about.ads.microsoft.com/en-us/resources/policies)
 - Animation Length up to 30 sec
 
-**Legacy Ads SDK creative specs**
+### Legacy Ads SDK creative specs
 
 Legacy SDK (versions prior to Windows 10) currently represents 55% of total impressions on the Windows 3rd Party AppNetwork (Windows 7 has 35% of total traffic, Windows 8.1 10% etc.). This percentage is steadily decreasing as Windows 10 adoption continues.
 
@@ -81,13 +81,13 @@ To target **Windows AppNetwork and/or Windows Phone AppNetwork** inventory by **
 
 To target **Windows AppNetwork** and/or **Windows Phone AppNetwork** via Augmented Line Item - Programmatic Splits:
 
-1. Leave the default device type selected and Inventory Type should be set to Apps & Web.
-1. On the Programmatic Split – Select Publisher and add **348882** & **336212** for desktop and phone apps respectively for inclusion.
+1. Leave the default device type selected and Inventory Type should be set to **Apps & Web**.
+1. On the **Programmatic Split**, select **Publisher** and add **348882** & **336212** for desktop and phone apps respectively for inclusion.
 1. Click **Add**.
 
 To target **Windows AppNetwork** and/or **Windows Phone AppNetwork** by deal:
 
-1. Navigate to Package MarketPlace from the **Partners** ribbon.
+1. Navigate to **Package MarketPlace** from the **Partners** ribbon.
 1. Select seller as **Microsoft Advertising Exchange (280)**.
 1. Search for Microsoft **Run of Windows PC Apps** and **Run of Windows Phone Apps**.
 1. Click **Get Deals** and this will generate a Deal ID to target.
@@ -112,8 +112,7 @@ It is recommended to **NOT** use Device Type for targeting. Retain the "All" def
 > [!TIP]
 > To report on delivery for each publisher, you can select "publisher" as a dimension in an analytics report.
 >
-> The best way to distinguish between Windows 10 Desktop Inventory and Windows Phone inventory is to use creative size targeting or OS
- (extended) targeting.
+> The best way to distinguish between Windows 10 Desktop Inventory and Windows Phone inventory is to use creative size targeting or OS (extended) targeting.
 
 ## Best practice for reach
 
@@ -126,16 +125,16 @@ offer a few packages broken out by content category such as entertainment, games
 
 ## Extra information
 
-**User Identification (Microsoft Ad ID)**
+### User identification (Microsoft Ad ID)
 
 All Microsoft Windows App inventory includes a mobile-specific device identifier called the Windows Ad ID. This identifier is similar to other mobile app identifiers like IDFA or Google Play in that it is persistent across apps on the same device, compliant to the user's OS-level privacy settings.
 
 For Windows 10 inventory, Microsoft also provides the Microsoft Advertising ID (UUID64) corresponding to the user's default browser where available. This process is called user-syncing, and enables advertisers to track users across devices. **User-sync is available on 82% of Windows 10 impressions, and better enables category targeting, frequency cap, conversion tracking and more.**
 
-**App-Install Attribution (Window Store ID)**
+### App-install attribution (Window Store ID)
 
-For buyers running campaigns with a CPA goal of an App installation, the third-party app installation vendors Tune, Adjust, and Kochava support Windows Apps attribution tracking through Microsoft Advertising. See [Set Up Third-Party Mobile App Install Tracking](set-up-third-party-mobile-app-install-tracking.md) for more information on hosted Microsoft Advertising creatives and how to use third-party app installation vendors for conversion tracking within Microsoft Advertising. If you are using a third-party ad server, you will be tracking conversions in that third-party ad server, which will require its own integration with Tune, Adjust, or Kochava for conversion attribution. We will continue onboarding additional attribution vendors. If you rely upon a specific attribution vendor that is not supported today, please contact your Microsoft Advertising Account Representative.
+For buyers running campaigns with a CPA goal of an App installation, the third-party app installation vendors Tune, Adjust, and Kochava support Windows Apps attribution tracking through Microsoft Advertising. For more information on hosted Microsoft Advertising creatives and how to use third-party app installation vendors for conversion tracking within Microsoft Advertising, see [Set Up Third-Party Mobile App Install Tracking](set-up-third-party-mobile-app-install-tracking.md). If you are using a third-party ad server, you will be tracking conversions in that third-party ad server, which will require its own integration with Tune, Adjust, or Kochava for conversion attribution. We will continue onboarding additional attribution vendors. If you rely upon a specific attribution vendor that is not supported today, contact your Microsoft Advertising Account Representative.
 
 ## More questions?
 
-If you have any further questions about buying Windows App Inventory, please contact your Microsoft Advertising account representative.
+If you have any further questions about buying Windows App Inventory, contact your Microsoft Advertising account representative.

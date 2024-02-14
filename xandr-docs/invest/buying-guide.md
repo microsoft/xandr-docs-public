@@ -4,7 +4,7 @@ description: Use the Buying guide to understand Microsoft Invest's buy-side capa
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Buying Guide
+# Microsoft Invest - Buying guide
 
 This guide helps you understand the buy-side capabilities of Microsoft Invest and provides step-by-step instructions for managing all aspects of direct and third-party media buying on behalf of your advertisers. For details about network-level features that apply to all
 advertisers, see the [Network Guide](network-guide.md). For direct agreements with sellers, see [Buying Deals](buying-deals.md).

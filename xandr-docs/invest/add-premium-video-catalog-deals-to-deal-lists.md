@@ -1,12 +1,12 @@
 ---
 title: Microsoft Invest - Add Premium Video Catalog Deals to Deal Lists
-description: In this article, learn how to use the inventory library to add Premium Video Catalog (PVC) deals to deal lists within Microsoft Invest.
+description: In this article, learn how to use the Inventory Library to add Premium Video Catalog (PVC) deals to deal lists within Microsoft Invest.
 ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Add Premium Video Catalog deals to deal lists
 
-Using the Inventory Library, buyers can add premium video catalog (PVC) deals to new and existing deal lists for all line item types except programmatic guaranteed buying line items.
+Using the **Inventory Library**, buyers can add premium video catalog (PVC) deals to new and existing deal lists for all line item types except programmatic guaranteed buying line items.
 
 > [!NOTE]
 > The Inventory Library is a **Beta** feature that isn't available to all clients. If you'd like to gain access to it, contact your Microsoft Advertising account representative.
@@ -23,9 +23,7 @@ Using the Inventory Library, buyers can add premium video catalog (PVC) deals to
     - **Format**: Includes various video formats such as long form and short form.
     - **App Type**: Includes various methods for distributing video content to viewers on the internet, such as advertising-based video on demand (AVOD) and subscription video on demand (SVOD).
     - **Brand Safety**: Includes all brand sensitivity designations that this premium video inventory can be categorized under.
-    - **Floor Price**: Allows for a minimum value of 0. The maximum value allowed will depend upon the premium video inventory that's
-      available to you within the Inventory Library. A floor price is the minimum bid price that a seller is willing to accept for a bid
-      on premium video inventory.
+    - **Floor Price**: Allows for a minimum value of 0. The maximum value allowed will depend upon the premium video inventory that's available to you within the Inventory Library. A floor price is the minimum bid price that a seller is willing to accept for a bid on premium video inventory.
 1. Select the appropriate PVC deals.
 1. From the **Action Center** pane, click **More Info** to display the weighted floor price average along with the high, median, and low floor price values.
 
@@ -55,4 +53,4 @@ Using the Inventory Library, buyers can add premium video catalog (PVC) deals to
 
 ## Related topic
 
-- [Inventory Library](inventory-library.md)
+[Inventory Library](inventory-library.md)

@@ -58,8 +58,7 @@ For more information about how quickly report data is processed, see [Availabili
 
 ## Data retention period
 
-Most data in this report is maintained permanently (exceptions noted
-below). After:
+Most data in this report is maintained permanently (exceptions noted below). After:
 
 - 100 days, you are no longer able to report on hourly data (however, daily, monthly and cumulative intervals are still available)
 - 14 months, you are no longer able to report on individual:
@@ -67,8 +66,7 @@ below). After:
   - Placements
   - Brands
 
-In some cases Analytics reports can show delivery that does not match statistics shown elsewhere in Microsoft Invest for a
-given advertiser or publisher. This is due to the way that Analytics reporting data older than 100 days and 14 months is aggregated. The data from Billing reports are kept in non-aggregated form indefinitely.
+In some cases Analytics reports can show delivery that does not match statistics shown elsewhere in Microsoft Invest for a given advertiser or publisher. This is due to the way that Analytics reporting data older than 100 days and 14 months is aggregated. The data from Billing reports are kept in non-aggregated form indefinitely.
 
 ## Real time data
 
@@ -93,14 +91,14 @@ allow for a fuller reconciliation with conversions, impressions and other metric
 >
 > Some dimensions have *attributes*. Dimension attributes are a more granular element of data about the parent dimension. If a dimension has attributes, the name of its attributes will appear below it using the following syntax: *Dimension_Name:Attribute_Name*
 >
->For all revenue fields, the currency is defined by the **Buying Currency** field (When Currency 2.0 is disabled).
+> For all revenue fields, the currency is defined by the **Buying Currency** field (When Currency 2.0 is disabled).
 
 | Column | Filter? | Description |
 |:-------|:--------|:------------|
 | Seller | Yes | The seller of the impression. |
 | Seller Type | Yes | Microsoft Advertising buckets sellers into different types for billing purposes. For more information, see [Seller Types](#seller-types). |
 | Publisher | Yes | The publisher on whose inventory this impression occurred. |
-| Placement | Yes | The placement through which this impression occurred. <br> **Note:** For impressions older than 100 days, placements are aggregated into one row with `-1` as the ID and a generic name. |
+| Placement | Yes | The placement through which this impression occurred. <br><br>**Note:** For impressions older than 100 days, placements are aggregated into one row with `-1` as the ID and a generic name. |
 | Line Item | Yes | The line item under which this impression was purchased. |
 | Line Item: Type | No | The line item type (e.g., Standard, Augmented). |
 | Line Item: Status | No | The line item status (e.g., inactive, active). |
@@ -123,12 +121,12 @@ allow for a fuller reconciliation with conversions, impressions and other metric
 | Flight: Revenue Budget (lifetime) Advertiser Currency | No | The lifetime budget in revenue for the flight. This dimension is available only when Currency 2.0 is disabled. |
 | Campaign | Yes | The campaign that purchased this impression. (Does not apply to all advertisers.) |
 | Split | Yes | The name and ID of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any rows with a campaign name, the **Split** column (if included) will be null. |
-| Creative | Yes | The creative that served on this impression. For more information about creatives, see [Working with Creatives](working-with-creatives.md). <br/>  **Note:** For impressions older than 100 days, creatives will be aggregated into one row with `0` as the ID and a generic name. |
+| Creative | Yes | The creative that served on this impression. For more information about creatives, see [Working with Creatives](working-with-creatives.md). <br><br>**Note:** For impressions older than 100 days, creatives will be aggregated into one row with `0` as the ID and a generic name. |
 | Media Type | Yes | The media type associated with the creative that served on this impression. |
 | Country | Yes | The country in which the impression took place. |
 | Size | Yes | The size of the creative, e.g., 320x50. There may be situations where the size listed in the report does not match the size of the placement. This happens when Promo Sizes come into the equation. When a creative serves into a placement fulfilling a size in the Promo Sizes Array, the size reported is the `size` of the creative, which could be different from the promo size or the placement's size. |
 | Bid Type | Yes | See [Bid Types](#bid-types) below for definitions of the different types of bids. |
-| Advertiser Currency | Yes | The default currency of the advertiser who purchased this impression. This is set when an advertiser is created. For more information, see [Create an Advertiser](create-an-advertiser.md). <br/> **Tip:** To display the cost/revenue in the local currency, select **Adv. Currency** as a dimension. <br/> This dimension is available only when Currency 2.0 is disabled. |
+| Advertiser Currency | Yes | The default currency of the advertiser who purchased this impression. This is set when an advertiser is created. For more information, see [Create an Advertiser](create-an-advertiser.md). <br><br> **Tip:** To display the cost/revenue in the local currency, select **Adv. Currency** as a dimension. <br/> This dimension is available only when Currency 2.0 is disabled. |
 | Conversion Pixel | Yes | The conversion pixel that was fired, if any. To view pixel-specific metrics in separate columns of your report, do both of the following: <br/> - Filter by a set of pixels (up to a maximum of 20 pixels) in the Conversion Pixel filter. <br/> - Select the Conversion Pixel dimension. <br/> For more information about conversion pixels, see [Working with Conversion Pixels](working-with-conversion-pixels.md). |
 | Revenue Type | Yes | The basis on which the advertiser has agreed to pay you for the impression. For more information, see [Revenue Types](#revenue-types). |
 | Payment Type | Yes | How the buyer is paying for the impression. See [Payment Types](#payment-types) for definitions of the different payment types. |
@@ -173,11 +171,12 @@ allow for a fuller reconciliation with conversions, impressions and other metric
 |:-----|:-----------|
 | platform | When you purchase platform inventory, you will be charged your contracted auction service fee. |
 | partner | When you purchase inventory from one of our external supply partners, you will be charged your contracted auction service fee. |
-| unknown | The seller type is not identifiable. You shouldn't see this turn up in your reports. If you do, please contact your Microsoft Advertising support at [https://help.xandr.com](https://help.xandr.com). |
+| unknown | The seller type is not identifiable. You shouldn't see this turn up in your reports. If you do, contact your Microsoft Advertising support at [https://help.xandr.com](https://help.xandr.com). |
 
 ### Bid types
 
-Note that the term "give up" is appended to the bid types below if the valuation for that impression falls below the venue's "give up price".
+> [!NOTE]
+> The term "give up" is appended to the bid types below if the valuation for that impression falls below the venue's "give up price".
 
 | Name | Definition |
 |:-----|:-----------|
@@ -223,7 +222,7 @@ Note that the term "give up" is appended to the bid types below if the valuation
 | Column | Description |
 |:-------|:------------|
 | Imps | The total number of impressions. |
-| Imps (master creative) | The number of page-level roadblocks that served the master creative. <br/> **Note:** Alpha-Beta Notice: <br/> This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change. |
+| Imps (master creative) | The number of page-level roadblocks that served the master creative. <br><br>**Note:** Alpha-Beta Notice:<br> This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change. |
 | Clicks | The total number of clicks. |
 | CTR | The click-through rate – the ratio of clicks to impressions, expressed as a percentage. |
 | Total Conversions | The total number of post-view and post-click conversions. |
@@ -265,8 +264,8 @@ Note that the term "give up" is appended to the bid types below if the valuation
 | Total Cost eCPM | The total cost per 1,000 imps. |
 | Total Cost eCPC | The total cost per click. |
 | Total Cost eCPA | The total cost per conversion. |
-| Profit eCPC | Profit per click. <br/> **Note:** This new field defines "profit" as booked revenue minus total cost. |
-| Profit eCPA | Profit per conversion. <br/> **Note:** This new field defines "profit" as booked revenue minus total cost. |
+| Profit eCPC | Profit per click. <br><br> **Note:** This new field defines "profit" as booked revenue minus total cost. |
+| Profit eCPA | Profit per conversion. <br><br> **Note:** This new field defines "profit" as booked revenue minus total cost. |
 | Post-View Cross Device Conversions | The number of post-view Cross Device conversions. For more information about how we attribute post-view (and other) conversions, see [Conversion Attribution](conversion-attribution.md). |
 | Post-Click Cross Device Conversions | The number of post-click Cross Device conversions. For more information about how we attribute post-view (and other) conversions, see [Conversion Attribution](conversion-attribution.md). |
 | Video Skips | The total number of times a user skipped the video. Use this metric for reporting when buying skippable inventory. |
@@ -329,4 +328,4 @@ Follow these steps to run your report.
 
 ## Related topic
 
-- [Member Reporting](network-reporting.md)
+[Member Reporting](network-reporting.md)

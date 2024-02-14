@@ -146,7 +146,7 @@ This report's data is retained for 45 days. For more information about how quick
 | Video Skip Rate | double |  | The percentage of times the user opted to skip the video. |
 | Audience Imps | double |  | The number of impressions served to your desired demographic group. |
 
-## How to run your report
+## To run your report
 
 Follow these steps to run your report.
 
