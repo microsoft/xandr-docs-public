@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 Microsoft Invest is a sophisticated ad management technology platform with full buy-side capabilities. This guide helps you understand the
 Member-level features in your account. For details about the features for individual advertisers, see the [Buying Guide](./buying-guide.md).
 
-New to Microsoft Invest? Check out our **[training portal](../training-resources/training-microsoft-advertising-learning-lab.md)**.
+New to Microsoft Invest? Check out our [training portal](../training-resources/training-microsoft-advertising-learning-lab.md).
 
 ## In this section
 

@@ -17,8 +17,8 @@ The following macros can be used for all impressions:
 
 | Macro | Description |
 |---|---|
-| `${CLICK_URL}` | The click tracking URL. For Example: `https://xandr.com` |
-| `${CLICK_URL_ENC}` | The encoded click tracking URL (only necessary for some third-party ad servers). For Example: `https%3A%2F%2Fxandr`.com |
+| `${CLICK_URL}` | The click tracking URL. For example: `https://xandr.com` |
+| `${CLICK_URL_ENC}` | The encoded click tracking URL (only necessary for some third-party ad servers). For example: `https%3A%2F%2Fxandr.com` |
 
 The following macros can be used in creative third-party tags and landing page URLs:
 
@@ -84,7 +84,7 @@ The following macros can be used in creative third-party tags and landing page U
 | `${USER_ID}` | The Microsoft Advertising 64-bit character string representing the user for the impression. |
 | `${USER_IP}` | The IP address of the user, which is truncated. |
 | `${USER_LOCALE}` | The language and dialect (aa-DD) reported by the user's device. For example, en-ZA represents English (en) used in South Africa (ZA). |
-| `${USER_STATE}` | The character string of the user's state or region. <br> **In the USA**: 2 letter abbreviation <br> **Outside of USA**: An encoded URL with the user's country followed by the user's region ID (FIPS 10-4 or Microsoft Advertising-generated) <br> For example, the region surrounding Riva, Latvia is LV%3A25 (encoding for LV:A25). |
+| `${USER_STATE}` | The character string of the user's state or region. <br> - **In the USA**: 2 letter abbreviation <br> - **Outside of USA**: An encoded URL with the user's country followed by the user's region ID (FIPS 10-4 or Microsoft Advertising-generated). <br> For example, the region surrounding Riva, Latvia is LV%3A25 (encoding for LV:A25). |
 
 ## Creative macros for video impressions
 
@@ -121,9 +121,9 @@ The following macros can be used specifically for mobile impressions:
 | `${IS_PREVIEW}` | A flag can be passed to the third-party server so that production impressions don't get counted in the total number of impressions when previewing creatives. Possible values include: <br> - `0` for no <br> - `1` for yes |
 | `${SUPPLY_TYPE}` | This macro will be populated with a numeric value that denotes the supply type of the impression. Allowed values include: <br> - `0`: web <br> - `1`: mobile web <br> - `2`: mobile app <br> - `4`: toolbar |
 
-## Privacy Macros
+## Privacy macros
 
-In order for our clients to meet their transparency, notice, and choice/consent requirements under US state privacy law, the GDPR and the ePrivacy Directive, Microsoft Advertising supports the [Global Privacy Platform](https://iabtechlab.com/gpp) and the IAB Europe Transparency & Consent Framework (the "Framework"). For more information, see the [IAB Europe Transparency & Consent Framework](https://iabeurope.eu/knowledgehub/policy/transparency-consent-framework-publishers-factsheet/). Publishers should reference [Part of Privacy Regulations](../policies-regulations/index.yml) when using macros, such as the ones noted in the table below, to surface notice, transparency, and choice to end users located in the EEA, signal approved vendors, and pass consent to Microsoft Advertising and demand sources as well as their vendors through the Microsoft Advertising Platform. For more information, see [Part of Service Policies](../policies-regulations/index.yml).
+In order for our clients to meet their transparency, notice, and choice/consent requirements under US state privacy law, the GDPR and the ePrivacy Directive, Microsoft Advertising supports the [Global Privacy Platform](https://iabtechlab.com/gpp) and the IAB Europe Transparency & Consent Framework (the "Framework"). For more information, see the [IAB Europe Transparency & Consent Framework](https://iabeurope.eu/transparency-consent-framework/). Publishers should reference [Part of Privacy Regulations](../policies-regulations/index.yml) when using macros, such as the ones noted in the table below, to surface notice, transparency, and choice to end users located in the EEA, signal approved vendors, and pass consent to Microsoft Advertising and demand sources as well as their vendors through the Microsoft Advertising Platform. For more information, see [Part of Service Policies](../policies-regulations/index.yml).
 
 | Macro | Description |
 |---|---|
@@ -133,7 +133,7 @@ In order for our clients to meet their transparency, notice, and choice/consent 
 | `${GDPR_CONSENT}` | This macro is an alias for `${GDPR_CONSENT_STRING}`, and behaves in the same manner. |
 | `${XANDR_DOMAIN}` | Dynamically retrieves the appropriate Microsoft Advertising domain based on the cookie consent settings included in the TCF string. If the user has cookies enabled from their browser settings but has: <br> - not given consent for their cookies to be included in the TCF string, the `adnxs-simple.com` domain will be used to prevent the browser from attaching cookies to subsequent ad calls. <br> - given consent for their cookies to be included in the TCF string, the `adnxs.com` domain will be used to pass cookies in the header of each ad call. <br><br> **Note**: This macro should only be used if you plan on serving impressions in countries that require consent for cookies. |
 | `${GPP_SID}` | Designates whether a section (i.e. regulatory framework) of the [Global Privacy Platform](https://iabtechlab.com/gpp) should be applied. Specifically, it indicates whether the user is located in a country affected by legislation covered by the GPP. |
-| `${GPP_STRING_XXXXX*}` | This is the IAB [Global Privacy Platform](https://iabtechlab.com/gpp) (GPP) string. If a section of the GPP applies, then this will contain framework-dependent information reflecting the consent elections of the user. <br><br> **Note**: * XXXXX can represent any numerical id. |
+| `${GPP_STRING_XXXXX*}` | This is the IAB [Global Privacy Platform](https://iabtechlab.com/gpp) (GPP) string. If a section of the GPP applies, then this will contain framework-dependent information reflecting the consent elections of the user. <br><br> **Note**: * XXXXX can represent any numerical ID. |
 
 ## Function macros
 
@@ -143,7 +143,7 @@ Microsoft Advertising currently supports the `{$URL_ENC}` function macro, which 
 
 This function macro takes the following form:
 
-``` pre
+```
 ${URL_ENC(${MACRO_NAME},#)}
 ```
 
@@ -163,6 +163,22 @@ To determine whether you will need to use single, double, or triple encoding, yo
 | Encoding media URL once | Use the following format: <br> `${URL_ENC(${MEDIA_URL},1)}` |
 | Encoding media URL twice | Use the following format: <br> `${URL_ENC(${MEDIA_URL},2)}` |
 | Encoding a custom macro called ADFORMAT once | Use the following format: <br> `${URL_ENC(#{ADFORMAT},1)}` |
+
+## Digital Services Act (DSA) macros
+
+According to Article 26 of the DSA, online platforms, including Microsoft Advertising's publisher clients must provide clear, concise, and unambiguous information about advertisements by February 17th, 2024. These requirements include:
+
+1. Clearly identifying that the information is an advertisement.
+1. Disclosing the identity of an individual or legal person on whose behalf the advertisement is presented.
+1. Indicating the identity of an individual or legal person who made payment for the advertisement, if different from the advertiser.
+1. Providing information about the primary parameters used to determine the ad recipient and, where applicable, instructions on how to modify those parameters.
+
+| Macro | Description |
+|:---|:---|
+| `${DSA_REQUIRED}` | Indicates if DSA information should be made available.<br>Possible values include:<br> - `0`: Not required.<br> - `1`: Required. Bid responses with or without DSA object will be accepted.<br>- `2`: Required. Bid responses without DSA object will not be accepted.<br>- `3`: Required. Bid responses without DSA object will not be accepted. Here, the publisher is an Online Platform. |
+| `${DSA_BEHALF}` | The free UNICODE text string with a name on whose behalf the ad is being displayed. This macro is populated from the DSA bid response.<br>For example, `Advertiser`. |
+| `${DSA_PAID}` | The free UNICODE text string of who paid for the ad. This macro is populated from the DSA bid response.<br>For example, `Advertiser`. |
+| `${DSA_PARAMS}` | The combination of integer values representing user parameters, separated by an underscore “_”.<br>For example, `1_2_3`.<br>Possible values include:<br>- `1`: Information on your online activity indicating your similarity to groups targeted by the advertiser. For example, age group, gender, education level, or interests.<br>- `2`: Information on the setting in which you view a specific advertisement. For example, website content, device type, IP address, location (country or city).<br>- `3`: Information on your precise geographic location, with an accuracy of approximately 500 meters. |
 
 ## Related topic
 

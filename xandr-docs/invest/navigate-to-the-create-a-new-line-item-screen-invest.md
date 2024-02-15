@@ -14,6 +14,6 @@ You can create new augmented line items from the **Create New Line Item** screen
 1. Search and select an insertion order from the **Insertion Order** text field.
 1. Click **Next**.
 
-## Related topics
+## Related topic
 
 - [Create an Augmented Line Item](./create-an-augmented-line-item-ali.md)

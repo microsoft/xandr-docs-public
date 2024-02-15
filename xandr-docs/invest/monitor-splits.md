@@ -12,7 +12,7 @@ You can monitor delivery and performance for your splits.
 1. From the **View Line Item Details** pane, click the **Analytics** tab.
 1. Scroll to the **Programmable Splits** section where you can analyze how your splits are delivering and performing based on the available metrics. All splits that have been set up on the line item will appear in the **Programmable Splits** section.
 1. Perform any of the following actions if necessary:
- 
+
 | Action | Description |
 |:---|:---|
 | **Search for specific splits** | Search for a specific split by entering a split name or ID in the **Search split name or ID** search field. |

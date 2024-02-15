@@ -10,9 +10,9 @@ This topic describes how an auction works when a buyer submits an outcome-based 
 
 ## Ad call
 
-When an ad call is received, the Exchange first predicts the likelihood that the impression will yield the desired outcome. If a prediction cannot be determined, the impression is ineligible for outcome-based bids. There may be other reasons outcome-based bids aren't supported. For example, monitoring may indicate that the prediction for the given placement is inaccurate, which may lead the placement to be marked ineligible. In addition, outcome-based bids are not accepted when clearing directly with the seller. For more information on pre-bid outcome predictions, see Outcome Prediction.
+When an ad call is received, the Exchange first predicts the likelihood that the impression will yield the desired outcome. If a prediction cannot be determined, the impression is ineligible for outcome-based bids. There may be other reasons outcome-based bids aren't supported. For example, monitoring may indicate that the prediction for the given placement is inaccurate, which may lead the placement to be marked ineligible. In addition, outcome-based bids are not accepted when clearing directly with the seller. For more information on pre-bid outcome predictions, see the **Auction Outcome Prediction** section in [Understanding Payment Conversion Rates](./understanding-payment-conversion-rates.md).
 
-If an outcome prediction is available, and all other eligibility checks pass, then the Exchange will calculate an outcome-based bid-to-CPM conversion rate. This rate is calculated by multiplying the outcome prediction by a market-making fee. For more information on the conversion rate, see the sections on Understanding Payment Conversion Rates and the Market Making Fee.
+If an outcome prediction is available, and all other eligibility checks pass, then the Exchange will calculate an outcome-based bid-to-CPM conversion rate. This rate is calculated by multiplying the outcome prediction by a market-making fee. For more information on the conversion rate, see the **Market-Making Fee** section in [Understanding Payment Conversion Rates](./understanding-payment-conversion-rates.md).
 
 ## Bid request
 

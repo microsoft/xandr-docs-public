@@ -4,15 +4,15 @@ description: Use this report to view both buy and sell-side data for your Member
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Member analytics report
+# Microsoft Invest - Member Analytics report
 
 This report lets you view both buy and sell-side data for your Member. For more granular analytics on a specific advertiser or publisher, use the **Advertiser Analytics** and **Publisher Analytics** reports.
 
-**Time frame**
+## Time frame
 
 All dates and times are given in UTC.
 
-**Time ranges**
+### Time ranges
 
 Time ranges define the time period of the data extracted for the report. The following is a complete list of time ranges available for reports.
 
@@ -41,7 +41,7 @@ However, all time ranges are not available for every report.
 - Month to Yesterday
 - Lifetime
 
-**Intervals**
+### Intervals
 
 Intervals determine how your data is grouped together into rows in the report response. The following is a complete list of intervals available for reports. However, all intervals are not available for every report.
 
@@ -50,7 +50,7 @@ Intervals determine how your data is grouped together into rows in the report re
 - Monthly: Data is grouped into rows by the month.
 - Cumulative: Data is grouped together in one figure, covering the entire selected time range.
 
-**Data retention period**
+### Data retention period
 
 Most data in this report is maintained permanently (exceptions noted below). After:
 
@@ -62,16 +62,18 @@ Most data in this report is maintained permanently (exceptions noted below). Aft
 
 In some cases Analytics reports can show delivery that does not match [Dates and Times in Reporting](./dates-and-times-in-reporting.md) for a given advertiser or publisher. This is due to the way that Analytics reporting data older than 100 days and 14 months is aggregated. The data from Billing reports are kept in non-aggregated form indefinitely.
 
-**Real time data**
+### Real time data
 
 Real Time Data is a new feature being offered within this report (not all users have access yet). Traditionally, reports have had a 2 hour built-in delay to allow for a fuller reconciliation with conversions, impressions and other metrics associated with transactions. However, in some cases, it is important to have up-to-the-minute information even if it has not been fully reconciled yet. Dimensions which support the real-time option are marked with the clock icon.
 
-:::image type="content" source="./media/real-time-data-reporting.png" alt-text="Screenshot of real time data reporting":::
+:::image type="content" source="./media/real-time-data-reporting.png" alt-text="Screenshot of real time data which is a feature offered within the Member Analytics report.":::
 
 - To use this new feature, set the **Real Time Data** field to **Included**. This will cause the data in your report to contain both real-time and the more fully reconciled batch file data. If you want the report to break out the real-time data from batch file data, select the **Real-Time status** checkbox.
 - Do not use information in the real-time data portion of your report to bill your clients as that data may change slightly once fully reconciled within 2 to 4 hours. For more information about how quickly reporting data is processed, see [Availability of Reporting Data](./availability-of-reporting-data.md).
 
-**Time ranges including dates occurring greater than 45 days ago**: If you create a Member analytics report with the **Range** field set to "Lifetime", "Quarter to Date" or "Custom" (where the end date is greater than 45 days from today), your report (regardless of metrics included) will be added to a special queue for "resource-intensive" reports. As a result, the report may take longer than usual to complete. In addition, these resource-intensive reports may, due to the amount of data being requested, fail before being completed. If your report fails to complete, you will receive a notification. If your report request fails, you can:
+#### Time ranges including dates occurring greater than 45 days ago
+
+If you create a Member analytics report with the **Range** field set to "Lifetime", "Quarter to Date" or "Custom" (where the end date is greater than 45 days from today), your report (regardless of metrics included) will be added to a special queue for "resource-intensive" reports. As a result, the report may take longer than usual to complete. In addition, these resource-intensive reports may, due to the amount of data being requested, fail before being completed. If your report fails to complete, you will receive a notification. If your report request fails, you can:
 
 - rerun the report at a later time.
 - use a report type other than Member Analytics.
@@ -79,7 +81,7 @@ Real Time Data is a new feature being offered within this report (not all users 
 
 If you are frequently requesting Member analytics reports which include dates longer than 45 day ago, you may need to consider running these reports via the API, caching the data and using [Bulk Reporting Feeds](../digital-platform-api/bulk-reporting-feeds.md) or [Log-Level Data Feeds](../log-level-data/log-level-data-feeds.md) (LLD).
 
-**Currency 2.0**
+### Currency 2.0
 
 > [!NOTE]
 > By enabling **Currency 2.0**, you can select a currency for each individual report if you prefer not to use **USD** as the default currency. The report will show all the monetary fields in your report using the selected currency. For example, if you select **Advertiser**, click the **Currency 2.0** toggle to enable it, and select **Japanese Yen (JPY)** from the **Currency** menu, the report will show all monetary data in JPY, including data associated with child objects such as line items.
@@ -89,7 +91,7 @@ If you are frequently requesting Member analytics reports which include dates lo
 > [!IMPORTANT]
 >
 > - The **Filter?** column shows whether a dimension can be used as a filter as well as being used to group by.
-> - Some dimensions have attributes. Dimension attributes are a more granular element of data about the parent dimension. If a dimension has attributes, the name of its attributes will appear below it using the following syntax "Dimension_Name:Attribute_Name".
+> - Some dimensions have attributes. Dimension attributes are a more granular element of data about the parent dimension. If a dimension has attributes, the name of its attributes will appear below it using the following syntax `"Dimension_Name:Attribute_Name"`.
 > - For all revenue fields, the currency is defined by the **Buying Currency** field.
 
 | Column | Filter? | Description |
@@ -191,7 +193,7 @@ If you are frequently requesting Member analytics reports which include dates lo
 | Report Net Commissions / Serving Fees | Check to include net commissions and serving fees in the report. |
 | Include Adjustments in Reported Data | Check to include adjustments in the report should be included in the report. |
 | Imps | The total number of impressions. |
-| Imps (master creative) | The number of page-level roadblocks that served the master creative. <br> **Note**: Alpha-Beta Notice: <br> This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change. |
+| Imps (master creative) | The number of page-level roadblocks that served the master creative. <br> **Note**: **Alpha-Beta Notice**: <br> This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change. |
 | Imps (blank) | The total number of impressions in which a blank creative served. |
 | Imps (default bidder) | The total number of impressions in which a default creative served because there were no valid bids.|
 | Imps (default error) | The total number of impressions in which a default creative served due to timeout issue. |
@@ -277,7 +279,7 @@ If you are frequently requesting Member analytics reports which include dates lo
 |:---|:---|
 | direct | When you purchased inventory from a seller with whom you have a managed relationship. |
 | real time | When you purchase inventory from a seller on the open exchange. |
-| unknown | The seller type is not identifiable. You shouldn't see this turn up in your reports. If you do, please contact [Microsoft Advertising support](https://help.xandr.com/s/login/). |
+| unknown | The seller type is not identifiable. You shouldn't see this turn up in your reports. If you do, contact [Microsoft Advertising support](https://help.xandr.com/s/login/). |
 
 ### Revenue types
 
@@ -341,7 +343,8 @@ If you are frequently requesting Member analytics reports which include dates lo
 Follow these steps to run your report.
 
 1. Select **Reporting** from the appropriate top menu (depending on how your account has been configured).
-    1. Or, from the Publishers top menu, click on **Prebid Server Premium** > **Analytics** > **Prebid Server Analytics**
+   <br>Or<br>
+   From the Publishers top menu, click on **Prebid Server Premium** > **Analytics** > **Prebid Server Analytics**.
 1. Select the relevant report from the list. The **Report** screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
    > [!IMPORTANT]
    > For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](./dimensions-metrics-filtering-and-grouping.md).

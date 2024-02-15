@@ -1,6 +1,6 @@
 ---
 title: Netflix Deal Defined Buying Line Items
-description: This article explains about the Netflix PMP deals which are seller-defined. It means the seller defines the targeting parameters the buyer is allowed to configure.
+description: This article explains about the Netflix PMP deals which are seller-defined. The seller defines the targeting parameters the buyer is allowed to configure.
 ms.date: 10/28/2023
 ---
 
@@ -43,7 +43,7 @@ You must also have access to one or more PMP deals to target. Sellers must first
 
 To access a Netflix PMP deal, do the following:
 
-1. Click **Your Deals** in the **Inventory** menu
+1. Click **Your Deals** in the **Inventory** menu.
 1. In the **Your Deals** screen, ensure that the **Deal Type** is set to **PMP**.
 1. Choose the appropriate deal from the **Your Deals** screen.
 1. Select the corresponding **Advertiser** and **Insertion Order** associated with that particular PMP Deal.
@@ -55,7 +55,7 @@ To create a new Deal Defined line item, do the following:
 
 1. Click **Create New** in the **Line Item** menu.
 
-1. On the **Create New Line Item** screen, select **Augmented Line Item** > **Deal Defined** under **Line Item Type**
+1. On the **Create New Line Item** screen, select **Augmented Line Item** > **Deal Defined** under **Line Item Type**.
 
    > [!IMPORTANT]
    > You must have an **Advertiser** and **Insertion Order** associated with the Line item in the Advertiser and Insertion Order sections. If necessary, select an Advertiser and Insertion Order.
@@ -66,40 +66,40 @@ To create a new Deal Defined line item, do the following:
 
 The primary difference between a **Deal Defined Line Item** and a standard **Augmented Line Item** is the deal relationship. Only one deal is allowed on a Deal Defined line item, and the settings of that deal will determine which targeting settings are displayed for you to configure. Because there is only one deal targeted, the buyer must ensure to take the suggested minimum bid of the deal (ask price + BASC) into account when formulating their bidding strategy. When using maximum revenue bids, the max will need to be higher than this suggestion in order to successfully win.
 
-**Overview of deal defined line item setup**
+### Overview of deal defined line item setup
 
 | Feature | Deal Defined Setup Overview |
 |:---|:---|
 | Audience & Location Targeting | Geotargeting is required. Each Netflix PMP deal is set to target a single country, and you must ensure that the Deal Defined Line Item country target matches the deal. More granular geo targeting may be available depending on deal settings.<br> **Note**: Frequency, Recency & Cookieless targeting are hardcoded based on seller requirements. |
-| Basic Settings | Set the LI name, state and deal. After selecting a deal, you'll see details of the deal: <br> - **Seller** - ID of the seller of the deal <br> - **Start Date** - date the deal becomes active <br> - **End Date** - date after which the deal is no longer active <br> - **Suggested Minimum Bid** - Calculated as the seller's ask price plus your buyer fees, the suggested minimum bid can be used to inform your bidding strategy. <br> **Note**: This suggestion should be used as a starting point, and you may need to increase your bid depending on your revenue type, goals, and deal competition. <br> - **Price** – The minimum amount the seller will accept for the deal |
+| Basic Settings | Set the LI name, state and deal. After selecting a deal, you'll see details of the deal: <br> - **Seller** - ID of the seller of the deal. <br> - **Start Date** - date the deal becomes active. <br> - **End Date** - date after which the deal is no longer active. <br> - **Suggested Minimum Bid** - Calculated as the seller's ask price plus your buyer fees, the suggested minimum bid can be used to inform your bidding strategy. <br> **Note**: This suggestion should be used as a starting point, and you may need to increase your bid depending on your revenue type, goals, and deal competition. <br> - **Price** – The minimum amount the seller will accept for the deal. |
 | Budgeting & Scheduling | This section is identical to that of a standard ALI, except that Daypart Targeting may not be available based on deal settings. |
-| Creatives | This section allows you to associate creatives to the line item and specify creative rotation & scheduling. For more information on Netflix specific creative requirements, see [Creative CTV Guidelines and Specifications](./creative-ctv-guidelines-and-specifications.md) |
-| Fees | In this section, you can optionally apply a partner fee to track third party costs |
-| Inventory & Brand Safety | This section is unavailable for **Deal Defined Line Items**. The deal targeting is defined in the basic settings section |
-| Measurement | In this section, 3rd party verification via IAS and DoubleVerify are currently supported for Netflix PMP deals and can be enabled here |
+| Creatives | This section allows you to associate creatives to the line item and specify creative rotation & scheduling. For more information on Netflix specific creative requirements, see [Creative CTV Guidelines and Specifications](./creative-ctv-guidelines-and-specifications.md). |
+| Fees | In this section, you can optionally apply a partner fee to track third party costs. |
+| Inventory & Brand Safety | This section is unavailable for **Deal Defined Line Items**. The deal targeting is defined in the basic settings section. |
+| Measurement | In this section, 3rd party verification via IAS and DoubleVerify are currently supported for Netflix PMP deals and can be enabled here. |
 | Optimization | In this section, you can enable/disable optimization, set a performance goal and goal priority, and associated conversion pixels. <br> **Note**: Given that Netflix inventory consists entirely of video content, it is essential to ensure that your goals are tailored to video buys. |
-| Programmable Splits | Splits and custom models are unavailable for **Deal Defined Line Items** |
+| Programmable Splits | Splits and custom models are unavailable for **Deal Defined Line Items**. |
 | Reporting Labels & Comments | In this section, you can optionally assign custom reporting labels to a line item. This enables you to create reports tracking metrics across multiple line items, as well as add comments to a line item for your reference. |
 | Viewability & Environment Targeting | Device type, video player position and video content targeting may be available depending on the settings of the deal. |
 
 ## Creative rotation and associated creatives
 
-**Creative requirements for Netflix PMP deals**
+### Creative requirements for Netflix PMP deals
 
 To serve on Netflix inventory, CTV creatives must meet strict guidelines and technical specifications that have been set by Netflix to ensure an optimal user experience. We recommend that Microsoft Invest buyers consider dedicated creatives when buying Netflix, and consider the context that the advertisement is in and how it will appear on Netflix content. For more information on CTV creatives specification, see [Creative CTV Guidelines and Specifications](./creative-ctv-guidelines-and-specifications.md).
 
 > [!IMPORTANT]
 > The Line item must be associated to a Netflix PMP deal for **Creative Requirements for the Selected Deal** to display. You must have at least one associated creative for each media type and ad size listed for the deal.
 
-**Creative rotation**
+### Creative rotation
 
 Select the Creative Rotation Strategy:
 
-- **Auto-optimize creative weight**: The creative with the highest click-through-rate (CTR) delivers the most
-- **Evenly weight creatives**: The even rotation is handled automatically by our system
-- **Manually weight creatives**: The rotation is based on a user- supplied weight
+- **Auto-optimize creative weight**: The creative with the highest click-through-rate (CTR) delivers the most.
+- **Evenly weight creatives**: The even rotation is handled automatically by our system.
+- **Manually weight creatives**: The rotation is based on a user-supplied weight.
 
-**Associated creatives**
+### Associated creatives
 
 1. Search for the creative name or the ID, to open the **Associated Creatives** dialog.
 1. Select the creatives you want to associate to your PG line item from the **Available Creatives** list by clicking on the check next to the name. Selected creatives will appear in the **Selected Creatives** list. Ensure that you have at least one associated creative for each media type and ad size listed in **Creative Requirements for the PG Deal**. For more information on how to add creatives, see [Add a Creative](./add-a-creative.md) and [Creative CTV Guidelines and Specifications](./creative-ctv-guidelines-and-specifications.md)

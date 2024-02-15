@@ -33,7 +33,7 @@ At this time, Microsoft Advertising supports deals with the following external s
 - Teads TV
 - Yahoo Ad Exchange
 
-You must negotiate deals with these supply partners offline and save them in the partner's deal portal. Microsoft Advertising will then automatically synchronize the deals with our system; they should be available for purchase within a few hours of creation. Please note that Microsoft Advertising employees cannot explain these external supply partner's auction mechanics or deal types.
+You must negotiate deals with these supply partners offline and save them in the partner's deal portal. Microsoft Advertising will then automatically synchronize the deals with our system; they should be available for purchase within a few hours of creation. Note that Microsoft Advertising employees cannot explain these external supply partner's auction mechanics or deal types.
 
 > [!NOTE]
 > Each deal ID can be associated only with a single buyer. Enter one buyer member when setting up a deal in the external supply partner's system. If multiple members are entered, Microsoft Advertising will map the deal only to the first buyer member.

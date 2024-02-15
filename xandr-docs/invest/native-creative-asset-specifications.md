@@ -1,14 +1,12 @@
 ---
 title: Microsoft Invest - Native Creative Asset Specifications
-description: This article provides a list of standard and custom data and image specifications for your native creatives.
+description: This article provides a list of standard and custom data, and image specifications for your native creatives.
 ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Native creative asset specifications
 
-You can configure a variety of standard and custom data and image specifications for your native creatives.
-
-Here's a list of standard and custom data and image specifications that can be configured directly from our UI:
+You can configure a variety of standard and custom data and image specifications for your native creatives. Here's a list of standard and custom data and image specifications that can be configured directly from our UI:
 
 ## Standard data specifications
 
@@ -52,4 +50,4 @@ Here's a list of standard and custom data and image specifications that can be c
 |:---|:---|
 | **Image 1-5** | Additional images that will appear when the native creative is rendered. |
 | **Icon 1-5** | Additional icons that will appear when the native creative is rendered. |
-| **Social Icon 1-5** | Corresponding social media icons that will appear when native creative is rendered. |
+| **Social Icon 1-5** | Corresponding social media icons that will appear when the native creative is rendered. |

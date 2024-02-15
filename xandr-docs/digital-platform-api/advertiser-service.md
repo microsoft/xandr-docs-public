@@ -39,6 +39,7 @@ The Advertiser service lets networks add, modify, and view the advertisers that 
 | `billing_state` | string (100) | For reference. |
 | `billing_zip` | string (25) | For reference. |
 | `code` | string (100) | A custom code for the advertiser. Xandr will assign a unique ID, but advertisers may use their own ID system. Either `"code"` or the Xandr-assigned ID will be allowed fields in other services. |
+| `legal_entity_name` | string (255) | Represents the legal entity on whose behalf the advertisement is being displayed and who is covering the cost of the advertiser's ad. This field is used in bid responses in order to comply with the European Union [Digital Services Act (DSA)](../invest/digital-services-act.md). |
 | `competitive_brands` | array | An array of brand IDs. Creatives associated with the brands in this array will not serve together in `/mtj` auctions. The classic example of competing brands is Coke vs. Pepsi. For more information about the brands in our system, see the [Brand Service](./brand-service.md).|
 | `competitive_categories` | array | An array of category IDs. Creatives associated with the categories in this array will not serve together in `/mtj` auctions, e.g., `"Dating"` and `"Education"`. For more information about the categories that we apply to creatives (and brands), see the [Category Service](./category-service.md). |
 | `control_pct` | double | The percentage of users in the control group for this advertiser. This must be expressed as a number between `0` and `1`, inclusive. These users will be shown a control creative in order to gauge effectiveness of other creatives. For more information, see [Test and Control Targeting (Standard Line Item)](../monetize/test-and-control-targeting.md) in the UI documentation. |
@@ -144,6 +145,7 @@ $ cat advertiser.json
    "advertiser":
    {
       "name":"Advertiser B",
+      "legal_entity_name":"Toyota UK",
       "state":"active"
    }
 }
@@ -167,6 +169,7 @@ $ cat advertiser_update
    "advertiser":
    {
       "name":"Advertiser B",
+      "legal_entity_name":"Toyota UK",
       "state":"active",
       "code":"PSS"
    }
@@ -195,6 +198,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/advertiser'
         "id": 51,
         "code": null,
         "name": "Advertiser B",
+        "legal_entity_name":"Toyota France",
         "state": "active",
         "default_brand_id": 0,
         "remarketing_segment_id": null,
@@ -241,6 +245,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/advertiser'
         "id": 493,
         "code": null,
         "name": "Cheese Club",
+        "legal_entity_name":"Toyota Germany",
         "state": "active",
         "default_brand_id": 0,
         "remarketing_segment_id": 11111,
@@ -296,6 +301,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/advertiser?id=51'
             "id":51,
             "code":null,
             "name":"Advertiser A",
+            "legal_entity_name":"Toyota UK",
             "state":"active",
             "default_brand_id":0,
             "remarketing_segment_id":null,

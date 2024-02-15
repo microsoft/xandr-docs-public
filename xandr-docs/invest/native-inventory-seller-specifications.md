@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Native Inventory Seller Specifications
-description: This page outlines requirements defined by sellers for serving creatives on their native ad inventory. It can also help troubleshoot if the creatives aren't serving.
+description: This page outlines requirements defined by sellers for serving creatives on their native ad inventory. It can also help troubleshoot creatives that aren't serving.
 ms.date: 10/28/2023
 ---
 
@@ -10,8 +10,7 @@ Sellers of native ad inventory define requirements you must meet to serve creati
 outline the requirements for individual sellers and allow you to compare requirements across the various sellers if you want to target only specific sellers. This page might also help troubleshoot if your creatives aren't serving on the sellers you're expecting.
 
 > [!NOTE]
-> [Buying Native Inventory](./buying-native-inventory.md) provides instructions for a global approach in which you
-reach all sellers simultaneously with a single campaign. Scaling is the approach we recommend over using any of the seller-specific settings shown here.
+> [Buying Native Inventory](./buying-native-inventory.md) provides instructions for a global approach in which you reach all sellers simultaneously with a single campaign. Scaling is the approach we recommend over using any of the seller-specific settings shown here.
 
 ## Creative settings
 
@@ -26,9 +25,7 @@ When you set up your line item you need to target your inventory to reach the se
 
 Shown below are seller-specific guidelines and requirements that you must follow to serve on that seller's inventory. All sellers listed here use a **Type** of **Native**.
 
-If a parameter is not mentioned in the tables below, enter whatever values make sense for your line item. Any value
-entered in a field listed as "Not supported" will be ignored. For detailed information on additional fields and uploading a native
-creative see [Add a Creative](./add-a-creative.md) and [Add Creatives in Bulk](./add-creatives-in-bulk.md). You can also review our [Native Sell-Side Best Practices](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Microsoft Advertising/Sell-Side-Native-Best-Practices.pdf).
+If a parameter is not mentioned in the tables below, enter whatever values make sense for your line item. Any value entered in a field listed as "Not supported" will be ignored. For detailed information on additional fields and uploading a native creative see [Add a Creative](./add-a-creative.md) and [Add Creatives in Bulk](./add-creatives-in-bulk.md). You can also review our [Native Sell-Side Best Practices](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/xandr/Sell-Side-Native-Best-Practices.pdf).
 
 > [!WARNING]
 > Do not use JavaScript piggyback pixels on native creatives. Only image pixels can be used on native creatives.
@@ -47,7 +44,7 @@ creative see [Add a Creative](./add-a-creative.md) and [Add Creatives in Bulk](.
 | Sponsored By | 25 character maximum |
 | Platform Audit (Creative Attributes tab) | Required |
 
-**Creative best practices**
+### Creative best practices
 
 - **Evoke Emotion**: Associate your product or service with an emotion, i.e, Try to make the user recall memories or familiar and well-liked situations.
 - **Help users project themselves**: Show your product or service in action by giving priority to close-up pictures. Use visuals that are clear and visible. (no brand logo, no text)
@@ -102,16 +99,16 @@ creative see [Add a Creative](./add-a-creative.md) and [Add Creatives in Bulk](.
 
 L'Agora native adspaces or widgets are displayed alongside page content, which provide superior interaction and engagement to traditional display advertising. As a buyer, when you set up a line item to buy L'Agora, you will be bidding on a slot within the widget.
 
-**Creative guidelines and best practices**
+### Creative guidelines and best practices
 
 |  |  |
 |:---|:---|
 | **Text** |  - We highly recommend short text that is easy to understand with attractive offers.<br> - May not contain contact details as telephone number.<br> - Do not overuse capital letters or exclamation marks. |
-| **Images** | - Images must be clearly relevant to the product or service being advertised.<br> - There should be a clear, simple, attractive, and logical link between the image and the copy.<br> - Avoid images with text embedded directly in the image. The text could easily be distorted depending on the adjustments made when the image is rendered.<br> - Images that represent your target (images of people) generate high engagement.<br> - Images that represent your product perform well. Please do not mislead users by showing products that are not available or are not the ones that you are selling.<br> - Sexually suggestive images are not allowed. Images should be appropriate for a general audience.<br> - Opt for bright, eye-catching images. Avoid black and white images, as they will tend to blend in with the other elements of the galleries around them.<br> - The resolution of the image is important. Low quality images will appear blurry and adversely affect the impact of the ad.<br> - Images must not contain your logo.<br> - Images must not have borders.<br> - Images must be static (no movement). |    
+| **Images** | - Images must be clearly relevant to the product or service being advertised.<br> - There should be a clear, simple, attractive, and logical link between the image and the copy.<br> - Avoid images with text embedded directly in the image. The text could easily be distorted depending on the adjustments made when the image is rendered.<br> - Images that represent your target (images of people) generate high engagement.<br> - Images that represent your product perform well. Don't mislead users by showing products that are not available or are not the ones that you are selling.<br> - Sexually suggestive images are not allowed. Images should be appropriate for a general audience.<br> - Opt for bright, eye-catching images. Avoid black and white images, as they will tend to blend in with the other elements of the galleries around them.<br> - The resolution of the image is important. Low quality images will appear blurry and adversely affect the impact of the ad.<br> - Images must not contain your logo.<br> - Images must not have borders.<br> - Images must be static (no movement). |
 
-**Prohibited products and services**
+### Prohibited products and services
 
-You may not promote any of the following products or services using the L'Agora Network: (This is not an exhaustive list, and it may change without notice.)
+You may not promote any of the following products or services using the L'Agora Network. This is not an exhaustive list, and it may change without notice.
 
 - Weight Loss
 - Sexual Health
@@ -211,7 +208,7 @@ Mopub native ads match the look and feel of an app's user interface. Here are a 
 | Image (sizes in pixels) | 1200x627 |
 | Sponsored By | 25 character maximum |
 
-**Best practices**
+### Best practices
 
 - Turbo-charge your call-to-action: Immediately highlight your main point with eye-catching wording to create urgency and drive engagement.
 - Choose compelling images: People, particularly shown experiencing an emotion associated with your headline, increase impact. Also, avoid text overlays on image assets.
@@ -255,13 +252,13 @@ This is not an exhaustive list of prohibited or restricted content on the Nativo
 
 Outbrain's network exposes all-direct-code-on-page widgets that are customized per publisher for the maximum native look-and-feel. The network contains multi-Recommendation widgets, yielding the best results for marketers looking for engaged users, and In-Feed widgets, yielding best performance to marketers looking for high exposure to their brand.
 
-**Inventory and setup**
+### Inventory and setup
 
 - Mobile Web and Desktop
 - Global publisher availability
 - Accessing via a deal is recommended to achieve better network accessibility
 
-**Guidelines and best practices**
+### Guidelines and best practices
 
 |||
 |:---|:---|
@@ -286,12 +283,12 @@ Outbrain's network exposes all-direct-code-on-page widgets that are customized p
 | Call to Action Text | Not supported |
 | Sponsored By | - 50 character maximum <br> - Required: Must be the brand name |
 
-**Best practices**
+### Best practices
 
 The following are some recommended creative best practices for serving on Plista:
 
-- Do not embed any text in the image
-- Use between 3-4 creatives
+- Do not embed any text in the image.
+- Use between 3-4 creatives.
 - Make use of images that elicit positive feelings in the observer. A strong emotional impact gets the attention of the user.
 - Highlight the advantages of your product by using, for example, close-ups, packshots or application examples. Be sure to use clear colors and sharp contours so that your motif stands out immediately.
 - The ad should be pleasing to the eye. Using natural colors help to accomplish this while maintaining a native feel.
@@ -317,10 +314,10 @@ The following are some recommended creative best practices for serving on Plista
 | Landing Page | Required |
 | Title | 80 character maximum |
 | Description | 150 character maximum |
-| Image (sizes in pixels) | - 2:1 ratio, 1200x628 recommended <br> - File types: jpg, png <br> **Note**: images will be scaled down to accommodate placement size |
+| Image (sizes in pixels) | - 2:1 ratio, 1200x628 recommended <br> - File types: jpg, png <br><br> **Note**: images will be scaled down to accommodate placement size |
 | Sponsored By | Required |
 
-**Best practices**
+### Best practices
 
 - Land your ads on the client's content instead of a product page.
 - Ensure that the ad matches the landing page content.
@@ -337,13 +334,13 @@ The following are some recommended creative best practices for serving on Plista
 | Icon (sizes in pixels) | - Logo <br> - 1x1 ratio <br> - Maximum 150x150 |
 | Image (sizes in pixels) | - 1.91:1 ratio <br> - 1200x628 |
 
-You can serve native creatives on Schibsted Norway's desktop, mobile web and mobile app inventory. You can preview your native creatives to see what they'll look like on Schibsted websites. Use the following URLs, replacing *Microsoft Advertising_creative_id* with your creative ID.
+You can serve native creatives on Schibsted Norway's desktop, mobile web and mobile app inventory. You can preview your native creatives to see what they'll look like on Schibsted websites. Use the following URLs, replacing *Xandr_creative_id* with your creative ID.l
 
 | Website | Category | Desktop? | Tablet? |  | Smartphone? |  | Preview URL |
 |:---|:---|:---|:---|:---|:---|:---|:---|
 |  |  |  | Web | App | Web | App |  |
-| [e24.no](https://e24.no/) | News | Y | Y | Y | Y | Y | **Desktop**: [https://e24.no/?ast_override_div=ad-smartboard_1:Microsoft Advertising_creative_id](https://e24.no/?ast_override_div=ad-smartboard_1:Microsoft Advertising_creative_id) <br> **Mobile web**: [https://e24.no/?ast_override_div=ad-board_3:APPNEXUS_CREATIVE_ID](https://e24.no/?ast_override_div=ad-board_3:APPNEXUS_CREATIVE_ID) |
-| [vg.no](https://www.vg.no/) | News | Y | Y | Y | Y | Y | **Desktop**: [https://www.vg.no/?ast_override_div=ad-front-smartboard_1:Microsoft Advertising_creative_id](https://www.vg.no/?ast_override_div=ad-front-smartboard_1:Microsoft Advertising_creative_id) <br> **Mobile web**: [https://www.vg.no/?ast_override_div=ad-front-board_1:Microsoft Advertising_creative_id](https://www.vg.no/?ast_override_div=ad-front-smartboard_1:Microsoft Advertising_creative_id) |
+| [e24.no](https://e24.no/) | News | Y | Y | Y | Y | Y | **Desktop**: [https://e24.no/?ast_override_div=ad-smartboard_1:Xandr_creative_id](https://e24.no/?ast_override_div=ad-smartboard_1:Xandr_creative_id) <br> **Mobile web**: [https://e24.no/?ast_override_div=ad-board_3:APPNEXUS_CREATIVE_ID](https://e24.no/?ast_override_div=ad-board_3:APPNEXUS_CREATIVE_ID) |
+| [vg.no](https://www.vg.no/) | News | Y | Y | Y | Y | Y | **Desktop**: [https://www.vg.no/?ast_override_div=ad-front-smartboard_1:Xandr_creative_id](https://www.vg.no/?ast_override_div=ad-front-smartboard_1:Xandr_creative_id) <br> **Mobile web**: [https://www.vg.no/?ast_override_div=ad-front-board_1:Xandr_creative_id](https://www.vg.no/?ast_override_div=ad-front-board_1:Xandr_creative_id) |
 
 When you set up your targeting, you'll need to target **Schibsted Media Group (3296)** and the **domains** listed in the available inventory table.
 
@@ -384,7 +381,7 @@ You can preview your creative in the [Sharethrough Native Ad Generator](https://
 
 [Taboola](https://taboola.com/) helps people discover what's interesting and new on the open web, by recommending products and services to consumers while they are in that discovery mind set. The look and feel of Taboola's Infeed Placements are customized to each partner on the Taboola network, to provide a seamless user experience.
 
-**Benefits of buying programmatically from Taboola**
+### Benefits of buying programmatically from Taboola
 
 - **Exclusive Inventory** - Taboola placements are hard-coded on publisher's sites in multi-year agreements. Taboola is ads.txt
   compliant.
@@ -394,14 +391,14 @@ You can preview your creative in the [Sharethrough Native Ad Generator](https://
 - **For Native Display, buy on a Viewable CPM** - Guarantees 100% viewability
 - Transact via **Open Exchange** and/or **PMPs**
 
-**Ad products**
+### Ad products
 
 - **Taboola Native Display** - Activated through DSP via open auction or PMPs (pricing models: vCPM - guarantees 100% viewability, or CPM)
   - High impact native placements, including Top of Feed, Homepage as well as an Ad Adjacency solution are available via PMP.
 - **Taboola Video** - Activated through DSP via open auction or PMPs (pricing model: CPM)
 - **Native Video** - Soon to come with Microsoft Invest.
 
-**Supply types**
+### Supply types
 
 Taboola's inventory is exclusive via hard-coded placements through multi-year publisher partnerships. Taboola is ads.txt compliant.
 
@@ -412,13 +409,13 @@ Taboola's inventory is exclusive via hard-coded placements through multi-year pu
 - **Native Video** - Add a title and brand name to existing video assets to create a more engaging video experience for users, soon to come with Microsoft Invest.
 - **Taboola News** - Taboola News is an editorial environment pre-installed in highly visible device placements, enabling you to reach people at pivotal moments throughout their day, the moment they open their phones.
 
-**Brand safety**
+### Brand safety
 
 - Control the placement and the content that surrounds your ad with a high impact unit available for both native display and video.
 - Ad Adjacency - Create a buffer between your ad placement and any other sponsored placement, surrounding your brand message by high, organic content.
 - Taboola maintains partnerships and integration with IAS, supporting MOAT and DoubleVerify.
 
-**Native creative best practices**
+### Native creative best practices
 
 |||
 |:---|:---|
@@ -428,14 +425,13 @@ Taboola's inventory is exclusive via hard-coded placements through multi-year pu
 > [!NOTE]
 > To know more, you can visit [Taboola's Native and Video Creative Best Practices](https://help.taboola.com/hc/en-us/articles/360026664414-Programmatic-Creative-Best-Practices).
 
-**Advertising policies**
+### Advertising policies
 
-Refer to Taboola's
-[Help Center](https://help.taboola.com/hc/en-us/categories/115001003987) to review the Advertising Policies which include restricted or prohibited content, products, and services.
+Refer to Taboola's [Help Center](https://help.taboola.com/hc/en-us/categories/115001003987) to review the Advertising Policies which include restricted or prohibited content, products, and services.
 
-**Contact Taboola**
+### Contact Taboola
 
-Reach out to your Taboola representative if you have any questions. If you do not have a Taboola rep, or would like to request more information - please send an email to [programmatic@taboola.com (mailto:programmatic@taboola.com) with the subject line "Opt in to Taboola".
+Reach out to your Taboola representative if you have any questions. If you do not have a Taboola rep, or would like to request more information - send an email to [programmatic@taboola.com](mailto:programmatic@taboola.com) with the subject line "Opt in to Taboola".
 
 ## Tamedia
 
@@ -451,7 +447,7 @@ Reach out to your Taboola representative if you have any questions. If you do no
 | Icon (sizes in pixels) | - Logo <br> - 300 pixel minimum <br> - jpg or transparent png recommended <br> - Recommend two versions (light and dark) |
 | Image (sizes in pixels) | - Recommended 320x180 <br> - Aspect ratio 16:9 <br> - Maximum 30 KB <br> - No text, logos, or animations |
 
-**General guidelines**
+### General guidelines
 
 |  |  |
 |:---|:---|
@@ -471,11 +467,11 @@ Reach out to your Taboola representative if you have any questions. If you do no
 | Image (sizes in pixels) | - 500x500 minimum <br> - 1200x1200 recommended <br> - Valid file types: jpg, png <br> - File size must be less than 2 MB <br> - 300x250 display/scale down to 1:1 mobile |
 | Call to Action Text | Not supported |
 
-**Recommendations and guidelines**
+### Recommendations and guidelines
 
 |||
 |---|---|
-| **General Recommendations** | - Please note that a semi-transparent overlay with your text is placed over the image. It occupies approximately 300x100 pixels in the lower image area. <br> - Our headline = 1 line and the description = 2 lines <br> - Only German language |
+| **General Recommendations** | - Note that a semi-transparent overlay with your text is placed over the image. It occupies approximately 300x100 pixels in the lower image area. <br> - Our headline = 1 line and the description = 2 lines <br> - Only German language |
 | **Teaser Text Guidelines** | - No special characters in your text <br> - No exclamation marks |
 | **Image Guidelines** | - No purely text-based graphics <br> - No plain text as image <br> - No frame around your image <br> - No pure logo as image <br> - No important image component in the margin, as image can be scaled on smaller screens. Position important parts centrally. <br> - Image has to be static, not animated = GIF/JPEG 40KB maximum. |
 

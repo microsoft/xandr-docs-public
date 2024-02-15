@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - How Guaranteed Outcomes Work
-description: This article explains how guaranteed outcomes work. The outcome-based bids from the buyer are translated into impression-based CPM revenue for the seller.
+description: This article explains how Guaranteed Outcomes work. The outcome-based bids from the buyer are translated into impression-based CPM revenue for the seller.
 ms.date: 10/28/2023
 ---
 
@@ -14,6 +14,6 @@ The following overview describes the logic of Guaranteed Outcomes:
 - By default, Microsoft Advertising uses the IAB definition of a viewable ad (50% of pixels in-view for 1 continuous second) and the Microsoft Advertising measurement script to determine a view. However, we support additional viewability definitions and measurement technology vendors as well. See [Introduction to Viewability](./introduction-to-viewability.md) for more information about choosing these alternate measurements.
 - For Guaranteed Completes, we always define a complete as a served video ad that reaches 100% of its duration.
 
-## Related topics
+## Related topic
 
 - [Guaranteed Outcomes](./guaranteed-outcomes.md)

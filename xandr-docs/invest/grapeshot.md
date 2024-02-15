@@ -14,7 +14,7 @@ Oracle’s Contextual Intelligence is the global leader in contextual advertisin
 
 ## Contact information
 
-For support in requesting access to the Segment Builder app, please contact [odc-context-help_ww@oracle.com](mailto:odc-context-help_ww@oracle.com).
+For support in requesting access to the Segment Builder app, contact [odc-context-help_ww@oracle.com](mailto:odc-context-help_ww@oracle.com).
 
 ## Permissions
 

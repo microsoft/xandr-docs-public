@@ -523,6 +523,7 @@ Xandr supports the following field in the `regs.ext` object:
 | `us_privacy` | string | Optional. Indicates whether the request complies with the California Consumer Privacy Act (CCPA) regulations. This field complies with the [IAB US Privacy specification](https://github.com/InteractiveAdvertisingBureau). Refer to the IAB's string specifications for possible values; for example:<br>```{ "Regs": {    "ext":        {       "us_privacy": "1YNN"       }   } }```|
 | `gpp` |  | Indicates the actual IAB GPP consent string. It implies which vendors are permitted to process personal data and under which conditions.<br>Example:<br>```{ "Regs": { "ext": { "gpp": "DBACNYA~CPXxRfAPXxRfAAfKABENB-CgAAAAAAAAAAYgAAAAAAAA~1YNN", "gpp_sid": [5]} } }``` |
 | `gpp_sid` |  | Optional: indicates which regulations or GPP logics are to be applied, or whether a user is located in a country (EEA country) with a framework that is part of the GPP.<br>Example:<br>```{ "Regs": { "ext": { "gpp": "DBACNYA~CPXxRfAPXxRfAAfKABENB-CgAAAAAAAAAAYgAAAAAAAA~1YNN", "gpp_sid": [5]} } }``` |
+| `dsa` |  |```{ dsarequired: 1, pubrender: 0, transparency: [ { domain: 'request.tomato.com', dsaparams: [ 1 ] },{ domain: 'request2.tomato.com', dsaparams: [ 1, 2, 3 ] }],datatopub: 1 }``` |
 
 ## Example bid requests
 

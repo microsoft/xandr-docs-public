@@ -1,10 +1,10 @@
 ---
 title: Microsoft Invest - Guaranteed Outcomes Results Over Time
-description: This article provides examples to explain guaranteed outcomes. The short-term disconnect created between buyer and seller is averaged out over time. 
+description: This article provides examples to explain Guaranteed Outcomes. The short-term disconnect created between buyer and seller is averaged out over time. 
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Guaranteed outcomes results over time (examples)
+# Microsoft Invest - Guaranteed Outcomes results over time (examples)
 
 The auction mechanics for Guaranteed Outcomes create a short-term disconnect between how the buyer is charged and how the seller is paid.
 On average and over time, this disconnect is averaged out. In other words, for any single impression, it is likely that the seller is paid
@@ -15,17 +15,15 @@ and the predicted outcome rate. To illustrate the impact of prediction accuracy 
 
 In the examples below:
 
-- A buyer using Guaranteed Views bids $10 vCPM on supply with a 50%
-  predicted viewability rate.
+- A buyer using Guaranteed Views bids $10 vCPM on supply with a 50% predicted viewability rate.
 - The Exchange converts the vCPM bid to a $5 eCPM bid.
 - The second-highest bid in the auction is a $4 CPM bid.
 - It is a second price auction, so seller is paid $4.01 CPM.
-- The buyer is charged $8.02 vCPM (that is, only if the impression is
-  measured viewable).
+- The buyer is charged $8.02 vCPM (that is, only if the impression is measured viewable).
 
 ## Perfect prediction
 
-If the Exchange perfectly predicts the viewability rate for a given piece of inventory, then the aggregate amount charged to the vCPM buyer should match the aggregate amount paid the seller.
+If the Exchange perfectly predicts the viewability rate for a given piece of inventory, then the aggregate amount charged to the vCPM buyer should match the aggregate amount paid to the seller.
 
 ## Over-prediction
 
