@@ -22,3 +22,5 @@ for file in "$folder"/*; do
         mv "$temp_file" "$file"
     fi
 done
+echo
+
