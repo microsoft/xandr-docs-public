@@ -64,6 +64,10 @@ log_message "Calling script9.sh: Removal of junk “parent topic” element in m
 log_message "Calling script10.sh: Addressing junk html values and removing all <div> element including <div class> and <div id> elements"
 ./div-final.sh "$input_folder" >> "$log_file" 2>&1
 
+# Call the eleventh script with the input folder
+log_message "Calling script11.sh: Converting all references of Xandr Platform to Microsoft Advertising in Invest, Monetize and Curate platform"
+./xandr-microsoft-advertising.sh "$input_folder" >> "$log_file" 2>&1
+
 
 log_message "Master script execution completed."
 
