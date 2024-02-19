@@ -13,7 +13,6 @@ submit and win more bids, by accessing the **Troubleshooting** tab and reviewing
 1. Click the **Troubleshooting** tab.
 
     A list of bid performance messages displays. For additional information, see [Bid Performance Messages for Programmatic Guaranteed Buying Line Items](bid-performance-messages-for-programmatic-guaranteed-buying-line-items.md).
-
 1. If it's visible, click the pencil icon that displays next to each message.
 
     You'll be automatically taken to the appropriate screen to make the necessary adjustments.

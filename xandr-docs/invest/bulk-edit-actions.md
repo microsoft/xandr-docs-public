@@ -6,8 +6,7 @@ ms.date: 10/28/2023
 
 # Bulk edit actions
 
-You can use our bulk edit actions to update multiple advertiser, insertion order, and line item settings simultaneously from the buyer
-monitoring grids.
+You can use our bulk edit actions to update multiple advertiser, insertion order, and line item settings simultaneously from the buyer monitoring grids.
 
 > [!NOTE]
 > To quickly run reports and edit details for multiple advertisers, insertion orders, and line items, select the corresponding checkboxes for the appropriate objects from the respective Advertisers, Insertion Orders, and Line Items grids and select a bulk edit action from the pull-down menu that displays in the blue toolbar. You'll be able to make the necessary edits directly within the dialog that is displayed.
@@ -31,12 +30,12 @@ We offer the following bulk edit actions:
 | Frequency/Recency | You can add, change, and remove frequency/recency caps for multiple insertion orders and line items simultaneously using the **Upcoming** and **In Progress** tabs within the respective **Insertion Orders** and **Line Items** grids. <br><br> For more information, see [Frequency and Recency Caps](frequency-and-recency-caps.md). |
 | Geo Targeting | You can add or remove geographic targets or restrictions for multiple line items simultaneously using the **Upcoming** and **In Progress** tabs within the **Line Items** grid. <br><br> For more information, see [Set Up Geography Targeting for a Line Item](set-up-geography-targeting-for-a-line-item.md). |
 | Names | You can edit names for multiple insertion orders and line items simultaneously using the **Upcoming** and **In Progress** tabs within the respective **Insertion Orders** and **Line Items** grids. <br><br> For more information, see [Add Basic Insertion Order Details](create-an-insertion-order.md#basic-setup) and [Add Basic Line Item Details](add-basic-line-item-details.md). |
-| Optimization | You can set optimization methods and goal priorities for line items simultaneously using the **Upcoming** and **In Progress** tabs within the **Line Items** grid. <br><br> **Note**: You can only set optimization methods for line items that have **Optimization Method enabled**. <br><br> For more information, see [Set Up Line Item Optimization](set-up-line-item-optimization.md). |
+| Optimization | You can set optimization methods and goal priorities for line items simultaneously using the **Upcoming** and **In Progress** tabs within the **Line Items** grid. <br><br> **Note**: You can only set optimization methods for line items that have **Optimization Method** enabled. <br><br> For more information, see [Set Up Line Item Optimization](set-up-line-item-optimization.md). |
 | Run Report | You can run reports for multiple advertisers, insertion orders, and line items simultaneously using the respective **Advertisers**, **Insertion Orders**, and **Line Items** grids. <br><br> For more information about running the report, see [Member Reporting](network-reporting.md). |
 | Segments | You can add or remove segments for multiple line items simultaneously using the **Upcoming** and **In Progress** tabs within the **Line Items** grid. <br><br> For more information, see [Set Up Segment Targeting on a Line Item](set-up-segment-targeting-on-a-line-item.md). |
-| State | You can toggle the state from inactive to active and vice versa for multiple advertisers, insertion orders, and line items simultaneously using the **Upcoming** and **In Progress** tabs within the respective **Advertisers**, **Insertion Orders**, and **Line Items** grids. <br><br> **Note**: When you set insertion orders and line items to inactive, they'll typically stop serving within 10 - 60 seconds. <br><br> For more information, see [Add Basic Advertiser Details](create-an-advertiser.md), [Add Basic Insertion Order Details](create-an-insertion-order.md#basic-setup), and [Add Basic Line Item Details](add-basic-line-item-details.md). |
+| State | You can toggle the state from **inactive** to **active** and vice versa for multiple advertisers, insertion orders, and line items simultaneously using the **Upcoming** and **In Progress** tabs within the respective **Advertisers**, **Insertion Orders**, and **Line Items** grids. <br><br> **Note**: When you set insertion orders and line items to inactive, they'll typically stop serving within 10 - 60 seconds. <br><br> For more information, see [Add Basic Advertiser Details](create-an-advertiser.md), [Add Basic Insertion Order Details](create-an-insertion-order.md#basic-setup), and [Add Basic Line Item Details](add-basic-line-item-details.md). |
 | Viewability Rate | You can edit the display viewability rate and video viewability rate for multiple line items simultaneously using the **Upcoming** and **In Progress** tabs within the **Line Items** grid. <br><br> For more information, see [Viewability Targeting](viewability-targeting.md). |
 
-## Related topics
+## Related topic
 
-- [Using the Buyer Monitoring Grids](using-the-buyer-monitoring-grids.md)
+[Using the Buyer Monitoring Grids](using-the-buyer-monitoring-grids.md)

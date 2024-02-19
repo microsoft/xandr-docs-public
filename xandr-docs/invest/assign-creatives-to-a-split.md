@@ -1,11 +1,11 @@
 ---
 title: Microsoft Invest - Assign Creatives to a Split
-description: Assign specific creatives for a split to deliver.
+description: Learn to assign specific creatives to a split in this page.
 ms.date: 10/28/2023
 ---
 
 
-# Assign creatives to a split in Microsoft Invest
+# Microsoft Invest - Assign creatives to a split  
 
 You can assign specific creatives for a split to deliver.
 
@@ -15,5 +15,4 @@ You can assign specific creatives for a split to deliver.
 1. Click **Apply**.
 
 - [Add a creative](add-a-creative.md)
-
 - [Add Creatives in Bulk](add-creatives-in-bulk.md)

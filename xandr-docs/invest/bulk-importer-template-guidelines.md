@@ -19,4 +19,4 @@ Refer to these bulk importer template guidelines when adding data to the bulk im
 
 ## Related topic
 
-- [Exporting and Importing Object Details in Bulk](exporting-and-importing-object-details-in-bulk.md)
+[Exporting and Importing Object Details in Bulk](exporting-and-importing-object-details-in-bulk.md)

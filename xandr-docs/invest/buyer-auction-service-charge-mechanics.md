@@ -28,17 +28,17 @@ Assume the buyer has a 10% BASC and is bidding a flat $1.20 CPM, and that the ne
 
 - If you are participating in a second price auction, the winning price for the impression is $0.81 CPM. The following table illustrates the bids and media cost that result from the Fee and Deduction options:
 
-| BASC % | BASC Type | Initial Bid | Net Bid compared in Auction | Winning Price | Media Cost | Fees | Total Buyer Payment |
-|---|---|---|---|---|---|---|---|
-| 10% | Fee | $1.20 CPM | $1.20 CPM | $0.81 CPM | $0.81 CPM | $0.08 CPM | $0.89 CPM |
-| 10% | Deduction | $1.20 CPM | $1.08 CPM | $0.81 CPM | $0.90 CPM | None | $0.90 CPM |
+    | BASC % | BASC Type | Initial Bid | Net Bid compared in Auction | Winning Price | Media Cost | Fees | Total Buyer Payment |
+    |---|---|---|---|---|---|---|---|
+    | 10% | Fee | $1.20 CPM | $1.20 CPM | $0.81 CPM | $0.81 CPM | $0.08 CPM | $0.89 CPM |
+    | 10% | Deduction | $1.20 CPM | $1.08 CPM | $0.81 CPM | $0.90 CPM | None | $0.90 CPM |
 
 - If you are participating in a first price auction (i.e., no bid reduction to next highest bid), the winning price for the impression is $1.20 CPM. The following table illustrates the bids and media cost that result from the Fee and Deduction options:
 
-| BASC % | BASC Type | Initial Bid | Net Bid compared in Auction | Winning Price | Media Cost | Fees | Total Buyer Payment |
-|---|---|---|---|---|---|---|---|
-| 10% | Fee | $1.20 CPM | $1.20 CPM | $1.20 CPM | $1.20 CPM | $0.12 CPM | $1.32 CPM |
-| 10% | Deduction | $1.20 CPM | $1.08 CPM | $1.08 CPM | $1.20 CPM | None | $1.20 CPM |
+    | BASC % | BASC Type | Initial Bid | Net Bid compared in Auction | Winning Price | Media Cost | Fees | Total Buyer Payment |
+    |---|---|---|---|---|---|---|---|
+    | 10% | Fee | $1.20 CPM | $1.20 CPM | $1.20 CPM | $1.20 CPM | $0.12 CPM | $1.32 CPM |
+    | 10% | Deduction | $1.20 CPM | $1.08 CPM | $1.08 CPM | $1.20 CPM | None | $1.20 CPM |
 
 ## Inventory discrepancy and bid calculation
 

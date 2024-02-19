@@ -42,9 +42,7 @@ Reports can be delivered through various automated options as well as on an ad h
 
 ## Reporting APIs
 
-The aggregation, filtering and processing of the data available via UI reporting can be conducted automatically using API scripts. This method allows you to store data for longer than is possible in Microsoft Invest reporting. Certain reporting services offer more granular data via the API; there is also the ability to use [Bulk Reporting Feeds](../digital-platform-api/bulk-reporting-feeds.md) to synchronize
-offline data sets with Microsoft Advertising-aggregated data over the last 30 days. In addition, there is a custom `code` field that
-can be used for filtering and reporting through the API to map Microsoft Invest objects back to objects in an external system or data store. Buyers will often store data pulled via the API offline to present to clients in delivery or metrics dashboards.
+The aggregation, filtering, and processing of the data available via UI reporting can be conducted automatically using API scripts. This method allows you to store data for longer than is possible in Microsoft Invest reporting. Certain reporting services offer more granular data via the API; there is also the ability to use [Bulk Reporting Feeds](../digital-platform-api/bulk-reporting-feeds.md) to synchronize offline data sets with Microsoft Advertising-aggregated data over the last 30 days. In addition, there is a custom `code` field that can be used for filtering and reporting through the API to map Microsoft Invest objects back to objects in an external system or data store. Buyers will often store data pulled via the API offline to present to clients in delivery or metrics dashboards.
 
 ## Log-level data
 

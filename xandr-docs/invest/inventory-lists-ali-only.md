@@ -97,7 +97,7 @@ Each domain or app in a list can have one of the following audit statuses:
     - None of the domains or apps you entered violate Microsoft Advertising policies.
     - Unsupported URLs are flagged. Unsupported means the Microsoft Advertising targeting system hasn't audited these URLs yet so that you won't be able to serve on them.
     - Invalid URL formats (i.e., non-http or non-https) are removed from the list.
-1. Click **Next**. The domains and apps you entered will be listed along with **Flags** for each (see [Key to Domain/App Audit Flags](#key-to-domainapp-audit-flags) for more information). If the list is large, use the arrows to advance through the pages. Note the following:
+1. Click **Next**. The domains and apps you entered will be listed along with **Flags** for each (see the [Key to Domain/App Audit Flags](#key-to-domainapp-audit-flags) section for more information). If the list is large, use the arrows to advance through the pages. Note the following:
     - Unsupported domains or apps will be flagged.
     - You can also remove any domains or apps that violate Microsoft Advertising policies by clicking **Remove**. However, you will never serve on them even if you leave them in the list.
     - Select **Include subdomains** to include subdomains. For example, if you selected this option for "`mydomain.com`", you would also serve on its subdomains such as "`mydomain.com/foo`" and "`foo.mydomain.com`".
@@ -107,7 +107,7 @@ Each domain or app in a list can have one of the following audit statuses:
 
 1. Go to the **Inventory Lists** screen. Select **Inventory** > **Inventory Lists**.
 1. Locate the list(s) you want to export.
-1. Select the checkbox next to the list that you want to export. (You can select up to five lists.)
+1. Select the checkbox next to the list that you want to export. You can select up to five lists.
 1. Select **Export List** from the **Actions** menu.
 
 The list(s) you selected will be downloaded to your local drive. If you exported:
@@ -152,7 +152,7 @@ The list(s) you selected will be downloaded to your local drive. If you exported
       1. Enter the domains/apps that you wish to add (or import them from an existing file). See steps 8-10 in the [Create a New Inventory List](#create-a-new-inventory-list) section for more information.
       1. Click **Save**.
 
-    - **Remove**: Remove domains/apps from the list. 
+    - **Remove**: Remove domains/apps from the list.
         > [!WARNING]
         > This action cannot be undone.
       1. Select the checkbox of each domain or app that you want to remove.
@@ -171,7 +171,7 @@ The list(s) you selected will be downloaded to your local drive. If you exported
         1. Click **Add**.
         1. Enter the domains/apps that you wish to add (or import them from an existing file). See steps 7-9 in the [Create a New Inventory List](#create-a-new-inventory-list) section.
 
-      - **Remove**: Remove domains or apps from the list. 
+      - **Remove**: Remove domains or apps from the list.
           > [!WARNING]
           > This action cannot be undone.
           1. Select the checkbox of each domain or app that you want to remove.

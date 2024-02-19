@@ -14,8 +14,7 @@ PG buying line items have very different targeting, budgeting, and optimization 
 
 Programmatic Guaranteed deals (PG deals) bring the targeting, messaging, and reporting benefits of programmatic advertising to guaranteed media buys. They offer an automated solution for getting guaranteed access to media from sellers and provide an efficient approach that eliminates many of the additional steps required when buying via an insertion order.
 
-PG buyers, using PG buying line items, transact (bid) on sellers' PG deals that define the targeting, frequency/recency, and creative
-specifications for the buyer to follow.
+PG buyers, using PG buying line items, transact (bid) on sellers' PG deals that define the targeting, frequency/recency, and creative specifications for the buyer to follow.
 
 > [!NOTE]
 > Prior to transacting on a PG deal, confirm with its seller that the creatives you wish to serve meet their deal's creative format, size, and technical attribute requirements.
@@ -47,19 +46,22 @@ PG line items offer the following advantages:
 
 ## PG deal billing
 
-With PG deal buying, you'll never pay for more than a deal's agreed-to number of booked impressions. You only pay for a number of  delivered impressions that is less than or equal to a PG deal's booked impression number. Microsoft Advertising only charges fees on the cost-of-media collected.
+With PG deal buying, you'll never pay for more than a deal's agreed-to number of booked impressions. You only pay for a number of delivered impressions that is less than or equal to a PG deal's booked impression number. Microsoft Advertising only charges fees on the cost-of-media collected.
 
 > [!NOTE]
 > While Microsoft Advertising's billing reports show PG deals as being capped at their agreed-to booked impressions, non-billing reports still reflect overdelivery regarding logged delivered impressions versus adjusted-for-billing impressions.
 
 - **What happens with billing in the month that a deal ends?**
-  - The deal is reconciled (spend is capped), and the buyer is charged up to the agreed-upon deal amount.
+
+    The deal is reconciled (spend is capped), and the buyer is charged up to the agreed-upon deal amount.
 
 - **What happens if the deal ends but is not fully delivered?**
-  - The buyer is only charged for delivery that is less than or equal to the agreed-upon deal budget.
+
+    The buyer is only charged for delivery that is less than or equal to the agreed-upon deal budget.
 
 - **What happens if a deal is modified (the deal is extended, or the deal's price rate is increased) mid-flight?**
-  - We use the latest version of a deal's size (booked imps) to determine if an adjustment is necessary. When a deal size changes   mid-month, assuming it isn't changed to an amount lower than the number of delivered impressions, we use the updated impressions    value for billing.
+
+    We use the latest version of a deal's size (booked imps) to determine if an adjustment is necessary. When a deal size changes mid-month, assuming it isn't changed to an amount lower than the number of delivered impressions, we use the updated impressions value for billing.
 
 ## Auto-monitoring feature
 

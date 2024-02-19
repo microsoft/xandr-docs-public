@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Integrated Pre-payment Functionality
-description: In this article, learn about the Pre-payment Functionality and the process to initiate pre-payment.
+description: In this article, learn about the pre-payment functionality and the process to initiate pre-payment.
 ms.date: 10/28/2023
 ---
 
@@ -26,6 +26,6 @@ Customers have the option to sign in as a guest or sign up to Plastiq, if they w
 1. The total member balance update is displayed along with the payment ID which can be noted for future reference.
 1. An email is sent to the users once the payment is completed.
 
-## Related topics
+## Related topic
 
 [Credit Limit Overview](credit-limit-overview.md)

@@ -32,7 +32,7 @@ You can determine how your campaign should weight the modifier segment's `VALUE`
 
 Here's an example of a campaign object using this format:
 
-``` pre
+```
 {
   "campaign": {
     "id": 123,
@@ -64,8 +64,7 @@ To achieve complete overlap, all of the cookies in your target audience (across 
 
 Finally, the [Campaign Service](../digital-platform-api/campaign-service.md) provides another optimization lever you can pull in addition to the user bid price or user bid modifier:
 
-`userprice_default_modifier`: If a user in one of your audience segments is present on an impression, but their audience segment is
-  not associated with a modifier segment, you can still modify the bid using the value in this field.
+`userprice_default_modifier`: If a user in one of your audience segments is present on an impression, but their audience segment is not associated with a modifier segment, you can still modify the bid using the value in this field.
 
 Put another way, if no modifier segment is associated with the audience segment on an impression (or if no `VALUE` is set for the modifier segment), we will modify the bid based on the value of this field. It defaults to `1`, but can be changed to any floating-point value between `0` and `1`. For example, you can set this value to `0.5` to multiply our optimization engine's calculated bid by `0.5`. To refrain from bidding when no `VALUE` has been set on the modifier segment (or when no modifier segment is associated with the audience segment), set this field to `0`.
 

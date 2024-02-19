@@ -12,7 +12,7 @@ describes how to spoof various mobile ad call parameters so that you can success
 ## Call format
 
 > [!NOTE]
-> All debug auction and browser cookie override calls must use secure https protocols. Requests made using http will not generate valid results.
+> All debug auction and browser cookie override calls must use secure HTTPS protocols. Requests made using HTTP will not generate valid results.
 
 Here's an example of an ad call that will run a mobile debug auction:
 
@@ -78,8 +78,8 @@ The query string parameters for spoofing the device make and model are `devmake`
 
 You can use the following read-only API services to see what device makes and models are available in the system:
 
-- The [Device Make Service](../digital-platform-api/device-make-service.md).
-- The [Device Model Service](../digital-platform-api/device-model-service.md).
+- The [Device Make Service](../digital-platform-api/device-make-service.md)
+- The [Device Model Service](../digital-platform-api/device-model-service.md)
 
 ## Related topic
 

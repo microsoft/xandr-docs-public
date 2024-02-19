@@ -21,6 +21,6 @@ To obtain the following details about any of the creative templates, click a cor
 - **Creative Format**: Defines the creative resource type that can use this template, such as iframe or External File.
 - **Template Code**: Specifies how the creative should be rendered.
 
-## Related topics
+## Related topic
 
 [Creative Templates](creative-templates.md)

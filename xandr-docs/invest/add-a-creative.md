@@ -18,7 +18,8 @@ To serve on our platform, all creatives must adhere to our creative guidelines a
 1. Select an advertiser.
 
 1. Click **New** and select the appropriate creative type from the menu that displays.
-   The **Create New** screen displays.
+
+    The **Create New** screen displays.
 
 1. Provide the creative file using one of the following methods:
     - If the creative is being hosted with Microsoft Advertising, upload the file by clicking the **Select Files** button to upload the appropriate assets.
@@ -30,6 +31,7 @@ To serve on our platform, all creatives must adhere to our creative guidelines a
     If you're adding a video or audio creative, you'll have to select one of the following tabs in order to provide the creative file:
     - **Hosted File**: For video and audio creatives that are being hosted through Microsoft Advertising's platform.
     - **Third-Party URL**: For video and audio creatives that are being trafficked through a third-party ad server.
+
     > [!TIP]
     > When uploading creative files, you can hold down the **Command** (if using a Mac) or **CTRL** (if using a PC) key until you've selected all the necessary files from your computer, and then click **Open**.
     >
@@ -39,19 +41,19 @@ To serve on our platform, all creatives must adhere to our creative guidelines a
 
 1. Provide basic information for the creative in the **Basic Setup** section:
     1. Enter a new name for the creative in the **Name** field, or leave the original name that currently displays.
-    1. Enter a landing page URL in the **Landing Page** field that the users will be redirected to when clicking the creative, or select the **Set on the Line Item level** radio button to set it at the line item level.
-       For more information, see [Dynamic Landing Pages](dynamic-landing-pages.md)
+    1. Enter a landing page URL in the **Landing Page** field that the users will be redirected to when clicking the creative, or select the **Set on the Line Item level** radio button to set it at the line item level. For more information, see [Dynamic Landing Pages](dynamic-landing-pages.md).
     1. For banner creatives, select a media type from the menu pull-down.
-      A standard Microsoft Advertising template is selected by default. You can click the **X** in the search field next to the menu pull-down and select a different template. For more information, see [Applying Media Types and Templates to Banner Creatives](applying-media-types-and-templates-to-banner-creatives.md).
+
+        A standard Microsoft Advertising template is selected by default. You can click the **X** in the search field next to the menu pull-down and select a different template. For more information, see [Applying Media Types and Templates to Banner Creatives](applying-media-types-and-templates-to-banner-creatives.md).
     1. For HTML5 creatives, select one of the following media types: **Standard**, **Interstitial**, or **Expandable**.
     1. For HTML5 and banner creatives, select a creative size.
 
 1. For video and audio creatives, do any of the following:
 
-    |Action  |More Information  |
-    |---------|---------|
-    |Search and select VAST features and extensions from the VAST Features section.     |For more information, see [Supported VAST Features](supported-vast-features.md) and [Create a VAST Extension](../monetize/create-a-vast-extension.md).         |
-    |Search and select companions from the Companions section.     |Companions are supported if the third-party ad server supports it. You cannot associate HTML or JS banners. To serve on Spotify, associate one 640 x 640 image creative as a companion. For more information, see [Companions](companions.md).         |
+    | Action | More Information |
+    |--|--|
+    | Search and select VAST features and extensions from the VAST Features section. | For more information, see [Supported VAST Features](supported-vast-features.md) and [Create a VAST Extension](../monetize/create-a-vast-extension.md). |
+    | Search and select companions from the Companions section. | Companions are supported if the third-party ad server supports it. You cannot associate HTML or JS banners. To serve on Spotify, associate one 640 x 640 image creative as a companion. For more information, see [Companions](companions.md). |
 
     For more information, see [Video Creatives](video-creatives.md) and [Audio Creatives](audio-creatives.md).
 
@@ -68,6 +70,7 @@ To serve on our platform, all creatives must adhere to our creative guidelines a
     Additionally, you can add details for the native image and icon files in the **Composition** section. Click the **Additional Assets** menu to add additional fields. For more information about each asset specification, see [Native Creative Asset Specifications](native-creative-asset-specifications.md).
 
 1. Click the **Preview** button in the left pane to preview the creative.
+
     For native creatives, the **Preview** button won't display until the landing page URL has been added.
 
 1. **Optional:** [Configure tracking parameters](configuring-tracking-for-creatives.md).

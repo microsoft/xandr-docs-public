@@ -15,11 +15,9 @@ You can improve your augmented line item (ALI) delivery and impression count, wh
     - Unaudited creative
     - Inactive insertion order
     - Inactive line item
-
 1. To resolve these issues, click the pencil icon that displays next to each issue.
 
     You'll be automatically taken to the appropriate screen to make the necessary adjustments in most cases.
-
 1. Go to the **Bid Performance** section to gain insight into how your bids are performing.
 
     A list of bid performance messages may display in the **Bid Performance** section if your bid performance is underperforming. These messages will be prioritized within any one of these bid performance categories: member targeting, line item targeting, creative, bid value, and auction. For additional information, see [Bid Performance Messages for Augmented Line Items](bid-performance-messages-for-augmented-line-items.md).
@@ -28,17 +26,14 @@ You can improve your augmented line item (ALI) delivery and impression count, wh
     - **Open Exchange**
     - **Managed**
     - **Deals**
-
 1. Select a different supply strategy if the default is causing unexpected results.
 
     > [!NOTE]
-    > If you're expecting bid performance messages but still don't see any, please contact your account manager.
-
+    > If you're expecting bid performance messages but still don't see any, contact your account manager.
 1. Click any one of the bid performance categories to gain insight into how your settings are affecting your bid performance.
 
     A yellow triangle will display if there are corresponding bid performance messages.
-
-1. Click the information icons that display next to the bid performance message to obtain additional information about what's happening  (reason) and suggested recommendations for improving your bid performance.
+1. Click the information icons that display next to the bid performance message to obtain additional information about what's happening (reason) and suggested recommendations for improving your bid performance.
 1. Click any one of buttons that display below to make the necessary adjustments if desired.
 
     You'll be automatically taken to the appropriate screen to make the necessary adjustments in most cases.

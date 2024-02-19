@@ -14,7 +14,6 @@ A flight has an underspent budget when its delivered impressions or revenue is l
   
   > [!WARNING]
   > If you select this option, you won't be able to overlap flight dates, as this feature won't allow you to extend to intersect with any other flight date.
-
 - **Rollover**: Buyer can add a flight's unspent budget to a current or future flight.
 
 ## Budget rollover procedure

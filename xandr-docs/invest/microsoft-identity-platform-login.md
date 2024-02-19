@@ -1,12 +1,12 @@
 ---
 title: Microsoft Invest - Identity Platform Login
-description: In this article, explore an overview of authenticating users for advertising products using Microsoft Identity Platform.
+description: In this article, explore an overview of authenticating users for Microsoft Advertising products using Microsoft Identity Platform.
 ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Identity Platform login
 
-This document outlines an overview of authenticating users for Microsoft Advertising Advertising Products using Microsoft Identity Platform.
+This document outlines an overview of authenticating users for Microsoft Advertising Products using Microsoft Identity Platform.
 
 With consolidation of Microsoft Advertising to Microsoft family, we have integrated the authentication process of the users (who are using Microsoft Advertising products) to the Microsoft Identity Platform. The profound advantage of this integration is that users would be able use to access Microsoft Advertising applications using the same sign-on methods to access other Microsoft products. Additionally, the integration to the Microsoft Identity Platform enables new and more secure methods of authentication, powered by Microsoft.
 
@@ -47,11 +47,11 @@ Microsoft Advertising's integration with the Microsoft Identity Platform allows 
 - Azure Active Directory supported SSO (Preferred Method)
 - Personal Microsoft Accounts
 
-**Azure Active Directory supported SSO** (Preferred Method)
+### Azure Active Directory supported SSO (preferred method)
 
 Microsoft Identity Platform enables organizations to authenticate their users to various cloud and on-premise solutions using the same set of credentials. Couple of Microsoft Advertising customers are already integrated and they can utilize the Microsoft Identity Platform SSO solution without any additional configuration. If you are yet to be integrated with Microsoft Identity Platform, you can learn more about Azure Active Directory and Single Sign On [here](https://www.microsoft.com/security/business/identity-access/azure-active-directory-single-sign-on).
 
-**Personal Microsoft Accounts**
+### Personal Microsoft accounts
 
 If you do not have an organization level integration with Azure Active Directory or the Microsoft Identity Platform, you can still use the
 Microsoft Identity Platform by registering your email address as a Microsoft Account, or creating a new account with Microsoft. For more
@@ -68,4 +68,4 @@ details about this process, click [here](https://account.microsoft.com/account/A
 
 ## Related topic
 
-- [Microsoft Identity Platform Login Troubleshooting](microsoft-identity-platform-login-troubleshooting.md)
+[Microsoft Identity Platform Login Troubleshooting](microsoft-identity-platform-login-troubleshooting.md)

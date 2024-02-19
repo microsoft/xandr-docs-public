@@ -6,7 +6,8 @@ ms.date: 10/28/2023
 
 # Bulk importer guidelines for splits
 
-Please do not rename the Splits sheet within the bulk importer template.
+> [!WARNING]
+> Please do not rename the Splits sheet within the bulk importer template.
 
 ## Temporary ID information
 
@@ -51,12 +52,12 @@ Please do not rename the Splits sheet within the bulk importer template.
 | Placement | Specifies whether or not to target impressions based on a specific placement. | - in Id1,Id2 <br> - not_in Id1,Id2 | No | in 32,22 |
 | Publisher | Specifies whether or not to target impressions based on specific publishers. | - in Id1,Id2 <br> - not_in Id1,Id2 | No | in 32,22 |
 | Seller Member | Specifies whether or not to target impressions based on specific seller members. | - in Id1,Id2 <br> - not_in Id1,Id2 | No | not_in 32,22 |
-| Operating System Family | Specifies whether or not to target impressions based on the user's operating system. See the [OS Family list](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Microsoft Advertising/Bulk-Importer-Lists.xlsx) to look up the appropriate operating system identifiers. | - in Id1,Id2 <br> - not_in Id1,Id2 | No | in 4,17,8 |
-| Operating System Version | Specifies whether or not to target impressions based on a specific version of the user's operating system. See the [OS Versions list](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Microsoft Advertising/Bulk-Importer-Lists.xlsx) to look up the appropriate operating system version identifiers. | - in Id1,Id2 <br> - not_in Id1,Id2 | No | in 17,18,20,21 |
-| Browser | Specifies whether or not to target impressions based on the user's browser. See the [Browser list](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Microsoft Advertising/Bulk-Importer-Lists.xlsx) to look up the appropriate browser identifiers. | - in Id1,Id2 <br> - not_in Id1,Id2 | No | in 17,18,20,21 |
-| Browser Language | Specifies whether or not to target impressions based on the user's browser language. See the [Language list](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Microsoft Advertising/Bulk-Importer-Lists.xlsx) to look up the appropriate language identifiers. | - in Id1,Id2 <br> - not_in Id1,Id2 | No | in 17,18,20,21 |
+| Operating System Family | Specifies whether or not to target impressions based on the user's operating system. See the [OS Family list](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Xandr/Bulk-Importer-Lists.xlsx) to look up the appropriate operating system identifiers. | - in Id1,Id2 <br> - not_in Id1,Id2 | No | in 4,17,8 |
+| Operating System Version | Specifies whether or not to target impressions based on a specific version of the user's operating system. See the [OS Versions list](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Xandr/Bulk-Importer-Lists.xlsx) to look up the appropriate operating system version identifiers. | - in Id1,Id2 <br> - not_in Id1,Id2 | No | in 17,18,20,21 |
+| Browser | Specifies whether or not to target impressions based on the user's browser. See the [Browser list](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Xandr/Bulk-Importer-Lists.xlsx) to look up the appropriate browser identifiers. | - in Id1,Id2 <br> - not_in Id1,Id2 | No | in 17,18,20,21 |
+| Browser Language | Specifies whether or not to target impressions based on the user's browser language. See the [Language list](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Xandr/Bulk-Importer-Lists.xlsx) to look up the appropriate language identifiers. | - in Id1,Id2 <br> - not_in Id1,Id2 | No | in 17,18,20,21 |
 | Device Type | Specifies whether or not to target impressions based on specific types of physical devices. | - in [pc & other devices,phone,tablet] <br> - not_in [pc & other devices,phone,tablet] | No | in pc & other devices, phone,tablet |
-| Device Model | Specifies whether or not to target impressions based on specific models of physical devices. See the [Device Model list](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Microsoft Advertising/Bulk-Importer-Lists.xlsx) to look up the appropriate device model identifiers. | - in Id1,Id2 <br> - not_in Id1,Id2 | No | in 17,18,20,21 |
+| Device Model | Specifies whether or not to target impressions based on specific models of physical devices. See the [Device Model list](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Xandr/Bulk-Importer-Lists.xlsx) to look up the appropriate device model identifiers. | - in Id1,Id2 <br> - not_in Id1,Id2 | No | in 17,18,20,21 |
 | Carrier | Specifies whether or not to target impressions based on specific mobile carriers. | - in Id1,Id2 <br> - not_in Id1,Id2 | No | in 17,18,20,21 |
 | Predicted IAB View Rate | Specifies whether or not to target web-display impressions by how likely they are to be measured as viewable by the IAB standard. | (<,<=,=,>,>=) numeric value | No | < 0.12 |
 | Predicted IAB Video View Rate | Specifies whether or not to target web-video impressions by how likely they are to be measured as viewable by the IAB standard. | (<,<=,=,>,>=) numeric value | No | < 0.12 |

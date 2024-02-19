@@ -39,8 +39,7 @@ This report can retrieve data from the last five weeks.
 
 The **Filter?** column shows whether a dimension can be used as a filter as well as being used to group by.
 
-Some dimensions have *attributes*. Dimension attributes are a more granular element of data about the parent dimension. If a dimension has
-attributes, the name of its attributes will appear below it using the following syntax: *Dimension_Name:Attribute_Name*.
+Some dimensions have *attributes*. Dimension attributes are a more granular element of data about the parent dimension. If a dimension has attributes, the name of its attributes will appear below it using the following syntax: *Dimension_Name:Attribute_Name*.
 
 | Dimension | Filter? | Description |
 |---|---|---|
@@ -104,13 +103,10 @@ Follow these steps to run the report:
     > The more dimensions you group by, the larger the data set that is returned. Larger data sets can take substantially longer to process. Be sure to group using only the dimensions you need.
 
 1. Choose a delivery option. Once you've selected your filters and grouped by your chosen dimensions, you need to choose a delivery method. Available delivery methods include:
-    - **Run now, show results in screen**: For smaller amounts of data, you may want to view the report as soon as possible in your
-      browser.
-    - **Run in background, notify me when results are ready to view**: A pop-up notification will let you know when the report is ready to
-      view or download.
+    - **Run now, show results in screen**: For smaller amounts of data, you may want to view the report as soon as possible in your browser.
+    - **Run in background, notify me when results are ready to view**: A pop-up notification will let you know when the report is ready to view or download.
     - **Export, send results via email**: Run the report in the background and email the results to one or more email addresses.
-    - **Save as report template**: Save your selected report settings so that you can run this report again in the future. You can name
-      this template using the text entry field under Name this report (its checkbox is auto-selected when you choose this option). A saved report can be rerun from the Your Reports screen.
+    - **Save as report template**: Save your selected report settings so that you can run this report again in the future. You can name this template using the text entry field under Name this report (its checkbox is auto-selected when you choose this option). A saved report can be rerun from the Your Reports screen.
     - **Add to scheduled reports**: Run this report automatically at specified times and have it sent to one or more email addresses.
     - **Name this report**: Give this report with its current settings a name for future reference.
 
@@ -118,4 +114,4 @@ Follow these steps to run the report:
 
 ## Related topic
 
-- [Create an Augmented Line Item](create-an-augmented-line-item-ali.md)
+[Create an Augmented Line Item](create-an-augmented-line-item-ali.md)

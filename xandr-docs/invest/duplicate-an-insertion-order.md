@@ -10,8 +10,7 @@ Insertion Order (IO) Duplication is a feature in Microsoft Invest that allows tr
 
 This is what you can accomplish with IO Duplication:
 
-- Duplication of a **single** insertion order with up to 100 line items. Each line item can have up to 100 splits. If a duplication job is
-  submitted and any line items have more than 100 splits, the job as a whole will succeed, but the offending line item(s) will fail. The user will receive explicit notification of which lines succeeded and which failed, and the reason for failure.
+- Duplication of a **single** insertion order with up to 100 line items. Each line item can have up to 100 splits. If a duplication job is submitted and any line items have more than 100 splits, the job as a whole will succeed, but the offending line item(s) will fail. The user will receive explicit notification of which lines succeeded and which failed, and the reason for failure.
 - You can choose which augmented line item(s) from the insertion order to duplicate (default to all or first 100).
 - You can rename the duplicated insertion order.
 
@@ -26,11 +25,9 @@ There are certain considerations you should keep in mind before duplicating an i
 
 - You will need to set new billing periods for the insertion order.
 - All line items will inherit the new billing periods as flights.
-- If a trader needs line item flights to differ from insertion order billing periods, they will need to update the flights **after**
-  duplication.
+- If a trader needs line item flights to differ from insertion order billing periods, they will need to update the flights **after** duplication.
 - Insertion order budgets can be set during duplication.
-- Line item budgets will be set to 0 and must be updated after duplication. This can be done via bulk upload, bulk edit, or individual
-  line item edits. You will not be able to make any other edits to these line items until their budgets are updated.
+- Line item budgets will be set to 0 and must be updated after duplication. This can be done via bulk upload, bulk edit, or individual line item edits. You will not be able to make any other edits to these line items until their budgets are updated.
 
 ## Insertion order duplication procedure
 
@@ -57,8 +54,7 @@ There are certain considerations you should keep in mind before duplicating an i
       > [!NOTE]
       > All line items are selected by default. If the IO has more than 100 line items, the first 100 are selected, and you may change the selection. If you need to duplicate more than 100 line items, you may bulk upload the rest or contact your Microsoft Advertising Account Manager for help.
 
-1. Once the above information is entered, click **Duplicate** to duplicate the insertion order with the selected criteria. You can click
-**Cancel** to cancel the insertion order duplication process if required.
+1. Once the above information is entered, click **Duplicate** to duplicate the insertion order with the selected criteria. You can click **Cancel** to cancel the insertion order duplication process if required.
 1. Once you click **Duplicate**, there is an **Import Processing** option located on the upper right-hand corner of your screen.
 1. By clicking this option, you can see the process happening. A **Last Import** window will be visible. It shows the **Date** and **Status** of the current duplication. The **Status** shows the number of objects that are complete, and any errors that occurred during processing.
 1. Click **View Results** to access the **Bulk Processor Tool Results**. This shows what was successfully processed, and what was not, by line item.

@@ -17,10 +17,10 @@ Go to the **Conversion Pixels** screen (**Audiences** > **Conversion Pixel**), s
 In the **Basic Options** section, select the format for your exported pixels:
 
 - **Use a JavaScript tag** - By default, pixels will be exported as image tags. If you want JavaScript tags instead, select this option.
-  
+
   > [!IMPORTANT]
   > Why use JavaScript tags? Some advertisers require JavaScript tags. Image pixels can only perform one redirect, so parent pixels with multiple piggybacks must be JavaScript. If a piggyback pixel is JavaScript, the parent pixel should be JavaScript as well.
-  
+
 - **Generate a non-secure pixel** - Select this option to generate a non-secure pixel. See [Conversion Pixels Advanced](conversion-pixels-advanced.md) for additional details.
 
 ## Step 3. Select the delivery options
@@ -52,7 +52,7 @@ Click the **Generate Tags** button. Depending on the delivery option selected, t
 
 An image pixel looks like this, with a t=2 parameter:
 
-``` pre
+```
 <!-- Conversion Pixel - Registration - DO NOT MODIFY --> 
 <img src="http://ib.adnxs.net/px?id=7313&t=2" width="1" height="1" /> 
 <!-- End of Conversion Pixel --> 
@@ -60,7 +60,7 @@ An image pixel looks like this, with a t=2 parameter:
 
 A JavaScript pixel looks like this, with a t=1 parameter:
 
-``` pre
+```
 <!-- Conversion Pixel - Registration - DO NOT MODIFY --> 
 <script src="http://ib.adnxs.net/px?id=7313&t=1" type="text/javascript"></script>
 <!-- End of Conversion Pixel --> 

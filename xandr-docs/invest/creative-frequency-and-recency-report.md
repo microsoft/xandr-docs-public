@@ -1,23 +1,21 @@
 ---
 title: Microsoft Invest - Creative Frequency and Recency Report
-description: Learn how the Creative Frequency and Recency report lets you view the frequecy that users are viewing a specific advertiser's creatives.
+description: Learn how the Creative Frequency and Recency report lets you view how often and how frequently users are viewing a specific advertiser's creatives. The page lists and explains the different parameters of this report.  
 ms.date: 10/28/2023
 ---
 
 
-# Microsoft Invest - creative frequency and recency report 
+# Microsoft Invest - Creative frequency and recency report 
 
-The Creative Frequency and Recency report lets you view how often and
-how frequently users are viewing a specific advertiser's creatives.
+The Creative Frequency and Recency report lets you view how often and how frequently users are viewing a specific advertiser's creatives.
 
-Time Frame
+## Time frame
 
 All dates and times are given in UTC.
 
 **Time ranges**
 
-Time ranges define the time period of the data extracted for the report.
-The following is a complete list of time ranges available for reports.
+Time ranges define the time period of the data extracted for the report. The following is a complete list of time ranges available for reports.
 
 However, all time ranges are not available for every report.
 
@@ -46,24 +44,22 @@ However, all time ranges are not available for every report.
 
 **Intervals**
 
-Intervals determine how your data is grouped together into rows in the report response. The following is a complete list of intervals available
-for reports. However, all intervals are not available for every report.
+Intervals determine how your data is grouped together into rows in the report response. The following is a complete list of intervals available for reports. However, all intervals are not available for every report.
 
 - Hourly: Data is grouped into rows by the hour.
 - Daily: Data is grouped into rows by the day.
 - Monthly: Data is grouped into rows by the month.
-- Cumulative: Data is grouped together in one figure, covering the
-  entire selected time range.
+- Cumulative: Data is grouped together in one figure, covering the entire selected time range.
 
 ## Currency 2.0
 
 > [!NOTE]
-> By enabling **Currency 2.0**, you can select a currency for each individual report if you prefer not to use **USD** as the default currency. The report will show all the monetary fields in your report using the selected currency. For example, if you select **Advertiser**, click the **Currency 2.0** toggle to enable it, and select **Japanese Yen (JPY)** from the **Currency menu**, the report will show all monetary data in JPY, including data associated with child objects such as line items.
+> By enabling **Currency 2.0**, you can select a currency for each individual report if you prefer not to use **USD** as the default currency. The report will show all the monetary fields in your report using the selected currency. For example, if you select **Advertiser**, click the **Currency 2.0** toggle to enable it, and select **Japanese Yen (JPY)** from the **Currency** menu, the report will show all monetary data in JPY, including data associated with child objects such as line items.
 
 ## Dimensions
 
 | Column | Filter? | Description |
-|---|---|---|
+|--|--|--|
 | Insertion Order | Yes | The insertion order under which the impression was purchased. |
 | Line Item | Yes | The line item under which the impression was purchased. For more information about line items, see [Working with Line Items](working-with-line-items.md) . |
 | Campaign | Yes | The campaign that purchased this impression. (Does not apply to all advertisers.) |
@@ -76,9 +72,9 @@ for reports. However, all intervals are not available for every report.
 | IO: Trafficker (reporting label) | Yes | The trafficker associated with this insertion order. This is an insertion order reporting label; for more information, see [Working with Insertion Orders](working-with-insertion-orders.md). |
 | IO: Sales Rep (reporting label) | Yes | The sales rep associated with this insertion order. This is an insertion order reporting label; for more information, see [Working with Insertion Orders](working-with-insertion-orders.md). |
 | IO: Type (reporting label) | Yes | The type of insertion order. This is an insertion order reporting label; for more information, see Working with [Working with Insertion Orders](working-with-insertion-orders.md). |
-| LI: Type (reporting label) | Yes | The type of line item. This is a line item reporting label; for more information, see [Line Items](working-with-line-items.md). |
-| LI: Trafficker (reporting label) | Yes | The trafficker associated with this line item. This is a line item reporting label; for more information, see Working with [Line Items](working-with-line-items.md). |
-| LI: Sales Rep (reporting label) | Yes | The sales rep associated with this line item. This is a line item reporting label; for more information, see [Line Items](working-with-line-items.md). |
+| LI: Type (reporting label) | Yes | The type of line item. This is a line item reporting label; for more information, see [Working with Line Items](working-with-line-items.md). |
+| LI: Trafficker (reporting label) | Yes | The trafficker associated with this line item. This is a line item reporting label; for more information, see [Working with Line Items](working-with-line-items.md). |
+| LI: Sales Rep (reporting label) | Yes | The sales rep associated with this line item. This is a line item reporting label; for more information, see [Working with Line Items](working-with-line-items.md). |
 | Campaign: Test/Control (reporting label) | Yes | The test/control segment associated with the campaign. (Does not apply to all advertisers.) |
 
 ## Metrics
@@ -87,7 +83,7 @@ for reports. However, all intervals are not available for every report.
 > When values of a metric are displayed as percentages in the UI, they will be displayed as decimals when you export the report.
 
 | Column | Description |
-|---|---|
+|--|--|
 | Videos Served | The total number of video responses served to the player. An ad response occurs when the VAST document (XML) is served in response to a request. An ad response doesn't necessarily indicate a successful impression. For an impression, the first frame of the video must be served. |
 | Video Completions | The total number of times the video creatives played for the entire duration. |
 | 75% Video Complete | The total number of times the video creatives completed 75% of the entire duration. |
@@ -129,7 +125,7 @@ for reports. However, all intervals are not available for every report.
 ## Creative recency definitions
 
 | Value | Name | Definition |
-|---|---|---|
+|--|--|--|
 | -2 | no-cookie-data | The cookie lookup failed. |
 | -1 | no-cookie | The user does not have cookies enabled. |
 | 0 | < 1 minute | The user has never viewed the creative or last viewed the creative less than 1 minute ago. |
@@ -147,14 +143,10 @@ for reports. However, all intervals are not available for every report.
 
 ## Creative frequency definitions
 
-Please note that the below buckets refer to the lifetime of the user and
-the lifetime of the creative. For example, if a user falls into the
-21-40 bucket, that means they have seen this creative between 21 and 40
-times since the user's cookie was first created and the creative first
-served.
+Please note that the below buckets refer to the lifetime of the user and the lifetime of the creative. For example, if a user falls into the 21-40 bucket, that means they have seen this creative between 21 and 40 times since the user's cookie was first created and the creative first served.
 
 | Value | Name | Definition |
-|---|---|---|
+|--|--|--|
 | -2 | no-cookie-data | The cookie lookup failed. |
 | -1 | no-cookie | The user does not have cookies enabled. |
 | 0 | 0 | The user had not viewed the creative prior to the current impression. |
@@ -174,63 +166,28 @@ served.
 
 Follow these steps to run your report.
 
-1. Select **Reporting** from the
-    appropriate top menu (depending on how your account has been
-    configured).
-    1. Or, from the Publishers top menu, click on
-        **Prebid
-        Server Premium \>
-        Analytics \>
-        Prebid Server Analytics**
-1. Select the relevant report from the list. The
-    **Report** screen shows the available
-    filters, dimensions, and delivery options for the report. The
-    selections you make here will determine what report data is
-    delivered to you, and how.
+1. Select **Reporting** from the appropriate top menu (depending on how your account has been configured)
+
+    Or, from the Publishers top menu, click on **Prebid Server Premium \> Analytics \> Prebid Server Analytics**.
+1. Select the relevant report from the list. The **Report** screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
   
    > [!IMPORTANT]
    > For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md).
 
-1. Select the relevant filters to limit the data displayed to just the
-    information you want. For example, rather than running a report that
-    shows impressions for all inventory sources, you may want to list
-    results for just a select few. When you select a filter (by clicking
-    **Edit**), a selection panel appears.
-    Select items in the **Available** list (left), then click
-    **Add** to include them in the
-    **Chosen** list (right).
+1. Select the relevant filters to limit the data displayed to just the information you want. For example, rather than running a report that shows impressions for all inventory sources, you may want to list results for just a select few. When you select a filter (by clicking **Edit**), a selection panel appears. Select items in the **Available** list (left), then click **Add** to include them in the **Chosen** list (right).
 1. Group by Dimension. Grouping allows you to display rows of data in the order you prefer.
    > [!WARNING]
-   >The more dimensions you group by, the larger the data set that is returned. Larger data sets can take substantially longer to process. Be sure to group using only the dimensions you need.
+   > The more dimensions you group by, the larger the data set that is returned. Larger data sets can take substantially longer to process. Be sure to group using only the dimensions you need.
 
-1. Choose a delivery option. Once you've selected your filters and
-    grouped by your chosen dimensions, you need to choose a delivery
-    method. Available delivery methods include:
-    - **Run now, show results in screen**: For smaller amounts of data,
-      you may want to view the report as soon as possible in your
-      browser. You can download the report in XLSX, CSV, Excel/TSV and
-      JSON format. However, there is a limit of 100,000 rows per report
-      when downloading as XLSX and Excel file.
-    - **Run in background, notify me when results are ready to view**: A
-      popup notification will let you know when the report is ready to
-      view or download.
+1. Choose a delivery option. Once you've selected your filters and grouped by your chosen dimensions, you need to choose a delivery method. Available delivery methods include:
+    - **Run now, show results in screen**: For smaller amounts of data, you may want to view the report as soon as possible in your browser. You can download the report in XLSX, CSV, Excel/TSV and JSON format. However, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file.
+    - **Run in background, notify me when results are ready to view**: A popup notification will let you know when the report is ready to view or download.
 
       > [!TIP]
-    > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service (The limit here is 10 million rows).
+      > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service (The limit here is 10 million rows).
 
-    - **Export, send results via
-      email**: Run the report in the background and email the results to
-      one or more email addresses.
-    - **Save as report template**: Save your selected report settings so
-      that you can run this report again in the future. You can name
-      this template using the text entry field under
-      **Name this report** (its checkbox
-      is auto-selected when you choose this option). A saved report can
-      be rerun from the **Your Reports**
-      screen.
-    - **Add to scheduled reports**: Run this report automatically at
-      specified times and have it sent to one or more email addresses.
-    - **Name this report**: Give this report with its current settings a
-      name for future reference.
-1. Click **Run
-    report** to send your report request.
+    - **Export, send results via email**: Run the report in the background and email the results to one or more email addresses.
+    - **Save as report template**: Save your selected report settings so that you can run this report again in the future. You can name this template using the text entry field under **Name this report** (its checkbox is auto-selected when you choose this option). A saved report can be rerun from the **Your Reports** screen.
+    - **Add to scheduled reports**: Run this report automatically at specified times and have it sent to one or more email addresses.
+    - **Name this report**: Give this report with its current settings a name for future reference.
+1. Click **Run report** to send your report request.

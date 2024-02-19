@@ -1,28 +1,19 @@
 ---
 title: Microsoft Invest - Audio Creatives
-description: Learn hosting audio creatives with Microsoft Advertising or traffic them through third-party ad servers, which may be created for traditional radio, streaming radio (TuneIn), music streaming (Spotify), and podcasts.
+description: In this page, Learn different ways by which you can host audio creatives and what audio creatives provide.
 ms.date: 10/28/2023
 ---
 
 
-# Audio creatives in Microsoft Invest
+# Microsoft Invest - Audio creatives  
 
-You can host audio creatives with Microsoft Advertising or
-traffic them through third-party ad servers, which may be created for
-traditional radio, streaming radio (TuneIn), music streaming (Spotify),
-and podcasts.
+You can host audio creatives with Microsoft Advertising or traffic them through third-party ad servers, which may be created for traditional radio, streaming radio (TuneIn), music streaming (Spotify), and podcasts.
 
 Audio creatives can provide:
 
-- **Higher conversion rates**: Linear audio creatives can't easily be
-  skipped, so audio creatives typically lead to higher conversion rates.
-  Additionally, with audio creatives, you can broaden your targeted
-  audience by including mobile devices as many users use their smart
-  phones and tablets to stream music and podcasts.
+- **Higher conversion rates**: Linear audio creatives can't easily be skipped, so audio creatives typically lead to higher conversion rates. Additionally, with audio creatives, you can broaden your targeted audience by including mobile devices as many users use their smart phones and tablets to stream music and podcasts.
 
-- **1:1 intentional content**: Audio creatives can easily be
-  personalized for each targeted audience, instilling emotion and
-  memorability through the use of voice.
+- **1:1 intentional content**: Audio creatives can easily be personalized for each targeted audience, instilling emotion and memorability through the use of voice.
 
 For more information about audio inventory, targeting, reporting, and metrics, see the following:
 

@@ -42,10 +42,10 @@ The following details are displayed for each deal. Columns that show an arrow in
 
 - **Winning eCPM** - The average value of your bids which won impressions on this deal. The average is taken after the auction is won, but before price-reduction.
 - **Cost eCPM** - The average cost of your bids which won impressions on this deal. This average includes price-reduction.
-  
+
   > [!TIP]
   > The difference between **Winning eCPM** and **Cost eCPM** indicates the amount of price reduction occurring and may reveal information about price floors and bid density that can inform bidding strategy.
-  
+
 - **Media Cost** - Your total cost on this deal during the selected time interval. This value will be approximately equal to **Imps Won** multiplied by **Cost eCPM**, divided by 1000.
 - **Deal Settings**
   - **Start/End Date** - The start and end dates for the deal.
@@ -56,13 +56,11 @@ The following details are displayed for each deal. Columns that show an arrow in
 
 ## Filtering and searching for deals
 
-By default, you see all current deals. Use the filters in the left column to filter by deal status or sellers, or use the search boxes to
-search for specific deals or sellers.
+By default, you see all current deals. Use the filters in the left column to filter by deal status or sellers, or use the search boxes to search for specific deals or sellers.
 
 ## Viewing a specific deal's details
 
-Click on a deal to display the **Details** pane, where all of the deal's details are visible. You can use the slider to resize the pane as
-desired.
+Click on a deal to display the **Details** pane, where all of the deal's details are visible. You can use the slider to resize the pane as desired.
 
 ## Reporting on deals
 

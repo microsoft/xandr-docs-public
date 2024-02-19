@@ -42,7 +42,7 @@ You can use the **Inventory & Brand Safety Targeting** section to specify the ty
 
 1. Select a member-level or advertiser-level allowlist or create an allowlist directly from the **Inventory & Brand Safety Targeting** section.
 
-    The inventory that has been included in your allowlists will be bidded on.
+    The inventory that has been included in your allowlists will be bid on.
 
     > [!NOTE]
     >
@@ -53,9 +53,7 @@ You can use the **Inventory & Brand Safety Targeting** section to specify the ty
 
 1. Add brand safety segments.
 
-    Brand safety segments are pre-defined by third-party verification vendors. These segments help apply additional quality controls to
-    the inventory that you are targeting such as exclude drugs. They are used to limit the placements/pages you will be able to target as
-    opposed to other kinds of segments that are used to target specific groups of users.
+    Brand safety segments are pre-defined by third-party verification vendors. These segments help apply additional quality controls to the inventory that you are targeting such as exclude drugs. They are used to limit the placements/pages you will be able to target as opposed to other kinds of segments that are used to target specific groups of users.
 
     1. Click the pencil icon.
     1. Select the desired third-party verification vendor such as comScore or DoubleVerify.

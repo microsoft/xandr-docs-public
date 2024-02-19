@@ -7,96 +7,63 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Create a click tracker 
 
-Click trackers are used to track user clicks on creatives served by
-off-platform (non-Microsoft Advertising) ad servers.
+Click trackers are used to track user clicks on creatives served by off-platform (non-Microsoft Advertising) ad servers.
 
-This document describes how to create and export a click tracker for use
-with creatives served by an external ad server. Most ad servers allow
-you to attach a "piggyback pixel" to a creative when you upload it. The
-click tracker is meant to be uploaded as a piggyback pixel so that when
-that creative is clicked, the click tracker will load as well and let
-Microsoft Advertising know that a click took place. You can
-report on these clicks using the [Clicktrackers Feed](../digital-platform-api/clicktrackers-feed.md).
+This document describes how to create and export a click tracker for use with creatives served by an external ad server. Most ad servers allow you to attach a "piggyback pixel" to a creative when you upload it. The click tracker is meant to be uploaded as a piggyback pixel so that when that creative is clicked, the click tracker will load as well and let Microsoft Advertising know that a click took place. You can report on these clicks using the [Clicktrackers Feed](../digital-platform-api/clicktrackers-feed.md).
 
 ## Step 1. Create a click tracker
 
-Navigate to the **Click Trackers**
-screen (**Creative\>  Click Trackers**) and click
-the **Create Click Tracker** button.
+Navigate to the **Click Trackers** screen (**Creative\>  Click Trackers**) and click the **Create Click Tracker** button.
 
-The **Create new Click Tracker** dialog will appear. In the
-**Click Tracker Details** section, enter
-the name of the click tracker. You can click
-**Advanced Options** if you'd like to
-assign your own custom **Code** and **Landing Page URL** to this click
-tracker.
+The **Create new Click Tracker** dialog will appear. In the **Click Tracker Details** section, enter the name of the click tracker. You can click **Advanced Options** if you'd like to assign your own custom **Code** and **Landing Page URL** to this click tracker.
 
 ## Step 2. Associate with a line item (required)
 
-Click trackers are associated with line items. In the
-**Line Item Association** section, click
-**Edit** to choose the line item you'd
-like to associate this click tracker with. You can also search for a
-line item by name.
-
+Click trackers are associated with line items. In the **Line Item Association** section, click **Edit** to choose the line item you'd like to associate this click tracker with. You can also search for a line item by name.
 
 > [!IMPORTANT]
 > Once a line item is associated with a click tracker, you can report on the clicks coming through that tracker at the line item level. You can separate impression and click trackers by grouping by **Impression Type** in [Member Reporting](network-reporting.md).
 
 ## Step 3. Associate with a publisher (required)
 
-Under **Publisher Settings**, click
-**Edit** and choose the publisher you'd
-like to associate this click tracker with.
+Under **Publisher Settings**, click **Edit** and choose the publisher you'd like to associate this click tracker with.
 
 ## Step 4. Associate with a placement (optional)
 
-You can optionally associate your click tracker with a placement. This
-allows you to do performance reporting on the clicks coming through this
-placement.
+You can optionally associate your click tracker with a placement. This allows you to do performance reporting on the clicks coming through this placement.
 
 ## Step 5. Associate with a payment rule (optional)
 
-Because you are required to associate your click tracker with a
-publisher, you can optionally associate it with a payment rule as well.
+Because you are required to associate your click tracker with a publisher, you can optionally associate it with a payment rule as well.
 
 ## Step 6. Export the click tracker
 
-Finally, export the click tracker by clicking the checkbox to its left, and selecting **More Actions \>  Export Tags** from
-the menu to the right of the Create **Click Tracker button**.
+Finally, export the click tracker by clicking the checkbox to its left, and selecting **More Actions \> Export Tags** from the menu to the right of the **Create Click Tracker** button.
 
-The **Export Trackers** dialog will appear. Under **Basic Options**, you
-can choose to export a JavaScript tag or a secure pixel.
+The **Export Trackers** dialog will appear. Under **Basic Options**, you can choose to export a JavaScript tag or a secure pixel.
 
-Under **Delivery Options**, you can choose to generate the tags now, or
-have them sent to you in an email.
+Under **Delivery Options**, you can choose to generate the tags now, or have them sent to you in an email.
 
-The **Advanced Options** section presents
-several different macros that you can use to populate your click
-tracker. For more information about these macros, see [Creative Macros](creative-macros.md).
+The **Advanced Options** section presents several different macros that you can use to populate your click tracker. For more information about these macros, see [Creative Macros](creative-macros.md).
 
 ## Step 7. Add macro parameters (optional)
 
-The exported click tracker will look something like the following (this
-tracker includes the macros `CACHEBUSTER`, `ANCOST` and `REDIRECT_URL`
-from the **Advanced Options** section of
-the export dialog shown above).
+The exported click tracker will look something like the following (this tracker includes the macros `CACHEBUSTER`, `ANCOST` and `REDIRECT_URL` from the **Advanced Options** section of the export dialog shown above).
 
-``` pre
+``` 
 <!-- Click Tracker - CLIK TRAX -->
 <a href="http://ib.adnxs.com/clktrb?id=21378&cachebuster=[CACHEBUSTER]&ancost=[ANCOST]&redir=[REDIRECT_URL]">YOUR TEXT HERE</a>
 <!-- End of Click Tracker -->
 ```
 
-The table below lists the parameters you can add to the click tracker
-and their definitions.
+The table below lists the parameters you can add to the click tracker and their definitions.
 
 | Parameter | Description |
-|:---|:---|
+|:-|:-|
 | `cachebuster` | Cachebusters ensure that the user's browser does not cache the URL. It should be dynamically generated by the ad server from which the click originates. |
 | `ancost` | Passes Microsoft Advertising the media cost. This should be populated with what you paid for a click in the original system.<br>**Note**: This will override any payment rules. |
 | `redir` | The URL you'd like the creative to redirect to, which must be non-encoded and fully functional. This will supersede any redirect value entered into Invest DSP.<br>**Note**: This parameter must be placed at the end of the query string. If it's anywhere else in the query string, the redirect will not be successful. |
 
 ## Related topics
 
-- [Clicktrackers Feed](../digital-platform-api/clicktrackers-feed.md)
+ [Clicktrackers Feed](../digital-platform-api/clicktrackers-feed.md)

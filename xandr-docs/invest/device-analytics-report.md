@@ -13,7 +13,7 @@ following questions:
 - How many impressions have you seen for specific connection types (i.e., WiFi/Static or Carrier-based)?
 - How do certain types of devices perform relative to others (i.e., tablets vs. phones)?
 - How do certain makes and models of devices perform relative to others (i.e., Android vs. Apple)?
-- How do certain types of connections perform relative to others (i.e., Wifi/Static vs. Carrier-based)
+- How do certain types of connections perform relative to others (i.e., Wifi/Static vs. Carrier-based)?
 
 ## Time frame
 

@@ -17,4 +17,4 @@ Enabling Sales Impact adds a $0.55 CPM fee for served impressions, and you gain 
 
 ## Related topic
 
-- [Create an Augmented Line Item](create-an-augmented-line-item-ali.md)
+[Create an Augmented Line Item](create-an-augmented-line-item-ali.md)

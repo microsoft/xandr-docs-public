@@ -6,16 +6,16 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Traffic quality
 
-Microsoft Advertising makes every effort to search for sellers, publishers, placements, or domains that are seeing illegitimate conversion or click rates. We continue to improve the automated and manual processes of analysis by which we patrol the inventory that runs through our platform. If you have specific questions on how our Traffic Quality team operates, please reach out to your Microsoft Advertising representative.
+Microsoft Advertising makes every effort to search for sellers, publishers, placements, or domains that are seeing illegitimate conversion or click rates. We continue to improve the automated and manual processes of analysis by which we patrol the inventory that runs through our platform. If you have specific questions on how our Traffic Quality team operates, reach out to your Microsoft Advertising representative.
 
 This page describes what to do if you discover suspicious traffic affecting your business and answers some frequently asked questions about traffic quality.
 
 > [!NOTE]
-> A campaign should have at least 10,000 impressions on a given slice of inventory in order for the CTR or conversion rate numbers to be considered significant (For more information on these terms, see [Online Advertising and Ad Tech Glossary](../industry-reference/online-advertising-and-ad-tech-glossary.md)). We define a "slice of inventory" for this purpose as any given combination of publisher, placement, domain, etc.
+> A campaign should have at least 10,000 impressions on a given slice of inventory in order for the CTR or conversion rate numbers to be considered significant. For more information on these terms, see [Online Advertising and Ad Tech Glossary](../industry-reference/online-advertising-and-ad-tech-glossary.md). We define a "slice of inventory" for this purpose as any given combination of publisher, placement, domain, etc.
 
 ## Investigate and report suspicious traffic
 
-If you believe that you are serving on inventory with artificially inflated performance rates, our [support team](https://help.xandr.com/) is happy to investigate. Before submitting a support request, please confirm the issue and narrow down the scope as much as possible by following the steps below.
+If you believe that you are serving on inventory with artificially inflated performance rates, our [support team](https://help.xandr.com/) is happy to investigate. Before submitting a support request, confirm the issue and narrow down the scope as much as possible by following the steps below.
 
 ### Step 1: Provide a high-level description of the issue
 
@@ -23,7 +23,7 @@ What is the issue and what objects does it affect? For example, which advertiser
 
 ### Step 2: Determine the time range of the incident
 
-- Please include when the observed behavior began and if it is still happening.
+- Include when the observed behavior began and if it is still happening.
 - Note that historical changes in performance are far more difficult to diagnose as the behavior can no longer be observed live.
 
 ### Step 3: Run an Analytics Report, breaking results out by various dimensions
@@ -69,7 +69,7 @@ No. We subscribe to the [IAB bots and spiders list](https://www.iab.net/1418/spi
 
 ### Does Microsoft Advertising allow bidders/advertisers to bid on ad requests where the UserAgent is not a known standard browser?
 
-We have a list of banned user agents. However, due to the rapid pace of change for many user agents, we can't guarantee we're blocking all unsuitable agents. If you see a suspect user agent, please let us know.
+We have a list of banned user agents. However, due to the rapid pace of change for many user agents, we can't guarantee we're blocking all unsuitable agents. If you see a suspect user agent, let us know.
 
 ### Does Microsoft Advertising have any detection for 'duplicate' clicks?
 

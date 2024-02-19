@@ -26,15 +26,12 @@ To add or modify the settings, click the edit icon (the pencil) next to **Geogra
 To add a country:
 
 1. From the **Edit Geography Targeting** window, type the name of the country you want to add. As you type, countries matching the entered text appear.
-
 1. Select the country you want to add. The country will appear in the **Selected** list below the search box.
-
 1. Click **Save**.
 
 To remove a country:
 
-1. From the **Edit Geography Targeting** window, click the X to the right of any country in the **Selected** list you want to remove.
-
+1. From the **Edit Geography Targeting** window, click the **X** to the right of any country in the **Selected** list you want to remove.
 1. Click **Save**.
 
 ## Related topics

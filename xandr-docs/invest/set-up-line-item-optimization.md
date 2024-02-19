@@ -77,9 +77,7 @@ The **Optimization** section provides several settings related to optimization, 
 
     Goal priority is used to indicate which goal should be given greater emphasis when bidding.
 
-    - **Delivery** will prioritize impression volume by multiplying bids up to 2x in response to delivery. When you optimize to clicks, it
-      will also allow line items to discover inventory with historical CPCs up to 10x the goal. This might cause margin and performance
-      to be deprioritized, possibly resulting in a negative margin.
+    - **Delivery** will prioritize impression volume by multiplying bids up to 2x in response to delivery. When you optimize to clicks, it will also allow line items to discover inventory with historical CPCs up to 10x the goal. This might cause margin and performance to be deprioritized, possibly resulting in a negative margin.
     - **Performance** will prioritize your advertiser goal over impression volume and profit.
     - **Margin** reduces optimized bids by your desired profit margin. Additional margin can be earned through adaptive pacing if your revenue type is **CPM**, **Dynamic CPM**, **Viewable CPM**, **CPC**, or **CPCV**.
 
@@ -93,8 +91,7 @@ The **Optimization** section provides several settings related to optimization, 
     > [!NOTE]
     > If you have selected CPA optimization, the targeted conversion pixel must be one of the conversion tracking pixels selected here.
 
-1. If you select a conversion pixel, an **Enable IP Attribution** toggle is displayed. When enabled, if the IP address sees an impression, and
-    the same IP address sees a conversion pixel, a conversion is activated.
+1. If you select a conversion pixel, an **Enable IP Attribution** toggle is displayed. When enabled, if the IP address sees an impression, and the same IP address sees a conversion pixel, a conversion is activated.
 
 > [!NOTE]
 > The **IP Attribution** feature is in **Alpha**. It is subject to change without notice and is only available to select clients. Please consult your Account Manager if you'd like to be added to the alpha test.

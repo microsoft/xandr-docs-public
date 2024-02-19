@@ -4,7 +4,7 @@ description: In this article, explore cross-device targeting and measurement, a 
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Cross-Device targeting and measurement
+# Microsoft Invest - Cross-device targeting and measurement
 
 Cross-device targeting and measurement, which can be enabled at the line item level, ties together events or actions for a unique individual that occur on different devices.
 
@@ -40,12 +40,10 @@ Cross-device capability enhances targeting and attribution using information fro
 
 > [!NOTE]
 > Cross-device audience targeting for CTV devices is only available in the United States.
-
 > [!WARNING]
-> Cross-device functionality is
-available to sellers when running line items that purchase inventory from the ad exchange using RTB. It's not available when sellers are running managed campaigns on their own inventory.
+> Cross-device functionality is available to sellers when running line items that purchase inventory from the ad exchange using RTB. It's not available when sellers are running managed campaigns on their own inventory.
 
 ## Related topics
 
-- [Enable Cross-Device Targeting and Measurement for a Line Item](enable-cross-device-targeting-and-measurement-for-a-line-item.md)
-- [Set Up Cross-Device Attribution](set-up-cross-device-attribution.md)
+- [Enable Cross-device Targeting and Measurement for a Line Item](enable-cross-device-targeting-and-measurement-for-a-line-item.md)
+- [Set Up Cross-device Attribution](set-up-cross-device-attribution.md)

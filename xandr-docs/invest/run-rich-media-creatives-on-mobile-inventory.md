@@ -38,7 +38,7 @@ You can run expandables on mobile app inventory using MRAID creatives. These are
 
 Here is an example MRAID creative; note that the line at the top including `"mraid.js"` is required for it to work:
 
-``` pre
+```
 <script src="mraid.js"></script>
 <img src="media/png" style="display: none" onerror="
         (function(img) {

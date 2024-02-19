@@ -13,12 +13,12 @@ describes how to change your member or advertiser's default time zone.
 
 Currently, most time zones for Microsoft Invest objects are set to Eastern U.S. time by default (UTC - 4 hours or UTC - 5 hours, depending on daylight savings). You can change this time zone for your entire network/member, or for individual advertisers.
 
-- You can select a different time zone for any report using the **Timezone** menu (under **Basic**)
+- You can select a different time zone for any report using the **Timezone** menu (under **Basic**).
 - Billing data is always in UTC. However, you can always select the desired time zone when running a report.
 
 ### Member time zones
 
-To change your network member time zone, you must contact Microsoft Advertising support or use the [Member Service API](../digital-platform-api/member-service.md). Please note that changing your member's time zone will **not** change the time zone for existing objects (e.g., line items). However, newly created objects will automatically inherit the member time zone (unless the advertiser has a different time zone specified).
+To change your network member time zone, you must contact Microsoft Advertising support or use the [Member Service API](../digital-platform-api/member-service.md). Note that changing your member's time zone will **not** change the time zone for existing objects (e.g., line items). However, newly created objects will automatically inherit the member time zone (unless the advertiser has a different time zone specified).
 
 To change the time zone for all existing objects in your account, change the time zone of each advertiser. This can be used to propagate a change to the member time zone to all of that advertiser's child objects. For instructions on how to change an advertiser's time zone, see [Create an Advertiser](create-an-advertiser.md).
 

@@ -1,96 +1,59 @@
 ---
 title: Microsoft Invest - Create an Insertion Order
-description: Learn how Insertion orders enable you to better organize, track, and allocate budget to your line items. 
+description: This page is a step-by-step guide to create a new insertion order and it also covers advantages of using it.   
 ms.date: 10/28/2023
 ---
 
 
 # Microsoft Invest - Create an insertion order
 
-Insertion orders enable you to better organize, track, and allocate
-budget to your line items. Associating your line items with insertion
-orders allows you to preserve historical pacing and performance data
-across line items under a single insertion order, and to streamline your
-setup for long-standing advertiser relationships.
+Insertion orders enable you to better organize, track, and allocate budget to your line items. Associating your line items with insertion orders allows you to preserve historical pacing and performance data across line items under a single insertion order, and to streamline your setup for long-standing advertiser relationships.
 
 For an overview of all buy-side objects, see the [Object Hierarchy](object-hierarchy.md).
 
 ## Create a new insertion order
 
-1. Click the **Create New** button from
-    the **Insertion Orders** menu, then
-    select the appropriate advertiser.
+1. Click the **Create New** button from the **Insertion Orders** menu, then select the appropriate advertiser.
 
     You can also search for the advertiser if necessary.
 
-1. Fill out the basic setup, which includes information such as name
-    and budget and billing details. For more information on these
-    settings, see [Basic Setup](#basic-setup).
-    1. Enter a name for the insertion order and optionally enter an
-        external code and/or a billing code.
+1. Fill out the basic setup, which includes information such as name and budget and billing details. For more information on these settings, see [Basic Setup](#basic-setup).
+    1. Enter a name for the insertion order and optionally enter an external code and/or a billing code.
     1. Select a state.
 
        > [!TIP]
        > To avoid spending before you're ready, set the state to "Inactive" until everything related to the buy has been set up and verified.
 
-    1. Optionally, set a currency. If not set, the insertion order will
-        inherit the advertiser's currency. You cannot change the
-        currency after saving the insertion order.
+    1. Optionally, set a currency. If not set, the insertion order will inherit the advertiser's currency. You cannot change the currency after saving the insertion order.
 
        > [!TIP]
-       > As a best practice, align currency to the billing    currency in order to achieve the best possible local currency experience. See [Currency Support](currency-support.md).
+       > As a best practice, align currency to the billing currency in order to achieve the best possible local currency experience. See [Currency Support](currency-support.md).
 
     1. Select a viewability standard.
     1. Select a budget type.
-    1. Optionally, set up billing periods and pacing. For more
-        information, see [Billing Periods](#billing-periods) and [Pacing](#pacing).
-    1. Optionally, enable political advertising on this insertion order
-        and identify whether this advertising takes place on the federal
-        or state or local level, or both. For more information, see [Political Advertising](#political-advertising).
+    1. Optionally, set up billing periods and pacing. For more information, see [Billing Periods](#billing-periods) and [Pacing](#pacing).
+    1. Optionally, enable political advertising on this insertion order and identify whether this advertising takes place on the federal or state or local level, or both. For more information, see [Political Advertising](#political-advertising).
 
        > [!NOTE]
        > This option will only appear if you have already declared that this advertiser conducts political advertising on the [advertiser](create-an-advertiser.md).
 
-1. Set the supply strategy, determining the inventory type and
-    inventory lists for targeting. These settings can be further refined
-    on the line item. For more information, 
-   see [Inventory Lists](inventory-lists-ali-only.md).
-    1. Select the inventory type: **App &
-        Web** (the default), **App
-        Only** (mobile inventory), or
-        **Web Only** (standard websites
-        and websites optimized for browsers on mobile devices).
+1. Set the supply strategy, determining the inventory type and inventory lists for targeting. These settings can be further refined on the line item. For more information, see [Inventory Lists](inventory-lists-ali-only.md).
+    1. Select the inventory type: **App & Web** (the default), **App Only** (mobile inventory), or **Web Only** (standard websites and websites optimized for browsers on mobile devices).
 
-    1. Select an allowlist, or create one directly from the insertion
-        order. This determines the inventory that may be targeted by any
-        line items belonging to this insertion order.
+    1. Select an allowlist, or create one directly from the insertion order. This determines the inventory that may be targeted by any line items belonging to this insertion order.
 
-        Allowlists include the Microsoft Advertising Inventory
-        List, a collection of inventory that
-        Microsoft Advertising has selected based on demonstrated
-        demand interest within our marketplace and vetted via additional
-        quality controls (as well as platform inventory quality
-        filtering).
+        Allowlists include the Microsoft Advertising Inventory List, a collection of inventory that Microsoft Advertising has selected based on demonstrated demand interest within our marketplace and vetted via additional quality controls (as well as platform inventory quality filtering).
 
-    1. Select a blocklist, or create one directly from the insertion
-        order. This determines which inventory will be excluded from
-        targeting by line items belonging to this insertion order. The
-        Microsoft Advertising blocklist is applied by default.
+    1. Select a blocklist, or create one directly from the insertion order. This determines which inventory will be excluded from targeting by line items belonging to this insertion order. The Microsoft Advertising blocklist is applied by default.
 
-1. If this insertion order contains line items for political
-    advertising, fill out the [Political Advertising](#political-advertising) section.
+1. If this insertion order contains line items for political advertising, fill out the [Political Advertising](#political-advertising) section.
 
-1. Optionally, set caps for frequency (how many times a user may see
-    ads for this insertion order) and recency (how much time must elapse
-    before a user may see another ad for this insertion order). For more
-    information, see [Frequency and Recency Caps](frequency-and-recency-caps.md).
+1. Optionally, set caps for frequency (how many times a user may see ads for this insertion order) and recency (how much time must elapse before a user may see another ad for this insertion order). For more information, see [Frequency and Recency Caps](frequency-and-recency-caps.md).
 
     > [!IMPORTANT]
     > Frequency caps can also be set at the advertiser, line item, and creative levels. The most restrictive setting always takes precedence.
 
-1. Optionally, assign reporting labels. The labels (Trafficker, Sales
-    Rep, and Insertion Order Type) will then appear in the
-    [Member Analytics Report](network-analytics-report.md). For more information, see [Reporting Labels](reporting-labels.md).
+1. Optionally, assign reporting labels. The labels (Trafficker, Sales Rep, and Insertion Order Type) will then appear in the [Member Analytics Report](network-analytics-report.md). For more information, see [Reporting Labels](reporting-labels.md).
 
 1. Optionally, associate existing augmented line items with the insertion order.
 
@@ -99,18 +62,11 @@ For an overview of all buy-side objects, see the [Object Hierarchy](object-hiera
 
 1. Optionally, add comments to the insertion order.
 
-1. Click **Save** to save the insertion
-    order. Alternatively, click the arrow next to
-    **Save** and select
-    **Save and Create Line Item** to go
-    directly to creating a line item associated with this insertion
-    order.
+1. Click **Save** to save the insertion order. Alternatively, click the arrow next to **Save** and select **Save and Create Line Item** to go directly to creating a line item associated with this insertion order.
 
 ## Basic setup
 
-In the Basic Setup section, you enter basic information about the
-insertion order, such as its name and its budget and billing details.
-Settings are:
+In the Basic Setup section, you enter basic information about the insertion order, such as its name and its budget and billing details. Settings are:
 
 ### Name
 
@@ -118,8 +74,7 @@ The name for the insertion order. You will later be able to search for and repor
 
 ### External code (optional)
 
-An external code used for reporting. (Microsoft Advertising also
-assigns an internal code automatically.) The code may only contain alphanumeric characters, periods, underscores or dashes. It is not case-sensitive (upper- and lower-case characters are treated the same).
+An external code used for reporting. (Microsoft Advertising also assigns an internal code automatically.) The code may only contain alphanumeric characters, periods underscores or dashes. It is not case-sensitive (upper- and lower-case characters are treated the same).
 
 ## Billing code (optional)
 
@@ -141,21 +96,16 @@ If not set, the insertion order will inherit the advertiser's currency. You cann
 
 ### Viewability standard
 
-The viewability standard used for this insertion order. Defaults to
-**IAB** (Internal Advertising Bureau). For more information, see [Introduction to
-Viewability](introduction-to-viewability.md).
+The viewability standard used for this insertion order. Defaults to **IAB** (Internal Advertising Bureau). For more information, see [Introduction to Viewability](introduction-to-viewability.md).
 
 ### Budget type
 
-Determines whether the budget will be allocated by revenue (money) or by
-impression. All billing periods must have the same budget type.
+Determines whether the budget will be allocated by revenue (money) or by impression. All billing periods must have the same budget type.
 
 Select a budget type:
 
-- **Revenue** - use to associate only
-  revenue-based line items to this insertion order.
-- **Impression** - use to associate only
-  impression-based line items to this insertion order.
+- **Revenue** - use to associate only revenue-based line items to this insertion order.
+- **Impression** - use to associate only impression-based line items to this insertion order.
 - **Flexible** - use to associate both impression-based and revenue-based line items to this insertion order. All budgets must be set on the line item object when using the **Flexible** budget type.
 
 > [!WARNING]
@@ -165,28 +115,15 @@ Select a budget type:
 
 Billing periods allow you to allocate portions of your marketing budget to discrete periods of time. You can associate an external code with a billing period for reporting and invoicing.
 
-You can also set billing periods (or flight dates) on augmented line
-items, or copy the periods you have set on the insertion order to
-augmented line items already associated with the insertion order. Any
-line item flight dates must occur within the dates of the parent
-insertion order's billing periods.
+You can also set billing periods (or flight dates) on augmented line items, or copy the periods you have set on the insertion order to augmented line items already associated with the insertion order. Any line item flight dates must occur within the dates of the parent insertion order's billing periods.
 
 - **Dates**
 
-  You may set both a start and an end date (**Set Dates**) or set a
-  start date without an end date (**No Dates**). If you select
-  **No End Date**, you can only create a
-  single billing period on the insertion order, but you may still
-  specify multiple flights with end dates on the line item. If you
-  select **Set Dates**, you can create up
-  to 52 billing periods.
+  You may set both a start and an end date (**Set Dates**) or set a start date without an end date (**No Dates**). If you select **No End Date**, you can only create a single billing period on the insertion order, but you may still specify multiple flights with end dates on the line item. If you select **Set Dates**, you can create up to 52 billing periods.
 
 - **Budgets**
 
-  You may set a budget for each billing period (**Set Budgets**) or not
-  specify a budget (**Unlimited Budget**). If you do not specify a
-  budget at the insertion order level, you can still specify budgets on
-  the line item.
+  You may set a budget for each billing period (**Set Budgets**) or not specify a budget (**Unlimited Budget**). If you do not specify a budget at the insertion order level, you can still specify budgets on the line item.
 
   > [!IMPORTANT]
   > - You cannot set a start date in the past.
@@ -194,17 +131,11 @@ insertion order's billing periods.
 
 ### Pacing
 
-Pacing determines how quickly budget is spent over the lifetime of the
-insertion order.
+Pacing determines how quickly budget is spent over the lifetime of the insertion order.
 
 Options are:
 
-- **Base daily allocation on average of remaining billing period
-  budget**- Automatically divide your remaining budget evenly across the
-  remaining days in the billing period. Use the slider to adjust the
-  percentage of the daily average allocation as necessary. This option
-  is only available if the insertion order has both a billing period end
-  date and a budget.
+- **Base daily allocation on average of remaining billing period budget**- Automatically divide your remaining budget evenly across the remaining days in the billing period. Use the slider to adjust the percentage of the daily average allocation as necessary. This option is only available if the insertion order has both a billing period end date and a budget.
 
 - **Set pacing on the line item**
 
@@ -223,23 +154,14 @@ Options are:
 
 ## Political organization details
 
-This section contains the details of the person or organization that is
-purchasing ads on Microsoft Advertising. For example, a
-candidate, an agency, or a political consultant.
+This section contains the details of the person or organization that is purchasing ads on Microsoft Advertising. For example, a candidate, an agency, or a political consultant.
 
-The required fields must be filled out for any state or local political
-advertising that will or could serve in California,
-Illinois, Maryland, Nevada, New Jersey, New York, Virginia, or
-Washington, or for political advertising at the federal level
-that will or could serve in Washington State. If
-your political ad will not be served in any of those states, you may
-enter "N/A”. For more information on political
-advertising, see [Political Advertising](political-advertising.md).
+The required fields must be filled out for any state or local political advertising that will or could serve in California, Illinois, Maryland, Nevada, New Jersey, New York, Virginia, or Washington, or for political advertising at the federal level that will or could serve in Washington State. If your political ad will not be served in any of those states, you may enter "N/A”. For more information on political advertising, see [Political Advertising](political-advertising.md).
 
 We reserve the right to implement additional screening at any time.
 
 | Field Name | Description |
-|---|---|
+|--|--|
 | **Address** | Address of the person, group, organization, or business that is advertising. |
 | **City** | City of the person, group, organization, or business that is advertising. |
 | **Country** | Country of the person, group, organization, or business that is advertising. |
@@ -254,8 +176,7 @@ We reserve the right to implement additional screening at any time.
 | **U.S. FEC ID** | Optional. ID number assigned by the [U.S. Federal Election Committee](https://www.fec.gov/). |
 | **ZIP or Postal Code** | ZIP or postal code of the person, group, organization, or business that is advertising. |
 
-You must check **I certify that all information
-provided herein is accurate and up to date, and acknowledge and agree that** Microsoft Advertising is **relying on the accuracy of this information**. before you can save the insertion order.
+You must check **I certify that all information provided herein is accurate and up to date, and acknowledge and agree that** Microsoft Advertising **is relying on the accuracy of this information**. before you can save the insertion order.
 
 ## Related topics
 

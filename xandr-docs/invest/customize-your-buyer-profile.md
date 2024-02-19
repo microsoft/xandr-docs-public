@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Customize Your Buyer Profile
-description: In this article, explore the comprehensive, step-by-step instructions guiding you through the process of customizing your buyer profile. 
+description: In this article, explore the comprehensive, step-by-step instructions guiding you through the process of customizing your buyer profile.
 ms.date: 10/28/2023
 ---
 

@@ -11,7 +11,7 @@ You can manually test click tracking if strange creative behavior or UI issues c
 **Developer tools:** Familiarize yourself with Chrome developer tools (More Tools &gt; Developer tools) which will show you elements of the page and network calls.
 
 > [!NOTE]
-> Ensure the macros are in place by taking a quick look at your code to confirm that `${CLICK_URL}` or `${CLICK_URL_ENC}` appears.
+> Ensure that the macros are in place by taking a quick look at your code to confirm that `${CLICK_URL}` or `${CLICK_URL_ENC}` appears.
 
 1. Preview the creative by accessing the [https://creative-preview-an.com/cached/creative/insert creative id here](https://creative-preview-an.com/cached/creative/insert%20creative%20id%20here) webpage.
 
@@ -19,7 +19,7 @@ You can manually test click tracking if strange creative behavior or UI issues c
 
 1. Then, **right click &gt; inspect &gt; network tab**.
 1. Click on the settings (gear icon) in the top right of dev tools.
-1. Enable the "Auto-open DevTools for popups", under **Preferences &gt; Global**.
+1. Enable the **Auto-open DevTools for popups**, under **Preferences &gt; Global**.
 1. Click on the Creative.
 1. The landing page will open and the dev tools should automatically open in the new tab.
 1. Search for "click" in the **Network** tab.

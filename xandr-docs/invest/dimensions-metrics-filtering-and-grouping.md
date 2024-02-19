@@ -9,9 +9,7 @@ ms.date: 10/28/2023
 This page outlines how to design your reports so that you can:
 
 - Reduce the size of the data set by removing data you don't care about.
-
 - Increase the relevance of the data you do get.
-
 - Get your results more quickly; requesting smaller data sets often increases reporting performance.
 
 Every report returns a collection of data. In this document, this collection of data is referred to as a data set; these data sets are described in terms of dimensions and metrics.
@@ -21,15 +19,14 @@ Similarly, when you are configuring a report, you can choose to filter the data 
 The key recommendations of this document are as follows:
 
 - Filter out as much data as possible - smaller data is faster data.
-
 - Choose as few dimensions as possible - the report automatically groups by all selected dimensions. The more dimensions you group by, the larger the data set becomes.
 
 | Term | Definition |
 |:---|:---|
 | **Dimensions** | Dimensions are things the data set describes, such as advertisers, publishers, line items, or domains. In other words, dimensions are what the data set is about. |
 | **Metrics** | Metrics are numbers that measure the performance of the dimensions you've selected. Examples include:<br> - How many impressions came through this publisher?<br> - What is the click-through rate across this campaign's creatives? |
-| **Filtering** | Filtering removes dimensions you don't care about. This reduces the size of the data set. For example, you might want to see only those impressions that occurred on weekends in a certain region of France.<br> **Tip:** Filter out as much irrelevant data as possible – smaller data is faster data. |
-| **Grouping** | Reports automatically group by all selected dimensions. Grouping causes the dimensions to be output in a specific order. This can be useful for understanding relationships between dimensions. For example, you can see how the different line items under an advertiser are performing.<br> Since the report automatically applies grouping to dimensions, selecting many dimensions can generate a very large data set. For every additional dimension you select, the data set becomes larger.<br> **Tip:** Select as few dimensions as possible. The more dimensions you select, the larger the data set becomes. |
+| **Filtering** | Filtering removes dimensions you don't care about. This reduces the size of the data set. For example, you might want to see only those impressions that occurred on weekends in a certain region of France.<br><br> **Tip:** Filter out as much irrelevant data as possible – smaller data is faster data. |
+| **Grouping** | Reports automatically group by all selected dimensions. Grouping causes the dimensions to be output in a specific order. This can be useful for understanding relationships between dimensions. For example, you can see how the different line items under an advertiser are performing.<br> Since the report automatically applies grouping to dimensions, selecting many dimensions can generate a very large data set. For every additional dimension you select, the data set becomes larger.<br><br> **Tip:** Select as few dimensions as possible. The more dimensions you select, the larger the data set becomes. |
 
 ## Visualizing the process
 
@@ -68,7 +65,7 @@ All of the examples below will use the same underlying "database", which contain
 | 17 | H | Hap's Go-Kart Track and Petting Zoo | 1108 | 87 |
 | 18 | H | Hap's Go-Kart Track and Petting Zoo | 1872 | 116 |
 
-You can also [download](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Microsoft Advertising/tiny-db.csv) the example in CSV format.
+You can also [download](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Xandr/tiny-db.csv) the example in CSV format.
 
 ## Filtering examples
 

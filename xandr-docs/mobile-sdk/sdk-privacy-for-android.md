@@ -7,22 +7,21 @@ ms.date : 10/28/2023
 
 # SDK privacy for Android
 
-Xandr's mobile SDKs include client support for Global Privacy Platform (GPP), the [General Data Protection Regulations](https://gdpr-info.eu/) (GDPR), and the [California Consumer Protection Act](https://oag.ca.gov/privacy/ccpa) (CCPA).
+Xandr's mobile SDKs include client support for Global Privacy Platform (GPP), the [General Data Protection Regulations](https://gdpr-info.eu/) (GDPR), and the [California Consumer Protection Act](https://oag.ca.gov/privacy/ccpa) (CCPA) and [Digital Services Act](https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/europe-fit-digital-age/digital-services-act_en) (DSA).
 
-GDPR provides regulations for the processing, movement, and protection of personal data within the European Union. CCPA creates new consumer rights relating to the access to, deletion of, and sharing of personal information that is collected by organizations. The Global Privacy Platform (GPP) enables advertisers, publishers and technology vendors  to adapt to regulatory demands across markets.
+The Global Privacy Platform (GPP) enables advertisers, publishers and technology vendors to adapt to regulatory demands across markets. GDPR provides regulations for the processing, movement, and protection of personal data within the European Union. CCPA creates new consumer rights relating to the access to, deletion of, and sharing of personal information that is collected by organizations. The DSA is a key legislative measure by the European Union aimed at enhancing transparency in digital advertising, with a core objective of promoting transparency, accountability, and user protection in online services.
 
 > [!WARNING]
 > This resource should not be construed as legal advice and Xandr makes no guarantees about compliance with any law or regulation. Please note that because every company and its collection, use, and storage of personal data is different, you should also seek independent legal advice relating to obligations under European regulations, including the GDPR and the existing ePrivacy Directive. Only a lawyer can provide you with legal advice specifically tailored to your situation. Nothing in this guide is intended to provide you with, or should be used as a substitute for, legal advice tailored to your business.
 >
-> Note our Service Policies (for Buying, Selling, and Data Providers) include privacy-specific obligations of which you should be aware.
 > [!NOTE]
 > Publishers are responsible for providing notice, transparency, and choice and for collecting consent from their users in accordance with the [Framework policies](https://iabeurope.eu/transparency-consent-framework/), either using their own Consent Management Provider or working with a vendor.
->
 > - [Register your own CMP](https://register.consensu.org/CMP)
 > - [List of registered CMPs](https://iabeurope.eu/cmp-list/)
->
-> >All vendor SDKs (including mediation SDKs) are responsible for looking up approved vendor and consent information on their own; Xandr does not pass this information to these SDKs.
-
+> [!NOTE]
+> - Note our Service Policies (for Buying, Selling, and Data Providers) include privacy-specific obligations of which you should be aware.
+> - All vendor SDKs (including mediation SDKs) are responsible for looking up approved vendor and consent information on their own; Xandr does not pass this information to these SDKs.
+> 
 ## General Data Protection Regulations (GDPR)
 
 In order for our clients to meet their transparency, notice and choice/consent requirements under the GDPR and the existing ePrivacy Directive, Xandr supports the [IAB Europe Transparency & Consent Framework](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/TCFv2/IAB%20Tech%20Lab%20-%20CMP%20API%20v2.md#tcdata) (the "Framework").
@@ -124,3 +123,163 @@ Xandr SDK will then read the values from [SharedPreferences](https://developer.a
 |:---|:---|:---|
 | `IABGPP_HDR_GppString` | string | Full consent string in its encoded form. e.g `"DBACNYA~CPXxRfAPXxRfAAfKABENB-CgAAAAAAAAAAYgAAAAAAAA~1YNN"` |
 | `IABGPP_GppSID` | string | Section ID(s) considered to be in force. Multiple IDs are separated by underscore, e.g. `“2_3”` |
+
+## Digital Services Act (DSA)
+
+The Digital Services Act (DSA) oversees online intermediaries and platforms, where its primary objective is to curb illegal and harmful activities on the internet and to mitigate the dissemination of disinformation. The DSA is a key legislative measure by the European Union aimed at enhancing transparency in digital advertising, with a core objective of promoting transparency, accountability, and user protection in online services.
+
+### Set DSA Values in the SDK:
+**SDK will then pass these values to the ad call.**
+```
+/**
+ * Set the DSA information requirement.
+ * 0 = Not required
+ * 1 = Supported, bid responses with or without DSA object will be accepted
+ * 2 = Required, bid responses without DSA object will not be accepted
+ * 3 = Required, bid responses without DSA object will not be accepted, Publisher is an Online Platform
+ *
+ * @param dsaRequired The DSA information requirement value to be set.
+ */
+ANDSASettings.setDSARequired(1);
+  
+/**
+ * Set if the publisher renders the DSA transparency info.
+ * 0 = Publisher can't render
+ * 1 = Publisher could render depending on adrender
+ * 2 = Publisher will render
+ *
+ * @param pubRender The value indicating whether the publisher renders DSA transparency info.
+ */
+ANDSASettings.setPubRender(0);
+  
+/**
+* Set the transparency list using the provided list of ANDSATransparencyInfo.
+*
+* @param domain The domain of the entity that applied user parameters.
+* @param params The list of user parameters used for the platform or sell-side.
+*/
+ArrayList<ANDSATransparencyInfo> transparencyList = new ArrayList<>();
+transparencyList.add(new ANDSATransparencyInfo("example.com", new ArrayList<>(Arrays.asList(1, 2, 3))));
+transparencyList.add(new ANDSATransparencyInfo("example.net", new ArrayList<>(Arrays.asList(4, 5, 6))));
+  
+ANDSASettings.setTransparencyList(transparencyList);
+```
+**Retrieve the DSA values set in SDK:**
+```
+ANDSASettings.getDSARequired()
+ANDSASettings.getPubRender()
+ANDSASettings.getTransparencyList()
+```
+
+### Retrieve DSA Response values:
+**Code Sample Java**
+```
+// Request Banner Ad
+bav = new BannerAdView(this);
+bav.setPlacementID("1"); // Placement ID
+bav.setAdSize(300, 250); // Size
+bav.setAdListener(this) // AdListener
+// On Ad Loaded
+@Override
+public void onAdLoaded(AdView bav) {
+log("Banner Ad Loaded");
+
+ANDSAResponseInfo dsaResponseInfo = bav.getAdResponseInfo().getDSAResponseInfo();
+
+/**
+* Retrieve on whose behalf the ad is displayed.
+*/
+String behalf = dsaResponseInfo.getBehalf();
+
+/**
+* Retrieve who paid for the ad.
+*/
+String paid = dsaResponseInfo.getPaid();
+
+/**
+* Retrieve the transparency user parameters info
+*/
+ArrayList<ANDSATransparencyInfo> transparencyList = dsaResponseInfo.getTransparencyList();
+
+for(int i = 0; i <= transparencyList.size(); i++) {
+ANDSATransparencyInfo tranparencyInfo = transparencyList.get(i);
+String domain = tranparencyInfo.getDomain();
+ArrayList<Integer> params = tranparencyInfo.getDSAParams();
+}
+
+/**
+* Retrieve indicating if the buyer/advertiser will render DSA transparency info.
+* 0 = buyer/advertiser will not render
+* 1 = buyer/advertiser will render
+*/
+int adRender = dsaResponseInfo.getAdRender();
+}
+```
+**Code Sample Kotlin**
+```
+// Request Banner Ad
+banner = BannerAdView(this)
+banner.placementID = "1" // PlacementID
+banner.setAdSize(300, 250) // Size
+banner.adListener = this // AdListener
+banner.loadAd()
+// On Ad Loaded
+override fun onAdLoaded(ad: AdView?) {
+log("Banner Ad Loaded")
+  
+val dsaResponseInfo: ANDSAResponseInfo = bav.adResponseInfo.dsaResponseInfo
+  
+/**
+ * Retrieve on whose behalf the ad is displayed.
+ */
+val behalf: String? = dsaResponseInfo.behalf
+  
+/**
+ * Retrieve who paid for the ad.
+ */
+val paid: String? = dsaResponseInfo.paid
+  
+/**
+ * Retrieve the transparency user parameters info
+ */
+val transparencyList: ArrayList<ANDSATransparencyInfo> = dsaResponseInfo.transparencyList
+  
+for (i in 0 until transparencyList.size) {
+    val transparencyInfo: ANDSATransparencyInfo = transparencyList[i]
+    val domain: String = transparencyInfo.domain
+    val params: ArrayList<Int> = transparencyInfo.getDSAParams()
+}
+}
+/**
+ * Retrieve indicating if the buyer/advertiser will render DSA transparency info.
+ * 0 = buyer/advertiser will not render
+ * 1 = buyer/advertiser will render
+ */
+val adRender: Int = dsaResponseInfo.adRender
+```
+> [!NOTE]
+> ANDSAResponseInfo can be retrieved using Video Ad instance, Interstitial Ad View instance and Native Ad Response also apart from Banner Ad View.
+
+```
+Java
+//Video Ad
+ANDSAResponseInfo dsaResponseInfo = videoAd.getAdResponseInfo().getDSAResponseInfo()
+//Native Ad
+ANDSAResponseInfo dsaResponseInfo = nativeAdResponse.getAdResponseInfo().getDSAResponseInfo()
+//Insterstitial Ad View
+ANDSAResponseInfo dsaResponseInfo = interstitial.getAdResponseInfo().getDSAResponseInfo()
+```
+
+```
+Kotlin
+//Video Ad
+val dsaResponseInfo = videoAd.adResponseInfo.dsaResponseInfo
+//Native Ad
+val dsaResponseInfo = nativeAdResponse.adResponseInfo.dsaResponseInfo
+//Insterstitial Ad View
+val dsaResponseInfo = interstitial.adResponseInfo.dsaResponseInfo
+```
+
+
+
+

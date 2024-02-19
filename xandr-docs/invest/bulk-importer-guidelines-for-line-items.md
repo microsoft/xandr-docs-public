@@ -9,8 +9,7 @@ ms.date: 10/28/2023
 Please adhere to these general guidelines:
 
 - Please do not rename the Line Items sheet within the bulk importer template.
-- When adding flight details to the following columns per line item, leave the cells that are on the same row as the other line item
-  details empty:
+- When adding flight details to the following columns per line item, leave the cells that are on the same row as the other line item details empty:
   - **Flight Id**
   - **Flight Start Date**
   - **Flight End Date**
@@ -18,8 +17,7 @@ Please adhere to these general guidelines:
   - **Lifetime Budget Imps**
   - **Pacing, Pacing Percent**
   - **Flight Creatives**
-- If adding multiple flights for one line item, be sure to enter all the details for each flight, such as start dates and end dates, on a
-  separate row.
+- If adding multiple flights for one line item, be sure to enter all the details for each flight, such as start dates and end dates, on a separate row.
 
 ## Temporary ID information
 
@@ -63,7 +61,7 @@ Please adhere to these general guidelines:
 | Daypart Friday | Specifies a comma-separated list of hour ranges to target throughout Friday. | Numeric range consisting of any whole number between 0 and 23 | No | 7-16,20-23 |
 | Daypart Saturday | Specifies a comma-separated list of hour ranges to target throughout Saturday. | Numeric range consisting of any whole number between 0 and 23 | No | 7-16,20-23 |
 | Daypart Sunday | Specifies a comma-separated list of hour ranges to target throughout Sunday. | Numeric range consisting of any whole number between 0 and 23 | No | 7-16,20-23 |
-| Daily Pacing Allocation | Sets the pace for how quickly the budget should be spent in one day. |  - evenly <br> - asap | Yes | evenly |
+| Daily Pacing Allocation | Sets the pace for how quickly the budget should be spent in one day. | - evenly <br> - asap | Yes | evenly |
 
 ## Optimization
 
@@ -107,10 +105,10 @@ Please adhere to these general guidelines:
 
 | Column Name | Description | Potential Values | Mandatory | Example |
 |---|---|---|---|---|
-| Countries | Specifies whether or not to target a particular country. See the [Country list](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Microsoft Advertising/Bulk-Importer-Lists.xlsx) to look up the appropriate country codes. | Action (include or exclude)-Code1,Code2,Code3 | Yes | include-US,FR |
-| Regions | Specifies whether or not to target a particular region. See the [Region list](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Microsoft Advertising/Bulk-Importer-Lists.xlsx) to look up the appropriate region identifiers. | Action (include or exclude)-Id1,Id2,Id3 | No | exclude-1080,1081 |
-| Cities | Specifies whether or not to target a particular city. See the [City list](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Microsoft Advertising/Bulk-Importer-Lists.xlsx) to look up the appropriate City identifiers. | Action (include or exclude)-Id1,Id2,Id3 | No | include-68778,68779,68780 |
-| Metro Codes | Specifies whether or not to target a particular metro code. See the [Metro Code list](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Microsoft Advertising/Bulk-Importer-Lists.xlsx) to look up the appropriate metro codes. | Action (include or exclude)-Id1,Id2,Id3 | No | include-500,501,502 |
+| Countries | Specifies whether or not to target a particular country. See the [Country list](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Xandr/Bulk-Importer-Lists.xlsx) to look up the appropriate country codes. | Action (include or exclude)-Code1,Code2,Code3 | Yes | include-US,FR |
+| Regions | Specifies whether or not to target a particular region. See the [Region list](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Xandr/Bulk-Importer-Lists.xlsx) to look up the appropriate region identifiers. | Action (include or exclude)-Id1,Id2,Id3 | No | exclude-1080,1081 |
+| Cities | Specifies whether or not to target a particular city. See the [City list](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Xandr/Bulk-Importer-Lists.xlsx) to look up the appropriate City identifiers. | Action (include or exclude)-Id1,Id2,Id3 | No | include-68778,68779,68780 |
+| Metro Codes | Specifies whether or not to target a particular metro code. See the [Metro Code list](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Xandr/Bulk-Importer-Lists.xlsx) to look up the appropriate metro codes. | Action (include or exclude)-Id1,Id2,Id3 | No | include-500,501,502 |
 | Postal Codes | Specifies whether or not to target specific postal codes. | Postal Code 1,Postal Code 2,Postal Code 3,Postal Code 4 | No | 120563,120564 |
 | Postal Code Lists | Specifies whether or not to target postal codes that have been grouped together in a list. | Alphanumeric value | No | My_Postal_Code_List_1,My_Postal_Code_List_2 |
 | Cross Device | Specifies the identifier of the cross device graph that is being targeted. | - null (no cross device) <br> - 3 (Tapad graph) <br> - 4 (Microsoft Advertising graph) | No | 3 |
@@ -138,14 +136,14 @@ Please adhere to these general guidelines:
 | Viewability Threshold | Percentage of how likely an impression is to be viewable. <br><br> **Note**: Custom viewability thresholds are allowed. | Numeric value between 0 and 100 | No | - For standard IAB thresholds: 12 <br> - For custom viewability thresholds: custom-12 |
 | Video Completion Threshold | Percentage of how likely a video impression is to be viewed in its entirety. | Numeric value between 0 and 100 | No | 18 |
 | Device Types | Specifies a comma-separated list of device types that will be targeted. | - pc <br> - phone <br> - tablet <br> - tv <br> - stb <br> - gameconsole | No | pc,phone |
-| Playback Methods | Specifies a comma-separated list of playback method identifiers: (1: playback-method-auto-play-sound-on),(2: playback-method-auto-play-sound-off),(3: playback-method-click-to-play),(4: playback-method-mouse-over),(5: playback-method-auto-play-sound-unknown). | 1,2,3,4, or 5 | No | 1,3,5 |
+| Playback Methods | Specifies a comma-separated list of playback method identifiers: (1: playback-method-auto-play-sound-on), (2: playback-method-auto-play-sound-off), (3: playback-method-click-to-play), (4: playback-method-mouse-over), (5: playback-method-auto-play-sound-unknown). | 1,2,3,4, or 5 | No | 1,3,5 |
 | Video Targets Allow Unknown Playback Method | Determines whether to allow unknown playback methods. | - TRUE <br> - FALSE | Yes | FALSE |
 | Video Targets Allow Unknown Context | Determines whether to allow unknown contexts for video targeting. | - TRUE <br> - FALSE | Yes | FALSE |
 | Player Sizes | Specifies the player size for video targeting in which 1= Small, 2= Medium, and 3= Large. | 1, 2, and/or 3 (small, medium, or large) | No | 1, 2 |
 | Video Targets Allow Unknown Player Size | Determines whether to allow unknown player sizes for video targeting. | - TRUE <br> - FALSE | Yes | TRUE |
 | Video Target Contexts | Specifies a comma separated list of video target contexts. | 1, 2, 3, and/or 4 (pre-roll, mid-roll, post-roll, outstream) | No | 1, 2 |
-| Browsers | Specifies a comma-separated list of browser identifiers that will be included or excluded. See the [Browser list](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Microsoft Advertising/Bulk-Importer-Lists.xlsx) to look up the appropriate browser identifiers. | Action (include or exclude)-Id1,Id2,Id3 | No | include-210,401,201 |
-| Languages | Specifies a comma-separated list of language identifiers that will be included or excluded. See the [Language list](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Microsoft Advertising/Bulk-Importer-Lists.xlsx) to look up the appropriate language identifiers. | Action (include, exclude)-Id1,Id2,Id3 | No | exclude-129,140,120 |
+| Browsers | Specifies a comma-separated list of browser identifiers that will be included or excluded. See the [Browser list](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Xandr/Bulk-Importer-Lists.xlsx) to look up the appropriate browser identifiers. | Action (include or exclude)-Id1,Id2,Id3 | No | include-210,401,201 |
+| Languages | Specifies a comma-separated list of language identifiers that will be included or excluded. See the [Language list](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Xandr/Bulk-Importer-Lists.xlsx) to look up the appropriate language identifiers. | Action (include, exclude)-Id1,Id2,Id3 | No | exclude-129,140,120 |
 | User Group Bucket | Specifies a comma-separated list of user groups that will be targeted using A/B testing. | Numeric value ranges between 0 and 99 | No | 0-18,25-32,58-63 |
 | User Groups Include Cookieless Users | Determines whether to target users who don't have cookies enabled. | - TRUE <br> - FALSE | No | FALSE |
 

@@ -24,8 +24,7 @@ There are two line item settings you can use to influence how the algorithm shou
 Pacing percentage determines how the budget is distributed over the course of the flight. Pacing percent values may be 50-150%.
 
 - **Pacing set to 100%**: The flight budget is distributed evenly over every day in the flight.
-- **Pacing set higher than 100%**: The flight budget allocates more money to daily budgets at the beginning of the flight than at the end.
-For example, if a trader prefers to spend a larger portion of the budget earlier in the flight, to ensure full delivery, the trader may choose to pace at 120%.
+- **Pacing set higher than 100%**: The flight budget allocates more money to daily budgets at the beginning of the flight than at the end. For example, if a trader prefers to spend a larger portion of the budget earlier in the flight, to ensure full delivery, the trader may choose to pace at 120%.
 - **Pacing set lower than 100%**: The flight budget allocates more money to daily budgets at the end of the flight than at the beginning.
 
 ### Underspend catch-up

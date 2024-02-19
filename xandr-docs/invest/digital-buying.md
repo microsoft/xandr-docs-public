@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Digital Buying
-description: In this article, learn about digital buying, explore the processes, and learn the details of the documents that a digital buyer is set to receive.
+description: In this article, learn about digital buying, the processes, and the details of the documents that a digital buyer is set to receive.
 ms.date: 10/28/2023
 ---
 

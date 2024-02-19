@@ -15,7 +15,7 @@ We utilize our own automated creative scanning system, Sherlock, to detect malic
 
 ## Malware policy
 
-We have developed an [Part of Service Policies](../policies-regulations/index.yml) to ensure that our clients are taking all the necessary steps to keep the Microsoft Advertising platform safe.
+We have developed a [Service Policy](../policies-regulations/index.yml) to ensure that our clients are taking all the necessary steps to keep the Microsoft Advertising platform safe.
 
 ## Contacting our team
 
@@ -33,8 +33,7 @@ We build our blocklists from a variety of sources both internal and external. Ou
 - Domain owner and their main business website, business address, and any other details
 - Direct contact for the owner of the domain (email is fine)
 
-Once we have this information, we will reach out to the owner to determine if the domain can be removed from our blocklist. As a matter
-of policy, we blocklist as soon as we see a potential problem and then complete the investigation. This is to ensure that both your publisher relationships and reputation are protected!
+Once we have this information, we will reach out to the owner to determine if the domain can be removed from our blocklist. As a matter of policy, we blocklist as soon as we see a potential problem and then complete the investigation. This is to ensure that both your publisher relationships and reputation are protected!
 
 ## Related topic
 

@@ -20,9 +20,7 @@ A number of other key features help Microsoft Advertising optimize your ad buyin
 
 ## Single-point access to supply
 
-Campaigns trafficked into the Microsoft Advertising platform can bid on media from various [Exchanges and Aggregators](exchanges-and-aggregators.md),
-including major ad networks. You can view detailed site information for each of the available inventory sources and can target
-particular site lists.
+Campaigns trafficked into the Microsoft Advertising platform can bid on media from various [Exchanges and Aggregators](exchanges-and-aggregators.md), including major ad networks. You can view detailed site information for each of the available inventory sources and can target particular site lists.
 
 ## Inventory quality
 
@@ -30,8 +28,7 @@ One of the biggest risks of buying digital media is controlling the quality of t
 
 ## Fly-by-wire trafficking
 
-Because changes you make to a line item, a creative, or any other element of the interface are effective within minutes, and because our
-reporting feedback is usually available within a couple of hours, you can run a test campaign, get performance feedback, tweak the campaign and run it again, all within a few hours. For more detailed information, see [Availability of Reporting Data](availability-of-reporting-data.md)
+Because changes you make to a line item, a creative, or any other element of the interface are effective within minutes, and because our reporting feedback is usually available within a couple of hours, you can run a test campaign, get performance feedback, tweak the campaign and run it again, all within a few hours. For more detailed information, see [Availability of Reporting Data](availability-of-reporting-data.md)
 
 ## Seats and payment
 

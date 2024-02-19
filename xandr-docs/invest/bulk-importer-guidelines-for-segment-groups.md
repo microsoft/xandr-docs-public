@@ -6,7 +6,8 @@ ms.date: 10/28/2023
 
 # Bulk importer guidelines for segment groups
 
-Please do not rename the Segment Groups sheet within the bulk importer template.
+> [!WARNING]
+> Please do not rename the Segment Groups sheet within the bulk importer template.
 
 ## Temporary ID information
 

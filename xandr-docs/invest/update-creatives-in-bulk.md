@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Update Creatives in bulk
-description: Learn to update a variety of settings for individual or multiple creatives from the Creative Manager.
+description: This page provides steps to update individual or multiple creatives from the Creative Manager screen. 
 ms.date: 10/28/2023
 ---
 
@@ -9,16 +9,13 @@ ms.date: 10/28/2023
 
 You can update a variety of settings for individual or multiple creatives from the **Creative Manager**.
 
-<div id="ID-000042e2__steps_rby_tnp_ylb" >
-
 1. Go to **Creative \> Creatives**.
 1. Select an advertiser.
-1. Select the checkboxes for the appropriate
-    creatives that need to be updated.
+1. Select the checkboxes for the appropriate creatives that need to be updated.
 1. Click the **Bulk Edit** menu from the blue toolbar that displays and select any one of these settings:
 
-  | Setting | Description |
-|---|---|
+| Setting | Description |
+|--|--|
 | **Name** | Instead of being forced to delete creatives due to a name change, you can easily rename them. |
 | **Activate** | When you activate deactivated creatives, they typically start serving within 10 - 15 seconds with a maximum wait time of approximately 60 seconds. |
 | **Deactivate** | When you deactivate creatives, they typically stop serving within 10 - 15 seconds with a maximum wait time of approximately 60 seconds. |

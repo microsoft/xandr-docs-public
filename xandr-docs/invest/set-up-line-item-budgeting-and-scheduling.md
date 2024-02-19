@@ -89,8 +89,7 @@ To set up line item budgeting and scheduling:
 
     1. Set the flight pacing.
 
-        Pacing determines how much of your flight budget is spent per day. You can set the pacing by using a flight pacing percentage
-        or a daily budget. For more information on flight pacing, see [Lifetime Pacing](lifetime-pacing.md) and [Adaptive Pacing](adaptive-pacing.md).
+        Pacing determines how much of your flight budget is spent per day. You can set the pacing by using a flight pacing percentage or a daily budget. For more information on flight pacing, see [Lifetime Pacing](lifetime-pacing.md) and [Adaptive Pacing](adaptive-pacing.md).
 
         | Flight Pacing Option | Description |
         |---|---|

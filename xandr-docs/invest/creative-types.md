@@ -1,15 +1,13 @@
 ---
 title: Microsoft Invest - Creative Types
-description: Learn to host a variety of creative types or traffic them through third-party ad servers.
+description: Learn about the different creative types that are supported with Microsoft Advertising. 
 ms.date: 10/28/2023
 ---
 
 
-# Microsoft Invest - creative types 
+# Microsoft Invest - Creative types 
 
-You can host a variety of creative types with
-Microsoft Advertising or traffic them through third-party ad
-servers.
+You can host a variety of creative types with Microsoft Advertising or traffic them through third-party ad servers.
 
 We support the following creative types:
 

@@ -45,7 +45,7 @@ The install tracking vendor should provide you with a URL template that they wil
 
 Here's an example of what a click URL from an install tracking vendor could look like:
 
-``` pre
+```
 https://wetrackinstalls.com/serve?action=click&publisher_id=[publisher_id]&site_id=[site_id]&offer_id=[offer_id] &odin=${DEVICE_ODIN}&open_udid=${DEVICE_OPENUDID}&ios_ifa=${DEVICE_APPLE_IDA}&ref_id=${SSP_DATA} 
 ```
 
@@ -63,7 +63,7 @@ Set the landing page of the creative (also known as the click URL) to the URL pr
 
 When a creative with the install tracking click URL is clicked, the install tracking vendor will make a "post-back" call to Microsoft Advertising that will report a successful conversion. Here's an example of a post-back URL:
 
-``` pre
+```
 https://sspx-router.adnxs.com/sspx?id=[appnexus conversion pixel ID]&sspdata=[click id passed in ${SSP_DATA} on click]
 ```
 
@@ -78,7 +78,7 @@ When your creative's landing page URL is set up correctly, the install tracking 
 
 See the diagram below for a visualization of how this process works. The numbers in the diagram correspond to each of the bulleted points below.
 
-1. The user clicks on the creative. The landing page for the creative is the URL provided by the app install tracker as described in    **Step 2** above.
+1. The user clicks on the creative. The landing page for the creative is the URL provided by the app install tracker as described in **Step 2** above.
 
 1. Microsoft Advertising logs the click and fills in the `${SSP_DATA{style="line-height: 1.6;"}}` token, as well as any device identifiers (such as `${DEVICE_APPLE_IDA{style="line-height: 1.6;"}}`) and other [Creative Macros](creative-macros.md) before redirecting to the install tracking vendor's server. The install tracking vendor also logs the click, along with the now filled-in contents of the `${SSP_DATA{style="line-height: 1.6;"}}` token and device IDs. The install tracker then redirects the user to the app download page.
 

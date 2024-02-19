@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Adaptive pacing
 
-Manually managing the correct pace for a line item - determining how much to spend per hour and day, and implementing that with budgets - is error-prone, and can take an enormous amount of a trader's time. The first problem, determining how much to spend per day, is addressed by [lifetime pacing](lifetime-pacing.md). The second problem, determining how much to spend per hour and per minute within a day, is addressed by Adaptive Pacing.
+Manually managing the correct pace for a line item - determining how much to spend per hour and day, and implementing that with budgets - is error-prone, and can take an enormous amount of a trader's time. The first problem, determining how much to spend per day, is addressed by [Lifetime Pacing](lifetime-pacing.md). The second problem, determining how much to spend per hour and per minute within a day, is addressed by Adaptive Pacing.
 
 ## How adaptive pacing works
 
@@ -20,8 +20,7 @@ Adaptive pacing benefits line items in a few ways:
 
 - It helps performance by spending less per impression.
 - If you're getting paid on a fixed event basis, it helps line items retain more margin by spending less per impression.
-- If you're a direct advertiser clients or you book on a Cost Plus basis, it helps advertiser dollars go farther. If the line item spends
-  less per impression, those dollars can be used to buy more impressions.
+- If you're a direct advertiser clients or you book on a Cost Plus basis, it helps advertiser dollars go farther. If the line item spends less per impression, those dollars can be used to buy more impressions.
 
 Additionally, although adaptive pacing was developed to distribute spend, it is also used as a signal in many of our different optimization applications, such as [Discovery](discovery.md).
 

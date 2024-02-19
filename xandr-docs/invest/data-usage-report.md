@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Data Usage Report
-description: In this article, learn about data usage, data usage costs, and the campaigns in which the data was utilized to target users.
+description: In this article, learn about data usage report, its time frame, intervals, dimensions, metrics, and steps to run your report.
 ms.date: 10/28/2023
 ---
 
@@ -52,8 +52,7 @@ Intervals determine how your data is grouped together into rows in the report re
 - Hourly: Data is grouped into rows by the hour.
 - Daily: Data is grouped into rows by the day.
 - Monthly: Data is grouped into rows by the month.
-- Cumulative: Data is grouped together in one figure, covering the
-  entire selected time range.
+- Cumulative: Data is grouped together in one figure, covering the entire selected time range.
 
 For more information about how quickly report data is processed, see [Availability of Reporting Data](availability-of-reporting-data.md).
 
@@ -106,24 +105,19 @@ Follow these steps to run your report.
     > [!WARNING]
     > The more dimensions you group by, the larger the data set that is returned. Larger data sets can take substantially longer to process. Be sure to group using only the dimensions you need.
 
-1. Choose a delivery option. Once you've selected your filters and grouped by your chosen dimensions, you need to choose a delivery
-    method. Available delivery methods include:
-    - **Run now, show results in screen**: For smaller amounts of data, you may want to view the report as soon as possible in your
-      browser. You can download the report in XLSX, CSV, Excel/TSV and JSON format. However, there is a limit of 100,000 rows per report
-      when downloading as XLSX and Excel file.
-    - **Run in background, notify me when results are ready to view**: A popup notification will let you know when the report is ready to
-      view or download.
+1. Choose a delivery option. Once you've selected your filters and grouped by your chosen dimensions, you need to choose a delivery method. Available delivery methods include:
+    - **Run now, show results in screen**: For smaller amounts of data, you may want to view the report as soon as possible in your browser. You can download the report in XLSX, CSV, Excel/TSV and JSON format. However, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file.
+    - **Run in background, notify me when results are ready to view**: A popup notification will let you know when the report is ready to view or download.
 
       > [!TIP]
       > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service (The limit here is 10 million rows).
 
     - **Export, send results via email**: Run the report in the background and email the results to one or more email addresses.
-    - **Save as report template**: Save your selected report settings so that you can run this report again in the future. You can name
-      this template using the text entry field under **Name this report** (its checkbox is auto-selected when you choose this option). A saved report can be rerun from the **Your Reports** screen.
+    - **Save as report template**: Save your selected report settings so that you can run this report again in the future. You can name this template using the text entry field under **Name this report** (its checkbox is auto-selected when you choose this option). A saved report can be rerun from the **Your Reports** screen.
     - **Add to scheduled reports**: Run this report automatically at specified times and have it sent to one or more email addresses.
     - **Name this report**: Give this report with its current settings a name for future reference.
 1. Click **Run report** to send your report request.
 
 ## Related topic
 
-- [Member Reporting](network-reporting.md)
+[Member Reporting](network-reporting.md)

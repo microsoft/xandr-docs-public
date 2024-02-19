@@ -9,21 +9,20 @@ ms.date: 10/28/2023
 To access device type targeting options, expand the **Targeting** section of the line item setup. By default, your line items will target the following physical device types, which correspond to `device_type_targets` in the [Profile Object](../digital-platform-api/profile-service.md) associated to the line item, as well as to the Device Type dimension in [Device Analytics Reporting](device-analytics-report.md).
 
 - **Desktops**
-  - corresponds to `pc` in the profile api service
-  - corresponds to `desktops and laptops` in device analytics reporting
+  - corresponds to `pc` in the profile API service.
+  - corresponds to `desktops and laptops` in device analytics reporting.
 - **Tablets**
-  - corresponds to `tablet` in the profile api service
-  - corresponds to `tablets` in device analytics reporting
+  - corresponds to `tablet` in the profile API service.
+  - corresponds to `tablets` in device analytics reporting.
 - **Mobile**
-  - corresponds to `phone` in the profile api service
-  - corresponds to `mobile phones` in device analytics reporting
+  - corresponds to `phone` in the profile API service.
+  - corresponds to `mobile phones` in device analytics reporting.
 - **CTV**
-  - corresponds to `tv/gameconsole/stb` in the profile api service
-  - corresponds to `tv/gameconsole/set top box` in device analytics
-    reporting
+  - corresponds to `tv/gameconsole/stb` in the profile API service.
+  - corresponds to `tv/gameconsole/set top box` in device analytics reporting.
 - **Connected Audio** - only available if ad type is **Audio**
-  - corresponds to `mediaplayer` in the profile api service
-  - corresponds to `media players` in device analytics reporting
+  - corresponds to `mediaplayer` in the profile API service.
+  - corresponds to `media players` in device analytics reporting.
 
   See [Create an Augmented Line Item](create-an-augmented-line-item-ali.md) to restrict the device types you are targeting and uncheck any device types that you wish to exclude.
 

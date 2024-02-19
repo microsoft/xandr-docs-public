@@ -25,21 +25,20 @@ Place the URL in a third party VAST validator (such as [JWPlayer](https://demo.j
 
 If the content is returned successfully, you'll see the ad impression fire in the events log, and your ad will play in the validator's player.
 
-:::image type="content" source="media/successful-vast-validation.png" alt-text="Screenshot of a successful VAST validator.":::
+:::image type="content" source="media/successful-vast-validation.png" alt-text="Screenshot of the validator's player with the ad event log.":::
 
-If no ad is returned or any errors are seen, reach out to your third party hosting service to confirm that the URL is indeed live, and
+If no ad is returned or any errors are seen, reach out to your third-party hosting service to confirm that the URL is indeed live, and
 whether there is any logic, or targeting on their end that may prevent the content from being returned in certain geos, on certain IP
 addresses, or certain domains.
 
-:::image type="content" source="media/vast-validation-error.png" alt-text="Screenshot of a VAST validator error.":::
+:::image type="content" source="media/vast-validation-error.png" alt-text="Screenshot of the validator's player with the ad event error log.":::
 
 > [!NOTE]
 > Since these are in-stream video creatives, they must be delivered before, between or after another video, therefore each VAST validator will have its own video content that will play regardless of whether an ad has served. Each validator will have an ad events log that will confirm whether your ad has been delivered, or if there were any errors.
 
 ## Correct URL but creative is not displaying/displaying incorrectly in Microsoft Invest
 
-If an ad is returned by the URL in a validator, but the creative is not displaying in Microsoft Invest or is failing audit for
-improper display, ensure that your third-party hosting service is not blocking the **adnxs.com** or **adnxs.net** domains, the **US/NY** geo, or any of the range of Microsoft Advertising IP Addresses.
+If an ad is returned by the URL in a validator, but the creative is not displaying in Microsoft Invest or is failing audit for improper display, ensure that your third-party hosting service is not blocking the **adnxs.com** or **adnxs.net** domains, the **US/NY** geo, or any of the range of Microsoft Advertising IP Addresses.
 
 ## What does the error message "Heavy ad intervention" mean?
 

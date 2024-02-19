@@ -1,26 +1,18 @@
 ---
-title : Metrics for Nielsen Digital Ad Ratings
-description : Learn about an exclusive set of metrics for tracking a line item's audience demographic targeting success within Microsoft Invest introduced by Nielsen Digital Ad Ratings (DAR). 
+title: Metrics for Nielsen Digital Ad Ratings
+description: Learn how by using Nielsen Digital Ad Ratings (DAR) you can track a series of metrics across reports and in your line item's Analytics tab.  
 ms.date: 10/28/2023
 ---
 
 
 # Metrics for Nielsen digital ad ratings 
 
-Nielsen Digital Ad Ratings (DAR) introduces an exclusive set of metrics
-for tracking a line item's audience demographic targeting success within
-Microsoft Invest. If you've enabled Nielsen DAR for
-your line item, you'll be able to track a series of metrics across
-reports and in your line item's
-**Analytics** tab.
+Nielsen Digital Ad Ratings (DAR) introduces an exclusive set of metrics for tracking a line item's audience demographic targeting success within Microsoft Invest. If you've enabled Nielsen DAR for your line item, you'll be able to track a series of metrics across reports and in your line item's **Analytics** tab.
 
-
-
-The following Nielsen DAR metrics will help you track and improve your
-line item's audience demographic targeting:
+The following Nielsen DAR metrics will help you track and improve your line item's audience demographic targeting:
 
 | Reporting Metric | Description |
-|---|---|
+|--|--|
 | Total Impressions | The total number of impressions your line item has made |
 | Audience Share (%) | The percentage share of the total audience a line item has reached within a certain demographic group. This measurement is rounded to two decimal places.<br> - Audience Share (%) = Row Level Audience Count ÷ Campaign Total Audience Count × 100 |
 | Audience Reach (%) | The percentage of the population reached within a given demographic<br> - Audience Reach (%) = Unique Audience ÷ Demographic Population × 100 |

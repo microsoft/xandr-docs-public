@@ -12,6 +12,8 @@ ms.date: 10/28/2023
 
 | Release | Description | Date |
 |---|---|---|
+| [0.61.2](https://acdn.adnxs.com/ast/static/0.61.2/ast.js) | - Add support for DSA Transparency <br> - Remove tracking iframe and pixels when refresh is called <br> - Improve error handling when encountering a HTTP error | 14 February 2024 |
+| [0.60.1](https://acdn.adnxs.com/ast/static/0.60.1/ast.js) | - Integrate telemetry logging in AST <br> - Add content language field in `setPageOpts` <br> - Improve logic on specific null checks | 15 December 2023 |
 | [0.59.0](https://acdn.adnxs.com/ast/static/0.59.0/ast.js) | - Add MSFT `setPageOpts` field <br>- Add `isExclusive` and `isRoadblock` fields to AST event object | 08 November 2023 |
 | [0.58.0](https://acdn.adnxs.com/ast/static/0.58.0/ast.js) | - Include `invCode` with `apntag.getTag` function <br> - Update `clearRequest` to choose certain tags <br> - Add support for GPP 1.1 <br> - Add MSFT bid fields to AST event object | Sep 20 2023 |
 | [0.57.0](https://acdn.adnxs.com/ast/static/0.57.0/ast.js) | - Add native renderer information for AST events <br> - Check value of `gdprApplies` before checking `tcString` <br> - Catch exception when calling `getTag()` in certain cases <br> - Update `attachClickTrackers()` to be compatible inside web component environment <br> - Update AST `usersync` domain and logic | Jul 14 2023 |

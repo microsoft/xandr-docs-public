@@ -18,8 +18,7 @@ This opens the **Edit [User]** dialog.
 
 In the **User Details** tab, make any desired changes to the user's basic information. Review and make any updates to the user's name and contact information, and the reporting decimal and numerical format. You can also decide if you want to give the user the ability to install apps - check the **Admin User** checkbox if you want to enable this option.
 
-To make the user's experience as intuitive as possible, select the decimal and number formats that are conventional in the user's
-geographical location.
+To make the user's experience as intuitive as possible, select the decimal and number formats that are conventional in the user's geographical location.
 
 > [!NOTE]
 > You cannot change a user's login username. To assign a new username you must create a new user.

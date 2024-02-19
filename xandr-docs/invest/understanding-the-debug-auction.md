@@ -1,51 +1,47 @@
 ---
 title: Microsoft Invest - Understanding the Debug Auction
-description: Learn how to run a debug auction and how to read the output you receive.
+description: Learn how to run a debug auction and how to read the output you receive. This page also runs you through steps to interpret the debug auction log and the possible debug auction result. 
 ms.date: 10/28/2023
 ---
 
 
 # Microsoft Invest - Understanding the debug auction
 
-To understand what is happening behind the scenes during an auction, you
-can run a debug auction. This page explains how to run a debug auction
-and how to read the output you receive.
+To understand what is happening behind the scenes during an auction, you can run a debug auction. This page explains how to run a debug auction and how to read the output you receive.
 
 ## Running a debug auction
 
-A debug auction simulates a real auction without actually logging or serving anything and shows the results in your browser. The log shows the impression bus communicating with all active bidders (including Microsoft Advertising) and then shows the member-specific
-decisioning.
+A debug auction simulates a real auction without actually logging or serving anything and shows the results in your browser. The log shows the impression bus communicating with all active bidders (including Microsoft Advertising) and then shows the member-specific decisioning.
 
 A debug auction can be run using the following calls:
 
 > [!NOTE]
 > All debug auction and browser cookie override calls must use secure https protocols. Requests made using http will not generate valid results.
 
-**Production/Beta Environment:**
+**Production/Beta environment:**
 
-``` pre
+``` 
 https://ib.adnxs.com/tt?id=[TAG_ID]&size=[WIDTH]x[HEIGHT]&debug_member=[BUYER_MEMBER_ID]&dongle=[PASSWORD] 
 ```
 
-**Client-Testing Environment:**
+**Client-Testing environment:**
 
-``` pre
+``` 
 https://ib-test.adnxs.com/tt?id=[TAG_ID]&size=[WIDTH]x[HEIGHT]&debug_member=[BUYER_MEMBER_ID]&dongle=[PASSWORD] 
 ```
 
-**Video Creatives:**
+**Video creatives:**
 
-Make sure to use a **ptv** tag instead of a **tt** tag while running a
-debug auction for video creatives.
+Make sure to use a **ptv** tag instead of a **tt** tag while running a debug auction for video creatives.
 
-``` pre
+``` 
 https://ib.adnxs.com/ptv?id=[TAG_ID]&debug_member=[BUYER_MEMBER_ID]&dongle=[PASSWORD] 
 ```
 
 ## Parameter syntax
 
 | Parameter | Definition |
-|---|---|
+|--|--|
 | id | The ID of the placement tag you will run a debug auction for |
 | size | Size of the placement to run, used for sizeless tags |
 | dongle | The member's unique debug password |
@@ -54,7 +50,7 @@ https://ib.adnxs.com/ptv?id=[TAG_ID]&debug_member=[BUYER_MEMBER_ID]&dongle=[PASS
 ## Optional parameters
 
 | Parameter | Description |
-|---|---|
+|--|--|
 | bidder | The bidder ID. Microsoft Advertising Invest uses bidder ID 2 in production |
 | referrer | Simulate the referring URL from which the ad call is coming |
 | prefer_learn | Set to "true" to force a prefer learn auction |
@@ -66,8 +62,8 @@ https://ib.adnxs.com/ptv?id=[TAG_ID]&debug_member=[BUYER_MEMBER_ID]&dongle=[PASS
 
 ## Optional geo code parameters
 
-| Parameter |Description  |
-|---|---|
+| Parameter | Description |
+|--|--|
 | country | Overrides a cookie's current country geo code with whatever is passed as a value. For example: "country=US". See [here](https://dev.maxmind.com/geoip/release-notes/2022#geoip-legacy-databases-have-been-retired) for a complete list of country geo codes. |
 | region | Overrides a cookie's current region (state) geo code with whatever is passed as a value. For example: "region=NY". See [here](https://www.maxmind.com/download/geoip/misc/region_codes.csv) for a complete list of region (state) geo codes. |
 | city | Overrides a cookie's current city geo code with whatever is passed as a value. For example: "city=New York". See [here](https://developers.google.com/google-ads/api/data/geotargets) for a complete list of city geo codes. |
@@ -79,7 +75,7 @@ https://ib.adnxs.com/ptv?id=[TAG_ID]&debug_member=[BUYER_MEMBER_ID]&dongle=[PASS
 
 ## Example
 
-``` pre
+``` 
 https://ib.adnxs.com/tt?id=3457&debug_member=999&dongle=MyDongle 
 https://ib.adnxs.com/tt?id=3457&size=728x90&dongle=MyPassWord&debug_member=999&referrer=https://www.appnexus.com 
 ```
@@ -87,9 +83,8 @@ https://ib.adnxs.com/tt?id=3457&size=728x90&dongle=MyPassWord&debug_member=999&r
 ## Important points
 
 > [!NOTE]
-> Placement tag IDs can be found in the UI for your direct inventory, but not for real-time inventory. If you do not have a test publisher and placement to use, contact Microsoft Advertising support at [https://help.xandr.com](https://help.xandr.com)for assistance.
-
-> [!NOTE]
+> Placement tag IDs can be found in the UI for your direct inventory, but not for real-time inventory. If you do not have a test publisher and placement to use, contact Microsoft Advertising support at [Customer Care](https://help.xandr.com)for assistance.
+>
 > If an item is out of budget, inactive, or in pacing sleep (i.e. it is spending evenly across the day), it will not appear in the log. Generally, refreshing will cause paced objects to appear (because they will have come out of sleep). But heavily paced objects (e.g. spend $5 evenly with no targeting so there's a lot of sleeping between bids) may not appear in the final list of bidding campaigns.
 
 ## Override Microsoft Advertising browser cookie
@@ -100,44 +95,33 @@ When debugging a particular ad campaign, it may help that your browser's cookie 
 >If using the cookie viewer, you must include your member ID and dongle. This ensures you will only see the segments that belong to your member. You can click on the **Debug** button on any placement and to see your member ID and dongle in the querystring.
 
 | Action | URL |
-|---|---|
-| View Microsoft Advertising cookie | [https://ib.adnxs.com/cookie?member_id=MEMBER_ID&dongle=DONGLE](https://ib.adnxs.com/cookie?member_id=MEMBER_ID&dongle=DONGLE) where MEMBER_ID is your member ID, DONGLE is your member-specific dongle |
-| Add/remove yourself to/from segments | https://ib.adnxs.com/seg?add=SEGMENT_ID [https://ib.adnxs.com/seg?remove=SEGMENT_ID](https://ib.adnxs.com/seg?remove=SEGMENT_ID) where SEGMENT_ID is the ID of the targeted segment  |
-| Override cookie geography data | [https://ib.adnxs.com/cookie?member_id=MEMBER_ID&dongle=DONGLE&country=COUNTRY&region=REGION&dma=DMA&city=CITY&postal=POSTALwhere](https://ib.adnxs.com/cookie?member_id=MEMBER_ID&dongle=DONGLE&country=COUNTRY&region=REGION&dma=DMA&city=CITY&postal=POSTALwhere)Lwhere MEMBER_ID is your member ID, DONGLE is your member-specific dongle, COUNTRY is the targeted country code, REGION is the targeted region code, DMA is the targeted numeric metropolitan code, CITY is the targeted city name, and POSTAL is the targeted postal code (Note that to set city geo, you must set country, region in addition.) |
+|--|--|
+| View Microsoft Advertising cookie | [View Cookie](https://ib.adnxs.com/cookie?member_id=MEMBER_ID&dongle=DONGLE) where MEMBER_ID is your member ID, DONGLE is your member-specific dongle |
+| Add/remove yourself to/from segments | [Add to Segment](https://ib.adnxs.com/seg?add=SEGMENT_ID) <br> [Remove from Segment](https://ib.adnxs.com/seg?remove=SEGMENT_ID) <br>where SEGMENT_ID is the ID of the targeted segment |
+| Override cookie geography data | [Override cookie geography data](https://ib.adnxs.com/cookie?member_id=MEMBER_ID&dongle=DONGLE&country=COUNTRY&region=REGION&dma=DMA&city=CITY&postal=POSTALwhere)Lwhere MEMBER_ID is your member ID, DONGLE is your member-specific dongle, COUNTRY is the targeted country code, REGION is the targeted region code, DMA is the targeted numeric metropolitan code, CITY is the targeted city name, and POSTAL is the targeted postal code (Note that to set city geo, you must set country, region in addition.) |
 
 ## Interpreting the debug auction log
 
-- This is a sample debug log run by an Ad Network for a placement that
-  it exposed for reselling.
-- This particular debug log was run in a deprecated sandbox environment,
-  so URLs are slightly different than they would be in the production
-  server.
+- This is a sample debug log run by an Ad Network for a placement that it exposed for reselling.
+- This particular debug log was run in a deprecated sandbox environment, so URLs are slightly different than they would be in the production server.
 - All IDs have been changed to random numbers.
 
-:::image type="content" source="./media/debug-auction-geo.png" alt-text="Screenshot of Debug Auction Geo.":::
+:::image type="content" source="./media/debug-auction-geo.png" alt-text="Screenshot of Debug Auction Log.":::
 
 :::image type="content" source="./media/debug-auction-payment-rules.png" alt-text="Screenshot of Debug Auction Payment Rules.":::
 
-Microsoft's bidder gives more detailed debug text,
-beginning with "Debug text from bidder 2" (live). This output includes
-information such as the bidder version, the region info., and user info.
-Excerpts from a live debug auction are below:
+Microsoft's bidder gives more detailed debug text, beginning with "Debug text from bidder 2" (live). This output includes information such as the bidder version, the region info., and user info. Excerpts from a live debug auction are below:
 
-:::image type="content" source="./media/debug-auction-geo-a.png" alt-text="Screenshot of Debug Auction Geo Parb B.":::
+:::image type="content" source="./media/debug-auction-geo-a.png" alt-text="Screenshot of live debug auction which includes information such as bidder version, the region info., and user info.":::
 
-This debug info. continues, including information such as the segments
-that the user is in and other relevant objects.
+This debug info. continues, including information such as the segments that the user is in and other relevant objects.
 
 :::image type="content" source="./media/debug-auction-segments.png" alt-text="Screenshot of Debug Auction Segments.":::
 
 > [!TIP]
 > This section highlights the decisions made by the bidder.
 
-The debug auction then prints a table with the headings of Advertiser,
-Line Item, Campaign (if applicable), Detail, and Result. This is the
-most important part of the debug auction output as it will tell you why
-you may not be bidding on impressions for this tag; or if they are, how
-much they would bid.
+The debug auction then prints a table with the headings of Advertiser, Line Item, Campaign (if applicable), Detail, and Result. This is the most important part of the debug auction output as it will tell you why you may not be bidding on impressions for this tag; or if they are, how much they would bid.
 
 After all ad campaigns are evaluated, you will see the summary table.
 
@@ -147,26 +131,21 @@ You will also see the performance summary.
 
 :::image type="content" source="./media/performance-summary.png" alt-text="Screenshot of Performance Summary.":::
 
+You will receive an output of all bids and final bids. RTB buyers will see the value of the bid, the brand ID, and the learn type.
 
-You will receive an output of all bids and final bids. RTB buyers will
-see the value of the bid, the brand ID, and the learn type.
-
-:::image type="content" source="./media/final-bids.png" alt-text="creenshot of Final Bids.":::
-
+:::image type="content" source="./media/final-bids.png" alt-text="Screenshot of Final Bids.":::
 
 > [!TIP]
 > This debug log will also compare the result of Microsoft Advertising's bidder with the result any other bidders participating in the auction, looking for the winner and the second highest price (since Microsoft Advertising uses Second Price Auction).
 
-Finally, we show the highest net bid, and the member and creative that
-would have served had this not been a debug auction.
+Finally, we show the highest net bid, and the member and creative that would have served had this not been a debug auction.
 
 :::image type="content" source="./media/highest-net-bid.png" alt-text="Screenshot of Highest Net Bids.":::
-
 
 ## Possible debug auction results
 
 | Result | Explanation | Impression Type in Reporting |
-|---|---|---|
+|--|--|--|
 | Exclusive | The placement is not enabled for reselling, and the auction was won by a managed bid | Kept |
 | Reserve Not Met | The placement is enabled for reselling, and the auction was won by a managed bid | Kept |
 | Sold | The placement is enabled for reselling, and the auction was won by a third-party bid | Sold |
@@ -176,7 +155,7 @@ would have served had this not been a debug auction.
 ## Quick reference: debug auction data
 
 | Debug Data | Visible to Sellers and in Direct Auctions | Visible to RTB Buyers |
-|---|---|---|
+|--|--|--|
 | Ad profile | Yes | No |
 | Ask price | Yes | No |
 | Auction ID | Yes | Yes |
@@ -260,10 +239,9 @@ In addition to debug auctions, which simulate real auctions without logging or s
 
 Like a debug auction, in a test auction Microsoft Advertising does not transact the impression; no one will be paid or billed, nothing is logged, and no ads will be served. In addition, in a test auction, the actual content of the ad being sent is ignored; even if a banned creative is sent, a test auction will not result in an IP being blocked.
 
-To run a test auction, add the `test=1` parameter to an ad call; for
-example:
+To run a test auction, add the `test=1` parameter to an ad call; for example:
 
-``` pre
+``` 
 https://ib.adnxs.com/tt?id=1234&test=1 
 ```
 

@@ -56,12 +56,12 @@ Yes, you can use our `/mob or /ttj` ad tags to make mobile ad calls from your de
 ### Can I enable my in-app inventory for direct buying?
 
 Yes. To enable serving ads into a mobile app, we use a placement tag that's been modified to pass additional mobile-specific data. We're
-developing mobile SDKs (Currently undergoing a closed alpha. Please inquire with your Microsoft Advertising representative if you wish to join the alpha.) which will make this even easier for app publishers. For more information, see the [Mobile SDKs](../mobile-sdk/xandr-mobile-sdks.md).
+developing mobile SDKs (Currently undergoing a closed alpha. Inquire with your Microsoft Advertising representative if you wish to join the alpha.) which will make this even easier for app publishers. For more information, see the [Mobile SDKs](../mobile-sdk/xandr-mobile-sdks.md).
 
 ### Does conversion tracking work in mobile browsers?
 
 In mobile browsers, post-click conversion tracking works just like it does in web browsers. Post-view conversions, however, can only be
-tracked across non-Safari mobile browsers. If you use the "Optimize to a predicted CPA goal" strategy in a line item or campaign, please do so only for post-click scenarios.
+tracked across non-Safari mobile browsers. If you use the "Optimize to a predicted CPA goal" strategy in a line item or campaign, do so only for post-click scenarios.
 
 ### Does conversion tracking work in mobile apps?
 

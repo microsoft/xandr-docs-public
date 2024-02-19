@@ -1,12 +1,12 @@
 ---
 title: Microsoft Invest - CTV Video Buying Best Practices
-description: In this article, discover the essential insights about the best practices for purchasing ad inventory on connected TV (CTV). 
+description: In this article, explore key insights on the best practices for buying an ad inventory on connected TV (CTV) devices.
 ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - CTV video buying best practices
 
-This topic describes some key best practices for buying ad inventory on connected TV (CTV) devices. CTV can include a TV that is connected to the Internet via an external device (for example a Blu-Ray player or a gaming console), or a Smart Television.
+This topic describes some key best practices for buying an ad inventory on connected TV (CTV) devices. CTV can include a TV that is connected to the Internet via an external device (for example a Blu-Ray player or a gaming console), or a Smart Television.
 
 Currently, CTV inventory is primarily purchased through deal campaigns. You'll need to contact your account manager to set up a deal. However, you should be familiar with the following topics to ensure a smooth rollout.
 
@@ -20,7 +20,7 @@ You can target specific OTT-capable or connected TV (CTV) devices such as Roku a
 
 ## Segment targeting
 
-To implement behavioral segment targeting that includes CTV devices, you should also implement cross-device targeting, which leverages device IDs, user IDs, and household IPs to identify and precisely target users as they engage with content on multiple devices. For more information, see [Cross-Device Targeting and Measurement](cross-device-targeting-and-measurement.md). Please reach out to your account contact for additional information and guidance.
+To implement behavioral segment targeting that includes CTV devices, you should also implement cross-device targeting, which leverages device IDs, user IDs, and household IPs to identify and precisely target users as they engage with content on multiple devices. For more information, see [Cross-device Targeting and Measurement](cross-device-targeting-and-measurement.md). Reach out to your account contact for additional information and guidance.
 
 > [!WARNING]
 > Cross-device functionality is available to sellers when running line items that purchase inventory from the ad exchange using RTB. It's not available when sellers are running managed campaigns on their own inventory.

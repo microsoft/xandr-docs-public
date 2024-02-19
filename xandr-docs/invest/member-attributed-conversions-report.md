@@ -68,7 +68,7 @@ This report can retrieve data for the last 33 days.
 | Post Click/Post View Conversion | Yes | Whether the conversion was a post-click (PC) or post-view (PV) conversion. |
 | Post Click/Post View Revenue | No | Whether the revenue generated was from a post-click (PC) or post-view (PV) conversion. |
 | Order ID | No | The order ID or SKU optionally passed in the conversion pixel. If your advertiser is passing in an order ID when the conversion pixel fires, you could send a full list of order IDs back to them to help with conversion attribution. For more information, see [Conversion Pixels Advanced](conversion-pixels-advanced.md). |
-| User ID | No | The Microsoft Advertising user ID for the user who converted. If you have a mapping of your own user IDs to Microsoft Advertising IDs, you might be able to do some analysis around which segments are converting, or you could count your unique and repeat converters.<br> **Warning:** Post GDPR implementation, this field is deprecated on May 21, 2018. Subject to requirements under the GDPR, this field will continue to be available if you receive log level data via [Cloud Export](../log-level-data/log-level-data-cloud-export.md). For details, see [Part of Service Policies](../policies-regulations/index.yml). |
+| User ID | No | The Microsoft Advertising user ID for the user who converted. If you have a mapping of your own user IDs to Microsoft Advertising IDs, you might be able to do some analysis around which segments are converting, or you could count your unique and repeat converters.<br><br>**Warning:** Post GDPR implementation, this field is deprecated on May 21, 2018. Subject to requirements under the GDPR, this field will continue to be available if you receive log level data via [Cloud Export](../log-level-data/log-level-data-cloud-export.md). For details, see [Part of Service Policies](../policies-regulations/index.yml). |
 | Custom Data | No | The data from custom parameters received by the Universal Pixel. This data is associated with the auction to which a conversion was attributed. |
 | Event Name | No | The name of the Universal Pixel event. This field captures both standard and custom events. |
 | Event Value | No | The monetary value, such as a cart or purchase total, associated with an event logged by a Universal Pixel. This value corresponds to the Event Value standard parameter in the Universal Pixel UI. |
@@ -125,15 +125,13 @@ Follow these steps to run your report.
 
 1. Choose a delivery option. Once you've selected your filters and grouped by your chosen dimensions, you need to choose a delivery method. Available delivery methods include:
     - **Run now, show results in screen**: For smaller amounts of data, you may want to view the report as soon as possible in your browser. You can download the report in XLSX, CSV, Excel/TSV and JSON format. However, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file.
-    - **Run in background, notify me when results are ready to view**: A popup notification will let you know when the report is ready to
-      view or download.
+    - **Run in background, notify me when results are ready to view**: A popup notification will let you know when the report is ready to view or download.
 
       > [!TIP]
       > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service (The limit here is 10 million rows).
 
     - **Export, send results via email**: Run the report in the background and email the results to one or more email addresses.
-    - **Save as report template**: Save your selected report settings so that you can run this report again in the future. You can name
-      this template using the text entry field under **Name this report** (its checkbox is auto-selected when you choose this option). A saved report can be rerun from the **Your Reports** screen.
+    - **Save as report template**: Save your selected report settings so that you can run this report again in the future. You can name this template using the text entry field under **Name this report** (its checkbox is auto-selected when you choose this option). A saved report can be rerun from the **Your Reports** screen.
     - **Add to scheduled reports**: Run this report automatically at specified times and have it sent to one or more email addresses.
     - **Name this report**: Give this report with its current settings a name for future reference.
 1. Click **Run report** to send your report request.

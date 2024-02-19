@@ -12,8 +12,7 @@ For general questions about mobile buying, please visit the [Mobile Buying FAQ](
 
 ## Create separate mobile apps and mobile web campaigns
 
-As described on the [Technical Limitations of Mobile Buying](technical-limitations-of-mobile-buying.md), mobile apps cannot be platform-reviewed. However, you might still want to serve on platform-reviewed mobile web inventory. In this case, you should
-separate campaigns targeting apps from those targeting mobile web inventory.
+As described on the [Technical Limitations of Mobile Buying](technical-limitations-of-mobile-buying.md), mobile apps cannot be platform-reviewed. However, you might still want to serve on platform-reviewed mobile web inventory. In this case, you should separate campaigns targeting apps from those targeting mobile web inventory.
 
 > [!NOTE]
 > It is up to the sellers to declare the supply type for their placements. In other words, this is not a part of the Microsoft Advertising platform review process. Some sellers may not describe their placements' supply type accurately. For this reason, it is best practice to set mobile web campaigns to include both mobile web and web supply.
@@ -41,7 +40,7 @@ To avoid limiting your reach and missing out on cheap but valuable inventory, yo
 1. Once you have gathered enough data, create a [Creative Frequency and Recency Report](creative-frequency-and-recency-report.md).
 1. Based on the data, decide which campaigns should have frequency capping to optimize performance, and which campaigns should run without frequency capping to extend reach.
 
-## Related Topics
+## Related topics
 
 - [Welcome to Mobile](welcome-to-mobile.md)
 - [Technical Limitations of Mobile Buying](technical-limitations-of-mobile-buying.md)

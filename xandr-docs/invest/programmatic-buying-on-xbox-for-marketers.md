@@ -18,8 +18,7 @@ Xbox allows buyers to create impactful advertising experiences unlike any other:
 - Use our proprietory Xbox user data for targeting
 - Bring your own data
 
-The Xbox programmatic makes use of the unique Xbox environment. It allows advertisers to execute deals with automation and data. This
-solution is an invite-only private marketplace focused on premium brands.
+The Xbox programmatic makes use of the unique Xbox environment. It allows advertisers to execute deals with automation and data. This solution is an invite-only private marketplace focused on premium brands.
 
 Reach a diverse, engaged audience at home:
 
@@ -59,6 +58,7 @@ To keep Banner design clean and simple:
 - Avoid lengthy copy - CTAs should be short, relevant, and eye-catching
 
 - Avoid small condensed copy - Readers will view from 6’-10’ away, so keeping visual elements minimal is key.
+
     :::image type="content" source="media/xbox-bestpractices-a.png" alt-text="Screenshots of recommended and not recommended visual elements in the banner design.":::
 
 - Do not create a “button” within a selectable ad unit since all tiles have an active system-generated “focus” state.

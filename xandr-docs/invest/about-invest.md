@@ -2,7 +2,6 @@
 title: About Microsoft Invest
 description: Learn about Microsoft Invest as a strategic buying platform for advertisers, its benefits, and how it works as a real-time bidding system and ad server. 
 ms.date: 10/28/2023
-
 ---
 
 # About Microsoft Invest

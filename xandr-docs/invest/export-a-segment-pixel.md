@@ -35,7 +35,7 @@ Click the **Generate Tags** button. Depending on the delivery option selected, t
 
 An image pixel looks something like this:
 
-``` pre
+```
 <!-- Segment Pixel - test - DO NOT MODIFY -->
 <img src="https://secure.adnxs.com/seg?add=528336&t=2" width="1" height="1" />
 <!-- End of Segment Pixel -->
@@ -43,7 +43,7 @@ An image pixel looks something like this:
 
 A JavaScript pixel looks something like this:
 
-``` pre
+```
 <!-- Segment Pixel - test - DO NOT MODIFY -->
 <script src="https://secure.adnxs.com/seg?add=528336&t=1" type="text/javascript"></script>
 <!-- End of Segment Pixel -->

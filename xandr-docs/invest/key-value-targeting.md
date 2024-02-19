@@ -8,15 +8,13 @@ ms.date: 10/28/2023
 
 Publishers often have custom data about users (age, gender, income, interests, location, etc) or content (search keywords, contextual tags, ad positions, etc) that could be utilized to produce offerings that can be of value to advertisers. There are a variety of ways to target publisher customer data to accomplish this, including query strings and segment targeting. Another way is through custom key/value targeting.
 
-With custom key/value targeting, you can define your own keys and their corresponding values to make full use of publisher data and help
-advertisers reach their intended audience. Microsoft Advertising allows you to create custom key value sets that can be used in advertising campaigns to target specific types of customers.
+With custom key/value targeting, you can define your own keys and their corresponding values to make full use of publisher data and help advertisers reach their intended audience. Microsoft Advertising allows you to create custom key value sets that can be used in advertising campaigns to target specific types of customers.
 
 ## Pre-defining keys and values
 
 Before you can target on key/value sets, you must have keys predefined. This can be done through the API [Targeting Key Service](../digital-platform-api/targeting-key-service.md).
 
-Values do not need to be predefined; they can be created or imported when you define your key/value targeting. (See [Creating New Values](#creating-new-values) for more information.) However,
-values can be predefined by using the API [Targeting Value Service](../digital-platform-api/targeting-value-service.md).
+Values do not need to be predefined; they can be created or imported when you define your key/value targeting (see the [Creating New Values](#creating-new-values) section for more information). However, values can be predefined by using the API [Targeting Value Service](../digital-platform-api/targeting-value-service.md).
 
 ## Targeting on line items
 
@@ -39,18 +37,14 @@ At the top of the **Key/Value Targeting** dialog you'll have the option to **Tar
 
 When you first open the **Key/Value Targeting** dialog you'll see a group with a **Select Key** dropdown. When you click **Select Key**, you'll choose a key from the list. This will open a new section where you can select the values for that key. You can choose to **Select Pre-Defined Values** or **Bulk Select Values**.
 
-- **Select Pre-Defined Values**: The values displayed under this tab were added through the API **targeting-value** service. Click the
-  checkbox next to each value you want to target with this key.
-- **Bulk Select Values**: This tab gives you the option of defining your own values for this target. If you're working with a large set of
-  values for the given key, you can import those values from a CSV file. Click the **Import values from file** button to select the file. Only unique values will be added; any duplicate values will be ignored. You can also enter values into the text box on this tab, one value per line. See [Creating New Values](#creating-new-values) for more information.
+- **Select Pre-Defined Values**: The values displayed under this tab were added through the API **targeting-value** service. Click the checkbox next to each value you want to target with this key.
+- **Bulk Select Values**: This tab gives you the option of defining your own values for this target. If you're working with a large set of values for the given key, you can import those values from a CSV file. Click the **Import values from file** button to select the file. Only unique values will be added; any duplicate values will be ignored. You can also enter values into the text box on this tab, one value per line. See [Creating New Values](#creating-new-values) for more information.
 
 After you've selected your values, you can continue to add keys to this group or create a new group. When you've finished adding all your keys, values and groups, click **Add**.
 
 ## Creating key/value targets
 
-Let's start by walking through a very simple example. In this example we're going to target users who enjoy eating certain fruits. In
-particular, we want to target users who eat either apples or oranges. The key is fruit, and the values are apple and orange. Here are the
-steps to create this target:
+Let's start by walking through a very simple example. In this example we're going to target users who enjoy eating certain fruits. In particular, we want to target users who eat either apples or oranges. The key is fruit, and the values are apple and orange. Here are the steps to create this target:
 
 1. In the **Key/Value Targeting** dialog, click **Select Key**.
 1. Select **fruit** from the dropdown. If you don't see the key you're looking for, scroll down the dropdown list or use the search box. (This is just an example. You may not have a fruit key defined as one of your targeting options.)
@@ -94,13 +88,12 @@ We have two groups on this tree:
 
   We tie the two groups together with an OR, because we want to target users who are in either group. (An AND would target users who are in both groups.)
 
-  To see how to enter our target statement into the **Key/Value Targeting** dialog, we're going to step through our expression diagram
-  while we go through the dialog. (For this example we're assuming keys of fruit and city have been predefined, along with their associated values.)
+  To see how to enter our target statement into the **Key/Value Targeting** dialog, we're going to step through our expression diagram while we go through the dialog. (For this example we're assuming keys of fruit and city have been predefined, along with their associated values.)
 
   We're going to start our key/value target from the bottom-right of our expression tree:
 
  :::image type="content" source="media/ui-operator-diagram-step-a.png" alt-text="The expression tree with the bottom-right entry of the right side group highlighted - city [Seattle, LA].":::
-  
+
 1. Click **Select Key**.
 1. Select **city** from the dropdown.
 1. In the **Select Pre-Defined Values** tab, click the boxes next to **Seattle** and **LA**.
@@ -162,8 +155,7 @@ We have two groups on this tree:
 
 ## Numeric key/value targeting
 
-The example in the previous section described adding keys with string values. Adding keys with numeric values is similar, but with the
-addition of more comparison operators.
+The example in the previous section described adding keys with string values. Adding keys with numeric values is similar, but with the addition of more comparison operators.
 
 When you're working with strings, the only comparison operators that really make sense are equals and not equals. For example, the expression string1 > string5 is meaningless. (Unless you're looking at things like ASCII values, which we're not.) But with numbers, we have many more options. When you select a numeric key in **Key/Value Targeting**, you can choose from the following:
 
@@ -198,7 +190,7 @@ Pre-defined values will be available any time you select the associated key. Val
 
 If you're targeting your key on a large number of values, you can bulk import them from a CSV (comma-separated values) file. Your CSV file can **not** contain comma-separated values. The application will look for files with a .csv extension, but the file you import must be a plain-text file containing one value per line. For example, if your key is **city**, you might want to import a file that looks like this:
 
-``` pre
+```
 London 
 Paris 
 New York 
@@ -246,12 +238,9 @@ The following restrictions are enforced when entering or importing values:
 
 ## Wildcards
 
-You can use the *wildcard symbol to target multiple values. For example, let's say that rather than targeting apples, you wanted the
-option to target specific types of apples. You could have a key of fruit with values that include granny smith apple, red delicious apple,
-honeycrisp apple. To target a specific type of apple you would enter the value honeycrisp apple. If you decide you want to target all apples, you would use a wildcard in your value:*apple.
+You can use the \* wildcard symbol to target multiple values. For example, let's say that rather than targeting apples, you wanted the option to target specific types of apples. You could have a key of fruit with values that include granny smith apple, red delicious apple, honeycrisp apple. To target a specific type of apple you would enter the value honeycrisp apple. If you decide you want to target all apples, you would use a wildcard in your value: \*apple.
 
-You can use up to two wildcards in a value. So if for some reason your values had been entered as delicious apple red and delicious apple
-golden, you could find all delicious apples with the value delicious apple*, and all apples of any type with the value *apple*.
+You can use up to two wildcards in a value. So if for some reason your values had been entered as delicious apple red and delicious apple golden, you could find all delicious apples with the value delicious apple*, and all apples of any type with the value *apple*.
 
 ## Group restrictions
 
@@ -265,7 +254,7 @@ but you can't target
 
 There's no way to add a group within a group, which is what would be required for that additional level of nesting.
 
-If you need to create more complicated targeting expressions, you'll have to use the API. Creating your expressions using API services allows you to nest up to five levels. (See [Custom Key Value Targeting](../digital-platform-api/custom-key-value-targeting.md) for more information on creating key/value targeting through the API.) Keep in mind that if you do create more complicated expressions in the API, you won't be able to view or edit those targets in the UI. If you receive a message like this:
+If you need to create more complicated targeting expressions, you'll have to use the API. Creating your expressions using API services allows you to nest up to five levels. See [Custom Key Value Targeting](../digital-platform-api/custom-key-value-targeting.md) for more information on creating key/value targeting through the API. Keep in mind that if you do create more complicated expressions in the API, you won't be able to view or edit those targets in the UI. If you receive a message like this:
 
 "Unable to edit this Key-Value profile in the user-interface. Use the API to make changes to this profile."
 

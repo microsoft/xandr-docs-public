@@ -29,8 +29,7 @@ To target inventory based on performance your options are:
 - We recommend using Video Completion Rate as a minimum threshold.
 - If your solution requires balancing multiple KPIs, you can use a Video Completion Rate threshold in conjunction with an optimization goal, including the Video Completion Rate goal type.
 
-For example, suppose you have a business requirement to purchase only inventory with at least a 30% Video Completion Rate. You also have a
-goal to optimize towards a 70% Video Completion Rate. You can achieve both by applying a 30% Video Completion Rate threshold and setting a 70% Video Completion Rate optimization goal.
+For example, suppose you have a business requirement to purchase only inventory with at least a 30% Video Completion Rate. You also have a goal to optimize towards a 70% Video Completion Rate. You can achieve both by applying a 30% Video Completion Rate threshold and setting a 70% Video Completion Rate optimization goal.
 
 Another example: you're required to purchase inventory with at least a 30% Video Completion Rate. You also have two more goals: to optimize towards 1% CTR, and to achieve 25% margin. In this case, you should:
 

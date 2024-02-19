@@ -42,9 +42,7 @@ For more information, see [Segment Targeting](segment-targeting.md).
         - Selecting **And** will automatically add an AND boolean operator between the segments within each segment group, but an OR boolean operator will be added between the segment groups. To be targeted, users only have to belong to at least one segment group, not all of the specified segment groups.
         - Selecting **Or** will automatically add an OR boolean operator between the segments within each segment group, but an AND boolean operator will be added between the segment groups. To be targeted, users must belong to all of the specified segment groups.
 
-    There are many ways in which you can use multiple segment groups to target users. Let's say you have four segments: A, B, C, and D. A
-    and B are "good" segments that you want to use for remarketing. Users only have to be in either segment A or segment B, not both, to
-    be targeted. C and D are "bad" segments and include users that you aren't interested in being targeted.
+    There are many ways in which you can use multiple segment groups to target users. Let's say you have four segments: A, B, C, and D. A and B are "good" segments that you want to use for remarketing. Users only have to be in either segment A or segment B, not both, to be targeted. C and D are "bad" segments and include users that you aren't interested in being targeted.
 
     In this example, you would have segments A and B grouped within one segment group as well as a second segment group for segment C and a third segment group for segment D. Your goal is to exclude users that are in segment C and segment D.
 

@@ -130,7 +130,7 @@ For more information, see [Frequency Targeting](frequency-and-recency-caps.md).
 
 ## Example CSV
 
-This is a [Sample Splits CSV](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Microsoft Advertising/sample-splits-csv.csv).
+This is a [Sample Splits CSV](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Xandr/sample-splits-csv.csv).
 
 ## Related topics
 

@@ -31,4 +31,4 @@ Enter the recipients who should receive a notification when Microsoft Advertisin
 
 ## Related topic
 
-- [Capping Daily Spend on Third-Party Inventory (Safety Budget)](capping-daily-spend-on-third-party-inventory-safety-budget.md)
+[Capping Daily Spend on Third-Party Inventory (Safety Budget)](capping-daily-spend-on-third-party-inventory-safety-budget.md)

@@ -17,10 +17,10 @@ At $0.55 CPM for served impressions, you can activate Nielsen Catalina Solutions
 
 1. Designate a **Report On** level for generated sales attribution reports:
 
-   |Option  |Description  |
-   |---------|---------|
-   |**Line Item Level**     |Generates sales attribution reports showing data for your line item         |
-   |**Split Level**     |Generates sales attribution reports showing data for your line item's splits         |
+    | Option | Description |
+    |--|--|
+    | **Line Item Level** | Generates sales attribution reports showing data for your line item |
+    | **Split Level** | Generates sales attribution reports showing data for your line item's splits |
 
 1. Search for and select a **Product Group**.
 
@@ -31,7 +31,7 @@ At $0.55 CPM for served impressions, you can activate Nielsen Catalina Solutions
 
 1. Select a **Report Request Frequency** option:
 
-    **Report Request Frequency** determines when you'll start receiving Sales Impact data reports for your line item and how often new  reports will be made. Data shown in the reports is based on your **Report On** selection in **Step 4**.
+    **Report Request Frequency** determines when you'll start receiving Sales Impact data reports for your line item and how often new reports will be made. Data shown in the reports is based on your **Report On** selection in **Step 4**.
     - **Weekly**: You'll receive a weekly data report on Tuesdays until the line item is completed.
     - **Once Per Flight**: You'll receive a data report at the end of each flight.
 

@@ -12,8 +12,7 @@ This page provides an overview of viewability in digital media as well as inform
 
 Marketers buy media to reach "eyeballs" in an effort to create awareness for their brand and influence consumers. If a marketer's advertisement goes unseen, there is no opportunity for the message to have an impact. An ad being seen by a human is therefore a fundamental requirement for all advertising. Digital media presents a unique and exciting opportunity to directly measure whether an ad was in-view of a consumer.
 
-Today, viewability is commonly used to assess the quality and value of digital media, and it is often included as a mandatory goal in
-advertisers' campaigns.
+Today, viewability is commonly used to assess the quality and value of digital media, and it is often included as a mandatory goal in advertisers' campaigns.
 
 ### Buy-side impact
 
@@ -25,8 +24,7 @@ Viewability could also allow buyers to use new attribution models for post-view 
 
 ### Sell-side impact
 
-Because more and more buyers value media based on viewability metrics, publishers have incentive to be aware of how viewable their sites are. Understanding and managing viewability for inventory presents the opportunity to create high viewability packages and improve overall
-inventory quality.
+Because more and more buyers value media based on viewability metrics, publishers have incentive to be aware of how viewable their sites are. Understanding and managing viewability for inventory presents the opportunity to create high viewability packages and improve overall inventory quality.
 
 ## How does viewability measurement work for display ads?
 
@@ -42,8 +40,7 @@ The following are examples of creatives that are not viewable:
 
 Viewability depends on a myriad of parameters: screen size, creative loading duration, and so on.
 
-Viewability measurement is achieved through a technology that is embedded with the creative, executes in the browser of the user, and
-measures the actual behavior of each individual user who is served the creative.
+Viewability measurement is achieved through a technology that is embedded with the creative, executes in the browser of the user, and measures the actual behavior of each individual user who is served the creative.
 
 Viewability measurement is, by its nature, an exhaustive measurement of every single impression.
 
@@ -57,10 +54,7 @@ The primary method that the script will use to determine whether an ad is viewab
 
 ### Technical challenges
 
-Viewability measurement must work in all environments and provide consistent results. IFrames are the most challenging of technical
-environments. When the creative and the measurement script are served within an IFrame, regular geometric methods cannot be applied.
-Alternative methods, such as browser optimization, must be developed. Depending on the technologies used by ad-viewability vendors, the
-potential success rate can be very limited.
+Viewability measurement must work in all environments and provide consistent results. IFrames are the most challenging of technical environments. When the creative and the measurement script are served within an IFrame, regular geometric methods cannot be applied. Alternative methods, such as browser optimization, must be developed. Depending on the technologies used by ad-viewability vendors, the potential success rate can be very limited.
 
 :::image type="content" source="media/iframe-measurement.png" alt-text="Diagram that shows the challenges of viewability measurement for creatives within IFrames.":::
 

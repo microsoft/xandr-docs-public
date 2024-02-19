@@ -1,12 +1,12 @@
 ---
 title: Microsoft Invest - Ad Viewability - Description of Methodology (DOM)
-description: In this module, understand the Microsoft Advertising viewability measurement process and methodology. It is designed for Microsoft Advertising clients, prospects, and partners only.
+description: In this module, understand the Microsoft Advertising viewability measurement process and methodology designed for Microsoft Advertising clients, prospects, and partners.
 ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Ad Viewability: Description of Methodology (DOM)
 
-This document is meant to describe the Microsoft Advertising viewability measurement process and methodology. It is designed for Microsoft Advertising clients, prospects, and partners only.
+This document describes the Microsoft Advertising viewability measurement process and methodology. It is designed for Microsoft Advertising clients, prospects, and partners only.
 
 ## Introduction
 
@@ -15,8 +15,8 @@ This document is meant to describe the Microsoft Advertising viewability measure
 Ad viewability measurement is a complex issue. It must take into account various and changing specificities, such as:
 
 - Publisher and agency ad servers, and their various versions
-- Operating systems (desktops and mobiles), and their various versions
-- Browsers (and their specific operating systems versions)
+- Operating systems (desktops and mobiles) and their various versions
+- Browsers and their specific operating systems versions
 - Website page layouts (including first and third party's scripts on the pages)
 - Ad formats (including country-specific ones)
 - Local viewability standards (US IAB, first pixel viewability, etc.)
@@ -73,13 +73,13 @@ Microsoft Advertising technology is compatible with the following types of forma
 - Mobile browsers
 - Ads in mobile apps (using our Mobile SDK, the Microsoft SDK, or OMSDK)
 - Native ads (display ads only)
-- VAST Video when VPAID is available [Measurement of Video Viewability using VPAID Wrapper](video-viewability.md)
+- VAST Video when VPAID is available ([Measurement of Video Viewability using VPAID Wrapper](video-viewability.md))
 
 #### Incompatible formats
 
 Microsoft Advertising technology is currently not compatible with the following formats:
 
-- Ads in sites that refuse third party scripts
+- Ads in sites that refuse third-party scripts
 - Custom banner ad formats
 
 ### Script implementation
@@ -97,11 +97,11 @@ Microsoft Advertising ad viewability is independent from publisher or agency ad 
 - Open Ad Stream
 - Atlas
 - Weborama
-- Any other ad servers which accept third part script
+- Any other ad servers which accept third-party scripts
 
 #### Known limitations
 
-All desktop ad servers allow third party scripts, except some browser toolbars also reject JavaScript.
+All desktop ad servers allow third-party scripts, except some browser toolbars also reject JavaScript.
 
 ### Script call
 
@@ -109,7 +109,7 @@ All desktop ad servers allow third party scripts, except some browser toolbars a
 
 The Microsoft Advertising script is called as a script tag `<SCRIPT>` included into the creative's JavaScript.
 
-Since Microsoft Advertising serves the creative, the script call is generated natively by the platform. No manual copy and paste, or option checkbox is required.
+Since Microsoft Advertising serves the creative, the script call is generated natively by the platform. No manual copy and paste or option checkbox is required.
 
 #### Compatible platforms
 
@@ -148,7 +148,7 @@ The Microsoft Advertising script is delivered by a CDN that automatically choose
 
 Impressions are counted by the Microsoft Advertising ad-trading platform, not by the measurement script. Our count of impressions (imps) is the one used for billing. It corresponds to the real total number of traded impressions.
 
-This metric differs from third party ad viewability providers. Vendors rely on their script to count impressions. If the script is not loaded, or cannot fire a pixel, no impression is counted by third party vendors, whereas the impression is inherently counted by
+This metric differs from third-party ad viewability providers. Vendors rely on their script to count impressions. If the script is not loaded, or cannot fire a pixel, no impression is counted by third-party vendors, whereas the impression is inherently counted by
 Microsoft Advertising.
 
 > [!NOTE]
@@ -158,7 +158,7 @@ Microsoft Advertising.
 
 Measured impressions are counted when the measurement script fires a pixel to the Microsoft Advertising platform.
 
-In cases where the user quits the page before the Microsoft Advertising script has actually launched, the impression is counted as served, and not measured.
+In cases where the user quits the page before the Microsoft Advertising script has actually launched, the impression is counted as served and not measured.
 
 > [!NOTE]
 > Microsoft Advertising measured impressions are comparable with third party's measured impressions.
@@ -167,29 +167,29 @@ In cases where the user quits the page before the Microsoft Advertising script h
 
 Ad viewability is not impacted by the impression counting methodology. By default, impressions are tagged as "not measured". Following the IAB requirements, viewability indicators are computed only on measured impressions.
 
-The consequence of a higher (and real) number of impressions is a lower measurement rate (measured impressions / impressions).
+The consequence of a higher (and real) number of impressions is a lower measurement rate (`measured impressions / impressions`).
 
 > [!NOTE]
-> The Microsoft Advertising measurement rate should not be compared with a third party vendor's measurement rate.
+> The Microsoft Advertising measurement rate should not be compared with a third-party vendor's measurement rate.
 
 #### Compound tracking
 
 Microsoft Advertising does not allow compound tracking. If several ads must be measured, they must be configured individually.
 
-Microsoft Advertising can however, measure banners made of several objects, as a single impression.
+Microsoft Advertising can, however, measure banners made of several objects as a single impression.
 
 ### Cache-busting techniques
 
-Microsoft Advertising uses specific http headers, such as "Cache-Control:no-store, no-cache, private" or "Pragma no-cache," to force browsers not to cache tracking requests.
+Microsoft Advertising uses specific HTTP headers, such as "`Cache-Control:no-store, no-cache, private`" or "`Pragma no-cache,`" to force browsers not to cache tracking requests.
 
-Microsoft Advertising tracking requests (impression count and viewability measurement) also use a double system to ensure that http requests are not cached by browsers.
+Microsoft Advertising tracking requests (impression count and viewability measurement) also use a double system to ensure that HTTP requests are not cached by browsers.
 
 Each script loading is associated with a unique ID. The script fires several pixels during the lifetime of the impression. Each pixel is
 unique, as it contains all the measured information and a unique timestamp (milliseconds).
 
 Those unique IDs are used in the file path and as parameters when building the URL. The following sample shows the beginning of a URL:
 
-```pre
+```
 http:// fra1.ib.adnxs.com/vevent?e=wqT_.... 
 &dlo=1&referrer=http%3A%2F%2Fib.adnxs.com%2Ftt%3Fid%3D3747591&type=pv&px=0&py=0&bw=300&bh=250 
 &sw=2560&sh=1440&pw=1440&ph=351&ww=1440&wh=351 
@@ -222,12 +222,10 @@ The Microsoft Advertising script monitors the following events and browser statu
 #### Known limitations
 
 - Microsoft Advertising considers only the window that is in focus as visible. This methodological choice matches the norms of internet audience measurement.
-- When two monitors are used, if an out-of-focus browser window is visible on one monitor, the impression may be considered non-viewable,
-even if the user may see it.
+- When two monitors are used, if an out-of-focus browser window is visible on one monitor, the impression may be considered non-viewable, even if the user may see it.
 - When measured from a cross-domain iframe, an impression that is loaded in a window that is not in focus, may be counted as viewable. This may lead to an overestimation of viewable impressions.
 - Microsoft Advertising does not monitor if the whole browser window is moved out of the screen, while still in focus. In this case, the impression may be considered viewable even if it is out of the screen.
-- Auto-refresh pages may generate additional ad impressions. The refreshed page can either be viewable or not. If the page is not
-viewable (hidden tab or window), the impression is not viewable.
+- Auto-refresh pages may generate additional ad impressions. The refreshed page can either be viewable or not. If the page is not viewable (hidden tab or window), the impression is not viewable.
 - If the refreshed page is viewable, the impressions on the page may be viewable if they are in the visible part of the page. In this case, the number of viewable impressions may be overestimated. Although Microsoft Advertising cannot quantify this overestimation, it should remain limited, as highly refreshed pages can be detected by fraud detection procedures.
 - If a Firefox browser window is resized, the impression may be out of view. When the impression is loaded within a cross-domain iframe, it may result in an overestimation of its viewability status.
 
@@ -250,8 +248,7 @@ In certain situations, the user may abandon the web page after the impression wa
 
 The Microsoft Advertising script periodically transfers data to a collection platform. Data transfers contain partial information about ad viewability that is then aggregated on the platform.
 
-It is not prudent to send viewability data only when the user navigates away from the page because pages can remain open in hidden tabs,
-sometimes for days or weeks and the information may be lost if the page is closed when the user is offline.
+It is not prudent to send viewability data only when the user navigates away from the page because pages can remain open in hidden tabs, sometimes for days or weeks and the information may be lost if the page is closed when the user is offline.
 
 For this reason, data transfers are made periodically so that the risk of losing data is minimized. When the impression reaches the viewability threshold, a pixel is fired to the Microsoft Advertising platform.
 
@@ -259,14 +256,14 @@ For this reason, data transfers are made periodically so that the risk of losing
 
 #### Domain-based ad blockers
 
-Ad blockers are browser extensions that prevent ads from showing on pages. They rely on lists of ad servers, and block http calls to these
+Ad blockers are browser extensions that prevent ads from showing on pages. They rely on lists of ad servers, and block HTTP calls to these
 ad servers.
 
 Because Microsoft Advertising is an ad server, no call to Microsoft Advertising is made by browsers that use ad blockers.
 
 #### Image size-based ad blockers
 
-In cases where an ad server is called but images are blocked, the Microsoft Advertising script detects no creative object. The ad impression is counted (the ad server counts it too, so numbers remain consistent), but the ad is not viewable. See [Object Detection](#object-detection) for more information.
+In cases where an ad server is called but images are blocked, the Microsoft Advertising script detects no creative object. The ad impression is counted (the ad server counts it too, so numbers remain consistent), but the ad is not viewable. See the [Object Detection](#object-detection) section for more information.
 
 #### User's disability image rendering
 
@@ -299,8 +296,7 @@ Microsoft Advertising uses a list of robot names that is checked against the use
 
 #### Known limitations
 
-Some robots do not use their real user agent name. They pretend to be a regular browser. In this case, their traffic may not be correctly
-filtered out using the above mentioned method.
+Some robots do not use their real user agent name. They pretend to be a regular browser. In this case, their traffic may not be correctly filtered out using the above mentioned method.
 
 Microsoft Advertising has developed a series of methods to detect and exclude non-human traffic. These methods are applied in the process of ad-serving, before making the ad viewability script call.
 
@@ -308,8 +304,7 @@ Microsoft Advertising has developed a series of methods to detect and exclude no
 
 Microsoft Advertising impression counts closely match the ones gathered by the ad servers.
 
-For this reason, except for fake traffic mentioned above (robotic impressions), no impressions are filtered out. Additional rules apply to
-viewable impressions though.
+For this reason, except for fake traffic mentioned above (robotic impressions), no impressions are filtered out. Additional rules apply to viewable impressions though.
 
 ### Microsoft Advertising test traffic
 
@@ -323,7 +318,14 @@ No projection is made for ad viewability on the Microsoft Advertising platform.
 
 ### Invalid Traffic (IVT) guideline
 
-Microsoft Advertising filters for sIVT and gIVT on: - User ID (i.e. cookie ID) - User agent - JavaScript based detection - IP address - Domain where the ad placement is located - Seller of the impression request (i.e. via ads.txt)
+Microsoft Advertising filters for sIVT and gIVT on:
+
+- User ID (i.e. cookie ID)
+- User agent
+- JavaScript based detection
+- IP address
+- Domain where the ad placement is located
+- Seller of the impression request (i.e. via ads.txt)
 
 Our detection runs, depending on the method:
 
@@ -428,7 +430,10 @@ Each group of data must contain a minimum number of impressions (1, 100, 1000 de
 
 Definitions of the accredited indicators are available in [Introduction to Viewability](introduction-to-viewability.md).
 
-All these metrics are available in a specific report called "Viewability Report." Note that this report excludes mobile web traffic, even though it is measured by Microsoft Advertising.
+All these metrics are available in a specific report called "**Viewability Report**".
+
+> [!NOTE]
+> This report excludes mobile web traffic, even though it is measured by Microsoft Advertising.
 
 #### Other viewability indicators
 
@@ -439,15 +444,13 @@ Custom definitions can be used to determine viewable impressions. In this case, 
 
 #### Mobile traffic
 
-Viewability metrics are not segregated between desktop browsers and mobile browsers, except in the "Viewability Report" where mobile
-impressions are filtered out.
+Viewability metrics are not segregated between desktop browsers and mobile browsers, except in the "**Viewability Report**" where mobile impressions are filtered out.
 
 However, it is possible to run the [Site Domain Performance](site-domain-performance.md) report and group by "Operating system".
 
 ### Retention period
 
-Depending on the level of granularity, the data collected by Microsoft Advertising are stored for a specific period of time.
-See [Availability of Reporting Data](availability-of-reporting-data.md) for more information.
+Depending on the level of granularity, the data collected by Microsoft Advertising are stored for a specific period of time. See [Availability of Reporting Data](availability-of-reporting-data.md) for more information.
 
 ### Changes in the description of methodology
 

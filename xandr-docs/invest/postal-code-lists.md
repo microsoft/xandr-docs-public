@@ -8,9 +8,7 @@ ms.date: 10/28/2023
 
 ## Introduction
 
-Leveraging postal codes is a powerful way for advertisers to achieve highly granular and precise, or *hyperlocal*, targeting. Hyperlocal
-targeting is a key factor in driving advertising performance. Because buyers often want to increase efficiency by targeting the same set of postal codes across different objects (line items and splits), the Postal Code List feature allows them to reuse a list of postal codes
-across different line items and splits.
+Leveraging postal codes is a powerful way for advertisers to achieve highly granular and precise, or *hyperlocal*, targeting. Hyperlocal targeting is a key factor in driving advertising performance. Because buyers often want to increase efficiency by targeting the same set of postal codes across different objects (line items and splits), the Postal Code List feature allows them to reuse a list of postal codes across different line items and splits.
 
 The Postal Code List feature enables traders to:
 
@@ -18,8 +16,7 @@ The Postal Code List feature enables traders to:
 - enable postal code lists (include or exclude) for targeting at the line item level. The maximum number of postal code lists a line item or split can target is 100.
 
 > [!NOTE]
-> Certain legitimate ZIP or postal codes are unrecognizable or invalid within the Microsoft Advertising geography targeting system. This can
-> happen because [Digital Envoy](https://www.digitalelement.com/), a Microsoft Advertising partner that handles geolocation data, can't recognize a ZIP or postal code's existence until an IP address (user) has been associated with it. Postal codes that don't exist in the system often represent obscure or otherwise small geographical zones with minimal internet activity.
+> Certain legitimate ZIP or postal codes are unrecognizable or invalid within the Microsoft Advertising geography targeting system. This can happen because [Digital Envoy](https://www.digitalelement.com/), a Microsoft Advertising partner that handles geolocation data, can't recognize a ZIP or postal code's existence until an IP address (user) has been associated with it. Postal codes that don't exist in the system often represent obscure or otherwise small geographical zones with minimal internet activity.
 
 ## Manage postal code lists
 
@@ -71,11 +68,11 @@ To target specific Postal Code Lists and Postal Codes:
 
     | Value | Steps |
     |---|---|
-    | Postal Code Lists | - Search by ID or Name for available Postal Code Lists to target <br> - Either include or exclude the postal code list for the line item for targeting. (Click the **green check** to include a list and click the **red dash** to exclude a list.) <br> - After you select a postal code list, it displays the particulars of the list such as Name and ID under the section **Selected Postal Codes**. You can use the **Remove all** button if necessary. <br> - You can add multiple postal code lists to include or exclude for the line item using this search option. |
+    | Postal Code Lists | - Search by ID or Name for available Postal Code Lists to target <br> - Either include or exclude the postal code list for the line item for targeting. Click the **green check** to include a list and click the **red dash** to exclude a list. <br> - After you select a postal code list, it displays the particulars of the list such as Name and ID under the section **Selected Postal Codes**. You can use the **Remove all** button if necessary. <br> - You can add multiple postal code lists to include or exclude for the line item using this search option. |
     | Postal Codes | - Copy and paste the postal codes or import a file of postal codes you want to target following the instructions in step 5 in the **To create a new Postal Code List** section above. You can add upto 100,000 postal codes in this dialog box. <br> - You can include or exclude a postal code from targeting for a split. |
 
 1. Click **Save** to complete the setup.
 
-## Related topics
+## Related topic
 
 [Additional Geo Restrictions](additional-geo-restrictions-ali.md)

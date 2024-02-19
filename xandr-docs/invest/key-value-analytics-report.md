@@ -26,8 +26,7 @@ All dates and times are given in UTC.
 
 ### Time ranges
 
-Time ranges define the time period of the data extracted for the report.
-The following is a complete list of time ranges available for reports. However, all time ranges are not available for every report.
+Time ranges define the time period of the data extracted for the report. The following is a complete list of time ranges available for reports. However, all time ranges are not available for every report.
 
 - Custom
 - Current Hour
@@ -71,8 +70,7 @@ If you create a Key Value Analytics report with the Range field set to **Custom*
 - use a report type other than Key Value Analytics.
 - alter the way you structure your reports (if possible) so they do not include dates greater than 45 days ago.
 
-If you are frequently requesting Key Value Analytics reports which include dates longer than 45 days ago, you may need to consider running
-these reports via the API, caching the data and using [Bulk Reporting Feeds](../digital-platform-api/bulk-reporting-feeds.md) or [Log-Level Data Feeds (LLD)](../log-level-data/log-level-data-feeds.md). See [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md) for more details on how to alter your reports to avoid these issues.
+If you are frequently requesting Key Value Analytics reports which include dates longer than 45 days ago, you may need to consider running these reports via the API, caching the data and using [Bulk Reporting Feeds](../digital-platform-api/bulk-reporting-feeds.md) or [Log-Level Data Feeds (LLD)](../log-level-data/log-level-data-feeds.md). See [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md) for more details on how to alter your reports to avoid these issues.
 
 ### Data retention period
 
@@ -135,7 +133,7 @@ By enabling **Currency 2.0**, you can select a currency for each individual repo
 | Booked Revenue | The total revenue booked through direct advertisers. |
 | Resold Revenue | The total revenue on resold impressions through direct publishers. |
 | Revenue | The total revenue; the sum of booked and resold revenue. |
-| Total RPM | The revenue per 1000 impressions, including defaults, PSAs, and errors. For more information about these impression types, see [Impression Types](#impression-types). |
+| Total RPM | The revenue per 1000 impressions, including defaults, PSAs, and errors. For more information about these impression types, see the [Impression Types](#impression-types) section. |
 | Booked Revenue Dollars | The dollar amount earned by this Member on the impression. |
 | Post View Conversions | The total number of post-view conversions recorded. For more information about how we record post-view conversions, see [Conversion Attribution](conversion-attribution.md). |
 | Post View Conversion Rate | The ratio of post-view conversions to impressions. |

@@ -30,7 +30,7 @@ This task explains how to set up your single credential login.
       - Uppercase letters (A-Z)
       - Numbers (0-9)
       - Special characters (for example, !@#$%&*)
-      - No more than 2 identical characters in a row (for example, "aaa" is not allowed)
+    - No more than 2 identical characters in a row (for example, "aaa" is not allowed)
 
 If your password meets the above criteria, you will receive a notification that says that your password has been created successfully. You can use your login credentials to access your digital application user accounts now. Post login, you can switch between your user accounts following the steps described in [Switching Between User Accounts](switching-between-user-accounts.md).
 

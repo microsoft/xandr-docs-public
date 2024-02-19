@@ -85,8 +85,8 @@ The changes for each report are summarized in the tables below.
 | Metric | During the Transition Period | After the Transition Period |
 |:---|:---|:---|
 | Partner Fees | The total amount of third-party costs, budgeted using [Partner Fees](partner-fees.md), that have accrued on an augmented line item over the reported period of time. | Same |
-| Commissions | Commissions + equivalent partner fees<br> **Note:** Third-party fees will not be double-counted in the partner fees field. | $0.<br> Previous data will not be impacted. |
-| Total Cost | Media cost + data costs + partner fees + commissions + serving fees + publisher revenue<br> **Note:** Third-party fees will not be double-counted in the partner fees field. | Same |
+| Commissions | Commissions + equivalent partner fees<br><br> **Note:** Third-party fees will not be double-counted in the partner fees field. | $0.<br> Previous data will not be impacted. |
+| Total Cost | Media cost + data costs + partner fees + commissions + serving fees + publisher revenue<br><br> **Note:** Third-party fees will not be double-counted in the partner fees field. | Same |
 | Total Cost eCPM | (total cost / imps) * 1,000 | Same |
 | Total Cost eCPC | total cost / clicks | Same |
 | Total Cost eCPA | total cost / conversions | Same |
@@ -103,8 +103,8 @@ The changes for each report are summarized in the tables below.
 
 | Metric | During the Transition Period | After the Transition Period |
 |:---|:---|:---|
-| Commissions | Commissions + equivalent partner fees<br> **Note:** Third-party fees will not be double-counted in the partner fees field. | $0.<br>Previous data will not be impacted. |
-| Total Cost | Media cost + data costs + partner fees + commissions + serving fees + publisher revenue<br> **Note:** Third-party fees will not be double-counted in the partner fees field. | Same |
+| Commissions | Commissions + equivalent partner fees<br><br> **Note:** Third-party fees will not be double-counted in the partner fees field. | $0.<br>Previous data will not be impacted. |
+| Total Cost | Media cost + data costs + partner fees + commissions + serving fees + publisher revenue<br><br> **Note:** Third-party fees will not be double-counted in the partner fees field. | Same |
 | Total Cost eCPM | (total cost / imps) * 1,000 | Same |
 | Total Cost eCPC | total cost / clicks | Same |
 | Total Cost eCPA | total cost / conversions | Same |
@@ -124,8 +124,8 @@ The changes for each report are summarized in the tables below.
 | Metric | During the Transition Period | After the Transition Period |
 |:---|:---|:---|
 | Partner Fees | The total amount of third-party costs, budgeted using [Partner Fees](partner-fees.md), that have accrued on an augmented line item over the reported period of time. | Same |
-| Commissions | Commissions + equivalent partner fees<br> **Note:** Third-party fees will not be double-counted in the partner fees field. | $0.<br> Previous data will not be impacted. |
-| Total Cost | Media cost + data costs + partner fees + commissions + serving fees + publisher revenue<br> **Note:** Third-party fees will not be double-counted in the partner fees field. | Same |
+| Commissions | Commissions + equivalent partner fees<br><br> **Note:** Third-party fees will not be double-counted in the partner fees field. | $0.<br> Previous data will not be impacted. |
+| Total Cost | Media cost + data costs + partner fees + commissions + serving fees + publisher revenue<br><br> **Note:** Third-party fees will not be double-counted in the partner fees field. | Same |
 | Total Cost eCPM | (total cost / imps) * 1,000 | Same |
 | Total Cost eCPC | total cost / clicks | Same |
 | Total Cost eCPA | total cost / conversions | Same |

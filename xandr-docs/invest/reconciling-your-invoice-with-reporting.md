@@ -6,8 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Reconciling your invoice with reporting
 
-You can log into the UI and use the Buying Billing Report and Selling Billing Report to assess and confirm charges you see on your invoice. This page explains how to run the report and find the desired invoice
-fields.
+You can log into the UI and use the Buying Billing Report and Selling Billing Report to assess and confirm charges you see on your invoice. This page explains how to run the report and find the desired invoice fields.
 
 For a detailed explanation of the fields on your invoice, see [Understanding your Invoice](understanding-your-invoice.md).
 
@@ -18,8 +17,7 @@ For a detailed explanation of the fields on your invoice, see [Understanding you
 
 In the UI, run the Buying Billing Report to confirm the cost of media, buyer auction service fee, managed ad serving fee, and creative overage fee amounts on your invoice.
 
-On the Member reporting screen, select **Buying Billing Report** under **Type**. Enter the **Range**, **Interval** (how the data will be
-grouped), and **Timezone** and then click **Run report**.
+On the Member reporting screen, select **Buying Billing Report** under **Type**. Enter the **Range**, **Interval** (how the data will be grouped), and **Timezone** and then click **Run report**.
 
 > [!NOTE]
 > Certain fields, such as some fee information for unmet minimums, and log-level data are not currently available in the reporting.
@@ -46,9 +44,7 @@ It is charged in addition to your media cost. For more information, see [Buyer A
 For a buyer who wants to only pay for impressions that are viewable, Microsoft Advertising offers the **Viewable Marketplace**. For more details, see the "Guaranteed Outcomes" topic within the UI's Help Center. Microsoft Advertising provides the following details on the invoice if you are using the Viewable Marketplace:
 
 - the type of Viewable Marketplace that was purchased
-
 - the number of billable units ("views") bought
-
 - the Cost of Media purchased via the Viewable Marketplace
 
 The Buying Billing Report is to be used to reconcile the invoice. Before running the report, select **Clearing Event Units** (under **Metrics**) and **Clearing Event** (under **Dimensions**). This will ensure that the report contains the relevant information.
@@ -62,8 +58,7 @@ This is the amount charged for serving creatives that are over the maximum size 
 
 For example, let's say the maximum creative size in your contract is (b) 40KB, you have a (a) 60KB creative that served (c) 100,000 times, and your bandwidth fee is (d) $2.50 per GB (which converts to 976,563 KB).
 
-Your creative overage fee would be calculated as follows: [ [ (a) 60KB - (b) 40KB ] x 100,000 imps ] x [ (d) $2.50 / 976,563 KB ] =
-$5.12
+Your creative overage fee would be calculated as follows: [ [ (a) 60KB - (b) 40KB ] x 100,000 imps ] x [ (d) $2.50 / 976,563 KB ] = $5.12
 
 You can find this value in your report in the Creative Overage Fees column. The total at the bottom of the column in the report should match the value in the Amount column on your invoice.
 

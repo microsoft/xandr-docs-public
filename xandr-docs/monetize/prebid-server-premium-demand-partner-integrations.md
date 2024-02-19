@@ -4,7 +4,7 @@ description: In this article, find a list of all demand partners currently avail
 ms.date: 10/28/2023
 ---
 
-# Prebid server premium demand partner integrations
+# Prebid Server Premium demand partner integrations
 
 The table below lists all demand partners currently available through Prebid Server Premium (PSP). When demand partners create new adapters for an [open-source Prebid Server](https://docs.prebid.org/prebid-server/overview/prebid-server-overview.html) they are generally added to PSP within two weeks.
 
@@ -151,6 +151,7 @@ Additional resources on demand partners:
 | MobileFuse | mobilefuse | Yes | **App**: Yes <br>**Site**: No | **App**: Yes <br>**Site**: No | No | **App**: Yes <br>**Site**: No |
 | Motorik | motorik | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | Nano Interactive | nanointeractive | Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No | No | **App**: No <br>**Site**: No |
+| NextMillenium | nextmillenium | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
 | NinthDecimal | ninthdecimal | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
 | NoBid | nobid | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
 | Online Media Solutions | oms | Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No | No | **App**: No <br>**Site**: No |
@@ -191,6 +192,7 @@ Additional resources on demand partners:
 | Somo Audience | somoaudience | Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | Sonobi | sonobi | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
 | Sovrn | sovrn | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
+| SovrnXSP | sovrnxsp | Yes | **App**: Yes <br>**Site**: No | **App**: Yes <br>**Site**: No | No | **App**: Yes <br>**Site**: No |
 | SSP Copper 6 | copper6 | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
 | sspBC Bid Adapter | sspBC | Yes | **App**: No <br>**Site**: Yes | **App**: No <br>**Site**: No | No | **App**: No <br>**Site**: No |
 | StreamKey | streamkey | Yes | **App**: No <br>**Site**: No | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
@@ -230,3 +232,4 @@ Additional resources on demand partners:
 | YOX VIS.X | visx | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
 | ZeroClickFraud | zeroclickfraud | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | Zeta Global SSP | zeta_global_ssp | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
+| zMaticoo | zmaticoo | Yes | **App**: Yes <br>**Site**: No | **App**: Yes <br>**Site**: No | No | **App**: Yes <br>**Site**: No |

@@ -25,9 +25,9 @@ The response shown below is the default returned by Microsoft Advertising.
 > [!NOTE]
 > With client side impression tracking enabled, the "content" field now has an impression tracking pixel appended.
 
-The pixel starts at `</script><img src=\"https://nym1.mobile.``adnxs``.com/it?`
+The pixel starts at `</script><img src=\"https://nym1.mobile.adnxs.com/it?`
 
-``` pre
+```
 { "status": "ok", "ads": \[ { "type": "banner", "width": 320, "height": 50, "content": "type=\"text/javascript\">document.write('<a href=\https://nym1.mobile.adnxs.com/it?e=wqT_3QKEBPBC-wEAAAIA1gAFCIqU_aMFEKzoiML42uKdChjZt5O-vs35olQgASotCXsUrkfheoQ_EXsUrkfheoQ_GQAAAAAAAPA_IRESACkRCbAwiejUATjkFEDkFEgCUOqQ5whYwI4cYBJotfIBcAB45eMDgAEBigEDVVNEkgEBBvBAmAHAAqABMqgBAbABALgBBcABA8gBAtABANgBAOABAPABAIoCOnVmKCdhJywgMzcyMDg5LCAxNDE3NjI4MTcwKTsBHCxyJywgMTg0NjY5MjI2HgDwipICnQEhOFNQRTdnaVZ4dHNDRU9xUTV3Z1lBQ0RBamh3d0FEZ0FRQVJJNUJSUWllalVBVmdBWUpFQ2FBQndBSGdBZ0FFQWlBRUFrQUVCbUFFQm9BRUJxQUVEc0FFQXVRRjdGSzVINFhxRVA4RUJleFN1Ui1GNmhEX0pBYkd6X0R3dDFQMF8yUUVBQUEBAyREd1AtQUJBUFVCAQ40QUEuLpoCHSFZQWJLUEE2oACwd0k0Y0lBUS7CAhZodHRwOi8vd3d3LmRzbnJtZy5jb20v2AIA4AL08hnqAhxoCSFAYXBwcy5tb2JpbGUuYWRueHMBKHiAAwCIAwGQAwCYAxagAwGqAwCwAwC4AwDAA5AcyAMA&dlo=1&referrer=https%3A%2F%2Fapps.mobile.adnxs.com\%22){width="\"1\"" height="\"1\""}" } \] } 
 ```
 
@@ -38,7 +38,7 @@ An example of a response with client side impression tracking enabled and levera
 > [!NOTE]
 > There is a field in this response named "imptracker" where the impression tracking pixel will be returned.
 
-``` pre
+```
 { "status": "ok", "ads": \[ { "type": "banner", "width": 320, "height": 50, "content": "<script type=\"text/javascript\">document.write('<a href=\"https://nym1.mobile.adnxs.com/click?exSuR-F6hD97FK5H4XqEPwAAAAAAAPA_exSuR-F6hD97FK5H4XqEPyw0QojXijsK2dvE52vmRVQKSn9UAAAAAAk0NQBkCgAAZAoAAAIAAABqyBkBQAcHABIAAQBVU0QAVVNEAEABMgA1eQAA5fEBBQMCAQIAAJIAZCGhmgAAAAA./cnd=%21YAbKPAiVxtsCEOqQ5wgYwI4cIAQ./referrer=https%3A%2F%2Fapps.mobile.adnxs.com/clickenc=https%3A%2F%2Fwww.appnexus.com%2F\" target=\"_blank\"><img width=\"320\" height=\"50\" style=\"border-style: none\" src=\"https://cdn.adnxs.com/p/bf/7c/a2/50/bf7ca2500111608c8eeead50b3738d2a.jpg\"/></a>');document.write('<scr' + 'ipt src=\"https://cdn.adnxs.com/ANX_async_usersync.js\"></scr'+'ipt>');</script>",", "imptracker": "https://nym1.mobile.adnxs.com/it?e=wqT\_3QLlAajcAAAAAgDWAAUIsr79owUQjNaPqOv\_1Y9xGPKMvdDzgfK3eyABKi0JAAAABQIAEQUGDAAAABkBBRAAAPA\_IQkJCAAAKREJ8JAwjYzuATjkFEDlAUgCUIGipAFY2YEhYBVotfIBcAB4AIABAZIBA1VTRJgBwAKgATKoAQGwAQC4AQXAAQHIAQDQAQDYAQDgAQDwAQDYAgDgAvTyGeoCHGh0dHA6Ly9hcHBzLm1vYmlsZS5hZG54cy5jb22AAwCIAwGQAwCYAxagAwGqAwCwAwC4AwDAA5AcyAMA&dlo=1&referrer=https%3A%2F%2Fapps.mobile.adnxs.com" } \] } 
 ```
 
@@ -65,7 +65,7 @@ In order to test the client-side impression tracking functionality, you simply n
 
 Example Tag to Test with **Separate Field** Option:
 
-``` pre
+```
 https://mobile.adnxs.com/ssmob?id=12345&size=320x50&cs=1&tmpl_id=21&format=json 
 ```
 
@@ -75,7 +75,7 @@ Absolutely, and it is definitely encouraged, publishers do not experience any is
 
 Example Tag to Test with **Default** Option:
 
-``` pre
+```
 https://mobile.adnxs.com/ssmob?id=12345&size=320x50&cs=1 
 ```
 
@@ -83,4 +83,4 @@ https://mobile.adnxs.com/ssmob?id=12345&size=320x50&cs=1
 
 You and your publisher will count the same number of impressions delivered.
 
-If your publisher records **zero** impressions despite sending Microsoft Advertising ad requests during a test, please reach out to your Microsoft Advertising representative.
+If your publisher records **zero** impressions despite sending Microsoft Advertising ad requests during a test, reach out to your Microsoft Advertising representative.

@@ -8,12 +8,11 @@ ms.date: 10/28/2023
 
 If you selected **Managed** under **Supply Strategy** (in the **Basic Setup** section of the line item), you can target or exclude the following inventory:
 
-- [Universal Categories](#universal-and-custom-categories)
-- [Custom Categories](#universal-and-custom-categories)
+- [Universal Categories](#target-universal-categories)
+- [Custom Categories](#target-custom-categories)
 - [Direct Inventory](direct-inventory-targeting-ali.md)
 
-To target specific inventory, open the **Inventory & Brand Safety** section. Then click **Edit** next to **Managed Inventory**. Use these settings
-to limit the inventory your line item will target.
+To target specific inventory, open the **Inventory & Brand Safety** section. Then click **Edit** next to **Managed Inventory**. Use these settings to limit the inventory your line item will target.
 
 ## Universal and custom categories
 
@@ -22,10 +21,9 @@ to limit the inventory your line item will target.
 
 ### Target universal categories
 
-By default, your line item will target all universal categories. However, you can narrow your targeting to include or exclude specific
-universal categories.
+By default, your line item will target all universal categories. However, you can narrow your targeting to include or exclude specific universal categories.
 
-1. On the **Universal Categories** tab, include or exclude custom categories.
+1. On the **Universal Categories** tab, include or exclude universal categories.
     - The **Categories** lists shows all top-level universal categories defined by Microsoft Advertising. You can either include or exclude top-level categories or drill into a category to view its child categories.
     - The **Sub-Categories** list shows all child universal categories in the context of their parent categories. You can either include or exclude sub-categories. Note that when you exclude a top-level category, its sub-categories are not available for further inclusion or exclusion.
 
@@ -36,9 +34,7 @@ universal categories.
 
 ### Target custom categories
 
-By default, your line item will target all custom categories. However, you can narrow targeting to include or exclude specific custom
-categories that you have applied to your own placement groups and/or placements for direct buying as well as custom categories that other
-sellers have exposed to you for third-party buying.
+By default, your line item will target all custom categories. However, you can narrow targeting to include or exclude specific custom categories that you have applied to your own placement groups and/or placements for direct buying as well as custom categories that other sellers have exposed to you for third-party buying.
 
 1. On the **Custom Categories** tab, include or exclude custom categories.
 

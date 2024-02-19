@@ -1,51 +1,45 @@
 ---
 title: Microsoft Invest - Creative CTV Guidelines and Specifications
-description: Learn to serve on Microsoft Advertising publisher's CTV inventory for which your creatives must meet the guidelines and specification requirements, as well as creative standards and any other guidelines that may apply. 
+description: Learn about guidelines and specifications that your creatives should meet to serve on Microsoft Advertising publisher's CTV inventory.
 ms.date: 10/28/2023
 ---
 
 
-# Microsoft Invest - creative CTV guidelines and specifications 
+# Microsoft Invest - Creative CTV guidelines and specifications 
 
-To serve on Microsoft Advertising publisher's CTV inventory,
-your creatives must meet the guidelines and specification requirements, as well as Microsoft Advertising creative standards and any
-other guidelines that may apply. While uploading your creatives, you can see whether your creatives meet the specified CTV requirements or not
-under the **View CTV Eligibility** section . If not, you can click **More Details**, to see which requirements need to be adjusted in order to serve on Microsoft Advertising’s premium publisher’s CTV inventory. The CTV specification validations and approval indicators will be present throughout the Line item and Creative workflows in various tooltips and issues columns, as well.
+To serve on Microsoft Advertising publisher's CTV inventory, your creatives must meet the guidelines and specification requirements, as well as Microsoft Advertising creative standards and any other guidelines that may apply. While uploading your creatives, you can see whether your creatives meet the specified CTV requirements or not under the **View CTV Eligibility** section . If not, you can click **More Details**, to see which requirements need to be adjusted in order to serve on Microsoft Advertising’s premium publisher’s CTV inventory. The CTV specification validations and approval indicators will be present throughout the Line item and Creative workflows in various tooltips and issues columns, as well.
 
-For more information, see [Creative
-Guidelines and Specifications](creative-guidelines-and-specifications.md)
- and [Creative Standards](creative-standards.md).
+For more information, see [Creative Guidelines and Specifications](creative-guidelines-and-specifications.md) and [Creative Standards](creative-standards.md).
 
 > [!NOTE]
 > The CTV guidelines and specification requirements referenced here may change at any time depending upon the publisher's needs.
 
 ## Hosted creative CTV guidelines and specifications
 
-Buyers upload one media file and Microsoft Advertising works on
-its transcoding. Therefore, the following requirements are for an individual media file which the buyer needs to upload.
+Buyers upload one media file and Microsoft Advertising works on its transcoding. Therefore, the following requirements are for an individual media file which the buyer needs to upload.
 
 **Hulu**
 
 | File Type | Bitrate | Resolution | Duration |
-|:---|:---|:---|:---|
+|:-|:-|:-|:-|
 | The file must be formatted as one of the following:<br>- MP4<br> - MOV | The bitrate must be between 15,000 Kbps and 30,000 Kbps. | The resolution must be one of the following:<br>- 960 x 720<br> - 1280 x 720<br> - 1440 x 1080<br> - 1920 x 1080 | The duration must be one of the following:<br>- 15 seconds<br>- 30 seconds |
 
 **Roku**
 
 | File Type | Bitrate | Resolution | Duration | Aspect Ratio |
-|---|---|---|---|---|
+|--|--|--|--|--|
 | The file must be formatted as:<br>- MP4 | The bit rate must at least be 2,100 kbps | There is no specific resolution | The duration must be between 6 and 60 seconds. | The aspect ratio must be 16:9. |
 
 **ESPN**
 
 | File Type | Bitrate | Resolution | Duration |
-|:---|:---|:---|:---|
+|:-|:-|:-|:-|
 | The file must be formatted as:<br>- MP4 | The bitrate must at least be 2,000 kbps | The resolution must be of the following:<br>- 1280 x 720<br>- 1920 x 1080 | The duration must be one of the following:<br>- 15 seconds<br>- 30 seconds |
 
 **NBCU**
 
 | File Type | Bitrate | Resolution | Duration |
-|:---|:---|:---|:---|
+|:-|:-|:-|:-|
 | The file must be formatted as:<br>- MP4 | The bitrate must be between 15,000 Kbps and 30,000 Kbps. | The resolution must be of the following:<br>- 1920 x 1080 | The duration must be one of the following:<br>- 6 seconds<br>- 15 seconds<br>- 30 seconds<br>- 45 seconds<br>- 60 seconds |
 
 **Netflix**
@@ -54,7 +48,7 @@ its transcoding. Therefore, the following requirements are for an individual med
 > Netflix does not allow QR codes in their creatives.
 
 | Creative Specification | Details |
-|---|---|
+|--|--|
 | Video Scan Type | The video scan type must be progressive. |
 | Video Profile for MOV | The video profile for MOV must be one of the following:<br>- Apple ProRes 422 (HQ)<br>- Apple ProRes 422<br>- Apple ProRes 422 (LT) |
 | Video Profile for H.264 | The video profile for H.264 must be one of the following:<br>- Baseline<br>- Main<br>- High |
@@ -83,13 +77,13 @@ its transcoding. Therefore, the following requirements are for an individual med
 **Hulu**
 
 | File Type | Bitrate | Resolution | Duration | Rendition |
-|:---|:---|:---|:---|:---|
+|:-|:-|:-|:-|:-|
 | The file must be formatted as one of the following:<br> - MP4<br> - MOV | The bitrate must be between 15,000 Kbps and 30,000 Kbps | The resolution must be one of the following:<br> - 960 x 720<br> - 1280 x 720<br> - 1440 x 1080<br> - 1920 x 1080 | The duration must be one of the following:<br> - 15 seconds<br> - 30 seconds | A minimum of one file is required |
 
 **Roku**
 
 | Rendition | File Type | Aspect Ratio | Resolution | Bitrate | Duration |
-|:---|:---|:---|:---|:---|:---|
+|:-|:-|:-|:-|:-|:-|
 | High | The file must be formatted as:<br> - MP4 | The aspect ratio must be 16:9 | There is no specific resolution | The bitrate must be between 1,200 Kbps and 2,100 Kbps | The duration must be between 6 and 60 seconds. |
 | Low | The file must be formatted as:<br> - MP4 | The aspect ratio must be 16:9 | There is no specific resolution | The bitrate must be between 360 Kbps and 500 Kbps | The duration must be between 6 and 60 seconds. |
 | Med | The file must be formatted as:<br> - MP4 | The aspect ratio must be 16:9 | There is no specific resolution | The bitrate must be between 700 Kbps and 1200 Kbps | The duration must be between 6 and 60 seconds. |
@@ -97,14 +91,14 @@ its transcoding. Therefore, the following requirements are for an individual med
 **ESPN**
 
 | Rendition | File Type | Resolution | Bitrate | Duration |
-|:---|:---|:---|:---|:---|
-| High | The file must be formatted as:<br> - MP4 | The resolution must be of the following:<br> - 1280 x 720<br> - 1920 x 1080 | The bitrate must be between 2,000 Kbps and 5,000 Kbps | The duration must be one of the following:<br>15 seconds<br>30 seconds |
+|:-|:-|:-|:-|:-|
+| High | The file must be formatted as:<br> - MP4 | The resolution must be of the following:<br> - 1280 x 720<br> - 1920 x 1080 | The bitrate must be between 2,000 Kbps and 5,000 Kbps | The duration must be one of the following:<br> - 15 seconds<br> - 30 seconds |
 | Low | The file must be formatted as:<br> - MP4 | The resolution must be of the following:<br>- 640 x 360<br> - 1280 x 720<br> - 1920 x 1080 | The bitrate must be less than 1,500 Kbps | The duration must be one of the following:<br> - 15 seconds<br> - 30 seconds |
 
 **NBCU**
 
 | Rendition | File Type | Resolution | Bitrate | Duration |
-|:---|:---|:---|:---|:---|
+|:-|:-|:-|:-|:-|
 | High | The file must be formatted as:<br> - MP4 | The resolution must be of the following:<br> - 720 x 480<br> - 1280 x 720<br> - 1920 x 1080 | The bitrate must be between 3,250 Kbps and 5,000 Kbps | The duration must be one of the following:<br> - 6 seconds<br> - 15 seconds<br> - 30 seconds<br> - 45 seconds<br> - 60 seconds |
 | Low | The file must be formatted as:<br> - MP4 | The resolution must be of the following:<br> - 640 x 360<br> - 416 x 234 | The bitrate must be between 340 Kbps and 460 Kbps | The duration must be one of the following:<br> - 6 seconds<br> - 15 seconds<br> - 30 seconds<br> - 45 seconds<br> - 60 seconds |
 | Med | The file must be formatted as:<br> - MP4 | The resolution must be of the following:<br> - 640 x 480<br> - 960 x 540 | The bitrate must be between 1,000 Kbps and 1,500 Kbps | The duration must be one of the following:<br> - 6 seconds<br> - 15 seconds<br> - 30 seconds<br> - 45 seconds<br> - 60 seconds |

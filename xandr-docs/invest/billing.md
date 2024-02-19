@@ -19,8 +19,7 @@ To access past invoices, select **Billing** under your Member settings. in the m
 
 Billing periods reflect periods of platform activity. For example, a June invoice reflects your platform activity in June. However, you may not receive the invoice until July.
 
-For each billing period listed, you can click to view the invoice and/or seller statement. Invoices and seller statements available in
-Microsoft Invest are identical to the invoices you receive (via email) from Microsoft Advertising.
+For each billing period listed, you can click to view the invoice and/or seller statement. Invoices and seller statements available in Microsoft Invest are identical to the invoices you receive (via email) from Microsoft Advertising.
 
 For a detailed explanation of the fields and values in an invoice or seller statement, see [Understanding Your Invoice](understanding-your-invoice.md).
 
@@ -32,15 +31,13 @@ For more details about pricing terms, review your contract or see [Understanding
 
 ## Giving users access to billing information
 
-Only Member-level users can be given access to billing information. To do so:
-Assign the user the **Financial Observer** role. Note that this grants the user the ability to install apps as well as view billing information. For more details, see [Create a User](create-a-user.md).
+Only Member-level users can be given access to billing information. To do so: Assign the user the **Financial Observer** role. Note that this grants the user the ability to install apps as well as view billing information. For more details, see [Create a User](create-a-user.md).
 
 ## Checking your credit status
 
 To review the credit status of your account and/or the balance or unbilled activity of your member, select **Billing** under your Member settings. Click the **Credit Status** tab.
 
-The information displayed on this tab is divided into two sections, those that apply to your member and those that apply to your parent
-account. There may be more than one member per account.
+The information displayed on this tab is divided into two sections, those that apply to your member and those that apply to your parent account. There may be more than one member per account.
 
 ## Related topics
 

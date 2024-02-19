@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Deal Targeting (ALI)
-description: In this article, learn how to target a specific as well as all deals available to you. You can also target deals and deal lists at the Programmable Split level.
+description: In this article, learn how to target specific and all available deals, including the option to target deals and deal lists at a Programmable Split level.
 ms.date: 10/28/2023
 ---
 
@@ -12,12 +12,12 @@ By selecting **Deals** in the **Inventory & Brand Safety Targeting &gt; Supply S
 
 When you select the **Deals** option in the **Inventory & Brand Safety Targeting &gt; Supply Source** subsection of the **Create New Line Item** or **Edit Line Item** screen, you will have the option to target either all the available deals for that line item, or specific deals from sellers using the configurations detailed below.
 
-**To target all deals available to you:**
+### To target all deals available to you
 
 1. In the **Inventory & Brand Safety Targeting &gt; Supply Source** subsection, select **Deals** under **Supply Source**.
 1. Select **All Deals**.
 
-**To target specific deals available to you:**
+### To target specific deals available to you
 
 1. In the **Inventory & Brand Safety Targeting &gt; Supply Source** subsection, select **Deals** in the **Supply Source** section.
 
@@ -29,8 +29,8 @@ When you select the **Deals** option in the **Inventory & Brand Safety Targeting
 
     | Targeting Option | Steps |
     |:---|:---|
-    | Deals | a. Search for available deals by name, alias, ID, or code to target.<br> b. Include deals by clicking the **green check**, or exclude deals by clicking the **red dash**.<br> **Tip:** You can also click the eye button to view additional details about the deal such as **Currency**, **Type**, **Sizes**, **Brands**, **Media Types**, **Start Date**, and **End Date**. |
-    | Deal Lists | a. Search for available deal lists by ID or name to target.<br> b. Include deals by clicking the **green check**, or exclude deals by clicking the **red dash**. |
+    | **Deals** | a. Search for available deals by name, alias, ID, or code to target.<br> b. Include deals by clicking the **green check**, or exclude deals by clicking the **red dash**.<br><br> **Tip:** You can also click the eye button to view additional details about the deal such as **Currency**, **Type**, **Sizes**, **Brands**, **Media Types**, **Start Date**, and **End Date**. |
+    | **Deal Lists** | a. Search for available deal lists by ID or name to target.<br> b. Include deals by clicking the **green check**, or exclude deals by clicking the **red dash**. |
 
     > [!NOTE]
     > You may either include deals OR exclude deals, and deal lists, but not both. Include and exclude functionality has to be consistent at line item level. For example, you can't include a deal list and exclude a deal from the deal list on the line item.

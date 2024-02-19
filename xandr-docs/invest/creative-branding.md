@@ -1,42 +1,24 @@
 ---
 title: Microsoft Invest - Creative Branding
-description: Learn to maintain and monitor a brand list, ensuring duplicate brands and URLs are deleted or reassigned in order to maintain consistency.
+description: In this page, Learn what is Creative Branding and which are the existing brand content categories available. 
 ms.date: 10/28/2023
 ---
 
 
-# Microsoft Invest - creative branding 
+# Microsoft Invest - Creative branding 
 
-Microsoft Advertising maintains and monitors a brand list,
-ensuring duplicate brands and URLs are deleted or reassigned in order to
-maintain consistency.
+Microsoft Advertising maintains and monitors a brand list, ensuring duplicate brands and URLs are deleted or reassigned in order to maintain consistency.
 
-A brand is a proprietary classification assigned to creatives. Within
-the Microsoft Advertising system, each brand has an ID and is
-assigned an associated URL and relevant brand content categories that
-describe the offerings and services provided by the company. Accurate
-branding is essential to maintaining the integrity of the
-Microsoft Advertising platform. The consistency and quality of
-our offering is incredibly important to us, and we invest significant
-resources to its maintenance.
+A brand is a proprietary classification assigned to creatives. Within the Microsoft Advertising system, each brand has an ID and is assigned an associated URL and relevant brand content categories that describe the offerings and services provided by the company. Accurate branding is essential to maintaining the integrity of the Microsoft Advertising platform. The consistency and quality of our offering is incredibly important to us, and we invest significant resources to its maintenance.
 
-During the creative audit process, a brand name/URL are associated with
-every creative. If the appropriate brand exists within the
-Microsoft Advertising system, the creative will be assigned a
-URL associated with the existing brand. If the appropriate brand does
-not exist within the Microsoft Advertising system, the creative
-will be assigned to a comparable existing brand based on the creative
-content and the creative's associated landing page.
+During the creative audit process, a brand name/URL are associated with every creative. If the appropriate brand exists within the Microsoft Advertising system, the creative will be assigned a URL associated with the existing brand. If the appropriate brand does not exist within the Microsoft Advertising system, the creative will be assigned to a comparable existing brand based on the creative content and the creative's associated landing page.
 
 ## Existing brand content categories
 
-When a brand is created, it is given a name, an associated URL, and a
-brand content category. This brand content category attempts to best
-describe the offering of the parent company. Brand content categories
-can be used to include or exclude creatives from serving.
+When a brand is created, it is given a name, an associated URL, and a brand content category. This brand content category attempts to best describe the offering of the parent company. Brand content categories can be used to include or exclude creatives from serving.
 
 | Brand Content Category | Description |
-|:---|:---|
+|:-|:-|
 | **Weight Loss** | This brand primarily offers products and services for dieting and weight loss. |
 | **Weather** | This brand primarily offers meteorological information. |
 | **Video Games** | This brand sells console and computer-based video games. |
@@ -126,5 +108,4 @@ can be used to include or exclude creatives from serving.
 ## Related topics
 
 - [Exclude Competitive Brands for a Creative](exclude-competitive-brands-for-a-creative.md)
-- [Exclude
-  Competitive Offer Categories for a Creative](exclude-competitive-offer-categories-for-a-creative.md)
+- [Exclude Competitive Offer Categories for a Creative](exclude-competitive-offer-categories-for-a-creative.md)

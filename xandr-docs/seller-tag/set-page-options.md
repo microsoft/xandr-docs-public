@@ -19,6 +19,7 @@ The parameters listed below can be sent as arguments in the function.
 
 | Parameter | Type | Description |
 |:---|:---|:---|
+| `dsa` | object | Object that specifies settings in conjunction with the Digital Services Act (DSA). See [DSA Object for details below](#dsa-object).
 | `msft` | object | Object that contains request values unique to Microsoft. See [MSFT Object details below](#schain-object). |
 | `member` | number | The member ID. |
 | `publisherId` | number | The `publisherId` can be used when using an inventory code. This ensures the right publisher is used to help pick the correct default placement. |
@@ -58,6 +59,14 @@ apntag.setPageOpts({
         }
 });
 ```
+### DSA object
+Specifies information related to the Digital Services Act. For the ideal values to use for each of the fields, refer to the [IAB Spec](https://github.com/InteractiveAdvertisingBureau/openrtb/blob/main/extensions/community_extensions/dsa_transparency.md)
+
+| Parameter | Type | Description |
+|---|---|---|
+| `dsarequired` | number | Flag to indicate if DSA information should be made available.
+| `pubrender` | number | Flag to indicate if the publisher will render the DSA Transparency info.
+| `transparency` | Array of objects | Array of objects of the entities that applied user parameters and the parameters they applied.
 
 ### MSFT object 
 

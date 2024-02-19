@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Activate Nielsen Digital Ad Ratings for a line item
 
-For $0.25 CPM, you can activate Nielsen Digital Ad Ratings (DAR) for your augmented line item. Nielsen DAR is a feature used to measure your line item's performance in reaching a particular demographic (gender and age group) that has no affect on your line item's actual targeting or delivery.
+For $0.25 CPM, you can activate Nielsen Digital Ad Ratings (DAR) for your augmented line item. Nielsen DAR is a feature used to measure your line item's performance in reaching a particular demographic (gender and age group) that has no effect on your line item's actual targeting or delivery.
 
 1. Go to the **Measurement** section.
 

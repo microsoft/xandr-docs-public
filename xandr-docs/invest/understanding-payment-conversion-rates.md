@@ -22,8 +22,7 @@ Additionally, these predictions are generally available as an Engineered Feature
 as building blocks to develop custom algorithms using custom models (APB). Outcome predictions are also used for view-rate and
 completion-rate threshold targeting and vCPM optimization, both available as features of the Augmented Line Item.
 
-The outcome predictions are modeled across the entire platform as accurately as possible. For more information on the prediction, please
-see [Engineered Features](engineered-features.md) and our tech blog post.
+The outcome predictions are modeled across the entire platform as accurately as possible. For more information on the prediction, see [Engineered Features](engineered-features.md) and our tech blog post.
 
 ## Market-making fee
 
