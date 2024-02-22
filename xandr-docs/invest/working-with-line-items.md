@@ -15,4 +15,3 @@ A line item defines your financial agreement with an advertiser, including how m
 - [Improve ALI Delivery and Bid Performance](troubleshoot-your-augmented-line-item-delivery-and-bid-performance.md) - View and resolve top delivery and bid performance issues affecting your ALI.
 - [Update Line Items](update-line-items.md) - Edit, duplicate, or delete line items.
 - [Peer Approval](peer-approval.md)
-

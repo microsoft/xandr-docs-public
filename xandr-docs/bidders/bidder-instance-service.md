@@ -19,19 +19,19 @@ You will need to register the hostname/IP/port combination for each of your bidd
 
 | HTTP Method | Endpoint | Description |
 |---|---|---|
-| GET | [https://api.adnxs.com/bidder-instance/BIDDER_ID](https://api.adnxs.com/bidder-instance/BIDDER_ID) | View all bidder instances. It won't show other user's bidders. |
-| GET | [https://api.adnxs.com/bidder-instance/BIDDER_ID/BIDDER_INSTANCE_ID](https://api.adnxs.com/bidder-instance/BIDDER_ID/BIDDER_INSTANCE_ID) | View a particular bidder instance. |
-| POST  | [https://api.adnxs.com/bidder-instance/BIDDER_ID](https://api.adnxs.com/bidder-instance/BIDDER_ID)<br>(bidder instance JSON) | Add a new bidder instance. |
-| PUT  | [https://api.adnxs.com/bidder-instance/BIDDER_ID/BIDDER_INSTANCE_ID](https://api.adnxs.com/bidder-instance/BIDDER_ID/BIDDER_INSTANCE_ID)<br>(bidder instance JSON) | Modify an existing bidder.<br><br>**Note:** The bidder instance service currently does not support deletes - to remove an instance, please set it to inactive.<br><br>**Warning:** When creating/modifying bidder instances, never use the deprecated "datacenter" parameter to set the datacenter for your instance. Instead, always use the "datacenter_id" parameter with the IDs defined below. |
+| `GET` | [https://api.adnxs.com/bidder-instance/BIDDER_ID](https://api.adnxs.com/bidder-instance/BIDDER_ID) | View all bidder instances. It won't show other user's bidders. |
+| `GET` | [https://api.adnxs.com/bidder-instance/BIDDER_ID/BIDDER_INSTANCE_ID](https://api.adnxs.com/bidder-instance/BIDDER_ID/BIDDER_INSTANCE_ID) | View a particular bidder instance. |
+| `POST`  | [https://api.adnxs.com/bidder-instance/BIDDER_ID](https://api.adnxs.com/bidder-instance/BIDDER_ID)<br>(bidder instance JSON) | Add a new bidder instance. |
+| `PUT`  | [https://api.adnxs.com/bidder-instance/BIDDER_ID/BIDDER_INSTANCE_ID](https://api.adnxs.com/bidder-instance/BIDDER_ID/BIDDER_INSTANCE_ID)<br>(bidder instance JSON) | Modify an existing bidder.<br><br>**Note:** The bidder instance service currently does not support deletes - to remove an instance, set it to inactive.<br><br>**Warning:** When creating/modifying bidder instances, never use the deprecated "datacenter" parameter to set the datacenter for your instance. Instead, always use the "datacenter_id" parameter with the IDs defined below. |
 
 ## JSON fields
 
 | Field | Required | Type | Description |
 |:---|:---|:---|:---|
-| `id` | yes (on PUT) | int | The ID of the bidder instance. |
+| `id` | yes (on `PUT`) | int | The ID of the bidder instance. |
 | `bidder_id` | yes | int | The ID of the bidder. |
 | `active` | no, default is true | boolean | Whether the bidder instance is active or not. |
-| `datacenter_id` | yes (on POST) | int | The datacenter ID with which your instance is associated NYM = 6, LAX = 4, , AMS = 15 , FRA = 7, SIN = 13. Legacy IDs: AMS = 12 (until July 12, 2022), SIN = 8 (until October 15, 2019) |
+| `datacenter_id` | yes (on `POST`) | int | The datacenter ID with which your instance is associated NYM = 6, LAX = 4, , AMS = 15 , FRA = 7, SIN = 13. Legacy IDs: AMS = 12 (until July 12, 2022), SIN = 8 (until October 15, 2019) |
 | `ip_address` | yes | string | IP address for the bidder instance. |
 | `port` | yes | int | Port for the bidder instance. |
 | `last_activity` | no | timestamp | The timestamp of last modification to this bidder instance. |
@@ -39,7 +39,7 @@ You will need to register the hostname/IP/port combination for each of your bidd
 | `qps_limit` | no | int | The max queries per second sent to this bidder instance. |
 
 > [!NOTE]
-> QPS limits **must** be set the same for all bidder instances in a datacenter. To do this, set the qps_limit to the same value for all bidder instances active in a datacenter. For example, if you have three bidder instances in LAX, and want to set the QPS limit to 50,000 for the entire datacenter, you would set the qps_limit to 50,000 on each of the three bidder instances. If qps_limit is not the same across all bidder instances within a datacenter, you may get unintended results, so please ensure the qps_limit values are the same in each datacenter.
+> QPS limits **must** be set the same for all bidder instances in a datacenter. To do this, set the `qps_limit` to the same value for all bidder instances active in a datacenter. For example, if you have three bidder instances in LAX, and want to set the QPS limit to 50,000 for the entire datacenter, you would set the `qps_limit` to 50,000 on each of the three bidder instances. If `qps_limit` is not the same across all bidder instances within a datacenter, you may get unintended results, so ensure that the `qps_limit` values are the same in each datacenter.
 >
 > You can add a hostname to your bidder instance at any time. However, our api requires an ip address when adjusting the bidder instance, but if you include a hostname field with a value (your url or domain) in the api call, our systems will connect to the hostname and ignore the ip address. If you are posting a new bidder instance with a hostname, you can use a placeholder value for the ip_address field.
 

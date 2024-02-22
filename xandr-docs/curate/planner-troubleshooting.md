@@ -1,6 +1,6 @@
 ---
 title: Microsoft Curate - Planner Troubleshooting
-description: The article discusses various troubleshooting criteria.
+description: Troubleshoot targeting issues - No reach means no match. Check for conflicting parameters and refer to breakdown visualization for insights. Adjust if too restrictive.
 ms.date : 10/28/2023
 ---
 
@@ -18,9 +18,7 @@ The "failed to fetch" error occurs when there is a timeout on the API. Typically
 
 ## Numbers in planner don't match delivered impressions
 
-You may find that the estimates in Planner don't match your recent results. For example, you may see delivered impressions in past data
-that aren't reflected in Planner's projections. Because the data is projected from a limited sample of historical data, estimates are not
-guaranteed to match existing deal data.
+You may find that the estimates in Planner don't match your recent results. For example, you may see delivered impressions in past data that aren't reflected in Planner's projections. Because the data is projected from a limited sample of historical data, estimates are not guaranteed to match existing deal data.
 
 ## User count is greater than impression count
 

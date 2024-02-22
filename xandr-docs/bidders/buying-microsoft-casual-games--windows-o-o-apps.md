@@ -6,8 +6,6 @@ ms.date: 10/28/2023
 
 # Bidders - Buy Microsoft Casual Games (Windows O&O apps)
 
-## Inventory overview
-
 Microsoft Casual Games (i.e., Microsoft's Owned and Operated apps) provide premium inventory across Windows desktop PCs, tablets, and phones. Microsoft Casual Games include:
 
 - Microsoft Solitaire Collection
@@ -19,7 +17,7 @@ Microsoft Casual Games (i.e., Microsoft's Owned and Operated apps) provide premi
 - Microsoft Ultimate Word Game
 - Microsoft Bingo
 
-**Microsoft Solitaire Collection**
+## Microsoft Solitaire Collection
 
 The Microsoft Solitaire Collection remains the most played computer game of all time, and has been a part of Windows for more than 24 years. The Microsoft Solitaire Collection ships globally with every copy of Windows 10. The Microsoft Solitaire Collection makes it the best experience to date with five different card games in one and localized in 65 languages.
 
@@ -33,7 +31,7 @@ The Microsoft Solitaire Collection remains the most played computer game of all 
 
 For more information, see [Formats and Specifications](#formats-and-specifications).
 
-**Microsoft Minesweeper**
+## Microsoft Minesweeper
 
 Minesweeper is the classic puzzle game that has been a part of Windows for more than 20 years, now reimagined for Windows 8 and 10. Featuring adjustable difficulty, classic Minesweeper gameplay, and a brand new Adventure mode, Microsoft Minesweeper is better than ever.
 
@@ -47,7 +45,7 @@ Minesweeper is the classic puzzle game that has been a part of Windows for more 
 
 For more information, see [Formats and Specifications](#formats-and-specifications).
 
-**Microsoft Jigsaw**
+## Microsoft Jigsaw
 
 Users can play hundreds of puzzles in three exciting game modes: Classic Jigsaw, Jigsaw Jam, and Daily Challenges. Intuitive controls make
 Microsoft Jigsaw great using a mouse and keyboard, and excellent on touch screens. With multiple game modes, downloadable puzzle packs, and the ability to create custom puzzles, Microsoft Jigsaw provides hours of entertainment.
@@ -62,7 +60,7 @@ Microsoft Jigsaw great using a mouse and keyboard, and excellent on touch screen
 
 For more information, see [Formats and Specifications](#formats-and-specifications).
 
-**Microsoft Sudoku**
+## Microsoft Sudoku
 
 The new Microsoft Sudoku is the popular logic puzzle game that makes the most of a Windows device. With five difficulty levels, fresh daily challenges, achievements and leaderboards, Microsoft Sudoku provides hundreds of brain training puzzles for players of all ages.
 
@@ -76,7 +74,7 @@ The new Microsoft Sudoku is the popular logic puzzle game that makes the most of
 
 For more information, see [Formats and Specifications](#formats-and-specifications).
 
-**Microsoft Mahjong**
+## Microsoft Mahjong
 
 Microsoft Mahjong is the classic matching game with beautiful imagery, intuitive controls, and all the features that fans of Mahjong come to expect.
 
@@ -90,7 +88,7 @@ Microsoft Mahjong is the classic matching game with beautiful imagery, intuitive
 
 For more information, see [Formats and Specifications](#formats-and-specifications).
 
-**Microsoft Treasure Hunt**
+## Microsoft Treasure Hunt
 
 Classic puzzle gaming with exciting new features, Microsoft Treasure Hunt builds on the Microsoft Minesweeper for Windows Adventure mode experience.
 
@@ -113,7 +111,7 @@ For more information, see [Formats and Specifications](#formats-and-specificatio
 
 ## Formats and specifications
 
-**Microsoft Solitaire Collection**
+### Microsoft Solitaire Collection's format and specifications
 
 | Platform                      | 300x250 | 728x90 | 300x600 | 480x80 | 320x50 |
 |:------------------------------|:--------|:-------|:--------|:-------|:-------|
@@ -124,37 +122,37 @@ For more information, see [Formats and Specifications](#formats-and-specificatio
 > [!NOTE]
 > 728x90 only available on Windows 10
 
-**Microsoft Minesweeper**
+### Microsoft Minesweeper's format and specifications
 
 | Platform                      | 300x250 | 728x90 | 300x600 | 480x80 | 320x50 |
 |:------------------------------|:--------|:-------|:--------|:-------|:-------|
 | Windows Desktop PCs & Tablets | X       |        |         |        |        |
 
-**Microsoft Jigsaw**
+### Microsoft Jigsaw's format and specifications
 
 | Platform                      | 300x250 | 728x90 | 300x600 | 480x80 | 320x50 |
 |:------------------------------|:--------|:-------|:--------|:-------|:-------|
 | Windows Desktop PCs & Tablets | X       |        |         |        |        |
 
-**Microsoft Sudoku**
+### Microsoft Sudoku's format and specifications
 
 | Platform                      | 300x250 | 728x90 | 300x600 | 480x80 | 320x50 |
 |:------------------------------|:--------|:-------|:--------|:-------|:-------|
 | Windows Desktop PCs & Tablets | X       |        |         |        |        |
 
-**Microsoft Mahjong**
+### Microsoft Mahjong's format and specifications
 
 | Platform                      | 300x250 | 728x90 | 300x600 | 480x80 | 320x50 |
 |:------------------------------|:--------|:-------|:--------|:-------|:-------|
 | Windows Desktop PCs & Tablets | X       | X      |         |        |        |
 
-**Microsoft Treasure Hunt**
+### Microsoft Treasure Hunt's format and specifications
 
 | Platform                      | 300x250 | 728x90 | 300x600 | 480x80 | 320x50 |
 |:------------------------------|:--------|:-------|:--------|:-------|:-------|
 | Windows Desktop PCs & Tablets | X       |        | X       |        |        |
 
-**Microsoft Ultimate Word Game**
+### Microsoft Ultimate Word Game's format and specifications
 
 | Platform                      | 300x250 | 728x90 | 300x600 | 480x80 | 320x50 |
 |:------------------------------|:--------|:-------|:--------|:-------|:-------|
@@ -213,7 +211,6 @@ To target Microsoft Casual Games inventory, use the [Package Marketplace](../mon
     | 6342 | Run of Microsoft Casual Games Apps Package -- Microsoft Jackpot              |
 
 1. Click **Add to Cart**.
-
 1. Click **Get Deals** to generate the Deal ID to target.
 
     For more information, see [Get Deals from Seller Packages](../monetize/get-deals-from-seller-packages.md).

@@ -7,7 +7,7 @@ ms.date : 10/28/2023
 
 # Initialize SDK settings in iOS
 
-SDKSettings in Xandr Mobile SDK contains the method `optionalSDKInitialization()`, which allows you to pre-configure common settings such as checking the presence of the User Agent during initialization, preparing a WebView etc. The completion block of this method returns “true” if SDK initialization completes successfully and “false” if it fails.
+SDKSettings in Xandr Mobile SDK contains the method `optionalSDKInitialization()`, which allows you to pre-configure common settings such as checking the presence of the User Agent during initialization, preparing a WebView etc. The completion block of this method returns `true` if SDK initialization completes successfully and `false` if it fails.
 
 ## Method
 

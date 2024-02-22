@@ -1,10 +1,10 @@
 ---
 title: Microsoft Invest - Member Audio Analytics Report
-description: Use this report to view audio event metrics across multiple buyers and sellers.
+description: Use the Member Audio Analytics report to view audio event metrics across multiple buyers and sellers.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Member audio analytics report
+# Microsoft Invest - Member Audio Analytics report
 
 The Member Audio Analytics report can be used to view audio event metrics across multiple buyers and sellers.
 
@@ -12,11 +12,9 @@ The Member Audio Analytics report can be used to view audio event metrics across
 
 All dates and times are given in UTC.
 
-**Time ranges**
+### Time ranges
 
-Time ranges define the time period of the data extracted for the report. The following is a complete list of time ranges available for reports.
-
-However, all time ranges are not available for every report.
+Time ranges define the time period of the data extracted for the report. The following is a complete list of time ranges available for reports. However, all time ranges are not available for every report.
 
 - Custom
 - Current Hour
@@ -41,7 +39,7 @@ However, all time ranges are not available for every report.
 - Month to Yesterday
 - Lifetime
 
-**Intervals**
+### Intervals
 
 Intervals determine how your data is grouped together into rows in the report response. The following is a complete list of intervals available for reports. However, all intervals are not available for every report.
 
@@ -53,7 +51,7 @@ Intervals determine how your data is grouped together into rows in the report re
 > [!TIP]
 > For more information about how quickly report data is processed, see [Availability of Reporting Data](./availability-of-reporting-data.md)
 
-**Currency 2.0**
+## Currency 2.0
 
 > [!NOTE]
 > By enabling **Currency 2.0**, you can select a currency for each individual report if you prefer not to use **USD** as the default currency. The report will show all the monetary fields in your report using the selected currency. For example, if you select
@@ -129,7 +127,8 @@ You can also choose to select the **Only include results where a Deal is present
 Follow these steps to run your report.
 
 1. Select **Reporting** from the appropriate top menu (depending on how your account has been configured).
-    1. Or, from the Publishers top menu, click on **Prebid Server Premium** > **Analytics** > **Prebid Server Analytics**
+   <br>Or<br>
+   From the Publishers top menu, click on **Prebid Server Premium** > **Analytics** > **Prebid Server Analytics**.
 
 1. Select the relevant report from the list. The **Report** screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
    > [!IMPORTANT]

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize Supply for External Demand Partners
-description: The article discusses Microsoft Monetize Supply for External Demand Partners, providing information and insights into this particular monetization strategy.
+description: Explore Microsoft's Monetize Supply strategy for External Demand Partners, gaining insights into effective monetization.
 ms.date: 10/28/2023
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Data Science Toolkit - Create a Bonsai Decision Tree Custom Model
-description: In this article, learn how to create a Bonsai decision tree custom model and easily upload it to our platform with clear, step-by-step instructions.
+description: Learn how to create a Bonsai decision tree custom model and easily upload it to our platform using clear, step-by-step instructions.
 ms.custom: data-science
 ms.date: 10/28/2023
 ---
@@ -38,9 +38,7 @@ conjunction with a buying strategy that uses Xandr's optimization, like "Optimiz
 
 ### Step 1: Identify your requirements
 
-You will write your custom model as a decision tree, where branches of the tree express
-conditions that lead to specific outputs (bid prices in the case of a Bid Price Model and bid multipliers in the case of a Bid Modifier
-Model). The conditions can be based on a set of Bonsai features and feature values. Before writing your tree:
+You will write your custom model as a decision tree, where branches of the tree express conditions that lead to specific outputs (bid prices in the case of a Bid Price Model and bid multipliers in the case of a Bid Modifier Model). The conditions can be based on a set of Bonsai features and feature values. Before writing your tree:
 
 - Take a close look at the [Bonsai Features](bonsai-language-features.md) that are available.
 - Sketch how you want to use tree features to determine outputs.
@@ -48,7 +46,7 @@ Model). The conditions can be based on a set of Bonsai features and feature valu
   - [Standard Reporting](../invest/reporting-guide.md)
   - [Log-Level Data Feeds](../log-level-data/log-level-data-feeds.md)
 
-Example: Decision tree for bid pricing
+#### Example: Decision tree for bid pricing
 
 :::image type="content" source="media/datascience-c.png" alt-text="Diagram of a decision tree for bid pricing.":::
 
@@ -66,12 +64,12 @@ Once you know the features and steps you want to follow to price or modify bids 
 >
 > In Bonsai, indentation is used to group expressions (similar to Python). Be sure to use **tabs** to indicate line indentation. Spaces are not currently supported.
 
-Example: Bonsai tree for bid pricing
+#### Example: Bonsai tree for bid pricing
 
 > [!NOTE]
 > In the code example below, lines beginning with `#` are comments to help you understand the logic of this tree.
 
-``` pre
+```
 # This tree determines a bid price as follows:
 # 1. If the user is in California, and the hour is between 12pm and 14pm there, bid $1.50.
 # 2. If the user is in New York, and the hour is between 1am and 3am there, bid $0.10.
@@ -89,9 +87,9 @@ else:
 
 Base64-encode your decision tree.
 
-Example: Base64-encoded
+#### Example: Base64-encoded
 
-``` pre
+```
 IyBUaGlzIHRyZWUgZGV0ZXJtaW5lcyBhIGJpZCBwcmljZSBhcyBmb2xsb3dzOgojIDEuIElmIHRoZSB1c2VyIGlzIGluIENhbGlmb3JuaWEsIGFuZCB0aGUgaG91ciBpcyBiZXR3ZWVuIDEycG0gYW5kIDE0cG0gdGhlcmUsIGJpZCAkMS41MC4KIyAyLiBJZiB0aGUgdXNlciBpcyBpbiBOZXcgWW9yaywgYW5kIHRoZSBob3VyIGlzIGJldHdlZW4gMWFtIGFuZCAzYW0gdGhlcmUsIGJpZCAkMC4xMC4KIyAzLiBPdGhlcndpc2UsIGJpZCAkMC41MC4KCmlmIGV2ZXJ5IHJlZ2lvbiA9ICJVUzpDQSIsIHVzZXJfaG91ciByYW5nZSAoMTIsMTQpOgoJMS41CmVsaWYgZXZlcnkgcmVnaW9uID0gIlVTOk5ZIiwgdXNlcl9ob3VyIHJhbmdlICgxLDMpOgoJMC4xCmVsc2U6CgkwLjU=
 ```
 
@@ -106,9 +104,9 @@ Use the [Custom Model Parser Service](custom-model-parser-service.md) to check 
 > [!NOTE]
 > If the tree is larger than 3MB, you will not be able to add the tree.
 
-Example: JSON file containing your base64-encoded tree
+#### Example: JSON file containing your base64-encoded tree
 
-``` pre
+```
 $ cat check_tree.json 
  
 {
@@ -118,9 +116,9 @@ $ cat check_tree.json
 }
 ```
 
-Example: `POST` to the custom-model-parser service
+#### Example: `POST` to the `custom-model-parser` service
 
-``` pre
+```
 $ curl -b cookies -c cookies -X POST -d @check_tree.json 'https://api.appnexus.com/custom-model-parser'
 {
     "response": {
@@ -145,12 +143,12 @@ Once you've confirmed that your tree is valid, use the [Custom Model Service](cu
   - For a Bid Price model, use `"bid"`.
   - For a Bid Modifier model, use `"bid_modifier"`.
 - Put your base64-encoded tree in the `model_text` field as a string.
-- Provide a unique `name`. This is required and will make it easier to select the correct model in .
+- Provide a unique `name`. This is required and will make it easier to select the correct model in.
 - Provide the `advertiser_id` to which the custom model belongs. You will be able to use the model only in campaigns under this advertiser.
 
-Example: JSON file defining your custom model
+#### Example: JSON file defining your custom model
 
-``` pre
+```
 $ cat custom_model.json
  
 {
@@ -165,9 +163,9 @@ $ cat custom_model.json
 }
 ```
 
-Example: `POST` to `custom-model` service
+#### Example: `POST` to `custom-model` service
 
-``` pre
+```
 $ curl -b cookies -c cookies -X POST -d @custom_model.json 'https://api.appnexus.com/custom-model'
  
 {
@@ -219,14 +217,12 @@ Using the API
 Use the [Campaign Service](../digital-platform-api/campaign-service.md) to assign your custom model to a campaign. Be sure to:
 
 - Set `cpm_bid_type` to `"custom_model"`.
-
 - Provide the `id` of your custom model in the `bid_model` object.
-
 - Set `inventory_type` to `"real_time"`.
 
   **JSON file defining your campaign**
 
-  ``` pre
+  ```
   $ cat campaign.json
    
   {
@@ -242,9 +238,9 @@ Use the [Campaign Service](../digital-platform-api/campaign-service.md) to ass
   }
   ```
 
-  **POST to campaign service**
+  **`POST` to campaign service**
 
-  ``` pre
+  ```
   $ curl -b cookies -c cookies -X POST -d @campaign.json 'https://api.appnexus.com/campaign?advertiser_id=45278'
    
   {
@@ -349,14 +345,12 @@ Use the [Campaign Service](../digital-platform-api/campaign-service.md) to ass
 
 - Set `cpm_bid_type` to an optimization-based buying strategy (`"predicted"` or `"margin"`) and any corresponding required fields.
   - In the JSON below, for example, we set `cpm_bid_type` to `"predicted"` and `cpc_click_goal` to `1.00` to optimize CPM bids to a predicted $1.00 CPC goal.
-
 - In the `bid_modifier_model` object, provide the `id` of the custom model that will modify the campaign's CPM bids.
-
 - Set `inventory_type` to `"real_time"`.
 
   **JSON file defining your campaign**
 
-  ``` pre
+  ```
   $ cat campaign.json
 
   {
@@ -373,9 +367,9 @@ Use the [Campaign Service](../digital-platform-api/campaign-service.md) to ass
   }
   ```
 
-  **POST to campaign service**
+  **`POST` to campaign service**
 
-  ``` pre
+  ```
   $ curl -b cookies -c cookies -X POST -d @campaign.json 'https://api.appnexus.com/campaign?advertiser_id=45278'
    
   {

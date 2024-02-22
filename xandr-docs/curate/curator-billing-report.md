@@ -54,8 +54,7 @@ Intervals determine how your data is grouped together into rows in the report re
 - Cumulative: Data is grouped together in one figure, covering the entire selected time range.
 
 > [!NOTE]
-> Hourly impression data is available and spans 13 full months. For impressions that are older than 13 months, hourly data is aggregated
-> into one row with 'YYYY-MM-DD 00:00:00' as the hour ('YYYY-MM-DD' is the UTC day in which the activity happened). This will make it look as though all activity happened at midnight.
+> Hourly impression data is available and spans 13 full months. For impressions that are older than 13 months, hourly data is aggregated into one row with 'YYYY-MM-DD 00:00:00' as the hour ('YYYY-MM-DD' is the UTC day in which the activity happened). This will make it look as though all activity happened at midnight.
 >
 > All daily data that is older than 13 months will be timestamped based on the UTC time zone.
 

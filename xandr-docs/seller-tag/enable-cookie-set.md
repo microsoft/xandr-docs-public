@@ -12,12 +12,12 @@ ms.date: 10/28/2023
 
 This function is used to set cookies via link redirects. It only supports Safari browser (for now). If you use it for other browsers, nothing will happen.
 
-``` pre
+```
 enableCookieSet()
 ```
 
 ## Example
 
-``` pre
+```
 apntag.enableCookieSet()
 ```

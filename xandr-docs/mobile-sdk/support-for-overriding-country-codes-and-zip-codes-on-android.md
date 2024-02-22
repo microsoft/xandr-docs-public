@@ -1,21 +1,14 @@
 ---
-title : Support for Overriding Country Codes and Zip Codes on Android
-description : Mobile SDK allows the publishers to override the country codes and zip codes. The SDK uses City/DMA/Country information from standard feed (log level data) for reporting purposes.
-ms.custom : android-sdk
-ms.date : 10/28/2023
+title: Support for Overriding Country Codes and Zip Codes on Android
+description: This page covers setter methods like setGeoOverrideCountryCode, setGeoOverrideZipCode and getter methods like getGeoOverrideCountryCode and getGeoOverrideZipCode which are used by publishers to override the country codes and zip codes.      
+ms.custom: android-sdk
+ms.date: 10/28/2023
 ---
 
 
 # Support for overriding country codes and zip codes on Android
 
-Mobile SDK allows the publishers to override the country codes and zip
-codes. The SDK uses City/DMA/Country information from standard feed (log
-level data) for reporting purposes. However it is required overwrite
-these values from reverser geocoded latitude and longitude data (if
-available) to keep the data sanity intact. Reason being, if those values
-are not overwritten, log level data will point to the ip-address based
-locations and eventually will project wrong data set especially with
-mobile data.
+Mobile SDK allows the publishers to override the country codes and zip codes. The SDK uses City/DMA/Country information from standard feed (log level data) for reporting purposes. However it is required overwrite these values from reverser geocoded latitude and longitude data (if available) to keep the data sanity intact. Reason being, if those values are not overwritten, log level data will point to the ip-address based locations and eventually will project wrong data set especially with mobile data.
 
 ## Methods
 
@@ -23,8 +16,7 @@ Use the following methods to override country and ZIP codes.
 
 **setGeoOverrideCountryCode**
 
-Setter method which assigns a country code . It will pass the country
-code string as the argument in the method.
+Setter method which assigns a country code . It will pass the country code string as the argument in the method.
 
 ``` 
 /**
@@ -40,8 +32,7 @@ code string as the argument in the method.
 
 **setGeoOverrideZipCode**
 
-Setter method which assigns a zip code . It will pass the zip code
-string as the argument in the method.
+Setter method which assigns a zip code. It will pass the zip code string as the argument in the method.
 
 ``` 
 /**
@@ -57,8 +48,7 @@ string as the argument in the method.
 
 **getGeoOverrideCountryCode**
 
-Getter method that returns the country code value that is set using
-**setGeoOverrideCountryCode**.
+Getter method that returns the country code value that is set using **setGeoOverrideCountryCode**.
 
 ``` 
 /**
@@ -71,8 +61,7 @@ Getter method that returns the country code value that is set using
 
 **getGeoOverrideZipCode**
 
-Getter method that returns the zip code value that is set
-using **setGeoOverrideZipCode**.
+Getter method that returns the zip code value that is set using **setGeoOverrideZipCode**.
 
 ``` 
 /**

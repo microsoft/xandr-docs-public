@@ -1,26 +1,22 @@
 ---
-title : Data Science Toolkit - Custom Model Parser Service
-description : The Custom Model Parser service lets you check the validity of decision trees written in our <a href="the-bonsai-language.md">.
-ms.custom : data-science
+title: Data Science Toolkit - Custom Model Parser Service
+description: The Custom Model Parser service lets you check the validity of decision trees written in Bonsai Language. This page walks you through the validation process.  
+ms.custom: data-science
 ms.date: 10/28/2023
 ---
 
 
 # Data Science Toolkit - Custom model parser service
 
-The Custom Model Parser service lets you check the validity of decision
-trees written in our [Bonsai Language](the-bonsai-language.md). You should use this service to identify and resolve any Bonsai syntax or feature errors
-before using the [Custom Model Service](custom-model-service.md) to upload trees for use in campaigns.
+The Custom Model Parser service lets you check the validity of decision trees written in our [Bonsai Language](the-bonsai-language.md). You should use this service to identify and resolve any Bonsai syntax or feature errors before using the [Custom Model Service](custom-model-service.md) to upload trees for use in campaigns.
 
-This page walks you through the validation process. For background
-information on the purpose of custom models, see [Custom Models](custom-models.md). 
+This page walks you through the validation process. For background information on the purpose of custom models, see [Custom Models](custom-models.md).
 
 ## Step 1. Base64-encode your Bonsai decision tree
 
-Once you have written your decision tree in our Bonsai Language,
-base64-encode it.
+Once you have written your decision tree in our Bonsai Language, base64-encode it.
 
-``` pre
+``` 
 $ cat decision_tree.txt 
  
 # This tree determines a bid price as follows:
@@ -41,11 +37,9 @@ IyBUaGlzIHRyZWUgZGV0ZXJtaW5lcyBhIGJpZCBwcmljZSBhcyBmb2xsb3dzOgojIDEuIElmIHRoZSB1
 
 ## Step 2. Create a JSON file containing your encoded tree
 
-Create a JSON file as shown below. The main object must contain
-a `custom-model-parser` object with the encoded tree as a string in
-the `model_text` field.
+Create a JSON file as shown below. The main object must contain a `custom-model-parser` object with the encoded tree as a string in the `model_text` field.
 
-``` pre
+``` 
 $ cat check_tree.json 
  
 {
@@ -59,29 +53,28 @@ $ cat check_tree.json
 
 Make a `POST` call to the Custom Model Parser Service as shown below.
 
-``` pre
+``` 
 $ curl -b cookies -c cookies -X POST -d @check_tree.json 'https://api.appnexus.com/custom-model-parser'
 ```
 
-## Step 4. Check the response 
+## Step 4. Check the response
 
 - [Tree is valid](#tree-is-valid)
 - [Tree is not valid](#tree-is-not-valid)
 
 ### Tree is valid
 
-If your Bonsai decision tree is valid, the `custom-model-parser` object
-in the response will contain the following fields:
+If your Bonsai decision tree is valid, the `custom-model-parser` object in the response will contain the following fields:
 
 | Field | Description |
-|---|---|
+|--|--|
 | `model_text` | Your decision tree. |
 | `size` | The size of your decision tree, in bytes.<br>**Size Limit**: Your tree must be smaller than 3 MB, or 3,145,728 bytes. If it is larger than that, you will not be able to add your tree using the [Custom Model Service](custom-model-service.md). |
 
 > [!NOTE]
 > The custom-model-parser endpoint used to return the Lisp storage format of a decision tree under the "`model_text`" field. We are deprecating this internal representation, as it was only an intermediate step and is not used anywhere on the platform. The field will now always contain the value "`<removed>`". The "`size`" field on the response will continue to be filled accurately and you should keep relying on it to know if your model is too large for upload.
 
-``` pre
+``` 
 {
     "response": {
         "service": "custom-model-parser",
@@ -96,11 +89,9 @@ in the response will contain the following fields:
 
 ### Tree is not valid
 
-If your Bonsai decision tree is not valid, the `error` field in the
-response will identify the issue. An error can result from either
-invalid Bonsai syntax or invalid usage of Bonsai features. See [Error Messages](#error-messages) below for more details.
+If your Bonsai decision tree is not valid, the `error` field in the response will identify the issue. An error can result from either invalid Bonsai syntax or invalid usage of Bonsai features. See [Error Messages](#error-messages) below for more details.
 
-``` pre
+``` 
 {
     "response": {
         "error_id": "SYNTAX",
@@ -122,43 +113,40 @@ invalid Bonsai syntax or invalid usage of Bonsai features. See [Error Messages](
 
 - Illegal character found:
 
-  ``` pre
+  ``` 
   ERROR: Illegal character <character> found on line <line> at column <column>
   ```
 
 - Second root node found:
 
-  ``` pre
+  ``` 
   ERROR: End of file expected; <token> found.
   ```
 
 - Numeric operator used with non-numeric type:
 
-  ``` pre
+  ``` 
   ERROR: Numeric operator <operator> invalid with non-numeric type <type> at line <line> at column <column>.
   ```
 
 - Incorrect number of elements in a list (like having 3 elements in a
   range expression):
 
-  ``` pre
+  ``` 
   ERROR: Invalid number of elements in list at line <line> at column <column>. Required number of elements is <required number>, <number> elements found
   ```
 
 ### Feature errors
 
-There are two types of features: Features we validate against the DB,
-and features whose values must be certain numeric values. Validating
-against the DB, the error message seen for an invalid value is:
+There are two types of features: Features we validate against the DB, and features whose values must be certain numeric values. Validating against the DB, the error message seen for an invalid value is:
 
-``` pre
+``` 
 ERROR: <description> expected on line <line> at column <column>; found <value found>.
 ```
 
-Validating numeric values, the error message seen for an invalid value
-is:
+Validating numeric values, the error message seen for an invalid value is:
 
-``` pre
+``` 
 ERROR: <description> expected on line <line> at column <column>; <numeric restriction>
 ```
 
@@ -199,4 +187,3 @@ Features, descriptions, numeric restrictions are as follows:
 - [Custom Model Service](custom-model-service.md)
 - [Bonsai Language](the-bonsai-language.md)
 - [Bonsai Language Features](bonsai-language-features.md)
-

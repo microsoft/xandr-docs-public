@@ -1,6 +1,6 @@
 ---
 title: Microsoft Curate - Partner Center Guide
-description: The article explains how a partner Center can help you to realize your potential with other buyers and sellers.
+description: Unlock potential by leveraging a Partner Center to connect with buyers and sellers, as detailed in the article.
 ms.date : 10/28/2023
 ---
 

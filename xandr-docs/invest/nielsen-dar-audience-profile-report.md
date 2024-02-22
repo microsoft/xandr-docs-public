@@ -1,10 +1,10 @@
 ---
 title: Microsoft Invest - Nielsen Digital Ad Ratings - Audience Profile Report
-description: Use this report to get an insight into your line item's impressions and the demographies they're coming from.
+description: Use the Nielsen Digital Ad Ratings - Audience Profile report to get an insight into your line item's impressions and the demographies they're coming from.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Nielsen Digital Ad Ratings - Audience Profile Report
+# Microsoft Invest - Nielsen Digital Ad Ratings - Audience Profile report
 
 The **Nielsen Digital Ad Ratings (DAR) - Audience Profile Report** gives you insight into your line item's impressions and the demographies they're coming from.
 
@@ -24,7 +24,7 @@ Available time ranges include:
 
 Intervals determine how your data is grouped together into rows in the report response. Only one interval option is available for a Nielsen DAR - Audience Profile Report:
 
-- **Cumulative**: Data is grouped together in one figure, covering the entire selected time range.
+**Cumulative**: Data is grouped together in one figure, covering the entire selected time range.
 
 ## Metrics
 
@@ -71,7 +71,8 @@ Intervals determine how your data is grouped together into rows in the report re
 Follow these steps to run your report.
 
 1. Select **Reporting** from the appropriate top menu (depending on how your account has been configured).
-    1. Or, from the Publishers top menu, click on **Prebid Server Premium** > **Analytics** > **Prebid Server Analytics**
+   <br>Or<br>
+   From the Publishers top menu, click on **Prebid Server Premium** > **Analytics** > **Prebid Server Analytics**.
 
 1. Select the relevant report from the list. The **Report** screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
    > [!IMPORTANT]

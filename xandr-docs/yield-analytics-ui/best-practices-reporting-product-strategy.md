@@ -1,6 +1,6 @@
 ---
 title: Best Practices - Reporting Product Strategy
-description: The article highlights effective product strategy reporting through clear tools and distinct naming for improved clarity and differentiation.
+description: Improve product strategy reporting with clear tools and distinct naming for enhanced clarity and differentiation.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
@@ -75,11 +75,11 @@ Once you have these basics in place, consider where it may be applicable to d
 
 Once you have some reporting products created, it is recommended to start assigning them to groups. Groups will make it easier to create reports quickly, because they will help filter reporting results and product searches.
 
-The major risk in product groups is using too many groups, to the point where it’s cumbersome to search the groups. Do  create groups for primary types (Geo vs. Audience, Content vs. Platform). Do not  create groups for every content section or subsection (Sports_Baseball vs. Sports_Football vs. Sports_Basketball). This would create hundreds or thousands of groups. It is recommended to rely on a strong naming convention, and search for what you need.
+The major risk in product groups is using too many groups, to the point where it’s cumbersome to search the groups. Do create groups for primary types (Geo vs. Audience, Content vs. Platform). Do not create groups for every content section or subsection (Sports_Baseball vs. Sports_Football vs. Sports_Basketball). This would create hundreds or thousands of groups. It is recommended to rely on a strong naming convention, and search for what you need.
 
 A product group probably isn’t that valuable if it contains less than 10 products that could have a common and unique element in their name. It can make sense to have small groups if you want to create them for specific stakeholders in your organization. Example: The finance team analyzes data in a specify fashion, so their life is made easier by always filtering reports with a single product group.
 
-You can read more about Product Group Strategy  in a separate Yield Analytics Best Practice doc.
+You can read more about Product Group Strategy in a separate Yield Analytics Best Practice doc.
 
 ## Related topic
 

@@ -1,8 +1,8 @@
 ---
-title : Show High Impact Media type on iOS
-description : This page has instructions and code samples for showing a high impact media as banner ad view in Xandr Mobile SDK for iOS.
+title: Show High Impact Media type on iOS
+description: This page has instructions and code samples for showing a high impact media as banner ad view in Xandr Mobile SDK for iOS.
 ms.custom: ios-sdk 
-ms.date : 10/28/2023
+ms.date: 10/28/2023
 
 ---
 
@@ -13,18 +13,15 @@ ms.date : 10/28/2023
 
 ## Overview
 
-This page has instructions and code samples for showing a high impact
-media as banner ad view in Xandr Mobile SDK for iOS.
+This page has instructions and code samples for showing a high impact media as banner ad view in Xandr Mobile SDK for iOS.
 
 ## Property
 
-This feature enhances the MobileSDK API with a property that indicates
-whether high impact media can serve on an Ad object.
+This feature enhances the MobileSDK API with a property that indicates whether high impact media can serve on an Ad object.
 
 | Property | Type | Attribute | Description |
-|---|---|---|---|
+|--|--|--|--|
 | `shouldAllowHighImpactDemand` | BOOL | readwrite | Indicates whether high impact media can serve on the Ad object.<br>Default value is NO. |
-
 
 ``` 
 /**

@@ -7,9 +7,9 @@ ms.date: 10/28/2023
 
 # Define Tag
 
-This function defines parameters for an ad placement. Note that no more than 12 placements should be specified per page. Returns a `Tag` `object` that can be used later after defining. 
+This function defines parameters for an ad placement. Note that no more than 12 placements should be specified per page. Returns a `Tag` `object` that can be used later after defining.
 
-``` pre
+```
 defineTag({params})
 ```
 
@@ -37,7 +37,7 @@ The parameters listed below can be sent as arguments in the function.
 | `alwaysUseXDomainIframe` | Boolean | Indicates whether the ad creative should be loaded into a cross-domain iframe. This will prevent data leakage and does not allow the creative to access the parent page directly.<br><br>**Note:** This parameter has been deprecated in favor of `enableSafeFrame`. |
 | `privateSizes` | Array of numbers | The additional sizes that allowed to serve only for custom deals or packages (when private sizes are allowed by the deal or package). In the format `[300,250]` for a single size and `[[300,250],[728,90]]` for multiple sizes. |
 | `supplyType` | String | Indicates the type of supply for this placement. Possible values are `mobile_web`, `mobile_app`, or `web`. |
-| `pubClick` | String | Specifies a publisher-supplied URL for third-party click tracking. This is just a placeholder into which the publisher can insert their own click tracker. This parameter should be used for an unencoded tracker. This parameter is expected to be the last parameter in the URL. Please note that the click tracker placed in this parameter will only fire if the creative winning the auction is using Xandr click tracking properly. For example, `pubClick=https://click.adserver.com/`. |
+| `pubClick` | String | Specifies a publisher-supplied URL for third-party click tracking. This is just a placeholder into which the publisher can insert their own click tracker. This parameter should be used for an unencoded tracker. This parameter is expected to be the last parameter in the URL. Note that the click tracker placed in this parameter will only fire if the creative winning the auction is using Xandr click tracking properly. For example, `pubClick=https://click.adserver.com/`. |
 | `reserve` | Number | Specifies the reserve price for this inventory. This parameter will override a preset price and will set the hard floor if Yield Management is not being used. Price is assumed to be in the publisher's currency. For example, `reserve=5.00`.<br><br>**Note:** This option is not available from Microsoft Monetize, and must be appended to the placement tag manually. |
 | `extInvCode` |  String | Specifies a predefined value passed via the `ext_inv_code` field of the request body that can be used in reporting. The value must be entered into the system before it is logged. For more information, see [External Inventory Code Service](../digital-platform-api/external-inventory-code-service.md). For example, `ext_inv_code='10039'`. |
 | `native` | Object | A native ad is a collection of individual assets. These could be a title, a description, or an image. This is an optional parameter. You do not need to specify this in `defineTag`. Any field in the `native` object configured as `{required:true}` will be required on the bid response object. If not present, the bid is not added to the auction. The [native ad resources](#native-ad-resources) are listed below. |
@@ -49,11 +49,11 @@ The parameters listed below can be sent as arguments in the function.
 | `usePmtRule` | Boolean | Indicates whether payment rules should be applied to a bid before sending the bid to the ad server. Default value is false. |
 | `resizeAdParentDiv` | Boolean | Setting this property to true will force the Parent Div container of the Ad creative to resize. This is particularly useful when resizing banner safeframe creatives when the parent div doesn't resize in some environments. By default, this option is turned off. <br><br>**Note:** The value set here can be overridden during a resizeAd call. For more information, see resizeAd page. |
 | `globalPlacementId` | String | Provides a way for publishers to specify their own global publisher identifier to represent the placement. |
-| `renderingManagement` | Object | An object that specifies values for rendering related features, which influence how ads are rendered onto a webpage. These options also be set at the setPageOpts level to apply to all ad slots on the page.<br> - **`insertWrapperDiv`**: When enabled, AST adds an additional div element between the main AST `utif` div and the AST iframe (or safeframe) container for all ad slots. This option is useful for publishers who wish to customize or control the contents of the ad container further without modifying the main div container.<br>**Default:** false<br><br> - **`sandboxAdIframe`**: When enabled, AST adds and populates the HTML sandbox attribute for the AST iframe (or safeframe) container for all ad slots using the values from the appropriate `sandboxAttributes` parameter.<br>**Default:** false<br><br> - **`sandboxAttributes`**: The values of these attributes are applied to the HTML sandbox attribute for the AST iframe (or safeframe) ad containers when the appropriate `andboxAdIframe` setting is set to true. For suitable values to include in this array, please see the HTML sandbox documentation. If enabled, it is advised to include at least `allow-same-origin` and `allow-scripts` to ensure that the contents of the iframe may function properly (omitting these values may result in some warnings in the browser console). |
+| `renderingManagement` | Object | An object that specifies values for rendering related features, which influence how ads are rendered onto a webpage. These options also be set at the setPageOpts level to apply to all ad slots on the page.<br> - **`insertWrapperDiv`**: When enabled, AST adds an additional div element between the main AST `utif` div and the AST iframe (or safeframe) container for all ad slots. This option is useful for publishers who wish to customize or control the contents of the ad container further without modifying the main div container.<br>**Default:** false<br><br> - **`sandboxAdIframe`**: When enabled, AST adds and populates the HTML sandbox attribute for the AST iframe (or safeframe) container for all ad slots using the values from the appropriate `sandboxAttributes` parameter.<br>**Default:** false<br><br> - **`sandboxAttributes`**: The values of these attributes are applied to the HTML sandbox attribute for the AST iframe (or safeframe) ad containers when the appropriate `andboxAdIframe` setting is set to true. For suitable values to include in this array, see the HTML sandbox documentation. If enabled, it is advised to include at least `allow-same-origin` and `allow-scripts` to ensure that the contents of the iframe may function properly (omitting these values may result in some warnings in the browser console). |
 
 ### Native Ad resources
 
-**title**
+#### title
 
 `required: <true | false>`
 
@@ -61,7 +61,7 @@ The parameters listed below can be sent as arguments in the function.
 
 Where field marked `required: true` will be required on the bid response object. If `max_length` is specified, responses for this fields must not exceed the `max_length` number.
 
-**body**
+#### body
 
 `required: <true | false>`
 
@@ -69,9 +69,9 @@ Where field marked `required: true` will be required on the bid response object.
 
 Where field marked `required: true` will be required on the bid response object. If `max_length` is specified, responses for this field must not exceed the `max_length` number.
 
-**image**
+#### image
 
-```pre
+```
 required: <true | false>
 sizes: [
 { width: <number>, height: <number> }
@@ -87,9 +87,9 @@ If `sizes` is specified, the image response must exactly match the given width a
 
 If `aspect_ratios` are specified as an alternative to sizes, the image must at least match the minimum height/width dimensions and `aspect_ratios` value defined.
 
-**icon**
+#### icon
 
-```pre
+```
 required: <true | false>
 sizes: [
 { width: <number>, height: <number> }
@@ -105,7 +105,7 @@ If `sizes` is specified, the image response must exactly match the given width a
 
 If `aspect_ratios` are specified as an alternative to `sizes`, the image must at least match the minimum height/width dimensions and `aspect_ratios` value defined.
 
-**sponsoredBy**
+#### sponsoredBy
 
 `required: <true | false>`
 
@@ -113,25 +113,25 @@ If `aspect_ratios` are specified as an alternative to `sizes`, the image must at
 
 Where this field marked `required: true` will be required on the bid response object. If `max_length` is specified, responses for this fields must not exceed the `max_length` number.
 
-**cta**
+#### cta
 
 `required: <true | false>`
 
 Where this field is marked `required: true`, the parameter will be required on the bid response object.
 
-**clickUrl**
+#### clickUrl
 
 `required: <true | false>`
 
 Where this field is marked `required: true`, the parameter will be required on the bid response object.
 
-**privacySupported**
+#### privacySupported
 
 `<true | false>`
 
 If true, the publisher supports a privacy link. The privacy link will be sent to the publisher in the bid response.
 
-**video**
+#### video
 
 `required: <true | false>`
 
@@ -139,54 +139,53 @@ If true, the publisher supports a privacy link. The privacy link will be sent to
 
 `max_duration: <number>`
 
-Where field marked `required: true` will be required on the bid response object.
-`min_duration` and `max_duration` values are specified in milliseconds.
+Where field marked `required: true` will be required on the bid response object. `min_duration` and `max_duration` values are specified in milliseconds.
 
 `min_duration` default = 0
 
-**desc2**
+#### desc2
 
 `required: <true | false>`
 
-**rating**
+#### rating
 
 `required: <true | false>`
 
-**displayUrl**
+#### displayUrl
 
 `required: <true | false>`
 
-**likes**
+#### likes
 
 `required: <true | false>`
 
-**downloads**
+#### downloads
 
 `required: <true | false>`
 
-**price**
+#### price
 
 `required: <true | false>`
 
-**salePrice**
+#### salePrice
 
 `required: <true | false>`
 
-**rating**
+#### rating
 
 `required: <true | false>`
 
-**phone**
+#### phone
 
 `required: <true | false>`
 
-**address**
+#### address
 
 `required: <true | false>`
 
 **Format:**
 
-```pre
+```
 native: {
 title: {required: true},
 body: {required: false, max_length: 300},
@@ -214,7 +213,7 @@ address: {required: false}
 
 ## Example
 
-``` pre
+```
 apntag.defineTag({
         member: 958,
         invCode: 'ABC1234',

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Curate - New Advertiser and Insertion Order screens in the Microsoft Curate UI
-description: The new articles describes the Release Note (published in 27th of June, 2023) that talks about the latest updates. The note explains new advertiser and insertion order screens in the Microsoft curate UI.
+description: Introduce Microsoft UI updates, featuring new advertiser and insertion order screens per June 27, 2023 Release Note.
 ms.date: 10/28/2023
 ms.topic: release-notes
 ---

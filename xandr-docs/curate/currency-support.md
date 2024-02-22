@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Curate - Currency support
 
-Support for multiple currencies allows buyers and sellers to transact with one another globally on the Microsoft Advertising platform. However, it is important for all parties to understand how spending and payment in different currencies flows from buyers to sellers and partners on the platform. This page provides an explanation of all relevant concepts, processes and settings. In addition, Microsoft Advertising is expanding its support for non-USD currencies (as part of a larger multi-year platform-wide localization effort). As a result, this page will be updated periodically to explain how these changes affect the currencies supported on the platform, reporting and invoicing and what customization options you have. If you have questions about currency support please contact your Account Manager.
+Support for multiple currencies allows buyers and sellers to transact with one another globally on the Microsoft Advertising platform. However, it is important for all parties to understand how spending and payment in different currencies flows from buyers to sellers and partners on the platform. This page provides an explanation of all relevant concepts, processes and settings. In addition, Microsoft Advertising is expanding its support for non-USD currencies (as part of a larger multi-year platform-wide localization effort). As a result, this page will be updated periodically to explain how these changes affect the currencies supported on the platform, reporting and invoicing and what customization options you have. If you have questions about currency support, contact your Account Manager.
 
 ## Prerequisite concepts
 
@@ -16,8 +16,7 @@ Ensure you understand these basics before proceeding (each of these concepts is 
     - Although USD is the default currency, Microsoft Advertising supports the **buying and selling ("transacting")** of impressions as well as **billing** in a number of different non-USD currencies.
     - Microsoft Advertising performs all calculations in USD. To support non-USD use cases, we convert in and out of USD (as needed) using the latest exchange rates from our [API Currency Service](../digital-platform-api/currency-service.md).
 1. **Supported Local Currencies and Exchange Rates:** Our [API Currency Service](../digital-platform-api/currency-service.md) updates exchange rates platform-wide on a daily basis based on the most current [Oanda](https://www.oanda.com/) rates.
-1. **Transaction and Billing Currency and Account Setup:** Microsoft Advertising distinguishes between the currencies you transact in (currencies you select in the Digital Platform UI/API for buying/selling) and the currency you are billed in (currency in which you are invoiced or paid). Generally, Microsoft Advertising bills clients for fees/charges based on the daily conversion rate logged at the time the relevant auction
-    took place. However, in the following scenarios, we use the month-end rate to bill (for a full list, see [When Media Cost and Related Fees are Converted for use in Billing?](#when-media-cost-and-related-fees-are-converted-for-use-in-billing) below):
+1. **Transaction and Billing Currency and Account Setup:** Microsoft Advertising distinguishes between the currencies you transact in (currencies you select in the Digital Platform UI/API for buying/selling) and the currency you are billed in (currency in which you are invoiced or paid). Generally, Microsoft Advertising bills clients for fees/charges based on the daily conversion rate logged at the time the relevant auction took place. However, in the following scenarios, we use the month-end rate to bill (for a full list, see [When Media Cost and Related Fees are Converted for use in Billing?](#when-media-cost-and-related-fees-are-converted-for-use-in-billing) below):
     - The transaction currency differs from the billing currency.
     - We can't easily associate a fee back to an auction (e.g., Ad Serving Fees, Minimums, Log Level Data Fees, etc.).
 
@@ -93,8 +92,7 @@ Microsoft Advertising supports the non-USD currencies listed below.
 | South African Rand (ZAR) | X |  |
 
 - **Transaction Currency** is the currency used to buy or sell inventory on the platform.
-  - For Buyers, this is set at the Line Item level (or inherited from the network/member or Insertion Order level if not explicitly set at
-    the Line Item).
+  - For Buyers, this is set at the Line Item level (or inherited from the network/member or Insertion Order level if not explicitly set at the Line Item).
   - For Sellers, this is set at the Publisher level.
   - Users can manually set a transaction currency on most objects (e.g., Insertion Orders, Line Items).
   - A given member/network might have multiple transaction currencies if they set up objects in different currencies (i.e., Advertiser A = EUR, Advertiser B = USD, Publisher C = GBP, etc.)
@@ -186,9 +184,9 @@ The conversion of media costs and fees to the billing currency will be based on 
 
 ### Daily conversions (depends)
 
-- **When Used?:** If the Transaction Currency (currency logged at auction time) *is the same* as the Billing Currency.
-- **How Applied?:** When these criteria are met, we convert from USD to the Billing Currency using the rates logged for each auction. This provides our clients with the most accurate local currency billing and reconciles with our reporting and data feeds which support local currency.
-- **Which Fees/Charges?**
+- **When used?:** If the Transaction Currency (currency logged at auction time) *is the same* as the Billing Currency.
+- **How applied?:** When these criteria are met, we convert from USD to the Billing Currency using the rates logged for each auction. This provides our clients with the most accurate local currency billing and reconciles with our reporting and data feeds which support local currency.
+- **Which fees/charges?**
   - Buy side costs and charges
     - Media Cost
     - BASC Deductions
@@ -208,9 +206,9 @@ The conversion of media costs and fees to the billing currency will be based on 
 
 ### Month-end conversion (depends)
 
-- **When Used?:** If the Transaction Currency (currency logged at auction time) *is different from* the Billing Currency.
-- **How Applied?:** We calculate the fee in USD and convert from USD to the desired Billing Currency using the month end rate. You can access this rate by asking our API Currency Service for the rate on the last day of a given month.
-- **Which Fees/Charges?**
+- **When used?:** If the Transaction Currency (currency logged at auction time) *is different from* the Billing Currency.
+- **How applied?:** We calculate the fee in USD and convert from USD to the desired Billing Currency using the month end rate. You can access this rate by asking our API Currency Service for the rate on the last day of a given month.
+- **Which fees/charges?**
   - Buy side costs and charges
     - Media Cost
       - BASC Deductions
@@ -230,9 +228,9 @@ The conversion of media costs and fees to the billing currency will be based on 
 
 ### Month-end conversion (always)
 
-- **When Used?:** Always (only for the fees listed in this column).
-- **How Applied?:** We calculate the fee in USD and convert from USD to the desired billing currency using the month end rate. You can access this rate by asking our API Currency Service for the rate on the last day of a given month.
-- **Which Fees/Charges?**
+- **When used?:** Always (only for the fees listed in this column).
+- **How applied?:** We calculate the fee in USD and convert from USD to the desired billing currency using the month end rate. You can access this rate by asking our API Currency Service for the rate on the last day of a given month.
+- **Which fees/charges?**
   - Creative Audit Fee
   - Priority Creative Audit Fee
   - Log Level Data Fee

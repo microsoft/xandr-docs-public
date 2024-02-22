@@ -1,6 +1,6 @@
 ---
 title: Under the Hood of your Browser
-description: The article explores online ad transactions, stressing the importance of understanding browser background operations. It provides tools and information for easier access and comprehension.
+description: Explore optimizing online ad transactions, emphasizing browser operations understanding. Maximize revenue with Xandr's best practices.
 ms.date: 10/28/2023
 ms.custom: industry-reference
 ---
@@ -11,11 +11,9 @@ If you want to understand what's going on behind the scenes when ad space is bou
 
 ## Ghostery
 
-Let's say you visit the website `swap-bot.com`, which organizes swaps of crafts and other items among users of the site. (Full disclosure: [swap-bot.com](http://swap-bot.com) is a side project of a former Xandr engineer and his wife.) You type `swap-bot.com` into your browser's address bar, and your browser starts downloading content from a `swap-bot.com` server somewhere. But, as your page is loading, your browser also starts passing information and requests to other sites and servers, such as DoubleClick, Quantcast, Google Analytics, and others. (To those in the ad tech industry, when a browser sends information and makes requests, it's known as
-"making calls" or "calling" servers.) How would you know this? And what are those calls for?
+Let's say you visit the website `swap-bot.com`, which organizes swaps of crafts and other items among users of the site. (Full disclosure: [swap-bot.com](http://swap-bot.com) is a side project of a former Xandr engineer and his wife.) You type `swap-bot.com` into your browser's address bar, and your browser starts downloading content from a `swap-bot.com` server somewhere. But, as your page is loading, your browser also starts passing information and requests to other sites and servers, such as DoubleClick, Quantcast, Google Analytics, and others. (To those in the ad tech industry, when a browser sends information and makes requests, it's known as "making calls" or "calling" servers.) How would you know this? And what are those calls for?
 
-There are several great (and free!) tools that can teach you more about what's going on behind the scenes of your Internet activity, such as [Ghostery](http://www.ghostery.com) a plugin that you can easily add to any
-major browser. When you visit a webpage, Ghostery tells you via a little box in the right hand corner of the page what calls are being made in conjunction with this page.
+There are several great (and free!) tools that can teach you more about what's going on behind the scenes of your Internet activity, such as [Ghostery](http://www.ghostery.com) a plugin that you can easily add to any major browser. When you visit a webpage, Ghostery tells you via a little box in the right hand corner of the page what calls are being made in conjunction with this page.
 
 :::image type="content" source="media/ghostery.png" alt-text="Screenshot that explains Ghostery, in a corner box, shows a webpage's calls when visited.":::
 
@@ -34,39 +32,33 @@ or how much traffic comes through RSS feeds. `Swap-bot.com` also has pixels for 
 Ghostery may not show a 100% complete picture of the activity that happens when you visit a page. A site could be contacting another system server-side without going through the browser. But it's a strong start
 and a nice way to see what companies are out there.
 
-A note on privacy: These calls don't happen without the cooperation of the website you are visiting. The webmaster had to place the pixel on the page. Read [our privacy policy](https://www.xandr.com/privacy/platform-privacy-policy/) for a full explanation of what information websites use
-Xandr's technology to collect, and how it's protected.
+A note on privacy: These calls don't happen without the cooperation of the website you are visiting. The webmaster had to place the pixel on the page. Read [our privacy policy](https://www.xandr.com/privacy/platform-privacy-policy/) for a full explanation of what information websites use Xandr's technology to collect, and how it's protected.
 
 ## Digging deeper: debuggers
 
-If you want to get even more information about browser calls, you can use one of several debugging tools that show and analyze your browser traffic. Debuggers will help you if you're tracking down something
-specific, like why a pixel isn't firing properly.
+If you want to get even more information about browser calls, you can use one of several debugging tools that show and analyze your browser traffic. Debuggers will help you if you're tracking down something specific, like why a pixel isn't firing properly.
 
-Below is a screenshot of a Firefox add-on called [Tamper Data](https://addons.mozilla.org/en-US/firefox/addon/tamper-data/) recording the activity on the `swap-bot.com` page. You can see the Quantcast, Google, and
+<!--Below is a screenshot of a Firefox add-on called [Tamper Data](https://addons.mozilla.org/en-US/firefox/addon/tamper-data/) recording the activity on the `swap-bot.com` page. You can see the Quantcast, Google, and
 Xandr ad calls, and in the last line you can see the page retrieving its favicon (a file containing one or more small icons) from some folder in the website's content management system.
 
-:::image type="content" source="media/debuggers.png" alt-text="Screenshot that illustrates Tamper Data, a Firefox add-on, and a recording activity on `swap-bot.com`. It reveals Quantcast, Google, and Xandr ad calls, along with the retrieval of the page's favicon from a folder in the website's content management system.":::
+:::image type="content" source="media/debuggers.png" alt-text="Screenshot that illustrates Tamper Data, a Firefox add-on, and a recording activity on `swap-bot.com`. It reveals Quantcast, Google, and Xandr ad calls, along with the retrieval of the page's favicon from a folder in the website's content management system."::: -->
 
-Here are a few other debuggers:
+Here are a few debuggers:
 
 | Firefox | Chrome | Windows only; all browsers |
 |--|--|--|
-| [Firebug](https://getfirebug.com/), mainly for Firefox, is not only a debugger, it also provides enriched "inspect element" functions that show you source html, css, etc, and does a few other things, too.<br><br>[Firefox add-on Live HTTP Headers](https://addons.mozilla.org/en-US/firefox/addon/live-http-headers/). Not as holistic, but interesting. | Built-in [Developer Tools](http://code.google.com/chrome/devtools/docs/overview.html) | [Fiddler](https://www.telerik.com/download/fiddler) |
+| [Firebug](https://getfirebug.com/), mainly for Firefox, is not only a debugger, it also provides enriched "inspect element" functions that show you source html, css, etc, and does a few other things, too.| Built-in [Developer Tools](http://code.google.com/chrome/devtools/docs/overview.html) | [Fiddler](https://www.telerik.com/download/fiddler) |
 
 ## View a webpage's source code
 
-For any website you visit, it's possible to see the HTML and JavaScript code that your browser executes, causing content to show up in your screen, and causing the first round of calls described above. For
-example, if you go to `swap-bot.com` using Firefox, and right-click on the page, you'll see an option called "page source." This option shows the below (truncated) code. You'll notice the Quantcast pixel that Ghostery
-alerted us to above.
+For any website you visit, it's possible to see the HTML and JavaScript code that your browser executes, causing content to show up in your screen, and causing the first round of calls described above. For example, if you go to `swap-bot.com` using Firefox, and right-click on the page, you'll see an option called "page source." This option shows the below (truncated) code. You'll notice the Quantcast pixel that Ghostery alerted us to above.
 
 :::image type="content" source="media/webpage-source-code.png" alt-text="Screenshot that illustrates how you can view a webpage's source Code":::
 
 ## Charles web debugging proxy
 
-It's not always easy in web and Internet development to know where exactly something went wrong. Tools such as **Charles Web Debugging Proxyacts** as an intermediary between your web browser (such as Internet
-Explorer, Chrome, Safari) and the Internet. You can install it on your computer, and your web browser can then be configured to access theInternet through the [Charles Web Debugging Proxy](http://www.charlesproxy.com). This is useful because it records all of the data that is sent and received, making it easier to know exactly what is happening, especially when trying to diagnose and troubleshoot an issue.
+It's not always easy in web and Internet development to know where exactly something went wrong. Tools such as **Charles Web Debugging Proxyacts** as an intermediary between your web browser (such as Internet Explorer, Chrome, Safari) and the Internet. You can install it on your computer, and your web browser can then be configured to access theInternet through the [Charles Web Debugging Proxy](http://www.charlesproxy.com). This is useful because it records all of the data that is sent and received, making it easier to know exactly what is happening, especially when trying to diagnose and  troubleshoot an issue.
 
 ## Summary
 
-When you have an understanding of the available tools and background processes that browsers incorporate to monitor, track, and report on ad serving activity – it allows you to better select the appropriate tools
-and methods for your specific need. This ultimately equates to improved ad targeting and increased revenue.
+When you have an understanding of the available tools and background processes that browsers incorporate to monitor, track, and report on ad serving activity – it allows you to better select the appropriate tools and methods for your specific need. This ultimately equates to improved ad targeting and increased revenue.

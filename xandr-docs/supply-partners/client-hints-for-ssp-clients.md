@@ -13,8 +13,7 @@ The User-Agent Client Hints API is an expansion to the Client Hints API, that en
 
 Client Hints are intended to be an alternative source of information contained in the User-Agent header. User-Agent (UA) reduction is an
 effort to minimize the identifying information shared in the User-Agent string. As a result, the return values from certain `Navigator`
-interfaces are reduced, including: `navigator.userAgent`, `navigator.appVersion`, and `navigator.platform`. If we do not make the
-necessary adjustments and fail to adapt to this change, certain capabilities would be forfeited, including the ability to identify and
+interfaces are reduced, including: `navigator.userAgent`, `navigator.appVersion`, and `navigator.platform`. If we do not make the necessary adjustments and fail to adapt to this change, certain capabilities would be forfeited, including the ability to identify and
 prevent fraud and bot activity, recognizing browsers for rendering purposes, and targeting buyers based on their devices. Furthermore,
 buyers would no longer be able to take advantage of device targeting.
 

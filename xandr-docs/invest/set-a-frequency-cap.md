@@ -35,6 +35,6 @@ An exception to this would be if the month ended mid-week. Because weeks are def
     | **Serve only 1 imp per page** | Use this setting to limit the number of impressions that an individual advertiser can serve on a page in multi-tag auctions. This option is network-specific and may not be available for your network (member). |
     | **Include users without cookies** | Once you set a frequency cap, you can choose to show creatives to users without cookies. There is no way to identify these users, so if you turn on this option your frequency and recency caps will not apply to any user without cookies. However, if you select not to include users without cookies you could limit your delivery. If you toggle this option and have set a daily frequency cap, [Advanced Frequency Management](./advanced-frequency-management.md) will be applied to help adhere to your daily frequency cap. |
 
-## Related topics
+## Related topic
 
 - [Frequency and Recency Examples](./frequency-and-recency-examples.md)

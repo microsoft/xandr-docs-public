@@ -1,6 +1,6 @@
 ---
 title: Exchanges and Members
-description: The article defines the exchange service and corresponding members.
+description: Explore exchange services, select members, and include/exclude exchanges using icons on the Exchanges and Members tab for efficient supply targeting.
 ms.date: 10/28/2023
 ---
 
@@ -27,7 +27,7 @@ Exchanges are groups of sellers (members) organized to allow for easier supply 
 - As new sellers are added, you do not have to update your profile or targeting. When targeting a single exchange, you will receive all members within it and any new members that join.
 - The Microsoft Monetize supply exchange includes inventory that represents the most direct path to supply. This inventory is brought to you directly through the Xandr SSP technology.  
   - You can find out more information about Microsoft Monetize supply here: [Microsoft Monetize Supply for External Demand Partners](xandr-monetize-supply-for-external-demand-partners.md).
-- Sellers that belong to the Microsoft Monetize supply exchange can not be individually included and excluded.
+- Sellers that belong to the Microsoft Monetize supply exchange cannot be individually included and excluded.
 
 ## Related topics
 

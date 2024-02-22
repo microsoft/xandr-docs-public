@@ -86,7 +86,8 @@ For more information about how quickly reporting data is processed, see [Availab
 | Buyer Seat Code | No | The Custom Buyer Seat ID (submitted by DSP) which was used to bid on the impression. |
 | Buyer Seat Name | No | The display name for the buyer seat code. |
 
-**\*** Filter by comma separated IDs only.
+> [!NOTE]
+> **\*** Filter by comma separated IDs only.
 
 ## Metrics
 

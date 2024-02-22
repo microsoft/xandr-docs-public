@@ -14,13 +14,11 @@ To understand the fees associated with Xandr's platform, see this example of a b
 In this example, there are two fees:  
 
 1. A Xandr fee of 5% of the final price paid for an impression.
-
 1. A fee charged by the bidder who transacts media on behalf of an advertiser.
 
 ## Stage 1: Impression bus is contacted
 
 1. Internet user Mark Smith visits doctorwhofans.com.
-
 1. A TinyTag on the page tells Mark's browser to ping Xandr's impression bus.
 
 ## Stage 2: Owner phase
@@ -37,9 +35,7 @@ In this example, there are two fees:
 ## Stage 3: Bidding phase
 
 1. The impression bus has calculated the [Estimated Clear Price](price-reduction-mechanics.md) as $3 based on historical data.
-
 1. The Bid Request now goes out to all listening bidders with the revised reserve price and the Estimated Clear Price.
-
 1. Member 1 (via Bidder 7) calculates a $6 bid. Bidder 7 charges a 10% Bidder Fee, so Bidder 7 submits $5.40 to the impression bus.
 
     > [!NOTE]

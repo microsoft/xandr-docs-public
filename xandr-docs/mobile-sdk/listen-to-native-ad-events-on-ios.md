@@ -45,17 +45,11 @@ You can pass friendly obstruction list also in this method. For more information
 API with methods to track the ad events such as:
 
 - when the native view is clicked by the user.
-
 - when native view returns the click-through URL and click-through fallback URL.
-
 - when the native view was clicked, and the click through destination is about to open in the in-app browser.
-
 - when the in-app browser has finished presenting and taken control from the application.
-
 - when the in-app browser will close and control will be returned to the application.
-
 - when the in-app browser has closed and control has been returned to the application.
-
 - when the ad is about to leave the app or when an impression is recorded for a native creative.
 
   ``` 

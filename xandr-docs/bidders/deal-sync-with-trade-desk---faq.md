@@ -21,12 +21,11 @@ Ask the Trade Desk buyer to confirm they have accepted the deal in the Trade Des
 
 The following details are shared with Trade Desk APIs:
 
-|  |  |  |
+| - Deal Name | - Deal Type |- Currency  |
 |---|---|---|
-| - Deal Name | - Deal Type | - Currency |
-| - Buyer Seat ID | - Deal Auction Type | - Floor Price/Ask Price |
-| - Seller Name | - Start Date | - Allowed Media Types |
-| - Deal ID | - End Date | - Allowed Creative Sizes |
+| **- Buyer Seat ID** | **- Deal Auction Type** | **- Floor Price/Ask Price** |
+| **- Seller Name** | **- Start Date** | **- Allowed Media Types** |
+| **- Deal ID**| **- End Date** | **- Allowed Creative Sizes** |
 
 ## What will happen to existing Trade Desk deals that were created before enablement of deal sync?
 
@@ -38,8 +37,7 @@ No, deals created prior to the enablement of Trade Desk deal sync on your accoun
 
 ## If I created a deal with Trade Desk post enablement of deal sync and then updated the deal details, will they automatically update in Trade Desk systems?
 
-Yes, deals created post Trade Desk deal sync enablement will have automatic deal updates. Changes you make to updatable fields (for
-example, start date, end date, price) will be automatically uploaded to Trade Desk systems. Once the changes are uploaded, this will trigger a change to the buyer status to "pending". You will need to ask the Trade Desk buyer to re-accept the deal in the Trade Desk UI.
+Yes, deals created post Trade Desk deal sync enablement will have automatic deal updates. Changes you make to updatable fields (for example, start date, end date, price) will be automatically uploaded to Trade Desk systems. Once the changes are uploaded, this will trigger a change to the buyer status to "pending". You will need to ask the Trade Desk buyer to re-accept the deal in the Trade Desk UI.
 
 ## What are things I cannot change with Trade Desk deals once they are created?
 
@@ -72,7 +70,7 @@ Programmatic Guaranteed Deals cannot be multi-media type. One media type must be
 If a Trade Desk buyer manually creates the deal in the Trade Desk UI before a deal is uploaded via their proposal API, this will cause
 issues. Once a deal has been created in the manual workflow, it will not be able to sync properly via the deal sync process. As such, it is important to ensure that buyers do not create this deal manually and should wait for the deal to upload via the API integration.
 
-## When I create a PG deal, do the Ask Price and Impression Budget numbers have to be accurate?
+## When I create a PG deal, do the Ask Price and impression budget numbers have to be accurate?
 
 Yes, the "Spend" and "Impression Target" must be the same as the contracted numbers agreed with the buyer. These two numbers will be
 pushed into Trade Desk systems and buyers won't be able to update them. Any changes to these two values will trigger re-acceptance of the deal.
@@ -82,8 +80,7 @@ pushed into Trade Desk systems and buyers won't be able to update them. Any chan
 Publishers should guide the buyers through the following steps:
 
 1. Select **Inventory** from the **Libraries** drop-down in the header, and then select the **Proposals** tab.
-1. Once on that page they can sort by **Pending Approval** if they need to filter to only those proposals (It should automatically sort
-   based on importance so that shouldn’t be necessary).
+1. Once on that page they can sort by **Pending Approval** if they need to filter to only those proposals (It should automatically sort based on importance so that shouldn’t be necessary).
 1. In that screen, the buyer should be able to see the deal and accept it.
 
 ## What are some ways for Trade Desk buyers to find the deal in the Trade Desk UI so they can accept it?

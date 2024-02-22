@@ -15,7 +15,7 @@ This page explains the technology behind our video viewability measurement.
 
 The Microsoft Advertising video viewability measurement is based on the IAB guidelines, which state that 50% of the surface of a video ad must be in-view for a minimum of 2 seconds.
 
-**The Microsoft Advertising Video Viewability Measurement**
+**Microsoft Advertising Video Viewability measurement**
 
 To enable viewability measurement, Microsoft Advertising wraps video ads with a VPAID component which is responsible for loading and playing the ad. In addition, the VPAID wrapper manages, tracks and measures viewability by dropping the viewability measurement script on the page. The VPAID component then notifies the measurement script of any ad related events such as starts, pauses, resumes, etc.
 
@@ -36,7 +36,7 @@ When viewability is enabled, the VPAID wrapper is served by default. If the play
 
 The Microsoft Advertising VPAID wrapper will always serve when the player is able to play VPAID creatives. At present, only desktop web and mobile web are supported. Viewability measurement on both instream and outstream positions is supported.
 
-**The AdServing Lifecycle**
+**AdServing lifecycle**
 
 1. A **video tag** is embedded within a video player on a publisher's website.
 1. Consumer loads the website and the video ad tag makes a **bid request** to Microsoft Advertising servers.
@@ -52,11 +52,11 @@ The Microsoft Advertising VPAID wrapper will always serve when the player is abl
 
 :::image type="content" source="media/viewability.png" alt-text="Screenshot of Viewability":::
 
-**VPAID Wrapper Functions**
+**VPAID Wrapper functions**
 
 In addition to viewability measurement, the VPAID wrapper is responsible for loading and parsing the VAST document by identifying creatives and collecting tracking pixels. While the video ad is being played, the wrapper calls tracking events that are specified in the VAST document, such as pause, resume, pause on click etc. The VPAID wrapper is also responsible for managing click-through URLs and adjusting the volume of the video ad according to the volume set on the player.
 
-**VPAID Wrapper Specifications**
+**VPAID Wrapper specifications**
 
 The VPAID wrapper has the following specifications:
 
@@ -102,7 +102,7 @@ The [Video Events Feed](../log-level-data/video-events-feed.md) now has the the 
 
 | Column | Values |
 |--|--|
-| `view_result`| The Microsoft Advertising viewability measurement result of the impression. Possible values: <br>  1 = VIEW_MEASURED_VIEWABLE <br>  2 = VIEW_MEASURED_NON_VIEWABLE <br> 3 = VIEW_NON_MEASURED For non-impression events, this will be NULL. |
+| `view_result`| The Microsoft Advertising viewability measurement result of the impression. Possible values: <br>  1 = VIEW_MEASURED_VIEWABLE <br>  2 = VIEW_MEASURED_NON_VIEWABLE <br> 3 = VIEW_NON_MEASURED. For non-impression events, this will be NULL. |
 | `view_non_measurable_reason` | The reason an impression could not be measured for viewability. Possible values: <br> 0 = N/A. The impression was measured for viewability <br> 1 = SCRIPT_NOT_SERVED. The viewability script was not served with the creative. For example, on mobile-app inventory.<br> 2 = NO_SCRIPT_CALLBACK. The viewability script was served with the creative, but no callback/event was received. For example, the user left the page before the creative was served. <br> 3 = TECHNICAL_LIMITATION. The viewability script was served and loaded, but was unable to measure for a technical reason. For example, a cross-domain iframe with Flash disabled. |
 
 ## FAQ

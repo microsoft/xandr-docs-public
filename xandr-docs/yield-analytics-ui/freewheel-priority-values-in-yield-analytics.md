@@ -55,7 +55,7 @@ The following mappings are based on FreeWheel's values for Contract type and 
 | Preemptible Impressions | Below paying ads -10 | -10 | Lowest value |
 
 > [!NOTE]
-> The Yield Analytics priority labels for FreeWheel can be customized per client. For more information, please contact your services representative.
+> The Yield Analytics priority labels for FreeWheel can be customized per client. For more information, contact your services representative.
 
 ## Related topic
 

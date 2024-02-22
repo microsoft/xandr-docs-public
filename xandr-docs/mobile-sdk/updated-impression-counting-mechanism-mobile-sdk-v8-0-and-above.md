@@ -1,11 +1,11 @@
 ---
 title: Impression Counting Mechanism - Mobile SDK v8.0 and above
-description: This article describes the updated impression counting mechanism for the Mobile SDK. This change will be included in Xandr’s Mobile SDK version 8.0 and above.
+description: Learn the updated impression counting mechanism for the Mobile SDK and the change is included in Xandr’s Mobile SDK version 8.0 and above.
 ms.custom: android-sdk, ios-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
 ---
 
-# Impression Counting Mechanism - Mobile SDK v8.0 and above
+# Impression counting mechanism - Mobile SDK v8.0 and above
 
 As the advertising industry recognizes the need to move away from “begin to render” to visibility-based impressions, we have updated our mobile SDK in-app impression counting to account for ad container visibility.The move to counting based on ad container visibility strengthens the definition of an impression equating to an ad seen by the user on their device. This change is included in Xandr’s Mobile SDK v8.0 and above.
 
@@ -50,6 +50,7 @@ The Mobile SDK v7.0 continues to use the old impression counting mechanism for v
 | Video        | Count on Video Start | Default                                                                                        |
 
 ## Viewability and impression counting
+
 Viewability and impression counting are two different entities. Impression counting measures if an ad is served whereas viewability measures a whole lot of analytics like how long the ad was viewed by the user, what actions the user took, etc. to give better picture for the advertiser to serve better.
 The definition of impression counting definition has evolved over the years. Initially an impression was counted when it was rendered on the page or it was downloaded to the user page. However, it was not necessary that the ad was viewed though it was downloaded. So even if the ad was downloaded in the background the impression count was considered.  
 This method of impression counting becomes irrelevant as advertisers want accurate counts to understand how many ads are actually served the user which means how many ads are actually downloaded as well as viewed by the user. This is what viewable impression counts. Viewable impression counting applies for all managed demand and for certain bidders like DV 360 who count only viewable impressions.  

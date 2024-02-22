@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 
 This function modifies the parameters for a specified target ID. For each key passed in the `params` object, the function will replace any existing information for that key on the specified ad slot.
 
-``` pre
+```
 modifyTag ('targetId', {params})
 ```
 
@@ -25,7 +25,7 @@ The parameters listed below can be sent as arguments in the function.
 
 ## Example
 
-``` pre
+```
 apntag.modifyTag('apn_ad_slot_1',{
     invCode: 'XYZ4567',
     tagId: 987654,

@@ -13,10 +13,10 @@ to obtain the ID assigned to a certain brand. This ID is used as an optional inp
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| GET | [https://api.adnxs.com/brand](https://api.adnxs.com/brand) | To view all the brands in the Xandr system. |
-| GET | [https://api.adnxs.com/brand?search=BRAND_NAME](https://api.adnxs.com/brand?search=BRAND_NAME) | To view all brands with names containing certain characters. |
-| GET | [https://api.adnxs.com/brand?url_search=BRAND_URL](https://api.adnxs.com/brand?url_search=BRAND_URL) | To view all brands with URLS starting with certain characters. |
-| GET | [https://api.adnxs.com/brand/BRAND_ID](https://api.adnxs.com/brand/BRAND_ID) | To view a specific brand. |
+| `GET` | [https://api.adnxs.com/brand](https://api.adnxs.com/brand) | To view all the brands in the Xandr system. |
+| `GET` | [https://api.adnxs.com/brand?search=BRAND_NAME](https://api.adnxs.com/brand?search=BRAND_NAME) | To view all brands with names containing certain characters. |
+| `GET` | [https://api.adnxs.com/brand?url_search=BRAND_URL](https://api.adnxs.com/brand?url_search=BRAND_URL) | To view all brands with URLS starting with certain characters. |
+| `GET` | [https://api.adnxs.com/brand/BRAND_ID](https://api.adnxs.com/brand/BRAND_ID) | To view a specific brand. |
 
 ## JSON fields
 

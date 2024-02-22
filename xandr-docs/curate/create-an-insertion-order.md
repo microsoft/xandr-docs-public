@@ -1,6 +1,6 @@
 ---
 title: Microsoft Curate - Create an Insertion Order
-description: The articles provides information on how to create an insertion order.
+description: Organize, track, and allocate budgets efficiently by creating insertion orders. Linking line items preserves historical data and streamlines setup.
 ---
 # Microsoft Curate - Create an insertion order
 
@@ -15,41 +15,40 @@ For an overview of all buy-side objects, see the [Object Hierarchy](object-hiera
    > [!NOTE]
    > You can only create insertion orders under advertisers for which insertion orders are enabled. See [Create an Advertiser](create-an-advertiser.md) for more details.
 
-1. Fill out the basic setup, which includes information such as name and budget and billing details. For more information on these
-   settings, see [Basic Setup](create-an-insertion-order.md#basic-setup).
+1. Fill out the basic setup, which includes information such as name and budget and billing details. For more information on these settings, see [Basic Setup](create-an-insertion-order.md#basic-setup).
 
-    a. Enter a name for the insertion order and optionally enter an external code and/or a billing code.
+    1. Enter a name for the insertion order and optionally enter an external code and/or a billing code.
 
-    b. Select a state.
+    1. Select a state.
 
-   > [!TIP]
-   > To avoid spending before you're ready, set the state to "Inactive" until everything related to the buy has been set up and verified.
+         > [!TIP]
+         > To avoid spending before you're ready, set the state to "Inactive" until everything related to the buy has been set up and verified.
 
-    c. Optionally, set a currency. If not set, the insertion order will inherit the advertiser's currency. You cannot change the currency after saving the insertion order.
+    1. Optionally, set a currency. If not set, the insertion order will inherit the advertiser's currency. You cannot change the currency after saving the insertion order.
 
-   > [!TIP]
-   > As a best practice, align currency to the billing currency in order to achieve the best possible local currency experience. See [Currency Support](currency-support.md).
+       > [!TIP]
+       > As a best practice, align currency to the billing currency in order to achieve the best possible local currency experience. See [Currency Support](currency-support.md).
 
-    d. Select a viewability standard.
+    1. Select a viewability standard.
 
-    e. Select a budget type.
+    1. Select a budget type.
 
-    f. Optionally, set up billing periods and pacing. For more information, see [Billing Periods](create-an-insertion-order.md#billing-periods) and [pacing](create-an-insertion-order.md#pacing).
+    1. Optionally, set up billing periods and pacing. For more information, see [Billing Periods](create-an-insertion-order.md#billing-periods) and [pacing](create-an-insertion-order.md#pacing).
 
-    g. Optionally, enable political advertising on this insertion order and identify whether this advertising takes place on the federal or state or local level, or both. For more information, see [Political Advertising](create-an-insertion-order.md#political-advertising).
+    1. Optionally, enable political advertising on this insertion order and identify whether this advertising takes place on the federal or state or local level, or both. For more information, see [Political Advertising](create-an-insertion-order.md#political-advertising).
 
-   > [!NOTE]
-   > This option will only appear if you have already declared that this advertiser conducts political advertising on the [advertiser](create-an-advertiser.md).
+       > [!NOTE]
+       > This option will only appear if you have already declared that this advertiser conducts political advertising on the [advertiser](create-an-advertiser.md).
 
 1. Set the supply strategy, determining the inventory type and inventory lists for targeting. These settings can be further refined on the line item. For more information, see [Inventory Lists](inventory-lists-ali-only.md).
 
-    a. Select the inventory type: **App & Web** (the default), **App Only** (mobile inventory), or **Web Only** (standard websites and websites optimized for browsers on mobile devices).
+    1. Select the inventory type: **App & Web** (the default), **App Only** (mobile inventory), or **Web Only** (standard websites and websites optimized for browsers on mobile devices).
 
-    b. Select an allowlist, or create one directly from the insertion order. This determines the inventory that may be targeted by any line items belonging to this insertion order.
+    1. Select an allowlist, or create one directly from the insertion order. This determines the inventory that may be targeted by any line items belonging to this insertion order.
   
-    Allowlists include the Microsoft Advertising Inventory List, a collection of inventory that Microsoft Advertising has selected based on demonstrated demand interest within our marketplace and vetted via additional quality controls (as well as platform inventory quality filtering).
+       Allowlists include the Microsoft Advertising Inventory List, a collection of inventory that Microsoft Advertising has selected based on demonstrated demand interest within our marketplace and vetted via additional quality controls (as well as platform inventory quality filtering).
 
-    c. Select a blocklist, or create one directly from the insertion order. This determines which inventory will be excluded from targeting by line items belonging to this insertion order. The Microsoft Advertising blocklist is applied by default.
+    1. Select a blocklist, or create one directly from the insertion order. This determines which inventory will be excluded from targeting by line items belonging to this insertion order. The Microsoft Advertising blocklist is applied by default.
 
 1. If this insertion order contains line items for political
     a. advertising, fill out the [Political Advertising](create-an-insertion-order.md#political-advertising) section.
@@ -134,7 +133,7 @@ insertion order's billing periods.
   You may set a budget for each billing period (**Set Budgets**) or not specify a budget (**Unlimited Budget**). If you do not specify a budget at the insertion order level, you can still specify budgets on
   the line item.
 
-  > [!IMPORTANT]
+   > [!IMPORTANT]
    > - You cannot set a start date in the past.
    > - Once you have saved an insertion order with **Set Dates** or **No End Date**, or **Set Budget** or **Unlimited Budget**, these settings cannot be changed.
 
@@ -165,15 +164,9 @@ Options are:
 
 ## Political organization details
 
-This section contains the details of the person or organization that is purchasing ads on Microsoft Advertising. For example, a
-candidate, an agency, or a political consultant.
+This section contains the details of the person or organization that is purchasing ads on Microsoft Advertising. For example, a candidate, an agency, or a political consultant.
 
-The required fields must be filled out for any state or local political advertising that will or could serve in California,
-Illinois, Maryland, Nevada, New Jersey, New York, Virginia, or
-Washington, or for political advertising at the federal level
-that will or could serve in Washington State. If
-your political ad will not be served in any of those states, you may enter "N/A”. For more information on political
-advertising, see [Political Advertising](political-advertising.md).
+The required fields must be filled out for any state or local political advertising that will or could serve in California, Illinois, Maryland, Nevada, New Jersey, New York, Virginia, or Washington, or for political advertising at the federal level that will or could serve in Washington State. If your political ad will not be served in any of those states, you may enter "N/A”. For more information on political advertising, see [Political Advertising](political-advertising.md).
 
 We reserve the right to implement additional screening at any time.
 

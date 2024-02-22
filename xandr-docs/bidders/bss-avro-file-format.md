@@ -48,9 +48,9 @@ Only one id type can be uploaded per uid record (e.g. Xandr User ID, IFA, Device
 
 #### Java library example
 
-**`AppNexus/Xandr User ID (ANID)`**
+##### `AppNexus/Xandr User ID (ANID)`
 
-``` 
+```
 
 {"uid":
 {"long":12345},
@@ -64,9 +64,9 @@ Only one id type can be uploaded per uid record (e.g. Xandr User ID, IFA, Device
 
 ```
 
-**`Device ID`**
+##### `Device ID`
 
-``` 
+```
 
 {"uid":
 {"device_id":
@@ -82,9 +82,9 @@ Only one id type can be uploaded per uid record (e.g. Xandr User ID, IFA, Device
 
 ```
 
-**`Identifier for Advertising (or IFA)`**
+##### `Identifier for Advertising (or IFA)`
 
-``` 
+```
 
 {"uid":
 {"ifa":
@@ -100,9 +100,9 @@ Only one id type can be uploaded per uid record (e.g. Xandr User ID, IFA, Device
 
 ```
 
-**`External ID`**
+##### `External ID`
 
-``` 
+```
 
 {"uid":
 {"external_id":
@@ -118,9 +118,9 @@ Only one id type can be uploaded per uid record (e.g. Xandr User ID, IFA, Device
 
 ```
 
-**`Extended ID's(eid) or Publisher-provided ID's(PPID)`**
+##### `Extended ID's(eid) or Publisher-provided ID's(PPID)`
 
-``` 
+```
 
 {"uid":
 {"eid":
@@ -138,15 +138,15 @@ Only one id type can be uploaded per uid record (e.g. Xandr User ID, IFA, Device
 
 #### Python library example
 
-**`AppNexus/Xandr User ID (ANID)`**
+##### Python library example: `AppNexus/Xandr User ID (ANID)`
 
-``` 
+```
 {'uid': 64,
 'segments':
 [seg1]}
 ```
 
-**`Device ID`**
+##### Python library example: `Device ID`
 
 ``` 
 
@@ -157,9 +157,9 @@ Only one id type can be uploaded per uid record (e.g. Xandr User ID, IFA, Device
 
 ```
 
-**`Identifier for Advertising (or IFA)`**
+##### Python library example: `Identifier for Advertising (or IFA)`
 
-``` 
+```
 
 {'uid': {'id': 
 'qweqeqweq', 'type': 
@@ -168,9 +168,9 @@ Only one id type can be uploaded per uid record (e.g. Xandr User ID, IFA, Device
 
 ```
 
-**`External ID`**
+##### Python library example: `External ID`
 
-``` 
+```
 
 {'uid': {'id': 
 'extid1', 
@@ -179,7 +179,7 @@ Only one id type can be uploaded per uid record (e.g. Xandr User ID, IFA, Device
 
 ```
 
-**`Extended ID's(eid) or Publisher-provided ID's(PPID)`**
+##### Python library example: `Extended ID's(eid) or Publisher-provided ID's(PPID)`
 
 ``` 
 
@@ -208,15 +208,15 @@ You can upload to multiple segments within the same uid record by creating an ar
 
 - Java library
 
-``` 
-Curl -o http://archive.apache.org/dist/avro/avro-1.10.1/java/avro-tools-1.10.1.jar
-```
+  ``` 
+  Curl -o http://archive.apache.org/dist/avro/avro-1.10.1/java/avro-tools-1.10.1.jar
+  ```
 
 - Python library
 
-``` 
-python3 -m pip install avro
-```
+  ``` 
+  python3 -m pip install avro
+  ```
 
 ## Download the Xandr Avro schema
 
@@ -257,19 +257,19 @@ java -jar avro-tools-1.10.1.jar fromjson --codec deflate --schema-file xandr_sch
 > [!NOTE]
 >
 > - Our examples are for the **Python Avro Library**, and are not to be confused with the **Fast Avro Library**.
-  > - Python Avro library does not use uid union type names. Instead, it determines the uid type by full match of field names.
-  >
-  > `{'uid': {'id': 'qweqeqweq', 'domain': 'idfa'}, 'segments': \[…\]}`
-  > - The Fast Avro library uses hints to specify the exact type of uid similar to the Java library.
-  >
-  > `{'uid': ('external_id', {'id':'exitd1', 'member_id': 914}), 'segments': \[{'expiration': 259200, 'id': 25815407}\]}`
+>   - Python Avro library does not use uid union type names. Instead, it determines the uid type by full match of field names.
+>
+>     `{'uid': {'id': 'qweqeqweq', 'domain': 'idfa'}, 'segments': \[…\]}`
+>   - The Fast Avro library uses hints to specify the exact type of uid similar to the Java library.
+>
+>     `{'uid': ('external_id', {'id':'exitd1', 'member_id': 914}), 'segments': \[{'expiration': 259200, 'id': 25815407}\]}`
 > - `DataFileWriter.append()` accepts a python dictionary (dict) type, not a JSON.
 
 #### Creating an AVRO audience file
 
 ##### Sample script using the Python Avro library
 
-``` 
+```
 import avro.schema
 from avro.datafile import DataFileReader, DataFileWriter
 from avro.io import DatumReader, DatumWriter

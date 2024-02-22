@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Self-Auditing Creatives
-description: This article explains about the self-auditing creatives. These creatives are only eligible to run on sellers' inventory with set trust levels.
+description: This article explains about the self-auditing creatives that are only eligible to run on sellers' inventory with set trust levels.
 ms.date: 10/28/2023
 ---
 
@@ -41,7 +41,7 @@ In addition to applying sensitive categories to your self-audited creatives, the
 > Brand search is case sensitive. It is advised to start the search with a Capital letter.
 
 When selecting a brand, be sure to select the brand associated with the landing page. If a brand is currently not in our system, you can submit a request to have it added at [https://help.xandr.com](https://help.xandr.com). Be sure to set the **Request Type** to
-**Creative Auditing**, the **Creative Request** to **Brand Addition**, and provide the brand name (typically the name of the parent company), brand URL (the main landing page), and brand category in the Request Description field.
+**Creative Auditing**, the **Creative Request** to **Brand Addition**, and provide the brand name (typically the name of the parent company), brand URL (the main landing page), and brand category in the **Request Description** field.
 
 If you have multiple brands to add, you can submit an Excel spreadsheet that includes the information above for each brand.
 

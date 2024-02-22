@@ -21,18 +21,18 @@ In bidder sandbox environments, all functionality is available for integration p
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| GET | [https://api.adnxs.com/bidder/](https://api.adnxs.com/bidder/) | View the bidder that your user has permissions to. It won't show other users' bidders. |
-| GET | [https://api.adnxs.com/bidder/BIDDER_ID](https://api.adnxs.com/bidder/BIDDER_ID) | View a particular bidder. |
-| POST | [https://api.adnxs.com/bidder](https://api.adnxs.com/bidder)<br>(bidder JSON) | Add a new bidder. |
-| PUT | [https://api.adnxs.com/bidder/BIDDER_ID](https://api.adnxs.com/bidder/BIDDER_ID)<br>(bidder JSON) | Modify an existing bidder. |
-| DELETE | [https://api.adnxs.com/bidder/BIDDER_ID](https://api.adnxs.com/bidder/BIDDER_ID) | Delete an existing bidder. |
+| `GET` | [https://api.adnxs.com/bidder/](https://api.adnxs.com/bidder/) | View the bidder that your user has permissions to. It won't show other users' bidders. |
+| `GET` | [https://api.adnxs.com/bidder/BIDDER_ID](https://api.adnxs.com/bidder/BIDDER_ID) | View a particular bidder. |
+| `POST` | [https://api.adnxs.com/bidder](https://api.adnxs.com/bidder)<br>(bidder JSON) | Add a new bidder. |
+| `PUT` | [https://api.adnxs.com/bidder/BIDDER_ID](https://api.adnxs.com/bidder/BIDDER_ID)<br>(bidder JSON) | Modify an existing bidder. |
+| `DELETE` | [https://api.adnxs.com/bidder/BIDDER_ID](https://api.adnxs.com/bidder/BIDDER_ID) | Delete an existing bidder. |
 
 ## JSON fields
 
 | Field | Required | Type | Description |
 |:---|:---|:---|:---|
 | `id` | yes, on update | int | The ID of the bidder. |
-| `short_name` | yes (on add) | string | An optional short name for the bidder. While not technically required, this field is necessary for metrics, so it should be considered required. <br><br>**Note:** Only alphanumeric characters (A-Z, 0-9) and underscores are allowed. Please do not use spaces, special characters, periods, or other punctuation marks. |
+| `short_name` | yes (on add) | string | An optional short name for the bidder. While not technically required, this field is necessary for metrics, so it should be considered required. <br><br>**Note:** Only alphanumeric characters (A-Z, 0-9) and underscores are allowed. Do not use spaces, special characters, periods, or other punctuation marks. |
 | `name` | yes (on add) | string | Name associated with the bidder. |
 | `active` | no, default is true | Boolean | Whether the bidder will receive requests or not. |
 | `bid_uri` | yes (on add) | string(255) | The URI for bid requests (for example, `/bid`). |
@@ -40,7 +40,7 @@ In bidder sandbox environments, all functionality is available for integration p
 | `click_uri` | no | string(255) | The URI for click requests (for example, `/click`). Use null, not an empty string, to set this to blank. See [Click Request](click-request.md). |
 | `pixel_uri` | no | string(255) | The URI for pixel requests (for example, `/pixel`). Use null, not an empty string, to set this to blank. See Pixel Request. |
 | `ready_uri` | yes (on add) | string(50) | The URI for a [Bidder Instance](bidder-instance-service.md) status check (for example, `/ready`). |
-| `audit_notify_uri` | no | string(255) | The URI for passing creative auditing updates (eg https://send.mycompany.com/auditnotifyrequests) |
+| `audit_notify_uri` | no | string(255) | The URI for passing creative auditing updates (eg `https://send.mycompany.com/auditnotifyrequests`) |
 | `parent_profile_id` | no | int | The ID of the parent bidder profile. Bidder profiles can be used to filter bid request traffic that reaches a bidder. See [Legacy Bidder Profile Service](legacy-bidder-profile-service.md) and [Bidder Profile - FAQ](bidder-profile---faq.md). |
 | `child_profiles` | no | Array of objects with the ID of the [bidder profiles](legacy-bidder-profile-service.md). | Array of objects specifying the child profiles to be used. For example: `[{"id":123}, {"id":124}]`. |
 | `dongle` | no | string | A password that protects a bidder's debug output in a debug impression. See `debug_text` in the [Bid Response](incoming-bid-response-from-bidders.md). **Available to users of type "bidder" only**. |
@@ -56,21 +56,21 @@ In bidder sandbox environments, all functionality is available for integration p
 | `protocol_id` | no | int | **Read-only**. This describes the protocol associated with this bidder, which describes the type of bidder it is. For example, a `protocol_id` of `6` means that this bidder uses the OpenRTB 2.0 specification for its integration with Xandr. The default integration value for a newly created bidder is `1`, `none`. This is the default protocol as defined in [Bid Request](outgoing-bid-request-to-bidders.md) and [Bid Response](incoming-bid-response-from-bidders.md). Bidders with a `protocol_id` of 6 integrate according to the [OpenRTB 2.0 Spec (PDF)](https://www.iab.net/media/file/OpenRTB_API_Specification_Version2.0_FINAL.PDF).<br>[Spec for OpenRTB 2.4](bidding-protocol.md), `protocol_id`: 10. <br>The following values are supported (each ID is followed by the `protocol_name` associated with that ID):<br> - 1: `none`<br> - 2: `wp7`<br> - 3: `contentads`<br> - 4: `admarket`<br> - 5: `adexpert`<br> - 6: `openrtb2.0`<br> - 10: `openrtb2.4` |
 | `protocol_name` | no | string | **Read-only**. The name of the protocol associated with this bidder. See the definition of `protocol_id` above for all of the the accepted values of `protocol_id` and their mappings to names. |
 | last_activity | no | timestamp | The timestamp of last modification to this bidder instance. |
-| `max_seats` | no | Integer | Bidders bidding with custom buyer seat IDs will have this field include a value greater than 0. This is the maximum number of seats allowed to be registered under a bidder.<br><br>**Note:** This feature is currently in Closed Beta. If you are interested in participating, please reach out to your Xandr representative. |
-| `default_member` | no | Object | Bidders using buyer seat ID bidding will have a default member designated in this field. Note the default member will be the main billing member for the bidder and is also used as the member ID for creative registration.<br><br>**Note:** This feature is currently in Closed Beta. If you are interested in participating, please reach out to your Xandr representative. |
+| `max_seats` | no | Integer | Bidders bidding with custom buyer seat IDs will have this field include a value greater than 0. This is the maximum number of seats allowed to be registered under a bidder.<br><br>**Note:** This feature is currently in Closed Beta. If you are interested in participating, reach out to your Xandr representative. |
+| `default_member` | no | Object | Bidders using buyer seat ID bidding will have a default member designated in this field. Note the default member will be the main billing member for the bidder and is also used as the member ID for creative registration.<br><br>**Note:** This feature is currently in Closed Beta. If you are interested in participating, reach out to your Xandr representative. |
 
 > [!NOTE]
 > Use Bidder Profile Service to Filter and Throttle.
 
-To filter the traffic your bidder will receive, please use the [Legacy Bidder Profile Service](legacy-bidder-profile-service.md). A few
+To filter the traffic your bidder will receive, use the [Legacy Bidder Profile Service](legacy-bidder-profile-service.md). A few
 filtering and throttling fields still exist in the Bidder Service, but they will be migrated to the Bidder Profile Service soon. Class filters are available in both; we recommend using the Bidder Profile Service for these.
 
 ## Deprecated fields
 
 | Field | Required | Type | Description |
 |:---|:---|:---|:---|
-| `send_class_2` | no, default is `true` | Boolean | This flag determines whether or not your bidder will be sent Class 2 traffic. Please note that throttling by inventory class is also possible via the [Legacy Bidder Profile Service](legacy-bidder-profile-service.md). |
-| `send_class_3` | no, default is `true` | Boolean | This flag determines whether or not your bidder will be sent Class 3 traffic. Please note that throttling by inventory class is also possible via the [Legacy Bidder Profile Service](legacy-bidder-profile-service.md). |
+| `send_class_2` | no, default is `true` | Boolean | This flag determines whether or not your bidder will be sent Class 2 traffic. Note that throttling by inventory class is also possible via the [Legacy Bidder Profile Service](legacy-bidder-profile-service.md). |
+| `send_class_3` | no, default is `true` | Boolean | This flag determines whether or not your bidder will be sent Class 3 traffic. Note that throttling by inventory class is also possible via the [Legacy Bidder Profile Service](legacy-bidder-profile-service.md). |
 | `send_unaudited` | no, default is `false` | Boolean | This flag determines whether or not your bidder will be sent unaudited traffic.<br><br>**Note:** Throttling by inventory class is also possible via the [Legacy Bidder Profile Service](legacy-bidder-profile-service.md).<br><br>**Warning:** You must set this field in order to see bid requests<br>You **must** set `send_unaudited` to `true` in order for your bidder to receive bid requests. For more information, see [Integrate a Bidder](integrate-a-bidder.md). |
 | `send_owned_blocklist` | no | Boolean | Send blocklist inventory if owned by a member associated with this bidder. |
 | `userdata_entity_id` | no | int | This field is deprecated. |
@@ -128,7 +128,7 @@ $ cat bidder
    }
 ```
 
-Then you use the PUT command to update this data in the impression bus cache.
+Then you use the `PUT` command to update this data in the impression bus cache.
 
 ``` 
 $ curl -b cookies -c cookies -X PUT --data-binary @bidder 'https://api.adnxs.com/bidder/4'

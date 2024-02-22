@@ -1,7 +1,6 @@
 ---
 title: Outgoing Bid Response to SSPs
-description: Learn about Outgoing Bid Response to SSPs.
-ms.custom: supply-partners
+description: Learn about different fields like Native object, Bid object, Asset object, that Xandr supports in the bid response object. 
 ms.date: 10/28/2023
 ---
 
@@ -9,25 +8,19 @@ ms.date: 10/28/2023
 # Outgoing bid response to SSPs
 
 > [!NOTE]
-> This describes the Xandr integration of the 
+> This describes the Xandr integration of the
 > [OpenRTB 2.4 protocol](https://www.iab.com/wp-content/uploads/2016/03/OpenRTB-API-Specification-Version-2-4-FINAL.pdf).
 
-Xandr will send a Bid Response after it receives
-a [Bid Request](incoming-bid-request-from-ssps.md) from an SSP. The Bid
-Response will include the bidder's bid (`price`) and chosen creative
-(`creative_id`). This creative will be served if the bid is ultimately
-accepted by the ad server. Multiple bids within the Bid Response are
-supported.
+Xandr will send a Bid Response after it receives a [Bid Request](incoming-bid-request-from-ssps.md) from an SSP. The Bid Response will include the bidder's bid (`price`) and chosen creative (`creative_id`). This creative will be served if the bid is ultimately accepted by the ad server. Multiple bids within the Bid Response are supported.
 
 ## Implementation
 
-Xandr currently supports the following fields in
-the bid response object:
+Xandr currently supports the following fields in the bid response object:
 
 **Bid response object**
 
 | Field | Type | Description |
-|---|---|---|
+|--|--|--|
 | `bidid` | string | A randomly-generated bid response ID to assist tracking. |
 | `cur` | string | The bid currency using ISO-4217 alphabetic codes. If omitted, USD is assumed. |
 | `id` | string | The seller's auction ID. This is the same as the ID of the bid request to which this is a response. |
@@ -43,14 +36,14 @@ Xandr supports the following fields in the `seatbid` object:
 > We will not group bids by their seat ids. For example, if there are three bids from the same seat, we will send three seatbid objects.
 
 | Field | Type | Description |
-|---|---|---|
+|--|--|--|
 | `bid` | array of objects | An array of bid objects; each bid object relates to an Impression Object in the [Bid Request](incoming-bid-request-from-ssps.md). Note that one Impression Object can have many bid objects. See [Bid Object](#bid-object) for more information. |
-| `seat` | string | Either the `seat_id` passed in the bid request query string (if one was provided) or the Xandr buyer `member_id`.  |
+| `seat` | string | Either the `seat_id` passed in the bid request query string (if one was provided) or the Xandr buyer `member_id`. |
 
 ### Bid object
 
 | Field | Type | Description |
-|---|---|---|
+|--|--|--|
 | `adid` | string | The Xandr creative ID, viewable via the API using the [Creative Service](../bidders/creative-service.md). This ID references the actual ad to be served if the bid wins. |
 | `adm` | string | The rendered creative markup to be delivered. Native creatives are returned in this field as a JSON-encoded string. See [Native Object](#native-object) below.<br>**Note**: SSPs can opt to have markup delivered to the win notification (nurl) instead by `specifying` "markup_delivery": 1 in the bid request. |
 | `adomain` | array of strings | A list of URLs associated with the brand of the creative in the bid. |
@@ -62,21 +55,18 @@ Xandr supports the following fields in the `seatbid` object:
 | `ext` | object | Used for identifying Xandr-specific extensions to the OpenRTB bid response. See [Extension Object](#extension-object) below. |
 | `h` | integer | The height of the creative, in pixels. |
 | `id` | string | The unique ID for the bid object; this is chosen by Xandr for tracking and debugging purposes. |
-| `impid` | string | The ID of the impression object to which this bid applies. Will match the `id` field from the bid request's `impression` object.    |
+| `impid` | string | The ID of the impression object to which this bid applies. Will match the `id` field from the bid request's `impression` object. |
 | `iurl` | string | A preview URL for the creative in the bid. |
 | `price` | float | The bid price expressed in CPM.<br>**Note**: Although this value is a float, OpenRTB strongly suggests using integer math for accounting to avoid rounding errors. |
 | `w` | integer | The width of the creative, in pixels. |
 
 ### Native object
 
-Xandr supports the following fields to define a
-native object to be included as a JSON-encoded string in the `adm` field
-of the `bid` object. Refer to [Example Native Creative Bid Response](#native-creative-bid-response) for an example of
-formatting this string.
+Xandr supports the following fields to define a native object to be included as a JSON-encoded string in the `adm` field of the `bid` object. Refer to [Example Native Creative Bid Response](#native-creative-bid-response) for an example of formatting this string.
 
 | Field | Type | Description |
-|---|---|---|
-| `assets` | array of objects | (Required) List of the native ad's assets. See [Asset Object](#asset-object) below.<br>  |
+|--|--|--|
+| `assets` | array of objects | (Required) List of the native ad's assets. See [Asset Object](#asset-object) below.<br> |
 | `imptrackers` | array of strings | Array of impression-tracking URLs expected to return a 1x1 image or HTTP 204 (No Content) response. This is typically passed only when using third-party trackers.<br>**Note**: This field is only returned for Native version 1.1. |
 | `jstracker` | string | Optional JavaScript impression tracker. This is a valid HTML , Javascript is already wrapped in `script` tags. It should be executed at impression time where it can be supported.<br>**Note**: This field is only returned for Native version 1.1. |
 | `link` | object | (Required) The default destination link for the native ad. Each individual asset can have its own link object, which applies if that asset is clicked. If an individual asset link does not have a link object, the parent link object is used. See [Link Object](#link-object) below. |
@@ -85,18 +75,15 @@ formatting this string.
 
 ### Asset object
 
-Xandr supports the following fields to define
-one or more native `asset` objects to be included as a JSON-encoded
-string as part of the `native` object in the `adm` field of the `bid`
-object. Refer to [Example Native Creative Bid Response](#native-creative-bid-response) for an example of formatting this string.
+Xandr supports the following fields to define one or more native `asset` objects to be included as a JSON-encoded string as part of the `native` object in the `adm` field of the `bid` object. Refer to [Example Native Creative Bid Response](#native-creative-bid-response) for an example of formatting this string.
 
 | Field | Type | Description |
-|---|---|---|
+|--|--|--|
 | `data` | object | The data object, for data assets, such as ratings, prices, and so on. See [Data Object](#data-object) below. |
 | `id` | integer | (Required) The unique asset ID. Must match an asset ID in the request. |
 | `img` | object | The image object, for image assets. See [Image Object](#image-object) below. |
 | `link` | object | The link object for individual assets, which applies if that asset is clicked. If there is no link object for an asset, the parent link object is used. See [Link Object](#link-object) below. |
-| `required` | integer | Set to 1 if bidder requires asset to be displayed.<br>  |
+| `required` | integer | Set to 1 if bidder requires asset to be displayed.<br> |
 | `title` | object | The title object, for title assets. See [Title Object](#title-object) below. |
 | `video` | object | The video object, for video assets. Note that in-stream video ads are not part of native objects. Native ads may be contain a video as the creative itself. See [Video Object](#video-object) below. |
 
@@ -105,85 +92,70 @@ object. Refer to [Example Native Creative Bid Response](#native-creative-bid-res
 Used to define a title asset in a native object.
 
 | Field | Type | Description |
-|---|---|---|
+|--|--|--|
 | `text` | string | (Required) The text for a title element. |
-
 
 ### Image object
 
-Used to define a image asset in a native object. Used for all image
-elements of the native ad, such as icons, main image, and so on.
+Used to define a image asset in a native object. Used for all image elements of the native ad, such as icons, main image, and so on.
 
 | Field | Type | Description |
-|---|---|---|
+|--|--|--|
 | `h` | integer | (Recommended) The height of the image, in pixels. |
 | `url` | string | (Required) The URL of the image asset. |
 | `w` | integer | (Recommended) The width of the image, in pixels. |
 
 ### Data object
 
-Used to define a data asset in a native object. Used for all
-miscellaneous elements in a native ad, such as ratings, price, review
-count, downloads, and so on.
+Used to define a data asset in a native object. Used for all miscellaneous elements in a native ad, such as ratings, price, review count, downloads, and so on.
 
 | Field | Type | Description |
-|---|---|---|
+|--|--|--|
 | `label` | string | An optional formatting string name of the data type. |
 | `value` | string | The formatted string of data to be displayed (such as `"5 stars"` or `"$10"`). |
 
 ### Video Object
 
-Used to define a video asset. Contains the value of a conforming VAST
-tag.
+Used to define a video asset. Contains the value of a conforming VAST tag.
 
 | Field | Type | Description |
-|---|---|---|
+|--|--|--|
 | `vasttag` | string | (Required) The VAST XML for this asset. |
-
 
 ### Link object
 
-Used to define the link for a native asset. When clicked, the user is
-taken to the location of the link. Can be defined for individual assets
-as well as for the parent native object, which is used as the default
-for assets when no unique asset link is defined.
+Used to define the link for a native asset. When clicked, the user is taken to the location of the link. Can be defined for individual assets as well as for the parent native object, which is used as the default for assets when no unique asset link is defined.
 
 | Field | Type | Description |
-|---|---|---|
+|--|--|--|
 | `clicktrackers` | Array of strings | Array of third-party tracking URLs to be fired when the link is clicked. |
 | `fallback` | string | A fallback URL to be used if the URL is not supported by the device. |
 | `url` | string | (Required) The landing URL for the clickable link. |
 
-
 **Event trackers response object**
 
-Xandr supports the following fields in the
-`event trackers response` object (Native 1.2 only):
+Xandr supports the following fields in the `event trackers response` object (Native 1.2 only):
 
 | Field | Type | Description |
-|---|---|---|
+|--|--|--|
 | `event` | integer | Type of event available for tracking. Supported values are:<br>` 1: impression` - Impression<br>`2: viewable-mrc50` - Viewable impression using MRC definition at 50% in view for 1 second<br>`3: viewable-mrc100` - Viewable impression using MRC definition at 100% in view for 1 second (ie GroupM standard)<br>`4: viewable-video50` - Viewable impression for video using MRC definition at 50% in view for 2 seconds |
 | `method` | integer | Type of tracking requested for the given event.<br>Supported values are:<br>`1: img` - Img-pixel tracking - URL provided will be inserted as a 1x1 pixel at the time of the event<br>`2: js` - Javascript-based tracking - URL provided will be inserted as a js tag at the time of the event |
 | `url` | string | The URL of the `img` or `js`. |
 
-
 ### Extension Object
 
-Xandr supports a single object in the `ext`
-object to support Xandr-specific extensions:
+Xandr supports a single object in the `ext` object to support Xandr-specific extensions:
 
 | Field | Type | Description |
-|---|---|---|
+|--|--|--|
 | `appnexus` | object | Specifies the Xandr-specific extensions to the OpenRTB bid response. See [AppNexus Object](#appnexus-object) below. |
-
 
 ### AppNexus Object
 
-Xandr supports the following fields in the
-`appnexus` extension object:
+Xandr supports the following fields in the `appnexus` extension object:
 
 | Field | Type | Description |
-|---|---|---|
+|--|--|--|
 | `auction_id` | integer | Specifies the Xandr auction ID. |
 | `bid_ad_type` | int | Specifies the ad type of the winning bid. Possible values:<br>- 0: banner<br>- 1: video<br>- 2: audio<br>- 3: native |
 | `bidder_id` | integer | Specifies the Xandr ID that corresponds to the winning bid's bidder (sometimes referred to as a DSP). |
@@ -195,7 +167,7 @@ Xandr supports the following fields in the
 
 ### Banner creative bid response
 
-``` pre
+``` 
  {
     "id": "rELYJA1ynf",
     "seatbid": [{
@@ -227,7 +199,7 @@ Xandr supports the following fields in the
 
 ### VAST creative bid response
 
-``` pre
+``` 
  {
     "id": "993af0d9-4ecb-4ac7-ac99-6bac442d9774",
     "seatbid": [{
@@ -276,7 +248,7 @@ Xandr supports the following fields in the
 
 ### Native creative bid response
 
-``` pre
+``` 
 {
         "bidid": "7056250063591570777",
         "cur": "USD",
@@ -309,9 +281,3 @@ Xandr supports the following fields in the
         }]
 }
 ```
-
-
-
-
-
-

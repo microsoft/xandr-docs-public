@@ -1,6 +1,6 @@
 ---
 title: Microsoft Curate - Client-Side Segmentation
-description: The article describes how building audience segments commonly involves placing client-side segment pixels on websites or creatives to track when a user visits a webpage or takes specific actions.
+description: Track audience by placing client-side pixels on websites to monitor user visits and actions, forming targeted segments.
 ---
 # Microsoft Curate - Client-side segmentation
 

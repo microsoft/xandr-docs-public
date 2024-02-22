@@ -11,7 +11,7 @@ This section contains various code samples to help you in the development of you
 
 | Topics | Description |
 |:---|:---|
-| [Add A Transition Animation](add-a-transition-animation-on-ios.md) | How to transition between multiple creatives. |
+| [Add a Transition Animation](add-a-transition-animation-on-ios.md) | How to transition between multiple creatives. |
 | [Add Targeting Parameters](add-targeting-parameters-on-ios.md) | How to add targeting parameters to a ad unit. |
 | [Allow Multiple Ad Sizes](allow-multiple-ad-sizes-to-serve-into-a-banner-ad-view-on-ios.md) | How to enable a banner ad to receive multiple ad sizes. |
 | [Click Through URL](click-through-url-on-ios.md) | How click throughs work and how to implement them. |

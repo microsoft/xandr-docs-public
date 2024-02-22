@@ -1,6 +1,6 @@
 ---
 title: Microsoft Curate - Partner Center Screen - Buyer view
-description: The Partner Center screen allows users to access and manage preferred partners, conduct searches for all sellers, and assess impression and click statistics for individual sellers. It serves as a centralized platform for monitoring and optimizing partner-related activities.
+description: Manage preferred partners, search all sellers, assess stats, and optimize partner activities on Partner Center screen.
 ms.date: 10/28/2023
 ---
 

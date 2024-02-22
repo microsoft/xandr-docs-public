@@ -1,6 +1,6 @@
 ---
 title: Bidders - Deal Auction Mechanics
-description: The article explores the digital advertising auction process, emphasizing open auctions where advertisers bid for available inventory. Bids dynamically decide the winning advertiser for a specific ad space.
+description: Explore the digital advertising auction process, emphasizing open auctions where advertisers bid for available inventory.
 ms.date: 10/28/2023
 ---
 # Bidders - Deal auction mechanics
@@ -31,7 +31,7 @@ When a piece of inventory included in an "open auction" deal comes up for auctio
 
 ### Deal bid wins
 
-:::image type="content" source="media/open-auction-deal-wins-fp.png" alt-text="Flow chart tree that explains how a private auction works. It shows different scenarios of bidding and winning in a private auction, and the price that the winner pays. ":::
+:::image type="content" source="media/open-auction-deal-wins-fp.png" alt-text="Flow chart that explains private auction flowchart that Illustrates bidding scenarios, wins, and winner's prices.":::
 
 ### Non-deal bid wins
 
@@ -97,7 +97,7 @@ If you have set a price for your deal, it will override other pricing mechanisms
 
 If you select a **Fixed Price** auction, you will need to enter an ask price. Any buyer who bids above this value (plus relevant fees) will be eligible to bid on the deal. The winning buyer is responsible for the fixed price plus fees. A bid is only eligible if it is above the applicable price for the deal. Any bids below the ask price will be considered ineligible for the deal and the auction. IDs on fixed price deals are ranked according to the deal's ask price (minus relevant fees).
 
-:::image type="content" source="media/winners-pays-deal-ask-price.png" alt-text="Flow chart that explains that in a Fixed Price auction, bids above the ask price (plus fees) are eligible, and the winning bid covers both the fixed price and fees, whereas bids below the ask price are ineligible. l":::
+:::image type="content" source="media/winners-pays-deal-ask-price.png" alt-text="Flow chart that illustrate how in Fixed Price auctions, bids above ask price (plus fees) qualify, winning bid covers both fixed price and fees.":::
 
 ### Deal pricing and biases
 

@@ -1,6 +1,6 @@
 ---
 title: Bidders - Delivery Type Service
-description: The article covers Xandr's Delivery Type Service, allowing users to identify registered video content delivery types. It also discusses the ability to add video content fields for targeting in line items or deal line items.
+description: Explore the Delivery Type Service, enabling users to identify video delivery types and add content fields for precise targeting in line items.
 ms.date: 10/28/2023
 ---
 
@@ -61,4 +61,3 @@ curl -b cookies -c cookies "https://api.adnxs.com/video-delivery-type"
 - [Profile Service](../digital-platform-api/profile-service.md)
 - [API Best Practices](../digital-platform-api/api-best-practices.md)
 - [API Semantics](../digital-platform-api/api-semantics.md)
-

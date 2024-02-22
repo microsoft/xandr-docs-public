@@ -1,15 +1,12 @@
 ---
 title: Bidders - Device Model Service
-description: The article describes a device model service that categorizes mobile devices by manufacturer (make) and specific product (model), using examples such as Apple as the make and iPhone as the model.
+description: Explore a device model service categorizing mobiles by make and model, citing Apple as an example for make and iPhone for model.
 ms.date: 10/28/2023
 ---
 
 # Bidders - Device model service
 
-Mobile devices are categorized by make and model, where make is generally the manufacturer of the device (i.e., Apple) and model is
-generally the specific product (such as iPhone). The read-only Device Model Service allows you to see what models of mobile devices are
-registered in the Xandr system, as well as the make, device type (i.e., pc, phone, or tablet), and device screen size
-for each model. You can use this service to map device model IDs to names and other details.
+Mobile devices are categorized by make and model, where make is generally the manufacturer of the device (i.e., Apple) and model is generally the specific product (such as iPhone). The read-only Device Model Service allows you to see what models of mobile devices are registered in the Xandr system, as well as the make, device type (i.e., pc, phone, or tablet), and device screen size for each model. You can use this service to map device model IDs to names and other details.
 
 > [!TIP]
 > You can target mobile campaigns based on mobile carrier as well. For more details, see the [Carrier Service](carrier-service.md).

@@ -1,6 +1,6 @@
 ---
 title: Batch Queue
-description: The article outlines using the Batch Queue tab to monitor and manage running or completed batches within the current day, including instructions on retrieving or canceling batches.
+description: Monitor and manage daily batches using the Batch Queue tab, including instructions for retrieving or canceling.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
@@ -11,7 +11,7 @@ Clicking the **Batch Queue** tab accesses any batches that are running or have c
 
 ## Retrieving a batch
 
-- Clicking **Run** on the Batch Builder screen moves that batch to the Batch Queue.
+- Clicking **Run** on the **Batch Builder** screen moves that batch to the Batch Queue.
 - There are the following columns displayed: Name, Created By, Progress.
 - The **Name** column indicates the number of lookups in the batch, to the right of the batch name.
 - Progress is a percentage bar. Hover over the Progress result for additional batch run information. (Example: XX out of XX lookups completed).

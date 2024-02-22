@@ -1,6 +1,6 @@
 ---
 title: Use IAB's HTML5 clickTag Standard on Xandr
-description: The article outlines the utilization of the IAB's clickTag standard in HTML5, enabling click tracking and linking the ad's landing page to the specified URL.
+description: Implement IAB's clickTag in HTML5 for ad click tracking, linking the landing page to a specified URL.
 ms.date: 10/28/2023
 ms.custom: industry-reference
 ---
@@ -19,8 +19,7 @@ You will require a text editor to complete the procedure below. If you do not ha
 
 ## Step 1: Add the Xandr HTML5 library
 
-Add the Xandr HTML5 Library inside the `<head>` tag in the **`index.html`** file, by adding the
-following `<script>` tag:
+Add the Xandr HTML5 Library inside the `<head>` tag in the **`index.html`** file, by adding the following `<script>` tag:
 
 `<script type="text/javascript" src="https://acdn.adnxs.com/html5-lib/1.4.1/appnexus-html5-lib.min.js"></script>`
 
@@ -29,9 +28,7 @@ following `<script>` tag:
 
 ## Step 2: Add `APPNEXUS.getClickTag()` to a clickable element
 
-Wrap the banner markup in an HTML element that opens a new window and uses the `APPNEXUS.getClickTag()` function. This will retrieve the value of the `clickTag` parameter set in the ad URL. The example below uses the
-\<a\> anchor element with the `href` attribute set to `javascript:void(0)` and an `onClick` attribute set to
- `window.open(APPNEXUS.getClickTag(), '_blank');`.
+Wrap the banner markup in an HTML element that opens a new window and uses the `APPNEXUS.getClickTag()` function. This will retrieve the value of the `clickTag` parameter set in the ad URL. The example below uses the \<a\> anchor element with the `href` attribute set to `javascript:void(0)` and an `onClick` attribute set to `window.open(APPNEXUS.getClickTag(), '_blank');`.
 
 Open `<a href="javascript:void(0)" onClick="window.open(APPNEXUS.getClickTag(), '_blank');">` immediately
 after `<body>` and be sure to close it with `</a>` immediately before `</body>`. The banner markup should go

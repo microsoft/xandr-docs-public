@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 The **Insertion Order Details** screen displays settings for a specific insertion order, essential metrics, and performance visualizations.
 
-## Getting to the insertion order details screen
+## Getting to the Insertion Order Details screen
 
 Select the appropriate tab from the **Insertion Orders** menu (**Upcoming**, **In Progress**, or **Completed**). From the **Insertion Orders** grid, click anywhere within a row to view details for a specific insertion order.
 

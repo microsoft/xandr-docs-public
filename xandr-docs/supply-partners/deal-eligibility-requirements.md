@@ -7,8 +7,7 @@ ms.date: 10/28/2023
 
 # Deal eligibility requirements: setting up deals
 
-One of the requirements that needs to be met to transact on Xandr's open exchange is to confirm that you understand the Deal Service. In order to demonstrate your understanding, you’ll create deals with
-two Xandr test members, AN Talent(882) and AN Challenge(1370). The deal must represent the same inventory, and therefore should always appear on the same bid requests. Each deal must see over 10,000 impressions per day.
+One of the requirements that needs to be met to transact on Xandr's open exchange is to confirm that you understand the Deal Service. In order to demonstrate your understanding, you’ll create deals with two Xandr test members, AN Talent(882) and AN Challenge(1370). The deal must represent the same inventory, and therefore should always appear on the same bid requests. Each deal must see over 10,000 impressions per day.
 
 ## Step 1: Set up a deal with buyer member AN Talent (882)
 
@@ -26,7 +25,7 @@ two Xandr test members, AN Talent(882) and AN Challenge(1370). The deal must rep
 
 ### Buyer
 
-The buyer object can be set on a POST, but cannot be updated with a PUT. If you want to change the buyer, you need to create a new deal. The `buyer` object should contain the following fields.
+The buyer object can be set on a `POST`, but cannot be updated with a `PUT`. If you want to change the buyer, you need to create a new deal. The `buyer` object should contain the following fields.
 
 | Field | Type | Description | Expected Value (For Test) |
 |:---|:---|:---|:---|
@@ -56,7 +55,7 @@ The `type` object should contain the following fields.
 
 ### Buyer member AN Challenge (1370)
   
-The buyer object can be set on a POST, but cannot be updated with a PUT. If you want to change the buyer, you need to create a new deal.
+The buyer object can be set on a `POST`, but cannot be updated with a `PUT`. If you want to change the buyer, you need to create a new deal.
 
 The `buyer` object should contain the following fields.
 
@@ -74,7 +73,7 @@ The `type` object should contains the following fields.
 
 ## Step 3: Submit the deals for review
 
-Once you feel confident that you've appropriately built to our [Deal Service](../digital-platform-api/deal-service.md), and have set up both your deals as outlined above, please submit a [support case](https://help.xandr.com) in order to have your traffic reviewed. Include both the Xandr deal IDs you've created. We will update you on the final steps of the process.
+Once you feel confident that you've appropriately built to our [Deal Service](../digital-platform-api/deal-service.md), and have set up both your deals as outlined above, submit a [support case](https://help.xandr.com) in order to have your traffic reviewed. Include both the Xandr deal IDs you've created. We will update you on the final steps of the process.
 
 ## Deal Service API
 
@@ -120,7 +119,7 @@ DELETE https://api.appnexus.com/deal?id=DEAL_ID
 
 ## Example
 
-Example POST call
+Example `POST` call
 
 ``` 
 $ cat new_test_deal_1

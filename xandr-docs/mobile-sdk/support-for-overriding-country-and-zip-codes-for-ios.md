@@ -1,8 +1,8 @@
 ---
-title : Support for Overriding Country and Zip Codes for iOS
-description : Mobile SDK allows the publishers to override the country codes and zip codes. 
+title: Support for Overriding Country and Zip Codes for iOS
+description: Mobile SDK allows the publishers to override the country codes and zip codes. Learn how you can overwrite these values from reverser geocoded latitude and longitude data.   
 ms.custom: ios-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
 ---
 
 
@@ -10,22 +10,14 @@ ms.date : 10/28/2023
 
 ## Overview
 
-Mobile SDK allows the publishers to override the country codes and zip
-codes. The SDK uses City/DMA/Country information from standard feed (log
-level data) for reporting purposes. However it is required to overwrite
-these values from reverser geocoded latitude and longitude data (if
-available) to keep the data sanity intact. Reason being, if those values
-are not overwritten, log level data will point to the ip-address based
-locations and eventually will project wrong data set especially with
-mobile data.
+Mobile SDK allows the publishers to override the country codes and zip codes. The SDK uses City/DMA/Country information from standard feed (log level data) for reporting purposes. However it is required to overwrite these values from reverser geocoded latitude and longitude data (if available) to keep the data sanity intact. Reason being, if those values are not overwritten, log level data will point to the ip-address based locations and eventually will project wrong data set especially with mobile data.
 
 ## Properties
 
 | Property | Type | Attribute | Description |
-|---|---|---|---|
+|--|--|--|--|
 | `geoOverrideCountryCode` | String | readwrite | Indicates a string value to override country code. |
 | `geoOverrideZipCode` | String | readwrite | Indicates a string value to override zip code. |
-
 
 ``` 
 /**
@@ -66,9 +58,3 @@ ANSDKSettings.sharedInstance().geoOverrideZipCode = "10010"
 let countryCode = ANSDKSettings.sharedInstance().geoOverrideCountryCode;
 let zipCode = ANSDKSettings.sharedInstance().geoOverrideZipCode
 ```
-
-
-
-
-
-

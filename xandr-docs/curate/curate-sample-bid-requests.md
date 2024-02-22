@@ -16,7 +16,7 @@ To sample bid request data:
 1. In **Date**, select the date and time in which you want to pull bid requests.
 
     > [!NOTE]
-    > Id requests are pulled within the previous 24 hours of the date and time you select. You can only select a date and time within the last 7 days.
+    > ID requests are pulled within the previous 24 hours of the date and time you select. You can only select a date and time within the last 7 days.
 
 1. In **Media Type**, select either **Any Media Type** or a specific media type (**Banner**, **Video**, **Native**, or **Audio**).
 1. In **Country**, select either **Any Country** or **Custom Country** (use the **Select Country** drop-down to select a country from the list).

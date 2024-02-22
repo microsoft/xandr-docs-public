@@ -1,16 +1,15 @@
 ---
 title: Refresh
-description: Learn how this function initiates a new ad server call and refreshes ads on the page.
+description: Learn how this function initiates a new ad server call and refreshes ads on the page. This page also lists parameter that can be sent as an argument in the function.  
 ms.custom: seller-tag
 ms.date: 10/28/2023
 ---
 
 # Refresh
 
-This function initiates a new ad server call and refreshes ads on the
-page.
+This function initiates a new ad server call and refreshes ads on the page.
 
-``` pre
+``` 
 refresh(['targetId1', 'targetId2'])
 ```
 
@@ -20,11 +19,11 @@ refresh(['targetId1', 'targetId2'])
 The parameter listed below can be sent as an argument in the function.
 
 | Parameter | Type | Description |
-|---|---|---|
+|--|--|--|
 | `targetId` | string | The unique identifier of a specific ad slot. One or more identifiers can be specified in an array. Omit the parameter to refresh all placements. This is an optional parameter. |
 
 ## Example
 
-``` pre
+``` 
 apntag.refresh(['adslot1', 'adslot2']);
 ```

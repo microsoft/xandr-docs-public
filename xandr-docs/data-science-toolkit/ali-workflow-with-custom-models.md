@@ -1,6 +1,6 @@
 ---
 title: Data Science Toolkit - ALI Workflow with Custom Models
-description: Explore a detailed guide that provides step-by-step instructions on how to create and seamlessly associate custom models with an Augmented Line Item (ALI).
+description: Explore a detailed guide on how to create and seamlessly associate custom models with an Augmented Line Item (ALI).
 ms.custom: data-science
 ms.date: 10/28/2023
 ---
@@ -22,9 +22,9 @@ For the purposes of this example, we will create a simple tree (a literal '`0`' 
 
 #### Custom model
 
-**custom_model.json**
+##### `custom_model.json`
 
-``` pre
+```
 {
   "custom_model": {
     "name": "Test Custom Model",
@@ -37,11 +37,11 @@ For the purposes of this example, we will create a simple tree (a literal '`0`' 
 }
 ```
 
-### POST / Creation of tree model
+#### `POST`/Creation of tree model
 
-**POST model (response abbreviated)**
+##### `POST` model (response abbreviated)
 
-``` pre
+```
 $ curl -b dcc -c dcc -X POST -s -d '@json/custom-model.json' "https://api-test.appnexus.com/custom-model?advertiser_id=354236"  | jq '.'
 {
   "response": {
@@ -72,7 +72,7 @@ $ curl -b dcc -c dcc -X POST -s -d '@json/custom-model.json' "https://api-test.a
 
 ## Creating an ALI through the API
 
-Custom models are designed to enable Xandr API users to add decision-making logic to the valuation models, non-valuation models, and creative delivery of their Augmented Line Items or campaigns. Please [review the documentation](../digital-platform-api/line-item-service---ali.md) for instructions on creating an ALI.
+Custom models are designed to enable Xandr API users to add decision-making logic to the valuation models, non-valuation models, and creative delivery of their Augmented Line Items or campaigns. For instructions on creating an ALI, [review the documentation](../digital-platform-api/line-item-service---ali.md).
 
 ## Associating a custom model with an ALI
 
@@ -81,17 +81,17 @@ Item. Instructions for associating a custom model with an ALI can be found in th
 
 ### Targeting IP addresses
 
-Customers in countries that conform to GDPR regulations should be aware that when targeting IP addresses or IP ranges, either in your line item, Bonsai tree, or logistic regression model, there is a possibility the address may be truncated. Please see our [Part of Service Policies](../policies-regulations/index.yml) for details on this process.
+Customers in countries that conform to GDPR regulations should be aware that when targeting IP addresses or IP ranges, either in your line item, Bonsai tree, or logistic regression model, there is a possibility the address may be truncated. For details on this process, see our [Service Policies](../policies-regulations/index.yml).
 
 ### Multiple custom models
 
 You will be able to associate multiple custom models of different types to the augmented line item. These include a number of custom model types that can be used to override portions of the impression's expected value calculation. An example below demonstrates how the process of associating multiple custom models to a Line Item may work:
 
-**Custom model**
+#### Custom model example
 
-**update_models.json**
+##### `update_models.json`
 
-``` pre
+```
 // Update / Set a single model
 {
   "line_item_model": {
@@ -115,7 +115,7 @@ You will be able to associate multiple custom models of different types to the a
 }
 ```
 
-**Custom model types**
+#### Custom model types
 
 The following model types can be associated as custom models to your Line Item:
 

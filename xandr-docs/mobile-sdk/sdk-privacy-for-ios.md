@@ -1,8 +1,8 @@
 ---
 title: SDK Privacy for iOS
-description: Xandr's mobile SDKs include client support for Global Privacy Platform (GPP), and the California Consumer Protection Act (CCPA).
+description: This page provides an overview on Global Privacy Platform (GPP), General Data Protection Regulations and California Consumer Protection Act.  
 ms.custom: ios-sdk 
-ms.date : 10/28/2023
+ms.date: 10/28/2023
 
 ---
 
@@ -17,44 +17,27 @@ The Global Privacy Platform (GPP) enables advertisers, publishers and technology
 >
 > [!NOTE]
 > Publishers are responsible for providing notice, transparency, and choice and for collecting consent from their users in accordance with the [Framework policies](https://iabeurope.eu/transparency-consent-framework/), either using their own Consent Management Provider or working with a vendor.
+>
 > - [Register your own CMP](https://register.consensu.org/CMP)
 > - [List of registered CMPs](https://iabeurope.eu/cmp-list/)
-> [!NOTE]
+>
 > - Note our Service Policies (for Buying, Selling, and Data Providers) include privacy-specific obligations of which you should be aware.
 > - All vendor SDKs (including mediation SDKs) are responsible for looking up approved vendor and consent information on their own; Xandr does not pass this information to these SDKs.
-> 
-
 
 ## General data protection regulations (GDPR)
 
-In order for our clients to meet their transparency, notice and
-choice/consent requirements under the GDPR and the existing ePrivacy
-Directive, Xandr
-supports [the IAB Europe Transparency &amp; Consent Framework](https://iabeurope.eu/transparency-consent-framework/)(the "Framework").
+In order for our clients to meet their transparency, notice and choice/consent requirements under the GDPR and the existing ePrivacy Directive, Xandr supports [the IAB Europe Transparency &amp; Consent Framework](https://iabeurope.eu/transparency-consent-framework/)(the "Framework").
 
-This is a reference for mobile app publishers using
-Xandr's Mobile SDK to surface notice,
-transparency and choice to end users located in the EEA and signal
-approved vendors and, where necessary, pass consent, to
-Xandr and demand sources and their vendors
-through the Xandr platform.
+This is a reference for mobile app publishers using Xandr's Mobile SDK to surface notice, transparency and choice to end users located in the EEA and signal approved vendors and, where necessary, pass consent, to Xandr and demand sources and their vendors through the Xandr platform.
 
-Xandr provides three APIs in the Mobile SDK for
-mobile app publishers to use the Framework. (These  APIs are available
-in Mobile SDK version 4.8+ for Android and 4.7.1+ for iOS.) These APIs
-allow you to:
+Xandr provides three APIs in the Mobile SDK for mobile app publishers to use the Framework. (These  APIs are available in Mobile SDK version 4.8+ for Android and 4.7.1+ for iOS.) These APIs allow you to:
 
-- define whether the user is located in the European Economic Area (the
-  "EEA") and that European privacy regulations should apply
+- define whether the user is located in the European Economic Area (the "EEA") and that European privacy regulations should apply
 - set the [IAB Europe](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/commit/a32574941ce201708e30e78702278efe1ce6cd59)(IAB) consent string
 
-This information will be persisted by the SDK and will be added to each
-ad call for applying platform controls. 
+This information will be persisted by the SDK and will be added to each ad call for applying platform controls.
 
-Publishers/Consent Management Platforms (CMPs) are free to store these
-values in a SharedPreferences interface (as defined by [Mobile In-App CMP API v2.0: Transparency
-&amp; Consent Framework](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/README.md)) instead of passing them via the new APIs,
-and the SDK will read the values as a fallback.
+Publishers/Consent Management Platforms (CMPs) are free to store these values in a SharedPreferences interface (as defined by [Mobile In-App CMP API v2.0: Transparency &amp; Consent Framework](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/README.md)) instead of passing them via the new APIs, and the SDK will read the values as a fallback.
 
 ```
 /** * Set the consentRequired value in the SDK
@@ -80,12 +63,10 @@ and the SDK will read the values as a fallback.
 > [!NOTE]
 > To ensure proper monetization and relevant targeting, the SDK should be enabled to send the device information. Setting the `consentRequired` and `purposeConsents` flag correctly will help ensure proper device information is sent. Refer to the table below to determine whether the device details will be passed or not.
 
-The table below describes the actions taken for the
-different `purposeConsents` values in combination with `consentRequired`
-values.
+The table below describes the actions taken for the different `purposeConsents` values in combination with `consentRequired` values.
 
-|  |  deviceAccessConsent= true |deviceAccessConsent= false | deviceAccessConsent= undefined  |
-|---|---|---|---|
+| deviceAccessConsent | deviceAccessConsent= true | deviceAccessConsent= false | deviceAccessConsent= undefined |
+|--|--|--|--|
 | `consentRequired=undefined<br>(gdprApplies = undefined)` | The SDK will read and pass IDFA/AAID info to server. | The SDK will **not** read and pass IDFA/AAID info to server. | The SDK will read and pass IDFA/AAID info to server. |
 | `consentRequired=true<br>(gdprApplies = true)` | The SDK will read and pass IDFA/AAID info to server. | The SDK will **not** read and pass IDFA/AAID info to server. | The SDK will **not** read and pass IDFA/AAID info to server. |
 | `consentRequired=false<br>(gdprApplies = false)` | The SDK will read and pass IDFA/AAID info to server. | The SDK will **not** read and pass IDFA/AAID info to server. | The SDK will read and pass IDFA/AAID info to server. |
@@ -94,12 +75,9 @@ Xandr provides three APIs that enable SDK users to set, retrieve and clear U.S.
 
 ## California Consumer Privacy Act (CCPA)
 
-This information will be persisted by the SDK and will be added to each
-ad call for applying platform controls.  
+This information will be persisted by the SDK and will be added to each ad call for applying platform controls.  
 
-Publishers/Consent Management Platforms (CMPs) are free to store these
-values in a SharedPreferences interface (as defined by IAB's CCPA Compliance Mechanism) instead of passing them via the new APIs, and the SDK will read the values as a
-fallback.
+Publishers/Consent Management Platforms (CMPs) are free to store these values in a SharedPreferences interface (as defined by IAB's CCPA Compliance Mechanism) instead of passing them via the new APIs, and the SDK will read the values as a fallback.
 
 ``` 
 /**
@@ -124,41 +102,33 @@ fallback.
 
 ## Global Privacy Platform (GPP)
 
-[Global Privacy Platform](https://github.com/InteractiveAdvertisingBureau/Global-Privacy-Platform/blob/main/Core/CMP%20API%20Specification.md#in-app-details) is a single
-protocol designed to streamline transmitting privacy, consent, and
-consumer choice signals from websites and apps to ad tech providers.
-These signals are packaged in a standardized, easily communicated
-payload called a GPP String. The pre-parsed GPP data as well as the GPP
-string shall be stored under [NSUserDefaults](https://developer.apple.com/documentation/foundation/nsuserdefaults#1664798?language=objc) (iOS). This will allow
-the following:
+[Global Privacy Platform](https://github.com/InteractiveAdvertisingBureau/Global-Privacy-Platform/blob/main/Core/CMP%20API%20Specification.md#in-app-details) is a single protocol designed to streamline transmitting privacy, consent, and consumer choice signals from websites and apps to ad tech providers. These signals are packaged in a standardized, easily communicated payload called a GPP String. The pre-parsed GPP data as well as the GPP string shall be stored under [NSUserDefaults](https:/ developer.apple.com/documentation/foundation/nsuserdefaults#1664798?language=objc) (iOS). This will allow the following:
 
 - Vendors to easily access GPP data.
 - GPP data to persist across app sessions.
-- GPP data to be portable between CMPs to provide flexibility for a
-  publisher to exchange one CMP SDK for another.
-- Vendors within an app to avoid code duplication, by not requiring to
-  include a GPP string decoder while still enabling all typical use
-  cases.  
+- GPP data to be portable between CMPs to provide flexibility for a publisher to exchange one CMP SDK for another.
+- Vendors within an app to avoid code duplication, by not requiring to include a GPP string decoder while still enabling all typical use cases.  
 
-> [!NOTE]
-> If a Publisher chooses to remove a CMP SDK from their app they are responsible for clearing all IABGPP\_\* vestigial values for users so that vendors do not continue to use the GPP data therein.
- 
-Xandr SDK will then read the values from
-NSUserDefault which is then passed to the ad call. Following are the
-strings SDK will query from : 
+  > [!NOTE]
+  > If a Publisher chooses to remove a CMP SDK from their app they are responsible for clearing all IABGPP\_\* vestigial values for users so that vendors do not continue to use the GPP data therein.
 
-| Key Name | Data type | Description  |
-|---|---|---|
-| `IABGPP_HDR_GppString` | string | Full consent string in its encoded form. e.g "DBACNYA~CPXxRfAPXxRfAAfKABENB-CgAAAAAAAAAAYgAAAAAAAA~1YNN" |
-| `IABGPP_GppSID` | string | Section ID(s) considered to be in force. Multiple IDs are separated by underscore, e.g. “2_3” | 
+  Xandr SDK will then read the values from NSUserDefault which is then passed to the ad call. Following are the strings SDK will query from :
+
+  | Key Name | Data type | Description |
+  |--|--|--|
+  | `IABGPP_HDR_GppString` | string | Full consent string in its encoded form. e.g "DBACNYA~CPXxRfAPXxRfAAfKABENB-CgAAAAAAAAAAYgAAAAAAAA~1YNN" |
+  | `IABGPP_GppSID` | string | Section ID(s) considered to be in force. Multiple IDs are separated by underscore, e.g. “2_3” |  |
 
 ## Digital Services Act (DSA)
 
 The Digital Services Act (DSA) oversees online intermediaries and platforms, where its primary objective is to curb illegal and harmful activities on the internet and to mitigate the dissemination of disinformation. The DSA is a key legislative measure by the European Union aimed at enhancing transparency in digital advertising, with a core objective of promoting transparency, accountability, and user protection in online services.
 
 ### Set DSA Values in the SDK:
+
 SDK will then pass these values to the ad call.
+
 **Code Sample - Objective C**
+
 ```
 /**
  * Set the DSA information requirement.
@@ -187,7 +157,9 @@ NSMutableArray<ANDSATransparencyInfo *> *transparencyList = [NSMutableArray arra
  
 [ANDSASettings.sharedInstance setTransparencyList:transparencyList];
 ```
+
 **Code Sample - Swift**
+
 ```
 /**
  * Set the DSA information requirement.
@@ -220,7 +192,9 @@ transparencyList.append(info2)
   
 ANDSASettings.sharedInstance().transparencyList = transparencyList
 ```
-**Retrieve the DSA values set in SDK**
+
+### Retrieve the DSA values set in SDK
+
 ```
 // Objective C
 NSInteger dsaRequired = ANDSASettings.sharedInstance.dsaRequired;
@@ -242,8 +216,11 @@ let params = transparencyInfo.dsaparams ?? []
 }
 }
 ```
+
 ### Retrieve DSA Response values:
+
 **Code Sample - Objective C**
+
 ```
 - (void)requestBannerAd
 {
@@ -282,9 +259,13 @@ NSArray<NSNumber *> *params = transparencyInfo.dsaparams;
 */
 NSInteger adRender = self.banner.adResponseInfo.dsaResponseInfo.adRender;
 }
+
 ```
+
 **Code Sample - Swift**
+
 ```
+
 func requestBannerAd() {
 // Make a banner ad view.
 self.banner = ANBannerAdView(frame: CGRect(origin: CGPoint(x: 0,y :0), size: CGSize(width: 300, height: 250)), placementId: “1”, adSize: CGSize(width: 300, height: 250))
@@ -325,10 +306,12 @@ if let transparencyList = self.banner?.adResponseInfo?.dsaResponseInfo?.transpar
 let adRender : NSInteger = (self.banner?.adResponseInfo?.dsaResponseInfo?.adRender)!
 }
 ```
+
 > [!NOTE]
 > ANDSAResponseInfo can be retrieved using VideoAd instance, Interstitial Ad View instance and Native Ad Response also apart from Banner Ad View
 
 ```
+
 Objective C
 // For interstitialAd once adDidReceiveAd is callback
 NSString* interstitialAdDSAResponseInfo = self.interstitialAd.adResponseInfo.dsaResponseInfo; // same will be followed to get other dsaResponseInfo from interstitialAd
@@ -340,6 +323,7 @@ NSString* nativeAdDSAResponseInfo = nativeAdResponseInfo.dsaResponseInfo; // sam
 ```
 
 ```
+
 // Swift
 // For interstitialAd once adDidReceiveAd is callback
 let interstitialAdDSAResponseInfo? : String = (self.interstitialAd.?.adResponseInfo?.dsaResponseInfo?)! // same will be followed to get other dsaResponseInfo from interstitialAd
@@ -348,9 +332,3 @@ let videoAdDSAResponseInfo? : String = (self.videoAd.?.adResponseInfo?.dsaRespon
 // For nativeAd once didReceiveResponse is callback
 let nativeAdDSAResponseInfo : String = (self.nativeAdResponse.?.adResponseInfo?.dsaResponseInfo?)! // same will be followed to get other dsaResponseInfo from nativeAd
 ```
-
-
-
-
-
-

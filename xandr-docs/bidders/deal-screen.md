@@ -1,6 +1,6 @@
 ---
 title: Deal Screen
-description: The article describes the deals screen that displays Xandr publisher deals with buyers, providing bidders with information, and how the bidders can utilize the deal buyer Access Service to access more details.
+description: Highlight the deals screen, informing bidders about publisher deals. Utilize buyer Access Service for additional details.
 ms.date: 10/28/2023
 ---
 

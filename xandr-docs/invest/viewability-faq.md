@@ -18,7 +18,7 @@ Our reporting is based on the IAB standard definition: 50% of the area of the cr
 
 Adserver clients can now use the Engagement Metrics report to access a wide variety of metrics. We are focused on making the most actionable viewability data widely and easily available.
 
-## Microsoft Advertising Viewability Script Functionality
+## Microsoft Advertising Viewability Script functionality 
 
 The following questions address the Microsoft Advertising viewability script, how it works, what it measures, and its limitations.
 
@@ -85,7 +85,7 @@ Checks are applied to all platform inventory before an impression is auctioned, 
 The script will however check for inactive users. If there is no keyboard, mouse, scroll or other activity for 60 seconds, then the
 script considers the user to be inactive. Any ads served, for example by an auto-refresh placement, will be considered non-viewable until an activity event is detected.
 
-## Viewability Rate Results
+## Viewability Rate results
 
 The following questions address how to interpret your reported viewability rates in Microsoft Invest.
 
@@ -109,7 +109,6 @@ When a placement is above the fold, it is not always viewable, because:
   - Compare it with our view-measurement rate in reporting. High measurement rates are usually more reliable.
 - Does vendor X measure the banner object or the placement?
   - The IAB's recommendation is to measure the banner object, not the placement.
-
   - We measure the object: the banner is not viewable if the object is not loaded.
 
 ## Why do I get a low viewability rate on creative X?
@@ -123,9 +122,4 @@ It could be any of the following:
 
 - [Introduction to Viewability](introduction-to-viewability.md)
 - [Reporting on Viewability](reporting-on-viewability.md)
-
-
-
-
-
 

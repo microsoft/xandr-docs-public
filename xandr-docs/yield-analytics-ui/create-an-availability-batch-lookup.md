@@ -9,8 +9,8 @@ ms.custom : yield-analytics-ui
 
 You can run multiple availability lookups as part of a single availability report, by creating a batch lookup.
 
-1. Set up a new lookup for availability based on a combination of targeting attributes or open an existing saved lookup. Then click **Add to Batch**. The Availability Report panel displays the available inventory based on your lookup criteria, excluding CPM, impressions, and capacity.
-1. Modify the lookup criteria to set up a different set of targeting, and click **Add to Batch**. The Availability Report panel is updated with the available inventory based on your original lookup criteria and the new lookup criteria.
+1. Set up a new lookup for availability based on a combination of targeting attributes or open an existing saved lookup. Then click **Add to Batch**. The **Availability Report** panel displays the available inventory based on your lookup criteria, excluding CPM, impressions, and capacity.
+1. Modify the lookup criteria to set up a different set of targeting, and click **Add to Batch**. The **Availability Report** panel is updated with the available inventory based on your original lookup criteria and the new lookup criteria.
 1. Repeat step 2 as needed. Then click **Run Batch**.
 1. On the confirmation dialog that appears, note the batch lookup name, and then click **OK**.
 

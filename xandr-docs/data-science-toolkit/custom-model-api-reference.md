@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 
 This section provides reference information about the API services used to implement custom models.
 
-**Custom model API Services**:
+## Custom model API services
 
 - [Custom Model Service](custom-model-service.md)
 - [Custom Model Parser Service](custom-model-parser-service.md)

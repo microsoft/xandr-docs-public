@@ -1,6 +1,6 @@
 ---
 title: Deals for Bidders
-description: The article explains the deals for bidders.
+description: The article explains the deals for bidders. Bid on deals with platform sellers and learn the bidding process on this page.
 ms.date: 10/28/2023
 ---
 
@@ -17,9 +17,7 @@ Xandr offers the ability to bid on deals with our platform sellers. This page wa
 
 ### Step 1. Configure your system to handle deals
 
-Ensure that your system is configured to read deal IDs in the bid request and format a proper deal-specific bid response. For more
-information, see the [Example Request/Response Chain](deals-for-bidders.md#example-requestresponse-chain). Please also make sure to review [Deal Auction Mechanics](deal-auction-mechanics.md) to understand how Xandr conducts auction in different
-situations.
+Ensure that your system is configured to read deal IDs in the bid request and format a proper deal-specific bid response. For more information, see the [Example Request/Response Chain](deals-for-bidders.md#example-requestresponse-chain). Please also make sure to review [Deal Auction Mechanics](deal-auction-mechanics.md) to understand how Xandr conducts auction in different situations.
 
 ### Step 2. Reach out to your Xandr representative
 
@@ -40,8 +38,7 @@ Your buyers will negotiate deals with sellers directly. Xandr is not involved in
 
 ### Step 4. Validate your buyers' deals
 
-Once a buyer has set up a deal with a Xandr seller, you must ensure that your bidder profiles are not blocking any of the parameters that apply to the deal inventory. For example, if a profile is filtering out the seller, creative size, or other parameter that applies to the deal inventory, you will not receive those bid requests. For details about updating or creating bidder profiles, see
-the [Legacy Bidder Profile Service](legacy-bidder-profile-service.md).
+Once a buyer has set up a deal with a Xandr seller, you must ensure that your bidder profiles are not blocking any of the parameters that apply to the deal inventory. For example, if a profile is filtering out the seller, creative size, or other parameter that applies to the deal inventory, you will not receive those bid requests. For details about updating or creating bidder profiles, see the [Legacy Bidder Profile Service](legacy-bidder-profile-service.md).
 
 > [!NOTE]
 > We recommend using the [Deal Buyer Access Service](deal-buyer-access-service.md) to validate that the deal exists in Xandr's system. This will help you avoid targeting a deal that is inactive or not what you expected.

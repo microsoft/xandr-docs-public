@@ -1,8 +1,8 @@
 ---
-title : User ID(s) Mapping on iOS
-description : The article provides instructions on mapping user IDs on iOS.
+title: User ID(s) Mapping on iOS
+description: Send Publisher First party ID and User ID(s) in iOS ad requests. Set User ID(s) once per app session for global use, not stored across sessions.
 ms.custom: ios-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
 ---
 
 # User ID(s) mapping on iOS

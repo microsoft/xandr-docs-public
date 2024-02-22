@@ -1,13 +1,13 @@
 ---
 title: At-Risk Management Chart and Solution Paths
-description: The article explores at-risk management charts and solutions to reduce risks, such as adjusting parameters, extending flight duration, and reassessing strategies to improve performance.
+description: Optimize risk management with charts, adjust parameters, extend flight time, and reassess strategies for enhanced performance.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 
 # At-risk management chart and solution paths
 
-:::image type="content" source="media/oo.png" alt-text="The  screenshot that displays the At-risk management flow chart.":::
+:::image type="content" source="media/oo.png" alt-text="Diagram that shows at-risk management flow chart.":::
 
 ## Overview
 
@@ -15,13 +15,13 @@ Once you have determined the root cause of your under-delivery issue, you have a
 
 Recommended Steps:
 
-- Copy the **Product Name** for the order line 'at risk'. Note the **Pacing - Lifetime** value on the Order Line Visibility screen. This is the difference between the order line's goal and what it will actually hit. It is how many impressions you want to find with the availability request.
-- Search for that Custom Product in Availability Lookup. To accomplish this, use **Advanced Search** in the Lookup Criteria box.
+- Copy the **Product Name** for the order line 'at risk'. Note the **Pacing - Lifetime** value on the **Order Line Visibility** screen. This is the difference between the order line's goal and what it will actually hit. It is how many impressions you want to find with the availability request.
+- Search for that Custom Product in Availability Lookup. To accomplish this, use **Advanced Search** in the **Lookup Criteria** box.
 - Change the configuration in Availability Lookup to simulate different changes, depending on the strategy below. It is critical to set the time period for which you are pulling avails to be the current date. This is accomplished through the problem order line's end date vs. the default date of **next month**.
 
 ## Reduce cap restrictions
 
-Set the Frequency Cap value to a slightly lower amount and Check Avails. If you can't meet the under-delivery value (Pacing - Lifetime), reduce the cap some more and try again.
+Set the **Frequency Cap** value to a slightly lower amount and Check Avails. If you can't meet the under-delivery value (Pacing - Lifetime), reduce the cap some more and try again.
 
 ## Broaden targeting
 
@@ -56,7 +56,7 @@ For the two use cases below, the solution is slightly more involved and is best 
   - Pulling a basic report in Yield Analytics.
   - Setting order line as your dimension.
   - Consumed impressions as your metric.
-  - The filtering on order **line status = pending.**
+  - The filtering on order **line status = pending**.
   - Start date (not the time period) to a date prior to the current date.
 
     For example, two weeks earlier than today is usually a good way to identify these problem order lines. If today was October 15, 2017, you'd want to set the start date filter to (earliest date available - October 1, 2017). It is also sometimes helpful to pull in things like a Salesperson's name, the Advertiser, and other elements to help you follow-up:

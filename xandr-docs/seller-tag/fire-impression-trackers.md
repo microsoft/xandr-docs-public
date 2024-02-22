@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 
 This function accepts one parameter which is a native ad object. The function fires impression trackers and JavaScript trackers if they exist on the given native ad object. This could be used in the callback that handles native ad responses.
 
-``` pre
+```
 fireImpressionTrackers(adObj)
 ```
 
@@ -21,7 +21,7 @@ The parameters listed below can be sent as arguments in the function.
 
 ## Example
 
-``` pre
+```
 apntag.onEvent('adLoaded', function(data) {
   apntag.fireImpressionTrackers(data);
 });

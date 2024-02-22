@@ -5,9 +5,9 @@ ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 
-# Dealing with campaign under-delivery
+# Dealing with campaign under-deliveryl
 
-Diagnosing and solving under-delivery concerns can be a complex task. This is because there are often a number of possible root causes and barriers that make it difficult to make decisions strictly based on revenue. Unlike ad server reports, Yield Analytics can provide a tremendous amount of transparency into all the competing campaigns. Depending on the business concerns a publisher must satisfy in order to make a decision, it can sometimes be a lengthy path to gather all the necessary intel.
+Diagnosing and solving under-delivery concerns can be a complex task. This is because there are often a number of possible root causes and barriers that make it difficult to make decisions strictly based on revenue.Unlike ad server reports, Yield Analytics can provide a tremendous amount of transparency into all the competing campaigns. Depending on the business concerns a publisher must satisfy in order to make a decision, it can sometimes be a lengthy path to gather all the necessary intel.
 
 **High level path**:
 

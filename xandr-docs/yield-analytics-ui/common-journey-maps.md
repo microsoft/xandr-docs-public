@@ -1,6 +1,6 @@
 ---
 title: Common Journey Maps
-description: The article explains common journey map or the path a user takes from problem to solution by using Yield Analytics.
+description: Optimize user journeys with Yield Analytics, addressing issues like campaign delivery, capacity impact, and pricing trends.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---

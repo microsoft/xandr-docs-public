@@ -1,6 +1,6 @@
 ---
 title: Change How a Report is Displayed
-description: The article details multiple options available for altering the display of reports, elucidating ways to customize and modify the visual representation of data within reporting structures.
+description: Explore report customization options for enhanced data display, modifying visual representation effectively.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---

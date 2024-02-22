@@ -1,6 +1,6 @@
 ---
 title: Compare Two Data Sets
-description: The article explains how you can compare information by applying different metric filters to two data sets.
+description: Explore and create a second tab with identical settings, rename, and adjust filters for side-by-side comparison in chart/graph view.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---

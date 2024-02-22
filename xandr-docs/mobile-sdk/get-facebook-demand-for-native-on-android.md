@@ -11,8 +11,7 @@ This article describes the process for retrieving native ad assets to display in
 
 ## Ensure proper SDKs installed
 
-The Mobile SDK and Xandr-FAN-Demand Package will need to be installed. To know more about the details of the releases, please
-go to [our page](https://github.com/appnexus/mobile-sdk-android/releases) on Github repo. In the dependencies section of the `build.gradle` of your project add these two lines:
+The Mobile SDK and Xandr-FAN-Demand Package will need to be installed. To know more about the details of the releases, go to [our page](https://github.com/appnexus/mobile-sdk-android/releases) on the Github repo. In the dependencies section of the `build.gradle` of your project add these two lines:
 
 ``` 
 dependencies {
@@ -39,7 +38,7 @@ AudienceNetworkAds.buildInitSettings(this).withInitListener(new AudienceNetworkA
 
 ## Create a native banner ad layout
 
-In the activity layout's `activity_main.xml` of your app, add a container for your native ad. This container should be of type `com.facebook.ads.NativeAdLayout,` which is a wrapper on top of a `FrameLayout`. This wrapper provides extra functionality that enables Mobile SDK to render a native `Ad Reporting Flow` on top of the ad.
+In the activity layout's `activity_main.xml` of your app, add a container for your native ad. This container should be of type `com.facebook.ads.NativeAdLayout`, which is a wrapper on top of a `FrameLayout`. This wrapper provides extra functionality that enables Mobile SDK to render a native `Ad Reporting Flow` on top of the ad.
 
 ``` 
 <?xml version="1.0" encoding="utf-8"?>
@@ -56,7 +55,7 @@ In the activity layout's `activity_main.xml` of your app, add a container for yo
 </RelativeLayout>
 ```
 
-[Click here to view sample code](https://developers.facebook.com/docs/audience-network/guides/ad-formats/native-banner/android#layout) provided by Facebook for setting up native banner ad custom layouts.
+[Click here to view a sample code](https://developers.facebook.com/docs/audience-network/guides/ad-formats/native-banner/android#layout) provided by Facebook for setting up native banner ad custom layouts.
 
 ## Create a native ad request and load the ad
 
@@ -92,12 +91,12 @@ request.loadAd();
 
 The process for creating the NativeAdRequest and loading the ad uses one of these methods, depending on the native ad object returned in the response:
 
-- inflateAndRegisterFB
-- inflateAndRegisterNonFB
+- `inflateAndRegisterFB`
+- `inflateAndRegisterNonFB`
 
 These methods are identical in function except for the registration process. If the object returned in the response is a `FBNativeBannerAdResponse` the response would call the `registerView` method to register the ad. If it was not a `FBNativeBannerAdResponse` object the response would then call `NativeAdSDK.registerTracking` to register the ad.
 
-### inflateAndRegisterFB example
+### `inflateAndRegisterFB` example
 
 Retrieve and display the call to action text for the call to action button:
 
@@ -127,7 +126,7 @@ fbResponse.registerView(adView, nativeAdIconView, clickableViews, new NativeAdEv
 });
 ```
 
-### inflateAndRegisterNonFB example
+### `inflateAndRegisterNonFB` example
 
 Retrieve the call to action text to display on the call to action button and display that text:
 

@@ -15,8 +15,8 @@ The read-only Category Service allows you to view all categories that are regist
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| GET  | [https://api.adnxs.com/category](https://api.adnxs.com/category) | View all the categories in the Xandr system. |
-| GET  | [https://api.adnxs.com/category/CATEGORY_ID](https://api.adnxs.com/category/CATEGORY_ID) | View information about a particular category. |
+| `GET`  | [https://api.adnxs.com/category](https://api.adnxs.com/category) | View all the categories in the Xandr system. |
+| `GET`  | [https://api.adnxs.com/category/CATEGORY_ID](https://api.adnxs.com/category/CATEGORY_ID) | View information about a particular category. |
 
 ## JSON fields
 
@@ -28,14 +28,14 @@ The read-only Category Service allows you to view all categories that are regist
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `id` | int | The ID of the category.<br>**Required On:** PUT, in query string |
-| `name` | string | The name of the category.<br>**Required On:** POST |
-| `is_sensitive` | boolean | If `true`, the category is listed as "sensitive", and is often banned by publishers.<br>**Default:** false |
+| `id` | int | The ID of the category.<br>**Required On:** `PUT`, in query string |
+| `name` | string | The name of the category.<br>**Required On:** `POST` |
+| `is_sensitive` | boolean | If `true`, the category is listed as "sensitive", and is often banned by publishers.<br>**Default:** `false` |
 | `last_modified` | timestamp | The date and time when the category was last modified. |
-| `requires_allowlist_on_external` | boolean | Whether brands or creatives in this category require allowlisting in order to serve on external (i.e. RTB) inventory.<br>**Default:** false |
-| `requires_allowlist_on_managed` | boolean | Whether brands or creatives in this category require allowlisting in order to serve on managed inventory.<br>**Default:** false |
-| `is_brand_eligible` | boolean | If true, then the category is eligible to be associated with brands within the audit process.<br>**Default:** true |
-| `requires_allowlist` | boolean | Whether brands or creatives in this category require allowlisting in order to serve.<br>**Default:** false |
+| `requires_allowlist_on_external` | boolean | Whether brands or creatives in this category require allowlisting in order to serve on external (i.e. RTB) inventory.<br>**Default:** `false` |
+| `requires_allowlist_on_managed` | boolean | Whether brands or creatives in this category require allowlisting in order to serve on managed inventory.<br>**Default:** `false` |
+| `is_brand_eligible` | boolean | If `true`, then the category is eligible to be associated with brands within the audit process.<br>**Default:** `true` |
+| `requires_allowlist` | boolean | Whether brands or creatives in this category require allowlisting in order to serve.<br>**Default:** `false` |
 | `countries_and_brands` | array of objects | This array contains brand allowlist settings grouped by country. For more information, see "[Countries and Brands](#countries-and-brands)" below. |
 
 ### Countries and brands

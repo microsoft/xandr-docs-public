@@ -1,6 +1,6 @@
 ---
 title: Xandr Support for Ads.txt and App-Ads.txt
-description: The article details Xandr's support for Ads.txt and App-Ads.txt.
+description: Implement Ads.txt and App-Ads.txt to integrate support, boost ad campaign reliability, and safeguard revenue against fraudulent impressions.
 ms.date: 10/28/2023
 ms.custom: industry-reference
 ---

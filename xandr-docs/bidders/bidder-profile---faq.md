@@ -14,21 +14,21 @@ You can get all publicly available seller member IDs through the [Platform Membe
 
 ### How should I set up my bidder profile?
 
-There's no single right way to set up your bidder profile ([Legacy Bidder Profile Service](legacy-bidder-profile-service.md)), but please see below for best practices about the fields to use for filtering. Note that these can be used at either the parent or child levels:
+There's no single right way to set up your bidder profile ([Legacy Bidder Profile Service](legacy-bidder-profile-service.md)), but see below for best practices about the fields to use for filtering. Note that these can be used at either the parent or child levels:
 
 - **Filtering by selling member**
-  - The member_targets array should be populated depending on how you'd like to buy.
+  - The `member_targets` array should be populated depending on how you'd like to buy.
     - Buying only a select set of sellers:
       - "member_targets": \[{"id": "100","action": "include"},{"id": "101","action": "include"},{"id": "102","action": "include"}\]
     - Excluding a select group of sellers:
       - "member_targets": \[{"id": "100","action": "exclude"},{"id": "101","action": "exclude"}\]
 - **Filtering by country**
-  - Set up a global "include" or "exclude" using the "country_action" parameter.
-  - Add the countries that you would like to include or exclude to the "country_targets" array as objects.
+  - Set up a global "include" or "exclude" using the `"country_action"` parameter.
+  - Add the countries that you would like to include or exclude to the `"country_targets"` array as objects.
     - "country_targets": \[{"country": "GB"},{"country": "US"},{"country": "DE"}\]
 - **Filtering by segment**
-  - Set the "segment_boolean_operator" parameter to either "and or "or".
-  - Add the segment(s) that you want to use as filters to the segment_targets parameter.
+  - Set the `"segment_boolean_operator"` parameter to either "and or "or".
+  - Add the segment(s) that you want to use as filters to the `segment_targets` parameter.
     - "segment_targets": \[{"id": "100","action": "include"},{"id": "101","action": "include"}\]
 - **Filtering by size**
   - Include the list of creative sizes for which your bidder has creatives. This list should be exhaustive if you choose to filter by creative size.
@@ -38,7 +38,7 @@ There's no single right way to set up your bidder profile ([Legacy Bidder Profil
     - "domain_list_target":\[{"id":1}, {"id":2}\]
     - "domain_list_action":"include"
 - **Filtering by seller classified inventory attributes**
-  - This option allows you to opt-in to inventory that has been classified with a sensitive attribute. When "use_inventory_attribute_targets" is set to true, your bidder will receive traffic from inventory classified with the inventory attributes listed in the inventory_attribute_targets array and all unclassified inventory.
+  - This option allows you to opt-in to inventory that has been classified with a sensitive attribute. When `"use_inventory_attribute_targets"` is set to `true`, your bidder will receive traffic from inventory classified with the inventory attributes listed in the `inventory_attribute_targets` array and all unclassified inventory.
 
   - For example, if you wanted to receive bid requests from all inventory except that inventory classified as Toolbar, you should adjust your bidder profile to contain the following information:
 
@@ -82,7 +82,7 @@ There's no single right way to set up your bidder profile ([Legacy Bidder Profil
 
 - **General notes**
   - Once you have included any item in any array, you don't need to exclude items you don't want to see, as only those that are explicitly included will be sent.
-  - Do not set the action to be "include" if you haven't set any targets to include. For example, country_action should not be include if country_targets has no elements.
+  - Do not set the action to be "include" if you haven't set any targets to include. For example, country_action should not be include if `country_targets` has no elements.
 
 ## Parent and child profiles
 
@@ -98,13 +98,13 @@ No. If there is no parent profile, all impressions that match any of the child p
 profile and no child profiles, all impressions will be sent to your bidder.
 
 > [!NOTE]
-> If there is no parent profile in place, the bidder configuration element, bid_percent, will be ignored.
+> If there is no parent profile in place, the bidder configuration element, `bid_percent`, will be ignored.
 
 ### How can I set up my parent and child profiles?
 
-There are a few steps in this process. The first would be deciding on what logic you'd like to use. Please read the rest of this FAQ and reach out to your account representatives if you have any questions about best practice. This example will use one parent profile and two child profiles. The parent profile will filter on a segment, and each of the child profiles will have a seller member and geo combination.
+There are a few steps in this process. The first would be deciding on what logic you'd like to use. Read the rest of this FAQ and reach out to your account representatives if you have any questions about best practice. This example will use one parent profile and two child profiles. The parent profile will filter on a segment, and each of the child profiles will have a seller member and geo combination.
 
-The first step is creating the profiles themselves. A profile is an object on the Xandr platform that can be created using the [Legacy Bidder Profile Service](legacy-bidder-profile-service.md). The sample below can be used in a POST to create the profile.
+The first step is creating the profiles themselves. A profile is an object on the Xandr platform that can be created using the [Legacy Bidder Profile Service](legacy-bidder-profile-service.md). The sample below can be used in a `POST` to create the profile.
 
 ``` 
 {"profile":{
@@ -130,7 +130,7 @@ and
  "member_targets": [{"id":2000, "action":"include}]}}
 ```
 
-We will assume that these two profiles are created and given IDs of 101 and 102, respective. If you are bidder 15, you will need to update your bidder using the [Bidder Service](bidder-service.md). Using the following in a PUT, you can update your bidder to have a parent profile with profile 100 and child profiles of profiles 101 and 102 with the following:
+We will assume that these two profiles are created and given IDs of 101 and 102, respective. If you are bidder 15, you will need to update your bidder using the [Bidder Service](bidder-service.md). Using the following in a `PUT`, you can update your bidder to have a parent profile with profile 100 and child profiles of profiles 101 and 102 with the following:
 
 ``` 
 {"bidder":{
@@ -142,11 +142,11 @@ We will assume that these two profiles are created and given IDs of 101 and 102,
 
 ### How do I set child profiles?
 
-Create the profiles that you want to be your child profiles using the [Legacy Bidder Profile Service](legacy-bidder-profile-service.md). Each profile will have an ID. Update the child_profiles in the [Bidder Service](bidder-service.md) to have the full array of objects specifying all of the child profiles - e.g. \[{"id":123},{"id":456},{"id":789}\]. You must specify the full list of ids that you want to be child profiles in every update to the child_profiles in the bidder service.
+Create the profiles that you want to be your child profiles using the [Legacy Bidder Profile Service](legacy-bidder-profile-service.md). Each profile will have an ID. Update the `child_profiles` in the [Bidder Service](bidder-service.md) to have the full array of objects specifying all of the child profiles - e.g. `[{"id":123},{"id":456},{"id":789}]`. You must specify the full list of ids that you want to be child profiles in every update to the `child_profiles` in the bidder service.
 
 ### How do I set my parent profile?
 
-Create the profile that you want to be your parent profile using the [Legacy Bidder Profile Service](legacy-bidder-profile-service.md). This will return the ID of that particular profile. Update the parent_profile_id in the [Bidder Service](bidder-service.md) to use the ID of the profile you created.
+Create the profile that you want to be your parent profile using the [Legacy Bidder Profile Service](legacy-bidder-profile-service.md). This will return the ID of that particular profile. Update the `parent_profile_id` in the [Bidder Service](bidder-service.md) to use the ID of the profile you created.
 
 ### How should I set up my parent and child profiles?
 
@@ -179,7 +179,7 @@ If the impression is blocked by the parent profile, it will not be sent to the b
 
 ### How can I make a change to my bidder profile?
 
-You can update your bidder profile by making a PUT call to the bidder profile service. The put call must include only:
+You can update your bidder profile by making a `PUT` call to the bidder profile service. The `PUT` call must include only:
 
 1. The ID of the profile.
-1. And, the field that you want to change. You must include the value that you'd like the changed field(s) to be. If you are changing an array, this means that every value of the array after the change must be sent in the PUT.
+1. And, the field that you want to change. You must include the value that you'd like the changed field(s) to be. If you are changing an array, this means that every value of the array after the change must be sent in the `PUT`.

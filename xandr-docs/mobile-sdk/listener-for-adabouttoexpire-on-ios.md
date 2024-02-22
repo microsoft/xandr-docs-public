@@ -22,8 +22,8 @@ After **didReceiveResponse** method is called, the user needs to set delegate t
 
 ## Properties
 
-The time interval for about to expire of an ad can be set using the property **nativeAdAboutToExpireInterval** (The default value of about
-to expire time interval is 60 seconds). This interval denotes the time period in seconds on the basis of which **adWillExpire()** callback is triggered.
+The time interval for about to expire of an ad can be set using the property **nativeAdAboutToExpireInterval**. The default value of about
+to expire time interval is 60 seconds. This interval denotes the time period in seconds on the basis of which **adWillExpire()** callback is triggered.
 
 | Property | Type | Attribute | Description |
 |:---|:---|:---|:---|

@@ -2,7 +2,7 @@
 title: Universal pixel SDK for iOS
 description: This article provides instructions on how publishers can integrate and install the Universal Pixel SDK (Pixie SDK) for iOS.
 ms.custom: ios-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
 ---
 
 # Universal pixel SDK for iOS
@@ -31,63 +31,62 @@ There are two ways to install the SDK:
     CocoaPods is a dependency manager for Cocoa projects. If you are unfamiliar with CocoaPods review their [installation and user guides](https://cocoapods.org/).
     1. Once you have CocoaPods installed, using terminal or your command line editor of choice, navigate to the root directory of your project and create a podfile.
 
-    ```
-    pod init
-    ```
+       ```
+       pod init
+       ```
 
-    2. Using a text editor, open the newly created podfile. Set the platform version to 9.0 and add pod `PixieSDK` to the target.
+    1. Using a text editor, open the newly created podfile. Set the platform version to 9.0 and add pod `PixieSDK` to the target.
 
-    ```
-    # iOS: Podfile config to include our SDK
-    platform :ios, '9.0'
-    project 'SampleApp'
-    target 'SampleApp' do
-      pod 'PixieSDK'
-    end
-    ```
+          ```
+          # iOS: Podfile config to include our SDK
+          platform :ios, '9.0'
+          project 'SampleApp'
+          target 'SampleApp' do
+            pod 'PixieSDK'
+          end
+         ```
 
-    3. Save your changes and return to **Terminal** and enter:  
+    1. Save your changes and return to **Terminal** and enter:  
 
-    ```
-    pod install
-    ```
+         ```
+        pod install
+         ```
   
-    4. CocoaPods will download the Pixie SDK and create a workspace in the project directory. If your project is currently open, close it and open the workspace.
+    1. CocoaPods will download the Pixie SDK and create a workspace in the project directory. If your project is currently open, close it and open the workspace.
 
 - **Using Xandr Unified Pixel SDK XCFramework**
 
-> [!NOTE]
-> We are distributing PixieSDK.xcframework, which you can download [here](https://acdn.adnxs.com/mobile/pixiesdk/ios/1.1/PixieXCFramework.zip). Download the file and add it to the **Frameworks** folder.
+  > [!NOTE]
+  > We are distributing PixieSDK.xcframework, which you can download [here](https://acdn.adnxs.com/mobile/pixiesdk/ios/1.1/PixieXCFramework.zip). Download the file and add it to the **Frameworks** folder.
 
 1. Create **Frameworks** folder.
   
-  Right click on your project in the project navigator (top-most entry), and select **New Group**. Name the new group as **Frameworks**.
+   Right click on your project in the project navigator (top-most entry), and select **New Group**. Name the new group as **Frameworks**.
 
-   :::image type="content" source="media/universal-pixel-sdk-for-ios-a.png" alt-text="The screenshot that displays how to create a Framework group within the poject structure using the project navigator.":::
+   :::image type="content" source="media/universal-pixel-sdk-for-ios-a.png" alt-text="Screenshot that displays how to create a Framework group within the poject structure using the project navigator.":::
   
-2. **Add `PixieSDK.xcframework` to Frameworks folder**.
+1. **Add `PixieSDK.xcframework` to Frameworks folder**.
 
-  Drag and drop `PixieSDK.xcframework` from Finder into the **Frameworks** folder. Make sure that the destination of drag is just under the **Frameworks**.
+    Drag and drop `PixieSDK.xcframework` from Finder into the **Frameworks** folder. Make sure that the destination of drag is just under the **Frameworks**.
 
-  :::image type="content" source="media/universal-pixel-sdk-for-ios-b.png" alt-text="The screenshot that entails locating the PixieSDK.xcframework file on the Finder or file system and how to drag the PixieSDK.xcframework file from its location and drop it into the Frameworks folder within the project navigator.":::
+    :::image type="content" source="media/universal-pixel-sdk-for-ios-b.png" alt-text="Screenshot that helps you to locate PixieSDK.xcframework in Finder, drag & drop it into the project navigator's Frameworks folder. ":::
   
-3. Make sure the options **Copy items if needed** and **Create groups** are checked and selected for adding files.
-  Click **Finish**.
+1. Make sure the options **Copy items if needed** and **Create groups** are checked and selected for adding files. Click **Finish**.
 
-  :::image type="content" source="media/universal-pixel-sdk-for-ios-c.png" alt-text="The screenshot that shows how to choose and check various copy options while adding the files":::
+   :::image type="content" source="media/universal-pixel-sdk-for-ios-c.png" alt-text="Screenshot that shows how to choose and check various copy options while adding the files":::
   
-4. Once this step is completed, the result appears as below:
+1. Once this step is completed, the result appears as below:
 
-  :::image type="content" source="media/universal-pixel-sdk-for-ios-d.png" alt-text="The  screenshot that displays the results after copying the files.":::
+   :::image type="content" source="media/universal-pixel-sdk-for-ios-d.png" alt-text="Screenshot that displays the results after copying the files.":::
   
-<!-- -->
-5. **Embedded PixieSDK.xcframework in project’s target**
+   <!-- -->
+1. **Embedded PixieSDK.xcframework in project’s target**
 
-  1. Navigate to your project settings by clicking on it in the project navigator.
-  1. Make sure that your target is selected and **General** tab is open.
-  1. Select **Embed & Sign** for your newly added XCFramework.
+1. Navigate to your project settings by clicking on it in the project navigator.
+1. Make sure that your target is selected and **General** tab is open.
+1. Select **Embed & Sign** for your newly added XCFramework.
 
-   :::image type="content" source="media/universal-pixel-sdk-for-ios-e.png" alt-text="The screenshot that shows how to configure the integration of the Framework within the project, access the project settings, and select the correct option for the proper embedding and code signing of the framework.":::
+   :::image type="content" source="media/universal-pixel-sdk-for-ios-e.png" alt-text="Screenshot that guides you to configure, access project settings, and select options for embedding and code signing the Framework.":::
 
 ## Implementation guide
 
@@ -99,7 +98,7 @@ Initialize the SDK calling its initialize method within the **didFinishLaunch
 Pixie.initialize(pixelId:String)`
 ```
 
-## Track Event
+## Track event
 
 **Once the SDK is initialized events can be tracked and submitted using fireEvent method.**
 
@@ -136,7 +135,7 @@ Standard Event strings are defined within the Event class. See the [Standard Ev
 
 ### Code samples
 
-**Initialization code sample:**
+#### Initialization code sample
 
 **Swift**
 
@@ -166,7 +165,7 @@ Event.PAGE_VIEW`
 
 The specific page that was visited.
 
-### Code samples:
+### Code samples
 
 **Swift**
 
@@ -187,7 +186,7 @@ Event.LANDING_PAGE`
 ```
 
 Track landing pages views.
-### Code samples:
+### Code samples
 
 **Swift**
 
@@ -210,7 +209,7 @@ Event.ITEM_VIEW`
 
 Track key page views (For example: product page, landing page, article).
 
-### Code samples:
+### Code samples
 
 **Swift**
 
@@ -234,7 +233,7 @@ Event.ADD_TO_CART`
 
 Track when items are added to a shopping cart (For example: **click**, landing page on **Add to Cart** button).
 
-### Code sample:
+### Code sample
 
 **Swift**
 
@@ -258,7 +257,7 @@ Event.INITIATE_CHECKOUT
 
 Track when people enter the checkout flow (For example: click, landing page on checkout button).
 
-### Code sample:
+### Code sample
 
 **Swift**
 
@@ -282,7 +281,7 @@ Event.ADD_PAYMENT_INFO`
 
 Track when payment information is added in the checkout flow (For example: click, landing page on billing information).
 
-### Code sample:
+### Code sample
 
 **Swift**
 
@@ -306,7 +305,7 @@ Event.PURCHASE`
 
 Track purchases or checkout flow completions (For example: Landing on **Thank You** or confirmation page).
 
-### Code sample:
+### Code sample
 
 **Swift**
 
@@ -330,7 +329,7 @@ Event.LEAD
 
 Track when someone expresses interest in your offering (For example: form submission, sign up for trial, and registration).
 
-### Code sample:
+### Code sample
 
 **Swift**
 
@@ -352,7 +351,7 @@ leadParams.currency = @"USD";
 
 Custom Events enable publishers to create their own events to track and submit. To create a custom event, initiate a PixelParams object with the data to be submitted and pass that object, along with a string identifier to the Pixie SDK fireEvent method. Custom event data can also be sent in key-value pairs by using the put method of the PixelParams object.
 
-### Code samples:
+### Code samples
 
 **Swift**
 

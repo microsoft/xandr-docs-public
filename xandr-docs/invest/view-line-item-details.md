@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 The **Line Item Details** screen displays settings for a specific line item, essential metrics and performance visualizations, and related objects that may have been set up under the line item.
 
-## Getting to the line item details pane
+## Getting to the Line Item Details pane
 
 Select the appropriate tab (Upcoming, In Progress, or Completed) from the **Line Items** menu. From the **Line Items** grid, click anywhere within one of the rows to view details for a specific line item.
 

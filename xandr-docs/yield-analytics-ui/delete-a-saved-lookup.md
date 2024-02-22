@@ -1,6 +1,6 @@
 ---
 title: Delete a Saved Lookup
-description: The article provides guidance that highlights the capability to delete saved lookups, emphasizing that this action requires administrative permissions.
+description: The article provides guidance that highlights the capability to delete saved lookups, emphasizing  administrative power.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---

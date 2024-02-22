@@ -1,6 +1,6 @@
 ---
 title: Bidders - Duration Service
-description: Use the read-only Duration Service to see what video content durations
+description: Check video durations with the read-only Duration Service in Xandr. Add video content fields to line item targeting.
 ms.date: 10/28/2023
 ---
 

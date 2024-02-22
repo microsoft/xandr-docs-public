@@ -7,15 +7,11 @@ description: The article provides an overview about Microsoft Windows 3rd party 
 
 ## Inventory overview
 
-Reach millions of user on desktop, tablet, and phone through Windows AppNetwork and Windows Phone AppNetwork 3rd Party. Advertising on
-Windows 3rd Party has never been a better investment, as improved user-sync and new media offerings best position your brand to connect
-with a highly engaged audience. Windows AppNetwork and Windows Phone AppNetwork allow brands to access millions of engaged users through
-hundreds of thousands of 3rd party apps.
+Reach millions of user on desktop, tablet, and phone through Windows AppNetwork and Windows Phone AppNetwork 3rd Party. Advertising on Windows 3rd Party has never been a better investment, as improved user-sync and new media offerings best position your brand to connect with a highly engaged audience. Windows AppNetwork and Windows Phone AppNetwork allow brands to access millions of engaged users through hundreds of thousands of 3rd party apps.
 
 ## Availability and volume
 
-Microsoft Windows 3rd Party AppNetwork inventory is fully integrated with the Microsoft Advertising Exchange (Member 280) and is classified as “Desktop” and “Web” supply type for both Desktop/Tablet,Web and
-Phone.
+Microsoft Windows 3rd Party AppNetwork inventory is fully integrated with the Microsoft Advertising Exchange (Member 280) and is classified as “Desktop” and “Web” supply type for both Desktop/Tablet, Web and Phone.
 
 > [!NOTE]
 > Supply type is a targeting attribute designated by the seller that may not reflect actual device type.
@@ -55,8 +51,7 @@ Technical attributes:
 - Video
 
 > [!TIP]
-> We have mapped the top 1000 app
-> names for targeting on both the Windows AppNetwork and Windows Phone AppNetwork. If you want to target an app name outside of the top 1000, reach out to your account manager. There is reporting capability for App targeting.
+> We have mapped the top 1000 app names for targeting on both the Windows AppNetwork and Windows Phone AppNetwork. If you want to target an app name outside of the top 1000, reach out to your account manager. There is reporting capability for App targeting.
 
 Ad Quality:
 
@@ -126,29 +121,21 @@ To maximize reach across Windows App inventory, we recommend targeting both Supp
 
 ## Packages and deals
 
-Packages are a great way to leverage Microsoft user data with your
-campaigns. Currently, Windows AppNetwork and Windows Phone AppNetwork
-offer a few packages broken out by content category such as
-entertainment, games, and news. See [Buying
+Packages are a great way to leverage Microsoft user data with your campaigns. Currently, Windows AppNetwork and Windows Phone AppNetwork offer a few packages broken out by content category such as entertainment, games, and news. See [Buying
 Microsoft Deals](buying-microsoft-deals.md) for more.
 
 ## Extra information
 
 **User identification (Microsoft Ad ID)**
 
-All Microsoft Windows App inventory includes a mobile-specific device identifier called the Windows Ad ID. This identifier is similar to other mobile app identifiers like IDFA or Google Play in that it is persistent
-across apps on the same device, compliant to the user's OS-level privacy settings.
+All Microsoft Windows App inventory includes a mobile-specific device identifier called the Windows Ad ID. This identifier is similar to other mobile app identifiers like IDFA or Google Play in that it is persistent across apps on the same device, compliant to the user's OS-level privacy settings.
 
-For Windows 10 inventory, Microsoft also provides the
-Microsoft Advertising ID (UUID64) corresponding to the user's
+For Windows 10 inventory, Microsoft also provides the Microsoft Advertising ID (UUID64) corresponding to the user's
 default browser where available. This process is called user-syncing, and enables advertisers to track users across devices. **User-sync is available on 82% of Windows 10 impressions, and better enables category targeting, frequency cap, conversion tracking and more.**
 
 **App-Install Attribution (Window Store ID)**
 
-For buyers running campaigns with a CPA goal of an App installation, the third-party app installation vendors Tune, Adjust, and Kochava support Windows Apps attribution tracking through Microsoft Advertising.
-If you are using a third-party ad server, you will be tracking
-conversions in that third-party ad server, which will require its own integration with Tune, Adjust, or Kochava for conversion attribution. We will continue onboarding additional attribution vendors. If you rely
-upon a specific attribution vendor that is not supported today, please contact your Microsoft Advertising Account Representative.
+For buyers running campaigns with a CPA goal of an App installation, the third-party app installation vendors Tune, Adjust, and Kochava support Windows Apps attribution tracking through Microsoft Advertising. If you are using a third-party ad server, you will be tracking conversions in that third-party ad server, which will require its own integration with Tune, Adjust, or Kochava for conversion attribution. We will continue onboarding additional attribution vendors. If you rely upon a specific attribution vendor that is not supported today, please contact your Microsoft Advertising Account Representative.
 
 ## More questions?
 

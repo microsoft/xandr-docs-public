@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 Bidder Profiles (both the legacy Profile Service and Enhanced Bidder Profiles) allow you to filter traffic you receive from Xandr. This profile migration guide helps you migrate your setup from the legacy Bidder Profiles over to Enhanced Bidder Profiles.
 
 > [!NOTE]
-> **Step 4** on this page is only relevant if you received a Breaking Change email communication about the profile migration. If you did not, please contact your account manager instead.
+> **Step 4** on this page is only relevant if you received a Breaking Change email communication about the profile migration. If you did not, contact your account manager instead.
 >
 > Breaking Change Notice: If You Don't Complete the Migration:
 >
@@ -41,23 +41,23 @@ There are two ways to check the current state. We recommend the API method since
 >
 > If you include the United States in your parent profile, include the Mobile App supply type in your child profile 1, and include the Mobile Web supply type in your child profile 2, your bidder will receive both US mobile app traffic (through child profile 1) and US mobile web traffic (through child profile 2). Your bidder will not receive any US Desktop traffic or any non-US traffic.
 >
-> For more information, please refer to the legacy [Bidder Profile FAQ](bidder-profile---faq.md).
+> For more information, refer to the Legacy [Bidder Profile FAQ](bidder-profile---faq.md).
 
 #### Method 1: Using API (Recommended)
 
 ##### Overview
 
-- Get the active profile objects through Bidder Service API: GET bidder/\[bidder id\].
-- For all active profile objects, GET profile/\[profile id\] through legacy Bidder Profile Service API.
+- Get the active profile objects through Bidder Service API: `GET` bidder/\[bidder id\].
+- For all active profile objects, `GET` profile/\[profile id\] through legacy Bidder Profile Service API.
 - Summarize the results.
 
-##### Step 1.1: Get the active profile objects through Bidder Service API: GET bidder/\[bidder id\]
+##### Step 1.1: Get the active profile objects through Bidder Service API: `GET` bidder/\[bidder id\]
 
 Active parent profile id is in the `parent_profile_id` field, and active child profile ids are in the `child_profiles` array.
 
 Reference: [Authentication Service](authentication-service.md) and [Bidder Service](bidder-service.md).
 
-##### Example
+###### Example
 
 ``` 
 -> curl -b cookie -c cookie -s "https://api.adnxs.com/bidder/129" # 129 is a sample bidder ID.
@@ -80,7 +80,7 @@ Reference: [Authentication Service](authentication-service.md) and [Bidder Servi
 }
 ```
 
-##### Step 1.2: For all active profile objects, GET profile/\[profile id\] through legacy Bidder Profile Service API
+##### Step 1.2: For all active profile objects, `GET` profile/\[profile id\] through legacy Bidder Profile Service API
 
 Each profile has an allowlist and/or blocklist of items. There are usually “action” and “targets” per member, country, etc.
 
@@ -89,7 +89,7 @@ Each profile has an allowlist and/or blocklist of items. There are usually “
 
 Reference: [Legacy Bidder Profile Service](legacy-bidder-profile-service.md)
 
-##### Example
+###### Step 1.2: Example
 
 ``` 
 -> curl -b cookie -c cookie -s "https://api.adnxs.com/profile/129/12345" # 129 is a sample bidder id and 12345 is a sample bider profile ID.
@@ -146,14 +146,14 @@ To make it easier to set up the new Enhanced Bidder Profiles, for each of these 
 
 #### Method 2: Using the legacy bidder UI
 
-##### Overview
+##### Overview (Method 2)
 
 - See the current filters in each bidder profile.
 - Summarize the results.
 
 ##### Step 1.1: See the current filters in each bidder profile
 
-Go to [https://bidder.adnxs.net/](https://bidder.adnxs.net/) and log in with your bidder user credentials. If you cannot log in, check with your company's integrations team first and please contact Xandr Support.
+Go to [https://bidder.adnxs.net/](https://bidder.adnxs.net/) and log in with your bidder user credentials. If you cannot log in, check with your company's integrations team first and contact Xandr Support.
 
 Navigate to the Profiles tab on the left. You can see the parent profile setup.
 
@@ -199,7 +199,7 @@ Enhanced Bidder Profiles offers the following benefits:
 - Simplified Profile: We have narrowed down the profile to only relevant fields for your business.
 - New Bidder Platform UI: We have built a new UI for you to manage and maintain your profiles. Additional capabilities will be added to this UI throughout 2019.
 
-Please review these pages first: [Change Log for Enhanced Bidder Profiles](changelog-for-enhanced-bidder-profiles.md) and [Frequently Asked Questions (FAQ) for Enhanced Bidder Profiles](frequently-asked-questions-faq-for-enhanced-bidder-profiles.md).
+Review these pages first: [Change Log for Enhanced Bidder Profiles](changelog-for-enhanced-bidder-profiles.md) and [Frequently Asked Questions (FAQ) for Enhanced Bidder Profiles](frequently-asked-questions-faq-for-enhanced-bidder-profiles.md).
 
 ### Step 3: Set Up Enhanced Bidder Profiles (0.5~1 hours)
 
@@ -233,9 +233,9 @@ Impression must meet requirements of a single profile to be sent to your bidder.
 ### Adjusting traffic volume: Passthrough percent alternative
 
 In legacy Bidder Profile, some clients used `passthrough_percent` to control traffic volume or bid request QPS (query per second).
-Enhanced Bidder Profile does not have a volume control feature; instead, please use the **`qps_limit`** field in [Bidder Instance](bidder-instance-service.md) to set up a QPS safety cap per datacenter. To see your current traffic volume, see the Metrics tab in the legacy bidder UI: [https://bidder.adnxs.net/metrics](https://bidder.adnxs.net/metrics).
+Enhanced Bidder Profile does not have a volume control feature; instead, use the **`qps_limit`** field in [Bidder Instance](bidder-instance-service.md) to set up a QPS safety cap per datacenter. To see your current traffic volume, see the Metrics tab in the legacy bidder UI: [https://bidder.adnxs.net/metrics](https://bidder.adnxs.net/metrics).
 
-If you have QPS safety caps in all bidder instances, you have an option to enable the Optimized Bid Stream feature. All traffic is sent until your QPS cap is met; when there is more available traffic than your QPS cap, instead of cutting off the traffic volume randomly to meet your QPS cap, low priority traffic based on your buying behavior that exceeds your QPS cap will be cut. For more information, see [Optimized Bid Stream FAQ](optimized-bid-stream-faq.md). If you're interested in the feature, please contact your account manager or
+If you have QPS safety caps in all bidder instances, you have an option to enable the Optimized Bid Stream feature. All traffic is sent until your QPS cap is met; when there is more available traffic than your QPS cap, instead of cutting off the traffic volume randomly to meet your QPS cap, low priority traffic based on your buying behavior that exceeds your QPS cap will be cut. For more information, see [Optimized Bid Stream FAQ](optimized-bid-stream-faq.md). If you're interested in the feature, contact your account manager or
 Xandr Support.
 
 ### Activating a new bidder profile
@@ -244,7 +244,7 @@ To activate a new Bidder Profile in API, set the **active** field to `true`. You
 
 You need to click on the Activate button in the profile screen to activate the profile. Non-italic profiles are active.
 
-Please activate your new Bidder Profiles before moving onto step 4. Your Enhanced Bidder Profile setup does not impact the traffic flow until the backend switch is flipped by Xandr Support in Step 4 before May 21st, 2019.
+Activate your new Bidder Profiles before moving onto step 4. Your Enhanced Bidder Profile setup does not impact the traffic flow until the backend switch is flipped by Xandr Support in Step 4 before May 21st, 2019.
 
 ### Step 4: Contact Xandr support to complete the migration (~1 business day)
 
@@ -253,25 +253,25 @@ Please activate your new Bidder Profiles before moving onto step 4. Your Enhanc
 > [!WARNING]
 > Your new Enhanced Bidder Profile setup does not impact the traffic flow until you complete this step before May 21st, 2019.
 
-Please open a support ticket. When entering information:
+Open a support ticket. When entering information:
 
 - Category: Select Product Support
 - What Can We Help With?: Select External Bidder Integration
 
-#### Please use this template for your support ticket
+#### Use this template for your support ticket
 
-I have reviewed and configured Enhanced Bidder Profiles. Please migrate my profile setup.
+I have reviewed and configured Enhanced Bidder Profiles. Migrate my profile setup.
 
 1. Bidder ID and bidder name:
 1. Did you configure using new Bidder Platform UI or API?:
-1. Please provide a brief explanation of the changes from the current profile setup (if no change, write "N/A"):
+1. Provide a brief explanation of the changes from the current profile setup (if no change, write "N/A"):
 
 #### What will happen next?
 
 Our support specialists will review the legacy and Enhanced Bidder Profile setup first. If they look good, support specialists will flip
 the switch in the backend and send a confirmation note to you. When this happens, your new Enhanced Bidder Profile configuration will start taking affect on the traffic flow, and the legacy bidder profile setup will be ignored.
 
-Please monitor your traffic flow using the Metrics tab in the legacy bidder UI: [https://bidder.adnxs.net/metrics](https://bidder.adnxs.net/metrics). If there is any problem, support specialists can switch back to the legacy profile setup immediately (which will take effect on the traffic flow in 5-10 minutes), and you can work on troubleshooting the Enhanced Bidder Profile setup.
+Monitor your traffic flow using the Metrics tab in the legacy bidder UI: [https://bidder.adnxs.net/metrics](https://bidder.adnxs.net/metrics). If there is any problem, support specialists can switch back to the legacy profile setup immediately (which will take effect on the traffic flow in 5-10 minutes), and you can work on troubleshooting the Enhanced Bidder Profile setup.
 
 If there's no problem on the traffic flow for a day, your migration is complete, and the support ticket will be closed.
 

@@ -1,6 +1,6 @@
 ---
 title: Xandr Macros
-description: The article emplains the macros which are used to populate URLs with useful information.
+description: Explain how macros populate URLs, acting as variables for useful information in ad creatives, revealing their replaced values during ad calls.
 ms.date: 10/28/2023
 ---
 
@@ -13,13 +13,13 @@ This page contains information about all of the macros we support.  For each ma
 > [!TIP]
 > For more control over URL encoding and decoding, see the section on [Function Macros](xandr-macros.md#function-macros).
 >
-> For additional examples about how macros may be > used when uploading creatives, refer to the 
-> [Creative Service](creative-service.md) page.
+> For additional examples about how macros may be > used when uploading creatives, refer to the [Creative Service](creative-service.md) page.
 
 ## Creative macros
 
 > [!WARNING]
->  OpenRTB macros (like `${AUCTION_PRICE`}) are not supported when adding creatives using the [Creative Service](creative-service.md). They are only supported on the [Bid Response](incoming-bid-response-from-bidders.md).
+>  
+> OpenRTB macros (like `${AUCTION_PRICE`}) are not supported when adding creatives using the [Creative Service](creative-service.md). They are only supported on the [Bid Response](incoming-bid-response-from-bidders.md).
 
 Xandr supports the following creative macros when adding creatives using the [Creative Service](creative-service.md).
 
@@ -68,7 +68,7 @@ Xandr supports the following creative macros when adding creatives using the [C
 | `${USER_AGENT_ENC}` | The encoded user agent string from the request's HTTP header. |
 | `${EXTENDED_IDS}` | The identifiers (industry IDs and publisher provided IDs) represents the user of the impression. These would be passed as received in the request, with multiple identifiers supported following the format :<br>…&extended_ids=<source_1>,<id_1>\|<source_2>,<id_2>\|…The separators proposed being , between the source and the value, and \| between the different IDs type and value pairs. |
 
-**European Ad inventory and providing notice, transparency and choice**
+### European Ad inventory and providing notice, transparency and choice
 
 > [!WARNING]
 > In order for our clients to meet their transparency, notice and choice/consent requirements under US
@@ -187,13 +187,12 @@ where `${MACRO_NAME}` is the macro to be encoded and \# is the integer `1`,�
 > [!NOTE]
 > Each encoding corresponds to a step in the redirect chain, as well as how a given third-party click
 > tracker works with the macro. Double encoding will usually be needed for final destination URLs when a second ad server is involved, and triple encoding for a third ad server.
-> 
-> To determine whether you will need to use single, double, or triple encoding, you should check with your third-party click tracker and then test your `URL_ENC` macro to ensure it works. If your macro is not
-> working, one consequence of this may be link breakage, which will result in users not reaching the intended destination URL.
+>
+> To determine whether you will need to use single, double, or triple encoding, you should check with your third-party click tracker and then test your `URL_ENC` macro to ensure it works. If your macro is not working, one consequence of this may be link breakage, which will result in users not reaching the intended destination URL.
 
 ## Encoding examples
 
-**To encode click URL once:**
+### To encode click URL once
 
 ```
 ${URL_ENC(${CLICK_URL},1)} 

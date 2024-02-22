@@ -8,9 +8,7 @@ ms.date: 10/28/2023
 
 # Data Science Toolkit - Custom model service
 
-The Custom Model service lets you add and maintain custom predictive
-models (decision trees) for use in campaigns. For background
-information, see [Custom Models](custom-models.md).
+The Custom Model service lets you add and maintain custom predictive models (decision trees) for use in campaigns. For background information, see [Custom Models](custom-models.md).
 
 > [!TIP]
 > Before adding a custom model, use the [Custom Model Parser Service](custom-model-parser-service.md) to check the validity and size of your decision tree.
@@ -19,33 +17,33 @@ information, see [Custom Models](custom-models.md).
 
 **Add a new custom model:**
 
-``` pre
+``` 
 POST https://api.appnexus.com/custom-model  
 (new_model JSON)
 ```
 
 **Modify a custom model:**
 
-``` pre
+``` 
 PUT https://api.appnexus.com/custom-model?id=ID
 (model_update JSON)
 ```
 
 **View all custom models:**
 
-``` pre
+``` 
 GET https://api.appnexus.com/custom-model
 ```
 
 **View a specific custom model:**
 
-``` pre
+``` 
 GET https://api.appnexus.com/custom-model?id=ID
 ```
 
 **Delete a custom model:**
 
-``` pre
+``` 
 DELETE https://api.appnexus.com/custom-model?id=ID
 ```
 
@@ -54,14 +52,14 @@ DELETE https://api.appnexus.com/custom-model?id=ID
 
 **Find out which fields you can filter and sort by:**
 
-``` pre
+``` 
 GET https://api.appnexus.com/custom-model/meta
 ```
 
 ## JSON fields
 
 | Field | Type (Length) | Description |
-|---|---|---|
+|--|--|--|
 | `active` | Boolean | If `true`, the custom model is active and available for use in campaigns.<br>**Default**: `true` |
 | `advertiser_id` | int | The ID of the advertiser to which the custom model belongs.<br>**Required on**: `POST` |
 | `code` | string | A custom code that is used as an external ID or as a look-up value for an object. This value must be unique within your member. |
@@ -78,7 +76,7 @@ GET https://api.appnexus.com/custom-model/meta
 
 **View all custom models**
 
-``` pre
+``` 
 $ curl -b cookies -c cookies 'https://api.appnexus.com/custom-model'
  
 {
@@ -118,7 +116,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/custom-model'
 
 **View a specific custom model**
 
-``` pre
+``` 
 $ curl -b cookies -c cookies 'https://api.appnexus.com/custom-model?id=327'
  
 {
@@ -146,7 +144,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/custom-model?id=327'
 
 **Add a custom model**
 
-``` pre
+``` 
 $ curl -b cookies -c cookies -X POST -d @custom_model.json 'https://api.appnexus.com/custom-model?member_id=1234'
 $ cat custom_model.json
  
@@ -189,7 +187,7 @@ $ curl -b cookies -c cookies -X POST -d @custom_model.json 'https://api.appnexus
 
 **Modify a custom model**
 
-``` pre
+``` 
 $ cat custom_model_update.json 
  
 {
@@ -224,7 +222,7 @@ $ curl -b cookies -c cookies -X PUT -d @custom_model_update.json 'https://api.ap
 
 **Delete a custom model**
 
-``` pre
+``` 
 $ curl -b cookies -c cookies -X DELETE 'https://api.appnexus.com/custom-model?id=3'
  
 {

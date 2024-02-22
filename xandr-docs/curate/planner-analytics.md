@@ -1,6 +1,6 @@
 ---
 title: Microsoft Curate - Planner Analytics
-description: The article explains that Planner visualizations display a summary and visual representation of projected deal line-item performance when a plan is selected from the list. For more detailed and interactive projections, users can explore the features during plan creation or editing.
+description: Visualize plan performance for projected deal line-items and explore detailed and interactive projections during plan creation or editing.
 ms.date: 10/28/2023
 ---
 
@@ -8,8 +8,7 @@ ms.date: 10/28/2023
 
 The article outlines the functionality of Planner visualizations, emphasizing their role in presenting a summary and visual representation of anticipated deal line-item performance within a selected plan from the list. It highlights that more detailed and interactive projections can be explored by users during the creation or editing of a plan.
 
-Planner's visualizations can guide your media plan and help you understand the capability of specific deals. As you try out different configurations in the left pane while you create or edit a plan, you can update the analytics and visualizations to show
-the projected results, so you can adjust your strategy before making a final decision.
+Planner's visualizations can guide your media plan and help you understand the capability of specific deals. As you try out different configurations in the left pane while you create or edit a plan, you can update the analytics and visualizations to show the projected results, so you can adjust your strategy before making a final decision.
 
 > [!NOTE]
 > Planner relies on data that is collected over time for its forecasts. For the most accurate results, audiences should be onboarded and deals should be live for a week before you begin forecasting in Planner.

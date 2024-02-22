@@ -1,6 +1,6 @@
 ---
 title: Bidders - Verifying Segment Uploads
-description: The article describes how to verify and confirm that your uploads are successful. 
+description: Verify upload success and check file status for a report with essential parameters confirming successful uploads.
 ms.date: 10/28/2023
 ---
 
@@ -21,14 +21,11 @@ There are a few ways to confirm that your uploads are successful.
 
 - Spot check a few user IDs to confirm they have been added to the appropriate segments using the below URLs. If you don't see the user in one geo, be sure to check the other geo.  
 
-  US:
-  [https://ib.nym1.adnxs.com/cookie?member_id=MEMBER_ID&amp;dongle=DONGLE&amp;uid=USER_ID](https://ib.nym1.adnxs.com/cookie?member_id=MEMBER_ID&amp;dongle=DONGLE&amp;uid=USER_ID)
+  US: `https://ib.nym1.adnxs.com/cookie?member_id=MEMBER_ID&amp;dongle=DONGLE&amp;uid=USER_ID`
   
-  EU:
-  [https://ib.ams1.adnxs.com/cookie?member_id=MEMBER_ID&amp;dongle=DONGLE&amp;uid=USER_ID](https://ib.ams1.adnxs.com/cookie?member_id=MEMBER_ID&amp;dongle=DONGLE&amp;uid=USER_ID)
+  EU: `https://ib.ams1.adnxs.com/cookie?member_id=MEMBER_ID&amp;dongle=DONGLE&amp;uid=USER_ID`
   
-  Asia:
-  [https://ib.sin1.adnxs.com/cookie?member_id=MEMBER_ID&amp;dongle=DONGLE&amp;uid=USER_ID](https://ib.sin1.adnxs.com/cookie?member_id=MEMBER_ID&amp;dongle=DONGLE&amp;uid=USER_ID)
+  Asia: `https://ib.sin1.adnxs.com/cookie?member_id=MEMBER_ID&amp;dongle=DONGLE&amp;uid=USER_ID`
   
 - If you have access to the Xandr UI, use the Segment Inventory Overlap report to gauge how many impressions you
   can expect to see by segment, seller, and country. Note that you’ll need to wait a few days after creating new segments before data will show up in this report.

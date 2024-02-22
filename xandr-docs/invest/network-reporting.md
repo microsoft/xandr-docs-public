@@ -1,14 +1,12 @@
 ---
 title: Microsoft Invest - Member Reporting
-description: Use this report to obtain a global view of your business, allowing you to report across multiple advertisers and/or publishers.
+description: Use Member Reporting to obtain a global view of your business, allowing you to report across multiple advertisers and/or publishers.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Member reporting
+# Microsoft Invest - Member Reporting
 
-Network reports are designed to give you a global view of your business, allowing you to report across multiple advertisers and/or publishers.
-
-In this section of the reporting guide, you'll find documentation for all of our network-level reports.
+Network reports are designed to give you a global view of your business, allowing you to report across multiple advertisers and/or publishers. In this section of the reporting guide, you'll find documentation for all of our network-level reports.
 
 > [!IMPORTANT]
 > Conversion-related data in reports is processed asynchronously. As a result, reports are available more quickly, while some conversion-related data is still being processed in the background. For more information, see **Asynchronous Conversion Attribution** on the [Availability of Reporting Data](./availability-of-reporting-data.md) page.

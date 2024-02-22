@@ -1,7 +1,6 @@
 ---
 title: Customer Support Portal Guide
-description: The Customer Support Portal allows users to search a knowledge base, create/manage support cases, and access articles on common issues, troubleshooting, and tasks, with links to the documentation portal for detailed information.
-ms.custom: customer-support
+description: Navigate Customer Support Portal, explore resources, search knowledge base, manage cases, access articles for troubleshooting and tasks.
 ms.date: 10/28/2023
 ---
 

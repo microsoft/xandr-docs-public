@@ -12,7 +12,7 @@ retrieving this report, see the [Example](#example) below.
 > [!TIP]
 > Need more than 90 days of data?
 >
-> The `bidder_platform_buyer` and `platform_seller` types pull from tables that store the last 90 days worth of data. For data beyond the past 90 days, please use the `buyer_platform_billing` and `seller_platform_billing` report types.
+> The `bidder_platform_buyer` and `platform_seller` types pull from tables that store the last 90 days worth of data. For data beyond the past 90 days, use the `buyer_platform_billing` and `seller_platform_billing` report types.
 
 ## Time frame
 
@@ -94,7 +94,7 @@ The `report_interval` field in the JSON request can be set to one of the followi
 
 ### Create the JSON-formatted report request
 
-The JSON file should include the `report_type "bidder_platform_buyer"`, as well as the `columns` (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter specific dimensions, define granularity (year, month, day), and specify the format in which the data should be returned (csv, excel, or html). For a full explanation of fields that can be included in the JSON file, see the [Report Service](report-service.md).
+The JSON file should include the `report_type` `bidder_platform_buyer`, as well as the `columns` (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter specific dimensions, define granularity (year, month, day), and specify the format in which the data should be returned (csv, excel, or html). For a full explanation of fields that can be included in the JSON file, see the [Report Service](report-service.md).
 
 ``` 
 $ cat report
@@ -125,7 +125,7 @@ $ cat report
 > "orders": ["day"]
 > ```
 
-### POST the request to the reporting service
+### `POST` the request to the reporting service
 
 ``` 
 $ curl -b cookies -c cookies -X POST -d @report 'https://api.adnxs.com/report'
@@ -137,10 +137,9 @@ $ curl -b cookies -c cookies -X POST -d @report 'https://api.adnxs.com/report'
 }
 ```
 
-### GET the report status from the report service
+### `GET` the report status from the report service
 
-Make a `GET` call with the Report ID to retrieve the status of the report. Continue making this `GET` call until the {{execution_status}}
-is {{"ready"}}. Then use the \*report-download\* service to save the report data to a file, as described in the next step.
+Make a `GET` call with the Report ID to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is `"ready"`. Then use the **report-download** service to save the report data to a file, as described in the next step.
 
 ``` 
 $ curl -b cookies -c cookies 'https://api.adnxs.com/report?id=bfe2ba2ea54a51115db942d591a7b5d9'
@@ -157,9 +156,9 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/report?id=bfe2ba2ea54a51115d
 }
 ```
 
-### GET the report data from the report download service
+### `GET` the report data from the report download service
 
-To download the report data to a file, make another `GET` call with the Report ID, but this time to the \*report-download\* service. You can find the service and Report ID in the {{url}} field of the previous `GET` response. When identifying the file that you want to save to, be sure to use the file extension of the {{"format"}} that you specified in your initial `POST`.
+To download the report data to a file, make another `GET` call with the Report ID, but this time to the **report-download** service. You can find the service and Report ID in the `url` field of the previous `GET` response. When identifying the file that you want to save to, be sure to use the file extension of the `"format"` that you specified in your initial `POST`.
 
 > [!NOTE]
 > If an error occurs during download, the response header will include an HTTP error code and message. Use {{-i}} or {{-v}} in your call to expose the response header.
@@ -169,7 +168,7 @@ curl -b cookies -c cookies 'https://api.adnxs.com/report-download?id=bfe2ba2ea54
 ```
 
 > [!NOTE]
-> Use the id that was given in the response from when you initially posted the report.
+> Use the ID that was given in the response from when you initially posted the report.
 
 ## Schedule a frequently run report
 

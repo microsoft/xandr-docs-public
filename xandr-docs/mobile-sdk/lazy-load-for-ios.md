@@ -30,7 +30,7 @@ Additionally, it allows the host app to choose the optimal moment to fire tracke
 
 ## Scope of Lazy Load
 
-The scope of this feature is limited to Banner AdUnits that display banner and native assembly renderer Media Types. It does not apply to any other AdUnit, including instream video and native, nor does it apply to Media Types returned by a multi-format Banner AdUnit other than banner and native assembly renderer including banner-video (outstream video) and banner-native. 
+The scope of this feature is limited to Banner AdUnits that display banner and native assembly renderer Media Types. It does not apply to any other AdUnit, including instream video and native, nor does it apply to Media Types returned by a multi-format Banner AdUnit other than banner and native assembly renderer including banner-video (outstream video) and banner-native.
 
 ## Properties
 

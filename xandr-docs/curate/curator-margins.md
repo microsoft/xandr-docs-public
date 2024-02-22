@@ -1,6 +1,6 @@
 ---
 title: Curator Margins
-description: In this article, learn about the Curator margins, the different types, and how they are calculated.
+description: In this article, learn about the Curator margins, their different types, and how they are calculated.
 ms.date: 10/28/2023
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Delete a User
-description: If you have administrative permissions, you can delete user accounts.
+description: Learn to delete user accounts with administrative permissions. You must delete users who have not logged in to Yield Analytics.
 ms.date : 10/28/2023
 ms.custom : yield-analytics-ui
 ---

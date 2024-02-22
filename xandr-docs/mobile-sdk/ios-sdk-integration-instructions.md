@@ -31,25 +31,26 @@ If you are unfamiliar with CocoaPods review their [installation and user guides
 
 1. Use Terminal or your command line editor of choice, navigate to the root directory of your project and create a podfile.
 
-  ``` 
-  pod init
-  ```
+   ```
+   pod init
+   ```
+
 1. Using a text editor, open the newly created podfile. Set the platform version to 10.0 and add pod 'AppNexusSDX' to the target.
 
-  ``` 
-  # iOS: Podfile config to include our SDK
-  platform :ios, '10.0'
-  project 'FunBanner'
-  target 'FunBanner' do
-    pod 'AppNexusSDK'
-  end
-  ```
+   ```
+   # iOS: Podfile config to include our SDK
+   platform :ios, '10.0'
+   project 'FunBanner'
+   target 'FunBanner' do
+     pod 'AppNexusSDK'
+   end
+   ```
 
 1. Save your changes and return to the Terminal and enter:
 
-  ``` 
-  pod install
-  ```
+   ```
+   pod install
+   ```
 
 1. CocoaPods downloads the Xandr SDK and creates a workspace in the project directory. If your project is currently open, close it and open the workspace.
 
@@ -59,37 +60,35 @@ If you are unfamiliar with Carthage review their [installation and user guides]
 
 1. Open the Terminal app and navigate to the root directory of your project. Create a Cartfile.
 
-  ``` 
-  touch Cartfile
-  ```
+   ```
+   touch Cartfile
+   ```
 
 1. Open the file in Xcode to edit it.
 
-  ``` 
-  open -a Xcode Cartfile
-  ```
+   ```
+   open -a Xcode Cartfile
+   ```
 
 1. Add the following line to the file.
 
-  ``` 
-   # iOS: Carthage config to include our SDK
-  github "appnexus/mobile-sdk-ios" 
-  ```
+   ```
+    # iOS: Carthage config to include our SDK
+   github "appnexus/mobile-sdk-ios" 
+   ```
 
-  > [!TIP]
-  > You can use editor's other than Xcode to edit the Cartfile but be aware that other editing programs such as TextEdit might automatically include smart quotes instead of straight quotes. Carthage does not recognize content within smart quotes and not perform correctly.
+   > [!TIP]
+   > You can use editor's other than Xcode to edit the Cartfile but be aware that other editing programs such as TextEdit might automatically include smart quotes instead of straight quotes. Carthage does not recognize content within smart quotes and not perform correctly.
 
 1. Run below command.
 
-  ``` 
-  carthage update --use-xcframeworks
-  ```
+   ```
+   carthage update --use-xcframeworks
+   ```
 
 1. To use **AppNexusSDK** SDK, add the **AppNexusSDK.xcframework** and **OMSDK\_AppNexus.xcframework** to the **Embedded Binaries (Target- \> General- \> Embedded Binaries)** section by clicking the **+ icon**.
-
 1. Drag the built `.xcframework` bundles from `Carthage/Build` into **Embedded Binaries (Target- \> General- \> Embedded Binaries)** section by clicking the **+ icon**.
-
-1. If you are using Carthage for an application, select "Embed & Sign", otherwise "Do Not Embed".
+1. If you are using Carthage for an application, select **Embed & Sign**, otherwise **Do Not Embed**.
 
 ### Download from source
 

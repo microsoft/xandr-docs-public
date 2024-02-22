@@ -17,7 +17,7 @@ From the **Products** tab in yield analytics, you can:
 
 ## About products
 
-Products are used to represent inventory within a structure that carries pricing and/or reporting metadata. The default targeting attributes for your products are determined by your ad server implementation. You can view and edit these attributes in yield analytics.
+Products are used to represent inventory within a structure that carries pricing and/or reporting metadata. The default targeting attributes for your products are determined by your ad server implementation. You can view and edit these attributes in Yield Analytics.
 
 > [!TIP]
 > Yield Analytics maintains a continuous history across all previous versions of a product's targeting.
@@ -33,7 +33,7 @@ Products are divided into four types:
 
 ## Product statuses
 
-The status of a product determines the data that's available for it in yield analytics - as follows.
+The status of a product determines the data that's available for it in Yield Analytics - as follows.
 
 - Active – Historical data is collected and forecasting is made for future performance.
 - Inactive – Historical data is preserved, but no forecasting is available.

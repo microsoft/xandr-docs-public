@@ -13,7 +13,7 @@ Publishers are also concerned with serving competing ads on their sites. Since u
 Ad quality profiles are set at two levels: the network level, which is applied to all publishers, and the publisher level, which allows
 different settings per publisher. There are a variety of ad quality standards options that you can choose from. These are discussed in greater detail in Ad Quality Standards below.
 
-For a list of our baseline platform-wide creative standards, please see "Creative Standards and Auditing" in documentation. To change your ad quality profile through the API, see [Ad Profile Service](../digital-platform-api/ad-profile-service.md).
+For a list of our baseline platform-wide creative standards, see "Creative Standards and Auditing" in documentation. To change your ad quality profile through the API, see [Ad Profile Service](../digital-platform-api/ad-profile-service.md).
 
 ## Basic options: Network-level ad quality
 
@@ -62,7 +62,7 @@ For information about read-only API services that you can use to retrieve inform
 - [Technical Attribute Service](../digital-platform-api/technical-attribute-service.md)
 
 > [!TIP]
-> Brands, Categories, Language, and Technical Attributes can also be blocked through individual bid requests. For more information, please see [Bid Request](bid-request.md).
+> Brands, Categories, Language, and Technical Attributes can also be blocked through individual bid requests. For more information, see [Bid Request](bid-request.md).
 > [!NOTE]
 > If an Ad Quality (AQ) is set as `"default_brand_status": "banned"` but the parent brand is set as `"status": "trusted"`, the child brand overrides the setting in `"default_brand_status"` and it will be able to serve unless it is explicitly banned in the Ad Profile's brand override list.
 
@@ -78,7 +78,7 @@ For Platform buyers who purchase inventory via the Xandr Platform, you can selec
 | Maximum | Bypass ad quality standards, do not require audit. |
 | Banned | Ban all creatives. |
 
-:::image type="content" source="media/supply-partners-a.png" alt-text="Diagram of trust levels and its implications.":::
+:::image type="content" source="media/supply-partners-a.png" alt-text="Diagram of platform buyer trust levels and its implications.":::
 
 > [!NOTE]
 > The difference between trusting buyer self-classification and requiring a platform audit is that you trust that buyer to correctly self-classify all creatives that they do not opt into Xandr audit. When uploading their creatives and tags, buyers with this classification are asked to confirm that they have self-classified any creative for compliance with Xandr's creative standards.

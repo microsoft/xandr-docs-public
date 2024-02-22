@@ -1,6 +1,6 @@
 ---
 title: Deal API Services
-description: The article provides links to access Deal API services.
+description: Access Deal API services via links. Explore Deal Buyer, Package Buyer, Deal From Package services.
 ms.date: 10/28/2023
 ---
 

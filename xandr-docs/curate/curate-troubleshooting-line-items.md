@@ -6,9 +6,9 @@ ms.date: 10/28/2023
 
 # Microsoft Curate - Troubleshooting line items
 
-The **Troubleshooting** tab of the Line Item Details pane provides troubleshooting information and tools for the selected deal line item in the **Impression Funnel**, **Troubleshooting Reports**, and **Bid Request Sampler** sections.
+The **Troubleshooting** tab of the **Line Item Details** pane provides troubleshooting information and tools for the selected deal line item in the **Impression Funnel**, **Troubleshooting Reports**, and **Bid Request Sampler** sections.
 
-The **Troubleshooting** window is available when a deal line item is selected from the **Line Items** window (For more information, see [Monitor Line Items](monitor-line-items.md)).
+The **Troubleshooting** window is available when a deal line item is selected from the **Line Items** window. For more information, see [Monitor Line Items](monitor-line-items.md).
 
 To access the **Troubleshooting** window:
 

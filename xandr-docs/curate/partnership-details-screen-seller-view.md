@@ -1,24 +1,22 @@
 ---
 title:  Microsoft Curate - Partnership Details Screen - Seller view
-description: The article outlines the features of the Partnership Details screen in Seller View, emphasizing its utility in reviewing and managing relationships with individual buyers.
-ms.date : 10/28/2023
+description: Explore Seller View's Partnership Details screen for effective review and management of buyer relationships.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Curate - Partnership details screen - Seller view
 
-On the Partnership details screen you can review and manage your relationship with a specific buyer. You can track overall revenue
-trends, view the buyer's top brands on your inventory, view your top publishers for the buyer, view the privileges you have granted for the buyer, view active and upcoming deals, and create new deals for buyers.
+On the Partnership details screen you can review and manage your relationship with a specific buyer. You can track overall revenue trends, view the buyer's top brands on your inventory, view your top publishers for the buyer, view the privileges you have granted for the buyer, view active and upcoming deals, and create new deals for buyers.
 
 ## Getting to the partnership details screen
 
-**Publisher clients**: Select **Marketplace > Partner Center All other clients**: Select **Partners >  Partner Center**.
+**Publisher clients**: Select **Marketplace > Partner Center All other clients**: Select **Partners** >  **Partner Center**.
 
 Then click on a buyer.
 
 ## Viewing buyer contact info and description
 
-View information the buyer has provided, including the main contact's name, phone number, and email address, and a description of their
-business. You can contact the buyer directly in Curate by sending a message within the Activity Stream. For more information about the Activity Stream, see [Communicating with the Buyer](partnership-details-screen-seller-view.md#communicating-with-the-buyer).
+View information the buyer has provided, including the main contact's name, phone number, and email address, and a description of their business. You can contact the buyer directly in Curate by sending a message within the Activity Stream. For more information about the Activity Stream, see [Communicating with the Buyer](partnership-details-screen-seller-view.md#communicating-with-the-buyer).
 
 > [!IMPORTANT]
 > If the buyer has not entered their contact's name, phone number, email address, or a description of their business, then this information will not be available.

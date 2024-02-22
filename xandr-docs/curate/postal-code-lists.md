@@ -1,22 +1,19 @@
 ---
 title: Microsoft Curate - Postal Code Lists
-description: The article discusses the lists of postal code and explains how leveraging postal codes is a powerful way for advertisers to achieve granular and precise hyperlocal targeting.
+description: Utilize postal codes for precise hyperlocal targeting, enhancing advertiser strategies with detailed postal code lists.
 ---
 # Microsoft Curate - Postal code lists
 
 ## Introduction
 
-Leveraging postal codes is a powerful way for advertisers to achieve highly granular and precise, or *hyperlocal*, targeting. Hyperlocal
-targeting is a key factor in driving advertising performance. Because sellers and curators often want to increase efficiency by targeting the same set of postal codes across multiple deals, the Postal Code List feature allows users to easily reuse a predefined list of postal codes.
+Leveraging postal codes is a powerful way for advertisers to achieve highly granular and precise, or *hyperlocal*, targeting. Hyperlocal targeting is a key factor in driving advertising performance. Because sellers and curators often want to increase efficiency by targeting the same set of postal codes across multiple deals, the Postal Code List feature allows users to easily reuse a predefined list of postal codes.
 
 The Postal Code List feature enables users to:
 
 - create postal code lists (include or exclude) so that a list can be used across their deals.
-- enable postal code lists (include or exclude) for targeting at the deal line item level. The maximum number of postal code lists a deal
-  line item can target is 100.
+- enable postal code lists (include or exclude) for targeting at the deal line item level. The maximum number of postal code lists a deal line item can target is 100.
 
-Certain legitimate ZIP or postal codes are unrecognizable or invalid within the Microsoft Advertising geography targeting system. This can happen because [Digital Envoy](https://www.digitalelement.com/) a Microsoft Advertising partner that handles geolocation data, can't recognize a ZIP or postal
-code's existence until an IP address (user) has been associated with it. Postal codes that don't exist in the system often represent obscure or otherwise small geographical zones with minimal internet activity.
+Certain legitimate ZIP or postal codes are unrecognizable or invalid within the Microsoft Advertising geography targeting system. This can happen because [Digital Envoy](https://www.digitalelement.com/) a Microsoft Advertising partner that handles geolocation data, can't recognize a ZIP or postal code's existence until an IP address (user) has been associated with it. Postal codes that don't exist in the system often represent obscure or otherwise small geographical zones with minimal internet activity.
 
 ## Manage postal code lists
 

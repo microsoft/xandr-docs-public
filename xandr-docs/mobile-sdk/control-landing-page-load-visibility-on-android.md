@@ -7,10 +7,10 @@ ms.date : 10/28/2023
 
 # Control landing page load visibility on Android
 
-This page has instructions for configuring the landing page load behavior on ad clicks. By default, the landing page loads in the background until the initial payload finishes loading and can present a fully rendered landing page to the user. Setting this to NO causes the in-app browser to become visible immediately and display the unrendered landing page.
+This page has instructions for configuring the landing page load behavior on ad clicks. By default, the landing page loads in the background until the initial payload finishes loading and can present a fully rendered landing page to the user. Setting this to `NO` causes the in-app browser to become visible immediately and display the unrendered landing page.
 
 > [!NOTE]
-> If you're consistently experiencing slow clickthrough rates, try setting this property to false.
+> If you're consistently experiencing slow clickthrough rates, try setting this property to `false`.
 
 Use the `AdView.setLoadsInBackground(boolean)` method to determine whether, when an ad is clicked, the SDK loads the landing page in the background (the default is `true`):
 

@@ -18,4 +18,4 @@ Xandr currently supports the OpenRTB 2.4 bidding protocol. The following documen
 - [Audit Notify Request](audit-notify-request.md)
 
 > [!WARNING]
-> **Legacy Bidding Protocols** were deprecated on December 1, 2018. Please contact your representative if you have questions.
+> **Legacy Bidding Protocols** were deprecated on December 1, 2018. Contact your representative if you have questions.

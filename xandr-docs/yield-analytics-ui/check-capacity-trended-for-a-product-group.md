@@ -1,6 +1,6 @@
 ---
 title: Check Capacity Trended for a Product Group
-description: The articles explains how to check capacity trended for aproduct group using the capacity trended widget.
+description: Track trends with Capacity Trended widget on Dashboard. Hover over green bars for details, filter by product, and review Consumed Impressions report.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Curate - Create an Advertiser
-description: The article describes how ro create an advertiser object before you can start running advertising campaigns and serve creatives on behalf of an advertiser.
+description: Create an advertiser object before you can start running advertising campaigns and serve creatives on behalf of an advertiser.
 ---
 # Microsoft Curate - Create an advertiser
 

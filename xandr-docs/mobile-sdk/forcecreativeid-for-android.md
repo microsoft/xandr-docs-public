@@ -17,7 +17,7 @@ The scope of the forceCreativeId is limited to debug or testing purpose only an
 
 ### setForceCreativeId
 
-Setter method which assigns the creative Id for display in a placement. It will pass the forceCreateveId as the argument in the method.
+Setter method which assigns the creative ID for display in a placement. It will pass the forceCreateveId as the argument in the method.
 
 ``` 
 public void setForceCreativeId(int forceCreativeId)

@@ -80,7 +80,7 @@ Options to save the report (Select both or one of the options):
 
 ## Run report
 
-After your selections are made, click **Run Report** to run the report. The View Report screen will automatically be accessed, where the report results are displayed.
+After your selections are made, click **Run Report** to run the report. The **View Report** screen will automatically be accessed, where the report results are displayed.
 
 ## Related topics
 

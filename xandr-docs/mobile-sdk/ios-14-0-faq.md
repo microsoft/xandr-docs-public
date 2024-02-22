@@ -10,7 +10,7 @@ ms.date: 10/28/2023
 This document provides an FAQ in regards to the release of Apple's iOS 14.0 in relation to the Xandr iOS SDK. Specific questions on iOS 14.0 should be researched on the [Apple release site](https://www.apple.com/ios/ios-14-preview/).
 
 > [!WARNING]
-> This document is written from the perspective of Xandr Mobile SDK, other parts of our Platform were not considered when creating this FAQ. If you have a specific question about Xandr's support for SKAdNetwork/iOS14, please reach out to our support team.
+> This document is written from the perspective of Xandr Mobile SDK, other parts of our Platform were not considered when creating this FAQ. If you have a specific question about Xandr's support for SKAdNetwork/iOS14, reach out to our support team.
 
 ## What is Xandr mobile SDK doing to support AppTrackingTransparency?
 
@@ -25,10 +25,10 @@ Xandr's support for AppTrackingTransparency comes from two distinct point-of-vie
 
 | ATTrackingManagerAuthorizationStatus | Xandr SDK's treatment of limit_ad_tracking field in AdRequest |
 |:---|:---|
-| ATTrackingManagerAuthorizationStatusAuthorized | - IDFA is supported. <br> - Publisher 1st party data is supported and optional [iOS user id doc publisher first party id](user-id-s-mapping-on-ios.md).<br> - Industry IDs are supported (Liveramp IDL, NetID, etc) and optional [iOS user id doc external user id](user-id-s-mapping-on-ios.md). |
-| ATTrackingManagerAuthorizationStatusDenied | - IDFA is not supported.<br> - Publisher 1st party data is supported [iOS user id doc publisher id](user-id-s-mapping-on-ios.md).<br> - Industry IDs are not supported (Liveramp IDL, NetID, etc) [iOS user id doc external user id](user-id-s-mapping-on-ios.md). |
-| ATTrackingManagerAuthorizationStatusNotDetermined | - IDFA is not supported.<br> - Publisher 1st party data is supported [iOS user id doc publisher id](user-id-s-mapping-on-ios.md).<br> - Industry IDs are not supported (Liveramp IDL, NetID, etc) [iOS user id doc external user id](user-id-s-mapping-on-ios.md). |
-| ATTrackingManagerAuthorizationStatusRestricted | - IDFA is not supported.<br> - Publisher 1st party data is supported [iOS user id doc publisher id](user-id-s-mapping-on-ios.md).<br> - Industry IDs are not supported (Liveramp IDL, NetID, etc) [iOS user id doc external user id](user-id-s-mapping-on-ios.md). |
+| ATTrackingManagerAuthorizationStatusAuthorized | - IDFA is supported. <br> - Publisher 1st party data is supported and optional [iOS user ID doc publisher first party ID](user-id-s-mapping-on-ios.md).<br> - Industry IDs are supported (Liveramp IDL, NetID, etc) and optional [iOS user id doc external user ID](user-id-s-mapping-on-ios.md). |
+| ATTrackingManagerAuthorizationStatusDenied | - IDFA is not supported.<br> - Publisher 1st party data is supported [iOS user ID doc publisher ID](user-id-s-mapping-on-ios.md).<br> - Industry IDs are not supported (Liveramp IDL, NetID, etc) [iOS user ID doc external user ID](user-id-s-mapping-on-ios.md). |
+| ATTrackingManagerAuthorizationStatusNotDetermined | - IDFA is not supported.<br> - Publisher 1st party data is supported [iOS user ID doc publisher ID](user-id-s-mapping-on-ios.md).<br> - Industry IDs are not supported (Liveramp IDL, NetID, etc) [iOS user ID doc external user ID](user-id-s-mapping-on-ios.md). |
+| ATTrackingManagerAuthorizationStatusRestricted | - IDFA is not supported.<br> - Publisher 1st party data is supported [iOS user ID doc publisher ID](user-id-s-mapping-on-ios.md).<br> - Industry IDs are not supported (Liveramp IDL, NetID, etc) [iOS user ID doc external user ID](user-id-s-mapping-on-ios.md). |
 
 > [!NOTE]
 > It is the responsibility of the publisher to present the authorization requests. Xandr SDKs will not perform this task.
@@ -38,7 +38,7 @@ Xandr's support for AppTrackingTransparency comes from two distinct point-of-vie
 Xandr SDK will fetch and send valid IDFA in ad request only if the authorization status is *ATTrackingManagerAuthorizationStatusAuthorized*.
 
 > [!NOTE]
-> If you are concerned with a high volume of users opting out of tracking in iOS14 and above and what options Xandr will use to replace IDFA, please reach out to the mobile SDK team. We will pass your concerns on to the correct team responsible for IDFA.
+> If you are concerned with a high volume of users opting out of tracking in iOS14 and above and what options Xandr will use to replace IDFA, reach out to the mobile SDK team. We will pass your concerns on to the correct team responsible for IDFA.
 
 ## What happens if App's do not update to v7.6 of SDK release?
 

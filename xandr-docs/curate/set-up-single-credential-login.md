@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Curate - Set up single credential login
 
-This will guide you through the single credential login set up process.
+This article will guide you through the single credential login set up process.
 
 > [!NOTE]
 > With consolidation of Microsoft Advertising to Microsoft family, we have integrated the authentication process of the users (who are using Microsoft Advertising products) to the Microsoft Identity Platform. The profound advantage of this integration is that users would be able use to access Microsoft Advertising applications using the same sign-on methods to access other Microsoft products. Additionally, the integration to the Microsoft Identity Platform enables new and more secure methods of authentication, powered by Microsoft.

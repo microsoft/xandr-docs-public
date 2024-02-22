@@ -195,14 +195,14 @@ audience `general` and inventory sources x, y, and z, then the profile will only
 
 ```
 {
-"dma_targets":[
-{
-"dma":612
-},
-{
-"dma":622
-}
-]
+   "dma_targets":[
+      {
+         "dma":612
+      },
+      {
+         "dma":622
+      }
+   ]
 }
 ```
 
@@ -210,16 +210,16 @@ audience `general` and inventory sources x, y, and z, then the profile will only
 
 ```
 {
-"domain_targets":[
-{
-"profile_id":128350561,
-"domain":"telenet.be"
-},
-{
-"profile_id":99898705,
-"domain":"cnn.us"
-}
-]
+   "domain_targets":[
+      {
+         "profile_id":128350561,
+         "domain":"telenet.be"
+      },
+      {
+         "profile_id":99898705,
+         "domain":"cnn.us"
+      }
+   ]
 }
 ```
 
@@ -227,16 +227,16 @@ audience `general` and inventory sources x, y, and z, then the profile will only
 
 ```
 {
-"size_targets":[
-{
-"width":190,
-"height":213
-},
-{
-"width":728,
-"height":90
-}
-]
+   "size_targets":[
+      {
+         "width":190,
+         "height":213
+      },
+      {
+         "width":728,
+         "height":90
+      }
+   ]
 }
 ```
 
@@ -244,12 +244,12 @@ audience `general` and inventory sources x, y, and z, then the profile will only
 
 ```
 {
-"seller_member_group_targets":[
-{
-"id":1,
-"action_include":"true/false"
-}
-]
+   "seller_member_group_targets":[
+      {
+         "id":1,
+         "action_include":"true/false"
+      }
+   ]
 }
 ```
 
@@ -257,17 +257,17 @@ audience `general` and inventory sources x, y, and z, then the profile will only
 
 ```
 {
-"profile":{
-"id":1367515,
-"deal_list_targets":[
-{
-"id":"0101"
-},
-{
-"id":"0102"
-}
-]
-}
+   "profile":{
+      "id":1367515,
+      "deal_list_targets":[
+         {
+            "id":"0101"
+         },
+         {
+            "id":"0102"
+         }
+      ]
+   }
 }
 ```
 
@@ -275,28 +275,28 @@ audience `general` and inventory sources x, y, and z, then the profile will only
 
 ```
 {
-"intended_audience_targets":[
-"children",
-"general"
-]
-};
+   "intended_audience_targets":[
+      "children",
+      "general"
+   ]
+}
 ```
 
 #### `postal_code_targets` example
 
 ```
 {
-"profile":{
-"id":1367515,
-"postal_code_targets":[
-{
-"id":"00135"
-},
-{
-"id":"00136"
-}
-]
-}
+   "profile":{
+      "id":1367515,
+      "postal_code_targets":[
+         {
+            "id":"00135"
+         },
+         {
+            "id":"00136"
+         }
+      ]
+   }
 }
 ```
 
@@ -304,17 +304,17 @@ audience `general` and inventory sources x, y, and z, then the profile will only
 
 ```
 {
-"profile":{
-"id":1367515,
-"postal_code_list_targets":[
-{
-"id":"0099"
-},
-{
-"id":"0100"
-}
-]
-}
+   "profile":{
+      "id":1367515,
+      "postal_code_list_targets":[
+         {
+            "id":"0099"
+         },
+         {
+            "id":"0100"
+         }
+      ]
+   }
 }
 ```
 
@@ -322,17 +322,14 @@ audience `general` and inventory sources x, y, and z, then the profile will only
 
 ```
 {
-"profile":{
-"id":1367515,
-"postal_code_list_targets":[
-{
-"id":"0099"
-},
-{
-"id":"0100"
-}
-]
-}
+   "profile":{
+      "id":130465799,
+      "political_district_targets":[
+         {
+            "id":"139897"
+         }
+      ]
+   }
 }
 ```
 
@@ -391,154 +388,154 @@ In segment targeting, you need to keep the settings for the Boolean logic consis
 
 ```
 {
-"segment_boolean_operator":"and",
-"segment_group_targets":[
-{
-"boolean_operator":"or",
-"segments":[
-{
-"action":"include",
-"code":"1094797",
-"deleted":false,
-"expire_minutes":null,
-"id":19285936,
-"name":"Travel Intender",
-"other_equals":null,
-"other_greater":null,
-"other_in_list":null,
-"other_less":null,
-"start_minutes":null
-},
-{
-"action":"include",
-"code":"3119772",
-"deleted":false,
-"expire_minutes":null,
-"id":19378950,
-"name":"XAS - US HH Demographic - Online Shopping - Travel",
-"other_equals":null,
-"other_greater":null,
-"other_in_list":null,
-"other_less":null,
-"start_minutes":null
-},
-{
-"action":"include",
-"code":"6502105",
-"deleted":false,
-"expire_minutes":null,
-"id":19378951,
-"name":"XAS - US HH Demographic - Online Shopping - Electronics and Gadgets",
-"other_equals":null,
-"other_greater":null,
-"other_in_list":null,
-"other_less":null,
-"start_minutes":null
-},
-{
-"action":"include",
-"code":"3734388",
-"deleted":false,
-"expire_minutes":null,
-"id":19378952,
-"name":"XAS - US HH Demographic - Online Shopping - Apparel",
-"other_equals":null,
-"other_greater":null,
-"other_in_list":null,
-"other_less":null,
-"start_minutes":null
-}
-]
-},
-{
-"boolean_operator":"or",
-"segments":[
-{
-"action":"include",
-"code":"2137013",
-"deleted":false,
-"expire_minutes":null,
-"id":19378954,
-"name":"XAS - US HH Demographic - Online Shopping - Buy Online",
-"other_equals":null,
-"other_greater":null,
-"other_in_list":null,
-"other_less":null,
-"start_minutes":null
-},
-{
-"action":"include",
-"code":"2272811",
-"deleted":false,
-"expire_minutes":null,
-"id":19378955,
-"name":"XAS - US HH Demographic - Online Shopping - Personal Health",
-"other_equals":null,
-"other_greater":null,
-"other_in_list":null,
-"other_less":null,
-"start_minutes":null
-},
-{
-"action":"include",
-"code":"8578372",
-"deleted":false,
-"expire_minutes":null,
-"id":19378957,
-"name":"XAS - US HH Demographic - Online Shopping - Shoes",
-"other_equals":null,
-"other_greater":null,
-"other_in_list":null,
-"other_less":null,
-"start_minutes":null
-}
-]
-},
-{
-"boolean_operator":"or",
-"segments":[
-{
-"action":"include",
-"code":"8578372",
-"deleted":false,
-"expire_minutes":null,
-"id":19378957,
-"name":"XAS - US HH Demographic - Online Shopping - Shoes",
-"other_equals":null,
-"other_greater":null,
-"other_in_list":null,
-"other_less":null,
-"start_minutes":null
-},
-{
-"action":"include",
-"code":"4608982",
-"deleted":false,
-"expire_minutes":null,
-"id":21015599,
-"name":"Xandr Audiences - Demographic - Occupation - Detail - Attorneys",
-"other_equals":null,
-"other_greater":null,
-"other_in_list":null,
-"other_less":null,
-"start_minutes":null
-},
-{
-"action":"include",
-"code":"2420395",
-"deleted":false,
-"expire_minutes":null,
-"id":21015602,
-"name":"Xandr Audiences - Demographic - Occupation - Detail - Accountants/CPA",
-"other_equals":null,
-"other_greater":null,
-"other_in_list":null,
-"other_less":null,
-"start_minutes":null
-}
-]
-}
-]
+   "segment_boolean_operator":"and",
+   "segment_group_targets":[
+      {
+         "boolean_operator":"or",
+         "segments":[
+            {
+               "action":"include",
+               "code":"1094797",
+               "deleted":false,
+               "expire_minutes":null,
+               "id":19285936,
+               "name":"Travel Intender",
+               "other_equals":null,
+               "other_greater":null,
+               "other_in_list":null,
+               "other_less":null,
+               "start_minutes":null
+            },
+            {
+               "action":"include",
+               "code":"3119772",
+               "deleted":false,
+               "expire_minutes":null,
+               "id":19378950,
+               "name":"XAS - US HH Demographic - Online Shopping - Travel",
+               "other_equals":null,
+               "other_greater":null,
+               "other_in_list":null,
+               "other_less":null,
+               "start_minutes":null
+            },
+            {
+               "action":"include",
+               "code":"6502105",
+               "deleted":false,
+               "expire_minutes":null,
+               "id":19378951,
+               "name":"XAS - US HH Demographic - Online Shopping - Electronics and Gadgets",
+               "other_equals":null,
+               "other_greater":null,
+               "other_in_list":null,
+               "other_less":null,
+               "start_minutes":null
+            },
+            {
+               "action":"include",
+               "code":"3734388",
+               "deleted":false,
+               "expire_minutes":null,
+               "id":19378952,
+               "name":"XAS - US HH Demographic - Online Shopping - Apparel",
+               "other_equals":null,
+               "other_greater":null,
+               "other_in_list":null,
+               "other_less":null,
+               "start_minutes":null
+            }
+         ]
+      },
+      {
+         "boolean_operator":"or",
+         "segments":[
+            {
+               "action":"include",
+               "code":"2137013",
+               "deleted":false,
+               "expire_minutes":null,
+               "id":19378954,
+               "name":"XAS - US HH Demographic - Online Shopping - Buy Online",
+               "other_equals":null,
+               "other_greater":null,
+               "other_in_list":null,
+               "other_less":null,
+               "start_minutes":null
+            },
+            {
+               "action":"include",
+               "code":"2272811",
+               "deleted":false,
+               "expire_minutes":null,
+               "id":19378955,
+               "name":"XAS - US HH Demographic - Online Shopping - Personal Health",
+               "other_equals":null,
+               "other_greater":null,
+               "other_in_list":null,
+               "other_less":null,
+               "start_minutes":null
+            },
+            {
+               "action":"include",
+               "code":"8578372",
+               "deleted":false,
+               "expire_minutes":null,
+               "id":19378957,
+               "name":"XAS - US HH Demographic - Online Shopping - Shoes",
+               "other_equals":null,
+               "other_greater":null,
+               "other_in_list":null,
+               "other_less":null,
+               "start_minutes":null
+            }
+         ]
+      },
+      {
+         "boolean_operator":"or",
+         "segments":[
+            {
+               "action":"include",
+               "code":"8578372",
+               "deleted":false,
+               "expire_minutes":null,
+               "id":19378957,
+               "name":"XAS - US HH Demographic - Online Shopping - Shoes",
+               "other_equals":null,
+               "other_greater":null,
+               "other_in_list":null,
+               "other_less":null,
+               "start_minutes":null
+            },
+            {
+               "action":"include",
+               "code":"4608982",
+               "deleted":false,
+               "expire_minutes":null,
+               "id":21015599,
+               "name":"Xandr Audiences - Demographic - Occupation - Detail - Attorneys",
+               "other_equals":null,
+               "other_greater":null,
+               "other_in_list":null,
+               "other_less":null,
+               "start_minutes":null
+            },
+            {
+               "action":"include",
+               "code":"2420395",
+               "deleted":false,
+               "expire_minutes":null,
+               "id":21015602,
+               "name":"Xandr Audiences - Demographic - Occupation - Detail - Accountants/CPA",
+               "other_equals":null,
+               "other_greater":null,
+               "other_in_list":null,
+               "other_less":null,
+               "start_minutes":null
+            }
+         ]
+      }
+   ]
 }
 ```
 
@@ -546,159 +543,159 @@ In segment targeting, you need to keep the settings for the Boolean logic consis
 
 ```
 {
-"segment_boolean_operator":"and",
-"segment_group_targets":[
-{
-"boolean_operator":[
-"and",
-"- - same as segment_boolean_operator + also all other boolean_operators in the rest of the object is set to",
-"or",
-"therefore this is inconsistent behavior"
-],
-"segments":[
-{
-"action":"include",
-"code":"1094797",
-"deleted":false,
-"expire_minutes":null,
-"id":19285936,
-"name":"Travel Intender",
-"other_equals":null,
-"other_greater":null,
-"other_in_list":null,
-"other_less":null,
-"start_minutes":null
-},
-{
-"action":"include",
-"code":"3119772",
-"deleted":false,
-"expire_minutes":null,
-"id":19378950,
-"name":"XAS - US HH Demographic - Online Shopping - Travel",
-"other_equals":null,
-"other_greater":null,
-"other_in_list":null,
-"other_less":null,
-"start_minutes":null
-},
-{
-"action":"include",
-"code":"6502105",
-"deleted":false,
-"expire_minutes":null,
-"id":19378951,
-"name":"XAS - US HH Demographic - Online Shopping - Electronics and Gadgets",
-"other_equals":null,
-"other_greater":null,
-"other_in_list":null,
-"other_less":null,
-"start_minutes":null
-},
-{
-"action":"include",
-"code":"3734388",
-"deleted":false,
-"expire_minutes":null,
-"id":19378952,
-"name":"XAS - US HH Demographic - Online Shopping - Apparel",
-"other_equals":null,
-"other_greater":null,
-"other_in_list":null,
-"other_less":null,
-"start_minutes":null
-}
-]
-},
-{
-"boolean_operator":"or",
-"segments":[
-{
-"action":"include",
-"code":"2137013",
-"deleted":false,
-"expire_minutes":null,
-"id":19378954,
-"name":"XAS - US HH Demographic - Online Shopping - Buy Online",
-"other_equals":null,
-"other_greater":null,
-"other_in_list":null,
-"other_less":null,
-"start_minutes":null
-},
-{
-"action":"include",
-"code":"2272811",
-"deleted":false,
-"expire_minutes":null,
-"id":19378955,
-"name":"XAS - US HH Demographic - Online Shopping - Personal Health",
-"other_equals":null,
-"other_greater":null,
-"other_in_list":null,
-"other_less":null,
-"start_minutes":null
-},
-{
-"action":"include",
-"code":"8578372",
-"deleted":false,
-"expire_minutes":null,
-"id":19378957,
-"name":"XAS - US HH Demographic - Online Shopping - Shoes",
-"other_equals":null,
-"other_greater":null,
-"other_in_list":null,
-"other_less":null,
-"start_minutes":null
-}
-]
-},
-{
-"boolean_operator":"or",
-"segments":[
-{
-"action":"include",
-"code":"8578372",
-"deleted":false,
-"expire_minutes":null,
-"id":19378957,
-"name":"XAS - US HH Demographic - Online Shopping - Shoes",
-"other_equals":null,
-"other_greater":null,
-"other_in_list":null,
-"other_less":null,
-"start_minutes":null
-},
-{
-"action":"include",
-"code":"4608982",
-"deleted":false,
-"expire_minutes":null,
-"id":21015599,
-"name":"Xandr Audiences - Demographic - Occupation - Detail - Attorneys",
-"other_equals":null,
-"other_greater":null,
-"other_in_list":null,
-"other_less":null,
-"start_minutes":null
-},
-{
-"action":"include",
-"code":"2420395",
-"deleted":false,
-"expire_minutes":null,
-"id":21015602,
-"name":"Xandr Audiences - Demographic - Occupation - Detail - Accountants/CPA",
-"other_equals":null,
-"other_greater":null,
-"other_in_list":null,
-"other_less":null,
-"start_minutes":null
-}
-]
-}
-]
+   "segment_boolean_operator":"and",
+   "segment_group_targets":[
+      {
+         "boolean_operator":[
+            "and",
+            "- - same as segment_boolean_operator + also all other boolean_operators in the rest of the object is set to",
+            "or",
+            "therefore this is inconsistent behavior"
+         ],
+         "segments":[
+            {
+               "action":"include",
+               "code":"1094797",
+               "deleted":false,
+               "expire_minutes":null,
+               "id":19285936,
+               "name":"Travel Intender",
+               "other_equals":null,
+               "other_greater":null,
+               "other_in_list":null,
+               "other_less":null,
+               "start_minutes":null
+            },
+            {
+               "action":"include",
+               "code":"3119772",
+               "deleted":false,
+               "expire_minutes":null,
+               "id":19378950,
+               "name":"XAS - US HH Demographic - Online Shopping - Travel",
+               "other_equals":null,
+               "other_greater":null,
+               "other_in_list":null,
+               "other_less":null,
+               "start_minutes":null
+            },
+            {
+               "action":"include",
+               "code":"6502105",
+               "deleted":false,
+               "expire_minutes":null,
+               "id":19378951,
+               "name":"XAS - US HH Demographic - Online Shopping - Electronics and Gadgets",
+               "other_equals":null,
+               "other_greater":null,
+               "other_in_list":null,
+               "other_less":null,
+               "start_minutes":null
+            },
+            {
+               "action":"include",
+               "code":"3734388",
+               "deleted":false,
+               "expire_minutes":null,
+               "id":19378952,
+               "name":"XAS - US HH Demographic - Online Shopping - Apparel",
+               "other_equals":null,
+               "other_greater":null,
+               "other_in_list":null,
+               "other_less":null,
+               "start_minutes":null
+            }
+         ]
+      },
+      {
+         "boolean_operator":"or",
+         "segments":[
+            {
+               "action":"include",
+               "code":"2137013",
+               "deleted":false,
+               "expire_minutes":null,
+               "id":19378954,
+               "name":"XAS - US HH Demographic - Online Shopping - Buy Online",
+               "other_equals":null,
+               "other_greater":null,
+               "other_in_list":null,
+               "other_less":null,
+               "start_minutes":null
+            },
+            {
+               "action":"include",
+               "code":"2272811",
+               "deleted":false,
+               "expire_minutes":null,
+               "id":19378955,
+               "name":"XAS - US HH Demographic - Online Shopping - Personal Health",
+               "other_equals":null,
+               "other_greater":null,
+               "other_in_list":null,
+               "other_less":null,
+               "start_minutes":null
+            },
+            {
+               "action":"include",
+               "code":"8578372",
+               "deleted":false,
+               "expire_minutes":null,
+               "id":19378957,
+               "name":"XAS - US HH Demographic - Online Shopping - Shoes",
+               "other_equals":null,
+               "other_greater":null,
+               "other_in_list":null,
+               "other_less":null,
+               "start_minutes":null
+            }
+         ]
+      },
+      {
+         "boolean_operator":"or",
+         "segments":[
+            {
+               "action":"include",
+               "code":"8578372",
+               "deleted":false,
+               "expire_minutes":null,
+               "id":19378957,
+               "name":"XAS - US HH Demographic - Online Shopping - Shoes",
+               "other_equals":null,
+               "other_greater":null,
+               "other_in_list":null,
+               "other_less":null,
+               "start_minutes":null
+            },
+            {
+               "action":"include",
+               "code":"4608982",
+               "deleted":false,
+               "expire_minutes":null,
+               "id":21015599,
+               "name":"Xandr Audiences - Demographic - Occupation - Detail - Attorneys",
+               "other_equals":null,
+               "other_greater":null,
+               "other_in_list":null,
+               "other_less":null,
+               "start_minutes":null
+            },
+            {
+               "action":"include",
+               "code":"2420395",
+               "deleted":false,
+               "expire_minutes":null,
+               "id":21015602,
+               "name":"Xandr Audiences - Demographic - Occupation - Detail - Accountants/CPA",
+               "other_equals":null,
+               "other_greater":null,
+               "other_in_list":null,
+               "other_less":null,
+               "start_minutes":null
+            }
+         ]
+      }
+   ]
 }
 ```
 
@@ -750,8 +747,7 @@ In this example, since the `segment_boolean_operator` is `AND`, the profile will
          }
       ]
    }
-}            
-            
+}
 ```
 
 ### Segment group targets
@@ -842,8 +838,7 @@ In this example, since the `segment_boolean_operator` is `OR` and the `boolean_o
          }
       ]
    }
-}            
-            
+}
 ```
 
 ### Age targets

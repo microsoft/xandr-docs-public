@@ -1,6 +1,6 @@
 ---
 title: Channel Management
-description: The article explains how Channel Management uses a product-based approach to gather data. 
+description: Leverage Channel Management. Extract data, map via product-based approach. Dashboard, comparisons, detailed Channel Metrics for analysis.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
@@ -31,7 +31,7 @@ The Channels Comparison compares channels over a period of time. It can be By
 
 ## Channel performance
 
-You can view the performance of your channels either By Advertiser or **By Product**. This allows you to evaluate the performance of one SSP verses another, for a specific advertiser.
+You can view the performance of your channels either **By Advertiser** or **By Product**. This allows you to evaluate the performance of one SSP verses another, for a specific advertiser.
 
 > [!TIP]
 > When you select By Product, everything is going to map to a Total Network product by default.

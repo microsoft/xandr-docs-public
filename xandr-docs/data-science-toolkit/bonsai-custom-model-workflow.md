@@ -41,7 +41,7 @@ Example: Bonsai tree for bid pricing
 > [!NOTE]
 > In the code example below, lines beginning with `#` are comments to help you understand the logic of this tree.
 
-``` pre
+```
 # This tree determines a bid price as follows:
 # 1. If the user is in California, and the hour is between 12pm and 14pm there, bid $1.50.
 # 2. If the user is in New York, and the hour is between 1am and 3am there, bid $0.10.
@@ -61,7 +61,7 @@ Base64-encode your decision tree.  Base64 is an encoding algorithm that allo
 
 Example: Base64-encoded
 
-``` pre
+```
 IyBUaGlzIHRyZWUgZGV0ZXJtaW5lcyBhIGJpZCBwcmljZSBhcyBmb2xsb3dzOgojIDEuIElmIHRoZSB1c2VyIGlzIGluIENhbGlmb3JuaWEsIGFuZCB0aGUgaG91ciBpcyBiZXR3ZWVuIDEycG0gYW5kIDE0cG0gdGhlcmUsIGJpZCAkMS41MC4KIyAyLiBJZiB0aGUgdXNlciBpcyBpbiBOZXcgWW9yaywgYW5kIHRoZSBob3VyIGlzIGJldHdlZW4gMWFtIGFuZCAzYW0gdGhlcmUsIGJpZCAkMC4xMC4KIyAzLiBPdGhlcndpc2UsIGJpZCAkMC41MC4KCmlmIGV2ZXJ5IHJlZ2lvbiA9ICJVUzpDQSIsIHVzZXJfaG91ciByYW5nZSAoMTIsMTQpOgoJMS41CmVsaWYgZXZlcnkgcmVnaW9uID0gIlVTOk5ZIiwgdXNlcl9ob3VyIHJhbmdlICgxLDMpOgoJMC4xCmVsc2U6CgkwLjU=
 ```
 
@@ -78,7 +78,7 @@ Use the [Custom Model Parser Service](custom-model-parser-service.md) to check 
 
 Example: JSON file containing your base64-encoded tree
 
-``` pre
+```
 $ cat check_tree.json 
  
 {
@@ -90,7 +90,7 @@ $ cat check_tree.json
 
 Example: `POST` to the custom-model-parser service
 
-``` pre
+```
 $ curl -b cookies -c cookies -X POST -d @check_tree.json 'https://api.appnexus.com/custom-model-parser'
 {
     "response": {
@@ -120,7 +120,7 @@ Once you've confirmed that your tree is valid, use the [Custom Model Service](c
 
 Example: JSON file defining your custom model
 
-``` pre
+```
 $ cat custom_model.json
  
 {
@@ -137,7 +137,7 @@ $ cat custom_model.json
 
 Example: `POST` to `custom-model` service
 
-``` pre
+```
 $ curl -b cookies -c cookies -X POST -d @custom_model.json 'https://api.appnexus.com/custom-model'
  
 {
@@ -185,19 +185,17 @@ else:
 
 ## Step 6: Assign your custom model to a campaign
 
-**Bid Price Model**
+### Bid price model
 
 Use the [Campaign Service](../digital-platform-api/campaign-service.md) to assign your custom model to a campaign. Be sure to:
 
 - Set `cpm_bid_type` to `"custom_model"`.
-
 - Provide the `id` of your custom model in the `bid_model` object.
-
 - Set `inventory_type` to `"real_time"`.
 
   **JSON file defining your campaign**
 
-  ``` pre
+  ```
   $ cat campaign.json
    
   {
@@ -213,20 +211,18 @@ Use the [Campaign Service](../digital-platform-api/campaign-service.md) to ass
   }
   ```
 
-**Bid Modifier Model**
+### Bid modifier model
 
 Use the [Campaign Service](../digital-platform-api/campaign-service.md) to assign your custom model to a campaign. Be sure to:
 
 - Set `cpm_bid_type` to an optimization-based buying strategy (`"predicted"` or `"margin"`) and any corresponding required fields.
   - In the JSON below, for example, we set `cpm_bid_type` to `"predicted"` and `cpc_click_goal` to `1.00` to optimize CPM bids to a predicted $1.00 CPC goal.
-
 - In the `bid_modifier_model` object, provide the `id` of the custom model that will modify the campaign's CPM bids.
-
 - Set `inventory_type` to `"real_time"`.
 
   **JSON file defining your campaign**
 
-  ``` pre
+  ```
   $ cat campaign.json
   {
       "campaign": {

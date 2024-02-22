@@ -1,6 +1,6 @@
 ---
 title: Exchange Service
-description: The article discusses a exchange service for bidders.
+description: Simplify bidder profiles, highlight group targeting, and streamline updates. Access premium publishers collectively with Supply targeting.
 ms.date: 10/28/2023
 
 ---
@@ -13,7 +13,7 @@ Exchanges are groups of sellers organized to allow for easier supply targeting.
 - As new sellers are added, you do not have to update your profile or targeting. When targeting a single exchange, you will receive all members within it and any new members that join.
 - We took our premium publishers and put them all in one group, called "Supply". When you access and target inventory, you can target Supply. This will target all those premium publishers for you.
   - You can find out more information about Supply here: [Supply for External Demand Partners](xandr-monetize-supply-for-external-demand-partners.md)
-- Sellers that belong to Exchange 1, Supply, can not be individually included and excluded. The group must be targeted as a whole. You can individually include/exclude members that belong to other exchanges.
+- Sellers that belong to Exchange 1, Supply, cannot be individually included and excluded. The group must be targeted as a whole. You can individually include/exclude members that belong to other exchanges.
 
 Today we have three exchanges:
 

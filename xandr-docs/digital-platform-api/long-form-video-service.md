@@ -30,7 +30,7 @@ The following steps outline the long-form video request and response process:
 1. Key-value targeting pairs are generated for each bid for `hb_pb`, `hb_pb_cat_dur,` and `hb_cache_id`.
 1. ImpBus returns a JSON response with Prebid targeting key-value pairs and the cache id.
 
-:::image type="content" source="media/long-form-video-service-fig-a.png" alt-text="Diagram that illustrates the request and response process.":::
+:::image type="content" source="media/long-form-video-service-fig-a-edited.png" alt-text="Diagram that illustrates the request and response process.":::
 
 ## REST API
 
@@ -41,7 +41,7 @@ The following table list the required and optional parameters for submitting a l
 | `app` | Required | Object | Container object describing the app that will display the ad pod(s). **If app is not included in the request then the site parameter must be.** |
 | `auction_timeout_ms` | Optional | Integer | Maximum time in milliseconds to wait for the auction to complete. Defaults to zero if not given which uses the timeout setting from the member's [Prebid Server Premium Global Settings](../monetize/add-or-edit-psp-global-settings.md). |
 | `bcat` | Optional | String Array | Blocked advertiser categories using the IAB content categories. |
-| `badv` | Optional | String Array | Blocked list of advertisers by their domains (e.g., “[ford.com](https://www.ford.com/)"). |
+| `badv` | Optional | String Array | Blocked list of advertisers by their domains (e.g., ["ford.com"](https://www.ford.com/)). |
 | `cacheconfig` | Optional | Object | Optional controls to have Prebid Server cache information. |
 | `content` | Optional | Object | Container object describing miscellaneous content metadata that can be used for targeting the `adPod(s)`. |
 | `cur` | Optional | String | Default: USD. Allowed currency for targeting keys on this bid request using ISO-4217 alpha codes. |
@@ -61,11 +61,11 @@ The following table list the required and optional parameters for submitting a l
 
 ```
 {
-"xdyn_params":{
-"appnexus":{
-"keywords":"key1=val1,key2=val2"
-}
-}
+  "xdyn_params": {
+    "appnexus": {
+      "keywords": "key1=val1,key2=val2"
+    }
+  }
 }
 ```
 

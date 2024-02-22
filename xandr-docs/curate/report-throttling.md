@@ -1,6 +1,6 @@
 ---
 title: Microsoft Curate - Report Throttling
-description: The article explains how report requests are throttled at both the member and user levels in order to ensure that our systems operate as smoothly as possible for all users.
+description: Manage report requests by throttling at member and user levels, ensuring smooth system operation for all users.
 ms.date: 10/28/2023
 ---
 
@@ -14,8 +14,7 @@ When a report is submitted by a user, a check is performed to see if the user ha
 
 ## Member limits
 
-Each member is limited to 5 report requests being processed at the same time (including all users under that member). Any report requests
-submitted in excess of this limit are placed in a queue. Each member can have up to 100 report requests in the queue at a time. If the member exceeds this amount, they will receive a `LIMIT` on their next `POST`.
+Each member is limited to 5 report requests being processed at the same time (including all users under that member). Any report requests submitted in excess of this limit are placed in a queue. Each member can have up to 100 report requests in the queue at a time. If the member exceeds this amount, they will receive a `LIMIT` on their next `POST`.
 
 ## Example
 

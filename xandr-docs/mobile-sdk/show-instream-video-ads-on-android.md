@@ -1,23 +1,21 @@
 ---
-title : Show Instream Video Ads on Android
-description : This page describes how to use the SDK to fetch and display instream video ads in Android.
-ms.custom : android-sdk
-ms.date : 10/28/2023
+title: Show Instream Video Ads on Android
+description: This page describes how to use the SDK to fetch and display instream video ads in Android.
+ms.custom: android-sdk
+ms.date: 10/28/2023
 ---
 
 
 # Show instream video ads on Android
 
-This page describes how to use the SDK to fetch and display instream
-video ads.
+This page describes how to use the SDK to fetch and display instream video ads.
 
 > [!NOTE]
 > **Maintain references to VideoAd objects**: It is your responsibility to keep a reference to the `VideoAd` object. It is not cached by the SDK.
 
 ## Step 1. Include the SDK in your project
 
-If you use Maven, use the following Gradle config to install the version
-of the SDK with instream video support:
+If you use Maven, use the following Gradle config to install the version of the SDK with instream video support:
 
 ```
 // Android: Gradle config to install the SDK and the Video SDK
@@ -36,13 +34,9 @@ If you prefer to download the source code, you [can get the latest release from 
 To cache a video ad, set up a request object and supply it with either:
 
 - A placement ID (as shown in the example below), or
-- A combination of your Xandr member ID and an
-  inventory code
+- A combination of your Xandr member ID and an inventory code
 
-Then register a `VideoAdLoadListener` which will signal whether the ad
-load succeeded or failed. This is optional but strongly recommended. If
-you don't set the `VideoAdLoadListener,` you can use
-the `VideoAd.isReady()` method to check whether the ad is available.
+Then register a `VideoAdLoadListener` which will signal whether the ad load succeeded or failed. This is optional but strongly recommended. If you don't set the `VideoAdLoadListener,` you can use the `VideoAd.isReady()` method to check whether the ad is available.
 
 After that, call `VideoAd.loadAd()` to start caching the ad.
 
@@ -69,9 +63,7 @@ videoAd.loadAd();
 
 ## Step 3: Set up the video playback listener
 
-Before showing the video ad, you'll need to set up the
-mandatory `VideoPlaybackListener`. The `onAdCompleted()` notification is
-required to show your content video after the ad finishes playing.
+Before showing the video ad, you'll need to set up the mandatory `VideoPlaybackListener`. The `onAdCompleted()` notification is required to show your content video after the ad finishes playing.
 
 ``` 
 // Set the (mandatory) PlayBack Listener.
@@ -109,8 +101,7 @@ Log.d(TAG,  "onAdClicked" );
 
 ## Step 4: Pass activity lifecycle events to the Ad
 
-Pass on the Activity Lifecycle callback events to VideoAd as shown
-below:
+Pass on the Activity Lifecycle callback events to VideoAd as shown below:
 
 ``` 
 // This is important because it's used to resume the ad after an interruption by user activity.
@@ -134,9 +125,7 @@ public void onDestroy() {
 
 ## Step 5: Show the video Ad
 
-You are now all set to show the Video Ad by calling `playAd()` as shown
-below. Remember to pause your content video player before
-calling `VideoAd.playAd()`:
+You are now all set to show the Video Ad by calling `playAd()` as shown below. Remember to pause your content video player before calling `VideoAd.playAd()`:
 
 ```
 if (videoAd.isReady()) {
@@ -172,8 +161,7 @@ public VideoOrientation getVideoOrientation()  //Provide the Orientation of the 
 
 ## Determine Ad play progress
 
-You can determine how far the adPlay has progressed by retrieving the
-amount of time that has elapsed since the ad began playing:
+You can determine how far the adPlay has progressed by retrieving the amount of time that has elapsed since the ad began playing:
 
 ``` 
 public void getAdPlayElapsedTime(ResultCallback<String> resultCallback)
@@ -181,10 +169,10 @@ public void getAdPlayElapsedTime(ResultCallback<String> resultCallback)
 
 **Example**
 
-See below for a complete working example of showing an instream video
-ad.
+See below for a complete working example of showing an instream video ad.
 
 > [!NOTE]
+>
 > - All SDK methods must be called on the main thread.
 > - `activityOnDestroy()` must be called for the VideoAd that is expected to be destroyed.
 

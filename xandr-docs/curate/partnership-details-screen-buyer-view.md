@@ -6,13 +6,11 @@ ms.date : 10/28/2023
 
 # Microsoft Curate - Partnership details screen - Buyer view
 
-On the Partnership details screen you can review and manage your relationship with a specific seller. You can track overall spend trends,
-view your top brands on the seller's inventory, view the seller's top - publishers from whom you have purchased inventory, view active and
-pending deals, and communicate with the seller to negotiate a deal.
+On the Partnership details screen you can review and manage your relationship with a specific seller. You can track overall spend trends, view your top brands on the seller's inventory, view the seller's top - publishers from whom you have purchased inventory, view active and pending deals, and communicate with the seller to negotiate a deal.
 
 ## Getting to the partnership details screen
 
-1. Navigate to the **Partner Center** screen by selecting **Admin > Partner Center**.
+1. Navigate to the **Partner Center** screen by selecting **Admin** > **Partner Center**.
 1. Select a partner's name to access the details specific to that partner.
    You can manage your relationship with a specific seller by reviewing spending trends, packages, and active and upcoming deals.
 

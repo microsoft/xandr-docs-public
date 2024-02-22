@@ -54,7 +54,7 @@ Select one of the following audit options from the **Creative Quality** section:
   > When selecting **No Audit**, this may result in the creative serving less frequently, as publishers might choose to block it.
 
 For a full description of the Microsoft Advertising auditing process and the content standards for creatives running on the
-Microsoft Advertising platform, see [Auditing Creatives](./auditing-creatives.md) and [Creative Standards](./creative-standards.md). Regardless of your audit selection, the Microsoft Advertising Sherlock technology checks all creatives for overt malvertising threats and suspicious behavior.l
+Microsoft Advertising platform, see [Auditing Creatives](./auditing-creatives.md) and [Creative Standards](./creative-standards.md). Regardless of your audit selection, the Microsoft Advertising Sherlock technology checks all creatives for overt malvertising threats and suspicious behavior.
 
 ## Related topics
 

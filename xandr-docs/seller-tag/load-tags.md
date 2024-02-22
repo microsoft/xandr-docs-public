@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 
 This function makes an ad server call to load ads that have been defined by `defineTag` calls.
 
-``` pre
+```
 loadTags(['targetId1', 'targetId2'])
 ```
 
@@ -21,6 +21,6 @@ The parameters listed below can be sent as arguments in the function.
 
 ## Example
 
-``` pre
+```
 apntag.loadTags(['adslot1', 'adslot2']);
 ```

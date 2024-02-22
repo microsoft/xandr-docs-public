@@ -40,9 +40,7 @@ public static void registerTracking(final NativeAdResponse response, final View 
 API with methods to track the ad events such as:
 
 - when ad click is set to be handled by the app or SDK.
-
 - when the ad takes the user away from the application.
-
 - when an impression is recorded for a native creative.
 
   ``` 

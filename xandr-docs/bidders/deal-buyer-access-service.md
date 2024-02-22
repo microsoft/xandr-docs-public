@@ -1,6 +1,6 @@
 ---
 title: Bidders - Deal Buyer Access Service
-description: The article explains deal buyer access service, REST API, and the JSON fields.
+description: Retrieve exclusive deals using REST API, employ JSON. Gain priority access to pricing, inventory, and opportunities on the platform.
 ms.date: 10/28/2023
 ---
 
@@ -38,7 +38,7 @@ This read-only service lets bidders view information about the negotiated deals 
 | `description` | string (65535) | The description of the deal. |
 | `end_date` | timestamp | The day and time when the deal stops being available to the buyer. Null corresponds to "indefinitely". |
 | `floor_price` | double | **Deprecated. Please refer to** `ask_price` **instead**. The minimum CPM value that the bidder must bid to be eligible for the deal.<br>**Note**: If `use_deal_floor` is `false`, `floor_price` will be 0. In this case, note that although 0 is shown as the floor price, no deal floor is applied; if the seller has any other floors (in placements or yield management profiles), they will be applied, or if the seller does not have any other floors, the standard second-price auction mechanics will apply. |
-| `id` | int | The ID of the deal. This is the field you will receive on the bid request. Note that if you set up a deal with an external seller and funnel it through Xandr, we will turn their code into this ID. |
+| `id` | int | The ID of the deal. This is the field you will receive on the bid request. **Note**: If you set up a deal with an external seller and funnel it through Xandr, we will turn their code into this ID. |
 | `last_modified` | timestamp | The date and time when the deal was last modified. |
 | `name` | string (255) | The name of the deal. |
 | `seller` | object | The selling member who is offering the deal. For more details, see [Seller](deal-buyer-access-service.md#seller) below. |

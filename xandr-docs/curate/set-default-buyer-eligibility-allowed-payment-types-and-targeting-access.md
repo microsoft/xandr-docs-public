@@ -18,7 +18,7 @@ For details, see [Edit Buyer Eligibility, Allowed Payment Types, and Targeting A
 
 ### Step 1: Get started
 
-From the **Partner Center**, click the **Default Settings** button to display the Default Settings dialog.
+From the **Partner Center**, click the **Default Settings** button to display the **Default Settings** dialog.
 
 ### Step 2: Update your default settings
 

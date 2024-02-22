@@ -1,10 +1,10 @@
 ---
 title: Microsoft Invest - Seller Site Domain Report
-description: This report provides sellers with information on web and mobile app inventory coming through publishers. It helps in valuing inventory and optimizing campaigns.
+description: The Seller Site Domain report provides sellers with information on web and mobile app inventory coming through publishers.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Seller site domain report
+# Microsoft Invest - Seller Site Domain report
 
 The **Seller Site Domain** report is designed to give sellers information about what kind of web and mobile app inventory is coming through a publisher. For example, as a seller, you might distribute placement tags to your publishers and then want to verify that those tags are running on the inventory you intended. In addition, this report allows you to:
 
@@ -13,17 +13,17 @@ The **Seller Site Domain** report is designed to give sellers information about 
 - Optimize on domains or mobile application ID for managed campaigns
 - Understand the business impact of Microsoft Advertising audit and categorization
 
-**Available to members and publishers:** This page describes both the member-level version **and** the publisher version; they are essentially the same.
+**Available to members and publishers** 
+
+This page describes both the member-level version **and** the publisher version; they are essentially the same.
 
 ## Time frame
 
 All dates and times are given in UTC.
 
-**Time ranges**
+### Time ranges
 
-Time ranges define the time period of the data extracted for the report. The following is a complete list of time ranges available for reports.
-
-However, all time ranges are not available for every report.
+Time ranges define the time period of the data extracted for the report. The following is a complete list of time ranges available for reports. However, all time ranges are not available for every report.
 
 - Custom
 - Current Hour
@@ -48,7 +48,7 @@ However, all time ranges are not available for every report.
 - Month to Yesterday
 - Lifetime
 
-**Intervals**
+### Intervals
 
 Intervals determine how your data is grouped together into rows in the report response. The following is a complete list of intervals available for reports. However, all intervals are not available for every report.
 
@@ -57,7 +57,7 @@ Intervals determine how your data is grouped together into rows in the report re
 - Monthly: Data is grouped into rows by the month.
 - Cumulative: Data is grouped together in one figure, covering the entire selected time range.
 
-**Currency 2.0**
+## Currency 2.0
 
 > [!NOTE]
 > By enabling **Currency 2.0**, you can select a currency for each individual report if you prefer not to use **USD** as the default currency. The report will show all the monetary fields in your report using the selected currency. For example, if you select **Advertiser**, click the **Currency 2.0** toggle to enable it, and select **Japanese Yen (JPY)** from the **Currency** menu, the report will show all monetary data in JPY, including data associated with child objects such as line items.
@@ -134,7 +134,7 @@ For these and other reasons, some networks provide their publishers with an iFra
 
 For example, a publisher is given a snippet of HTML code to put on their pages that includes an iFrame referencing a network's domain, `best-network.net`:
 
-``` pre
+```
 <!-- Publisher's Web Page -->
 <iframe src="http://best-network.net"> 
 <!-- iFrame Referencing Network Domain --> 
@@ -151,7 +151,8 @@ The iFrame is located on the publisher's web page, but it is serving its content
 Follow these steps to run your report.
 
 1. Select **Reporting** from the appropriate top menu (depending on how your account has been configured).
-    1. Or, from the Publishers top menu, click on **Prebid Server Premium** > **Analytics** > **Prebid Server Analytics**
+   <br>Or<br>
+   From the Publishers top menu, click on **Prebid Server Premium** > **Analytics** > **Prebid Server Analytics**.
 
 1. Select the relevant report from the list. The **Report** screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
    > [!IMPORTANT]

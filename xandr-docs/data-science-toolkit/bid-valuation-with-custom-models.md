@@ -30,13 +30,13 @@ The Expected Value (EV) of a variable is described as the sum of all possible fa
 
 `EV = ( Val(Event) * Pr(Event) )`
 
-In the equation above Val(Event) represents the value of an event and Pr(Event) represents the probability of the event occurring.
+In the equation above `Val(Event)` represents the value of an event and `Pr(Event)` represents the probability of the event occurring.
 
-In the case of media buying, EV is linked to a single event, such as a viewed impression, a user click, or user conversion, where the event has a specific value to the buyer, the Val(Event) variable. The Val(Event) value could be fixed or accrue over time given certain factors, such as customer lifetime value.
+In the case of media buying, EV is linked to a single event, such as a viewed impression, a user click, or user conversion, where the event has a specific value to the buyer, the `Val(Event)` variable. The `Val(Event)` value could be fixed or accrue over time given certain factors, such as customer lifetime value.
 
 With the [optimization model](../monetize/optimization-guide-ali.md), clients are asked to predict the EV of an impression entirely or modify the Xandr optimized bid value. However, in most cases, clients may only wish to provide a portion of the EV calculation based on the data that they are able to model, rather than replace the entire calculation given the limited data that they may have. Custom models solve this issue, enabling clients to override specific components of the optimization equation.
 
-EV can be the value of one model type or the product of multiple model types. The calculation for EV is dependent on the Goal Type set on your Line Item. For example, if your Augmented Line Item had a Goal Type of CPC, then your EV could be comprised of an ev_click custom model or a click_imp custom model or both.
+EV can be the value of one model type or the product of multiple model types. The calculation for EV is dependent on the Goal Type set on your Line Item. For example, if your Augmented Line Item had a Goal Type of CPC, then your EV could be comprised of an `ev_click` custom model or a `click_imp` custom model or both.
 
 ### Example valuation model
 
@@ -46,14 +46,13 @@ If we expand the EV equation above, assuming that we have set a CPC Goal Type on
 
 where,
 
-- Pr(Click | Impression) = Probability of Click, given an impression
-
-- R = Expected return if user has clicked
+- `Pr(Click | Impression)` = Probability of Click, given an impression
+- `R` = Expected return if user has clicked
 
 ### Expected valuation model with offline factors
 
 The probability of a client-specific offline event, given an online event (`Pr(offline event | online event)`), is not a model that
-Xandr could ever construct. Since these types of models would involve non-fixed values of R, a number of Conditional Component Model Types can be associated with an Augmented Line Item or campaign. A '`custom_models`' array field can be used to influence the calculation of an EV for a given impression. In the case where a specific model is not associated in the `custom_models` group setting, a default or Xandr derived value will be used in the calculation.
+Xandr could ever construct. Since these types of models would involve non-fixed values of `R`, a number of Conditional Component Model Types can be associated with an Augmented Line Item or campaign. A '`custom_models`' array field can be used to influence the calculation of an EV for a given impression. In the case where a specific model is not associated in the `custom_models` group setting, a default or Xandr derived value will be used in the calculation.
 
 ### Cadence modifier
 
@@ -130,7 +129,7 @@ The `bid_modifier` model is applied at the last stage of the `expected_value`
 
 ## Revenue type and bid calculation
 
-When Expected Value has been calculated based on the `goal_type` and the Custom models set on your Line Item, the final Bid Value is affected by the Revenue Type set on your Line Item. Please see the table below to see how Revenue Type affects the final bid value:
+When Expected Value has been calculated based on the `goal_type` and the Custom models set on your Line Item, the final Bid Value is affected by the Revenue Type set on your Line Item. See the table below to see how Revenue Type affects the final bid value:
 
 | Revenue Type | How the Bidder Calculates the Final Bid | Don't Bid If... | Eligible Goal Types |
 |:---|:---|:---|:---|

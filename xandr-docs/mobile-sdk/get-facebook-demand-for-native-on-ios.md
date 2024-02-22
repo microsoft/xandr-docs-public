@@ -21,35 +21,35 @@ The Xandr SDK and Xandr-FAN-Demand Package will need to be installed. There are
 
 Once you have CocoaPods installed.
 
-- Use Terminal or your command line editor of choice and navigate to the project directory and create a podfile.
+1. Use Terminal or your command line editor of choice and navigate to the project directory and create a podfile.
 
-  ``` 
-  pod init
-  ```
+    ``` 
+    pod init
+    ```
 
-- Using a text editor, open the newly created podfile. Set the platform to 10.0 (AppNexus always supports two iOS releases back from the current release) and add pod 'AppNexusSDX' to the target.
+1. Using a text editor, open the newly created podfile. Set the platform to 10.0 (AppNexus always supports two iOS releases back from the current release) and add pod 'AppNexusSDX' to the target.
 
-  ``` 
-  # iOS: Podfile config to include our SDK
-  platform :ios, '10.0'
-     
-  project 'SampleApp'
-     
-  target 'SampleApp' do
-    
-    pod 'AppNexusSDK'
-    pod 'AppNexusSDK/FacebookCSRAdapter'
-    
-  end 
-  ```
+    ``` 
+    # iOS: Podfile config to include our SDK
+    platform :ios, '10.0'
+         
+    project 'SampleApp'
+         
+    target 'SampleApp' do
+        
+      pod 'AppNexusSDK'
+      pod 'AppNexusSDK/FacebookCSRAdapter'
+        
+    end 
+    ```
 
-- Save your changes and return to Terminal and enter:
+1. Save your changes and return to Terminal and enter:
 
-  ``` 
-  pod install
-  ```
+    ``` 
+    pod install
+    ```
 
-- Cocoapods will download both the AppNexus SDK and FacebookCRSAdapter and also create a workspace in the project directory. If your project is currently open, close it and open the workspace.
+1. Cocoapods will download both the AppNexus SDK and FacebookCRSAdapter and also create a workspace in the project directory. If your project is currently open, close it and open the workspace.
 
 ## Initialize Facebook's Audience Network SDK
 
@@ -69,7 +69,7 @@ Early in the lifecycle of your app, initialize Facebook's Audience Network SDK 
      }];
 ```
 
-On successful initialization of `FBAudienceNetworkAds`, `setFBAudienceNetworkInitialize` is set to YES, otherwise it is set as NO. If the value is set as YES i.e. Audience Network SDK is initialized, `getBidderToken` method of Audience Network SDK would return the Facebook Bidder Token to proceed further. For values set as NO, `getBidderToken` method will return nil.
+On successful initialization of `FBAudienceNetworkAds`, `setFBAudienceNetworkInitialize` is set to `YES`, otherwise it is set as `NO`. If the value is set as `YES` i.e. Audience Network SDK is initialized, `getBidderToken` method of Audience Network SDK would return the Facebook Bidder Token to proceed further. For values set as `NO`, `getBidderToken` method will return nil.
 
 Starting with iOS 14, Publisher App need to set a new API **setAdvertiserTrackingEnabled**  to fulfil the iOS policy obligations for using the Audience Network SDK. A new API **setAdvertiserTrackingEnabled** was added to **FBAdSettings** that is functional on only iOS 14 (and later) with FacebookAd SDK 6.0.0.
 

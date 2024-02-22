@@ -12,8 +12,8 @@ This is a **read-only** service that shows you the mapping between the browser I
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| GET | [https://api.adnxs.com/browser](https://api.adnxs.com/browser) | The basic service call will return a list of browsers available for targeting. |
-| GET | [https://api.adnxs.com/browser/BROWSER_ID](https://api.adnxs.com/browser/BROWSER_ID) | To return a specific browser. |
+| `GET` | [https://api.adnxs.com/browser](https://api.adnxs.com/browser) | The basic service call will return a list of browsers available for targeting. |
+| `GET` | [https://api.adnxs.com/browser/BROWSER_ID](https://api.adnxs.com/browser/BROWSER_ID) | To return a specific browser. |
 
 ## JSON fields
 

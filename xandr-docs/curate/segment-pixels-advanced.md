@@ -1,6 +1,6 @@
 ---
 title: Microsoft Curate - Segment Pixels - Advanced
-description: Explore this article to understand segment pixels, conversion pixels, JavaScript pixels and parameter lists.
+description: Explore this article to understand segment pixels, conversion pixels, JavaScript pixels, and parameter lists.
 ms.date: 10/28/2023
 ---
 
@@ -20,13 +20,13 @@ The UI allows you to create secure pixels, or pixels to be placed on HTTPS pages
 
 To record a conversion and add the user to a segment in one call, use the conversion pixel syntax with "seg" as a querystring parameter:
 
-``` pre
+```
 https://ib.adnxs.com/px?id=[ID]&seg=[segIDs] 
 ```
 
 Example:
 
-``` pre
+```
 https://ib.adnxs.com/px?id=532&seg=17523,12345 
 ```
 
@@ -35,13 +35,13 @@ With codes.
 > [!NOTE]
 > When using codes the member parameter is required, since codes are not unique.
 
-``` pre
+```
 https://ib.adnxs.com/px?id=532&seg_code=auto&member=234 
 ```
 
 To record a conversion and remove the user from a segment in one call, use the conversion pixel syntax with "remove" as a querystring parameter:
 
-``` pre
+```
 https://ib.adnxs.com/px?id=[ID]&remove=[Seg IDs]&t=2 
 ```
 
@@ -52,13 +52,13 @@ JavaScript. If a piggyback pixel is JavaScript, the parent pixel should be JavaS
 
 An image pixel looks like this, with a `t=2` parameter:
 
-``` pre
+```
 <img src="media/seg?add=11837&t=2" width="1" height="1" /> 
 ```
 
 A JavaScript pixel looks like this, with a `t=1` parameter:
 
-``` pre
+```
 <script src="https://ib.adnxs.com/seg?add=11837&t=1" type="text/javascript"></script> 
 ```
 
@@ -84,7 +84,7 @@ These parameters can be auto-added through the UI, in the pixel export screen.
 
 ### Adding segment pixels using segment ID
 
-``` pre
+```
 <img src="media/seg?add=1,2,4" width=1 height=1/> 
 ```
 
@@ -92,22 +92,25 @@ These parameters can be auto-added through the UI, in the pixel export screen.
 
 If using codes, your member id is required.
 
-``` pre
+```
 <img src="media/seg?add_code=auto1,travel5&member=10" width=1 height=1/> 
 ```
 
 ### Adding and removing segments in one call
 
-``` pre
+```
 <img src="media/seg?add=1,2,4&remove=3" width=1 height=1/> 
 ```
 
 ### Redirect to another URL/pixel
 
-``` pre
+```
 <img src="media/pixel?id=1243" width=1 height=1 /> 
 ```
 
 ## Targeting segment values
 
-This is how to target values in segments: - When you create a line item, click the **Targeting** tab. In the **Targeted Segments** window, go to the **Value** selection. See the above table for the `value` definition.
+This is how to target values in segments:
+
+- When you create a line item, click the **Targeting** tab.
+- In the **Targeted Segments** window, go to the **Value** selection. See the above table for the `value` definition.

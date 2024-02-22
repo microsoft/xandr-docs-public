@@ -1,6 +1,6 @@
 ---
 title: Data Science Toolkit - Guide
-description: Learn how Data Science Toolkit enables clients with data science capabilities to further their bidding strategy, improve their measurement and testing capabilities, and run in-depth outcome analyses. 
+description: This page explains what is a Data Science Toolkit, what products are included in it and concepts to get you started with Data Science Toolkit products. 
 ms.custom: data-science
 ms.date: 10/28/2023
 ---
@@ -8,18 +8,13 @@ ms.date: 10/28/2023
 
 # Data science Toolkit - Guide
 
-The Data Science Toolkit is a set of tools
-that enables clients with data science capabilities to further their
-bidding strategy, improve their measurement and testing capabilities,
-and run in-depth outcome analyses. Products that are currently included
-in the Data Science Toolkit are: 
+The Data Science Toolkit is a set of tools that enables clients with data science capabilities to further their bidding strategy, improve their measurement and testing capabilities, and run in-depth outcome analyses. Products that are currently included in the Data Science Toolkit are:
 
 - Custom Models
 - Incrementality Feeds
 - User Group Pattern Service
 
-This guide explains concepts that you will need to get started with the
-Data Science Toolkit products.
+This guide explains concepts that you will need to get started with the Data Science Toolkit products.
 
 - [Custom Models](ali-workflow-with-custom-models.md)
   - [ALI Workflow with Custom Models](ali-workflow-with-custom-models.md)

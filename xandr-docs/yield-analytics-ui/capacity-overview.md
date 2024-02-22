@@ -1,6 +1,6 @@
 ---
 title: Capacity Overview
-description: The article examines crucial capacity data, highlighting a product's delivery curve. It covers Impression Capacity, Manual Adjustments & Holidays, and trended Capacity, offering insights into their influence on a product's overall delivery capacity.
+description: Analyze product delivery capacity by exploring Impression Capacity, Manual Adjustments & Holidays, and trended Capacity in this article.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
@@ -17,9 +17,9 @@ It contains three widgets:
 
 ## Related topics
 
-- [About Forecasts and Adjustments](about-forecasts-and-adjustments.md) 
+- [About Forecasts and Adjustments](about-forecasts-and-adjustments.md)
 - [Anatomy of the Capacity Dashboard Page](anatomy-of-the-capacity-dashboard-page.md)
-- [Anatomy of the Forecast Visibility Page](forecast-visibility-page-anatomy.md) 
-- [View the Forecast for Your Products](view-your-products-forecast.md) 
-- [Anatomy of the Forecast Management Page](anatomy-of-the-forecast-management-page.md) 
+- [Anatomy of the Forecast Visibility Page](forecast-visibility-page-anatomy.md)
+- [View the Forecast for Your Products](view-your-products-forecast.md)
+- [Anatomy of the Forecast Management Page](anatomy-of-the-forecast-management-page.md)
 - [Adding and Editing Adjustments](adding-and-editing-adjustments.md)

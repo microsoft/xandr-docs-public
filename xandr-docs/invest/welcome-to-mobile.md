@@ -43,17 +43,14 @@ Topics we'll cover include:
 
 ## Mobile via the API
 
-- **[Profile Service](../digital-platform-api/profile-service.md)** <br>Learn how to use this service to target mobile users by device type,
-  device model, carrier, and screen size.
+- **[Profile Service](../digital-platform-api/profile-service.md)** <br>Learn how to use this service to target mobile users by device type, device model, carrier, and screen size.
 
 - **[Network Device Analytics](../digital-platform-api/network-device-analytics.md)** <br>Learn how to use the API to retrieve performance data based on mobile device.
 
 - **[Network Carrier Analytics](../digital-platform-api/network-carrier-analytics.md)** <br>Learn how to use the API to retrieve performance data based on mobile carrier and connection type.
 
-- **[Device Make Service](../digital-platform-api/device-make-service.md)** <br>This read-only service let's you view all device makes recognized by
-  Microsoft Advertising.
+- **[Device Make Service](../digital-platform-api/device-make-service.md)** <br>This read-only service let's you view all device makes recognized by Microsoft Advertising.
 
 - **[Device Model Service](../digital-platform-api/device-model-service.md)** <br>This read-only service let's you view all device models recognized by Microsoft Advertising.
 
-- **[Carrier Service](../digital-platform-api/carrier-service.md)** <br>This read-only service let's you view all mobile carriers recognized by
-  Microsoft Advertising.
+- **[Carrier Service](../digital-platform-api/carrier-service.md)** <br>This read-only service let's you view all mobile carriers recognized by Microsoft Advertising.

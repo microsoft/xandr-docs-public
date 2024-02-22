@@ -1,5 +1,5 @@
 ---
-title: Microsoft Invest - Viewability targeting
+title: Microsoft Invest - Viewability Targeting
 description: This article describes viewability targeting.
 ms.date: 10/28/2023
 ---

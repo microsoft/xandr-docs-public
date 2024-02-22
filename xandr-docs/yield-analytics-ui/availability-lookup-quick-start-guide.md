@@ -1,11 +1,11 @@
 ---
 title: Availability Lookup - Quick Start Guide
-description: The topics explains the Availability Lookup screen appears in the Availability drop-down.
+description: Optimize with tab-based access in Availability Lookup. Streamline actions in Lookup Builder, Results, Batch Builder, and Queue management.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 
-# Availability lookup - quick start guide
+# Availability lookup - Quick start guide
 
 The **Availability Lookup** screen appears in the **Availability** drop-down.
 
@@ -18,8 +18,7 @@ There are four tabs within the page which offer the following features:
 - [Batch Builder](batch-builder.md): Save, schedule, and execute batch lookups.
 - [Batch Queue](batch-queue.md): Monitor batch progress and access results for completed batches.
 
-Configuration and Advanced Filters: Select your date range and optionally, how you want dates to be grouped. Use Advanced Filters to
-apply additional constraints, such as a frequency cap.
+Configuration and Advanced Filters: Select your date range and optionally, how you want dates to be grouped. Use **Advanced Filters** to apply additional constraints, such as a frequency cap.
 
 ## Button functionality (lookup builder tab)
 
@@ -51,8 +50,7 @@ After you have selected your attribute and attribute values, there is an option 
 - Within the lookup builder screen you can see where attribute values are grouped by and or **or**.
 - While building your lookup, icons on the right allow you to quickly remove all values for a given attribute, or remove the attribute altogether. If you build a targeting segment consisting of multiple attributes and'ed together, an icon in the upper right corner of the segment allows you to easily duplicate the entire segment, creating a new or'ed segment that you can modify as needed.
 
-There is also a feature that allows you to build a target expression instead of using the builder. Click the icon to the right of the
-Attribute and Product View verbiage. The target editor screen will appear once you click the button above.
+There is also a feature that allows you to build a target expression instead of using the builder. Click the icon to the right of the Attribute and Product View verbiage. The target editor screen will appear once you click the button above.
 
 When your lookup is defined, click the **Run** button on the bottom right corner of the screen.  When the lookup is running, there will be a blue notification at the top of the screen to confirm the lookup is running.
 

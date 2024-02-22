@@ -1,6 +1,6 @@
 ---
 title: Bidders - Viewability FAQ
-description: The article answers frequently asked questions you have about viewability.
+description: Explore FAQs on viewability metrics, methods, troubleshooting. Check Console reporting for reliable data. Ensure optimal creative functionality.
 ms.date: 10/28/2023
 ---
 

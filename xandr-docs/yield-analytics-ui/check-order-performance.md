@@ -1,6 +1,6 @@
 ---
 title: Check Order Performance
-description: The article helps you check order performance using an order performance widget.
+description: Track order performance with widget—select By Order or Line, adjust dates, hover for details, click for more info. Use Scenario Manager as needed.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---

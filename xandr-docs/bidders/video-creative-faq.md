@@ -1,6 +1,6 @@
 ---
 title: Video Creative FAQ
-description: The article provides information on frequently asked questions(FAQ) related to video creative.
+description: Learn about Xandr's video ad capabilities—supporting in-stream and in-banner videos. Understand VAST, VPAID, and technical specifications. 
 ms.date: 10/28/2023
 ---
 
@@ -73,9 +73,7 @@ player or the content distribution. For ad pods, Xandr outputs our response in V
 
 ## What does the error message "Heavy ad intervention" mean?
 
-This error message signifies that the resource use for a creative exceeds one or more threshold(s) set by [browser intervention](https://iabtechlab.com/blog/chrome-will-block-heavy-ads-soon-get-vast-video-ads-ready/) introduced by Chrome. Since September 2020, Chrome has introduced a new [browser intervention](https://iabtechlab.com/blog/chrome-will-block-heavy-ads-soon-get-vast-video-ads-ready/) that monitors ad
-iframes and may redirect them to an error page (Heavy ad intervention) if resource use exceeds specified criteria. Video advertisements, in particular, may be vulnerable to this intervention, which impacts
-iframes that load more than 4 MB of data.
+This error message signifies that the resource use for a creative exceeds one or more threshold(s) set by [browser intervention](https://iabtechlab.com/blog/chrome-will-block-heavy-ads-soon-get-vast-video-ads-ready/) introduced by Chrome. Since September 2020, Chrome has introduced a new [browser intervention](https://iabtechlab.com/blog/chrome-will-block-heavy-ads-soon-get-vast-video-ads-ready/) that monitors ad iframes and may redirect them to an error page (Heavy ad intervention) if resource use exceeds specified criteria. Video advertisements, in particular, may be vulnerable to this intervention, which impacts iframes that load more than 4 MB of data.
 
 If a creative satisfies any of the following criteria, it is considered heavy:
 

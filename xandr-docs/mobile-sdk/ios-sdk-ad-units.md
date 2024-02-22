@@ -25,6 +25,6 @@ This section describes how to include various ad units or work with our interfac
 
 | Interfaces | Description |
 |:---|:---|
-| [Publisher Id](publisher-id-for-ios.md) | Provides publishers with options to what action should occur when an ad request fails at the placement level. |
+| [Publisher ID](publisher-id-for-ios.md) | Provides publishers with options to what action should occur when an ad request fails at the placement level. |
 | [Native Assembly Renderer](native-assembly-renderer-on-ios.md) | The native assembly renderer simplifies the use of Banner Native so that it behaves like Banner. |
 | [Multi Ad Request](multi-ad-request-for-ios.md) | ANMultiAdRequest enables the user to use a single universal tag (UTv3) request to initiate multiple auctions. |

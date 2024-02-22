@@ -7,13 +7,13 @@ ms.date : 10/28/2023
 
 # iOS SDK initialization v8.0
 
-Publishers with iOS SDK v8.0, are required to initialize Mobile SDK before making an ad request. When using Mobile SDK for iOS SDK v8, the init() method must be called prior to any other SDK operations. Without this initialization no Ad request will go through and the SDK would throw an exception.
+Publishers with iOS SDK v8.0, are required to initialize Mobile SDK before making an ad request. When using Mobile SDK for iOS SDK v8, the `init()` method must be called prior to any other SDK operations. Without this initialization no Ad request will go through and the SDK would throw an exception.
 
 ## API signature
 
 The API signature for initializing the SDK is exposed using Xandr Ad. For example:
 
-``` 
+```
 /**
  * Initialize Xandr Ads SDK
  * @param memberId for initializing the Xandr SDK
@@ -29,7 +29,7 @@ The API signature for initializing the SDK is exposed using Xandr Ad. For exampl
 
 ### Objective-C
 
-``` 
+```
 @implementation AppDelegate
  
  
@@ -47,7 +47,7 @@ The API signature for initializing the SDK is exposed using Xandr Ad. For exampl
 
 ### Swift
 
-``` 
+```
 class AppDelegate: UIResponder, UIApplicationDelegate {
  
     var window: UIWindow?

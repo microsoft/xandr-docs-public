@@ -1,6 +1,6 @@
 ---
 title: Microsoft Curate - Create and Activate a Plan
-description: The article describes how to create and activate a plan.
+description: Create and activate a plan on Microsoft Advertising Curate, experiment with targeting, check inventory, and seamlessly create line items from the completed plan.
 ---
 
 # Microsoft Curate - Create and activate a plan

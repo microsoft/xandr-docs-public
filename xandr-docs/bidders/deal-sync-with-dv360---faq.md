@@ -7,8 +7,7 @@ ms.date: 10/28/2023
 # Bidders - Deal sync with DV360 - FAQ
 
 > [!NOTE]
-> This product is currently in Beta stage and has been enabled for selected sellers who have chosen to participate in the beta testing. If
-> you would like to test out this product, reach out to your Xandr account representativx`e.
+> This product is currently in Beta stage and has been enabled for selected sellers who have chosen to participate in the beta testing. If you would like to test out this product, reach out to your Xandr account representative.
 
 ## How do I know a deal successfully uploaded to DV360 systems?
 

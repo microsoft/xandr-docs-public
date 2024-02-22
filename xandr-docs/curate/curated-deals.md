@@ -31,13 +31,13 @@ Yes. Via the Partner Center screen located in the UI, sellers can block transact
 
 ### How do I know I’m getting a better deal with curation?
 
-Curation allows third parties to easily enrich your inventory with their data, thereby bringing more demand for your inventory. With curation, buyers can still bid on seller inventory via open exchange, but buyers that target curated deals may also bid on seller inventory via curated transactions. All bids submitted for curated transactions will compete in the seller's final auction with all other deal and open exchange bids, net of all applicable fees and charges. As with any bid, a bid for a curated transaction needs to meet seller eligibility criteria AND be the highest bid of that auction in order to win the impression. For more information on revenue forecasts/expectations, please reach out to your account management team.
+Curation allows third parties to easily enrich your inventory with their data, thereby bringing more demand for your inventory. With curation, buyers can still bid on seller inventory via open exchange, but buyers that target curated deals may also bid on seller inventory via curated transactions. All bids submitted for curated transactions will compete in the seller's final auction with all other deal and open exchange bids, net of all applicable fees and charges. As with any bid, a bid for a curated transaction needs to meet seller eligibility criteria AND be the highest bid of that auction in order to win the impression. For more information on revenue forecasts/expectations, reach out to your account management team.
 
 ### Additional questions or want to learn more?
 
-Please reach out to your Microsoft Advertising account manager to learn more about Microsoft Curate.
+Reach out to your Microsoft Advertising account manager to learn more about Microsoft Curate.
 
 ## Related topics
 
-- [Create a Curated Deal Line Item](create-a-curated-deal-line-item.md) 
-- [Curator Reporting](curator-reporting.md) 
+- [Create a Curated Deal Line Item](create-a-curated-deal-line-item.md)
+- [Curator Reporting](curator-reporting.md)

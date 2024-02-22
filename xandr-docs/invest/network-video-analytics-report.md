@@ -1,10 +1,10 @@
 ---
 title: Microsoft Invest - Member Video Analytics Report
-description: Use this report to view video event metrics across multiple buyers and sellers for a network member.
+description: Use the Member Video Analytics report to view video event metrics across multiple buyers and sellers for a network member.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Member video analytics report
+# Microsoft Invest - Member Video Analytics report
 
 The Member Video Analytics report can be used to view video event metrics across multiple buyers and sellers for a network member.
 
@@ -12,11 +12,9 @@ The Member Video Analytics report can be used to view video event metrics across
 
 All dates and times are given in UTC.
 
-**Time ranges**
+### Time ranges
 
-Time ranges define the time period of the data extracted for the report. The following is a complete list of time ranges available for reports.
-
-However, all time ranges are not available for every report.
+Time ranges define the time period of the data extracted for the report. The following is a complete list of time ranges available for reports. However, all time ranges are not available for every report.
 
 - Custom
 - Current Hour
@@ -41,7 +39,7 @@ However, all time ranges are not available for every report.
 - Month to Yesterday
 - Lifetime
 
-**Intervals**
+### Intervals
 
 Intervals determine how your data is grouped together into rows in the report response. The following is a complete list of intervals available for reports. However, all intervals are not available for every report.
 
@@ -50,11 +48,11 @@ Intervals determine how your data is grouped together into rows in the report re
 - Monthly: Data is grouped into rows by the month.
 - Cumulative: Data is grouped together in one figure, covering the entire selected time range.
 
-**Data retention period**
+### Data retention period
 
 Data in this report is retained for 420 days.
 
-**Currency 2.0**
+## Currency 2.0
 
 > [!NOTE]
 > By enabling **Currency 2.0**, you can select a currency for each individual report if you prefer not to use **USD** as the default currency. The report will show all the monetary fields in your report using the selected currency. For example, if you select **Advertiser**, click the **Currency 2.0** toggle to enable it, and select **Japanese Yen (JPY)** from the **Currency** menu, the report will show all monetary data in JPY, including data associated with child objects such as line items.
@@ -207,7 +205,8 @@ Data in this report is retained for 420 days.
 Follow these steps to run your report.
 
 1. Select **Reporting** from the appropriate top menu (depending on how your account has been configured).
-    1. Or, from the Publishers top menu, click on **Prebid Server Premium** > **Analytics** > **Prebid Server Analytics**
+   <br>Or<br>
+   From the Publishers top menu, click on **Prebid Server Premium** > **Analytics** > **Prebid Server Analytics**.
 
 1. Select the relevant report from the list. The **Report** screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
    > [!IMPORTANT]

@@ -1,7 +1,7 @@
 ---
 title: Bidders - User Service
-description : The article introduces the User Service, which pertains to individuals or groups utilizing Xandr's APIs. This service enables the management of access to Xandr's APIs, categorizing users into two types, bidder and member.
-ms.date : 10/28/2023
+description: Introduce the User Service, managing API access for individuals or groups. Categorize users as bidders or members.
+ms.date: 10/28/2023
 ---
 
 # Bidders - User service

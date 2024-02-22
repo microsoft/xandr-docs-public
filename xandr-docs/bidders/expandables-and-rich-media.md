@@ -1,7 +1,7 @@
 ---
 title: Expandables and Rich Media
-description: The article explores adding versatile rich media support to supply platforms, including Xandr-enabled exchanges like the Microsoft Advertising Exchange.
-ms.date : 10/28/2023
+description: Enhance rich media support for supply platforms, integrating with exchanges like the Microsoft Advertising Exchange for adaptibility.
+ms.date: 10/28/2023
 ---
 
 # Expandables and rich media
@@ -84,14 +84,13 @@ Media types and subtypes are in a two-tiered hierarchy:
 
 **Placements** may accept any combination of media types or subtypes. If they accept a media type, they accept all subtypes under the media type.
 
-:::image type="content" source="media/placements.png" alt-text="Screenshot that displays information about placements can accept various combinations of media types or subtypes, and if it accepts a specific media type, it automatically accepts all subtypes associated with that media type. ":::
+:::image type="content" source="media/placements.png" alt-text="Screenshot that display versatile placement information, allowing combinations of media types, automatically accepting associated subtypes.":::
 
 **Templates** represent a media type and a creative format (Javascript, HTML, etc). They can be used to customize the rendering of your creatives, but in this case they simply specify the expandable vendor being used.
 
-**Creatives** have one template, which specifies the format of the creative and the expandable vendor in use. A creative may serve only on
-placements that accept the creative template's media subtype or its parent media type.
+**Creatives** have one template, which specifies the format of the creative and the expandable vendor in use. A creative may serve only on placements that accept the creative template's media subtype or its parent media type.
 
-:::image type="content" source="media/creatives.png" alt-text="Screenshot that details the format of the creative and the current expandable vendor. A creative is limited to serving on placements that accept either the media subtype of the creative template or its parent media type.":::
+:::image type="content" source="media/creatives.png" alt-text="Screenshot that details creative format and current expandable vendor. Creatives are limited to compatible placements based on media subtype or parent media type.":::
 
 ## Integration
 

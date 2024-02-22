@@ -1,6 +1,6 @@
 ---
 title: Change Your Password
-description: The article explains how you change your password when you log in to Yield Analytics.
+description: Secure your Yield Analytics account. Log in, go to Preferences, update password in Change Password panel, and save changes.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---

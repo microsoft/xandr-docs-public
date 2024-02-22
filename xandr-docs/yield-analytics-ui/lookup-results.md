@@ -11,7 +11,7 @@ Clicking the **Lookup Results** tab accesses the **Lookup Results** screen.
 
 ## Column descriptions
 
-- There are five columns on the main screen: Name, Availability, Capacity, Range and Target Expression.
+- There are five columns on the main screen: Name, Availability, Capacity, Range, and Target Expression.
 - The Name is either hyperlinked or not hyperlinked. If the name is hyperlinked, that means it is an existing product in the system. Clicking the hyperlink will access the Product metadata screen. This displays information about that product.
 - If it is is not hyperlinked, it is not a current product in our system. It is called a dynamic lookup. The system assembles attributes and determines availability accordingly.
 - The **Availability** column displays how much you have available to sell.
@@ -22,9 +22,9 @@ Clicking the **Lookup Results** tab accesses the **Lookup Results** screen.
 
 ## Changing advanced filters/date range
 
-If Advanced Filters were assigned, they would also be columns. They are Priority, Frequency Cap, Viewable, Competitive Separation, and Roadblock.
+If **Advanced Filters** were assigned, they would also be columns. They are Priority, Frequency Cap, Viewable, Competitive Separation, and Roadblock.
 
-In the Lookup Results screen, you can change any configuration or filter on the left and then re-run any lookup against the new configuration by clicking on its sprocket icon and clicking **Run Lookup**. The original version of the lookup will be retained, allowing you to compare lookups with the same targeting but different configurations side by side.
+In the **Lookup Results** screen, you can change any configuration or filter on the left and then re-run any lookup against the new configuration by clicking on its sprocket icon and clicking **Run Lookup**. The original version of the lookup will be retained, allowing you to compare lookups with the same targeting but different configurations side by side.
 
 ## Button functionality
 
@@ -51,7 +51,7 @@ There are three export options:
   - Attribute-Value Breakdown - This will break out the attributes by column, as opposed to putting them all in the same column.
   - Show Start and End dates as separate columns.
 
-**Clear All** - This clears the data in the Lookup Results screen.
+**Clear All** - This clears the data in the **Lookup Results** screen.
 
 **Add to Batch** - This is used when you are building numerous target expressions that are grouped together. It allows you to run them, and continue to work on other tasks. It runs in a different thread in the background. It will add these lookups to the **Batch Builder** screen.
 

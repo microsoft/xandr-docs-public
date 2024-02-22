@@ -1,8 +1,8 @@
 ---
 title: User ID(s) Mapping on Android
-description: The article describes the mapping of user IDs on Android.
+description: Globalize Android ad requests with Xandr, send Publisher First party ID, and User IDs, set up once per app session, values persist within the session, not across sessions.
 ms.custom: android-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
 ---
 
 # User ID(s) mapping on Android

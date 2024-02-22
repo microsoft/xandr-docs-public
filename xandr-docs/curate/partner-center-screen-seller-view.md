@@ -1,6 +1,6 @@
 ---
 title: Microsoft Curate - Partner Center Screen - Seller view
-description: The article describes how you can view your partners on the Partner Center screen, search all buyers, manage your profile, manage your default buyer settings, and review impression and click statistics for each buyer.
+description: Manage partner visibility, search buyers, update profile, adjust default settings, and review buyer statistics on Partner Center screen.
 ms.date : 10/28/2023
 ---
 
@@ -10,7 +10,7 @@ On the **Partner Center** screen you can view your partners, search all buyers, 
 
 ## Getting to the partner center screen
 
-Select **Admin > Partner Center**.
+Select **Admin** > **Partner Center**.
 
 ## Switching to Buyers Mode
 

@@ -11,7 +11,5 @@ Insertion orders allow you to easily manage collections of line items that may s
 - **[Create an Insertion Order](create-an-insertion-order.md)** - Set up an insertion order (formerly "seamless insertion order") in Microsoft Invest.
 - **[Update Insertion Orders](update-insertion-orders.md)** - Update the details of an insertion order in Microsoft Invest.
 - **[Duplicate an Insertion Order](duplicate-an-insertion-order.md)** - Duplicate an insertion order with all of its child line items and splits in Microsoft Invest.
-- **[View Insertion Order Details](view-insertion-order-details.md)** - View the settings and essential
-  metrics for a specific insertion order, analyze visualizations of the insertion order's performance, get quick access to the insertion
-  order's child objects, and more.
+- **[View Insertion Order Details](view-insertion-order-details.md)** - View the settings and essential metrics for a specific insertion order, analyze visualizations of the insertion order's performance, get quick access to the insertion order's child objects, and more.
 - **[Reporting on Insertion Orders](reporting-guide.md)** - Initiate an advertiser analytics report for one or more insertion orders.

@@ -1,6 +1,6 @@
 ---
 title: Domain Lists
-description: The article describes the lists of domain that are created by the bidder.
+description: Select or exclude domain lists created by the bidder to build a customizable blocklist for better control.
 ms.date: 10/28/2023
 ---
 
@@ -13,13 +13,11 @@ Domain lists are created by the bidder. This functionality allows you to select 
 
 Clicking the **Domain Lists** tab accesses a screen where you can select which domain lists you either want to include or exclude. You can either include or exclude the desired domain lists by clicking either the **green checkmark icon** (include), or the **red minus sign icon** (exclude).
 
-:::image type="content" source="media/domain-lists-figure-a.png" alt-text="A screenshot that explains the list of domains.":::
+:::image type="content" source="media/domain-lists-figure-a.png" alt-text="Screenshot that explains the list of domains.":::
 
-The **magnifying glass/search icon** can be used to search for the desired domain list to include or exclude. Begin typing the name of the
-domain list you want, and this list will narrow down to your specific choice.
+The **magnifying glass/search icon** can be used to search for the desired domain list to include or exclude. Begin typing the name of the domain list you want, and this list will narrow down to your specific choice.
 
-When you close the **Domain Lists** tab, a summary is shown in the upper right-hand corner of the **Domain Lists** display bar that
-shows that you've applied some sort of targeting.
+When you close the **Domain Lists** tab, a summary is shown in the upper right-hand corner of the **Domain Lists** display bar that shows that you've applied some sort of targeting.
 
 If you want to view a portion of what is included with your domain list, click **Show Domains** to see the first five domains in the list.
 

@@ -1,6 +1,6 @@
 ---
 title: Editing a Bidder Profile
-description: The article provides instructions on changing a bidder profile.d
+description: Edit bidder profile by selecting it from left table on Profiles screen. Access Bidder Profile Targeting Options to make changes and save.
 ms.date: 10/28/2023
 ---
 

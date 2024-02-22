@@ -1,6 +1,6 @@
 ---
 title: Bidders - Deal From Package Service
-description: The article explains a streamlined process, the sellers present packages, buyers use Package Buyer Access to choose one, and then create a deal with sellers using Deal From Package service.
+description: Choose packages via package buyer access, create deals using deal from package service—streamlining buyer-seller transactions.
 ms.date: 10/28/2023
 ---
 

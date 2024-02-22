@@ -1,13 +1,13 @@
 ---
 title: Data Science Toolkit - Creative Selection Custom Model
-description: Learn how to assign creatives using a custom model. The article provides syntax explanations and detailed API workflow instructions, accompanied by examples.
+description: Explore the process of assigning creatives using a custom model, with syntax explanations, detailed API workflow instructions, and illustrative examples.
 ms.custom: data-science
 ms.date: 10/28/2023
 ---
 
 # Data Science Toolkit - Creative selection custom model
 
-By default, Xandr randomly distributes the creatives associated with a line item. You can also assign creatives using a custom model. Any [Bonsai Language](the-bonsai-language.md) feature or logic can be used to determine which creative should be served.
+By default, Xandr randomly distributes the creatives associated with a line item. You can also assign creatives using a custom model. Any [Bonsai Language](the-bonsai-language.md) feature or logic can be used to determine which creative should be served.
 
 > [!NOTE]
 > This functionality is only available for the [Augmented Line Item](../digital-platform-api/line-item-service---ali.md).
@@ -32,7 +32,7 @@ Follow these guidelines for getting the best results when weighting your creativ
 
 The syntax for creative distribution leaves is:
 
-``` pre
+```
 leaf_name: "NAME"
 creatives: {ID: WEIGHT, ID: WEIGHT, ID: WEIGHT} 
 ```
@@ -43,7 +43,7 @@ creatives: {ID: WEIGHT, ID: WEIGHT, ID: WEIGHT}
 
 In this example, we create an augmented line item.
 
-``` pre
+```
 $cat ali
 {
     "line-item": {
@@ -75,7 +75,7 @@ For more information, see [ALI Workflow with Custom Models](ali-workflow-with-cu
 
 In this example, we associate three creatives to our line item.
 
-``` pre
+```
  $ cat line-item
 {
     "line-item": 
@@ -156,7 +156,7 @@ $ curl -b cookies -X PUT -d @line-item 'https://api.appnexus.com/line-item?id=LI
 
 In this example, we create a custom model that will weigh and select creatives.
 
-``` pre
+```
 $cat creative-tree
 if user_hour = 1:
         leaf_name: "cs_1"
@@ -170,7 +170,7 @@ else:
 
 In this example, we upload the custom model.
 
-``` pre
+```
 $ cat custom_model
  
 {
@@ -215,9 +215,9 @@ For more information, see [Custom Model Service](custom-model-service.md).
 
 ### Step 5: Associate the custom model with the line item
 
-In this example, we associate the custom model with the line item by setting the `type` field in the line item's `custom_models` array to 'creative_selection'.
+In this example, we associate the custom model with the line item by setting the `type` field in the line item's `custom_models` array to '`creative_selection`'.
 
-``` pre
+```
 $cat update-ali
 {
     "line-item": {
@@ -263,9 +263,9 @@ $curl -b cookies -X PUT -d '@update-ali' "https://api.appnexus.com/line-item?id=
 
 ## Examples
 
-Creative distribution tree with different weights for creatives
+### Creative distribution tree with different weights for creatives
 
-``` pre
+```
 if user_hour = 1:
         leaf_name: "cs_1"
         creatives: {64947527: 30, 64946991: 20, 65023365: 10}
@@ -274,9 +274,9 @@ else:
         creatives: {65946990: 1}
 ```
 
-Creative distribution tree with uniform random distribution
+### Creative distribution tree with uniform random distribution
 
-``` pre
+```
 if user_hour = 1:
         leaf_name: "cs_1"
         creatives: {64947527: 1, 64946991: 1, 65023365: 1}

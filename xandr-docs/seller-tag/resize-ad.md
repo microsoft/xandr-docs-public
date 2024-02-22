@@ -1,6 +1,6 @@
 ---
 title: Resize Ad
-description: Learn how this function resizes the iFrame placement for the specified `targetId` after the ad is rendered.
+description: Learn how this function resizes the iFrame placement for the specified `targetId` after the ad is rendered. This page also lists parameters that can be sent as arguments in the function along with an example.     
 ms.custom: seller-tag
 ms.date: 10/28/2023
 ---
@@ -8,18 +8,16 @@ ms.date: 10/28/2023
 
 # Resize Ad
 
-This function resizes the iFrame placement for the
-specified `targetId` after the ad is rendered. If called before the ad
-is rendered, this function will not do anything.
+This function resizes the iFrame placement for the specified `targetId` after the ad is rendered. If called before the ad is rendered, this function will not do anything.
 
-``` pre
+``` 
 resizeAd('targetId', [width, height], {config})
 ```
 
 The parameters listed below can be sent as arguments in the function.
 
 | Parameter | Type | Description |
-|---|---|---|
+|--|--|--|
 | `[width, height]` | array of numbers | The placement size to which the iFrame should be resized, in the format `[300,250]`. |
 | `config` | object | Contains optional config like settings to alter typical resizing behavior. See table below for list of supported flags. |
 | `targetId` | string | The unique identifier of a specific ad slot. |
@@ -27,6 +25,6 @@ The parameters listed below can be sent as arguments in the function.
 
 ## Example
 
-``` pre
+``` 
 apntag.resizeAd('apn_ad_40954389053', [100, 100], { resizeAdParentDiv: true });
 ```

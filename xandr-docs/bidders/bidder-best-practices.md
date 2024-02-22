@@ -10,13 +10,11 @@ As you integrate your bidder and get set to go live, there are a number of wiki 
 
 ## Good reads
 
-- [Platform Member Service](platform-member-service.md) - Read-only service that provides you with the most up-to-date list of sellers on
-  our platform and shows information about data providers.
+- [Platform Member Service](platform-member-service.md) - Read-only service that provides you with the most up-to-date list of sellers on our platform and shows information about data providers.
 - [Content Category Service](content-category-service.md) - Allows you to see what content categories are registered and their corresponding IDs.
 - [Inventory Attribute Service](inventory-attribute-service.md) - Allows you to see what inventory attributes are registered in Xandr's system.
 - [Creative Standards and Auditing](creative-standards-and-auditing.md) - Highlights our Creative Audit Policy and standards.
-- [Audit Notification Request](audit-notify-request.md) - Alerts you to any changes in the creative audit status (including creative
-  approvals and rejections).
+- [Audit Notification Request](audit-notify-request.md) - Alerts you to any changes in the creative audit status (including creative approvals and rejections).
 - [Bid Request](outgoing-bid-request-to-bidders.md) - Provides all of the fields sent in the bid request to you bidder.
 
 ## Recommended
@@ -26,7 +24,7 @@ addresses. This will ensure you are notified when your creatives are audited and
 
 ## Not recommended
 
-A practice that we do **not** typically recommend is setting your bidder profile to run exclusively on a allowlist by domain. While this is possible, there is a very good chance you will be severely limiting the traffic you are seeing mainly because publishers reserve the right to mask domains or not provide any domain detail at all. If you find there is a publisher that is not providing the level of transparency you desire, please contact your Xandr representative.
+A practice that we do **not** typically recommend is setting your bidder profile to run exclusively on a allowlist by domain. While this is possible, there is a very good chance you will be severely limiting the traffic you are seeing mainly because publishers reserve the right to mask domains or not provide any domain detail at all. If you find there is a publisher that is not providing the level of transparency you desire, contact your Xandr representative.
 
 ## Related topics
 

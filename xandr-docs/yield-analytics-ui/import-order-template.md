@@ -36,7 +36,7 @@ The fields on the template are:
 
 - The External Target ID or **Target Expression** should be filled out. The ID is used to lookup targeting: If both fields are completed, the targeting expression is used.
 - Only order lines that have all of the required details completed are imported, all others will be excluded. (This also applies to invalid targeting expressions.)
-- All orders created via Evaluate Orders (Deal Planner) will appear in the **Orders** table with a Proposed status.
+- All orders created via **Evaluate Orders** (Deal Planner) will appear in the **Orders** table with a Proposed status.
 - If two users edit the same proposal simultaneously, the most recent changes are used.
 - Proposals created in Yield Analytics are kept in the database for seven days, unless they are replaced with a matching order during nightly processing.
   - The amount of time that proposals stay in the system can be configured. For details, see your Client Services Manager.

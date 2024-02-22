@@ -1,6 +1,6 @@
 ---
 title: Bidders - VAST Check
-description: The article outlines the process of conducting checks on XML when incorporating a third-party VAST or VPAID video creative. It also provides information on potential outcomes and suggests corrective actions based on the results.
+description: Explore VAST and VPAID video creative checks for bidders, understanding potential outputs, and implementing corrective actions with third-party XML.
 ms.date: 10/28/2023
 ---
 
@@ -18,7 +18,7 @@ When adding a third-party VAST or VPAID video creative, a series of checks are p
 - **Secure**: All URLs inside the VAST document must be prefixed with `https://` to serve on secure inventory.
 - **Click Tracking:** Xandr automatically wraps third-party creatives to provide impression, click, and playback
   tracking.
-  - To view the Xandr wrapper of your creative: [ib.adnxs.com/cr?id=[INSERT_ID]&amp;format=vast](http://ib.adnxs.com/cr?id=ID&amp;format=vast)
+  - To view the Xandr wrapper of your creative: `ib.adnxs.com/cr?id=[INSERT_ID]&amp;format=vast`
 - **\<Wrapper\> tags**  
 
   > [!NOTE]
@@ -34,7 +34,7 @@ When adding a third-party VAST or VPAID video creative, a series of checks are p
 
 **All attributes are present and valid**
 
-If VAST check was successful, it means that your VAST document has satisfied all of the requirements above. 
+If VAST check was successful, it means that your VAST document has satisfied all of the requirements above.
 
 **Invalid creative: some attributes need attention**
 
@@ -46,7 +46,7 @@ If VAST check returns this message, your creative contains errors that will prev
 
 **Corrective action**: Reach out to your third-party ad server to add the missing duration information or revise the format. Valid duration example:
 
-   :::image type="content" source="media/valid-duration.png" alt-text="The screenshot that demonstrates the steps for addressing missing or invalid duration information in a video creative, advising users to contact their third-party ad server to either add the necessary duration details or adjust the format.":::
+   :::image type="content" source="media/valid-duration.png" alt-text="Screenshot that instructthe users and resolve video duration issues by contacting ad server, add or adjust details using provided screenshot steps.":::
 
 ### No recommended video formats detected
 
@@ -56,12 +56,11 @@ If VAST check returns this message, your creative contains errors that will prev
 
   **Sample XML with recommended VAST formats**
 
-  
-  :::image type="content" source="media/recommended-vast-format.png" alt-text="The screenshot that illustrates the process of contacting a third-party ad server to update a creative with at least one of the recommended video formats. The accompanying text refers to a sample XML containing the suggested VAST formats.":::
+  :::image type="content" source="media/recommended-vast-format.png" alt-text="Screenshot that illustrates the process of contacting a third-party ad server to update a creative with at least one of the recommended video formats.":::
 
   **Sample XML with recommended VPAID formats**
 
-   :::image type="content" source="media/sample-xml.png" alt-text="The screenshot that illustrates Sample XML with recommended VPAID formats:":::
+   :::image type="content" source="media/sample-xml.png" alt-text="Screenshot that illustrates Sample XML with recommended VPAID formats:":::
 
 ### Some adjustments are suggested
 
@@ -99,7 +98,7 @@ For sample XML snippets with the recommended formats, see the [No recommended vi
 
 Excerpt of a VAST document with a `<Wrapper>` element pointing to an \<InLine\> tag:
 
-:::image type="content" source="./media/excerpt-of-a-vast.png" alt-text="The screenshot that provides guidance on taking corrective actions by avoiding the use of multiple chained Wrapper elements in VAST documents.":::
+:::image type="content" source="./media/excerpt-of-a-vast.png" alt-text="Screenshot that provides guidance on taking corrective actions by avoiding the use of multiple chained Wrapper elements in VAST documents.":::
 
 **Unable to run VAST check**
 

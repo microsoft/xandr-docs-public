@@ -1,6 +1,6 @@
 ---
 title: Best Practices - Product group
-description: The article details the advantages of utilizing product groups to organize your account, emphasizing their role in boosting efficiency and expediting work processes.
+description: The article highlights using product groups to organize accounts, emphasizing efficiency and expediting work processes.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---

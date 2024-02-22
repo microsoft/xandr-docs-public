@@ -1,6 +1,6 @@
 ---
 title: Supply Partners - Bid Request
-description: In this article, learn about a bid request and their various JSON fields, the placement mapping sequence, and examples to help you understand better.
+description: Learn about a bid request, their JSON fields, the placement mapping sequence, and examples to help you understand better.
 ms.custom: supply-partners
 ms.date: 10/28/2023
 ---
@@ -39,7 +39,7 @@ only one of the fields in your JSON-formatted file. If both are included, the in
 | `ad_format` | enum | The format of the creative that should be returned. Possible values: "iframe", "javascript", or "vast". <br><br>**Note about VAST:** The "vast" format is **not supported**. However, see the VAST bid request in the [Examples](#examples) section of what a bid request for a VAST video creative is likely to look like.<br><br>**Required:** yes |
 | `template_id` | int | **Not yet supported**. For VAST video creatives, you may want Xandr to include custom parameters in the `ad_tag` field of the bid response. To accomplish this, Xandr can create a "supply template" for you, which you then reference here when requesting VAST video. For more details, see [Supply Templates](bid-response.md#supply-templates) in the Bid Response documentation.<br>**Required:** no |
 | `ip_address` | string | The IP address for the user viewing the page.<br>**Required:** no |
-| `is_secure` | boolean | true or false. The supply partner can request an SSL version of the creative by setting this to true. |
+| `is_secure` | boolean | True or false. The supply partner can request an SSL version of the creative by setting this to true. |
 | `page_url` | string | The full domain of the bid request (do not pass an encoded URL).<br>**Required:** no |
 | `position` | enum | The position of the placement on the page. Possible values: "above" (above the fold), "below" (below the fold), or "unknown".<br>**Default:** "unknown"<br>**Required:** no |
 | `ext_pub_code` | string | The supply partner code for the publisher.<br>**Required:** no |
@@ -60,7 +60,7 @@ only one of the fields in your JSON-formatted file. If both are included, the in
 | `gender` | enum | The gender of the user viewing the page. Possible values: "male", "female", or "unknown".<br>**Default:** "unknown"<br>**Required:** no |
 | `supply_type` | enum | The display environment. Possible values: "web", "mobile_app", "mobile_web", "in-stream-video", or "other".<br><br>**Tip:** The value of `supply_type` will override the supply type set at the [site](../digital-platform-api/site-service.md) level.<br><br>**Note:** The "in-stream-video" format is **not yet supported**.<br><br>**Default:** "web"<br>**Required:** no |
 
-### Example formatting: blocked_urls
+### Example formatting: `blocked_urls`
 
 ```
 {
@@ -73,7 +73,7 @@ only one of the fields in your JSON-formatted file. If both are included, the in
 
 ## Placement mapping
 
-Xandr will submit a bid only when we can map your request to a placement in Xandr. We look up the following, in the following sequence:
+Xandr will submit a bid only when we can map your request to a placement in Xandr. We are looking up the following in the following sequence:
 
 1. `an_placement_id`
 1. `ext_placement_code`
@@ -99,7 +99,7 @@ If none of the above are available, Xandr will not submit a bid. Note that each 
                    }
     ```
 
-1. POST the JSON-formatted file. Be sure to include your member ID in the querystring.
+1. `POST` the JSON-formatted file. Be sure to include your member ID in the querystring.
 
     ``` 
     curl -X POST -d @bid_request 'https://ib.adnxs.com/asi?member_id=123'
@@ -163,7 +163,7 @@ If none of the above are available, Xandr will not submit a bid. Note that each 
     }
     ```
 
-1. POST the JSON-formatted file. Be sure to include your member ID in the querystring.
+1. `POST` the JSON-formatted file. Be sure to include your member ID in the querystring.
 
     ``` 
     curl -X POST -d @bid_request 'https://ib.adnxs.com/asi?member_id=123'
@@ -228,7 +228,7 @@ If none of the above are available, Xandr will not submit a bid. Note that each 
     }
     ```
 
-1. POST the JSON-formatted file. Be sure to include your member ID in the querystring.
+1. `POST` the JSON-formatted file. Be sure to include your member ID in the querystring.
 
     ``` 
     curl -X POST -d @bid_request 'https://ib.adnxs.com/asi?member_id=123'
@@ -238,7 +238,7 @@ If none of the above are available, Xandr will not submit a bid. Note that each 
 
 If you set up ad profiles to enforce your publishers' preferences, you do not need to specify blocking details in your bid request.
 
-1. Create a JSON-formatted file excluding the fields for blocking technical attributes, creative categories, content categories, urls, and languages.
+1. Create a JSON-formatted file excluding the fields for blocking technical attributes, creative categories, content categories, URLs, and languages.
 
     ``` 
     $ cat bid_request
@@ -262,7 +262,7 @@ If you set up ad profiles to enforce your publishers' preferences, you do not ne
     }
     ```
 
-1. POST the JSON-formatted file. Be sure to include your member ID in the querystring.
+1. `POST` the JSON-formatted file. Be sure to include your member ID in the querystring.
 
     ``` 
     curl -X POST -d @bid_request 'https://ib.adnxs.com/asi?member_id=123' 
@@ -275,12 +275,11 @@ When requesting a VAST video creative:
 - The `ad_format` must be set to "vast".
 - The `width` must be set to 1.
 - The `height` must be set to 1.
-- The request must map to a placement in the Xandr system that allows creatives of the "Video" media type or any combination of the "15-Second VAST", "30-Second VAST", or "Other VAST" media subtypes. If the request maps to a non-video placement, AppNexus will respond with an error (Request ad format does not match the placement format). For details about how we look up the placement to use, see Placement Mapping above.
+- The request must map to a placement in the Xandr system that allows creatives of the "Video" media type or any combination of the "15-Second VAST", "30-Second VAST", or "Other VAST" media subtypes. If the request maps to a non-video placement, AppNexus will respond with an error (Request ad format does not match the placement format). For details about how we look up the placement to use, see [Placement Mapping](#placement-mapping) above.
 - Do not pass `int_blocked_technical_attributes` or `ext_blocked_technical_attributes` to define which VAST video durations you want. Instead, as mentioned above, the Xandr placement should define the allowed VAST video duration.
 - If you have asked Xandr to set up a supply template to include custom parameters in the `ad_tag` field of our bid response, set `template_id` to the ID of that supply template. For more details, see Supply Templates in the Bid Response documentation.
 
-1. Create a JSON-formatted file according to the requirements above. This example assumes that there is a specific placement in the
-    Xandr system defined to allow VAST video creatives. The ID of this placement is passed in the `an_placement_id` field.
+1. Create a JSON-formatted file according to the requirements above. This example assumes that there is a specific placement in the Xandr system defined to allow VAST video creatives. The ID of this placement is passed in the `an_placement_id` field.
 
     ``` 
     $ cat bid_request
@@ -302,7 +301,7 @@ When requesting a VAST video creative:
     }
     ```
 
-1. POST the JSON-formatted file. Be sure to include your member ID in the querystring.
+1. `POST` the JSON-formatted file. Be sure to include your member ID in the querystring.
 
     ``` 
     curl -X POST -d @bid_request 'https://ib.adnxs.com/asi?member_id=123'

@@ -1,6 +1,6 @@
 ---
 title: Create a Product
-description: The article explains how to create a product.
+description: The article explains how to create a product. You can choose the product type and associate any product with product groups.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---

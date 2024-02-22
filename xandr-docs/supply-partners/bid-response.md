@@ -1,6 +1,6 @@
 ---
 title: Supply Partners - Bid Response
-description: In this article, learn about bid responses and their various JSON fields, supply templates, types of errors, and examples to help you understand better.
+description: Learn about bid responses, their JSON fields, supply templates, types of errors, and examples to help you understand better.
 ms.custom: supply-partners
 ms.date: 10/28/2023
 ---
@@ -26,7 +26,7 @@ After you send a bid request, Xandr returns a bid response in JSON format. This 
 |:---|:---|:---|:---|
 | `external_auction_id` | string | The ID of the supply partner auction, as sent in the bid request. | `"A4s24536"` |
 | `appnexus_auction_id` | int | Xandr holds its own auction to select the bid to submit for your auction. This is ID of the Xandr auction event. | `4396943919143109134` |
-| `bid` | decimal | The cpm value of the Xandr bid.  | `0.206367` |
+| `bid` | decimal | The CPM value of the Xandr bid.  | `0.206367` |
 | `creative_id` | int | The ID of the creative that is served if Xandr wins your auction.  | `345634` |
 | `landing_page_url` | string | The landing page URL of the creative.  | `"www.landingpage.com"` |
 | `brand_id` | int | The Xandr ID for the brand of the creative. To map brand IDs to names, use the [Brand Service](../digital-platform-api/brand-service.md). | `12` |
@@ -34,18 +34,15 @@ After you send a bid request, Xandr returns a bid response in JSON format. This 
 | `no_bid` | boolean | If true, Xandr does not have a bid for your auction.   | `false` |
 | `request_error` | boolean | If true, an error prevented Xandr from submitting a bid. | `false` |
 | `request_error_id` | int | The ID of the error. This field is returned only when request_error is true. For all the possible error IDs and their meanings, see **[Errors](#errors)** section below. |`3` |
-| `ad_tag` | string | The ad tag that is placed on the web page if Xandr wins your auction. <br><br> **Note:** If you wish to track clicks, Xandr can add a macro for your click URL: `&pubclick=%%pub_click_url%%`. <br><br>To learn more about this functionality, please reach out to your implementation team. | See [examples](#examples) below. |
+| `ad_tag` | string | The ad tag that is placed on the web page if Xandr wins your auction. <br><br> **Note:** If you wish to track clicks, Xandr can add a macro for your click URL: `&pubclick=%%pub_click_url%%`. <br><br>To learn more about this functionality, reach out to your implementation team. | See [examples](#examples) below. |
 
 ## Supply templates
 
 For VAST video creatives, if you require custom parameters not normally included in the `ad_tag` of the bid response, you can ask Xandr to build a supply template for you. Here's how it works:
 
 1. You communicate directly with your Xandr representative about the custom parameters you would like returned for VAST video creatives.
-
 1. If Xandr agrees with your request, Xandr builds a supply template for you and sends you the ID.
-
 1. In your bid requests for VAST video creatives, you include the supply template ID in the `template_id` field.
-
 1. In bid responses, the supply template adds your custom parameters to the `<Extensions>` section of the `ad_tag`.
 
 ### Example

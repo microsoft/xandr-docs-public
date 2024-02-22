@@ -1,6 +1,6 @@
 ---
 title: Microsoft Curate - Reporting Guide
-description: In this article, you will gain insight into general reporting concepts, understand the functioning of reporting systems, and learn how to effectively utilize them.
+description: Explore the reporting guide to understand general reporting concepts and the functioning of reports, which will help you analyze and optimize your use of Microsoft Curate.
 ms.date: 10/28/2023
 ---
 

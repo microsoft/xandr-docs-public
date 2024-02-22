@@ -1,10 +1,10 @@
 ---
 title: Microsoft Invest - Seller Detected Site Domain Report
-description: This report provides visibility into the actual domains that are being sold, and provides a tag or publisher level health-check.
+description: The Seller Detected Site Domain report provides visibility into the actual domains that are being sold, and provides a tag or publisher level health-check.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Seller detected site domain report
+# Microsoft Invest - Seller Detected Site Domain report
 
 > [!NOTE]
 > This report was deprecated in 2021.
@@ -15,17 +15,17 @@ The report is best utilized as an investigation tool. That is, a seller runs the
 
 In addition, sellers mostly cares about the tags or publishers that are giving them the most revenue - there may be a long tail that is not worth the time to investigate. So, a seller runs this report to see their best performing tags or publishers as well as whether a tag or publisher is problematic.
 
-**Available to Members and Publishers:** This page describes both the member-level version **and** the publisher version; they are essentially the same.
+**Available to Members and Publishers**
+
+This page describes both the member-level version **and** the publisher version; they are essentially the same.
 
 ## Time frame
 
 All dates and times are given in UTC.
 
-**Time ranges**
+### Time ranges
 
-Time ranges define the time period of the data extracted for the report. The following is a complete list of time ranges available for reports.
-
-However, all time ranges are not available for every report.
+Time ranges define the time period of the data extracted for the report. The following is a complete list of time ranges available for reports. However, all time ranges are not available for every report.
 
 - Custom
 - Current Hour
@@ -50,7 +50,7 @@ However, all time ranges are not available for every report.
 - Month to Yesterday
 - Lifetime
 
-**Intervals**
+### Intervals
 
 Intervals determine how your data is grouped together into rows in the report response. The following is a complete list of intervals available for reports. However, all intervals are not available for every report.
 
@@ -102,7 +102,7 @@ For these and other reasons, some networks provide their publishers with an iFra
 
 For example, a publisher is given a snippet of HTML code to put on their pages that includes an iFrame referencing a network's domain, `best-network.net`:
 
-``` pre
+```
 <!-- Publisher's Web Page --> <iframe src="http://best-network.net"> <!-- iFrame Referencing Network Domain --> <script src="http://cooladexchange.net/tag?id=12345"></script> <!-- Ad Exchange Placement serving on Network Domain --> </iframe> 
 ```
 
@@ -113,7 +113,8 @@ The iFrame is located on the publisher's web page, but it is serving its content
 Follow these steps to run your report.
 
 1. Select **Reporting** from the appropriate top menu (depending on how your account has been configured).
-    1. Or, from the Publishers top menu, click on **Prebid Server Premium** > **Analytics** > **Prebid Server Analytics**
+   <br>Or<br>
+   From the Publishers top menu, click on **Prebid Server Premium** > **Analytics** > **Prebid Server Analytics**.
 
 1. Select the relevant report from the list. The **Report** screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
    > [!IMPORTANT]

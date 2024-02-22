@@ -43,6 +43,6 @@ Segment data, whether passed in through a [segment](./working-with-segments.md) 
 
 You can also update segment data at any time without having access to the user via our Batch Segment API.
 
-## Related topics
+## Related topic
 
 - [User ID Mapping with getUID and mapUID](./user-id-mapping-with-getuid-and-mapuid.md)

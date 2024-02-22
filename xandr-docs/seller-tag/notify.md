@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 
 This function sends a notification to a renderer on a page (such as Outstream).
 
-``` pre
+```
 notify(messageType, messagePayload, targetId)
 ```
 
@@ -23,6 +23,6 @@ The parameters listed below can be sent as arguments in the function.
 
 ## Example
 
-``` pre
+```
 apntag.notify("startPlayback", {key: "data"}, "topBanner728x90")
 ```

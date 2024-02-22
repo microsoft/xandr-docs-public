@@ -12,7 +12,7 @@ feature, we explain the syntax and provide an example to demonstrate usage.
 
 > [!NOTE]
 >
-> - Bids that are negative or zero (0) are not supported unless explicitly specified in the feature description. Do not use these expressions or unexpected results may occur. It is best to specify no_bid explicitly using [Smart Leaves](bonsai-smart-leaves.md).
+> - Bids that are negative or zero (0) are not supported unless explicitly specified in the feature description. Do not use these expressions or unexpected results may occur. It is best to specify `no_bid` explicitly using [Smart Leaves](bonsai-smart-leaves.md).
 > - The bids calculated by the model are always expressed in the currency set on the advertiser, even if you have specified a different currency for the campaign.
 
 ## Simple features
@@ -29,7 +29,7 @@ Evaluate impressions based on the user's country.
 
 **Example**:
 
-```pre
+```
 if country = "US":
 5
 elif country = 70:
@@ -50,7 +50,7 @@ Evaluate impressions based on the user's video content inventory.
 
 **Example**:
 
-```pre
+```
 if any video_duration in (1,2), video_delivery_type in (1,2):
 value: 0.050000
 elif every video_genre in (1,2,3), video_rating =1:
@@ -73,7 +73,7 @@ Evaluate impressions based on the user's geographic region.
 
 **Example**:
 
-```pre
+```
 if region = 123:
 5
 elif region = "US:NJ":
@@ -94,7 +94,7 @@ Evaluate impressions based on the user's city.
 
 **Example**:
 
-```pre
+```
 if city = 162:
 5
 elif city = "US:MA:Boston":
@@ -115,7 +115,7 @@ Evaluate impressions based on the user's DMA (designated market area).
 
 **Example**:
 
-```pre
+```
 if dma = 602:
 5
 elif dma = 603:
@@ -137,7 +137,7 @@ Use the Postal Code Service (documented in the [Profile Service](../digital-plat
 
 **Example**:
 
-```pre
+```
 if postal_code in ("CA:J0k 1B0", "US:10010"):
 5
 elif postal_code = 1367515:
@@ -158,7 +158,7 @@ Evaluate impressions based on the user's postal code list.
 
 **Example**:
 
-```pre
+```
 elif postal_code_list[120]:
 value: 1
 ```
@@ -175,14 +175,14 @@ Evaluate impressions based on the user's deal list.
 
 **Example**:
 
-```pre
+```
 elif deal_list[4107]:
 value: 2
 ```
 
 ### Size
 
-Evaluate impressions based on placement size. Please note that in case `promo_sizes` are passed in the ad call, the evaluation will be performed using the primary size only.
+Evaluate impressions based on placement size. Note that in case `promo_sizes` are passed in the ad call, the evaluation will be performed using the primary size only.
 
 **Keyword**: `size`
 
@@ -192,7 +192,7 @@ Evaluate impressions based on placement size. Please note that in case `promo_si
 
 **Example**:
 
-```pre
+```
 if size = "300x250":
 5
 elif size = "250x250":
@@ -213,7 +213,7 @@ Evaluate impressions based on specific days of the week.
 
 **Example**:
 
-```pre
+```
 if user_day in (1,2,3,4,5):
 5
 else:
@@ -228,11 +228,11 @@ Evaluate impressions based on specific hours of the day.
 
 **Operator**: Any
 
-**Value**: Hour of the day, in the user's timezone. Possible values: `0` - `23`, where `0` is midnight and `23` is 11pm.
+**Value**: Hour of the day, in the user's timezone. Possible values: `0` - `23`, where `0` is midnight and `23` is 11 pm.
 
 **Example**:
 
-```pre
+```
 if user_hour in (18,19,20,21,22,23):
 5
 elif user_hour in (14,15,16,17):
@@ -253,7 +253,7 @@ Evaluate impressions based on the user's operating system.
 
 **Example**:
 
-```pre
+```
 if os_family = 2:
 5
 elif os_family = "Apple iOS":
@@ -280,7 +280,7 @@ Evaluate impressions based on the specific version of the user's operating sys
 
 **Example**:
 
-```pre
+```
 if os_extended = 81:
 5
 elif os_extended = 82:
@@ -304,7 +304,7 @@ Evaluate impressions based on the user's browser.
 
 **Example**:
 
-```pre
+```
 if browser = 8:
 3
 elif browser = "Safari (all versions)":
@@ -328,7 +328,7 @@ Evaluate impressions based on the browser language.
 
 **Example**:
 
-```pre
+```
 if language = 1:
 3
 elif language = 0:
@@ -353,7 +353,7 @@ Evaluate impressions based on the user's gender. Note that gender is available 
 
 **Example**:
 
-```pre
+```
 if user_gender in (male, female):
 5
 else:
@@ -372,7 +372,7 @@ Evaluate impressions based on domain.
 
 **Example**:
 
-```pre
+```
 if domain = "food.com":
 3
 elif domain = "books.com":
@@ -386,7 +386,7 @@ else:
 Evaluates impressions based on IP address.
 
 > [!NOTE]
-> Customers in countries that conform to GDPR regulations should be aware that when targeting IP addresses or IP ranges, either in your line item, Bonsai tree, or logistic regression model, there is a possibility the address may be truncated. Please see our [Part of Service Policies](../policies-regulations/index.yml) for details on this process.
+> Customers in countries that conform to GDPR regulations should be aware that when targeting IP addresses or IP ranges, either in your line item, Bonsai tree, or logistic regression model, there is a possibility the address may be truncated. For details on this process, see our [Service Policies](../policies-regulations/index.yml).
 
 **Keyword**: `ip_address`
 
@@ -396,7 +396,7 @@ Evaluates impressions based on IP address.
 
 **Example**:
 
-```pre
+```
 if ip_address in (192.168.0.1, 10.0.0.0/24):
 5
 else:
@@ -419,7 +419,7 @@ Evaluate impressions based on specific placement positions relative to the fold 
 
 **Example**:
 
-```pre
+```
 if position = "above":
 3
 elif position = 2:
@@ -443,7 +443,7 @@ Evaluate impressions based on specific placements.
 
 **Example**:
 
-```pre
+```
 if placement = 300:
 5
 elif placement = 301:
@@ -467,7 +467,7 @@ Evaluate impressions based on specific placements groups.
 
 **Example**:
 
-```pre
+```
 if placement_group = 155:
 5
 elif placement_group = 156:
@@ -491,7 +491,7 @@ Evaluate impressions based on specific publishers.
 
 **Example**:
 
-```pre
+```
 if publisher = 1300:
 5
 elif publisher = 1301:
@@ -512,7 +512,7 @@ Evaluate impressions based on specific seller members.
 
 **Example**:
 
-```pre
+```
 if any seller_member_id = 100, seller_member_id = 175:
 4
 elif any seller_member_id = 500, seller_member_id = 501:
@@ -537,7 +537,7 @@ Evaluate impressions based on specific types of supply.
 
 **Example**:
 
-```pre
+```
 if supply_type = "web":
 4
 elif supply_type = "mobile_web":
@@ -564,7 +564,7 @@ Evaluate impressions based on specific types of physical devices.
 
 **Example**:
 
-```pre
+```
 if device_type = "pc & other devices":
 5
 elif device_type = "tablet":
@@ -590,7 +590,7 @@ Evaluate impressions based on specific models of physical devices.
 
 **Example**:
 
-```pre
+```
 if device_model = 46:
 5
 elif device_model = 47:
@@ -613,7 +613,7 @@ Evaluate impressions based on specific mobile carriers.
 
 **Example**:
 
-```pre
+```
 if carrier = 14:
 4
 elif carrier = "Sprint":
@@ -634,7 +634,7 @@ Evaluate impressions based on specific mobile apps.
 
 **Example**:
 
-```pre
+```
 if mobile_app = 1:
 5
 elif mobile_app = 2:
@@ -657,7 +657,7 @@ Evaluate impressions based on specific mobile app installations.
 
 **Example**:
 
-```pre
+```
 if mobile_app_instance = 1:
 5
 elif mobile_app_instance = 2:
@@ -680,7 +680,7 @@ Evaluate impressions based on specific mobile app bundles.
 
 **Example**:
 
-```pre
+```
 if mobile_app_bundle in ("553834731", "com.king.candycrushsaga"):
 5
 else:
@@ -700,7 +700,7 @@ This value can be absent, which indicates that the user does not have a Xandr co
 
 **Example**:
 
-```pre
+```
 if cookie_age > 30:
 2
 else:
@@ -721,7 +721,7 @@ else:
 
 **Example**:
 
-```pre
+```
 if predicted_iab_view_rate = 1:
 5
 elif predicted_iab_view_rate >= 0.75:
@@ -744,7 +744,7 @@ Evaluate web display impressions by how likely they are to be measured as viewab
 
 **Example**:
 
-```pre
+```
 if predicted_iab_view_rate_over_total = 1:
 5
 elif predicted_iab_view_rate_over_total >= 0.75:
@@ -767,7 +767,7 @@ Evaluate web video impressions by how likely they are to be measured as viewable
 
 **Example**:
 
-```pre
+```
 if predicted_iab_video_view_rate = 1:
 5
 elif predicted_iab_video_view_rate >= 0.75:
@@ -791,7 +791,7 @@ impressions) by the custom definition of 100% pixels viewable for at least 1 sec
 
 **Example**:
 
-```pre
+```
 if predicted_100pv1s_display_view_rate = 1:
 5
 elif predicted_100pv1s_display_view_rate >= 0.75:
@@ -814,7 +814,7 @@ Evaluate display video impressions by how likely they are to be measured as view
 
 **Example**:
 
-```pre
+```
 if predicted_100pv50pd_video_view_rate = 1:
 5
 elif predicted_100pv50pd_video_view_rate >= 0.75:
@@ -837,7 +837,7 @@ Evaluate web display impressions by how likely they are to be measured as viewab
 
 **Example**:
 
-```pre
+```
 if predicted_100pv1s_display_view_rate_over_total = 1:
 5
 elif predicted_100pv1s_display_view_rate_over_total >= 0.75:
@@ -860,7 +860,7 @@ Evaluate web video impressions by how likely they are to be measured as viewable
 
 **Example**:
 
-```pre
+```
 if predicted_100pv50pd_video_view_rate = 1:
 5
 elif predicted_100pv50pd_video_view_rate >= 0.75:
@@ -883,7 +883,7 @@ Evaluate web video impressions by how likely they are to be measured as viewable
 
 **Example**:
 
-```pre
+```
 if predicted_100pv50pd_video_view_rate_over_total = 1:
 5
 elif predicted_100pv50pd_video_view_rate_over_total >= 0.75:
@@ -908,7 +908,7 @@ Evaluate web video impressions by how likely they are to be completed, as determ
 
 **Example**:
 
-```pre
+```
 if predicted_video_completion_rate = 1:
 5
 elif predicted_video_completion_rate >= 0.75:
@@ -931,7 +931,7 @@ Evaluates impressions based on their intended audience as determined by the Xand
 
 **Example**:
 
-```pre
+```
 if appnexus_intended_audience = "mature":
 1
 else:
@@ -950,7 +950,7 @@ Evaluates impressions based on their intended audience as determined by self-aud
 
 **Example**:
 
-```pre
+```
 if appnexus_intended_audience = "general":
 1
 else:
@@ -969,7 +969,7 @@ Evaluates whether inventory has been audited by Xandr.
 
 **Example**:
 
-```pre
+```
 if appnexus_audited = true:
 1.0
 else:
@@ -988,7 +988,7 @@ Evaluates whether inventory has been audited by the publisher.
 
 **Example**:
 
-```pre
+```
 if self_audited = true:
 1.0
 else:
@@ -1008,7 +1008,7 @@ Evaluates whether the user belongs to a randomly-assigned group. Each Xandr use
 
 **Example**:
 
-```pre
+```
 if user_group <= 249:
 1.0
 elif user_group <= 499:
@@ -1033,7 +1033,7 @@ Evaluate impressions based on the number of impressions seen by a user for the c
 
 **Example**:
 
-```pre
+```
 if campaign_month_frequency < 2 :
 5
 else :
@@ -1052,7 +1052,7 @@ Evaluate impressions based on the number of impressions seen by a user for the c
 
 **Example**:
 
-```pre
+```
 if line_item_month_frequency < 2:
 5
 else:
@@ -1071,7 +1071,7 @@ Evaluate impressions based on the number of ads seen by a user on the current mo
 
 **Example**:
 
-```pre
+```
 if advertiser_month_frequency < 2:
 5
 else:
@@ -1090,7 +1090,7 @@ Evaluate impressions based on the number of ads seen by a user on the current ho
 
 **Example**:
 
-```pre
+```
 if campaign_hour_frequency < 2:
 5
 else:
@@ -1109,7 +1109,7 @@ Evaluate impressions based on the number of ads seen by a user on the current ho
 
 **Example**:
 
-```pre
+```
 if line_item_hour_frequency < 2:
 5
 else:
@@ -1128,7 +1128,7 @@ Evaluate impressions based on the number of ads seen by a user on the current ho
 
 **Example**:
 
-```pre
+```
 if advertiser_hour_frequency < 2:
 2
 else:
@@ -1147,7 +1147,7 @@ Evaluate impressions based on the number of ads seen by a user on the current 
 
 **Example**:
 
-```pre
+```
 if campaign_week_frequency < 2 :
 5
 else :
@@ -1166,7 +1166,7 @@ Evaluate impressions based on the number of ads seen by a user on the current w
 
 **Example**:
 
-```pre
+```
 if line_item_week_frequency < 2:
 5
 else:
@@ -1185,7 +1185,7 @@ Evaluate impressions based on the number of ads seen by a user on the current w
 
 **Example**:
 
-```pre
+```
 if advertiser_week_frequency < 2:
 5
 else:
@@ -1204,7 +1204,7 @@ Evaluate impressions based on the number of ads seen by a user on the current da
 
 **Example**:
 
-```pre
+```
 if campaign_day_frequency < 2 :
 5
 else :
@@ -1223,7 +1223,7 @@ Evaluate whether recency data is available for a user, and, if available, the nu
 
 **Example**:
 
-```pre
+```
 if campaign_recency < 2 :
 2
 else :
@@ -1242,7 +1242,7 @@ Evaluate whether recency data is available for a user, and, if available, the nu
 
 **Example**:
 
-```pre
+```
 if line_item_recency < 2:
 5
 else:
@@ -1261,7 +1261,7 @@ Evaluate whether recency data is available for a user, and, if available, the nu
 
 **Example**:
 
-```pre
+```
 if advertiser_recency < 2:
 5
 else:
@@ -1280,7 +1280,7 @@ Evaluate impressions based on creative.
 
 **Example**:
 
-```pre
+```
 if creative=12345:
 5
 else:
@@ -1299,7 +1299,7 @@ Evaluate impressions based on creative size.
 
 **Example**:
 
-```pre
+```
 if creative_size = "300x250":
 5
 elif creative_size = "250x250":
@@ -1320,7 +1320,7 @@ Evaluate impressions based on Deal ID.  
 
 **Example**:
 
-```pre
+```
 if deal_id in (12345,98765):
 1.0
 else:
@@ -1339,7 +1339,7 @@ Evaluate impressions based on a randomizing variable between `0` and `1`. When u
 
 **Example**:
 
-```pre
+```
 if random1 > 0.8:
 1.0
 elif random1 range (0.4, 0.8):
@@ -1360,7 +1360,7 @@ Evaluate impressions based on the Inventory URL ID\* which maps to an inventory 
 
 **Example**:
 
-```pre
+```
 if inventory_url_id=12345:
 5
 else:
@@ -1371,7 +1371,7 @@ else:
 
 ## Compound features
 
-The simple features above let you evaluate a single aspect of the impression (country, cookie age, mobile app, etc.). The compound [Segment](#segment) and [Frequency/Recency](#frequencyrecency) features are more nuanced; they let you evaluate multiple attributes of these features, such as the age of a segment or the segment value.
+The simple features above let you evaluate a single aspect of the impression (country, cookie age, mobile app, etc.). The compound [Segment](#segment) and [Frequency/Recency](#frequencyrecency) features are more nuanced; they let you evaluate multiple attributes of these features, such as the age of a segment or the segment value.
 
 ### Segment
 
@@ -1393,7 +1393,7 @@ Evaluate impressions based on the presence of the user in a first-party or third
 
 **Example**:
 
-```pre
+```
 if any segment[12345], segment[23456], segment[34567]:
 5
 elif any segment[76543], segment[65432], segment[54321]:
@@ -1421,7 +1421,7 @@ Evaluate impressions based on the minutes since the user was added to a first-pa
 
 **Example**:
 
-```pre
+```
 if segment[12345].age < 5:
 2
 else:
@@ -1431,7 +1431,7 @@ else:
 #### Segment value
 
 Evaluate impressions based on a user-defined value. The value may be passed in a number of ways, for example, through the Batch Segment
-Service or a first-party or third-party segment query string. For more information on passing values through segment query strings, see "[Segment Pixels Advanced](../invest/segment-pixels-advanced.md)" in documentation.
+Service or a first-party or third-party segment query string. For more information on passing values through segment query strings, see [Segment Pixels Advanced](../invest/segment-pixels-advanced.md) in documentation.
 
 > [!NOTE]
 > If the user is not in the segment, this feature evaluates to `False`.
@@ -1440,13 +1440,13 @@ Service or a first-party or third-party segment query string. For more informa
 
 **Attribute**: `.value`
 
-**Operator**: `<` , `>` , or `=`
+**Operator**: `<`, `>`, or `=`
 
 **Value**: Non-zero, positive integer representing the user-defined value.
 
 **Example**:
 
-```pre
+```
 if segment[12345].value = 5:
 2
 else:
@@ -1478,7 +1478,7 @@ campaign.
 
 **Example**:
 
-```pre
+```
 if line_item[15].frequency > 0:
 2
 elif campaign[20].frequency > 0:
@@ -1503,7 +1503,7 @@ Evaluate impressions based on the number of ads seen by a user over the lifetim
 
 **Example**:
 
-```pre
+```
 if campaign[20].lifetime_frequency < 2:
 5
 elif advertiser[12].lifetime_frequency < 10:
@@ -1528,7 +1528,7 @@ Evaluate impressions based on the number of impressions seen by a user on the cu
 
 **Example**:
 
-```pre
+```
 if campaign[20].day_frequency < 2:
 5
 elif advertiser[12].day_frequency < 10:
@@ -1554,7 +1554,7 @@ be determined for a user for all ads under an advertiser, line item, or campaign
 
 **Example**:
 
-```pre
+```
 if not advertiser.recency:
 0.1
 elif advertiser[3].recency > 60:
@@ -1567,7 +1567,7 @@ else:
 
 #### Example of multiple segment attributes
 
-``` pre
+```
 # This tree determines a bid price as follows:
 # 1. If the user is in segment 3 and has a value greater than 1 or has been in the segment for 5 minutes, bid $1.
 # 2. Otherwise, bid $2.
@@ -1579,7 +1579,7 @@ else:
 
 #### Example of recency/frequency syntax with multiple attributes
 
-``` pre
+```
 # This tree determines a bid price as follows:
 # 1. If there's no recency data for this user related to ads in line item 3, bid $1.
 # 2. If the user has seen an ad in line item 3 more than 5 minutes ago and the user has seen an ad in campaign 2 less than four times today, bid $3.
@@ -1597,7 +1597,7 @@ else:
 
 #### Example of multiple compound attributes
 
-``` pre
+```
 # This tree determines a bid price as follows:
 # 1. If this user is in segment 3 and has a value greater than 1 or has been in the segment for 5 minutes, bid $1.
 # 2. If the user has seen an ad in line item 3 more than 5 minutes ago and an ad in campaign 2 less than four times today, bid $3.

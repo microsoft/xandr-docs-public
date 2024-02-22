@@ -1,6 +1,6 @@
 ---
 title: Availability Lookup
-description: The article describes the availability lookup screen. 
+description: Explore new Availability Lookup, coexisting with old Check Availability. Quick Start Guide eases yor navigation.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
@@ -10,8 +10,7 @@ ms.custom: yield-analytics-ui
 > [!TIP]
 > The old Check Availability screen will still be active for a short period of time. If you prefer to continue to use the old screen, the click path to access it is: **Availability > Check Availability**. The new and old screens will work in unison during this transition time period.
 
-The Availability Lookup screen is accessed by the following click path: **Availability > Availability Lookup
-(Beta)**.
+The Availability Lookup screen is accessed by the following click path: **Availability > Availability Lookup(Beta)**.
 
 A Quick Start Guide is available, to help you quickly navigate the system.
 

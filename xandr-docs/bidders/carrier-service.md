@@ -12,10 +12,10 @@ Mobile carriers, also known as wireless carriers or mobile network operators, ow
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| GET | [https://api.adnxs.com/carrier](https://api.adnxs.com/carrier) | View all carriers. |
-| GET | [https://api.adnxs.com/carrier/CARRIER_ID](https://api.adnxs.com/carrier/CARRIER_ID) | View a specific carrier. |
-| GET | [https://api.adnxs.com/carrier?name=CARRIER_NAME](https://api.adnxs.com/carrier?name=CARRIER_NAME) | View a specific carrier. |
-| GET | [https://api.adnxs.com/carrier/meta](https://api.adnxs.com/carrier/meta) | Find out which fields you can filter and sort by. |
+| `GET` | [https://api.adnxs.com/carrier](https://api.adnxs.com/carrier) | View all carriers. |
+| `GET` | [https://api.adnxs.com/carrier/CARRIER_ID](https://api.adnxs.com/carrier/CARRIER_ID) | View a specific carrier. |
+| `GET` | [https://api.adnxs.com/carrier?name=CARRIER_NAME](https://api.adnxs.com/carrier?name=CARRIER_NAME) | View a specific carrier. |
+| `GET` | [https://api.adnxs.com/carrier/meta](https://api.adnxs.com/carrier/meta) | Find out which fields you can filter and sort by. |
 
 ## JSON fields
 

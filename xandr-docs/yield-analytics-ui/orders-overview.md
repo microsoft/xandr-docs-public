@@ -7,11 +7,10 @@ ms.custom: yield-analytics-ui
 
 # Orders overview
 
-From the **Orders** tab in Yield Analytics, you can find a specific order or order line, drill into order/order line details, chart an order's performance, and examine prospective delivery with links to Scenario Manager.
+From the **Orders** tab in Yield Analytics, you can find a specific order or order line, drill into order/order line details, chart an order's performance, and examine prospective delivery with links to **Scenario Manager**.
 
-In addition, use Evaluate Orders to compare it to all orders in the system. This helps to uncover opportunities to improve yield and
-to evaluate outgoing proposals before they are sent to prospective customers. Sales planners and account managers often use Evaluate
-Orders when building media plans and proposals in response to an advertiser's RFP.
+In addition, use **Evaluate Orders** to compare it to all orders in the system. This helps to uncover opportunities to improve yield and
+to evaluate outgoing proposals before they are sent to prospective customers. Sales planners and account managers often use **Evaluate Orders** when building media plans and proposals in response to an advertiser's RFP.
 
 ## Related topics
 

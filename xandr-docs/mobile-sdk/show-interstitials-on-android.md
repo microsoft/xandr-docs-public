@@ -1,20 +1,20 @@
 ---
-title : Show Interstitials on Android
-description : This page has instructions and code samples for showing interstitial ads on Android.
-ms.custom : android-sdk
-ms.date : 10/28/2023
+title: Show Interstitials on Android
+description: This page gives an overview on instructions and code samples for showing interstitial ads on Android.
+ms.custom: android-sdk
+ms.date: 10/28/2023
 ---
 
 
 # Show interstitials on Android
 
-This page has instructions and code samples for showing interstitial ads
-on Android.
+This page has instructions and code samples for showing interstitial ads on Android.
 
 > [!NOTE]
 > Interstitial Ad Views and Placement/Creative Media Types
 >
 > Most of the time, the placements used in your SDK interstitial ad views should be configured to allow the *Banner* media type. This will give you the maximum amount of demand. You may still choose the *interstitial* media type depending on the type of ad you want to show, e.g.:
+>
 > - [Ad Ops - Set Up MRAID Full Screen Interstitials](ad-ops-set-up-mraid-full-screen-interstitials.md)
 > - [Ad Ops - Set Up Static Image Full Screen Interstitials](ad-ops-set-up-static-image-full-screen-interstitials.md)
 > - [Ad Ops - Set Up HTML Responsive Interstitials (non-MRAID)](ad-ops-set-up-html-responsive-interstitials-non-mraid.md)
@@ -23,28 +23,12 @@ on Android.
 
 ## Overview
 
-Showing interstitial ads is a little more work. In addition to setting
-up an `InterstitialAdView` with your placement ID, you must implement
-the `AdListener` interface, which includes methods that tell you when an
-interstitial ad has successfully finished loading, or when the request
-has failed.
+Showing interstitial ads is a little more work. In addition to setting up an `InterstitialAdView` with your placement ID, you must implement the `AdListener` interface, which includes methods that tell you when an interstitial ad has successfully finished loading, or when the request has failed.
 
-Furthermore, actually showing interstitial ads to users is a two-step
-process:
+Furthermore, actually showing interstitial ads to users is a two-step process:
 
-1. Call `InterstitialAdView.loadAd()` to fetch the ad contents from our
-    server and cache them locally. Note that any ad content is rendered
-    in a WebView at the time it is fetched from the ad server and
-    cached. This means that any third-party tracking pixels that are
-    part of the ad content will be fired at the time of the call
-    to `loadAd()`, not when the call to `show()` is made at a later
-    time.
-1. When you're ready to show the interstitial ad to the user,
-    call `show()`. This needs to happen within approximately 4 minutes
-    of the call to `loadAd()` in order for the impression to be counted
-    by Xandr. (For the exact timing in
-    milliseconds, see the value of `InterstitialAdView.MAX_AGE` in the
-    source code.)
+1. Call `InterstitialAdView.loadAd()` to fetch the ad contents from our server and cache them locally. Note that any ad content is rendered in a WebView at the time it is fetched from the ad server and cached. This means that any third-party tracking pixels that are part of the ad content will be fired at the time of the call to `loadAd()`, not when the call to `show()` is made at a later time.
+1. When you're ready to show the interstitial ad to the user, call `show()`. This needs to happen within approximately 4 minutes of the call to `loadAd()` in order for the impression to be counted by Xandr. (For the exact timing in milliseconds, see the value of `InterstitialAdView.MAX_AGE` in the source code.)
 
 > [!NOTE]
 > The close button appears after ten seconds by default. You can set the delay using `InterstitialAdView.setCloseButtonDelay(int closeButtonDelay)`.
@@ -133,9 +117,7 @@ public class MainActivity extends Activity implements AdListener {
 
 ## Using custom interstitial sizes
 
-By default, if you don't specify an ad size, the SDK will fetch ads in
-any of the sizes below that are less than or equal to the size of the
-device's screen.
+By default, if you don't specify an ad size, the SDK will fetch ads in any of the sizes below that are less than or equal to the size of the device's screen.
 
 - 1x1 (always sent)
 - The detected size of the screen (always sent)
@@ -144,12 +126,7 @@ device's screen.
 - 900x500
 - 1024x1024
 
-If you want to show interstitial ads in sizes other than the defaults,
-use the `setAllowedSizes` method on the interstitial ad view as shown
-below. Note that the detected size of the screen will still be passed as
-the primary size. The sizes set using `setAllowedSizes` will be passed
-in as additional size on the interstitial ad view and will replace the
-defaults of 300x250, 320x480, 900x500, and 1024x1024.
+If you want to show interstitial ads in sizes other than the defaults, use the `setAllowedSizes` method on the interstitial ad view as shown below. Note that the detected size of the screen will still be passed as the primary size. The sizes set using `setAllowedSizes` will be passed in as additional size on the interstitial ad view and will replace the defaults of 300x250, 320x480, 900x500, and 1024x1024.
 
 ``` 
 // Android: Java code to show interstitial ads in sizes other than the defaults (optional)
@@ -165,11 +142,7 @@ iav.setAllowedSizes(test_array_list);
 
 ## Auto-Close an interstitial
 
-If you want to auto-close an interstitial ad after a specific timeout
-period, do not call `show()` as described in the above sections.
-Instead, call `showWithAutoDismissDelay(delayinseconds)`,
-where `delayinseconds` is the number of seconds the ad will be displayed
-before it closes.
+If you want to auto-close an interstitial ad after a specific timeout period, do not call `show()` as described in the above sections. Instead call `showWithAutoDismissDelay(delayinseconds)`, where `delayinseconds` is the number of seconds the ad will be displayed before it closes.
 
 ``` 
 // This will show an interstitial ad, wait for 10 seconds, then auto close it.

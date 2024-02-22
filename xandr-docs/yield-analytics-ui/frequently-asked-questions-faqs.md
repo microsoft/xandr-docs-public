@@ -1,6 +1,6 @@
 ---
-title: Frequently Asked Questions (FAQs)
-description: In this article, explore about the Frequently Asked Questions (FAQs).
+title: Ad-Juster Discrepancy
+description: In this article, explore several possible reasons for a Ad-Juster discrepancy.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---

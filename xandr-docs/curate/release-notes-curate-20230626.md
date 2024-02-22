@@ -1,6 +1,6 @@
 ---
 title: Microsoft Curate - Open Beta for Troubleshooting by Seller Deal
-description: The new articles describes the Release Note (published in 26th of June, 2023) that talks about the latest updates. The note explains the open beta for troubleshooting.
+description: Explore the June 26, 2023 release, delving into updates and highlighting the open beta for troubleshooting in the detailed note.
 ms.date: 10/28/2023
 ms.topic: release-notes
 ---

@@ -1,6 +1,6 @@
 ---
 title: Xandr Bidder Release Notes
-description: The article provides information about Xandr's product releases, updates, and deprecations.
+description: Explore the product releases, updates, and deprecations, with a listed table that accommodates potential date shifts.
 ms.date: 10/28/2023
 ---
 

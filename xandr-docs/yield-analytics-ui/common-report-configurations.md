@@ -1,6 +1,6 @@
 ---
 title: Common Report Configurations
-description: The article explains the most common report configurations in Yield Analytics.
+description: Explore common Yield Analytics reports, identify At-Risk items, review Zombie Order Lines, track Advertiser and Sales performance, analyze Pricing trends.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
@@ -15,7 +15,7 @@ Customers use this to understand which order lines are projected to underdelive
 
 **Configuration**:
 
-:::image type="content" source="media/ii.png" alt-text="The screenshot explains most common configurations and the the selected values of the configuration.":::
+:::image type="content" source="media/ii.png" alt-text="Screenshot that explains most common configurations and the selected values of the configuration.":::
 
 ## Zombie order line report
 
@@ -23,7 +23,7 @@ Customers use this report to understand if there are any order lines allocatin
 
 **Configuration**:
 
-:::image type="content" source="media/jj.png" alt-text="The screenshot that explains the Zombie Order Line Report used by the customers to understand if there are any order lines allocating inventory that are in a paused status and may need to be cancelled out.":::
+:::image type="content" source="media/jj.png" alt-text="Screenshot that explains Zombie Order Line Report which helps customers identify paused order lines needing cancellation.":::
 
 ## Advertiser scorecard
 
@@ -31,7 +31,7 @@ Customers use this report to track KPIs for their top advertiser accounts, su
 
 **Configuration**:
 
-:::image type="content" source="media/advertiser-scorecard.png" alt-text="The screenshot that explains the Advertiser scorecard report used by the customers to track KPIs for their top advertiser accounts, such as revenue, yield, and consumption.":::
+:::image type="content" source="media/advertiser-scorecard.png" alt-text="Screenshot that explains Advertiser scorecard report to track KPIs for their top advertiser accounts, such as revenue, yield, and consumption.":::
 
 ## Sales scorecard
 
@@ -47,7 +47,7 @@ Customers use this report to quickly access historical pricing trends by produ
 
 **Configuration**:
 
-:::image type="content" source="media/mm.png" alt-text="The screenshot that explains the Pricing dashboard report used by the customers to access historical pricing trends by product, based on the way they sell.":::
+:::image type="content" source="media/mm.png" alt-text="Screenshot that explains Pricing dashboard for customers, accessing historical pricing trends by product, based on their sales approach.":::
 
 ## Availability dashboard
 

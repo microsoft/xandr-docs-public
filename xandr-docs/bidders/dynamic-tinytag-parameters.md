@@ -1,6 +1,6 @@
 ---
 title: Dynamic TinyTag Parameters
-description: The article discusses a TinyTag ID linked to static data in the Xandr database. This TinyTag allows dynamic addition or overwriting of certain parameters during the TinyTag Request or ad call.
+description: Enable dynamic addition or overwriting of parameters in the database with TinyTag ID, linking to static data for ad calls.
 ms.date: 10/28/2023
 ---
 

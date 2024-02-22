@@ -1,13 +1,12 @@
 ---
 title: Bidders - Device Make Service
-description: The article introduces a Device Make Service, detailing mobile devices categorized by manufacturer (make) and specific product (model). This read-only service in the Xandr system enables users to view registered mobile device makes, allowing mapping of make IDs to names and codes.
+description: Explore the Device Make Service that categorizes mobile devices by manufacturer and model, offering read-only access to view and map make IDs.
 ms.date: 10/28/2023
 ---
 
 # Bidders - Device make service
 
-Mobile devices are categorized by make and model, where make is generally the manufacturer of the device (i.e., Apple) and model is
-generally the specific product (i.e., iPhone). The read-only Device Make Service allows you to see what makes of mobile devices are registered in the Xandr system. You can use this service to map device make IDs to names and codes.
+Mobile devices are categorized by make and model, where make is generally the manufacturer of the device (i.e., Apple) and model is generally the specific product (i.e., iPhone). The read-only Device Make Service allows you to see what makes of mobile devices are registered in the Xandr system. You can use this service to map device make IDs to names and codes.
 
 ## REST API
 

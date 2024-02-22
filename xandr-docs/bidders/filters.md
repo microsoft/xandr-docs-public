@@ -1,6 +1,6 @@
 ---
 title: Filters
-description: The article describes the filters.
+description: Apply filters to modify creative lists. Access Filters screen, select preferences, and click Apply Filters. Cancel button undoes all entries.
 ms.date: 10/28/2023
 ---
 

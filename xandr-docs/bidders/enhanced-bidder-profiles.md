@@ -1,13 +1,12 @@
 ---
 title: Enhanced Bidder Profiles
-description: The article discusses improvements to bidder profiles and provides an overview of high-level changes. 
+description: Enhance bidder profiles for targeted traffic. Xandr collaborates to tailor profiles, ensuring alignment with business requirements.
 ms.date: 10/28/2023
 ---
 
 # Enhanced Bidder profiles
 
-Bidder profiles filter traffic and allow bidders to apply business rules on objects. This is to ensure specific types of traffic are either received or not received. Xandr will partner with you, and provide the proper tools to ensure you have a profile that
-matches your business needs.
+Bidder profiles filter traffic and allow bidders to apply business rules on objects. This is to ensure specific types of traffic are either received or not received. Xandr will partner with you, and provide the proper tools to ensure you have a profile that matches your business needs.
 
 ## High-level changes
 
@@ -18,15 +17,13 @@ For an list of changes from legacy to the current enhanced bidder profiles, plea
   - For more information about the change in hierarchy, please see here: [Hierarchy and Ad Type Targeting for Enhanced Bidder Profiles](hierarchy-and-ad-type-targeting-for-enhanced-bidder-profiles.md).
 - Ad type filtering and targeting have been added.
   - You will now be able to block/target native, banner, video, audio
-  - For more information about ad type targeting, please see here: [Hierarchy and Ad Type Targeting for Enhanced Bidder
-    Profiles](hierarchy-and-ad-type-targeting-for-enhanced-bidder-profiles.md)
+  - For more information about ad type targeting, please see here: [Hierarchy and Ad Type Targeting for Enhanced Bidder  Profiles](hierarchy-and-ad-type-targeting-for-enhanced-bidder-profiles.md)
 - Removal of passthrough percent.
-  - You can now set QPS caps per DC. 
+  - You can now set QPS caps per DC.
   - For more information on how to set a QPS cap, please see here: [Bidder Instance Service](bidder-instance-service.md)
 - Addition of Exchange targeting
   - We have grouped our inventory in easy-to-understand groups
-  - For more information about exchanges, please see
-    here: [Exchange Service](exchange-service.md)
+  - For more information about exchanges, please see here: [Exchange Service](exchange-service.md)
 
 ## REST API
 

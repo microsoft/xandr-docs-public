@@ -1,6 +1,6 @@
 ---
 title: Bid Response - FAQ
-description: In this article, explore answers to frequently asked questions about the process of responding to bids, bid preparation, submission, and related topics.
+description: In this article, explore answers to frequently asked questions about the process of responding to bids, bid preparation, and submission.
 ms.date: 10/28/2023
 ---
 
@@ -71,14 +71,14 @@ request these may be distributed between one or more auctions.
 ### Can I customize my creative per impression?
 
 When you upload a creative (see [Creative Service](creative-service.md) and [Creative - FAQ](creative---faq.md)), you can specify Xandr
-macros as well as custom macros in the content of the creative. Macros are in the form ${MACRO_NAME}.
+macros as well as custom macros in the content of the creative. Macros are in the form `${MACRO_NAME}`.
 
-The complete list of Xandr macros is available on the [Xandr Macros](xandr-macros.md) page. These macros are automatically populated with the appropriate data when the creative is served. For example, ${PRICE_PAID} is the cpm that it cost to actually win that impression.
+The complete list of Xandr macros is available on the [Xandr Macros](xandr-macros.md) page. These macros are automatically populated with the appropriate data when the creative is served. For example, `${PRICE_PAID}` is the cpm that it cost to actually win that impression.
 
 > [!WARNING]
 > Macros specified when uploading to the Creative Service must be either Xandr macros or custom macros, NOT OpenRTB macros. OpenRTB macros can be used only in the bid response.
 
-If you have determined, for example, that this user is part of your user group ABC, you can include a custom macro in the creative's content. In the response object, in the [Bid Response](incoming-bid-response-from-bidders.md), you can specify the values of any custom macros. The following excerpt will replace the custom macro ${MY_USER_GROUP} with ABC and ${SOMETHING_ELSE} with 123.
+If you have determined, for example, that this user is part of your user group ABC, you can include a custom macro in the creative's content. In the response object, in the [Bid Response](incoming-bid-response-from-bidders.md), you can specify the values of any custom macros. The following excerpt will replace the custom macro `${MY_USER_GROUP}` with ABC and `${SOMETHING_ELSE}` with 123.
 **Custom macros are applied after Xandr macros**, so if you have a custom macros of the same name as a Xandr macro, the Xandr value for that macro will take precedence and your value will be ignored.
 
 ``` 
@@ -116,7 +116,7 @@ There are several ways you can determine whether you've won an auction:
 
 ### Why aren't custom macros populating?
 
-The JSON format of the bid response is very particular in this area. Please check that you are following the exact format of the object.
+The JSON format of the bid response is very particular in this area. Check that you are following the exact format of the object.
 Specifically, all macros must be replaced with string values. If the JSON for the bid response does not have quote marks around the
 replacement value, that value will not be interpreted as a string and will thus not be replaced by the impression bus.
 

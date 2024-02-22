@@ -6,8 +6,7 @@ description: The article describes how you can manually create event code based 
 
 You can manually create event code based on a template and deploy it on your website.
 
-Use the following template to create the code for your standard event,
-where:
+Use the following template to create the code for your standard event, where:
 
 - *EventName* is the name for your event
 - *UUID* is the unique ID for your pixel as shown in the Microsoft Advertising UI

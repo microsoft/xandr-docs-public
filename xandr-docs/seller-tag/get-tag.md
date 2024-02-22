@@ -7,10 +7,9 @@ ms.date: 10/28/2023
 
 # Get Tag
 
-This function returns an object containing all tag objects that were created by `defineTag`. The method accepts one optional parameter,
-the `targetId` of the ad slot on page. Passing in the `targetId` will return the tag object with that ID.
+This function returns an object containing all tag objects that were created by `defineTag`. The method accepts one optional parameter, the `targetId` of the ad slot on page. Passing in the `targetId` will return the tag object with that ID.
 
-``` pre
+```
 getTag('targetId1')
 ```
 
@@ -22,7 +21,7 @@ The parameters listed below can be sent as arguments in the function.
 
 ## Example
 
-``` pre
+```
 apntag.getTag();
 apntag.getTag('apn_ad_slot_1');
 ```
@@ -31,7 +30,7 @@ apntag.getTag('apn_ad_slot_1');
 
 The returned tag object looks like this:
 
-``` pre
+```
 {
   "debug": true,
   "displayed": true,

@@ -1,16 +1,15 @@
 ---
 title: Check Impression Capacity for a Product Group
-description: The article helps you to check snapshot of your network's capacity, or click on a specific product to view its full capacity forecast using a Impression Capacity widget.
+description: Explore network capacity snapshot or click a product for a full forecast with the Impression Capacity widget.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 
 # Check impression capacity for a product group
 
-Use the Impression Capacity widget to quickly check a snapshot of your network's capacity, or click on a specific product to view its full
-capacity forecast.
+Use the **Impression Capacity** widget to quickly check a snapshot of your network's capacity, or click on a specific product to view its full capacity forecast.
 
-1. On the **Capacity Dashboard** page, in the Impression Capacity widget, select the product group from the drop-down list. You can filter the product groups by typing in the box.
+1. On the **Capacity Dashboard** page, in the **Impression Capacity** widget, select the product group from the drop-down list. You can filter the product groups by typing in the box.
 1. (Optional) Adjust the date range by clicking the Next x Month(s) filter, specifying a new standard or custom date range, and clicking **Update**. The top-performing products' impression capacity appears.
 1. Click a specific product to view its Capacity Forecast. This displays impressions capacity by consumption date for the product. You can view the full product details by clicking **Show Product Details**.
 1. (Optional) Make any changes to the report:

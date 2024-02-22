@@ -13,7 +13,7 @@ On the **Partner Center** Screen, the **Default Settings** option allows you to 
 
 ## Step 1: Get started
 
-Go to the **Partner Center** screen (**Partners \> Partner Center**) and click on the **Default Settings** button to display the Default Settings dialog.
+Go to the **Partner Center** screen (**Partners \> Partner Center**) and click on the **Default Settings** button to display the **Default Settings** dialog.
 
 ## Step 2: Update your default settings
 
@@ -28,7 +28,7 @@ Go to the **Partner Center** screen (**Partners \> Partner Center**) and click o
 >
 > AppNexus Direct is a group of 100+ sellers we have identified as mostly selling owned and operated inventory or selling through exclusive relationships with publishers.
 >
-> For more information, please see [AppNexus Direct](appnexus-direct-for-buyers.md) or contact your Microsoft Advertising account manager.
+> For more information, see [AppNexus Direct](appnexus-direct-for-buyers.md) or contact your Microsoft Advertising account manager.
 > [!NOTE]
 > **Unblocking AppNexus Direct Sellers**
 >

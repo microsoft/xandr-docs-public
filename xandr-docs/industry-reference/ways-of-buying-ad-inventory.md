@@ -1,18 +1,15 @@
 ---
 title: Ways of Buying Ad Inventory
-description: The articles explains the industry reference, various ways of buying as inventory, and how advertisers acquire publisher inventory.
+description: Explore industry reference, various ways of buying as inventory, and how advertisers acquire publisher inventory.
 ms.date: 10/28/2023
 ms.custom: industry-reference
 ---
 
 # Ways of buying ad inventory
 
-Imagine if you had to pay a fee to view content from all your favorite websites. Thankfully, due to programmatic advertising, you don't have to. Programmatic buying simply refers to buying ad inventory through
-automated means as opposed to more manual buys where advertisers are in contact with a sales team, or other "offline" mechanism. Advertisers want to be able to target their product to the right viewers;
-publishers, in turn, want to better monetize their site so that they can continue to offer users free content. 
+Imagine if you had to pay a fee to view content from all your favorite websites. Thankfully, due to programmatic advertising, you don't have to. Programmatic buying simply refers to buying ad inventory through automated means as opposed to more manual buys where advertisers are in contact with a sales team, or other "offline" mechanism. Advertisers want to be able to target their product to the right viewers; publishers, in turn, want to better monetize their site so that they can continue to offer users free content.
 
-To better understand how this type of transaction between the advertiser (buyer) and publisher (seller) occurs, you'll need to know about the different ways in which inventory is bought for display advertising, and
-each of the various pricing models that exist.
+To better understand how this type of transaction between the advertiser (buyer) and publisher (seller) occurs, you'll need to know about the different ways in which inventory is bought for display advertising, and each of the various pricing models that exist.
 
 ## How advertisers acquire publisher inventory
 
@@ -43,15 +40,11 @@ marketplace. Packages can also be a great jumping off point for deal negotiation
 
 ### Direct
 
-In a direct marketplace, advertisers are buying impressions in bulk at a fixed rate instead of going through a real-time bidding auction. This model provides the advertiser with a guarantee, or a reservation, on the
-ad inventory. Advertisers and agencies will often pay premium prices to access this type of inventory, as it  allows them to target specific audiences based on geography, browser, etc., and the advertiser gets
-certainty of campaign volumes. Direct buying works well for advertisers who want better control over the placement of their ads, and also gives them the flexibility to have rich media formats such as page takeovers
-on a homepage, where no other ad is shown.
+In a direct marketplace, advertisers are buying impressions in bulk at a fixed rate instead of going through a real-time bidding auction. This model provides the advertiser with a guarantee, or a reservation, on the ad inventory. Advertisers and agencies will often pay premium prices to access this type of inventory, as it  allows them to target specific audiences based on geography, browser, etc., and the advertiser gets certainty of campaign volumes. Direct buying works well for advertisers who want better control over the placement of their ads, and also gives them the flexibility to have rich media formats such as page takeovers on a homepage, where no other ad is shown.
 
 ## Pricing models for the sale of online ads
 
-There are a few main ways of pricing media: CPM, CPA, and CPC. Generally, the price of an impression is determined by what buyers are willing to pay in real-time, as well as the quality of the product.
-This type of buying means that ads can be targeted to specific user groups or segments, and budgets can be managed in real-time.
+There are a few main ways of pricing media: CPM, CPA, and CPC. Generally, the price of an impression is determined by what buyers are willing to pay in real-time, as well as the quality of the product. This type of buying means that ads can be targeted to specific user groups or segments, and budgets can be managed in real-time.
 
  RTB operates on a second price auction model. This means that the highest bidder wins the auction but pays $0.01 more than the second-highest bid. Second price auctions allow a more accurate valuation of the item up for auction.
 

@@ -1,13 +1,13 @@
 ---
 title: Batch Builder
-description: The article explains how enabling simultaneous multiple lookups benefits efficiently managing large numbers or reusing lookup sets for scheduled or ad hoc purposes.
+description: Leverage simultaneous multiple lookups for efficiency in handling large datasets or reusing lookup sets in scheduled or ad hoc tasks.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 
 # Batch builder
 
-The Batch Builder allows you to collect multiple lookups that you can then run as a batch. This is particularly useful if you want to run a large number of lookups, or if you want to save and reuse a set of lookups either on a scheduled or ad hoc basis.
+The **Batch Builder** allows you to collect multiple lookups that you can then run as a batch. This is particularly useful if you want to run a large number of lookups, or if you want to save and reuse a set of lookups either on a scheduled or ad hoc basis.
 
 ## Saving a batch
 
@@ -20,7 +20,7 @@ The Batch Builder allows you to collect multiple lookups that you can then run a
   - Category (pull-down menu)
   - Description (text box)
   - Permissions (table)
- 
+
 - After making selections, click **Save** to save this batch. Now when you click the **Open** button, you will see this batch.
 
 ## Opening/sending a batch
@@ -39,7 +39,7 @@ The Batch Builder allows you to collect multiple lookups that you can then run a
 ## Running a batch
 
 - Clicking **Run** accesses the **Batch Queue**.
-- It clears the batch off the Batch Builder screen. It now appears in superscript on the Batch Queue tab. (1 item)
+- It clears the batch off the **Batch Builder** screen. It now appears in superscript on the **Batch Queue** tab. (1 item)
 - The batch runs in a queue in the background. You can continue to do other work.
 
 > [!TIP]

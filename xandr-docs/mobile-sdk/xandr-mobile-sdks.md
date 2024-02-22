@@ -1,11 +1,11 @@
 ---
 title: Xandr Mobile SDKs
-description: The article provides a description of Xandr's Mobile SDKs and how they help users monetize their apps.
+description: Learn Xandr's Mobile SDKs streamline app monetization with open-source code, extensive documentation, MRAID 2.0 support, and efficient mediation options.
 ms.custom: android-sdk, ios-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
 ---
 
-# Overview: Xandr Mobile SDKs
+# Overview: Xandr mobile SDKs
 
 Xandr's Mobile SDKs give app developers a fast, convenient way to monetize their apps.
 
@@ -15,10 +15,9 @@ Xandr's Mobile SDKs give app developers a fast, convenient way to monetize their
 - Extensive documentation.
 - [Support forum](https://groups.google.com/forum/#%21forum/appnexussdk) for direct engineering
   support.
-- Complete support of [MRAID 2.0](https://www.iab.com/guidelines/mobile-rich-media-ad-interface-definitions-mraid/) for rich media  creatives.
+- Complete support of [MRAID 2.0](https://www.iab.com/guidelines/mobile-rich-media-ad-interface-definitions-mraid/) for rich media creatives.
 - Dedicated [Android](https://play.google.com/store/apps/details?id=com.appnexus.opensdkapp) and [iOS](https://itunes.apple.com/us/app/appnexus-sdk-app/id736869833?mt=8) apps integrate the SDK and allow you to test your campaigns and creatives in real environments.
-- Mediation is managed by the network through
-  Xandr, removing the burden from the publisher.
+- Mediation is managed by the network through Xandr, removing the burden from the publisher.
 - SDK can mediate or be mediated by any other SDK with mediation capabilities.
 - Pre-built adaptors for mediating third party SDKs.
 - Rapid integration.
