@@ -15,9 +15,9 @@ This read-only service lets you see what operating systems (Android, Apple iOS, 
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| GET | [https://api.adnxs.com/operating-system-family](https://api.adnxs.com/operating-system-family) | View all operating system families. |
-| GET | [https://api.adnxs.com/operating-system-family?id=OPERATING_SYSTEM_FAMILY_ID](https://api.adnxs.com/operating-system-family?id=OPERATING_SYSTEM_FAMILY_ID) | View a specific operating system family. |
-| GET | [https://api.adnxs.com/operating-system-family/meta](https://api.adnxs.com/operating-system-family/meta) | Find out which fields you can filter and sort by. |
+| `GET` | [https://api.adnxs.com/operating-system-family](https://api.adnxs.com/operating-system-family) | View all operating system families. |
+| `GET` | [https://api.adnxs.com/operating-system-family?id=OPERATING_SYSTEM_FAMILY_ID](https://api.adnxs.com/operating-system-family?id=OPERATING_SYSTEM_FAMILY_ID) | View a specific operating system family. |
+| `GET` | [https://api.adnxs.com/operating-system-family/meta](https://api.adnxs.com/operating-system-family/meta) | Find out which fields you can filter and sort by. |
 
 ## JSON fields
 
@@ -31,7 +31,7 @@ This read-only service lets you see what operating systems (Android, Apple iOS, 
 
 ### View all operating system families
 
-``` 
+```
 $ curl -b cookies -c cookies 'https://api.adnxs.com/operating-system-family'
  
 {
@@ -96,7 +96,7 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/operating-system-family'
 
 ### View a specific operating system family
 
-``` 
+```
 $ curl -b cookies -c cookies 'https://api.adnxs.com/operating-system-family?id=4'
  
 {

@@ -25,8 +25,7 @@ Once enabled, there are two steps required to buy Native inventory via Ad Markup
 For each brand that you represent, you must register a single creative that represents that brand. This is done using the [Creative Service](creative-service.md). When registering a Native Creative, there are a few considerations to keep in mind:
 
 - The creative must represent one of the actual native ads that you will dynamically pass on the bid response for this brand. The specific ad you choose to register does not matter, but the creative must contain at least one image asset and one data asset consistent with an ad you would actually serve on native inventory.
-- When registering a creative, only [Xandr Macros](xandr-macros.md) are supported. OpenRTB macros (such as `${AUCTION_PRICE}`) will not be
-  expanded.
+- When registering a creative, only [Xandr Macros](xandr-macros.md) are supported. OpenRTB macros (such as `${AUCTION_PRICE}`) will not be expanded.
 - The creative must be submitted for platform audit.
 - You do not need to specify the `brand_id` field; this will be set by Xandr during audit.
 - Be sure to include impression and click trackers when registering your creative. The ad markup submitted in the bid response should use the same set of vendors (or fewer) that were registered with this creative.
@@ -40,7 +39,7 @@ This example uses four data assets and two image assets, but you can choose to u
 
 ### Adding a native creative
 
-``` 
+```
 $ cat native_creative.json
  
 {
@@ -313,14 +312,14 @@ No. Creative audit fees will apply only during your creative's initial audit.
 
 ### What happens if my Native Creative passes initial audit but fails a subsequent reaudit?
 
-Your creative will not be permitted to serve. The audit failure may be due to rotating brands. If you believe your creative has been failed incorrectly or have other questions please contact customer support and select the Category "Creative Audit".
+Your creative will not be permitted to serve. The audit failure may be due to rotating brands. If you believe your creative has been failed incorrectly or have other questions contact customer support and select the Category "Creative Audit".
 
 > [!NOTE]
 > The frequent creative audit rejections due to rotating brands may result in revoked access to the Ad Markup Bidding with Native feature.
 
 ### Where do I go for more help?
 
-If you have additional questions, please contact your account representative or [customer support](https://help.xandr.com/s/login/).
+If you have additional questions, contact your account representative or [customer support](https://help.xandr.com/s/login/).
 
 ## Related topic
 

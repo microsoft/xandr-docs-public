@@ -44,9 +44,8 @@ You can create, apply, and save custom filters. To configure custom filters:
 1. Select **Apply and Save As**. To apply a filter to the grid without saving it for future use, click the **Apply** button.
 1. Enter a name for the new filter.
 1. Select the **Make Default** checkbox if you want the filter to be automatically applied to the grid by default.
-1. Click the **Apply and Save As** button. <br>    
-   All saved filters are available from the **Select a Filter** pull-down menu. To remove an applied filter, click **Clear All**.
-   <br>You can update any saved filter at any time. To update any of the saved filters, click the **Edit** link or click **Advanced Filters**. From the **Advanced Filters** dialog, you can rename, delete, or make the saved filter a default filter.
+1. Click the **Apply and Save As** button.<br>
+   All saved filters are available from the **Select a Filter** pull-down menu. To remove an applied filter, click **Clear All**. You can update any saved filter at any time. To update any of the saved filters, click the **Edit** link or click **Advanced Filters**. From the **Advanced Filters** dialog, you can rename, delete, or make the saved filter a default filter.
 
 ## Sorting and showing/hiding columns
 

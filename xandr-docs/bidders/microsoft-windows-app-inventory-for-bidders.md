@@ -51,8 +51,8 @@ Bidder profiles allow you to filter for the bid requests that you want to receiv
 
 | Field | Value |
 |:---|:---|
-| `seller_member` | 280 |
-| `supply_type` | mobile_app |
+| `seller_member` | `280` |
+| `supply_type` | `mobile_app` |
 
 ### Step 2: Target and bid on Windows app inventory
 
@@ -69,7 +69,7 @@ custom notify data you may have included with the bid. This information will be 
 
 ### Example request/response chain
 
-``` 
+```
 {
     received_on: "2018-03-01 20:43:59",
     request: {

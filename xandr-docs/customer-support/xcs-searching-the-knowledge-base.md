@@ -41,9 +41,11 @@ You can browse questions by support category. The categories are:
 
 On the home page, click on a category tile to browse the articles in a category.
 
- :::image type="content" source="media/xcs-c.png" alt-text="Screenshot of the home page.":::
+ <!---:::image type="content" source="media/xcs-c.png" alt-text="Screenshot of the home page.":::--->
+ :::image type="content" source="media/xcs-browsing-articles.png" alt-text="Screenshot of the home page.":::
 
-You can always click **Home** (the house icon) to go back to the home page, or go directly to a different topic category by selecting the category from the **Topics** menu.
+You can always click on **Home** to go back to the home page.
+<!---, or go directly to a different topic category by selecting the category from the **Topics** menu.
 
  :::image type="content" source="media/xcs-d.png" alt-text="Screenshot of the Topics menu.":::
 
@@ -52,6 +54,7 @@ You can always click **Home** (the house icon) to go back to the home page, or g
 You can review trending articles on the right side of the home page and the search results pages.
 
  :::image type="content" source="media/xcs-e.png" alt-text="Screenshot of Trending Articles.":::
+--->
 
 ## Related topics
 

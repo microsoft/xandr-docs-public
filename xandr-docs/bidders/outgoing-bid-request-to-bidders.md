@@ -26,9 +26,9 @@ Refer to the tables to locate the implementation details such as objects and hea
 |:---|:---|:---|
 | `Content-Length` | int | Length of the body of the HTTP request (which includes all fields described below). |
 | `Host` | string | IP address to which the bid request has been sent. |
-| `Connection` | string | Always set to "keep-alive" to ensure persistent TCP connections. |
-| `Content-Type` | string | The type of content passed in the request. Always set to "application/json". |
-| `x-openrtb-version` | string | The openrtb version supported in the bid request. Currently set to 2.4. |
+| `Connection` | string | Always set to `"keep-alive"` to ensure persistent TCP connections. |
+| `Content-Type` | string | The type of content passed in the request. Always set to `"application/json"`. |
+| `x-openrtb-version` | string | The openrtb version supported in the bid request. Currently set to `2.4`. |
 
 ### Bid request object
 
@@ -48,7 +48,7 @@ Xandr supports the following fields in the top-level bid request object:
 | `tmax` | integer | Specifies the maximum time (in milliseconds) to submit a bid before timing out. |
 | `cur` | array of strings | Specifies an array of allowed currencies for bids on this bid request using ISO-4217 alphabetic codes. Defaults to `USD`. |
 | `bcat` | array of strings | Specifies a list of blocked content categories. Includes IAB categories (listed in section 5.1 of the specification). `Bcat` is not a required field and is only sent if there are blocked categories associated with the bid request. If no blocked categories are associated, then we don't send this field. |
-| `badv` | array of strings | Specifies a list of blocked top-level advertiser domains that correspond to brand URLs in our system. For example, `["company1.com","company2.com"]`. For more information, see the [Brand Service](brand-service.md). A max of 64 values is sent. |
+| `badv` | array of strings | Specifies a list of blocked top-level advertiser domains that correspond to brand URLs in our system. For example, `["company1.com","company2.com"]`. <br>For more information, see the [Brand Service](brand-service.md). A max of 64 values is sent. |
 | `regs` | object | Specifies information about an industry, legal, or governmental regulation in force for this request. See [Regs Object](#regs-object) below. |
 | `source` | object | Provides data about the inventory source and which entity makes the final decision. See [Source Object](#source-object) below. |
 | `ext` | object | Used for identifying platform-specific extensions to the OpenRTB bid request. See [Bid Request Extension Object](#bid-request-extension-object) below. |
@@ -79,7 +79,7 @@ We support the following fields in the `appnexus` extension object for the bid r
 | Field | Type | Description |
 |:---|:---|:---|
 | `seller_member_id` | integer | Specifies the ID of the member selling the inventory. See [Platform Member Service](platform-member-service.md) to find the corresponding member names. |
-| `spend_protection` | Boolean | Deprecated (October 2018). |
+| `spend_protection` | Boolean | **Deprecated** (October 2018). |
 | `publisher_integration` | object | Provides details about the publisher integration. |
 | `ext_inv_code` | integer | A predefined value passed on the query string that can be used in reporting. The value must be entered into the system before it is logged. For more information, see [External Inventory Code Service](../digital-platform-api/external-inventory-code-service.md).<br>Example: `ext_inv_code=10039` |
 
@@ -90,9 +90,9 @@ We support the following fields in the publisher_integration object:
 | Field | Type | Description |
 |:---|:---|:---|
 | `is_header` | boolean | - `0`: This is not a header bidding integration.<br> - `1`: Integration into a wrapper. |
-| `bid_shading_high` | double | Deprecated (October 2018). |
-| `bid_shading_medium` | double | Deprecated (October 2018). |
-| `bid_shading_low` | double | Deprecated (October 2018). |
+| `bid_shading_high` | double | **Deprecated** (October 2018). |
+| `bid_shading_medium` | double | **Deprecated** (October 2018). |
+| `bid_shading_low` | double | **Deprecated** (October 2018). |
 
 ### Impression object
 
@@ -149,7 +149,7 @@ For video impressions, we support the following fields:
 | `maxduration` | integer | (Recommended) Specifies the maximum video ad duration, in seconds. |
 | `w` | integer | (Recommended) Specifies the width of the video player, in pixels. |
 | `h` | integer | (Recommended) Specifies the height of the video player, in pixels. |
-| `startdelay` | integer | (Recommended) Specifies the start delay of the video ad:<br> - > `0`: For values greater than zero, the delay before video start, in seconds.<br> - `0`: Pre-roll.<br> - `-1`: Generic mid-roll.<br> - `-2`: Generic post-roll. |
+| `startdelay` | integer | (Recommended) Specifies the start delay of the video ad:<br> - `> 0`: For values greater than zero, the delay before video start, in seconds.<br> - `0`: Pre-roll.<br> - `-1`: Generic mid-roll.<br> - `-2`: Generic post-roll. |
 | `battr` | array of integers | Specifies the video creative attributes to block. Refer to section 5.3 of the IAB specification for a list of attributes. |
 | `minbitrate` | integer | The minimum bit rate, in kilobytes per second. |
 | `maxbitrate` | integer | The maximum bit rate, in kilobytes per second. |
@@ -183,7 +183,7 @@ We support the following fields in the `appnexus` extension object of the `video
 | `mimes` | array of strings | (Required) Specifies the audio content MIME types supported; for example, `audio/vnd.wav`, `audio/mpeg`, `audio/mp4`, `audio/ogg`, or `audio/mp2`. |
 | `minduration` | integer | (Recommended) Specifies the minimum audio ad duration, in seconds. |
 | `maxduration` | integer | (Recommended) Specifies the maximum audio ad duration, in seconds. |
-| `startdelay` | integer | (Recommended) Specifies the start delay of the audio ad:<br>- > `0`: For values greater than zero, the delay before audio start, in seconds.<br> - `0`: Pre-roll.<br> - `-1`: Generic mid-roll (delay unknown).<br>- `-2`: Generic post-roll. |
+| `startdelay` | integer | (Recommended) Specifies the start delay of the audio ad:<br>- `> 0`: For values greater than zero, the delay before audio start, in seconds.<br> - `0`: Pre-roll.<br> - `-1`: Generic mid-roll (delay unknown).<br>- `-2`: Generic post-roll. |
 | `battr` | array of integers | Specifies the audio creative attributes to block. We support:<br> - `11`: Surveys<br> - `16`: Ad Provides Skip Button |
 | `minbitrate` | integer | The minimum bit rate, in kilobytes per second. |
 | `maxbitrate` | integer | The maximum bit rate, in kilobytes per second. |
@@ -267,7 +267,7 @@ We support the following fields in the `video` object of the `assets` object
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `mimes` | array of strings | Content MIME types supported. If mimes are not specified in the bid request from supply side, then we will default to “video/mp4” for regular video and “video/x-flv” for mobile. |
+| `mimes` | array of strings | Content MIME types supported. If mimes are not specified in the bid request from supply side, then we will default to `“video/mp4”` for regular video and `“video/x-flv”` for mobile. |
 | `minduration` | integer | Minimum video ad duration in seconds. |
 | `maxduration` | integer | Maximum video ad duration in seconds. |
 | `protocols` | array of integers | An array of video protocols the publisher can accept in the bid response.<br>Currently supported values are:<br> - `1`: VAST 1.0<br> - `2`: VAST 2.0<br> - `3`: VAST 3.0<br> - `4`: VAST 1.0 Wrapper<br> - `5`: VAST 2.0 Wrapper<br> - `6`: VAST 3.0 Wrapper<br> - `7`: VAST 4.0<br> - `8`: DAAST 1.0 |
@@ -289,7 +289,7 @@ We support the following fields in the `deal` object of the `pmp` object:
 |:---|:---|:---|
 | `id` | string | (Required) Specifies a unique identifier for the deal. |
 | `bidfloor` | float | Specifies the minimum bid price for the deal, in CPM using the default currency (`USD`). If omitted, default is `0.00`. |
-| `at` | integer | Optional override of the overall auction type of the bid request. If omitted, default is 2.<br> - `1`: First price.<br> - `2`: Second price plus one cent (default).<br> - `3`: Bid floor is the agreed upon deal price (fixed price). |
+| `at` | integer | Optional override of the overall auction type of the bid request. If omitted, default is `2`.<br> - `1`: First price.<br> - `2`: Second price plus one cent (default).<br> - `3`: Bid floor is the agreed upon deal price (fixed price). |
 | `wseat` | array of strings | Specifies a list of buyer seat IDs that are allowed to bid on this deal. If no seat is specified, all buyers are eligible. |
 | `ext` | object | Used for identifying platform-specific extensions to OpenRTB for the deal object. See [Deal Extension Object](#deal-extension-object) below. |
 
@@ -308,11 +308,11 @@ We support the following fields in the `appnexus` extension object of the `deal`
 | Field | Type | Description |
 |:---|:---|:---|
 | `ad_quality_override` | integer | Specifies how the deal handles creatives:<br><br> - `1`: Creatives use existing ad quality settings (default).<br> - `2`: Creatives in "pending" audit status will serve. Once these creatives are audited, the existing ad quality settings are used.<br> - `3`: No ad profile restrictions will be applied to this deal (Maximum trust). |
-| `allowed_media_types` | array of integers | Specifies the IDs of the media types that are allowed on this deal. (For a list of media types, see [Expandables and Rich Media](expandables-and-rich-media.md).) If there are no unique media types for this deal as compared to the main bid request object, this field will be an empty array. This does NOT mean the deal does not allow any media types, instead it just means that the media types on the main bid object (anything not specifically listed in the “battr” object) can be used when bidding on this deal. If this array is populated, it will contain a complete list of media types allowed on this deal. |
-| `allowed_media_subtypes` | array of integers | Specifies the IDs of the media subtypes that are allowed on this deal. (For a list of media subtypes, see [Expandables and Rich Media](expandables-and-rich-media.md).) If there are no unique media subtypes for this deal as compared to the main bid request object, this field will be an empty array. This does NOT mean the deal does not allow any media subtypes, instead it just means that the media subtypes on the main bid object (anything not specifically listed in the “battr” object) can be used when bidding on this deal. If this array is populated, it will contain a complete list of submedia types allowed on this deal. |
+| `allowed_media_types` | array of integers | Specifies the IDs of the media types that are allowed on this deal. For a list of media types, see [Expandables and Rich Media](expandables-and-rich-media.md).<br> If there are no unique media types for this deal as compared to the main bid request object, this field will be an empty array. This does NOT mean the deal does not allow any media types, instead it just means that the media types on the main bid object (anything not specifically listed in the “battr” object) can be used when bidding on this deal. If this array is populated, it will contain a complete list of media types allowed on this deal. |
+| `allowed_media_subtypes` | array of integers | Specifies the IDs of the media subtypes that are allowed on this deal. For a list of media subtypes, see [Expandables and Rich Media](expandables-and-rich-media.md).<br> If there are no unique media subtypes for this deal as compared to the main bid request object, this field will be an empty array. This does NOT mean the deal does not allow any media subtypes, instead it just means that the media subtypes on the main bid object (anything not specifically listed in the “battr” object) can be used when bidding on this deal. If this array is populated, it will contain a complete list of submedia types allowed on this deal. |
 | `sizes` | array of objects | Specifies the allowed creative sizes for this deal. If this array is populated, it will contain a complete list of sizes allowed on this deal. Sizes allowed on the deal do not have to be a subset of what is allowed in the main bid request object. If the array is empty, that means that there are are no unique sizes for this deal, and the allowed sizes from the main bid object should be used instead. See [Sizes Object](#sizes-object) below. |
-| `sc` | integer | Specifies whether the wseat field of the deal object is passing a buyer seat ID. This Field is only present for deals set up with a DSP's buyer seat ID and will pass a value of "1". |
-| `gtd` | integer | Specifies whether the deal is Programmatic Guaranteed. This Field is only present for deals set up as Programmatic Guaranteed and will pass a value of "1". |
+| `sc` | integer | Specifies whether the wseat field of the deal object is passing a buyer seat ID. This Field is only present for deals set up with a DSP's buyer seat ID and will pass a value of `"1"`. |
+| `gtd` | integer | Specifies whether the deal is Programmatic Guaranteed. This Field is only present for deals set up as Programmatic Guaranteed and will pass a value of `"1"`. |
 
 ### Sizes object
 
@@ -343,7 +343,7 @@ We support the following fields in the `appnexus` extension object of the `imp` 
 | `predicted_video_view_rate_over_total` | double | Specifies the probability that the impression will be viewable by the user over all video impressions, based on historical data. |
 | `predicted_video_view_rate` | double | Specifies the probability that the impression will be viewable by the user as a percent of measured video impressions, based on historical data. |
 | `member_ad_profile_id` | integer | Specifies the seller's ad profile ID. |
-| `allowed_payment_types` | array of objects | Specifies the allowable payments types for this impression. If this field is not present, then the only allowed payment type is 'impression'.<br><br>**Note:** This object is not enabled for all clients. Reach out to your account representative for this feature. |
+| `allowed_payment_types` | array of objects | Specifies the allowable payments types for this impression. If this field is not present, then the only allowed payment type is `'impression'`.<br><br>**Note:** This object is not enabled for all clients. Reach out to your account representative for this feature. |
 | `traffic_source_code` | string | Specifies the external source of the third party traffic for this impression. |
 | `predicted_video_completion_rate` | double | Specifies the probability that the video impression will be viewed completely by a user, based on historical data. |
 | `gpid` | string | Global placement-level identifier provided by the publisher to indicate a specific ad placement on page. |
@@ -392,7 +392,7 @@ We support the following fields in the `app` object:
 | Field | Type | Description |
 |:---|:---|:---|
 | `id` | string | Specifies the Xandr app ID. Omitted if seller visibility prohibits sharing. Bidders cannot lookup what site the ID corresponds to, but these IDs can be used as anonymous, optimizable chunks of inventory. |
-| `bundle` | string | Specifies the application bundle or package name (e.g., `com.foo.mygame`). This is intended to be a unique ID across multiple exchanges. For iOS, this will be the iTunes app id (numerical id). Omitted if seller visibility prohibits sharing. |
+| `bundle` | string | Specifies the application bundle or package name (e.g., `com.foo.mygame`). This is intended to be a unique ID across multiple exchanges. For iOS, this will be the iTunes app id (numerical ID). Omitted if seller visibility prohibits sharing. |
 | `cat` | array of strings | Specifies a list of content categories. Includes IAB categories (listed in section 5.1 of the specification). Omitted if seller visibility settings prohibit sharing. |
 | `publisher` | object | Specifies information about the publisher. Omitted if seller visibility settings prohibit sharing. See [Publisher Object](#publisher-object) below. |
 | `name` | string | The full name of the app (i.e. Angry Birds). (This value may be aliased at the publisher's request.) |
@@ -475,7 +475,7 @@ We support the following fields in the `device` object.
 | `lmt` | integer | "Limit Ad Tracking" signal commercially endorsed (e.g., iOS, Android), where 0=tracking is unrestricted, 1=tracking must be limited per commercial guidelines. |
 | `carrier` | string | Specifies carrier for the device.  |
 | `connectiontype` | integer | Specifies the detected data connection type for the device using IAB values. We support the following values today:<br> - `0`: Unknown<br> - `3`: Cellular Network – Unknown Generation |
-| `ifa` | string | Specifies the ID sanctioned for advertiser use in the clear. Set to iOS `idfa`, Android `aaid`, or Windows `adid` if available. Is also set for CTV impressions, using device-provided, publisher-provided, or other device ID types as applicable. See **ext.ifa_type** for more information. Omitted if seller visibility settings prohibit sharing. |
+| `ifa` | string | Specifies the ID sanctioned for advertiser use in the clear. Set to iOS `idfa`, Android `aaid`, or Windows `adid` if available. Is also set for CTV impressions, using device-provided, publisher-provided, or other device ID types as applicable. For more information, see **ext.ifa_type**. Omitted if seller visibility settings prohibit sharing. |
 | `dpidsha1` | string | Specifies the SHA1-encrypted, platform-specific (e.g., `ANDROID_ID` or `UDID` for iOS) unique identifier for the mobile device. Omitted if seller visibility settings prohibit sharing. |
 | `dpidmd5` | string | Specifies the MD5-encrypted, platform-specific (e.g., `ANDROID_ID` or `UDID` for iOS) unique identifier for the mobile device.Omitted if seller visibility settings prohibit sharing. |
 | `ext` | object | Used for identifying platform-specific extensions to OpenRTB for the geo object. See [Geo Extension Object](#geo-extension-object) below. |
@@ -518,7 +518,7 @@ We support a single object in the `ext` object to support platform-specific ex
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `ifa_type` | string | Specifies the source of the IFA, whether that is device-generated (and therefore used across apps) or whether it is a publisher provided IFA, or a temporary/session IFA. Used primarily for CTV impressions.<br>The types of IFA are Device, Publisher (including apps), SSP and Session. The following are recommended values for the ifa_type parameter:<br> - "dpid" - the generic “device provided id”, but based on historical usage, common device type specific values can be used<br> - "rida" - Roku id<br> - "aaid" - Android id<br> - "idfa" - Apple id<br> - "afai" - Amazon Fire id<br> - "tifa" - Tizen Identifier for Advertising (Samsung Ad ID)<br> - "vida" - Vizio Advertising ID<br> - "lgudid" - LG Unique Device ID<br> - "msai" - Microsoft id<br> - "ppid" - publisher provided id<br> - "sspid" - SSP provided id<br> - "sessionid" - session id/synthetic id (described below) |
+| `ifa_type` | string | Specifies the source of the IFA, whether that is device-generated (and therefore used across apps) or whether it is a publisher provided IFA, or a temporary/session IFA. Used primarily for CTV impressions.<br>The types of IFA are Device, Publisher (including apps), SSP and Session. The following are recommended values for the `ifa_type` parameter:<br> - "dpid" - the generic “device provided id”, but based on historical usage, common device type specific values can be used<br> - "rida" - Roku id<br> - "aaid" - Android id<br> - "idfa" - Apple id<br> - "afai" - Amazon Fire id<br> - "tifa" - Tizen Identifier for Advertising (Samsung Ad ID)<br> - "vida" - Vizio Advertising ID<br> - "lgudid" - LG Unique Device ID<br> - "msai" - Microsoft id<br> - "ppid" - publisher provided id<br> - "sspid" - SSP provided id<br> - "sessionid" - session id/synthetic id (described below) |
 
 ### User object
 
@@ -526,7 +526,7 @@ We support the following fields in the `user` object:
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `id` | string | (Either `id` or `buyeruid` is recommended) Specifies the Xandr unique ID for this user. Omitted if seller visibility settings prohibit sharing. The unique 64-bit ID for the user. It is the same for all requests from this user until cookies are cleared. This field is 0 when Xandr does not have a match for this user or the user's browser doesn't accept cookies. It is `-1` for opt-out users. |
+| `id` | string | (Either `id` or `buyeruid` is recommended) Specifies the Xandr unique ID for this user. Omitted if seller visibility settings prohibit sharing. The unique 64-bit ID for the user. It is the same for all requests from this user until cookies are cleared. This field is `0` when Xandr does not have a match for this user or the user's browser doesn't accept cookies. It is `-1` for opt-out users. |
 | `buyeruid` | string | (Either `id` or `buyeruid` is recommended) The buyer's unique ID for this user, if known. Omitted if seller visibility settings prohibit sharing. |
 | `yob` | integer | Specifies the year of birth as a 4-digit integer. Omitted if unknown, or if seller visibility settings prohibit sharing. |
 | `gender` | string | Specifies the gender. Set to `null` if unknown. Omitted if unknown, or seller visibility settings prohibit sharing.<br> - `M`: Male<br> - `F`: Female<br> - `O`: Other |
@@ -540,7 +540,7 @@ We support the following fields in the `data` object of the `user` object:
 | Field | Type | Description |
 |:---|:---|:---|
 | `id` | string | Specifies the ID of the data provider. |
-| `segment` | array of objects | Deprecated (April 2019). |
+| `segment` | array of objects | **Deprecated** (April 2019). |
 
 ### User extension object
 
@@ -562,7 +562,7 @@ We support the following fields in the `eids` object:
 | Field | Type | Description |
 |:---|:---|:---|
 | `source` | string | Specifies the domain of the organization that is the generator of the third party ID. |
-| `uids` | Object | Specifies the identity information specific to the third party identity solution or publisher. Relevant fields include:<br><br>**id**<br>string<br>User id provided by third party identity solution or publisher.<br><br>**ext**<br>Object<br>Specifies specific additional information provided by third party identity solution or publisher.<br>Ext Fields include:<br>rtiPartner = third party identity solution name, used by TDID. |
+| `uids` | Object | Specifies the identity information specific to the third party identity solution or publisher. Relevant fields include:<br>**id**<br>string<br>User id provided by third party identity solution or publisher.<br><br>**ext**<br>Object<br>Specifies specific additional information provided by third party identity solution or publisher.<br>Ext Fields include:<br>rtiPartner = third party identity solution name, used by TDID. |
 
 ### Segment object
 
@@ -584,8 +584,8 @@ We support the following fields in the `regs` object:
 |:---|:---|:---|
 | `coppa` | integer | Indicates if this request is subject to the United States Children's Online Privacy Protection Act (COPPA).<br> - `0`: Not subject to COPPA. Treat as a normal auction.<br> - `1`: Subject to COPPA. Limit what is allowed for targeting and logging as required. |
 | `ext` | object | Used for identifying platform-specific extensions to OpenRTB for the reg object. |
-| `gpp` |  | Indicates the actual IAB GPP consent string. It implies which vendors are permitted to process personal data and under which conditions.<br>Example:<br>{ "Regs": { "ext": { "gpp": "DBACNYA~CPXxRfAPXxRfAAfKABENB-CgAAAAAAAAAAYgAAAAAAAA~1YNN", "gpp_sid": [2,6]} } } |
-| `gpp_sid` |  | Optional: indicates which regulations or GPP logics are to be applied, or whether a user is located in a country (EEA country) with a framework that is part of the GPP.<br>Example:<br>{ "Regs": { "ext": { "gpp": "DBACNYA~CPXxRfAPXxRfAAfKABENB-CgAAAAAAAAAAYgAAAAAAAA~1YNN", "gpp_sid": [2,6]} } } |
+| `gpp` |  | Indicates the actual IAB GPP consent string. It implies which vendors are permitted to process personal data and under which conditions.<br>Example:<br>`{ "Regs": { "ext": { "gpp": "DBACNYA~CPXxRfAPXxRfAAfKABENB-CgAAAAAAAAAAYgAAAAAAAA~1YNN", "gpp_sid": [2,6]} } }` |
+| `gpp_sid` |  | Optional: indicates which regulations or GPP logics are to be applied, or whether a user is located in a country (EEA country) with a framework that is part of the GPP.<br>Example:<br>`{ "Regs": { "ext": { "gpp": "DBACNYA~CPXxRfAPXxRfAAfKABENB-CgAAAAAAAAAAYgAAAAAAAA~1YNN", "gpp_sid": [2,6]} } }` |
 
 ### Regs extension object
 
@@ -594,9 +594,9 @@ We support the following field in the `regs.ext` object:
 | Field | Type | Description |
 |:---|:---|:---|
 | `gdpr` | integer | Optional. Signals whether or not the request is subject to General Data Protection Regulation (GDPR) regulations. Possible values:<br> - `0`: No, the request is not subject to GDPR regulations.<br> - `1`: Yes, the request is subject to GDPR regulations.<br>No value indicates Unknown. |
-| `us_privacy` | string | The U.S. Privacy String currently supports CCPA compliance by passing the follow information in the string: <br>**Specification Version**<br>Number (1 char in string)<br>The version of this string specification used to encode the string<br><br>**Explicit Notice/ Opportunity to Opt Out**<br>ENUM (N = No, Y = Yes, - = Not Applicable)<br>Has explicit notice been provided as required by 1798.115(d) of the CCPA and the opportunity to opt out of the sale of their data pursuant to 1798.120 and 1798.135 of the CCPA<br><br>**Opt-Out Sale**<br>ENUM (N = No, Y = Yes, - = Not Applicable)<br>Has user opted-out of the sale of his or personal information pursuant to 1798.120 and 1798.135<br><br>**LSPA**<br>ENUM (N = No, Y = Yes, - = Not Applicable)<br>Publisher is a signatory to the IAB Limites those terms are defined in the Agreement.  d Service Provider Agreement (LSPA) and the publisher declares that the transaction is covered as a “Covered Opt Out Transaction” or a “Non Opt Out Transaction” as those terms are defined in the Agreement.  s those terms are defined in the Agreement.   |
-| `gpp` |  | Indicates the actual IAB GPP consent string. It implies which vendors are permitted to process personal data and under which conditions.<br>Example:<br>{ "Regs": { "ext": { "gpp": "DBACNYA~CPXxRfAPXxRfAAfKABENB-CgAAAAAAAAAAYgAAAAAAAA~1YNN", "gpp_sid": [2,6]} } } |
-| `gpp_sid` |  | Optional: indicates which regulations or GPP logics are to be applied, or whether a user is located in a country (EEA country) with a framework that is part of the GPP.<br>Example:<br>{ "Regs": { "ext": { "gpp": "DBACNYA~CPXxRfAPXxRfAAfKABENB-CgAAAAAAAAAAYgAAAAAAAA~1YNN", "gpp_sid": [2,6]} } } |
+| `us_privacy` | string | The U.S. Privacy String currently supports CCPA compliance by passing the follow information in the string: <br>**Specification Version**<br>Number (1 char in string)<br>The version of this string specification used to encode the string<br><br>**Explicit Notice/ Opportunity to Opt Out**<br>ENUM (`N` = No, `Y` = Yes, `-` = Not Applicable)<br>Has explicit notice been provided as required by 1798.115(d) of the CCPA and the opportunity to opt out of the sale of their data pursuant to 1798.120 and 1798.135 of the CCPA<br><br>**Opt-Out Sale**<br>ENUM (`N` = No, `Y` = Yes, `-` = Not Applicable)<br>Has user opted-out of the sale of his or personal information pursuant to 1798.120 and 1798.135<br><br>**LSPA**<br>ENUM (`N` = No, `Y` = Yes, `-` = Not Applicable)<br>Publisher is a signatory to the IAB Limites those terms are defined in the Agreement.  d Service Provider Agreement (LSPA) and the publisher declares that the transaction is covered as a “Covered Opt Out Transaction” or a “Non Opt Out Transaction” as those terms are defined in the Agreement.  s those terms are defined in the Agreement.   |
+| `gpp` |  | Indicates the actual IAB GPP consent string. It implies which vendors are permitted to process personal data and under which conditions.<br>Example:<br>`{ "Regs": { "ext": { "gpp": "DBACNYA~CPXxRfAPXxRfAAfKABENB-CgAAAAAAAAAAYgAAAAAAAA~1YNN", "gpp_sid": [2,6]} } }` |
+| `gpp_sid` |  | Optional: indicates which regulations or GPP logics are to be applied, or whether a user is located in a country (EEA country) with a framework that is part of the GPP.<br>Example:<br>`{ "Regs": { "ext": { "gpp": "DBACNYA~CPXxRfAPXxRfAAfKABENB-CgAAAAAAAAAAYgAAAAAAAA~1YNN", "gpp_sid": [2,6]} } }` |
 
 ### Source object
 
@@ -611,7 +611,7 @@ We support the following fields in the `source` object:
 
 ### Banner bid request
 
-``` 
+```
 {
     "id": "8765482113786061111",
     "imp": [{
@@ -736,7 +736,7 @@ We support the following fields in the `source` object:
 
 ### Native 1.1 bid request
 
-``` 
+```
 {
     "id": "123456789",
     "imp": [{
@@ -820,7 +820,7 @@ We support the following fields in the `source` object:
 
 To ensure your bidder is configured to receive these requests, open a support case.
 
-``` 
+```
 {
     "id": "914181541748747384",
     "imp": [{
@@ -977,7 +977,7 @@ To ensure your bidder is configured to receive these requests, open a support ca
 
 ### MultiTag bid request
 
-``` pre
+```
 {
     "id": "5698201228871522665",
     "imp": [{

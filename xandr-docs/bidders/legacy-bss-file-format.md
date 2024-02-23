@@ -9,8 +9,7 @@ ms.date: 10/28/2023
 The Batch Segment Service provides the ability to upload segment data files in a variety of formats. For more information, see the [examples](#examples) below.
 
 > [!NOTE]
-> The Avro format described in [BSS Avro File Format](./bss-avro-file-format.md), provides support
-> for a broader variety of user identifiers.
+> The Avro format described in [BSS Avro File Format](./bss-avro-file-format.md), provides support for a broader variety of user identifiers.
 
 The method described in this topic has been the standard format in the past, but it is expected to be deprecated in the future as user identification increasingly relies on EIDs (extended IDs) and publisher first-party identifiers rather than cookies.
 
@@ -128,7 +127,7 @@ A client is adding user `12345678900987654321` to segments `10000` and `10001` w
 | `SEPARATOR3` | ":" |
 | `SEG_FIELD` | [`SEG_ID`, `EXPIRATION`] |
 
-``` 
+```
 12345678900987654321,10000:1440;10001:1440;10002:-1;10003:-1
 ```
 
@@ -138,7 +137,7 @@ A client is adding user `12345678900987654321` to segments with codes `"auto_int
 
 | Field | Value |
 |:---|---|
-| `UID` | Xandr user Id. |
+| `UID` | Xandr user ID. |
 | `SEPARATOR1` | "," |
 | `SEPARATOR2` | ";" |
 | `SEPARATOR4` | "\t"   |
@@ -147,7 +146,7 @@ A client is adding user `12345678900987654321` to segments with codes `"auto_int
 > [!NOTE]
 > `\t` refers to the horizontal tab character. It moves the cursor a tab width. The example below is using `\t` to show where the space will appear.
 
-``` 
+```
 12345678900987654321,auto_intender;nike_shopper\tbicycle_intender;newbalance_shopper
 ```
 
@@ -165,7 +164,7 @@ In the example, below, the client is adding user `12345678900987654321` to segme
 > [!NOTE]
 > `\t` refers to the horizontal tab character. It moves the cursor a tab width. The example below is using `\t` to show where the space will appear.
 
-``` 
+```
 12345678900987654321\t1320689131\t10000\t0\t0
 12345678900987654321\t1320689131\t10001\t0\t0
 12345678900987654321\t1320689131\t10002\t0\t-1 
@@ -180,14 +179,14 @@ A client is adding user `"abcdefg"` to segments `10000` and `10001` with an expi
 
 | Field | Value |
 |:---|:---|
-| `UID` | Xandr user ID |
+| `UID` | Xandr user ID. |
 | `SEPARATOR1` | "," |
 | `SEPARATOR2` | ";" |
 | `SEPARATOR3` | ":" |
 | `SEG_FIELD` | [`SEG_ID`, `EXPIRATION`] |
 | `uses_external_uids` | `true` |
 
-``` 
+```
 abcdefg,10000:1440;10001:1440
 abcdefg,10002:1440;10003:1440 
 ```
@@ -211,7 +210,7 @@ A client is adding user `12345678900987654321` to segments with code `"car_like"
 > [!NOTE]
 > `\t` refers to the horizontal tab character. It moves the cursor a tab width.
 
-``` 
+```
 12345678900987654321,400:car_like;500:bike_like
 ```
 
@@ -235,6 +234,6 @@ A client is adding mobile user IDFA (ID for Advertisers) AEBE52E7-03EE-455A-B3C4
 > [!NOTE]
 > `\t` refers to the horizontal tab character. It moves the cursor a tab width.
 
-``` 
+```
 AEBE52E7-03EE-455A-B3C4-E57283966239,10000:1440;10001:1440;10002:-1;10003:-1^3
 ```

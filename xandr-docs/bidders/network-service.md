@@ -12,22 +12,22 @@ Use the read-only Network Service to see what video content networks are registe
 
 | HTTP Method | Endpoint | Description  |
 |:---|:---|:---|
-| GET | [https://api.adnxs.com/video-content-network](https://api.adnxs.com/video-content-network) | To view all defined networks. |
-| GET | [https://api.adnxs.com/video-content-network?id=id_value](https://api.adnxs.com/video-content-network?id=id_value) | To view a defined network. |
+| `GET` | [https://api.adnxs.com/video-content-network](https://api.adnxs.com/video-content-network) | To view all defined networks. |
+| `GET` | [https://api.adnxs.com/video-content-network?id=id_value](https://api.adnxs.com/video-content-network?id=id_value) | To view a defined network. |
 
 ## JSON fields
 
 | Field | Type | Description  |
 |:---|:---|:---|
 | `id` | int | The Xandr referential ID associated with the network. |
-| `name` | string | **Required on:** POST/PUT<br>The video taxonomy referential value. |
+| `name` | string | **Required on:** `POST`/`PUT`<br>The video taxonomy referential value. |
 | `last_modified` | timestamp | The time of last modification. |
 
 ## Example
 
-### To retrieve all defined networks
+### Retrieve all defined networks
 
-``` 
+```
 curl -b cookies -c cookies "https://api.adnxs.com/video-content-network"
 {
   "response": {

@@ -21,13 +21,11 @@ We store all Objects in memory on our impression bus servers. This is done to en
 
 ## How can I determine what my Object Limits are?
 
-Xandr provides a read-only API service ([Object Limit Service](object-limit-service.md)) that can be used to see what your limits are. Note that default limits differ depending on whether you are a bidder (`user_type` is "bidder") or a member under a bidder (`user_type` is "member").
+Xandr provides a read-only API service ([Object Limit Service](object-limit-service.md)) that can be used to see what your limits are. Note that default limits differ depending on whether you are a bidder (`user_type` is "bidder") or a member under a bidder (`user_type` is `"member"`).
 
-Here is an example:
+### Example: View your limits and current usage for all object types
 
-**View your limits and current usage for all object types**
-
-``` 
+```
 $ curl -b cookies -c cookies 'https://api.adnxs.com/object-limit'
 
 {
@@ -105,11 +103,10 @@ When you approach or reach your limit for creatives, you should remove non-expir
 > [!NOTE]
 > Removing expired creatives will not impact your creative count.
 
-To remove a creative, you make a DELETE call to the [Creative Service](creative-service.md).
+To remove a creative, you make a `DELETE` call to the [Creative Service](creative-service.md).
 
-If you need help identifying objects to delete, please contact support for assistance.
+If you need help identifying objects to delete, contact support for assistance.
 
 ## How can I get my Object Limits adjusted?
 
-In exceptional cases, a limit may be temporarily lifted by a small amount at the discretion of our engineering team. Please contact your
-Xandr representative to discuss this option or [open a support case](https://help.xandr.com/).
+In exceptional cases, a limit may be temporarily lifted by a small amount at the discretion of our engineering team. Contact your Xandr representative to discuss this option or [open a support case](https://help.xandr.com/).

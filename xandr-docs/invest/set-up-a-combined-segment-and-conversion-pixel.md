@@ -17,7 +17,7 @@ Let's say you want to run a remarketing campaign where I only show impressions t
 There are two possible approaches. Once a user has converted, you can either:
 
 1. Add them to a "Converters" segment and exclude that segment in your targeting.
-2. Remove them from the "Auto Intenders" segment that you're targeting.
+1. Remove them from the "Auto Intenders" segment that you're targeting.
 
 Generally, it is recommended that you use the first approach for a couple of reasons:
 

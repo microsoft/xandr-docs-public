@@ -12,8 +12,8 @@ This is a read-only service that shows you the list of operating systems that yo
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| GET | [https://api.adnxs.com/operating-system](https://api.adnxs.com/operating-system) | The basic service call will return a list of operating systems. |
-| GET | [https://api.adnxs.com/operating-system/OPERATING_SYSTEM_ID](https://api.adnxs.com/operating-system/OPERATING_SYSTEM_ID) | To return a specific operating system. |
+| `GET` | [https://api.adnxs.com/operating-system](https://api.adnxs.com/operating-system) | The basic service call will return a list of operating systems. |
+| `GET` | [https://api.adnxs.com/operating-system/OPERATING_SYSTEM_ID](https://api.adnxs.com/operating-system/OPERATING_SYSTEM_ID) | To return a specific operating system. |
 
 ## JSON parameters
 

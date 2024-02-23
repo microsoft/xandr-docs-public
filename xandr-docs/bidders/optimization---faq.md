@@ -18,11 +18,11 @@ Buyers of inventory may optimize their purchasing logic using any of the fields 
 
 Additional data that may be used for optimization includes the following:
 
-- `publisher_id` - the unique ID of the publisher. This ID cannot be dereferenced, but impressions from a given publisher may perform similarly and thus be considered an optimizable chunk. For most sellers on the platform, publisher_id is the top level in the hierarchy.
-- `site_id` - the unique ID of the site. This ID cannot be dereferenced, but impressions from a given site may perform similarly and thus be considered an optimizable chunk. Sites are below publishers in the Xandr hierarchy, so any publisher will have one or more sites.
-- `id` (within the tags array) - the unique ID of the tag. This ID cannot be dereferenced, but impressions from a given tag may perform similarly and thus be considered an optimizable chunk. Tags are below site in the Xandr hierarchy, so any site will have one or more tags.
-- `inventory_audits` - see the Inventory Audits in the [Inventory - FAQ](inventory---faq.md).
-- `position` - when available, this indicates whether the ad tag is above or below the fold.
+- `publisher_id` - The unique ID of the publisher. This ID cannot be dereferenced, but impressions from a given publisher may perform similarly and thus be considered an optimizable chunk. For most sellers on the platform, `publisher_id` is the top level in the hierarchy.
+- `site_id` - The unique ID of the site. This ID cannot be dereferenced, but impressions from a given site may perform similarly and thus be considered an optimizable chunk. Sites are below publishers in the Xandr hierarchy, so any publisher will have one or more sites.
+- `id` (within the tags array) - The unique ID of the tag. This ID cannot be dereferenced, but impressions from a given tag may perform similarly and thus be considered an optimizable chunk. Tags are below site in the Xandr hierarchy, so any site will have one or more tags.
+- `inventory_audits` - See the Inventory Audits in the [Inventory - FAQ](inventory---faq.md).
+- `position` - When available, this indicates whether the ad tag is above or below the fold.
 
 ## Related topics
 

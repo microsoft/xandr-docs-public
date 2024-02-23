@@ -26,7 +26,7 @@ In each of the scenarios outlined above, the outstream video ad unit is included
 
 AST lets you define the tag (placement) you intend to call. When defining an outstream placement, you can pass additional options to specify how the player should be displayed on the page and how it should behave. The following example shows a call to `defineTag` for an outstream placement.
 
-```pre
+```
     apntag.defineTag({
         //required params
         targetId: 'outstream_div',
@@ -62,13 +62,13 @@ AST lets you define the tag (placement) you intend to call. When defining an ou
 
 ## Implementing SafeFrame with Outstream video
 
-SafeFrame was created to avoid disruptive ad behavior and the potential security risks of serving ads inline with the page. The complete spec for SafeFrame is available on the IAB website at [https://iabtechlab.com/wp-content/uploads/2016/03/SafeFrames_v1.1_final.pdf](https://iabtechlab.com/wp-content/uploads/2016/03/SafeFrames_v1.1_final.pdf).
+SafeFrame was created to avoid disruptive ad behavior and the potential security risks of serving ads inline with the page. The complete spec for SafeFrame is available on the [IAB website](https://iabtechlab.com/wp-content/uploads/2016/03/SafeFrames_v1.1_final.pdf).
 
 For video creatives, SafeFrame is currently available only for Outstream video.
 
 To enable SafeFrame for Outstream, set the `enableSafeFrame` option in the `apntag` definition, as shown in the following example:
 
-```pre
+```
 apntag.defineTag({
   enableSafeFrame : true,
   sizes: [640, 414]

@@ -18,7 +18,7 @@ Use the **Metrics** screen to monitor real time activity on your Xandr integrati
 | **Attempt** | Count of all bids requests sent to bidders in the auction prior to filtering logic and other checks being applied. |
 | **Sent** | Count of valid bid requests actually sent to bidders after filtering logic has been applied. |
 | **Profile filtered** | Count of bid requests that were not sent because they failed bidder profile filtering checks. |
-| **Volume filtered** | Count of bid requests that the impbus throttled and did not send. Throttling is set via the passthrough_percent value in the profiles. |
+| **Volume filtered** | Count of bid requests that the impbus throttled and did not send. Throttling is set via the `passthrough_percent` value in the profiles. |
 
 ### Bid responses
 
@@ -31,7 +31,7 @@ Use the **Metrics** screen to monitor real time activity on your Xandr integrati
 
 ### Notify requests
 
-Notifications are set up by the bidder software that provide the results of an auction to bidders that have registered a notify url. Notifications are JSON encoded responses that include information about the auction.
+Notifications are set up by the bidder software that provide the results of an auction to bidders that have registered a notify URL. Notifications are JSON encoded responses that include information about the auction.
 
 | Name | Definition |
 |:---|:---|

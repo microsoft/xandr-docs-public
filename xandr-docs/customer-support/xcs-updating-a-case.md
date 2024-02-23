@@ -16,7 +16,8 @@ You can use the Customer Support Portal to view all your cases and all the cases
 To view an existing case, you can click the case link in the email confirmation, or navigate to the case using the tabs on the portal home
 page.
 
- :::image type="content" source="media/xcs-i.png" alt-text="Screenshot of the tabs on the home page.":::
+ <!---:::image type="content" source="media/xcs-i.png" alt-text="Screenshot of the tabs on the home page.":::--->
+ :::image type="content" source="media/xcs-case-edit-1.png" alt-text="Screenshot of the tabs on the home page.":::
 
 - **My Cases** - Displays all your open cases.
 - **CC Cases** - Displays the cases on which you're copied.
@@ -34,19 +35,22 @@ Go to the case in the portal, type your comment in the comment box, and click **
 
 Go to the case in the portal, and click **Upload Files** to select your attachment or drag and drop them into that area. After the file has been added, refresh the page for the attachment to appear in the attachment list in the right column.
 
- :::image type="content" source="media/xcs-j.png" alt-text="Screenshot of the Attachment screen.":::
+ <!---:::image type="content" source="media/xcs-j.png" alt-text="Screenshot of the Attachment screen.":::--->
+ :::image type="content" source="media/xcs-case-edit-2.png" alt-text="Screenshot of the Attachment screen.":::
 
 ## Edit an open case
 
 Go to any open case view (My Cases, CC Cases) in the portal, and click the **down-arrow** to the right. The case edit view will appear, where you can make the updates and add/remove cc'ed emails. Once done, click **Save**.
 
- :::image type="content" source="media/xcs-k.png" alt-text="Screenshot of the Open case view.":::
+ <!---:::image type="content" source="media/xcs-k.png" alt-text="Screenshot of the Open case view.":::--->
+ :::image type="content" source="media/xcs-case-edit-3.png" alt-text="Screenshot of the Open case view.":::
 
 ## Close an open case
 
-Go to the case in the portal and click **Close Case** in the right column.
+Go to the case in the portal and click **Close Case**.
 
- :::image type="content" source="media/xcs-l.png" alt-text="Screenshot of the Close case view.":::
+ <!---:::image type="content" source="media/xcs-l.png" alt-text="Screenshot of the Close case view.":::--->
+ :::image type="content" source="media/xcs-case-edit-4.png" alt-text="Screenshot of the Close case view.":::
 
 The status in the case header changes to "Closed" and the button changes to read **Re-Open Case**.
 
@@ -54,7 +58,8 @@ The status in the case header changes to "Closed" and the button changes to read
 
 Go to the case in the portal and click **Re-Open Case** in the right column.
 
- :::image type="content" source="media/xcs-m.png" alt-text="Screenshot of the Re-Open case view.":::
+ <!---:::image type="content" source="media/xcs-m.png" alt-text="Screenshot of the Re-Open case view.":::--->
+ :::image type="content" source="media/xcs-case-edit-5.png" alt-text="Screenshot of the Re-Open case view.":::
 
 The status in the case header changes to "Open" and the button changes to read **Close Case**. It's a good idea to add a comment explaining why you're re-opening the case.  
 

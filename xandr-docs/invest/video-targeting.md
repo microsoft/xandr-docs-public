@@ -60,4 +60,4 @@ Player inventory is available across all supply types (web, mobile web, and mobi
 > [!TIP]
 > For maximum delivery and reach, we recommend that you include **No player width provided** in your targeting, because some inventory (such as Google Ad Manager) is not classified.
 
-You can either click the graphic to make a selection or check the appropriate checkbox.
+You can either click the graphic to make a selection or select the appropriate checkbox.

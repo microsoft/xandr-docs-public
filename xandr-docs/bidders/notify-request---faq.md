@@ -29,7 +29,7 @@ impression and one for the accept bid callback. This requires us to join those t
 
 ### Metrics allows me to see my error rate, but I want to know what kinds of errors we are generating. Is this possible?
 
-If you are getting `notify_requests`, by default you will be sent errors for timeouts and throttled or aborted requests. All other types of errors are included in the "error" field of lost notifications. So to have the best understanding of all errors, it's recommended that you have the "notify_lost" field of your bidder object set to true. If this is something you want to enable, ask your technical support representative.
+If you are getting `notify_requests`, by default you will be sent errors for timeouts and throttled or aborted requests. All other types of errors are included in the `"error"` field of lost notifications. So to have the best understanding of all errors, it's recommended that you have the `"notify_lost"` field of your bidder object set to true. If this is something you want to enable, ask your technical support representative.
 
 ## Related topics
 

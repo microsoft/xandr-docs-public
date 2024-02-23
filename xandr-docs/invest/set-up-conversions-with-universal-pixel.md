@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Set Up Conversions with Universal Pixel
-description: Learn how to set up conversions for your universal pixel by using rules and conditions. You can then track conversion activity by using Microsoft Invest reporting.
+description: Learn how to set up conversions for universal pixel by using rules and conditions. You can then track conversion activity by using Microsoft Invest reporting.
 ms.date: 10/28/2023
 ---
 
@@ -9,11 +9,9 @@ ms.date: 10/28/2023
 You can set up conversions for your universal pixel using rules and conditions, then track conversion activity using Microsoft Invest reporting.
 
 1. From the top menu bar, click **Audiences** > **Universal Pixel**.
-1. Select a pixel from the **Universal Pixels** page.
-   <br> If no pixels are defined, use the setup instructions in [Universal Pixel Basic Implementation](./universal-pixel-basic-implementation.md) to create one.
+1. Select a pixel from the **Universal Pixels** page. If no pixels are defined, use the setup instructions in [Universal Pixel Basic Implementation](./universal-pixel-basic-implementation.md) to create one.
 1. Click **+New**.
-1. Provide a name for the conversion.
-   <br>This name will identify the conversion in conversion reporting.
+1. Provide a name for the conversion. This name will identify the conversion in conversion reporting.
 1. Categorize your conversion as a lead, landing page, or another event category.
    > [!NOTE]
    > If you have already used a standard event as a condition for the conversion, then the conversion will be categorized with that standard event by default.

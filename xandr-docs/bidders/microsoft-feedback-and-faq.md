@@ -8,4 +8,4 @@ ms.date: 10/28/2023
 
 **We strictly adhere to Microsoft's content guidelines which are contained in the Microsoft Advertising policies here:**
 
-[Policies and Guidelines - Microsoft Advertising](https://about.ads.microsoft.com/en-us/policies/home).
+[Policies and Guidelines - Microsoft Advertising](https://about.ads.microsoft.com/en-us/policies/home)

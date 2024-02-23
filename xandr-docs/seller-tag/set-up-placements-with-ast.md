@@ -11,13 +11,13 @@ This page contains a sample web page showing how Xandr's seller tag (AST) func
 
 > [!NOTE]
 > See the [AST API Reference](ast-api-reference.md) for more details on using the functions in this example.
-> [!NOTE]
+>
 > Xandr now supports a domain, adnxs-simple.com, which does not send or read browser cookies on requests. Clients can leverage this cookie-free domain when there is no consent to use personal data. Relevant calls initiated by Xandr will automatically use this domain when there is no consent or when cookies are not required for the function. For more information, see [Part of Service Policies](../policies-regulations/index.yml).
 >
 > To use the adnxs-simple.com domain:
 >
-> - If you load ast.js directly from Xandr's CDN, update the library tag to start loading from the new cookie-free domain: [https://acdn.adnxs-simple.com/ast/ast.js](https://acdn.adnxs-simple.com/ast/ast.js)
-> - If you load ast.js from a local server, update ast.js to the latest version (version 0.37.1 or higher)
+> - If you load `ast.js` directly from Xandr's CDN, update the library tag to start loading from the new cookie-free domain: [https://acdn.adnxs-simple.com/ast/ast.js](https://acdn.adnxs-simple.com/ast/ast.js)
+> - If you load `ast.js` from a local server, update `ast.js` to the latest version (version 0.37.1 or higher)
 
 ## Step 1: Create the APN object and load the Xandr JavaScript library
 
@@ -28,7 +28,7 @@ In line 5, we set up an empty AST object. In line 7, we create a function queue 
 > [!WARNING]
 > Deploying the AST tag into an external Javascript file or other customizations to the deployment of this code could result in unintended outcomes or loss of functionality, and will require customer action to test and utilize features in future AST releases. Xandr may not be able to troubleshoot or support in this instance.
 
-```pre
+```
 <html>
 <head>
     <script type="text/javascript">
@@ -48,9 +48,9 @@ In line 5, we set up an empty AST object. In line 7, we create a function queue 
 
 ## Step 2: Set global page options
 
-Now we set the global page options with the `setPageOpts` function. Here, we set the member ID to 958 and define the page-wide targeting parameters. `member` is required in either `setPageOpts` or `defineTag` (see below). This example uses age and gender.
+Now we set the global page options with the `setPageOpts` function. Here, we set the member ID to `958` and define the page-wide targeting parameters. `member` is required in either `setPageOpts` or `defineTag` (see below). This example uses age and gender.
 
-```pre
+```
     //push commands to loading queue, to allow for async loading
     apntag.anq.push(function() {
         //set global page options
@@ -75,7 +75,7 @@ Next, we define all the ad placements we want on this page using the `defineTag`
 
 - `invCode`: the placement code for this placement. (`invCode` OR `tagId` required)
 
-- `tagId`: the placement id for this placement ( `invCode`  OR  `tagId` required)
+- `tagId`: the placement ID for this placement ( `invCode`  OR  `tagId` required)
 
 - `sizes`: if you are using multiple sizes, the first item in the list is the placement size and other sizes are promo sizes.
 
@@ -83,8 +83,7 @@ Next, we define all the ad placements we want on this page using the `defineTag`
 
 - Other options available; see the [AST API Reference](./ast-api-reference.md).
 
-    
-  ```pre
+  ```
           //define ad tags
           apntag.defineTag({
                           invCode: 'ABC1234',
@@ -102,7 +101,7 @@ Next, we define all the ad placements we want on this page using the `defineTag`
 
 As soon as all the tags are defined, call the `loadTags` function. This function sends out ad requests for the tags in one ad call asynchronously.
 
-```pre
+```
         //start loading tags
         apntag.loadTags();
     });
@@ -117,7 +116,7 @@ In the body of the page, specify the location of each placement using `div` tags
 > [!NOTE]
 > AST manages all the DOM elements inside the ad placeholder `div` tag programmatically. Since these elements may change, do not directly access any of the elements; use only the built-in AST functions, such as `refresh`. Accessing these elements directly may result in unexpected behavior, such as ads appearing in the wrong location on the page, duplicate ads, or blanks.
 
-```pre
+```
 <body>
         <script type="text/javascript">
         apntag.anq.push(function() {

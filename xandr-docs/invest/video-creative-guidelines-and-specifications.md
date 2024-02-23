@@ -41,12 +41,12 @@ Adhere to these guidelines and specifications when creating video creatives that
   - 1200kbps
   - 2500kbps (optimized for high speed connections)
 - Use secure tags in all cases. If you are trafficking VPAID creatives, make sure to properly secure every referenced file.
-- Ensure that there is no invalid or unsupported character present in the VAST url as well as in the 3rd party segments attached to the creative. For example,
+- Ensure that there is no invalid or unsupported character present in the VAST URL as well as in the 3rd party segments attached to the creative. For example,
   - This is the set of valid VAST characters: `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-._~:/?#[]@!$&'()*+,;=.`
   - This is a set of common invalid characters: `|, <, >, ^, {,}.`
 - Additionally:
-  - If there are curly brackets `{ }` present in the VAST url or segment, then they **must** have `$` in front of the bracket.
-  - Ensure that there is no double `%` present in the VAST url or segment.
+  - If there are curly brackets `{ }` present in the VAST URL or segment, then they **must** have `$` in front of the bracket.
+  - Ensure that there is no double `%` present in the VAST URL or segment.
 
 > [!IMPORTANT]
 > Since September 2020, Chrome has introduced a new [browser intervention](https://iabtechlab.com/blog/chrome-will-block-heavy-ads-soon-get-vast-video-ads-ready/) that monitors ad iframes and may redirect them to an error page (Heavy ad intervention) if resource use exceeds specified criteria. Video advertisements, in particular, may be vulnerable to this intervention, which impacts iframes that load more than 4 MB of data.

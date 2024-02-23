@@ -1,14 +1,13 @@
 ---
-title : Microsoft Curate - Viewing Your Object Limits
-description : Learn how Object Limits Report allows you to view the limits set by Microsoft Advertising on number of objects (line items, creatives, etc.) on a platform and monitor your current usage.   
-ms.date : 11/16/2023
+title: Microsoft Curate - Viewing Your Object Limits
+description: In this page, learn how to explore the Object Limits Report that allows you to view the limits set on the number of objects that you can have on a platform. This page also covers FAQs on Object Limits.  
+ms.date: 11/16/2023
 ---
 
 
 # Microsoft Curate - Viewing your object limits
 
-Microsoft Advertising limits the number of object (line items, creatives, etc.) that you can have on the platform. The Object Limits
-Report allows you to view these limits and proactively monitor your current usage.
+Microsoft Advertising limits the number of object (line items, creatives, etc.) that you can have on the platform. The Object Limits Report allows you to view these limits and proactively monitor your current usage.
 
 Both active and inactive objects are counted against the object limit. For creatives, only non-expired objects are counted against the limit. A creative expires when it has neither served nor been modified in 45 days.
 
@@ -28,9 +27,7 @@ The **Object Limits Report** section lists the types of objects that are limited
 - **Limit/Available** - The maximum number of objects that you are allowed.
 - **% Limit** -The percent of your limit that you have reached. For creatives, this does not include expired objects.
 - **% Active** - Out of the total number of objects in use, the percent that are active.
-- **% Served or Modified in the Last 90 Days** - The percent of objects that have had impressions, or have been modified, in the last 90 days.
-  For creatives, since expired creatives are not counted, this will always be 100%. If the percentage is low, the client has many objects
-  that are candidates for deletion.
+- **% Served or Modified in the Last 90 Days** - The percent of objects that have had impressions, or have been modified, in the last 90 days. For creatives, since expired creatives are not counted, this will always be 100%. If the percentage is low, the client has many objects that are candidates for deletion.
 
 > [!TIP]
 > Line items that have not served or been modified in the last 90 days are good candidates for deletion. Contact your Microsoft Advertising representative if you need assistance in cleaning out old objects or to request that your object limit be increased.
@@ -39,15 +36,16 @@ The **Object Limits Report** section lists the types of objects that are limited
 
 ***How will I know that I am approaching my limit for an object?***
 
-We send you an email notification when you reach 85%, 95%, and 100% of your limit for an object. You can change the email addresses that
-receive notifications via your Member Settings.
+We send you an email notification when you reach 85%, 95%, and 100% of your limit for an object. You can change the email addresses that receive notifications via your Member Settings.
 
 ***What if I reach my limit for an object?***
 
-When you approach or reach your limit for any object other than creatives, you should delete any inactive, unused, or unnecessary
-instances. These deleted objects will continue to appear in reporting but cannot be undeleted.
+When you approach or reach your limit for any object other than creatives, you should delete any inactive, unused, or unnecessary instances. These deleted objects will continue to appear in reporting but cannot be undeleted.
 
-When you approach or reach your limit for creatives, you should remove non-expired creatives. Non-expired creatives have the `is_expired` field set to `false`. Note that removing expired creatives will not impact your creative count.
+When you approach or reach your limit for creatives, you should remove non-expired creatives. Non-expired creatives have the `is_expired` field set to `false`.
+
+> [!NOTE]
+> Removing expired creatives will not impact your creative count.
 
 ***What if I am already over my limit?***
 
@@ -55,9 +53,4 @@ If you need to create additional objects but have already met or exceeded your l
 
 ***Can my limit be raised?***
 
-In exceptional cases, a limit may be temporarily lifted by a small amount at the discretion of our engineering team. Please contact your
-Microsoft Advertising representative to discuss this option.
-
-
-
-
+In exceptional cases, a limit may be temporarily lifted by a small amount at the discretion of our engineering team. Please contact your Microsoft Advertising representative to discuss this option.

@@ -31,7 +31,7 @@ For all auctions conducted by a third-party, bidders will receive a pending noti
 | `fail` | some | boolean | Returns true when the bid response could not be processed (e.g. invalid JSON passed in the bid response). |
 | `error` | some | string | When fail is true, this field displays the corresponding error message. See [Error List](#error-list) below. |
 | `error_id` | some | int | More details on the number provided can be found [here](#error-list). |
-| `response_time_ms` | some | int | When provided, this is the number of milliseconds for the the bid_response to return. This parameter will be excluded if no response is returned. |
+| `response_time_ms` | some | int | When provided, this is the number of milliseconds for the the `bid_response` to return. This parameter will be excluded if no response is returned. |
 
 ## Tags
 
@@ -45,7 +45,7 @@ For all auctions conducted by a third-party, bidders will receive a pending noti
 | `creative_id` | some | int | The ID of the creative included in the bid response. On "lost" and "no-bid" requests, no creative ID will be specified. |
 | `price_paid` | type = won | double | The actual price paid (CPM) by the winner. This is only available if you won the impression. |
 | `price_sold_for` | type = sold | double | The revenue received by the owner of the impression when sold. For sellers only. |
-| `custom_notify_data` | some | string | If you won the impression for this tag, the custom notify data that you submitted for the winning bid will pass through at the tag level in the notification |
+| `custom_notify_data` | some | string | If you won the impression for this tag, the custom notify data that you submitted for the winning bid will pass through at the tag level in the notification. |
 | `payment_rule_id` | some | int | The ID of the payment rule the tag has assigned to it. |
 
 ## Responses
@@ -83,7 +83,7 @@ If the [Bidder Service](bidder-service.md) parameter `notify_full_auction` is se
 > [!NOTE]
 > This is only available when using the platform bid protocol. OpenRTB wins will be sent using the NURL field in the bid response.
 
-``` 
+```
 {   "notify_request":{
       "timestamp":"2011-02-09 00:11:44",
       "response_time_ms":4,
@@ -111,7 +111,7 @@ If the [Bidder Service](bidder-service.md) parameter `notify_full_auction` is se
 
 ### Single tag request - Auction lost
 
-``` 
+```
 {
     "notify_request": {
         "user_id_64": 2843838668060323000,
@@ -138,7 +138,7 @@ If the [Bidder Service](bidder-service.md) parameter `notify_full_auction` is se
 
 ### Single tag request - Error in response
 
-``` 
+```
 {
     "notify_request": {
         "user_id_64": 9191106446964517565,

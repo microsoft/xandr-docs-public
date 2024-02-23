@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - VAST Check
-description: Third-party VAST and VPAID video creatives undergo checks on XML. This article describes the different outputs you may see and corrective action that can be taken.
+description: This article describes the different outputs you may see, and corrective action that can be taken when adding a third-party VAST and VPAID video creatives.
 ms.date: 10/28/2023
 ---
 
@@ -18,8 +18,7 @@ When adding a third-party VAST or VPAID video creative, a series of checks are p
 ## VAST check elements
 
 - Duration: A duration with format 00:00:00 is required.
-- Formats: To deliver on all player types, the following formats are
-  recommended:
+- Formats: To deliver on all player types, the following formats are recommended:
   - VAST: Flv, MP4, WebM
   - VPAID: application/JavaScript, application/x-shockwave/flash
 - Secure: All URLs inside the VAST document must be prefixed with https:// to serve on secure inventory.
@@ -71,7 +70,7 @@ Minimum recommended OTT creative specifications:
 
 - The URL may lead to a rotating, deactivated, or targeting-enabled tag that only selectively returns a full XML response
 
-:::image type="content" source="./media/unable-to-run.png" alt-text="Screenshot of the error message stating that no information was found.":::
+  :::image type="content" source="./media/unable-to-run.png" alt-text="Screenshot of the error message stating that no information was found.":::
 
 **Actions to take:**
 
@@ -80,14 +79,14 @@ Minimum recommended OTT creative specifications:
 - If you paste the VAST URL into a browser and see a full valid XML file for the creative, then the third-party ad server is likely blocking Microsoft Advertising VAST Check specifically. The tag provider will need to address this before the creative can be trafficked.
 - To remove a block, it may also help to inform the ad server that our VAST Check user agent will appear as: **connection.setRequestProperty("User-Agent","AppNexus Vastbot/1.0");**
 - To see what the VAST URL is returning when called by VAST Check, make the following API call with your VAST URL inserted: `curl -L -v -H "User-Agent: ``AppNexus`` VastBot" "VAST_URL"`
-  - If there isn't any XML or a blank XML response is returned, the ad server isn't responding to our VAST Check properly
+  - If there isn't any XML or a blank XML response is returned, the ad server isn't responding to our VAST Check properly.
 
 ### Error: We are unable to detect content from this tag
 
 > [!NOTE]
 > Full Error:
 >
-> Error: There was an error with the request: We are unable to detect content from this tag. This may occur if the tag has no content, or if it is specifically blocking our VAST Check Service. Please reach out to your third-party ad server for assistance.
+> Error: There was an error with the request: We are unable to detect content from this tag. This may occur if the tag has no content, or if it is specifically blocking our VAST Check Service. Reach out to your third-party ad server for assistance.
 
 **What it means:**
 
@@ -117,15 +116,15 @@ If VAST check returns this message, the creative was scanned but contains errors
 
 - Click **Run check again** button to initiate the re-scanning of the creative XML document.
 
-   :::image type="content" source="./media/run-check-again.png" alt-text="Screenshot of Run Check Again.":::
+   :::image type="content" source="./media/run-check-again.png" alt-text="Screenshot of the Run Check Again button.":::
 
   This feature would address the following scenarios where:
-  - Scanner failed to run during the upload
-  - Scanner timed out while scanning
+  - Scanner failed to run during the upload.
+  - Scanner timed out while scanning.
   - Scanner detected an issue such as missing or wrong duration, missing or wrong media file format, etc.
   - VAST XML content is updated on the ad server, but needs to be updated at Microsoft Advertising platform and back-end.
 
-- Reach out to the tag provider to add the missing duration information or revise the format. For example
+- Reach out to the tag provider to add the missing duration information or revise the format. For example,
 
   :::image type="content" source="./media/video-duration.png" alt-text="Screenshot that shows how to add the missing duration information or revise the format.":::
 
@@ -137,13 +136,13 @@ If VAST check returns this message, the creative was scanned but contains errors
 
 **Actions to take:**
 
-- Click **Run check again** button to initiate the re-scanning of the creative XML document
+- Click **Run check again** button to initiate the re-scanning of the creative XML document.
 
-  :::image type="content" source="./media/run-check-again.png" alt-text="Diagram of Run Check Again."::: 
- 
+  :::image type="content" source="./media/run-check-again.png" alt-text="Diagram that shows the Run Check Again button.":::
+
   This feature would address the following scenarios where:
-  - Scanner failed to run during the upload
-  - Scanner timed out while scanning
+  - Scanner failed to run during the upload.
+  - Scanner timed out while scanning.
   - Scanner detected an issue such as missing or wrong duration, missing or wrong media file format, etc.
   - VAST XML content is updated on the ad server, but needs to be updated at Microsoft Advertising platform and back-end.
 - Reach out to the tag provider to update the creative with at least one of the recommended video formats.
@@ -172,7 +171,7 @@ Including all recommended video formats will allow your creative to play in a la
 
 For sample XML snippets with the recommended formats, see the [No video formats detected](#no-video-formats-detected).
 
-### &lt;Wrapper&gt; element(s) detected
+### `<Wrapper>` element(s) detected
 
 **What it means:** A `<Wrapper>` element indicates that the location of the `<InLine>` tag from which to retrieve the video creative is not located directly in the current VAST document. The location of that tag must be retrieved from another VAST document. In addition, a `<Wrapper>` element may refer to a VAST document that contains a `<Wrapper>` element. Each redirect to another VAST document increases the time taken to reach the actual creative.
 
@@ -183,7 +182,7 @@ For sample XML snippets with the recommended formats, see the [No video formats 
 
 Excerpt of a VAST document with a `<Wrapper>` element pointing to an `<InLine>` tag:
 
-:::image type="content" source="./media/wrapper-vast.png" alt-text="Screenshot of an excerpt of a VAST document with a wrapper element pointing to an inline tag":::
+:::image type="content" source="./media/wrapper-vast.png" alt-text="Screenshot of an excerpt of a VAST document with a wrapper element pointing to an inline tag.":::
 
 ## All attributes are present and valid (valid creative)
 

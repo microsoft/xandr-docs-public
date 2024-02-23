@@ -20,7 +20,7 @@ An in-banner video ad unit can be added to a web page in any place where a regul
 
 Using AST, you can define the tag (placement) you intend to call. When defining a in-banner video placement, there are additional options that you can pass to specify how you would like the player to appear and behave on your page. A sample call to `defineTag` is shown here:
 
-``` pre
+```
     apntag.defineTag({
         //required params
         targetId: 'banner_div',

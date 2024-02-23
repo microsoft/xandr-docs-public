@@ -12,6 +12,6 @@ Frequency caps can be set at the line item, advertiser, insertion order, and cre
 
 See [Frequency and Recency Caps](./frequency-and-recency-caps.md) for more information about understanding and configuring frequency and recency.
 
-## Related topics
+## Related topic
 
-- [Create an Augmented Line Item](./create-an-augmented-line-item-ali.md)
+[Create an Augmented Line Item](./create-an-augmented-line-item-ali.md)

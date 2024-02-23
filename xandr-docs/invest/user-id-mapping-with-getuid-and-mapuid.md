@@ -17,15 +17,15 @@ The **getUID** service retrieves the Microsoft Advertising ID so you can coordin
 
 |  |  |
 |:---|:---|
-| **Prostarr User ID** | PS123 |
-| **Microsoft Advertising User ID** | 2894234234 |
-| **Shoe buyer Segment ID** | 0005 |
+| **Prostarr User ID** | `PS123` |
+| **Microsoft Advertising User ID** | `2894234234` |
+| **Shoe buyer Segment ID** | `0005` |
 
 If the advertiser Prostarr tells us that user `PS123` is in segment `0005`, this will mean nothing to us. Instead, they have to tell us that user `2894234234` is in segment `0005`.
 
-To do this, Prostarr has done a previous mapping of all Microsoft Advertising and Prostarr Sportswear user IDs using the GetUID service and stored that mapping in its internal database. A GetUID call looks like
+To do this, Prostarr has done a previous mapping of all Microsoft Advertising and Prostarr Sportswear user IDs using the GetUID service and stored that mapping in its internal database. A getUID call looks like
 
-```pre
+```
 https://ib.adnxs.com/getuid?URL 
 ```
 
@@ -36,31 +36,31 @@ where the URL is the the one you want the mapping directed to. This pixel is pla
 
 ## The getUID service
 
-A URL of your choice will receive a client-side call with the Microsoft Advertising user ID as a querystring parameter. During the ad call, Microsoft Advertising redirects the user to the member's desired URL. The Impression Bus inserts the Microsoft Advertising user ID into the URL, either by replacing a `$UID` macro, or by appending it to the end of the URL. When the user does not have an Microsoft Advertising cookie, "0" is returned and Microsoft Advertising attempts to create one. However, if the user is encountering the getuid call for the first time, "0" will not be returned.
+A URL of your choice will receive a client-side call with the Microsoft Advertising user ID as a querystring parameter. During the ad call, Microsoft Advertising redirects the user to the member's desired URL. The Impression Bus inserts the Microsoft Advertising user ID into the URL, either by replacing a `$UID` macro, or by appending it to the end of the URL. When the user does not have an Microsoft Advertising cookie, `"0"` is returned and Microsoft Advertising attempts to create one. However, if the user is encountering the getuid call for the first time, `"0"` will not be returned.
 
 ## Code
 
 The format of the getUID Service is fairly simple:
 
-```pre
+```
 https://ib.adnxs.com/getuid?URL 
 ```
 
 The secure version uses this format:
 
-```pre
+```
 https://secure.adnxs.com/getuid?URL 
 ```
 
-Users without cookies or users who have opted out will be redirected with a user ID of 0. If you would prefer not to receive user IDs of 0, use this format:
+Users without cookies or users who have opted out will be redirected with a user ID of `0`. If you would prefer not to receive user IDs of `0`, use this format:
 
-```pre
+```
 https://ib.adnxs.com/getuidnb?URL 
 ```
 
 If you need the URL to remain URI-encoded, use this format:
 
-``` pre
+```
 https://ib.adnxs.com/getuidu?URL 
 ```
 
@@ -68,25 +68,25 @@ https://ib.adnxs.com/getuidu?URL
 
 To return the Microsoft Advertising user ID in a JSON response with CORS support, use the format:
 
-```pre
+```
 https://ib.adnxs.com/getuidj 
 ```
 
 You will receive a JSON-formatted response like this:
 
-```pre
+```
 {"uid":1680598911678123849} 
 ```
 
 To return a JSONP response with CORS support:
 
-```pre
+```
 https://ib.adnxs.com/getuidp?callback=ABC 
 ```
 
-(Where `callback` is the callback function as defined on the query string.) You will receive a JSONP-formatted response like this:
+where `callback` is the callback function as defined on the query string. You will receive a JSONP-formatted response like this:
 
-``` pre
+```
 ABC({"uid":1680598911678123849}) 
 ```
 
@@ -94,13 +94,13 @@ ABC({"uid":1680598911678123849})
 
 In most cases, it will be necessary to pass the user ID into a specified parameter within the query string of the URL. To accomplish this, you may use the `$UID` macro:
 
-```pre
+```
  https://ib.adnxs.com/getuid?https://ad.adserver.com/pixel?adnxs_uid=$UID&geo=35&referrer=https://www.website.com 
 ```
 
 The `$UID` macro will be replaced with the Microsoft Advertising user ID by the Impression Bus and the user will be directed to the following URL:
 
-```pre
+```
  https://ad.adserver.com/pixel?adnxs_uid=19241908471992&geo=35&referrer=https://www.website.com 
 ```
 
@@ -110,20 +110,20 @@ An easy way to create this mapping is to piggyback the getUID Service off of one
 
 For example, let's assume the following pixel exists on a publisher site today:
 
-```pre
+```
  <img src="media/pixel?id=234123" width=1 height=1/> 
 ```
 
-Instead, fire the Microsoft Advertising getuid pixel, providing
+Instead, fire the Microsoft Advertising getUID pixel, providing
 the URL of the adserver.com pixel:
 
-```pre
+```
  https://ib.adnxs.com/getuid?https://ad.adserver.com/pixel?id=234123&adnxs_uid=$UID 
 ```
 
 The getUID service redirects to the specified URL with the Microsoft Advertising user ID in place of the `$UID` macro:
 
-```pre
+```
 https://ad.adserver.com/pixel?id=234123&adnxs_uid=19241908471992 
 ```
 
@@ -132,13 +132,13 @@ When `adserver.com` receives this call, the Microsoft Advertising user ID can be
 ## The mapUID service
 
 > [!TIP]
-> The mapUID service has fees associated with it. If you're interested in using this option, please speak with your Microsoft Advertising representative.
+> The mapUID service has fees associated with it. If you're interested in using this option, speak with your Microsoft Advertising representative.
 
 The **mapUID** Service inserts your in-house ID into the Microsoft Advertising [Server Side Cookie Store](./server-side-cookie-store.md).
 
 The format for a client-side pixel that maps your ID to ours in our system is
 
-```pre
+```
 https://ib.adnxs.com/mapuid?member=MEMBER_ID&user=USER_UD 
 ```
 
@@ -146,13 +146,13 @@ where the member ID is the ID assigned to your company by Microsoft Advertising 
 
 If you have more than one user ID, you can separate them with semicolons; for example:
 
-```pre
+```
 https://ib.adnxs.com/mapuid?member=123&user=ABC;DEF;GHI 
 ```
 
 ## Expiration of mappings
 
-The average time to live (TTL) for mapUID mappings is around 2.5 weeks. Therefore it's very important that you fire the mapUID pixel as frequently as possible and on as many pages as possible to keep your mappings live.
+The average time to live (TTL) for mapUID mappings is around 2.5 weeks. Therefore, it's very important that you fire the mapUID pixel as frequently as possible and on as many pages as possible to keep your mappings live.
 
 ## Piggybacking a segment call off of a mapUID call
 
@@ -160,15 +160,15 @@ You can add user IDs to one or more segments in the Microsoft Advertising cookie
 
 Here is the syntax:
 
-```pre
+```
 https://ib.adnxs.com/mapuid?member=[MEMBER_ID]&user=[USER_ID]&seg=[SEG_ID],[SEG_ID],[SEG_ID]
 
 https://ib.adnxs.com/mapuid?member=123&user=12abc34565&seg=1,2,3
 ```
 
-To pass in values for each segment use colons. (This example used segment codes instead of IDs.)
+To pass in values for each segment use colons. This example uses segment codes instead of IDs.
 
-```pre
+```
 https://ib.adnxs.com/mapuid?member=123&user=[USER_ID]&seg_code=[code1]:[code1value],[code2]:[code2value],[code3]:[code3value] 
 ```
 

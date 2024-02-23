@@ -27,19 +27,19 @@ Here's how it works:
 |:---|:---|:---|
 | `id` | int | The ID of the Xandr-approved creative pixel. |
 | `name` | string | The name of the Xandr-approved creative pixel. |
-| `format` | enum | The format of the Xandr-approved creative pixel. Possible values: "raw-js", "url-html", "url-js", or "url-image". |
-| `content` | string | The HTML or JavaScript content of the creative pixel. This field is included if format is "raw-js". |
-| `secure_content` | string | The secure HTML or JavaScript content of the creative pixel. This field is included if format is "raw-js". |
-| `url` | string | The URL of the html, JavaScript, or image creative pixel. This field is included if format is "url-html", "url-js" or "url-image". |
-| `secure_url` | string | The secure URL of the html, JavaScript, or image creative pixel. This field is included if format is "url-html", "url-js" or "url-image". |
+| `format` | enum | The format of the Xandr-approved creative pixel. Possible values: `"raw-js"`, `"url-html"`, `"url-js"`, or `"url-image"`. |
+| `content` | string | The HTML or JavaScript content of the creative pixel. This field is included if format is `"raw-js"`. |
+| `secure_content` | string | The secure HTML or JavaScript content of the creative pixel. This field is included if format is `"raw-js"`. |
+| `url` | string | The URL of the html, JavaScript, or image creative pixel. This field is included if format is `"url-html"`, `"url-js"`, or `"url-image"`. |
+| `secure_url` | string | The secure URL of the html, JavaScript, or image creative pixel. This field is included if format is `"url-html"`, `"url-js"`, or `"url-image"`. |
 | `num_required_params` | int | The number of parameters that must be defined when adding the pixel to a creative. |
 | `require_reaudit` | boolean | If true, adding the pixel to a creative causes the creative to be resubmitted for audit. |
 
 ## Examples
 
-### Viewing all Xandr-approved creative pixels
+### View all Xandr-approved creative pixels
 
-``` 
+```
 $ curl -b cookies -c cookies 'https://api.adnxs.com/pixel-template'
 {
     "response": {
@@ -88,9 +88,9 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/pixel-template'
 }
 ```
 
-### Viewing a specific Xandr-approved creative pixel
+### View a specific Xandr-approved creative pixel
 
-``` 
+```
 $ curl -b cookies -c cookies 'https://api.adnxs.com/pixel-template/1'
 {
     "response": {

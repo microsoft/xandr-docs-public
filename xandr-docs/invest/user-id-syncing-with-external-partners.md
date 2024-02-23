@@ -16,7 +16,7 @@ There are three kinds of platform partners with whom we need to sync user IDs: s
 
 ### Supply partners
 
-When we get an ad call, we have to know the user's Microsoft Advertising user ID so we can apply frequency and recency, segment, and other data. We can easily do this when our tag is on the page (i.e., the tag domain is ib.`adnxs.com` or has been CNAMEd to `ib.adnxs.com`) because we can access the user's `ib.adnxs.com` browser cookie where we store an Microsoft Advertising ID.
+When we get an ad call, we have to know the user's Microsoft Advertising user ID so we can apply frequency and recency, segment, and other data. We can easily do this when our tag is on the page (i.e., the tag domain is `ib.adnxs.com` or has been CNAMEd to `ib.adnxs.com`) because we can access the user's `ib.adnxs.com` browser cookie where we store an Microsoft Advertising ID.
 
 For supply partners where we don't have a tag on the page, the supply partner passes us a user ID. This means that we must have a mapping of their IDs and our IDs in place in advance of the ad call so we can recognize this user. This mapping can be done at any time as long as it is in advance of the ad call. Then the mapping is stored either in the Microsoft Advertising database (our partner sends us their ID and we translate it) or in the supply partner's database (our partner sends us our ID) for use at the time of the ad call.
 
@@ -43,7 +43,7 @@ If our tag isn't on the page, we don't bid. If our tag is on the page, the follo
 
 - After the auction is held, a creative is served to the webpage.
 
-- We also drop a usersync pixel with one or more of our partners. For example, a supply partner may have a URL at which they want to receive the Microsoft Advertising user ID for storage in their database. This URL is formatted like so: `https://exchangea.net/pixel?id=$UID`. We then include this URL, populated with the user's newly set Microsoft Advertising ID in the `$UID` macro, along with the creative. Because the supply partner's browser cookie is included in the HTTP request, the partner can now store the mapping. <br> In addition, we sometimes drop a usersync pixel in these additional cases:
+- We also drop a usersync pixel with one or more of our partners. For example, a supply partner may have a URL at which they want to receive the Microsoft Advertising user ID for storage in their database. This URL is formatted like so: `https://exchangea.net/pixel?id=$UID`. We then include this URL, populated with the user's newly set Microsoft Advertising ID in the `$UID` macro, along with the creative. Because the supply partner's browser cookie is included in the HTTP request, the partner can now store the mapping. In addition, we sometimes drop a usersync pixel in these additional cases:
 
 - After other `ib.adnxs.com` pixels fire, such as segment or conversion pixels.
 
@@ -60,7 +60,7 @@ When the session cookie did not persist, we have a `no_cookie_user` flag in the 
 
 Publishers and advertisers can automatically sync page visitors' user IDs with all Microsoft Advertising external partners by adding the following code to pages:
 
-```pre
+```
 <iframe height="0" width="0" marginwidth="0" marginheight="0" scrolling="no"
          frameborder="0" src="//ib.adnxs.com/async_usersync_file" style="border: 0px; display:
          none;"></iframe>

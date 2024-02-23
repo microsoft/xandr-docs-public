@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Set a Recency Cap
-description: In this article, you'll learn how to set a frequency cap. You can apply only one recency setting. Time frames for recency differ from frequency time frames.
+description: In this article, you'll learn how to set a recency cap. You can apply only one recency setting. Time frames for recency differ from frequency time frames.
 ms.date: 10/28/2023
 ---
 
@@ -24,6 +24,6 @@ You can set recency caps from the **Audience & Location Targeting** section with
     | **Serve only 1 imp per page** | Use this setting to limit the number of impressions that an individual advertiser can serve on a page in multi-tag auctions. This option is network-specific and may not be available for your network (member). |
     | **Include users without cookies** | Once you set a frequency cap, you can choose to show creatives to users without cookies. There is no way to identify these users, so if you turn on this option your frequency and recency caps will not apply to any user without cookies. However, if you select not to include users without cookies you could limit your delivery. If you toggle this option and have set a daily frequency cap, [Advanced Frequency Management](./advanced-frequency-management.md) will be applied to help adhere to your daily frequency cap. |
 
-## Related topics
+## Related topic
 
-- [Frequency and Recency Examples](./frequency-and-recency-examples.md)
+[Frequency and Recency Examples](./frequency-and-recency-examples.md)

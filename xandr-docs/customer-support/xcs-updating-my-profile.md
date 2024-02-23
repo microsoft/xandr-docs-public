@@ -15,7 +15,8 @@ Your Customer Support Portal profile includes your name and photo.
 
 To view your profile click on the **Profile** menu and select **My Profile**.
 
- :::image type="content" source="media/xcs-n.png" alt-text="Screenshot of the My Profile screen.":::
+<!---:::image type="content" source="media/xcs-n.png" alt-text="Screenshot of the My Profile screen.":::--->
+:::image type="content" source="media/xcs-my-profile.png" alt-text="Screenshot of the My Profile screen.":::
 
 Click on your profile photo to upload a new photo, or update your current one.
 
@@ -25,7 +26,8 @@ Log in to the [Customer Support Portal](https://help.xandr.com) to access your f
 
 You can update your contact information, password, set email preferences, customize the language, locale, and time zone used for the portal. Go to **Profile** > **My Settings**, and select the appropriate options from the drop-down menus.
 
-:::image type="content" source="media/xcs-o.png" alt-text="A screenshot that shows how to navigate to My Settings.":::
+<!---:::image type="content" source="media/xcs-o.png" alt-text="A screenshot that shows how to navigate to My Settings.":::--->
+:::image type="content" source="media/xcs-my-settings.png" alt-text="A screenshot that shows how to navigate to My Settings.":::
 
 ### Contact information
 
@@ -33,11 +35,13 @@ Under **My Settings**, click the **Email Address** to edit your contact informat
 
 Click **Change Password** to set up a new password.
 
-:::image type="content" source="media/xcs-p.png" alt-text="A screenshot that shows how to update email address and password in the Account Details tab.":::
+<!---:::image type="content" source="media/xcs-p.png" alt-text="A screenshot that shows how to update email address and password in the Account Details tab.":::--->
+:::image type="content" source="media/xcs-contact-information.png" alt-text="A screenshot that shows how to update email address and password in the Account Details tab.":::
 
 Under **Location**, set the language, locale, and time zone and click **Save**.
 
-:::image type="content" source="media/xcs-q.png" alt-text="A screenshot that shows how to update Location settings.":::
+<!---:::image type="content" source="media/xcs-q.png" alt-text="A screenshot that shows how to update Location settings.":::--->
+:::image type="content" source="media/xcs-location.png" alt-text="A screenshot that shows how to update Location settings.":::
 
 ### Receive email notifications
 
@@ -60,11 +64,12 @@ Portal.
     If you're already logged in, you can go to **Profile > My Setting**.
     Under **My Settings** click **Change Password**.
 
-:::image type="content" source="media/xcs-r.png" alt-text="Screenshot that displays My Settings screen in which you can change your password.":::
+    <!---:::image type="content" source="media/xcs-r.png" alt-text="Screenshot that displays My Settings screen in which you can change your password.":::--->
+    :::image type="content" source="media/xcs-change-password.png" alt-text="Screenshot that displays My Settings screen in which you can change your password.":::
 
-3. When the email arrives, click on the reset link to go to the **New Password** page.
+1. When the email arrives, click on the reset link to go to the **New Password** page.
 
-4. Enter your password and password confirmation, and click **OK**.
+1. Enter your password and password confirmation, and click **OK**.
 
    > [!TIP]
    > To reset a password via the API, see [Account Recovery Service](../digital-platform-api/account-recovery-service.md).

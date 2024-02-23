@@ -26,16 +26,16 @@ Before they can buy or sell ads, a member needs a contract with Xandr. This cont
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| GET | [https://api.adnxs.com/member](https://api.adnxs.com/member) | To see all your members. |
-| GET | [https://api.adnxs.com/member/MEMBER_ID](https://api.adnxs.com/member/MEMBER_ID) | To see a particular member. |
+| `GET` | [https://api.adnxs.com/member](https://api.adnxs.com/member) | To see all your members. |
+| `GET` | [https://api.adnxs.com/member/MEMBER_ID](https://api.adnxs.com/member/MEMBER_ID) | To see a particular member. |
 
 > [!NOTE]
 > The calls below are visible to Xandr employees only. They can be made by users with the "admin" `user_type`.
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| POST | [https://api.adnxs.com/member](https://api.adnxs.com/member) | To add a new member. |
-| PUT | [https://api.adnxs.com/member/MEMBER_ID](https://api.adnxs.com/member/MEMBER_ID) | To modify an existing member. |
+| `POST` | [https://api.adnxs.com/member](https://api.adnxs.com/member) | To add a new member. |
+| `PUT` | [https://api.adnxs.com/member/MEMBER_ID](https://api.adnxs.com/member/MEMBER_ID) | To modify an existing member. |
 
 ## JSON fields
 
@@ -50,7 +50,7 @@ Before they can buy or sell ads, a member needs a contract with Xandr. This cont
 | `billing_address_2` | string(255) | The second line of the member's address. |
 | `billing_city` | string(100) | The city of the member's address. |
 | `billing_country` | string(50) | The country of the member. |
-| `billing_name` | string(100) | The billing name (who to write checks to).<br>**Required On:** POST. |
+| `billing_name` | string(100) | The billing name (who to write checks to).<br>**Required On:** `POST`. |
 | `billing_postal_code` | string(50) | The postal code for the member's address. |
 | `billing_region` | string | The region of the member's address. |
 | `buyer_clearing_fee_pct` | double | The percent of the CPM paid for inventory charged as a fee. |
@@ -61,15 +61,15 @@ Before they can buy or sell ads, a member needs a contract with Xandr. This cont
 | `default_tag_id` | int | The ID of the creative to serve in the case where tags are being called using unknown codes. |
 | `dongle` | string | A password that can be passed into a debug auction (as the "dongle" parameter) that will allow a member access to relevant debug output from their bidder. |
 | `email_code` | string(50) | Email code is a unique value used when TinyTags are processed via our email tag processing tool. Must be an alphanumeric value. |
-| `id` | int | The ID of the member.<br>**Required On:** PUT. |
+| `id` | int | The ID of the member.<br>**Required On:** `PUT`. |
 | `last_activity` | timestamp | The timestamp of last modification to this bidder instance. |
 | `platform_exposure` |  | See below for details.  |
-| `price_buckets` | array | When using Preemptive Tags, a selling member may require Price Bucket for 3rd party ad server pricing. Depending on the kind of integration a 3rd party adserver requires, the values might be [{"price_bucket": 10}, {"price_bucket": 20}. . . ] or [{"price_bucket": 10, "width": 300, "height":200", "pixel_url": "https://..."}, . . . ]. |
-| `prioritize_margin` | Boolean | If set to "true", Xandr will perform a bid/no bid check for managed campaigns based on line item minimum margin settings.  <br> <br>If set to "false", Xandr will not not perform any bid/no bid check for managed campaigns based on the line item minimum. |
+| `price_buckets` | array | When using Preemptive Tags, a selling member may require Price Bucket for 3rd party ad server pricing. Depending on the kind of integration a 3rd party adserver requires, the values might be `[{"price_bucket": 10}, {"price_bucket": 20}. . . ]` <br>or<br> `[{"price_bucket": 10, "width": 300, "height":200", "pixel_url": "https://..."}, . . . ]`. |
+| `prioritize_margin` | Boolean | If set to `"true"`, Xandr will perform a bid/no bid check for managed campaigns based on line item minimum margin settings.  <br> <br>If set to `"false"`, Xandr will not not perform any bid/no bid check for managed campaigns based on the line item minimum. |
 | `seller_revshare_pct` | double | Read-only for bidder-users and members.<br>Percentage amount that Xandr takes out of seller revenue. |
-| `serving_domain` | array of strings | Used when generating tags for selling members. (i.e. [mycompany.adnxs.com](https://mycompany.adnxs.com/) instead [ib.adnxs.com](https://ib.adnxs.com/)). "serving_domain": {"cname": null,"type": null} Read only. |
-| `sherlock_notify_email` | string | Each time Sherlock, our automated creative scanning system, scans a creative belonging to this member, a response is sent to this email address. The response includes the creative's audit status and any reasons why the creative has not passed audit. For more information, see [Sherlock](../monetize/sherlock-creative-quality-control.md). This field supports multiple comma-separated email addresses. |
-| `timezone` | string | The member timezone is the default timezone for your reports. For possible values, see [Reporting Timezones](reporting-timezones.md). Default is "EST5EDT".   |
+| `serving_domain` | array of strings | Used when generating tags for selling members. (i.e. `mycompany.adnxs.com` instead `ib.adnxs.com`). <br>`"serving_domain": {"cname": null,"type": null}`<br> Read only. |
+| `sherlock_notify_email` | string | Each time Sherlock, our automated creative scanning system, scans a creative belonging to this member, a response is sent to this email address. The response includes the creative's audit status and any reasons why the creative has not passed audit. For more information, see [Sherlock](../monetize/sherlock-creative-quality-control.md). <br>This field supports multiple comma-separated email addresses. |
+| `timezone` | string | The member timezone is the default timezone for your reports. <br>For possible values, see [Reporting Timezones](reporting-timezones.md). <br>Default is `"EST5EDT"`.   |
 
 ### Platform exposure
 
@@ -83,32 +83,32 @@ The platform exposure setting determines how your account is displayed to other 
 
 #### `hidden` example
 
-``` 
+```
 
 {
-"seller_id": "8253",
-"is_confidential": 1,
-"seller_type": "PUBLISHER"
+  "seller_id": "8253",
+  "is_confidential": 1,
+  "seller_type": "PUBLISHER"
 }
 
 ```
 
 #### `public` example
 
-``` 
+```
 
 {
-"seller_id": "7694",
-"seller_type": "INTERMEDIARY",
-"domain": "groupm.com",
-"name": "Xaxis – Slovakia Marketplace"
+  "seller_id": "7694",
+  "seller_type": "INTERMEDIARY",
+  "domain": "groupm.com",
+  "name": "Xaxis – Slovakia Marketplace"
 }
 
 ```
 
 The sample JSON below shows how to set this parameter.
 
-``` 
+```
 {
   "member": {
     "platform_exposure": "public"
@@ -127,7 +127,7 @@ Authentication is always the first step when using the API Services. The authent
 The only required fields are `billing_name` and `bidder_id` if the member is associated with a bidder, but since a member has a financial
 relationship with Xandr, you will probably want to include other billing-related information.
 
-``` 
+```
 $ cat member
 {
         "member" : {
@@ -145,7 +145,7 @@ $ cat member
 
 ### Add the member file to the impression bus cache
 
-``` 
+```
 $ curl -b cookies -c cookies -X POST --data-binary @member 'https://api.adnxs.com/member'
 {
         "response":{
@@ -156,7 +156,7 @@ $ curl -b cookies -c cookies -X POST --data-binary @member 'https://api.adnxs.co
 
 ### Now modify the member via a modified JSON-formatted file
 
-``` 
+```
 $ cat member_mod
 {
         "member" : {
@@ -175,7 +175,7 @@ $ cat member_mod
 
 ### Update the member information in the impression bus cache, using the member ID
 
-``` 
+```
 $ curl -b cookies -c cookies-X PUT --data-binary @member_mod 'https://api.adnxs.com/member/1'
 {
         "response":{
@@ -186,7 +186,7 @@ $ curl -b cookies -c cookies-X PUT --data-binary @member_mod 'https://api.adnxs.
 
 ### View information about the member
 
-``` 
+```
 $ curl -b cookies -c cookies 'https://api.adnxs.com/member/1'
 {
    "response":{

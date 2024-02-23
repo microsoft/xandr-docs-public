@@ -4,20 +4,17 @@ description: This report provides details about data or platform usage powered b
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Vendor usage report
+# Microsoft Invest - Vendor Usage report
 
-The Vendor Usage report is a Member-level report that provides details about data or platform usage powered by third
-party vendors (for example, user segment providers), the costs of that data or feature usage, and the line items/campaigns where vendor costs were applicable.
+The Vendor Usage report is a Member-level report that provides details about data or platform usage powered by third-party vendors (for example, user segment providers), the costs of that data or feature usage, and the line items/campaigns where vendor costs were applicable.
 
 ## Time frame
 
 All dates and times are given in UTC.
 
-**Time ranges**
+### Time ranges
 
-Time ranges define the time period of the data extracted for the report. The following is a complete list of time ranges available for reports.
-
-However, all time ranges are not available for every report.
+Time ranges define the time period of the data extracted for the report. The following is a complete list of time ranges available for reports. However, all time ranges are not available for every report.
 
 - Custom
 - Current Hour
@@ -42,19 +39,20 @@ However, all time ranges are not available for every report.
 - Month to Yesterday
 - Lifetime
 
-**Intervals**
+### Intervals
 
 Intervals determine how your data is grouped together into rows in the report response. The following is a complete list of intervals available for reports. However, all intervals are not available for every report.
 
 - Hourly: Data is grouped into rows by the hour.
 - Daily: Data is grouped into rows by the day.
 - Monthly: Data is grouped into rows by the month.
-- Cumulative: Data is grouped together in one figure, covering the
-  entire selected time range.
-
-Data retention period for this report is 60 days.
+- Cumulative: Data is grouped together in one figure, covering the entire selected time range.
 
 For more information about how quickly report data is processed, see [Availability of Reporting Data](./availability-of-reporting-data.md).
+
+### Data retention period
+
+Data retention period for this report is 60 days.
 
 ## Dimensions
 
@@ -92,7 +90,8 @@ For more information about how quickly report data is processed, see [Availabili
 Follow these steps to run your report.
 
 1. Select **Reporting** from the appropriate top menu (depending on how your account has been configured).
-    1. Or, from the Publishers top menu, click on **Prebid Server Premium** > **Analytics** > **Prebid Server Analytics**
+   <br>Or<br>
+   From the Publishers top menu, click on **Prebid Server Premium** > **Analytics** > **Prebid Server Analytics**.
 1. Select the relevant report from the list. The **Report** screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
    > [!IMPORTANT]
    > For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](./dimensions-metrics-filtering-and-grouping.md).
@@ -116,6 +115,6 @@ Follow these steps to run your report.
     - **Name this report**: Give this report with its current settings a name for future reference.
 1. Click **Run report** to send your report request.
 
-## Related topics
+## Related topic
 
-- [Member Reporting](./network-reporting.md)
+[Member Reporting](./network-reporting.md)

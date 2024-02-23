@@ -13,20 +13,31 @@ You also have the option to continue as a guest, without logging in, but you wil
 
 Before you open a case, you may want to double-check that the contact information in [your profile](xcs-updating-my-profile.md) is accurate.
 
-To open a new case, log in to the [Customer Support Portal](https://help.xandr.com) and click **Contact Support** in the lower-right corner of the page.
+To open a new case, log in to the [Customer Support Portal](https://help.xandr.com) and click **Contact Support** on the right side of the page.
 
- :::image type="content" source="media/xcs-f.png" alt-text="Screenshot of Contact Support option.":::
+ <!---:::image type="content" source="media/xcs-f.png" alt-text="Screenshot of Contact Support option.":::--->
+  :::image type="content" source="media/xcs-contact-support.png" alt-text="Screenshot of Contact Support option.":::
 
 ## Step 1: Select a category
 
 Select the category that best describes the case:
 
-- **Product Support** - Technical support queries, or questions about how to use features.
-- **Audit** - Questions about creative auditing standards, or pending or failed creative audits, as well as brand inquiries and questions about banned domains.
+<!---
 - **Anti-Malvertising** - Questions about banned ads or advertisers.
-- **Bidder, SSP, and Data Integrations Support** - Questions from external partners (external DSPs, SSPs and data providers).
-- **Client Finance** - General Billing requests, or questions around Credit, or Collections.
 - **Business Support** - Questions about invoices, contracts, credits, finance access control, and your account with.
+- **Creative Audit** - Questions about  creative auditing standards, or pending or failed creative audits.
+- **Domain Audit** - Questions about banned domains.
+- **Product Support** - Technical support queries, or questions about how to use features.
+- **Client Finance** - General Billing requests, or questions around Credit, or Collections.
+- **Other** - Questions that don't fit the other categories.
+--->
+- **Anti-Malvertising** - Questions about banned ads or advertisers.
+- **Bidder, SSP & Data Integrations Support** - Questions regarding Bidder Support and Bidder API, Data Management & Taxonomy, and External Supply.
+- **Bell DSP** - Questions regarding Bell DSP.
+- **Business Support** - Questions about invoices, contracts, credits, finance access control, and your account setup.
+- **Audit** - Questions about auditing standards, or pending or failed audits. Questions about banned domains.
+- **Product Support** - Technical support queries, or questions about how to use features.
+- **Client Finance** - General Billing requests, or questions around Credit, or Collections.
 
 ## Step 2: Select an issue
 
@@ -82,13 +93,15 @@ If you selected **Client Finance**, provide the Invoice Number related to your 
 
 Click **Upload File** or drag and drop your file in the attachment section to attach files that will help reproduce or troubleshoot the case, for example, an error log, a creative that's causing problems, a report that has helpful results, or a screenshot of the screen that's not displaying properly.
 
- :::image type="content" source="media/xcs-g.png" alt-text="Screenshot of Upload Attachment option.":::
+ <!---:::image type="content" source="media/xcs-g.png" alt-text="Screenshot of Upload Attachment option.":::--->
+ :::image type="content" source="media/xcs-add-attachments.png" alt-text="Screenshot of Upload Attachment option.":::
 
 ## Step 9: Submit the case
 
 Once you have completed all required fields, click **Submit**. You will be taken to the **Case Details** page.
 
- :::image type="content" source="media/xcs-h.png" alt-text="Screenshot of Case Details page.":::
+ <!---:::image type="content" source="media/xcs-h.png" alt-text="Screenshot of Case Details page.":::--->
+ :::image type="content" source="media/xcs-submit-the-case.png" alt-text="Screenshot of Case Details page.":::
 
 You can add another comment or attachment immediately by typing your comment into the comment box.
 

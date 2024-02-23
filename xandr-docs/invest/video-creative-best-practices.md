@@ -18,13 +18,13 @@ If not, the creative will not serve on Google Ad Manager inventory and will see 
 
 ## Is the creative duration longer than 60 seconds?
 
-This can limit reach because most supply sources will cap at 30 or 60 seconds. However, if your creative must be longer than 60 seconds, please reach out to your Microsoft Advertising representative.
+This can limit reach because most supply sources will cap at 30 or 60 seconds. However, if your creative must be longer than 60 seconds, reach out to your Microsoft Advertising representative.
 
 ## Are you using the correct tags?
 
 Make sure to use a **ptv** tag instead of a **tt** tag while running a debug auction for video creatives.
 
-```pre
+```
 https://secure.adnxs.com/ptv?id=[TAG_ID]&debug_member=[BUYER_MEMBER_ID]&dongle=[PASSWORD] 
 ```
 
@@ -42,11 +42,11 @@ Avoid using both VAST creatives and in-banner or interstitial video creatives wi
 
 ## Have you included all the recommended formats in your VAST XML file?
 
-Ensure that any VAST XML includes at least three formats -- FLV, MP4, and WebM. Not including the recommended formats will limit delivery.
+Ensure that any VAST XML includes at least three formats - FLV, MP4, and WebM. Not including the recommended formats will limit delivery.
 
 ## Does your ad server allow Microsoft Advertising VAST check domains?
 
-Ensure that your ad server allows Microsoft Advertising VAST check domains. VAST check may fail otherwise. Please reach out to your Microsoft Advertising representative for additional domain detail if necessary.
+Ensure that your ad server allows Microsoft Advertising VAST check domains. VAST check may fail otherwise. Reach out to your Microsoft Advertising representative for additional domain detail, if necessary.
 
 ## Have you included all necessary query string macros in your VAST tag?
 
@@ -62,6 +62,6 @@ heavy:
 
 - The main thread is used for more than 60 seconds in total.
 - In any 30 second window, the main thread is used for more than 15 seconds.
-- More than 4 MB of network bandwidth is consumed
+- More than 4 MB of network bandwidth is consumed.
 
 It is recommended that the creative is compliant with the technical specifications detailed above.

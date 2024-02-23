@@ -6,18 +6,17 @@ ms.date: 10/28/2023
 
 # Bidders - Language service
 
-Use the read-only Language Service to see what languages are registered in the Xandr system. Creatives are tagged with a
-specific language, and ad profiles can be configured to include/exclude particular languages.
+Use the read-only Language Service to see what languages are registered in the Xandr system. Creatives are tagged with a specific language, and ad profiles can be configured to include/exclude particular languages.
 
 ## REST API
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| GET | [https://api.adnxs.com/language](https://api.adnxs.com/language) | To view all the languages. |
-| GET | [https://api.adnxs.com/language?id=LANGUAGE_ID](https://api.adnxs.com/language?id=LANGUAGE_ID) | To view information about a particular language. |
-| POST | [https://api.adnxs.com/language](https://api.adnxs.com/language) | To add a language (admin only). |
-| PUT | [https://api.adnxs.com/language?id=LANGUAGE_ID](https://api.adnxs.com/language?id=LANGUAGE_ID) | To modify a language (admin only). |
-| DELETE | [https://api.adnxs.com/language?id=LANGUAGE_ID](https://api.adnxs.com/language?id=LANGUAGE_ID) | To delete a language (admin only). |
+| `GET` | [https://api.adnxs.com/language](https://api.adnxs.com/language) | To view all the languages. |
+| `GET` | [https://api.adnxs.com/language?id=LANGUAGE_ID](https://api.adnxs.com/language?id=LANGUAGE_ID) | To view information about a particular language. |
+| `POST` | [https://api.adnxs.com/language](https://api.adnxs.com/language) | To add a language (admin only). |
+| `PUT` | [https://api.adnxs.com/language?id=LANGUAGE_ID](https://api.adnxs.com/language?id=LANGUAGE_ID) | To modify a language (admin only). |
+| `DELETE` | [https://api.adnxs.com/language?id=LANGUAGE_ID](https://api.adnxs.com/language?id=LANGUAGE_ID) | To delete a language (admin only). |
 
 ## JSON fields
 
@@ -31,7 +30,7 @@ specific language, and ad profiles can be configured to include/exclude particul
 
 ### View all languages (below output is truncated)
 
-``` 
+```
 curl -b cookies -c cookies "https://api.adnxs.com/language"
 {
   "response": {
