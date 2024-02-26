@@ -120,8 +120,7 @@ To maximize reach across Windows App inventory, we recommend targeting both Supp
 
 ## Packages and deals
 
-Packages are a great way to leverage Microsoft user data with your campaigns. Currently, Windows AppNetwork and Windows Phone AppNetwork
-offer a few packages broken out by content category such as entertainment, games, and news. For more information, see [Buying Microsoft Deals](buying-microsoft-deals.md).
+Packages are a great way to leverage Microsoft user data with your campaigns. Currently, Windows AppNetwork and Windows Phone AppNetwork offer a few packages broken out by content category such as entertainment, games, and news. For more information, see [Buying Microsoft Deals](buying-microsoft-deals.md).
 
 ## Extra information
 

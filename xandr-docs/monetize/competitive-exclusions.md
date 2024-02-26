@@ -1,6 +1,6 @@
 ---
 title : Microsoft Monetize - Competitive Exclusion
-description: The article outlines the use of competitive exclusions to prevent creatives featuring competitive brands or offer categories from being displayed together.
+description: Explore preventing display conflicts and use competitive exclusions to separate creatives with competitive brands or offers.
 ms.date: 10/28/2023
 ---
 

@@ -62,8 +62,7 @@ Viewability indicators are located in the **Metrics** section. Click the **Edit*
 
 ## Impression-level viewability
 
-A column in the Log Level Data Standard Feed enables impression-level viewability analytics. You can determine the result of the
-Microsoft Advertising viewability measurement for each individual impression and use the data to perform enhanced reporting and in-depth analysis.
+A column in the Log Level Data Standard Feed enables impression-level viewability analytics. You can determine the result of the Microsoft Advertising viewability measurement for each individual impression and use the data to perform enhanced reporting and in-depth analysis.
 
 | Column | Description |
 |:---|:---|

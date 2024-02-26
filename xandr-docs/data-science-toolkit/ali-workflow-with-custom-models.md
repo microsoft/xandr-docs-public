@@ -76,8 +76,7 @@ Custom models are designed to enable Xandr API users to add decision-making logi
 
 ## Associating a custom model with an ALI
 
-On augmented line items, there is an array field titled, '`custom_models`' which lists custom models associated with a Line
-Item. Instructions for associating a custom model with an ALI can be found in the [Line Item Model Service documentation](line-item-model-service.md).
+On augmented line items, there is an array field titled, '`custom_models`' which lists custom models associated with a Line Item. Instructions for associating a custom model with an ALI can be found in the [Line Item Model Service documentation](line-item-model-service.md).
 
 ### Targeting IP addresses
 

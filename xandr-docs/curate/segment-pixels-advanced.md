@@ -47,8 +47,7 @@ https://ib.adnxs.com/px?id=[ID]&remove=[Seg IDs]&t=2
 
 ## JavaScript pixels
 
-Some advertisers require JavaScript tags. Image pixels can only perform one redirect, so parent pixels with multiple piggybacks must be
-JavaScript. If a piggyback pixel is JavaScript, the parent pixel should be JavaScript as well.
+Some advertisers require JavaScript tags. Image pixels can only perform one redirect, so parent pixels with multiple piggybacks must be JavaScript. If a piggyback pixel is JavaScript, the parent pixel should be JavaScript as well.
 
 An image pixel looks like this, with a `t=2` parameter:
 

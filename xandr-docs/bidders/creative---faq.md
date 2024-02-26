@@ -1,7 +1,7 @@
 ---
-title : Creative - FAQ
-description: Learn FAQs on Creatives.
-ms.date : 11/22/2023
+title: Creative - FAQ
+description: This page covers FAQs on Creatives.
+ms.date: 11/22/2023
 ---
 
 # Creative - FAQ
@@ -12,8 +12,7 @@ This page gives insights on FAQs for creatives.
 
 **Can I rotate brands in my creative or show more than one brand at the same time?**
 
-No, each creative may show only one brand. This may not change during the lifetime that the creative is used on the platform unless the creative stops serving, set put into the queue for reaudit, and is audited for the new brand. Creatives also may not show more than one brand. If the creative is clearly for an online retailer and shows a
-product now made by that retailer, but is a sample product you can buy at that retailer, and if the creative clicks through to that retailer's website, then this is fine.
+No, each creative may show only one brand. This may not change during the lifetime that the creative is used on the platform unless the creative stops serving, set put into the queue for reaudit, and is audited for the new brand. Creatives also may not show more than one brand. If the creative is clearly for an online retailer and shows a product now made by that retailer, but is a sample product you can buy at that retailer, and if the creative clicks through to that retailer's website, then this is fine.
 
 **Do I have to set the brand of my creative?**
 
@@ -36,13 +35,11 @@ Sellers in Xandr can also choose to ban by the brand, category, language, techni
 
 **How can I find the brands and brand categories that Xandr audit assigned to my creatives?**
 
-To check the brand and brand category assigned by Xandr audit to your
-creatives:
+To check the brand and brand category assigned by Xandr audit to your creatives:
 
-- Using the [creative-service](creative-service.md), get the "brand" field of the creative. This will have the brand ID and name, and the category ID for the brand. E.g.:
+- Using the [creative-service](creative-service.md), get the "brand" field of the creative. This will have the brand ID and name, and the category ID for the brand. E.g:
   - `GET https://api.adnxs.com/creative/MEMBER_ID/CREATIVE_ID`
-- Using the [Category Service](category-service.md), you can get the
-  name of the Category.
+- Using the [Category Service](category-service.md), you can get the name of the Category.
   - To get a specific category:
     - `GET https://api.adnxs.com/category/CATEGORY_ID`
   - To get all categories:
@@ -78,7 +75,7 @@ Using the [Creative Service](creative-service.md), set the allow_audit field to 
 
 **If I disagree with the results of an audit, what should I do?**
 
-Use our Customer Support form at [https://help.xandr.com/](https://help.xandr.com/s/login/) to contact the Ad Quality team.
+Use our Customer Support form at [Customer Care](https://help.xandr.com/s/login/) to contact the Ad Quality team.
 
 **What does is_expired=1 mean?**
 
@@ -122,9 +119,7 @@ You can upload creatives using the [Creative Service](creative-service.md) API.
 
 **How do I upload a Flash creative?**
 
-In the [Creative Service](creative-service.md)  API, you can either provide a link in the `media_url` field, or provide a tag using the `content` field. If you host a javascript file that delivers the flash, you would specify the URL of your javascript in the media_url, and the format would be url-js. The media_url may be, for example,
-`https://ad.sample_site.com/ad_server/ads.js?my_ad_id=12345&price_paid=$\{PRICE_PAID\}&custom_macro=$\{custom_macro\}`
-would call your delivery javascript.
+In the [Creative Service](creative-service.md)  API, you can either provide a link in the `media_url` field, or provide a tag using the `content` field. If you host a javascript file that delivers the flash, you would specify the URL of your javascript in the media_url, and the format would be url-js. The media_url may be, for example, `https://ad.sample_site.com/ad_server/ads.js?my_ad_id=12345&price_paid=$\{PRICE_PAID\}&custom_macro=$\{custom_macro\}` would call your delivery javascript.
 
 In the alternative, you may want Xandr to deliver the javascript or iframe that delivers the flash. For example, you may use format "iframe-html" (or raw-js, if you enter the raw javascript - not if you use an html tag that calls javascript) and set the content to be:
 
@@ -144,8 +139,7 @@ The code is your internal ID for a creative. When a creative is made in Xandr, i
 
 **What is the correct format to use?**
 
-The format can be one of: `url-html`,`url-js`, `flash`, `image`, `raw-js`, `iframe-html`, or `text`. The values url-html and url-js are to be used when you're using the media_url parameter in the creative. This means that the creative is defined purely by a reference to a website that has html or javascript content. The format raw-js should be used when the
-creative is purely javascript. This mean that the creative is only javascript. If the creative is in the following format:
+The format can be one of: `url-html`,`url-js`, `flash`, `image`, `raw-js`, `iframe-html`, or `text`. The values url-html and url-js are to be used when you're using the media_url parameter in the creative. This means that the creative is defined purely by a reference to a website that has html or javascript content. The format raw-js should be used when the creative is purely javascript. This mean that the creative is only javascript. If the creative is in the following format:
 
 `<script language="JavaScript" type="text/javascript">javascript here....</script>`
 

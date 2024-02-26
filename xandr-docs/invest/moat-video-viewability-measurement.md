@@ -6,8 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Moat video viewability measurement
 
-You can improve video viewability analytics by linking a hosted video creative to Moat's viewability measurement and reporting (also known as **Moat Attention Metrics**). To do so, you must link your account with Moat and opt in via Microsoft Invest UI. Through
-this integration, if you are an existing Moat client, you can measure Moat's attention metrics for your video creatives. If you are not a Moat client, you can still activate Moat measurement. However, you will need to reach out to Moat in order to view their measurement data. To know more about Moat measurement, you can visit this [link](https://www.oracle.com/cx/advertising/measurement/).
+You can improve video viewability analytics by linking a hosted video creative to Moat's viewability measurement and reporting (also known as **Moat Attention Metrics**). To do so, you must link your account with Moat and opt in via Microsoft Invest UI. Through this integration, if you are an existing Moat client, you can measure Moat's attention metrics for your video creatives. If you are not a Moat client, you can still activate Moat measurement. However, you will need to reach out to Moat in order to view their measurement data. To know more about Moat measurement, you can visit this [link](https://www.oracle.com/cx/advertising/measurement/).
 
 > [!NOTE]
 >
@@ -42,7 +41,6 @@ Existing hosted video creatives can also be linked to Moat Attention Metrics. Fi
 
 ## Post setup
 
-After you launch your creative, get in touch with Moat representative to setup a new tile within the Moat reporting interface. Once you've
-completed this one time setup, your tile will capture and display Moat metrics for all of the Microsoft Advertising creatives you setup with Moat's tracking enabled.
+After you launch your creative, get in touch with Moat representative to setup a new tile within the Moat reporting interface. Once you've completed this one time setup, your tile will capture and display Moat metrics for all of the Microsoft Advertising creatives you setup with Moat's tracking enabled.
 
 At any point of time in future, if you want to disable Moat metrics, follow the steps mentioned in **For an existing video creative** section above and uncheck the **Moat Attention Metrics** checkbox for the creative.

@@ -29,9 +29,7 @@ This is evaluated as the following equation:
 max(min_value, min(max_value, input_field * multiplier + offset))
 ```
 
-That is, the calculated value is the input field times the multiplier, plus an offset. If the result is less than the minimum value, the
-minimum value is returned instead. If the result is greater than the maximum value, the maximum value is returned. To omit a calculation
-(multiplier, offset, minimum value, or maximum value), use an underscore (\_) for the omitted value. If you omit to specify the multiplier value, the default value is 1.
+That is, the calculated value is the input field times the multiplier, plus an offset. If the result is less than the minimum value, the minimum value is returned instead. If the result is greater than the maximum value, the maximum value is returned. To omit a calculation (multiplier, offset, minimum value, or maximum value), use an underscore (\_) for the omitted value. If you omit to specify the multiplier value, the default value is 1.
 
 > [!NOTE]
 > The bids calculated by the model are always expressed in the currency set on the advertiser, even if you have specified a different currency for the campaign.

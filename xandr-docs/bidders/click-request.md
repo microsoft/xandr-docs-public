@@ -1,36 +1,30 @@
 ---
-title : Click Request
-description : Learn how the impression bus will insert our clicktracking URL into the creative at serve time and log and report any clicks that occur. 
-ms.date : 11/20/2023
+title: Click Request
+description: Learn how the Impression bus inserts our clicktracking URL into the creative at serve time and report any clicks that occur. This page covers implementation along with an example of the click request.
+ms.date: 11/20/2023
 
 ---
 
 
 # Click request
 
-The impression bus will insert our clicktracking URL into the creative
-at serve time and log and report any clicks that occur. If the member
-whose creative served is integrated with a bidder, the Impression Bus
-also passes along the click information to the bidder's designated click
-handler (defined using the `click_uri` field of the [Bidder Service](bidder-service.md)).
-
-
+The impression bus will insert our clicktracking URL into the creative at serve time and log and report any clicks that occur. If the member whose creative served is integrated with a bidder, the Impression Bus also passes along the click information to the bidder's designated click handler (defined using the `click_uri` field of the [Bidder Service](bidder-service.md)).
 
 ## Implementation
 
 **Specs**
 
-| Field              | Scope | Type   | Description                                                                                                |
-|--------------------|-------|--------|------------------------------------------------------------------------------------------------------------|
-| `auction_id_64`      | all   | int    | The unique ID for the auction of the impression won.                                                       |
-| `custom_notify_data` | some  | string | The data passed by the bidder on the bid response.                                                         |
-| `member_id`          | all   | int    | The numeric ID of the auction's winning member.                                                            |
-| `referer_url`        | all   | string | The referring URL of the page where the click originates.                                                  |
-| `test`               | all   | Bool   | Whether or not the impression clicked was run as a test impression.                                        |
-| `timestamp`          | all   | string | The timestamp of the click.                                                                                |
-| `user_agent`         | all   | string | The user agent string from the click request's HTTP header.                                                |
-| `user_id_64`         | all   | int    | The unique ID for the user. It will be the same for all requests from this user until cookies are cleared. |
-| `userdata_json`      | some  | string | The data for the user stored in the bidder's reserved space within our data store.                         |
+| Field | Scope | Type | Description |
+|--|--|--|--|
+| `auction_id_64` | all | int | The unique ID for the auction of the impression won. |
+| `custom_notify_data` | some | string | The data passed by the bidder on the bid response. |
+| `member_id` | all | int | The numeric ID of the auction's winning member. |
+| `referer_url` | all | string | The referring URL of the page where the click originates. |
+| `test` | all | Bool | Whether or not the impression clicked was run as a test impression. |
+| `timestamp` | all | string | The timestamp of the click. |
+| `user_agent` | all | string | The user agent string from the click request's HTTP header. |
+| `user_id_64` | all | int | The unique ID for the user. It will be the same for all requests from this user until cookies are cleared. |
+| `userdata_json` | some | string | The data for the user stored in the bidder's reserved space within our data store. |
 
 ## Example click request
 

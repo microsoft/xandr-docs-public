@@ -25,41 +25,41 @@ The formula for deriving an expected value for an impression from the probabilit
 
 :::image type="content" source="./media/datascience-j.png" alt-text="Screenshot of the formula for deriving an expected value for an impression from the probability of an event happening.":::
 
-The offset will usually be 0. However, a negative value may be useful as a security factor to ensure performance at the expense of delivery on low-performing inventory. That will ensure that the advertiser does not bid, instead of bidding very little and potentially incurring fixed fees.
+The offset will usually be `0`. However, a negative value may be useful as a security factor to ensure performance at the expense of delivery on low-performing inventory. That will ensure that the advertiser does not bid, instead of bidding very little and potentially incurring fixed fees.
 
 For more information about how logistic regression custom models work, see [Logistic Regression Models](./logistic-regression-models.md).
 
 ## REST API
 
-**Add a new  logistic regression model:**
+### Add a new logistic regression model
 
-```pre
+```
 POST https://api.appnexus.com/custom-model-logit
 (template JSON)
 ```
 
-**Modify a  logistic regression model:**
+### Modify a logistic regression model
 
-```pre
+```
 PUT https://api.appnexus.com/custom-model-logit?id=CUSTOM_MODEL_LOGIT_ID
 (template JSON)
 ```
 
-**Delete a logistic regression model:**
+### Delete a logistic regression model
 
-```pre
+```
 DELETE https://api.appnexus.com/custom-model-logit?id=CUSTOM_MODEL_LOGIT_ID
 ```
 
-**View all logistic regression models:**
+### View all logistic regression models
 
-```pre
+```
 GET https://api.appnexus.com/custom-model-logit 
 ```
 
-**View a specific logistic regression model:**
+### View a specific logistic regression model
 
-```pre
+```
 GET https://api.appnexus.com/custom-model-logit?id=CUSTOM_MODEL_LOGIT_ID
 ```
 
@@ -76,32 +76,32 @@ GET https://api.appnexus.com/custom-model-logit?id=CUSTOM_MODEL_LOGIT_ID
 | `min` | float | Min in the expected value equation. |
 | `offset` | float | Offset in the expected value equation. |
 | `scale` | float | Scale in the expected value equation. |
-| `predictors` | array | Array of predictors. See **Predictors** below for more details. |
+| `predictors` | array | Array of predictors. See [Predictors](#predictors) below for more details. |
 
 ### Predictors
 
 | Field | Type |Description  |
 |:---|:---|:---|
-| `predictor_type` |  | scalar_descriptor, custom_model_descriptor, freq_rec_descriptor, segment_descriptor, categorical_descriptor<br><br>Link to table specifying features for each predictor_type? |
+| `predictor_type` |  | `scalar_descriptor`, `custom_model_descriptor`, `freq_rec_descriptor`, `segment_descriptor`, `categorical_descriptor`|
 | `keys` |  |  |
 | `hash_seed` |  |  |
 | `default_value` |  |  |
 | `hash_table_size_log` |  |  |
 | `coefficients` |  |  |
 
-### Hashed Descriptor
+### Hashed descriptor
 
-This endpoint is to submit a pre-hashed table. `bucket_index0` and `bucket_index1`, each 64 bits long, are there to support hashing algorithms that produce long values as keys. Currently, we only support one hashing algorithm: `MurmurHash3_x64_128`, which will create two 64 bit integers but we only use the lower 64 bits of the hash.
+This endpoint is to submit a pre-hashed table. `bucket_index0` and `bucket_index1`, each 64 bits long, are there to support hashing algorithms that produce long values as keys. Currently, we only support one hashing algorithm: `MurmurHash3_x64_128`, which will create two 64 bit integers but we only use the lower 64 bits of the hash.
 
-Values in `bucket_index0` must always be smaller than `(2 ^ hash_table_size_log)` or they will get rejected
+Values in `bucket_index0` must always be smaller than `(2 ^ hash_table_size_log)` or they will get rejected.
 
 Currently, the values in `bucket_index1` are ignored as this is to be used for future expansion. If a value is sent for `bucket_index1`, it must be `0`. The parameter is optional.
 
-**Hash Table Keys**
+#### Hash Table Keys
 
 For each of your Hash Table keys, you will need a uint32 value. These values should be the ID of respective object that you are referencing from our system - `domain_id`, for instance, rather than the domain string value. These uint32 keys are then transformed into a byte array (little-endian), and hashed.
 
-**Python example**
+#### Python example
 
 `hash_bucket  = (mmh3.hash64(bytes, seed)[ 0 ])  % table_size`
 
@@ -114,9 +114,9 @@ For each of your Hash Table keys, you will need a uint32 value. These values sho
 | `default_value` |  | Value returned by the descriptor if no match is found in your hash table |
 | `hash_table_size_log` |  | Log of maximum value for a key of your table. Values larger than `2^hash_table_size_log` will be rejected. Max for `hash_table_size_log` is 64 (no bucketing) |
 
-**Hashed descriptor example**
+#### Hashed descriptor example
 
-```pre
+```
 {
     "type": "hashed",
     "keys": [ 
@@ -138,9 +138,9 @@ For each of your Hash Table keys, you will need a uint32 value. These values sho
 | `initial_range_log` |  |  |
 | `bucket_count_log_per_range` |  |  |
 
-**LUT descriptor example**
+#### LUT descriptor example
 
-```pre
+```
 {
         "type": "lookup",
         "default_value": 0.1,
@@ -167,21 +167,21 @@ For each of your Hash Table keys, you will need a uint32 value. These values sho
 
 Since this is finding an exact match, the `default_value`, `initial_range_log` and `bucket_count_log_per_range` params are not needed.
 
-**Missing values**
+#### Missing values
 
 The key value of `-1` can be used as a placeholder for a missing feature; For instance, when a domain is not reported by the seller. Otherwise, the default value of the LUT or Hash Model will be used, since no match will be found for that feature value.
 
 | Field | Type | Description |
 |:---|:---|:---|
 | `type` |  |  |
-| `feature_keyword` |  |  - country<br> - region<br> - city<br> - dma<br> - postal_code<br> - user_day<br> - user_hour<br> - os_family<br> - os_extended<br> - browser<br> - language<br> - user_gender<br> - domain<br> - ip_address<br> - position<br> - placement<br> - placement_group<br> - publisher<br> - seller_member_id<br> - supply_type<br> - device_type<br> - device_model<br> - carrier<br> - mobile_app<br> - mobile_app_instance<br> - mobile_app_bundle<br> - appnexus_intended_audience<br> - seller_intended_audience<br> - spend_protection<br> - user_group_id<br> - advertiser_id<br> - brand_category<br> - creative<br> - inventory_url_id<br> - media_type |
+| `feature_keyword` |  |  - `country`<br> - `region`<br> - `city`<br> - `dma`<br> - `postal_code`<br> - `user_day`<br> - `user_hour`<br> - `os_family`<br> - `os_extended`<br> - `browser`<br> - `language`<br> - `user_gender`<br> - `domain`<br> - `ip_address`<br> - `position`<br> - `placement`<br> - `placement_group`<br> - `publisher`<br> - `seller_member_id`<br> - `supply_type`<br> - `device_type`<br> - `device_model`<br> - `carrier`<br> - `mobile_app`<br> - `mobile_app_instance`<br> - `mobile_app_bundle`<br> - `appnexus_intended_audience`<br> - `seller_intended_audience`<br> - `spend_protection`<br> - `user_group_id`<br> - `advertiser_id`<br> - `brand_category`<br> - `creative`<br> - `inventory_url_id`<br> - `media_type` |
 | `default_value` |  |  |
-| `object_type` |  | Advertiser, li - ne_item, campaign (not split?) |
+| `object_type` |  | `Advertiser`, `li - ne_item`, `campaign` (not split?) |
 | `object_id` |  | ID of the referenced advertiser, |
 
-**Categorical descriptor example**
+#### Categorical descriptor example
 
-```pre
+```
 {
     "type": "categorical_descriptor",
     "feature_keyword": "city"
@@ -193,17 +193,17 @@ The key value of `-1` can be used as a placeholder for a missing feature; For in
 | Field | Type | Description |
 |:---|:---|:---|
 | `type` |  |  |
-| `feature_keyword` |  | frequency_life<br> frequency_daily<br> recency  |
+| `feature_keyword` |  | `frequency_life`<br> `frequency_daily`<br> `recency`  |
 | `default_value` |  |  |
-| `object_type` |  | Advertiser, line_item, campaign (not split?) |
+| `object_type` |  | `Advertiser`, `line_item`, `campaign` (not split?) |
 | `object_id` |  | ID of the referenced advertiser, |
 | `default_value` |  | Value returned by the descriptor if no match is found |
 | `initial_range_log` |  | Used for log bucketing, initial range |
 | `bucket_count_log_per_range` |  | used for log bucketing, # of buckets per range |
 
-**Frequency and recency descriptor example**
+#### Frequency and recency descriptor example
 
-```pre
+```
 {
     "type": "frequency_recency_descriptor",
     "feature_keyword": 'frequency_life',
@@ -220,14 +220,14 @@ The key value of `-1` can be used as a placeholder for a missing feature; For in
 | Field | Type | Description |
 |:---|:---|:---|
 | `type` |  |  |
-| `feature_keyword` |  | - appnexus_audited<br> - cookie_age<br> - estimated_average_price<br> - estimated_clearing_price<br> - predicted_iab_view_rate<br> - predicted_video_completion_rate<br> - self_audited<br> - size<br> - creative_size<br> - spend_protection<br> - uniform<br> - user_age<br><br> **Note**: The size descriptor is represented as a string in your models ("300x250", for instance), though converted to a scalar in our bidder. Any size is technically valid in our system, hence this feature being treated as a scalar rather than a categorical feature. |
+| `feature_keyword` |  | - `appnexus_audited`<br> - `cookie_age`<br> - `estimated_average_price`<br> - `estimated_clearing_price`<br> - `predicted_iab_view_rate`<br> - `predicted_video_completion_rate`<br> - `self_audited`<br> - `size`<br> - `creative_size`<br> - `spend_protection`<br> - `uniform`<br> - `user_age`<br><br> **Note**: The size descriptor is represented as a string in your models ("300x250", for instance), though converted to a scalar in our bidder. Any size is technically valid in our system, hence this feature being treated as a scalar rather than a categorical feature. |
 | `default_value` |  | Value returned by the descriptor if no match is found |
 | `initial_range_log` |  | Used for log bucketing, initial range |
 |`bucket_count_log_per_range` |  | Used for log bucketing, # of buckets per range |
 
-**Scalar descriptor example**
+#### Scalar descriptor example
 
-```pre
+```
 {
     "type": "scalar_descriptor",
     "feature_keyword": "cookie_age",
@@ -242,15 +242,15 @@ The key value of `-1` can be used as a placeholder for a missing feature; For in
 | Field | Type | Description |
 |:---|:---|:---|
 | `type` |  |  |
-| `feature_keyword` |  | segment_value<br>segment_age<br>segment_presence |
+| `feature_keyword` |  | `segment_value`<br>`segment_age`<br>`segment_presence` |
 | `segment_id` |  | ID of referenced segment |
 | `default_value` |  | Value returned by the descriptor if no match is found |
 | `initial_range_log` |  | Used for log bucketing, initial range  |
 | `bucket_count_log_per_range` |  | Used for log bucketing, # of buckets per range |
 
-**Segment descriptor example**
+#### Segment descriptor example
 
-```pre
+```
 {
     "type": "segment_descriptor",
     "feature_keyword": "segment_age",

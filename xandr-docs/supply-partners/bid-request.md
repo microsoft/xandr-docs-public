@@ -26,8 +26,7 @@ For guidance on formatting your request, see the [Examples](#examples) at the bo
 
 ## JSON fields
 
-Where fields are available for internal and external values (for example, `int_blocked_categories` and `ext_blocked_categories`), include
-only one of the fields in your JSON-formatted file. If both are included, the internal value will be used.
+Where fields are available for internal and external values (for example, `int_blocked_categories` and `ext_blocked_categories`), include only one of the fields in your JSON-formatted file. If both are included, the internal value will be used.
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -88,7 +87,7 @@ If none of the above are available, Xandr will not submit a bid. Note that each 
 
 1. Create a JSON-formatted file including the required fields only. This example uses the `an_user_id` field, but you could use `ext_user_id` instead.
 
-    ``` 
+    ```
     $ cat bid_request |
                    {
                    "an_user_id": 1089773736613054100,
@@ -101,7 +100,7 @@ If none of the above are available, Xandr will not submit a bid. Note that each 
 
 1. `POST` the JSON-formatted file. Be sure to include your member ID in the querystring.
 
-    ``` 
+    ```
     curl -X POST -d @bid_request 'https://ib.adnxs.com/asi?member_id=123'
     ```
 
@@ -165,7 +164,7 @@ If none of the above are available, Xandr will not submit a bid. Note that each 
 
 1. `POST` the JSON-formatted file. Be sure to include your member ID in the querystring.
 
-    ``` 
+    ```
     curl -X POST -d @bid_request 'https://ib.adnxs.com/asi?member_id=123'
     ```
 
@@ -173,7 +172,7 @@ If none of the above are available, Xandr will not submit a bid. Note that each 
 
 1. Create a JSON-formatted file with the fields for supply partner values instead of Xandr values, for example, `ext_placement_code` instead of `an_placement_id` and `ext_blocked_categories` instead of `int_blocked_categories`.
 
-    ``` 
+    ```
     $ cat bid_request
     {
         "ext_user_id": 1089773736613054100,
@@ -230,7 +229,7 @@ If none of the above are available, Xandr will not submit a bid. Note that each 
 
 1. `POST` the JSON-formatted file. Be sure to include your member ID in the querystring.
 
-    ``` 
+    ```
     curl -X POST -d @bid_request 'https://ib.adnxs.com/asi?member_id=123'
     ```
 
@@ -240,7 +239,7 @@ If you set up ad profiles to enforce your publishers' preferences, you do not ne
 
 1. Create a JSON-formatted file excluding the fields for blocking technical attributes, creative categories, content categories, URLs, and languages.
 
-    ``` 
+    ```
     $ cat bid_request
     {
         "an_user_id": 1089773736613054100,
@@ -264,7 +263,7 @@ If you set up ad profiles to enforce your publishers' preferences, you do not ne
 
 1. `POST` the JSON-formatted file. Be sure to include your member ID in the querystring.
 
-    ``` 
+    ```
     curl -X POST -d @bid_request 'https://ib.adnxs.com/asi?member_id=123' 
     ```
 
@@ -281,7 +280,7 @@ When requesting a VAST video creative:
 
 1. Create a JSON-formatted file according to the requirements above. This example assumes that there is a specific placement in the Xandr system defined to allow VAST video creatives. The ID of this placement is passed in the `an_placement_id` field.
 
-    ``` 
+    ```
     $ cat bid_request
     {
         "an_user_id": 1089773736613054100,
@@ -303,6 +302,6 @@ When requesting a VAST video creative:
 
 1. `POST` the JSON-formatted file. Be sure to include your member ID in the querystring.
 
-    ``` 
+    ```
     curl -X POST -d @bid_request 'https://ib.adnxs.com/asi?member_id=123'
     ```

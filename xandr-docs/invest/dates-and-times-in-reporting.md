@@ -6,8 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Dates and times in reporting
 
-This page explains how our reporting system handles time and date considerations such as time zones and daylight savings time. It also
-describes how to change your member or advertiser's default time zone.
+This page explains how our reporting system handles time and date considerations such as time zones and daylight savings time. It also describes how to change your member or advertiser's default time zone.
 
 ## Time zones
 
@@ -56,11 +55,9 @@ Let's look at an example from New York City. On Sunday, November 4, 2018 at 06:0
 
 ### Further complications of DST
 
-Different regions observe DST changes at different times each year. Additionally, certain sub-regions may not adhere to the policies of
-their governing region. For example, neither Arizona nor Hawaii observe Daylight Saving Time like the rest of the individual states in the USA. Microsoft Advertising reporting adheres to DST using time zones, not geographies, so we cannot account for these individual region differences within time zones.
+Different regions observe DST changes at different times each year. Additionally, certain sub-regions may not adhere to the policies of their governing region. For example, neither Arizona nor Hawaii observe Daylight Saving Time like the rest of the individual states in the USA. Microsoft Advertising reporting adheres to DST using time zones, not geographies, so we cannot account for these individual region differences within time zones.
 
-Also, some regions have offsets from UTC that are a fraction of an hour. For example, India is UTC + 05:30, and though it does not observe
-Daylight Saving Time, it is worth noting that Microsoft Advertising reporting operates in hourly granularity. Therefore, a single day 05:30 UTC - 05:29 UTC will actually appear in reports as 05:00 UTC - 04:59 UTC.
+Also, some regions have offsets from UTC that are a fraction of an hour. For example, India is UTC + 05:30, and though it does not observe Daylight Saving Time, it is worth noting that Microsoft Advertising reporting operates in hourly granularity. Therefore, a single day 05:30 UTC - 05:29 UTC will actually appear in reports as 05:00 UTC - 04:59 UTC.
 
 > [!NOTE]
 > To learn more about Daylight Saving Time and its impact on your region, you can read more on the [Time and Date site](https://www.timeanddate.com/time/dst/).

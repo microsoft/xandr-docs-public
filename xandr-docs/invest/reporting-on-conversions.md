@@ -31,15 +31,13 @@ To view **Conversion Pixel Details** and the **Top 25 Attributed URLs in the Pas
 
 The **URL** column displays the URL of the website on which the conversion pixel has been placed.
 
-The **Loads** column displays the number times the conversion pixel has loaded in the past hour on the
-corresponding website.
+The **Loads** column displays the number times the conversion pixel has loaded in the past hour on the corresponding website.
 
 The **Last Load** column displays how long ago the conversion pixel loaded on this particular website in the last 12 hours. If "Never" displays here for more than 10 minutes after a pixel was added, the pixel may not be placed correctly on this site.
 
 ## Attributed Conversions
 
-The Advertiser Attributed Conversions report allows you to view conversion pixel IDs, order IDs, times of attributed clicks or impressions, and other information related to your advertisers' attributed conversions. You can use this information to gain valuable
-insight into your conversions, for example, the times of day that users are most likely to convert.
+The Advertiser Attributed Conversions report allows you to view conversion pixel IDs, order IDs, times of attributed clicks or impressions, and other information related to your advertisers' attributed conversions. You can use this information to gain valuable insight into your conversions, for example, the times of day that users are most likely to convert.
 
 This report can retrieve data for the last 33 days, but the timestamps will always be in the UTC timezone, so you'll need to translate the UTC time to your standard timezone. If you pull a report for "yesterday", however, the report will run for "yesterday" relative to your standard timezone.
 

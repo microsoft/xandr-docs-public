@@ -47,8 +47,7 @@ For more information, see [Formats and Specifications](#formats-and-specificatio
 
 ## Microsoft Jigsaw
 
-Users can play hundreds of puzzles in three exciting game modes: Classic Jigsaw, Jigsaw Jam, and Daily Challenges. Intuitive controls make
-Microsoft Jigsaw great using a mouse and keyboard, and excellent on touch screens. With multiple game modes, downloadable puzzle packs, and the ability to create custom puzzles, Microsoft Jigsaw provides hours of entertainment.
+Users can play hundreds of puzzles in three exciting game modes: Classic Jigsaw, Jigsaw Jam, and Daily Challenges. Intuitive controls make Microsoft Jigsaw great using a mouse and keyboard, and excellent on touch screens. With multiple game modes, downloadable puzzle packs, and the ability to create custom puzzles, Microsoft Jigsaw provides hours of entertainment.
 
 **Game Play and Game Completion Screens** - Above the fold, bottom right
 

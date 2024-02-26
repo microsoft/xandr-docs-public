@@ -29,8 +29,7 @@ You can configure the following for each report you run:
 
 There are couple of additional settings are available when you run a deal metrics report. They are as follows:
 
-- **Breakout Deals By** – You can breakout the metrics per DSP, buyer member, buyer seat, seller deal or split to get a more granular view
-  of the activity occurring through your curated deal. For example, if you have issued your curated deal to multiple buyer seats, you can see the number of bids per seat; or if you target seller deals you can see the number of imps matched per seller deal.
+- **Breakout Deals By** – You can breakout the metrics per DSP, buyer member, buyer seat, seller deal or split to get a more granular view of the activity occurring through your curated deal. For example, if you have issued your curated deal to multiple buyer seats, you can see the number of bids per seat; or if you target seller deals you can see the number of imps matched per seller deal.
 - **Time Range** – How far back you would like to include data. For example, last 24 hours.
 - **Time Interval** – How you would like to group the data. For example, by hour.
 

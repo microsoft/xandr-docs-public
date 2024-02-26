@@ -6,8 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Advertiser Analytics report
 
-The Advertiser Analytics report lets you view buy-side data for a specific advertiser. The data available via this report is even more
-granular than what you can get from the [Member Analytics Report](network-analytics-report.md).
+The Advertiser Analytics report lets you view buy-side data for a specific advertiser. The data available via this report is even more granular than what you can get from the [Member Analytics Report](network-analytics-report.md).
 
 ## Time frame
 
@@ -70,8 +69,7 @@ In some cases Analytics reports can show delivery that does not match statistics
 
 ## Real time data
 
-Real Time Data is offered within this report (not all users have access). Traditionally, reports have had a 2 hour built-in delay to
-allow for a fuller reconciliation with conversions, impressions and other metrics associated with transactions. However, in some cases, it is important to have up-to-the-minute information even if it has not been fully reconciled yet. Dimensions which support the real-time option are marked with the clock icon.
+Real Time Data is offered within this report (not all users have access). Traditionally, reports have had a 2 hour built-in delay to allow for a fuller reconciliation with conversions, impressions and other metrics associated with transactions. However, in some cases, it is important to have up-to-the-minute information even if it has not been fully reconciled yet. Dimensions which support the real-time option are marked with the clock icon.
 
 :::image type="content" source="./media/real-time-data-reporting.png" alt-text="Diagram of a real time data.":::
 

@@ -6,8 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize - Client-side segmentation
 
-The most common way of building audience segments is by placing client-side segment pixels on websites or creatives, signaling that a user has visited a web page or taken a simple action. If you're new to audience targeting or if you have relatively simple audience targeting strategies, then this method is probably the one that you'll want to
-use.
+The most common way of building audience segments is by placing client-side segment pixels on websites or creatives, signaling that a user has visited a web page or taken a simple action. If you're new to audience targeting or if you have relatively simple audience targeting strategies, then this method is probably the one that you'll want to use.
 
 ## Use cases
 

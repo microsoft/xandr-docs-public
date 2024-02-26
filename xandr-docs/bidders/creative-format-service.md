@@ -1,37 +1,31 @@
 ---
-title : Bidders - Creative Format Service
-description : Learn how Xandr categorizes creatives by format, media type, and media subtype. Format defines the resource type of creatives, media type defines the general display style of creatives, and media subtype defines the specific display style of creatives.
-ms.date : 11/21/2023
+title: Bidders - Creative Format Service
+description: Learn how Xandr categorizes creatives by format, media type, and media subtype. This page also provides examples for viewing all creatives and specific creatives.
+ms.date: 11/21/2023
 
 ---
 
 
 # Bidders - Creative format service
 
-Xandr categorizes creatives by format, media
-type, and media subtype. Format defines the resource type of creatives
-(flash, image, etc.); media type defines the general display style of
-creatives (banner, expandable, video, etc.); and media subtype defines
-the specific display style of creatives (standard banner, MediaMind
-expandable, or Standard VAST).
+Xandr categorizes creatives by format, media type, and media subtype. Format defines the resource type of creatives (flash, image, etc.); media type defines the general display style of creatives (banner, expandable, video, etc.); and media subtype defines the specific display style of creatives (standard banner, MediaMind expandable, or Standard VAST).
 
-This read-only service allows you to view all of the supported creative
-formats.
+This read-only service allows you to view all of the supported creative formats.
 
 ## REST API
 
-| HTTP method | End point                                                      | Description                     |
-|-------------|----------------------------------------------------------------|---------------------------------|
-| GET         | [https://api.adnxs.com/creative-format](https://api.adnxs.com/creative-format)                          | View all creative formats       |
-| GET         | [https://api.appnexus.com/creative-format?id=CREATIVE_FORMAT_ID](https://api.appnexus.com/creative-format?id=CREATIVE_FORMAT_ID) | View a specific creative format |
+| HTTP method | End point | Description |
+|--|--|--|
+| GET | [https://api.adnxs.com/creative-format](https://api.adnxs.com/creative-format) | View all creative formats |
+| GET | [https://api.appnexus.com/creative-format?id=CREATIVE_FORMAT_ID](https://api.appnexus.com/creative-format?id=CREATIVE_FORMAT_ID) | View a specific creative format |
 
 ## JSON fields
 
-| Field         | Type      | Description                                                                               |
-|---------------|-----------|-------------------------------------------------------------------------------------------|
-| `id`            | int       | The ID of the creative format.                                                            |
-| `last_modified` | timestamp | The date and time when Xandr last modified the creative format.                           |
-| `name`          | string    | The name of the creative format, for example, "flash", "image", "url-html", or "url-xml". |
+| Field | Type | Description |
+|--|--|--|
+| `id` | int | The ID of the creative format. |
+| `last_modified` | timestamp | The date and time when Xandr last modified the creative format. |
+| `name` | string | The name of the creative format, for example, "flash", "image", "url-html", or "url-xml". |
 
 ## Examples
 

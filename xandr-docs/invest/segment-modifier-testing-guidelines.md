@@ -20,8 +20,7 @@ Clients wishing to use segment modifiers should be proficient with the tasks and
 
 ## Analytical requirements
 
-One of the key elements of segment modifier is that the client is responsible for creating the optimization model. As a result,
-Microsoft Advertising won't have visibility into the exact science behind the model's performance. Additionally, due to restrictions in our user database, neither will Microsoft Advertising have visibility into the individual values behind each user. Therefore, the client must accept the bulk of the test analysis. This includes recurring, daily analytics of segment modifier performance; since the client created the model, the client should be able to analyze it.
+One of the key elements of segment modifier is that the client is responsible for creating the optimization model. As a result, Microsoft Advertising won't have visibility into the exact science behind the model's performance. Additionally, due to restrictions in our user database, neither will Microsoft Advertising have visibility into the individual values behind each user. Therefore, the client must accept the bulk of the test analysis. This includes recurring, daily analytics of segment modifier performance; since the client created the model, the client should be able to analyze it.
 
 Microsoft Advertising can measure lift on a high level or guide performance testing best practices.
 
@@ -51,17 +50,14 @@ Campaign setup will have a big impact on the testing process. In V7 of optimizat
 
 ### Page-level modifiers
 
-Page-level modifiers are when a modifier value is piggybacked on a normal on-page segment call. For example, if an advertiser has a
-hypothesis that they should modify the bid depending on the shopping cart contents of an e-commerce site, they'll need to compute the
-relative value of expected revenue for the cart contents, then fire the segment call using the "**&other=**" query string parameter. Depending on whether or not the user is already present in the modifier segment, this will either create or update an entry in the modifier.
+Page-level modifiers are when a modifier value is piggybacked on a normal on-page segment call. For example, if an advertiser has a hypothesis that they should modify the bid depending on the shopping cart contents of an e-commerce site, they'll need to compute the relative value of expected revenue for the cart contents, then fire the segment call using the "**&other=**" query string parameter. Depending on whether or not the user is already present in the modifier segment, this will either create or update an entry in the modifier.
 
 - **Advantages**: This requires the least amount of technical infrastructure of any of the deployments of Segment Modifier. Although it does require the pixel to have some computational logic, no additional work is required.
 - **Disadvantages**: There is no visibility into the relationship between the modifiers of different users; you could modify every user in a set up by 1.5, which is redundant and will increase your media cost. Additionally, it requires that you compress a complex bid valuation model into an on-page script, which will slow page execution and will likely not be palatable to every advertiser.
 
 ### Batch segment API modifiers
 
-This is the most common and also the best asynchronous method by which you can apply segment modifier. Clients can upload their modifier
-segment using the API's [Batch Segment Service](../digital-platform-api/batch-segment-service.md), and apply the modifier to their campaign.
+This is the most common and also the best asynchronous method by which you can apply segment modifier. Clients can upload their modifier segment using the API's [Batch Segment Service](../digital-platform-api/batch-segment-service.md), and apply the modifier to their campaign.
 
 - **Advantages:** Since the client will be computing their optimization data offline, they'll have a holistic understanding of their user valuation model. As a result, they'll be able to measure exact performance data in conjunction with [Log Level Data Feeds](../log-level-data/log-level-data-feeds.md). Additionally, they can leverage the [Batch Segment Service](../digital-platform-api/batch-segment-service.md)'s error reporting feature to know whether or not their user model has been uploaded properly (on-page pixel fires lack this advantage).
 - **Disadvantages:** Unlike on-page pixels, we have volume restrictions on batch segment API uploads. If the [Batch Segment Service](../digital-platform-api/batch-segment-service.md) is used for unnecessarily frequent uploads, the client will likely be asked to move towards a data provider integration approach.

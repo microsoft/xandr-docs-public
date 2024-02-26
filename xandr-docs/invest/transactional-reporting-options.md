@@ -46,8 +46,7 @@ The aggregation, filtering, and processing of the data available via UI reportin
 
 ## Log-level data
 
-Each feed has different parameters that can be valuable to clients looking for auction-level granularity or metrics not available in
-Microsoft Invest reporting. To handle this data, you must be able to support offline aggregation and large scale storage capabilities. For more details, see [Log-level Data (LLD) Feeds](../log-level-data/log-level-data-feeds.md).
+Each feed has different parameters that can be valuable to clients looking for auction-level granularity or metrics not available in Microsoft Invest reporting. To handle this data, you must be able to support offline aggregation and large scale storage capabilities. For more details, see [Log-level Data (LLD) Feeds](../log-level-data/log-level-data-feeds.md).
 
 ## Creative macros
 
@@ -60,8 +59,7 @@ Creative macros are automatically populated by Microsoft Advertising on each auc
 
 This impression data stream is available realtime, unlike the other reporting options mentioned in this article. Reporting and taking action based on this data is dictated by client data ingestion methods and processing time.
 
-Note that these macros can include raw data grabbed from the impressions (unlike Log Level Data which includes parameters processed by
-Microsoft Advertising). For example, creative macros like `${USER_AGENT}` and `${REFERRER_URL}` will include raw strings of the impressions' full referrer (not just the domain) and user agent from the HTTP header (not just device make, operating system, browser, and model information) which can be valuable.
+Note that these macros can include raw data grabbed from the impressions (unlike Log Level Data which includes parameters processed by Microsoft Advertising). For example, creative macros like `${USER_AGENT}` and `${REFERRER_URL}` will include raw strings of the impressions' full referrer (not just the domain) and user agent from the HTTP header (not just device make, operating system, browser, and model information) which can be valuable.
 
 The same creative macros would also function for landing page URL parameters to store click information.
 

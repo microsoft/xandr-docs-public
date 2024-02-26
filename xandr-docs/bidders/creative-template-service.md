@@ -1,6 +1,6 @@
 ---
 title: Bidders - Creative Template Service
-description: Learn how Xandr categorizes creatives by format, media type, and media subtype.  
+description: Learn how Xandr categorizes creatives by format, media type, and media subtype. For each format, media type, and media subtype combination, Xandr provides a standard creative or you can build your own.  
 ms.date: 11/21/2023
 ---
 
@@ -22,18 +22,18 @@ If you want to customize the way certain types of creatives render, you can buil
 ## REST API
 
 | HTTP method | End point | Description |
-|---|---|---|
+|--|--|--|
 | `GET` | `https://api.adnxs.com/template` | To view all templates (standard and custom). |
 | `GET` | `https://api.adnxs.com/template?member_id=null` | To view standard templates only. |
 | `GET` | `https://api.adnxs.com/template?id=TEMPLATE_ID` | To view a specific template. |
 | `POST` | `https://api.adnxs.com/template` <br>(template JSON) | To add a new custom template. |
-| `PUT`  | `https://api.adnxs.com/template?id=TEMPLATE_ID` <br>(template JSON) | To modify a custom template.<br><br>**Tip**: To modify a custom template, you need to use your member user rather than your bidder user. <br><br>**Warning**: When you modify a custom template, your changes immediately affect any creatives that are already using the template. If your changes cause these creatives to stop rendering properly, their audit status will be changed to "rejected," and they will stop serving on most third-party inventory. |
+| `PUT` | `https://api.adnxs.com/template?id=TEMPLATE_ID` <br>(template JSON) | To modify a custom template.<br><br>**Tip**: To modify a custom template, you need to use your member user rather than your bidder user. <br><br>**Warning**: When you modify a custom template, your changes immediately affect any creatives that are already using the template. If your changes cause these creatives to stop rendering properly, their audit status will be changed to "rejected," and they will stop serving on most third-party inventory. |
 | `DELETE` | https://api.adnxs.com/template?id=TEMPLATE_ID | To delete a custom template.<br><br>**Tip**: You cannot delete a custom template that is used by one or more creatives, but you can archive the template to prevent future creatives from using it. See the [Archiving a custom template](#archiving-a-custom-template) example below for more details. |
 
 ## JSON fields
 
 | Field | Type (Length) | Description |
-|---|---|---|
+|--|--|--|
 | `id` | int | The ID of the creative template.<br>**Required On**: `PUT`/`DELETE`, in query string |
 | `name` | string (30) | The name of the creative template.<br><br>**Required On**: `POST` |
 | `description` | string | The description of the creative template. |
@@ -45,14 +45,14 @@ If you want to customize the way certain types of creatives render, you can buil
 | `content_js` | string | The template's rendering code in JavaScript. The code can include both Xandr standard macros and your own custom macros. Xandr macros must begin with the $ symbol, and custom macros must begin with the # symbol. Each custom macro must be defined in the macros array.<br><br>**Required On**: `POST`, if `content_html` and `content_xml` are not provided |
 | `content_html` | string | The template's rendering code in HTML. The code can include both Xandr standard macros and your own custom macros. Xandr macros must begin with the $ symbol, and custom macros must begin with the # symbol. Each custom macro must be defined in the macros array.<br><br>**Required On**: `POST`, if `content_js` and `content_xml` are not provided |
 | `content_xml` | string | **Deprecated**. |
-| `callback_content_html` | string | When `media_subtype` is `"Popup"` or `"Popunder"`, `content_js` defines the rendering code for the pop window, and this field defines the rendering code for the content in the pop window.   |
-| `macros` | array of objects | The custom macros used in the `content_js`, `content_html`, or `content_xml` fields. You can include up to 20 custom macros in a template.  |
+| `callback_content_html` | string | When `media_subtype` is `"Popup"` or `"Popunder"`, `content_js` defines the rendering code for the pop window, and this field defines the rendering code for the content in the pop window. |
+| `macros` | array of objects | The custom macros used in the `content_js`, `content_html`, or `content_xml` fields. You can include up to 20 custom macros in a template. |
 | `last_modified` | timestamp | **Read-only**. The date and time when the creative template was last modified. |
 
 ### Media subtype
 
 | Field | Type | Description |
-|---|---|---|
+|--|--|--|
 | `id` | int | The ID of media subtype.<br><br>**Required On**: `POST` |
 | `name` | string | **Read-only**. The name of the media subtype. |
 | `mediatype_id` | int | **Read-only**. The ID of the media type to which the subtype belongs. |
@@ -63,7 +63,7 @@ If you want to customize the way certain types of creatives render, you can buil
 You can use the [Creative Format Service](creative-format-service.md) to view all supported creative formats.
 
 | Field | Type | Description |
-|---|---|---|
+|--|--|--|
 | `id` | int | The ID of creative format.<br><br>**Required On**: `POST` |
 | `name` | string | **Read-only**. The name of the creative format. |
 
@@ -72,7 +72,7 @@ You can use the [Creative Format Service](creative-format-service.md) to view al
 You must define each custom macro used in the `content_js`, `content_html`, or `content_xml` field.
 
 | Field | Type (Length) | Description |
-|---|---|---|
+|--|--|--|
 | `code` | string (30) | The macro name exactly as it is used in the `content_js`, `content_html`, or `content_xml` field. For example, if `#{BORDER_SIZE}` is the macro in the `content_js` field, you would pass `"BORDER_SIZE"` here. <br><br>**Required On**: `POST` |
 | `name` | string (50) | The user-friendly name for this macro that traffickers will see when they add creatives that use this template via the Creative Service or UI. <br><br>**Required On**: `POST` |
 | `type` | enum | The type of value that traffickers will provide for this macro when they add creatives that use this template via the Creative Service or UI. Possible values: `"true/false"`, `"string"`, `"url"`, `"integer"`, `"decimal"`, `"string_list"`, `"select_from_list"`. For example, on, if you set this to `"true/false"`, traffickers will see the macro name followed by a check box.<br><br>**Required On**: `POST` |

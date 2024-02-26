@@ -6,8 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Troubleshoot your programmatic guaranteed buying line item bid performance
 
-You can improve your programmatic guaranteed buying line item's impression count and bid performance, which in return will help you
-submit and win more bids, by accessing the **Troubleshooting** tab and reviewing all bid performance messages.
+You can improve your programmatic guaranteed buying line item's impression count and bid performance, which in return will help you submit and win more bids, by accessing the **Troubleshooting** tab and reviewing all bid performance messages.
 
 1. Navigate to the [Line Item Details](view-line-item-details.md) pane.
 1. Click the **Troubleshooting** tab.

@@ -14,8 +14,7 @@ This document describes the procedure for setting up cost per install offers wit
 
 ## Step 1: Set up third-party mobile app install tracking
 
-Follow the steps described in [Set Up Third-Party Mobile App Install Tracking](set-up-third-party-mobile-app-install-tracking.md) to
-integrate with a third-party mobile app install tracker and set your creative click URLs so that Microsoft Advertising will be able to register your conversions. You may also want to associate your creative with an impression tracker. For instructions, see [Create an Impression Tracker](create-an-impression-tracker.md).
+Follow the steps described in [Set Up Third-Party Mobile App Install Tracking](set-up-third-party-mobile-app-install-tracking.md) to integrate with a third-party mobile app install tracker and set your creative click URLs so that Microsoft Advertising will be able to register your conversions. You may also want to associate your creative with an impression tracker. For instructions, see [Create an Impression Tracker](create-an-impression-tracker.md).
 
 > [!NOTE]
 >

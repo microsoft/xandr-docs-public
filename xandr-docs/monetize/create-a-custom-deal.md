@@ -1,6 +1,6 @@
 ---
 title: Create a Custom Deal
-description: The article helps you to create a custom deal.
+description: Create tailored deals, specify sellers, buyer, inventory, geography, segments, sizes, and attributes. Buyers access deals via line items or campaigns.
 ms.date: 10/28/2023
 ---
 
@@ -9,18 +9,16 @@ ms.date: 10/28/2023
 As a seller, you can create a custom deal for a specific buyer that applies to specific inventory, geography, segments, impression sizes, or creative attributes. Once a deal is created, the buyer creates a line item or campaign to target the deal. For more information on how buyers target deals, see [Deal Targeting (ALI)](deal-targeting-ali.md) and [Create a Deal Campaign](create-a-deal-campaign.md).
 
 > [!NOTE]
-> Before you create a custom deal, you should communicate with the buyer to ensure you're using the correct buyer ID. If you plan to use a buyer seat ID from an external DSP, 
-> you should also check the Buyer Seat Migration Status reference table in [External DSPs Using Buyer Seat IDs](external-dsps-using-buyer-seat-ids.md).
+> Before you create a custom deal, you should communicate with the buyer to ensure you're using the correct buyer ID. If you plan to use a buyer seat ID from an external DSP, you should also check the Buyer Seat Migration Status reference table in [External DSPs Using Buyer Seat IDs](external-dsps-using-buyer-seat-ids.md).
 
 If you would like to create a package for buyers to browse and generate their own deals, see [Create a Package](create-a-package.md).
 
 This page describes the properties you can define when creating a deal.
 
- > [!NOTE]
+> [!NOTE]
 > Clients of different types may see different options when creating a deal. This page covers all options in the create a deal workflow. If you do not have access to certain settings or options or have any other questions, please reach out to your Microsoft Advertising representative.
 >
-> If you are assigning a deal to a curator account, you must [create a deal line item](create-a-deal-line-item.md). Custom deals are not supported with curator members. See
-> [Curated Deals](curated-deals.md) for more information.
+> If you are assigning a deal to a curator account, you must [create a deal line item](create-a-deal-line-item.md). Custom deals are not supported with curator members. See [Curated Deals](curated-deals.md) for more information.
 
 ## Start a new custom deal
 
@@ -42,8 +40,7 @@ On the **Partner Center** screen (**Partners** \> **Partner Center**), select th
 Enter basic details for the new deal:
 
 - **Name** - Enter the name for the deal.
-- **Buyer** - If you are creating a deal from the **Deals** screen, select the buyer for whom you are creating the deal. Buyers can be listed using a
-  Microsoft Advertising member ID or (for external DSPs) using a buyer seat ID. For more information, see [Understanding Buyer Seat IDs](understanding-buyer-seat-ids.md). Note that some seat IDs are visible but aren't yet eligible for bidding: check [External DSPs Using Buyer Seat IDs](external-dsps-using-buyer-seat-ids.md) for the latest information.
+- **Buyer** - If you are creating a deal from the **Deals** screen, select the buyer for whom you are creating the deal. Buyers can be listed using a Microsoft Advertising member ID or (for external DSPs) using a buyer seat ID. For more information, see [Understanding Buyer Seat IDs](understanding-buyer-seat-ids.md). Note that some seat IDs are visible but aren't yet eligible for bidding: check [External DSPs Using Buyer Seat IDs](external-dsps-using-buyer-seat-ids.md) for the latest information.
 - **Code -** If you want to report on the deal using an external code (rather than the internal ID that Microsoft Advertising assigns automatically), enter the code here.
 - **Start Date -** Enter the start date for the deal.
 - **End Date -** Enter the end date for the deal. This information is not required. A deal with no end date will be active until you cancel it.
@@ -53,10 +50,8 @@ Enter basic details for the new deal:
 
 - **Currency** - Select the currency that will be used for the buyer's bid and the transaction of the deal.
 - **Deal Type** - Select the auction type for the deal.
-  - **Open Auction** - An open auction is similar to a regular RTB auction. The buyer will be competing with the larger pool of RTB buyers. Select **Open Auction** to
-    allow the buyer to more easily target the deal inventory without giving the buyer's bid any preference over other RTB bids.
-  - **Private Auction** - In a private auction, the buyer will only compete with other buyers who have a private auction deal for the impression. Select **Private Auction**
-    to give the buyer preference over other RTB bids.
+  - **Open Auction** - An open auction is similar to a regular RTB auction. The buyer will be competing with the larger pool of RTB buyers. Select **Open Auction** to allow the buyer to more easily target the deal inventory without giving the buyer's bid any preference over other RTB bids.
+  - **Private Auction** - In a private auction, the buyer will only compete with other buyers who have a private auction deal for the impression. Select **Private Auction** to give the buyer preference over other RTB bids.
 - **Auction Type** - Select the auction type for the deal.
   - **Standard Auction** - This is the standard auction type.
   - **Fixed Price** - If you select a fixed price auction you will need to enter an ask price. Note that the auction type and ask price cannot be changed after the deal has been created. Any buyer who bids above this value will be eligible to bid on the deal. The winning buyer is responsible for the fixed price plus their fees.
@@ -74,9 +69,7 @@ Enter basic details for the new deal:
 - **Ask Price** - Check the **Specify a price for this deal** checkbox if you would like to enter a price for the deal. You must enter an ask price for private auction deals.
   - **Market Price** - Select this for a Market Price deal. A Market Price deal does not have a deal-specific ask price. It uses a seller's yield management floors or open auction dynamics to determine the deal price.
 
-  - **Specify an ask price** - Select this if you would like to enter a price for the deal. You must enter an ask price for private auction deals.
-
-    Enter the price you would like the buyer to see in the **Ask Price** field. The system automatically deducts the revenue fee specified in your Microsoft Advertising contract to determine the amount you will receive (**Min. Revenue**).
+  - **Specify an ask price** - Select this if you would like to enter a price for the deal. You must enter an ask price for private auction deals. Enter the price you would like the buyer to see in the **Ask Price** field. The system automatically deducts the revenue fee specified in your Microsoft Advertising contract to determine the amount you will receive (**Min. Revenue**).
 
     - **Ask Price** - This is the **Min. Revenue** plus any fees. This amount, which is visible to the buyer, is the minimum amount the buyer must bid in order to compete for this inventory.
     - **Fees** - The revenue share fees specified in your Microsoft Advertising contract.
@@ -175,12 +168,11 @@ When you have selected the desired segments, click **Add** to return to the prev
 
 ## Select specific creative sizes
 
-By default, any size impression will be included. Click Edit to open the **Size** dialog, and then select the **Specific sizes...** option to select specific
-impression sizes to include. Click on a size within the **Standard Sizes** area to include it. You can **SHIFT** (or **CONTROL**) + click to select multiple sizes. You can enter any custom sizes within the width and height fields, and then click **Add Size to add it to the Custom Sizes section of the list.**
+By default, any size impression will be included. Click Edit to open the **Size** dialog, and then select the **Specific sizes...** option to select specific impression sizes to include. Click on a size within the **Standard Sizes** area to include it. You can **SHIFT** (or **CONTROL**) + click to select multiple sizes. You can enter any custom sizes within the width and height fields, and then click **Add Size to add it to the Custom Sizes section of the list.**
 
 When you have selected the sizes to be included, click **Set** to return to the previous screen.
 
-Check **Allow deal to include private sizes** to allow impressions from this deal to serve on the additional placement sizes that you have specified in the Placement Manager.
+Check **Allow deal to include private sizes** to allow impressions from this deal to serve on the additional placement sizes that you have specified in the **Placement Manager**.
 
 If you allow private sizes, buyers won't see the additional sizes. Include the private sizes in the **Description** field.
 
@@ -193,8 +185,7 @@ Select which types of devices to target for the creatives. You can choose any co
 Because they are special deals with buyers, deals can have access to a different set of creative attributes than for regular auctions. For example, deals can ignore the usual network ad quality settings of a regular auction. You can also restrict deals to specific brands, languages, categories, and technical attributes and approve or block
 specific creatives.
 
-Use the **Brand**, **Creative Category**, **Language**, **Specific Creatives**, **Trust Level**, **Media Types**, and **Technical Attributes** sections to set
-what types of creatives are allowed for the deal.
+Use the **Brand**, **Creative Category**, **Language**, **Specific Creatives**, **Trust Level**, **Media Types**, and **Technical Attributes** sections to set what types of creatives are allowed for the deal.
 
 See [Override Ad Quality Settings on a Deal](override-ad-quality-settings-on-a-deal.md) for more information on how ad quality overrides work.
 
@@ -236,8 +227,7 @@ To create an override, click **Edit** in the Creative Category section, then use
 | Restrict the deal to specify categories and ignore ad quality settings | On the **Category** tab, click the categories you want to serve in the deal and click **Add**. On the **Ad Quality Settings** tab, click **Ignor**e for the categories you want to serve, regardless of ad quality settings. |
 
 > [!TIP]
-> Remember, by default, your network and publisher ad quality settings are used to determine the categories that serve for a deal. Overrides are only needed if you want deals to
-> have access to a different set of categories.
+> Remember, by default, your network and publisher ad quality settings are used to determine the categories that serve for a deal. Overrides are only needed if you want deals to have access to a different set of categories.
 
 ## Override language ad quality settings
 
@@ -257,8 +247,7 @@ To create an override, click **Edit** in the Language section, then use the **La
 | Restrict the deal to specify languages and ignore ad quality settings | On the **Languages** tab, click the languages you want to serve in the deal and click **Add**. On the **Ad Quality Settings** tab, click **Ignore** for the languages you want to serve, regardless of ad quality settings. |
 
 > [!TIP]
-> Remember, by default, your network and publisher ad quality settings are used to determine the languages that serve for a deal. Overrides are only needed if you want deals to
-> have access to a different set of languages.
+> Remember, by default, your network and publisher ad quality settings are used to determine the languages that serve for a deal. Overrides are only needed if you want deals to have access to a different set of languages.
 
 ## Override specific creatives
 
@@ -279,17 +268,14 @@ By default, deals follow network ad quality settings to determine buyer trust le
 To allow deals to serve more creatives, click **Edit** in the Trust Level section and choose one of the following:
 
 - **Default:** Default setting. If selected, this deal uses the existing publisher ad quality buyer trust level.
-- **Allow pending creatives:** If checked, the default setting is used but creatives submitted for Microsoft Advertising audit in the
-  "pending" state are allowed to serve. Once the audit is complete, the creative uses the default ad quality setting.
+- **Allow pending creatives:** If checked, the default setting is used but creatives submitted for Microsoft Advertising audit in the "pending" state are allowed to serve. Once the audit is complete, the creative uses the default ad quality setting.
 - **Maximum:** If selected, all creatives are allowed to serve for this deal (except for creatives specifically banned; see below).
 
 ## Set media types
 
-By default, deals follow network ad quality settings to determine media types. To limit deals to a specific set of media types, click **Edit** in the
-**Media Types** section.
+By default, deals follow network ad quality settings to determine media types. To limit deals to a specific set of media types, click **Edit** in the **Media Types** section.
 
-- On the **Media Types** tab, click the media types you want to allow for this deal. Selected media types appear in the right side of the dialog. You can deselect specific
-  media subtypes for each of the main media types.
+- On the **Media Types** tab, click the media types you want to allow for this deal. Selected media types appear in the right side of the dialog. You can deselect specific media subtypes for each of the main media types.
 - Click the **Media Subtypes** tab to select specific media subjects (sorted by ID).
 - Click **Set** to save your selections.
 
@@ -338,8 +324,7 @@ will see in your bid requests, and also what data the buyer will see in reportin
     >  Keep in mind that if you hide information from a buyer, that buyer will not be able to target on that information. For example, if you select **Hidden** for Device ID, the buyer won't be able to target your inventory based on the user's device.
 
 > [!WARNING]
-> **For members that have VAST Creative Data Protection enabled**: If you hide the User ID, Device ID, or URL, the tracking beacons attached to any video VAST creatives will
-> not be able to view this information when loading these creatives. However, the tracking beacons will be able to still view the User ID, Device ID, or URL when loading from all other creative types (e.g., banner creatives). Reach out to your account manager to learn more about getting VAST Creative Data Protection enabled.
+> **For members that have VAST Creative Data Protection enabled**: If you hide the User ID, Device ID, or URL, the tracking beacons attached to any video VAST creatives will not be able to view this information when loading these creatives. However, the tracking beacons will be able to still view the User ID, Device ID, or URL when loading from all other creative types (e.g., banner creatives). Reach out to your account manager to learn more about getting VAST Creative Data Protection enabled.
 
 ## Add to segment
 

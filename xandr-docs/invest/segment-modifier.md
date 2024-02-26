@@ -16,8 +16,7 @@ Segment Modifier allows you to adjust a campaign's bid at the time of the auctio
 
 ## Step 1: Upload your audience and modifier segments to the batch segment API
 
-Upload both your audience and modifier segments using the [Batch Segment Service](../digital-platform-api/batch-segment-service.md). You'll then associate each modifier segment with a campaign using the procedure
-defined in **[Step 2](#step-2-associate-a-modifier-segment-with-your-campaign-via-the-api)**. Note that each modifier segment may only be associated with a single audience segment, whereas a single audience segment can be part of more than one modifier segment.
+Upload both your audience and modifier segments using the [Batch Segment Service](../digital-platform-api/batch-segment-service.md). You'll then associate each modifier segment with a campaign using the procedure defined in **[Step 2](#step-2-associate-a-modifier-segment-with-your-campaign-via-the-api)**. Note that each modifier segment may only be associated with a single audience segment, whereas a single audience segment can be part of more than one modifier segment.
 
 The *user bid price* and *user bid modifier* need to be decimal values (e.g., floating-point numbers). Unfortunately, the segment data file format only accepts integers in the `VALUE` field where you define your *user bid price* or *user bid modifier*. Therefore you'll need to multiply your desired bid price or bid modifier by 1000. For example, to specify a user bid price of $0.75, write the integer `750` into the `VALUE` field of the segment data file. For a complete description of the file format, see [Batch Segment Service - File Format](../digital-platform-api//legacy-bss-file-format.md).
 

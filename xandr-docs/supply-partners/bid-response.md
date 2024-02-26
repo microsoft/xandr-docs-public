@@ -55,7 +55,7 @@ Let's say you want Xandr to include the following supplementary information for
 
 The supply template that Xandr would build for you would add this information to the `<Extensions>` section of the `ad_tag`:
 
-``` 
+```
 "ad_tag":"<?xml version="1.0" encoding="UTF-8" standalone="no"?><VAST version="2.0" xmlns:xsi=
                 "http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast.xsd">
                 <Ad id="560469"><Wrapper><AdSystem version="1.0">adnxs</AdSystem><VASTAdTagURI><![CDA
@@ -97,7 +97,7 @@ When an error prevents Xandr from submitting a bid, the `request_error_id` in
 
 ### Xandr submits a bid
 
-``` 
+```
 {
     "external_auction_id": "A4s24536",
     "appnexus_auction_id": 4396943919143109000,
@@ -114,7 +114,7 @@ When an error prevents Xandr from submitting a bid, the `request_error_id` in
 
 ### Xandr does not submit a bid - No bid available
 
-``` 
+```
 {
    "external_auction_id":"A4s24536",
    "no_bid":true,
@@ -124,7 +124,7 @@ When an error prevents Xandr from submitting a bid, the `request_error_id` in
 
 ### Xandr does not submit a bid - Error
 
-``` 
+```
 {
    "external_auction_id":"A4s24536",
    "no_bid":true,
@@ -145,7 +145,7 @@ When Xandr submits a VAST video creative:
 > [!TIP]
 > Following industry standard practice, Xandr does not log a VAST impression on win. Instead, the impression is logged only once the video starts (user clicks play, etc.).
 
-``` 
+```
 {
    "external_auction_id":"A4s24536",
    "appnexus_auction_id":4396943919143109134,
@@ -177,7 +177,7 @@ When Xandr submits a VAST video creative:
 
 ### Xandr submits a bid for a deal
 
-``` 
+```
 {
     "external_auction_id": "A4s24536",
     "appnexus_auction_id": 4396943919143109000,

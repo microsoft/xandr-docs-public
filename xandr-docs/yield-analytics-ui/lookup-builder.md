@@ -17,8 +17,7 @@ In the **Configuration** panel on the left side of the page, select the high-l
 
 ### Date range
 
-This field determines the timeframe for the availability lookup. By default, the lookup is for the Next Month. Click the icon to the right
-of the Next Month verbiage to access the **Date Range** screen.
+This field determines the timeframe for the availability lookup. By default, the lookup is for the Next Month. Click the icon to the right of the Next Month verbiage to access the **Date Range** screen.
 
 > [!NOTE]
 > Availability lookup is always forward-facing. You cannot do lookups in the past. The default is Next Month, but you can change it to anything that you want into the future.
@@ -31,8 +30,7 @@ of the Next Month verbiage to access the **Date Range** screen.
 - Quarter(s)
 - Year(s)
 
-Between Next and Month(s) is a window for you to enter a numerical value. This is to designate how many months, days, etc. that you are
-selecting.
+Between Next and Month(s) is a window for you to enter a numerical value. This is to designate how many months, days, etc. that you are selecting.
 
 **Custom** – Clicking this accesses the calendar. You can select the "from” and “to” date ranges on the calendar, or enter the dates in the text boxes below the calendar. The selected date range is visible at bottom of **Date Range** screen.
 
@@ -42,8 +40,7 @@ selecting.
 
 ### Group By
 
-This field determines how available impressions and capacity are broken down in the lookup. By default, the lookup shows total available
-impressions and capacity only. Choose a group from the drop-down list (Example: Select **Weekly** to see available impressions and capacity for each week in the selected time period).
+This field determines how available impressions and capacity are broken down in the lookup. By default, the lookup shows total available impressions and capacity only. Choose a group from the drop-down list (Example: Select **Weekly** to see available impressions and capacity for each week in the selected time period).
 
 These are the options:
 
@@ -59,8 +56,7 @@ Example: If you had a lookup grouped by months, and wanted to group by weeks, yo
 
 ### Priority
 
-This field determines the ad server priority for your availability lookup. By default, the lookup calculates availability by subtracting
-guaranteed consumption from capacity, regardless of priority. In the **Priority** dialog that appears, choose a priority from the drop-down list (e.g., select 4 to see availability at priority 4).
+This field determines the ad server priority for your availability lookup. By default, the lookup calculates availability by subtracting guaranteed consumption from capacity, regardless of priority. In the **Priority** dialog that appears, choose a priority from the drop-down list (e.g., select 4 to see availability at priority 4).
 
 > [!NOTE]
 > When you set a priority, all consumption (guaranteed and preemptible) at a worse priority than your selected priority - will be considered available.

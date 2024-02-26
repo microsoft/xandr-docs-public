@@ -7,7 +7,7 @@ ms.custom: yield-analytics-ui
 
 # Find orders
 
-1. On the **Orders** tab, in the **Orders Tasks** panel, click **Find Orders**. A list of all of the current month's orders appears, filtered by default to show all orders except those that have been cancelled.
+1. On the **Orders** tab, in the **Orders Tasks** panel, click **Find Orders**. A list of all of the current month's orders appears, filtered by default to show all orders except those that have been cancelled.
 1. (Optional) Filter the orders list using the **Filter** panel:
     - To filter the orders list by date, click **This Month** in the **Date Range** filter, specify a standard or custom time period, and click **Update**.
     - To filter the order list by status, click **Includes x Values** in the **Status** filter, click on a status to select or deselect it, and click **Update**. The selected statuses are displayed in a tooltip.

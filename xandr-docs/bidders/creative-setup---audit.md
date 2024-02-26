@@ -1,7 +1,7 @@
 ---
-title : Creative Setup & Audit
-description : This page lists links for Creative Setup & Audit.
-ms.date : 11/21/2023
+title: Creative Setup & Audit
+description: This page lists links for Creative Setup & Audit.
+ms.date: 11/21/2023
 
 ---
 

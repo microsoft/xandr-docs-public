@@ -1,6 +1,6 @@
 ---
 title: Cadence Modifier and the Chaos Factor
-description: The article discusses the Cadence Modifier and Chaos Factor, focusing on how the Cadence Modifier influences bid amounts by considering frequency and recency factors.
+description: Explore how Cadence Modifier shapes bids, factoring in frequency and recency for precise bid amount determination.
 ms.date: 10/28/2023
 ---
 

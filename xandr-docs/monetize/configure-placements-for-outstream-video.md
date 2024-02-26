@@ -1,6 +1,6 @@
 ---
 title: Configure Placements for Outstream Video
-description: The article shows how to configure placements for outstream video.
+description: Configure outstream video placements by adjusting settings for your inventory setup, without using colons, slashes, or semi-colons.
 ms.date: 10/28/2023
 ---
 

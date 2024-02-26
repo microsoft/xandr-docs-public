@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Buying Triton Audio Inventory
-description: This article provides specific information for the Triton Audio Ad Exchange, which includes testing your ads and setting up a line item or campaign to target Triton audio inventory.
+description: Explore Triton Audio Ad Exchange, Test ads, set up campaigns to target Triton audio inventory.
 ms.date: 10/28/2023
 ---
 
@@ -20,7 +20,6 @@ one or more ads. You can test only one ad at a time.
 
 > [!NOTE]
 > To access the test station, a **custom placement ID** and a **player site ID** from Triton Digital is required. To obtain these IDs, contact Triton Digital customer support.
->
 
 To set up and listen to a test ad:
 
@@ -30,7 +29,7 @@ To set up and listen to a test ad:
    > [!NOTE]
    > These impressions will not be charged since this is a testing platform.
 
-3. In the **Targeting** section, select **Partners >  3rd Party Inventory** targeting and enter your custom placement ID using the **text** mode.
+1. In the **Targeting** section, select **Partners >  3rd Party Inventory** targeting and enter your custom placement ID using the **text** mode.
 1. Click **Include** and then **Add**.
 1. Go to the following URL: `https://player.listenlive.co/xxxx`, where `xxxx` is the site ID provided by Triton Digital.
 
@@ -81,5 +80,4 @@ You can also narrow the inventory by specifying if the inventory should target p
 | Cookie: Not Synced (24164) | Inventory that is assigned to traffic from users who are not synced with an ID from Microsoft Advertising, either because the player does not support cookies or because the player does not have the cookie sync code. |
 
 > [!NOTE]
-> There are no controls to keep you from narrowing your scope to a point of excluding all inventory. For example, you can choose to exclude **Category: Mobile Browser** in a
-> line item or campaign with a scope of "Mobile:Device-Optimized websites". This will leave you with no available inventory. Make sure to use prudence when targeting categories.
+> There are no controls to keep you from narrowing your scope to a point of excluding all inventory. For example, you can choose to exclude **Category: Mobile Browser** in a line item or campaign with a scope of "Mobile:Device-Optimized websites". This will leave you with no available inventory. Make sure to use prudence when targeting categories.

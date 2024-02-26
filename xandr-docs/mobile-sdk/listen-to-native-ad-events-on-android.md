@@ -9,9 +9,7 @@ ms.date : 10/28/2023
 
 ## Overview
 
-A publisher can opt for the SDK to handle various ad events such as AdClick, occurrence of impressions etc., by registering into
-**NativeAdEventListener** API. Using the API, SDK handles all the mentioned events and notify the publishers whether the impression
-trackers are fired or not for the creatives. To listen to the Ad events, publishers need to register first using **registerTracking**, after which SDK uses **NativeAdEventListener** to track the ad events. Publishers need to unregister using **unregisterTracking** when they are finished with the views for the response or wish to reuse the view object(s) for a new **NativeAdResponse**.
+A publisher can opt for the SDK to handle various ad events such as AdClick, occurrence of impressions etc., by registering into **NativeAdEventListener** API. Using the API, SDK handles all the mentioned events and notify the publishers whether the impression trackers are fired or not for the creatives. To listen to the Ad events, publishers need to register first using **registerTracking**, after which SDK uses **NativeAdEventListener** to track the ad events. Publishers need to unregister using **unregisterTracking** when they are finished with the views for the response or wish to reuse the view object(s) for a new **NativeAdResponse**.
 
 ## Scope of listen to native ad events
 
@@ -23,14 +21,14 @@ The scope of this feature is limited to native creatives only.
 
 Method that registers a single or a list of the developer views that will track impressions and respond to clicks for the native ad.
 
-``` 
+```
 public static void registerTracking(final NativeAdResponse response, final View view, final NativeAdEventListener listener)
 public static void registerTracking(final NativeAdResponse response, final View container, final List<View> views, final NativeAdEventListener listener)
 ```
 
 You can pass friendly obstruction list also in this method. For more information about Friendly Obstructions, see [OMID Friendly Obstruction for Android](omid-friendly-obstruction-for-android.md).
 
-``` 
+```
 public static void registerTracking(final NativeAdResponse response, final View view, final NativeAdEventListener listener, final List<View> friendlyObstructionsList)
 public static void registerTracking(final NativeAdResponse response, final View container, final List<View> views, final NativeAdEventListener listener, final List<View> friendlyObstructionsList)
 ```
@@ -43,7 +41,7 @@ API with methods to track the ad events such as:
 - when the ad takes the user away from the application.
 - when an impression is recorded for a native creative.
 
-  ``` 
+  ```
   /**
    * Called when the developer sets the ad click to be handled by the SDK
    */
@@ -71,13 +69,13 @@ API with methods to track the ad events such as:
 
 Method to unregister a native creative from tracking.
 
-``` 
+```
 public static void unRegisterTracking(final View view)
 ```
 
 ## Example
 
-``` 
+```
 // Register the Native Ad to listen to the Ad events
 NativeAdSDK.registerTracking(response, nativeAdContainer, nativeAdEventListener);
 // Initialise NativeAdEventListener

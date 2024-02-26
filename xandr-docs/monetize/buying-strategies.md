@@ -1,13 +1,12 @@
 ---
 title: Buying Strategies
-description: The article explains buying strategies that are are required if your campaign is set to buy third-party inventory (inventory not directly managed by you).
+description: Explore buying strategies that are are required if your campaign is set to buy third-party inventory (inventory not directly managed by you).
 ms.date: 10/28/2023
 ---
 
 # Buying strategies
 
-Buying Strategies are required if your campaign is set to buythird-party inventory (inventory not directly managed by you). For details on buying direct inventory, see
-[Bidding Priority](bidding-priority.md).
+Buying Strategies are required if your campaign is set to buythird-party inventory (inventory not directly managed by you). For details on buying direct inventory, see [Bidding Priority](bidding-priority.md).
 
 ## Pay on a per-impression (CPM) basis
 
@@ -17,8 +16,7 @@ You can choose to pay publishers for every impression. This payment type is acce
 
 If you choose to use your [standard line item's](create-a-standard-line-item.md) Booked Revenue to bid, your bid will be based on your booked revenue with whatever % margin off the top that you choose. For example, if your booked revenue is $1 CPM, and you set a bidding strategy margin of 25%, your campaign will bid $0.75. If your booked revenue type is a CPA or CPC goal, it will apply your desired margin and optimize to that predicted goal.
 
-If you have advertiser goals at the line item level, Microsoft Advertising will calculate an optimized eCPM based on the line item booked revenue (after a margin has been calculated) and a
-click through or conversion rate. Then it will check to see if this bid will meet the advertiser goal. If so, bid. If not, do not bid.
+If you have advertiser goals at the line item level, Microsoft Advertising will calculate an optimized eCPM based on the line item booked revenue (after a margin has been calculated) and a click through or conversion rate. Then it will check to see if this bid will meet the advertiser goal. If so, bid. If not, do not bid.
 
 If you choose to optimize to a % margin of your booked revenue, you also have the option to place a max and min bid.
 
@@ -45,9 +43,7 @@ You may wish to vary bids based on the likelihood of some conversion event, eith
 whether you define it as a click or an acquisition (registration, purchase, etc.).
 
 > [!NOTE]
-> When your line item booked revenue is CPM but you want your campaign to optimize to a CPC or CPA goal, for best results, use the **Performance Goals** section on your line item to set a CPC or CPA performance goal. Then use **Optimize to a % Margin of Booked Revenue** as your campaign buying strategy. For more information, see
-> [Understanding Performance Goals](understanding-performance-goals.md) and [Using Performance Goals with CPM Booked Revenue](using-performance-goals-with-cpm-booked-revenue.md)
-> To learn about setting up performance goals, see [Add a Performance Goal to a Line Item](add-a-performance-goal-to-a-line-item.md).
+> When your line item booked revenue is CPM but you want your campaign to optimize to a CPC or CPA goal, for best results, use the **Performance Goals** section on your line item to set a CPC or CPA performance goal. Then use **Optimize to a % Margin of Booked Revenue** as your campaign buying strategy. For more information, see [Understanding Performance Goals](understanding-performance-goals.md) and [Using Performance Goals with CPM Booked Revenue](using-performance-goals-with-cpm-booked-revenue.md). To learn about setting up performance goals, see [Add a Performance Goal to a Line Item](add-a-performance-goal-to-a-line-item.md).
 
 ## Bid a media cost CPM
 
@@ -63,8 +59,7 @@ You may wish to pay the going platform rate for the inventory you desire, which 
 
 These estimates are based only on Microsoft Advertising bids in RTB auctions.
 
-You have the option to set a minimum and maximum bid range as well as using the [Cadence Modifier and the Chaos Factor](cadence-modifier-and-the-chaos-factor.md) to modify your
-bid according to frequency and recency. You can also set a min/max bid here as well.
+You have the option to set a minimum and maximum bid range as well as using the [Cadence Modifier and the Chaos Factor](cadence-modifier-and-the-chaos-factor.md) to modify your bid according to frequency and recency. You can also set a min/max bid here as well.
 
 ## Click through rate
 
@@ -78,10 +73,5 @@ You can choose to pay publishers only when users click on your ads or when users
 - If you set a min CPM, your bid will not be price reduced below this amount before being passed into any third-party system.
 
    > [!NOTE]
-   > The ability to combine CPM booked revenue with either the **Pay on a Per-click (CPC) Basis** or the **Pay on a Per-conversion (CPA) Basis** buying strategy is now
-   > deprecated. Although this combination will remain functional for existing campaigns, you will no longer be able to use this combination on new campaigns or duplicate
-   > existing campaigns that use it. For best results, use the Performance Goals section on your line item to set a CPC or CPA performance goal. Then use **Optimize to a %
-   > Margin of Booked Revenue** as your campaign buying strategy.
-   > For more information, see [Understanding Performance Goals](understanding-performance-goals.md) and [Using Performance Goals with CPM Booked Revenue]
-   > (using-performance-goals-with-cpm-booked-revenue.md). To learn about setting up **Performance Goals**, see [Add a Performance Goal to a Line Item]
-   > (add-a-performance-goal-to-a-line-item.md).
+   > The ability to combine CPM booked revenue with either the **Pay on a Per-click (CPC) Basis** or the **Pay on a Per-conversion (CPA) Basis** buying strategy is now deprecated. Although this combination will remain functional for existing campaigns, you will no longer be able to use this combination on new campaigns or duplicate existing campaigns that use it. For best results, use the Performance Goals section on your line item to set a CPC or CPA performance goal. Then use **Optimize to a %** > **Margin of Booked Revenue** as your campaign buying strategy.
+   For more information, see [Understanding Performance Goals](understanding-performance-goals.md) and [Using Performance Goals with CPM Booked Revenue](using-performance-goals-with-cpm-booked-revenue.md). To learn about setting up **Performance Goals**, see [Add a Performance Goal to a Line Item](add-a-performance-goal-to-a-line-item.md).

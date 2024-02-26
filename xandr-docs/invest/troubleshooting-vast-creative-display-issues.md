@@ -14,8 +14,7 @@ When placing the URL in a browser, it should return VAST compliant XML as per [I
 
 If the response is empty, the URL may no longer be live. Contact your third-party hosting service to confirm.
 
-If otherwise malformed, the URL may no longer be returning the correct content, or a change was made on the third party end. If this has
-changed since the creation of the creative, you can re-run the [VAST Check](vast-check.md) to clarify any issues. Contact your third party hosting service with this information.
+If otherwise malformed, the URL may no longer be returning the correct content, or a change was made on the third party end. If this has changed since the creation of the creative, you can re-run the [VAST Check](vast-check.md) to clarify any issues. Contact your third party hosting service with this information.
 
 ## Test your URL in a VAST validator
 
@@ -27,8 +26,7 @@ If the content is returned successfully, you'll see the ad impression fire in th
 
 :::image type="content" source="media/successful-vast-validation.png" alt-text="Screenshot of the validator's player with the ad event log.":::
 
-If no ad is returned or any errors are seen, reach out to your third-party hosting service to confirm that the URL is indeed live, and
-whether there is any logic, or targeting on their end that may prevent the content from being returned in certain geos, on certain IP
+If no ad is returned or any errors are seen, reach out to your third-party hosting service to confirm that the URL is indeed live, and whether there is any logic, or targeting on their end that may prevent the content from being returned in certain geos, on certain IP
 addresses, or certain domains.
 
 :::image type="content" source="media/vast-validation-error.png" alt-text="Screenshot of the validator's player with the ad event error log.":::

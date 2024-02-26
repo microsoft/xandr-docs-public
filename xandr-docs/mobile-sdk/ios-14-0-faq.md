@@ -46,9 +46,7 @@ If the user is in iOS14 and the app has not updated to v7.6.2+ of the SDK, AdReq
 
 ## What is Xandr Mobile SDK doing to support SKAdNetwork?
 
-[SKAdNetwork](https://developer.apple.com/documentation/storekit/skadnetwork) and related changes in iOS14 are specific for attributing app installations. Xandr Mobile SDK has traditionally relied on third parties such as [Appflyer](https://www.appsflyer.com/blog/aggregated-attribution-solution-ios14/) and [Kochava](https://www.kochava.com/getting-prepared-for-ios-14/) for attributing app installs
-and they continue to support app install attribution in iOS14 and above. In addition to Appflyer and Kochava, we are associated with the
-following app install tracking vendors.
+[SKAdNetwork](https://developer.apple.com/documentation/storekit/skadnetwork) and related changes in iOS14 are specific for attributing app installations. Xandr Mobile SDK has traditionally relied on third parties such as [Appflyer](https://www.appsflyer.com/blog/aggregated-attribution-solution-ios14/) and [Kochava](https://www.kochava.com/getting-prepared-for-ios-14/) for attributing app installs and they continue to support app install attribution in iOS14 and above. In addition to Appflyer and Kochava, we are associated with the following app install tracking vendors.
 
 - [Flurry](https://www.flurry.com/)
 - [AppsFlyer](https://www.appsflyer.com/)

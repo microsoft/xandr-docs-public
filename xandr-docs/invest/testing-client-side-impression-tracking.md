@@ -48,8 +48,7 @@ Ask your publishers if they are **parsing** the ad response. If the answer is **
 
 If the answer is **yes,** then you must append the parameter **&tmpl_id=21** to the **/ssmob** tag. This will leverage the **Separate Field** implementation option.
 
-Additionally, if the publisher is parsing, it is critical that you **test** the **Separate Field** option prior to the breaking change. By
-testing, you can ensure that your publisher does not experience any issues in recording transacted impressions.
+Additionally, if the publisher is parsing, it is critical that you **test** the **Separate Field** option prior to the breaking change. By testing, you can ensure that your publisher does not experience any issues in recording transacted impressions.
 
 ## What is parsing and why do I care?
 

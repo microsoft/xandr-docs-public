@@ -37,8 +37,7 @@ The user account under the first member in the list of members that have access 
 
 ## Can a user sign in with their old single account credentials?
 
-No. Once a user has been entered in the new system, their previous credentials are defunct. When signing in, they will use their single
-credential and MFA authentication credentials to access all of their user accounts across all of the digital platform applications. They will no longer be able to access the individual user accounts directly using their individual sets of authentication credentials. If a user attempts to, they will be presented with an error message instructing them to use their new credentials.
+No. Once a user has been entered in the new system, their previous credentials are defunct. When signing in, they will use their single credential and MFA authentication credentials to access all of their user accounts across all of the digital platform applications. They will no longer be able to access the individual user accounts directly using their individual sets of authentication credentials. If a user attempts to, they will be presented with an error message instructing them to use their new credentials.
 
 ## What are the password requirements for the single credential login and multi-factor authentication?
 

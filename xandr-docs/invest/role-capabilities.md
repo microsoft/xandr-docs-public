@@ -8,8 +8,7 @@ ms.date: 10/28/2023
 
 Roles capabilities define the accesses and privileges to different functions that are allowed for a custom role in the Microsoft Advertising system.
 
-Permissions are categorized into several related capabilities. The capabilities available will vary depending on the functionality
-available to your Member. The capabilities define the accesses and privileges to different functions for a custom role. Note that not all capabilities are applicable to every customer.
+Permissions are categorized into several related capabilities. The capabilities available will vary depending on the functionality available to your Member. The capabilities define the accesses and privileges to different functions for a custom role. Note that not all capabilities are applicable to every customer.
 
 | Role Type | Description |
 |:---|:---|

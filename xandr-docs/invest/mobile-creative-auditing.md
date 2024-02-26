@@ -14,8 +14,7 @@ To correctly audit creatives that promote app downloads, we have created several
 
 ## Mobile landing pages
 
-In order for a mobile creative with a deep link or mobile-specific landing page (opening an app or click-to-call) to pass our audit, you
-must provide an alternative landing page URL in the **Brand URL** field in the **Creative Quality** pane.
+In order for a mobile creative with a deep link or mobile-specific landing page (opening an app or click-to-call) to pass our audit, you must provide an alternative landing page URL in the **Brand URL** field in the **Creative Quality** pane.
 
 > [!NOTE]
 > This URL should be a closely related landing page that is visible from a desktop browser. We strongly recommend that you verify if the landing page is visible from a desktop browser before submitting the creative for audit. You can add this in the **Creative Quality** pane of the creative trafficking workflow.
@@ -25,12 +24,9 @@ must provide an alternative landing page URL in the **Brand URL** field in the *
 [MRAID](https://www.iab.com/guidelines/mobile-rich-media-ad-interface-definitions-mraid) is a framework that allows rich media creatives to be displayed from within mobile apps.
 
 > [!WARNING]
-> If your mobile creative has a mobile-specific targeted landing page, such as a click-to-call creative, you must provide an alternative landing page URL in the **Brand URL** field of the trafficking workflow. This URL should be a closely related landing page that is
-visible from a desktop browser. We strongly recommend that you verify that the landing page is visible from a desktop browser before
-submitting the creative for audit. For more information about how you can serve MRAID creatives on your mobile inventory, see [Run Rich Media Creatives on Mobile Inventory](run-rich-media-creatives-on-mobile-inventory.md).
+> If your mobile creative has a mobile-specific targeted landing page, such as a click-to-call creative, you must provide an alternative landing page URL in the **Brand URL** field of the trafficking workflow. This URL should be a closely related landing page that is visible from a desktop browser. We strongly recommend that you verify that the landing page is visible from a desktop browser before submitting the creative for audit. For more information about how you can serve MRAID creatives on your mobile inventory, see [Run Rich Media Creatives on Mobile Inventory](run-rich-media-creatives-on-mobile-inventory.md).
 
-To successfully pass our platform audit, all MRAID creatives must always display the appropriate branding from a desktop browser even when a mraid.js file isn't present. The Microsoft Advertising Audit team will verify that the MRAID creative contains the appropriate
-branding, but they will not flag any unusual or unexpected behavior since MRAID creatives may exhibit behavior that is incompatible with desktop browsers.
+To successfully pass our platform audit, all MRAID creatives must always display the appropriate branding from a desktop browser even when a mraid.js file isn't present. The Microsoft Advertising Audit team will verify that the MRAID creative contains the appropriate branding, but they will not flag any unusual or unexpected behavior since MRAID creatives may exhibit behavior that is incompatible with desktop browsers.
 
 ## Unbranded creatives
 

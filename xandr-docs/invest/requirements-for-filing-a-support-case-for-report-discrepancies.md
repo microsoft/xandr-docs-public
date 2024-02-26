@@ -6,8 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Requirements for filing a support case for report discrepancies
 
-To file a case exploring a possible report discrepancy with Product Support, you need to gather reports, including object IDs for the
-relevant objects, and create a spreadsheet that shows a discrepancy greater than 10% (15% for mobile).
+To file a case exploring a possible report discrepancy with Product Support, you need to gather reports, including object IDs for the relevant objects, and create a spreadsheet that shows a discrepancy greater than 10% (15% for mobile).
 
 | Requirement | Detail |
 |:---|:---|

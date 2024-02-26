@@ -1,6 +1,6 @@
 ---
 title: Bidders - Completed Creative Audits Report
-description: Learn about Completed Creative Audits Report that gives you insight into how your creatives are moving through the audit process.
+description: Completed Creative Audits Report gives you insight into how your creatives are moving through the audit process. Learn the advantages of using this report in this page and steps to retrieve the report.
 ms.date: 11/22/2023
 ---
 
@@ -32,25 +32,25 @@ The `report_interval` field in the JSON request must be set to one of the follow
 
 ## Dimensions
 
-| Column                | Type   | Filter? | Description                                                                                       |
-|-----------------------|--------|---------|---------------------------------------------------------------------------------------------------|
-| `audit_completion_date` | date   | Yes     | The day on which the audits were completed.                                                       |
-| `audit_reason`          | string | Yes     | The type of audit. This will be either "Initial" or "Reaudit".                                    |
-| `audit_reason_id`       | int    | Yes     | The integer code for the type of audit. There are two allowed values: <br> - `1`: Initial audit <br> - `2`: Reaudit |
-| `audit_type`            | string | Yes     | The priority of the audit. Allowed values: <br> - `"standard"` <br> - `"priority"`                                  |
-| `audit_type_id`         | int    | Yes     | The integer code for the priority of the audit. Allowed values: <br> - `1`: Standard <br> - `2`: Priority           |
-| `creative_id`           | int    | Yes     | ID of the creative that was audited.                                                              |
-| `creative_name`         | string | Yes     | Name of the creative that was audited.                                                            |
-| `day`                   | date   | Yes     | Day on which audits were completed (alias for `audit_completion_date`).                             |
-| `member_id`             | int    | Yes     | ID of the member whose creative was audited.                                                      |
-| `member_name`           | string | Yes     | The name of the member whose creative was audited.                                                |
+| Column | Type | Filter? | Description |
+|--|--|--|--|
+| `audit_completion_date` | date | Yes | The day on which the audits were completed. |
+| `audit_reason` | string | Yes | The type of audit. This will be either "Initial" or "Reaudit". |
+| `audit_reason_id` | int | Yes | The integer code for the type of audit. There are two allowed values: <br> - `1`: Initial audit <br> - `2`: Reaudit |
+| `audit_type` | string | Yes | The priority of the audit. Allowed values: <br> - `"standard"` <br> - `"priority"` |
+| `audit_type_id` | int | Yes | The integer code for the priority of the audit. Allowed values: <br> - `1`: Standard <br> - `2`: Priority |
+| `creative_id` | int | Yes | ID of the creative that was audited. |
+| `creative_name` | string | Yes | Name of the creative that was audited. |
+| `day` | date | Yes | Day on which audits were completed (alias for `audit_completion_date`). |
+| `member_id` | int | Yes | ID of the member whose creative was audited. |
+| `member_name` | string | Yes | The name of the member whose creative was audited. |
 
 ## Metrics
 
-| Column               | Type   | Description                                               |
-|----------------------|--------|-----------------------------------------------------------|
-| `num_audits_completed` | int    | The number of audits completed in the grouping specified. |
-| `total_audit_fee`      | double | The total fees for audits in the grouping specified.      |
+| Column | Type | Description |
+|--|--|--|
+| `num_audits_completed` | int | The number of audits completed in the grouping specified. |
+| `total_audit_fee` | double | The total fees for audits in the grouping specified. |
 
 ## Example
 

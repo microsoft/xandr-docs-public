@@ -1,16 +1,14 @@
 ---
-title : Bidders - Creative Search Service
-description : Learn how this read-only service allows you to search for creatives based on specific criteria such as audit status, ID, size, etc.
-ms.date : 11/21/2023
+title: Bidders - Creative Search Service
+description: Learn how this service allows you to search for creatives based on specific criteria such as audit status, ID, size, etc. This page also covers an example where you search for all banner creatives that have passed Xandr's audit. 
+ms.date: 11/21/2023
 
 ---
 
 
 # Bidders - Creative search service
 
-This read-only service allows you to search for creatives based on
-specific criteria such as audit status, ID, size, etc. To add creatives
-to the system, see the [Creative Service](creative-service.md).
+This read-only service allows you to search for creatives based on specific criteria such as audit status, ID, size, etc. To add creatives to the system, see the [Creative Service](creative-service.md).
 
 > [!WARNING]
 > Since this service searches all creatives on Xandr's platform (not just your own), a search that is too broad might cause an error. To ensure that you get results, please narrow your search as much as possible.
@@ -19,41 +17,40 @@ to the system, see the [Creative Service](creative-service.md).
 
 ### REST API
 
-| HTTP method | End point                                                                           | Description                                                                                                                                                                                                                                                                               |
-|-------------|-------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| POST        | `[https://api..com/creative-search](https://api..com/creative-search)` (creative_search JSON)                             | To search for creatives.                                                                                                                                                                                                                                                                  |
-| POST        | `[https://api..com/creative-search?sort=FIELD_NAME.ASC_OR_DESC](https://api..com/creative-search?sort=FIELD_NAME.ASC_OR_DESC)` (creative_search JSON) | Search for creatives and sort results. <br> **Note**: The fields used to search for creatives are not exactly the same as the fields returned. This is because the returned objects are drawn from the [Creative Service](creative-service.md) and formatted accordingly. This service will only search active creatives. |
+| HTTP method | End point | Description |
+|--|--|--|
+| POST | `[https://api..com/creative-search](https://api..com/creative-search)` (creative_search JSON) | To search for creatives. |
+| POST | `[https://api..com/creative-search?sort=FIELD_NAME.ASC_OR_DESC](https://api..com/creative-search?sort=FIELD_NAME.ASC_OR_DESC)` (creative_search JSON) | Search for creatives and sort results. <br> **Note**: The fields used to search for creatives are not exactly the same as the fields returned. This is because the returned objects are drawn from the [Creative Service](creative-service.md) and formatted accordingly. This service will only search active creatives. |
 
 ## JSON fields
 
-| Field             | Type              | Sort?                                          | Use                                                                                                                                                                                                                                                                                                                                                                   |
-|-------------------|-------------------|------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `ad_profile_id`     | int               | No                                             | **Must be used with** `brand_status`. Search for a creative by the ID of its ad profile.                                                                                                                                                                                                                                                                                    |
-| `audit_status`      | array of enums    | Yes                                            | Search for creatives by their audit status. Possible values: "no_audit", "pending", "rejected", "audited".                                                                                                                                                                                                                                                            |
-| `brand_ids`         | array of integers | No                                             | Search for creatives by the IDs of their brands.                                                                                                                                                                                                                                                                                                                      |
-| `brand_status`      | array of enums    | No                                             | **Must be used with** `ad_profile_id`. Search for creatives by their brand status. For example, if this is set to "trusted", all trusted brands within the ad profiles specified in `ad_profile_id` will be returned in the response. Possible values: "trusted", "case-by-case", "banned". The brand status field is only returned in the response when you use this filter. |
-| `click_url`         | string            | Yes                                            | **Not a filter**. Sort results in ascending/descending alphabetical click URL order.                                                                                                                                                                                                                                                                                      |
-| `creative_ids`      | array of integers | Yes, use "id" in query string.                 | Search for creatives by their IDs.                                                                                                                                                                                                                                                                                                                                    |
-| `description`       | string            | No                                             | Search for creatives by terms in their descriptions.                                                                                                                                                                                                                                                                                                                  |
-| `formats`           | array of enums    | Yes, use "format" in query string.             | Search for creatives by their formats. Possible values: "url-html", "url-js", "flash", "image", "raw-js", "raw-html", "iframe-html", "url-vast", "text".                                                                                                                                                                                                              |
-| `landing_page_url`  | string            | Yes                                            | **Not a filter**. Sort results in ascending/descending alphabetical landing page URL order.                                                                                                                                                                                                                                                                               |
-| `media_content`     | string            | No                                             | Search for a creative by the data in its original_content field (see [Creative Service](creative-service.md)).                                                                                                                                                                                                                                                                               |
-| `media_subtype`     | array of enums    | No                                             | **Deprecated**, **use** `media_subtype_ids` instead. Search for creatives by their media subtypes. Possible values: "Banner", "Popup", "Popunder".                                                                                                                                                                                                                              |
-| `media_subtype_ids` | array of integers | Yes, use "media_subtype_id" in query string.   | Search for creatives by their media subtype via ID. You can use the [Media Subtype Service](../digital-platform-api/media-subtype-service.md) to look up the desired IDs.                                                                                                                                                                                                                                                 |
-| `media_url`         | string            | Yes                                            | Search for a creative by its URL.                                                                                                                                                                                                                                                                                                                                     |
-| `member_action`     | enum              | No                                             | **Must be used with** `member_ids`. If this is set to "exclude", you exclude the members specified in `member_ids` from the search. Otherwise, the specified IDs are included.                                                                                                                                                                                                |
-| `member_ids`        | array of integers | Yes, use "member_id" in query string.          | **Must be used with** `member_action`. Search for creatives by the IDs of their members.                                                                                                                                                                                                                                                                                    |
-| `modified_since`    | timestamp         | No                                             | Search for creatives that were modified since this date. Format: "YYYY-MM-DD HH:MM:SS".                                                                                                                                                                                                                                                                               |
-| `review_status`     | array of enums    | No                                             | Search for creatives based on their review status (from the associated ad profiles). Possible values: "reviewed", "unreviewed". The review status field is only returned in the response when you use this filter.                                                                                                                                                    |
-| `size_in_bytes`     | string            | Yes                                            | **Not a filter**. Sort results in ascending/descending size order.                                                                                                                                                                                                                                                                                                        |
-| `sizes`             | array of strings  | Yes, use "width" and "height" in query string. | Search for creatives by their sizes, for example, "728x90".                                                                                                                                                                                                                                                                                                           |
-| `template_id`       | int               | Yes                                            | Search for creatives by their creative template IDs.                                                                                                                                                                                                                                                                                                                  |
-| `uploaded_since`    | timestamp         | No                                             | Search for creatives that were uploaded since this date. Format: "YYYY-MM-DD HH:MM:SS".                                                                                                                                                                                                                                                                               |
+| Field | Type | Sort? | Use |
+|--|--|--|--|
+| `ad_profile_id` | int | No | **Must be used with** `brand_status`. Search for a creative by the ID of its ad profile. |
+| `audit_status` | array of enums | Yes | Search for creatives by their audit status. Possible values: "no_audit", "pending", "rejected", "audited". |
+| `brand_ids` | array of integers | No | Search for creatives by the IDs of their brands. |
+| `brand_status` | array of enums | No | **Must be used with** `ad_profile_id`. Search for creatives by their brand status. For example, if this is set to "trusted", all trusted brands within the ad profiles specified in `ad_profile_id` will be returned in the response. Possible values: "trusted", "case-by-case", "banned". The brand status field is only returned in the response when you use this filter. |
+| `click_url` | string | Yes | **Not a filter**. Sort results in ascending/descending alphabetical click URL order. |
+| `creative_ids` | array of integers | Yes, use "id" in query string. | Search for creatives by their IDs. |
+| `description` | string | No | Search for creatives by terms in their descriptions. |
+| `formats` | array of enums | Yes, use "format" in query string. | Search for creatives by their formats. Possible values: "url-html", "url-js", "flash", "image", "raw-js", "raw-html", "iframe-html", "url-vast", "text". |
+| `landing_page_url` | string | Yes | **Not a filter**. Sort results in ascending/descending alphabetical landing page URL order. |
+| `media_content` | string | No | Search for a creative by the data in its original_content field (see [Creative Service](creative-service.md)). |
+| `media_subtype` | array of enums | No | **Deprecated**, **use** `media_subtype_ids` instead. Search for creatives by their media subtypes. Possible values: "Banner", "Popup", "Popunder". |
+| `media_subtype_ids` | array of integers | Yes, use "media_subtype_id" in query string. | Search for creatives by their media subtype via ID. You can use the [Media Subtype Service](../digital-platform-api/media-subtype-service.md) to look up the desired IDs. |
+| `media_url` | string | Yes | Search for a creative by its URL. |
+| `member_action` | enum | No | **Must be used with** `member_ids`. If this is set to "exclude", you exclude the members specified in `member_ids` from the search. Otherwise, the specified IDs are included. |
+| `member_ids` | array of integers | Yes, use "member_id" in query string. | **Must be used with** `member_action`. Search for creatives by the IDs of their members. |
+| `modified_since` | timestamp | No | Search for creatives that were modified since this date. Format: "YYYY-MM-DD HH:MM:SS". |
+| `review_status` | array of enums | No | Search for creatives based on their review status (from the associated ad profiles). Possible values: "reviewed", "unreviewed". The review status field is only returned in the response when you use this filter. |
+| `size_in_bytes` | string | Yes | **Not a filter**. Sort results in ascending/descending size order. |
+| `sizes` | array of strings | Yes, use "width" and "height" in query string. | Search for creatives by their sizes, for example, "728x90". |
+| `template_id` | int | Yes | Search for creatives by their creative template IDs. |
+| `uploaded_since` | timestamp | No | Search for creatives that were uploaded since this date. Format: "YYYY-MM-DD HH:MM:SS". |
 
 ## Examples
 
-**Search for all banner creatives that have passed
-Xandr's audit**
+**Search for all banner creatives that have passed Xandr's audit**
 
 ``` 
 $ cat creative_search

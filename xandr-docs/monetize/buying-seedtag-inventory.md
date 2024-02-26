@@ -1,14 +1,13 @@
 ---
 title: Microsoft Monetize - Buying Seedtag Inventory
-description: The article explains buying seedtag inventory that enables global reach, simplifying advertising using a single line item or campaign, simplifying and streamlining advertising efforts across platforms.
+description: Optimize global advertising by buying seedtag inventory, simplifying campaigns, and streamlining efforts across platforms.
 ms.date: 10/28/2023
 ---
 
 # Microsoft Monetize - Buying Seedtag inventory
 
 > [!NOTE]
-> [Buying Native Inventory](buying-native-inventory.md) provides instructions for a a global approach in which you reach all sellers simultaneously with a single line
-> item or campaign. Scaling is the approach we recommend over the seller-specific settings shown here.
+> [Buying Native Inventory](buying-native-inventory.md) provides instructions for a a global approach in which you reach all sellers simultaneously with a single line item or campaign. Scaling is the approach we recommend over the seller-specific settings shown here.
 
 [Seedtag](https://www.seedtag.com/) inventory is available programmatically through Microsoft Advertising. Seedtag is the European leader in In-Image advertising and manages more than 1B impressions across the globe. We work with top Publishers and our responsive ad format will allow you to boost your metrics. Seedtag's average Viewability rate is
 above 90% and our CTR are 5 time higher than traditional display.

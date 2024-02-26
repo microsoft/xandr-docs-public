@@ -7,8 +7,7 @@ ms.date: 10/28/2023
 
 # Data Science Toolkit - Bonsai language features
 
-This page lists the Bonsai Language features that you can use to evaluate impressions as part of your custom model logic. For each
-feature, we explain the syntax and provide an example to demonstrate usage.
+This page lists the Bonsai Language features that you can use to evaluate impressions as part of your custom model logic. For each feature, we explain the syntax and provide an example to demonstrate usage.
 
 > [!NOTE]
 >
@@ -780,8 +779,7 @@ else:
 
 ### Predicted IAB video viewability rate over total
 
-Evaluate web video impressions by how likely they are to be measured as viewable over the total number of impressions (viewed / measured
-impressions) by the custom definition of 100% pixels viewable for at least 1 second, as determined by Xandr optimization.
+Evaluate web video impressions by how likely they are to be measured as viewable over the total number of impressions (viewed / measured impressions) by the custom definition of 100% pixels viewable for at least 1 second, as determined by Xandr optimization.
 
 **Keyword**: `predicted_iab_video_view_rate_over_total`
 
@@ -997,8 +995,7 @@ else:
 
 ### User group
 
-Evaluates whether the user belongs to a randomly-assigned group. Each Xandr user has a persistent user group from 0 to
-999. You may want to use the user group to test various strategies in parallel and compare their performance. Different tests should partition the thousand user groups differently; otherwise, concurrent tests will interact with each other and it will be difficult to interpret results. For more information, see [Test and Control Targeting](../monetize/test-and-control-targeting.md) in documentation.
+Evaluates whether the user belongs to a randomly-assigned group. Each Xandr user has a persistent user group from 0 to 999. You may want to use the user group to test various strategies in parallel and compare their performance. Different tests should partition the thousand user groups differently; otherwise, concurrent tests will interact with each other and it will be difficult to interpret results. For more information, see [Test and Control Targeting](../monetize/test-and-control-targeting.md) in documentation.
 
 **Keyword**: `user_group`
 
@@ -1430,8 +1427,7 @@ else:
 
 #### Segment value
 
-Evaluate impressions based on a user-defined value. The value may be passed in a number of ways, for example, through the Batch Segment
-Service or a first-party or third-party segment query string. For more information on passing values through segment query strings, see [Segment Pixels Advanced](../invest/segment-pixels-advanced.md) in documentation.
+Evaluate impressions based on a user-defined value. The value may be passed in a number of ways, for example, through the Batch Segment Service or a first-party or third-party segment query string. For more information on passing values through segment query strings, see [Segment Pixels Advanced](../invest/segment-pixels-advanced.md) in documentation.
 
 > [!NOTE]
 > If the user is not in the segment, this feature evaluates to `False`.
@@ -1541,8 +1537,7 @@ else:
 
 #### Recency presence/absence and data
 
-Evaluates whether recency data is available for a user, and, if available, the number of minutes since a user has seen an ad. This can
-be determined for a user for all ads under an advertiser, line item, or campaign.
+Evaluates whether recency data is available for a user, and, if available, the number of minutes since a user has seen an ad. This can be determined for a user for all ads under an advertiser, line item, or campaign.
 
 **Keyword**: `recency`
 

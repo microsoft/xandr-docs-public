@@ -56,8 +56,7 @@ This should include the following:
 
 ## Frequently asked questions
 
-This section is intended to help you understand our monitoring and security systems, and any general questions you have about how we
-respond or regulate unusual activity on the Microsoft Advertising Platform.
+This section is intended to help you understand our monitoring and security systems, and any general questions you have about how we respond or regulate unusual activity on the Microsoft Advertising Platform.
 
 ### Does Microsoft Advertising allow bidders/advertisers to bid on ad requests where IP addresses are owned by cloud providers such as Amazon Web Services or Rackspace?
 

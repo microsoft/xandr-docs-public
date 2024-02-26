@@ -18,8 +18,7 @@ To access the RTB exchange, Supply Partners must:
 
 ## Inventory standards
 
-To sell inventory on the open exchange, Supply Partners must provide information that validates that they are approved to monetize a
-Publisher's inventory. By cooperating with this validation, Xandr and our Supply Partners are taking a stand against the arbitrage of Publisher inventory, building trust through transparency with buyers and sellers alike.
+To sell inventory on the open exchange, Supply Partners must provide information that validates that they are approved to monetize a Publisher's inventory. By cooperating with this validation, Xandr and our Supply Partners are taking a stand against the arbitrage of Publisher inventory, building trust through transparency with buyers and sellers alike.
 
 To this end, the following best practices must be followed to sell Publisher inventory as a Xandr Supply Partner:
 

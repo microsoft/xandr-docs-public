@@ -7,8 +7,7 @@ ms.date: 10/28/2023
 
 # External seller troubleshooting
 
-This page describes some of the common issues facing external sellers and instructions to help resolve those issues. For additional
-information see the [Integration Process FAQ](faq-integration-process.md).
+This page describes some of the common issues facing external sellers and instructions to help resolve those issues. For additional information see the [Integration Process FAQ](faq-integration-process.md).
 
 ## Deals troubleshooting
 
@@ -71,8 +70,7 @@ Creatives that do not contain malicious elements or violate any platform buying 
 
 To block specific creatives or set the above ad quality settings in the Xandr system, use the [Ad Profile Service](../digital-platform-api/ad-profile-service.md). For best practices regarding the use of ad quality, see [Define Ad Quality Rules](define-ad-quality-rules.md). Settings applied in the Xandr system will work in conjunction with those sent dynamically in the OpenRTB request; the most restrictive block between the two will always apply. To preview a buyer's creative, you can use the URL present in the **iurl** field of the bid response.
 
-If you're encountering creatives that do not meet these ad quality settings (either passed into the OpenRTB request or set in the Ad
-Profile service) serving on your inventory, this can be escalated to our Anti-Malvertising Team via the [Customer Portal](https://help.xandr.com) under the category **Anti-Malvertising**.
+If you're encountering creatives that do not meet these ad quality settings (either passed into the OpenRTB request or set in the Ad Profile service) serving on your inventory, this can be escalated to our Anti-Malvertising Team via the [Customer Portal](https://help.xandr.com) under the category **Anti-Malvertising**.
 
 ## HTTP responses
 
@@ -102,29 +100,24 @@ In regards to click tracking, similar timing differences will account for discre
 
 As described above, Xandr relies on a win notify call in order to count an impression. Display discrepancies can arise when an outside system is tracking impressions at a different time in the ad call chain than the firing of this call (for example, on creative render vs. on delivery of creative content to the page).
 
-Similarly, video discrepancies are most commonly caused by a difference in the VAST tracking event that is used to count the impression.
-Xandr counts a VAST impression when the impression tracking URL in our VAST wrapper is fired, which, as per the [IAB spec](https://www.iab.com/guidelines/iab-display-advertising-guidelines/), should be sent by the player once the first frame of the video is rendered. If an outside system is tracking impressions on the delivery of the ad content, the start event, or any other VAST tracking event, the impression numbers recorded in this system are NOT likely to line up with those recorded by Xandr.
+Similarly, video discrepancies are most commonly caused by a difference in the VAST tracking event that is used to count the impression. Xandr counts a VAST impression when the impression tracking URL in our VAST wrapper is fired, which, as per the [IAB spec](https://www.iab.com/guidelines/iab-display-advertising-guidelines/), should be sent by the player once the first frame of the video is rendered. If an outside system is tracking impressions on the delivery of the ad content, the start event, or any other VAST tracking event, the impression numbers recorded in this system are NOT likely to line up with those recorded by Xandr.
 
 ### Incorrect handling of auction price macro
 
-As shown in the [OpenRTB spec](outgoing-bid-response-to-ssps.md), auction prices from outside systems are passed to Xandr using the
-macro `${AUCTION_PRICE}`. If this macro is not filled with a valid win price, our system will not be able to record this price, which can lead to financial discrepancies.
+As shown in the [OpenRTB spec](outgoing-bid-response-to-ssps.md), auction prices from outside systems are passed to Xandr using the macro `${AUCTION_PRICE}`. If this macro is not filled with a valid win price, our system will not be able to record this price, which can lead to financial discrepancies.
 
 ## Inventory quality deactivations
 
 When a placement object is deactivated for a reason related to inventory quality, notifications including **object ID** and **reason for deactivation** will be sent to emails specified in the `audit_notify_email` field under the [Member Service](../digital-platform-api/member-service.md).
 
-If you are employing creative scanning that loads /ab URLs and these scanner endpoints are causing inventory quality deactivations, ensure that the header "X-is-test: 1" is included with each call to the /ab URL from these endpoints. This header will indicate that the
-corresponding call to the /ab URL is a test, and will prevent our system from logging it. If you are still experiencing issues with this header in place, also confirm that your scanner's endpoint resolves to a DNS name; using an IP that does not resolve to a DNS name will cause deactivations regardless of whether the test header is used.
+If you are employing creative scanning that loads /ab URLs and these scanner endpoints are causing inventory quality deactivations, ensure that the header "X-is-test: 1" is included with each call to the /ab URL from these endpoints. This header will indicate that the corresponding call to the /ab URL is a test, and will prevent our system from logging it. If you are still experiencing issues with this header in place, also confirm that your scanner's endpoint resolves to a DNS name; using an IP that does not resolve to a DNS name will cause deactivations regardless of whether the test header is used.
 
 > [!NOTE]
 > The test=1 query string parameter (used for test requests) does NOT work for /ab URLs.
 
 ## Object limits
 
-To view your current object limits, use the [Object Limit Service](../digital-platform-api/object-limit-service.md). Both active and
-inactive objects will count towards object limit counts. Object limit notifications are sent to emails specified in the `sherlock_notify_email` field under the [Member Service](../digital-platform-api/member-service.md). If you are nearing your
-object limits, you can delete unused objects using the corresponding API service, as deleted objects do NOT count against this limit.
+To view your current object limits, use the [Object Limit Service](../digital-platform-api/object-limit-service.md). Both active and inactive objects will count towards object limit counts. Object limit notifications are sent to emails specified in the `sherlock_notify_email` field under the [Member Service](../digital-platform-api/member-service.md). If you are nearing your object limits, you can delete unused objects using the corresponding API service, as deleted objects do NOT count against this limit.
 
 - [Publisher Service](../digital-platform-api/publisher-service.md)
 - [Site (Placement Group) Service](../digital-platform-api/site-service.md)

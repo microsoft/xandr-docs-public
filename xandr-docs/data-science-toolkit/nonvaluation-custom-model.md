@@ -18,7 +18,7 @@ A creative macro is a text placeholder that is replaced with some useful pie
 
 In order for a macro to communicate with the ad server and pass what information should be populated, it must be preceded by a key. The syntax for creative macro leaves is:
 
-```pre
+```
 leaf_name: "name"
 creative_macros["MACRO1"]: "value1"
 creative_macros["MACRO2"]: "value2
@@ -26,23 +26,23 @@ creative_macros["MACRO2"]: "value2
 
 Since this is a non-valuation model, a value is not required. It is possible to have a leaf that consists simply of the `leaf_name`. See the [example](#example) below for more information.
 
-Please note the following restrictions:
-
-- Macros are case-sensitive.
-- Keys and values can contain Unicode text that must not be bigger than 100 utf-8 encoded bytes in total.
-- The parser applies the NFC Unicode transformation and may change the Unicode codepoints and the resulting utf-8 encoded result. The best way to avoid unpredictable behavior is to always use NFC-normalized text both in the key and value.
-- There may be no more than two macros per leaf.
-
 > [!NOTE]
+> **The restrictions are as follows:**
+>
+> - Macros are case-sensitive.
+> - Keys and values can contain Unicode text that must not be bigger than 100 utf-8 encoded bytes in total.
+> - The parser applies the NFC Unicode transformation and may change the Unicode codepoints and the resulting utf-8 encoded result. The best way to avoid unpredictable behavior is to always use NFC-normalized text both in the key and value.
+> - There may be no more than two macros per leaf.
+>
 > Do not duplicate the names of existing [Xandr Creative Macros](../bidders/xandr-macros.md). This may cause unpredictable behavior.
 
 ## API workflow
 
-**Step 1. Create an augmented line item**
+### Step 1. Create an augmented line item
 
 In this example, we create an augmented line item.
 
-```pre
+```
 $cat ali
 {
     "line-item": {
@@ -146,11 +146,11 @@ $curl -b cookies -X POST -s -d @ali "https://api.appnexus.com/line-item?advertis
 
 For more information, see [ALI Workflow with Custom Models](./ali-workflow-with-custom-models.md).
 
-**Step 2. Create a custom model tree**
+### Step 2. Create a custom model tree
 
 In this example, we create a custom model that will insert the creative macros.
 
-```pre
+```
 $cat custom-macro-tree
 if user_hour = 1:
     leaf_name: "cm_1"
@@ -161,11 +161,11 @@ else:
     creative_macros["TestMacro"]: "yourvaluegoeshere"
 ```
 
-**Step 3. Upload the custom model**
+### Step 3. Upload the custom model
 
 In this example, we upload the custom model.
 
-```pre
+```
 $ cat custom_model
  
 {
@@ -207,11 +207,11 @@ $ curl -b cookies -X POST -d @custom-model "https://api.appnexus.com/custom-mode
 
 For more information, see [Custom Model Service](./custom-model-service.md).
 
-**Step 4. Associate the custom model with the line item.**
+### Step 4. Associate the custom model with the line item
 
 In this example, we associate the custom model with the line item by setting the `type` field in the line item's `custom_models` array to 'nonvaluation'.
 
-```pre
+```
 $cat update-ali
 {
     "line-item": {
@@ -323,16 +323,11 @@ $curl -b cookies -X PUT -d '@update-ali' "https://api.appnexus.com/line-item?id=
 } 
 ```
 
-
-
-<div id="ID-000006e8__example_nonvaluation_custom_model"
->
-
 ## Example
 
 Creative macro non-valuation custom model
 
-```pre
+```
 #1. If the user hour is between 1am and 2am, insert the macro MyCustomMacro1 with a value of "testvalue1" and the macro MyCustomMacro2 with a value of "testvalue2".
 #2. Otherwise, do nothing. (Since this is a non-valuation custom model, a value is not required for the second leaf.)
 if user_hour = 1:

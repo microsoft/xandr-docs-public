@@ -14,8 +14,7 @@ With consolidation of Microsoft Advertising to Microsoft family, we have integra
 
 **Improved Security:** The Microsoft Identity Platform brings modern security practices to the Microsoft Advertising platform.
 
-**Single Sign On:** Organizations that integrate with the Microsoft Identity Platform to enable Single Sign On (SSO) with other Microsoft
-products will be benefited by this approach as the capabilities such as a corporate control of credentials, access rules, etc. will be applicable to Microsoft Advertising product logins also.
+**Single Sign On:** Organizations that integrate with the Microsoft Identity Platform to enable Single Sign On (SSO) with other Microsoft products will be benefited by this approach as the capabilities such as a corporate control of credentials, access rules, etc. will be applicable to Microsoft Advertising product logins also.
 
 **Account Switcher:** Users with access to multiple accounts on the Microsoft Advertising Platform will be able to switch between different accounts seamlessly without being required to sign out and sign back in.
 
@@ -53,9 +52,7 @@ Microsoft Identity Platform enables organizations to authenticate their users to
 
 ### Personal Microsoft accounts
 
-If you do not have an organization level integration with Azure Active Directory or the Microsoft Identity Platform, you can still use the
-Microsoft Identity Platform by registering your email address as a Microsoft Account, or creating a new account with Microsoft. For more
-details about this process, click [here](https://account.microsoft.com/account/Account).
+If you do not have an organization level integration with Azure Active Directory or the Microsoft Identity Platform, you can still use the Microsoft Identity Platform by registering your email address as a Microsoft Account, or creating a new account with Microsoft. For more details about this process, click [here](https://account.microsoft.com/account/Account).
 
 ## Prerequisites for signing in with the Microsoft Identity Platform
 

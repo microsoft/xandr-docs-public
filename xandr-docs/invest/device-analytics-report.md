@@ -6,8 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Device Analytics report
 
-The Device Analytics report enables you to retrieve buy-side and sell-side performance data based on devices where impressions were served. This is especially important for networks working with in-app advertisers who traffic creatives that encourage app installation and who therefore want confirmation that their creatives are targeting devices compatible with their apps. It also helps you answer the
-following questions:
+The Device Analytics report enables you to retrieve buy-side and sell-side performance data based on devices where impressions were served. This is especially important for networks working with in-app advertisers who traffic creatives that encourage app installation and who therefore want confirmation that their creatives are targeting devices compatible with their apps. It also helps you answer the following questions:
 
 - How many impressions have you seen for specific device makes and models?
 - How many impressions have you seen for specific connection types (i.e., WiFi/Static or Carrier-based)?

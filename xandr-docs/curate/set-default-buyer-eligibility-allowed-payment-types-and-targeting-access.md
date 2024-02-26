@@ -30,8 +30,7 @@ For more information on the different options described in this section, see the
 
 #### Set the default allowed payment types
 
-These are the type(s) of payment you accept from partners whose eligibility is set to eligible. CPM is selected by default for all
-eligible buyers and cannot be unchecked since it is the standard payment type for third-party inventory.
+These are the type(s) of payment you accept from partners whose eligibility is set to eligible. CPM is selected by default for all eligible buyers and cannot be unchecked since it is the standard payment type for third-party inventory.
 
 You can also opt into allowing members to pay for inventory on a CPC or CPA basis. If you allow CPC and CPA payment, you must also set up your publishers to accept CPC and CPA payment types.
 
@@ -41,8 +40,7 @@ This indicates the information each member receives when targeting your inventor
 
 For more information on the different targeting access options, see the **Setting default targeting access** section within [Setting Buyer Defaults](partner-center-screen-seller-view.md).
 
-For **Categories (Custom)** there is the additional option to expose specific categories. To select specific custom categories, choose
-**Select** beneath the **Category (Custom)** option to display the list of categories. Click on a category in the **Available Items** area to add it to the **Selected Items** area. To remove a category from the **Selected Items** area, click the **X** next to the category name. When you have finished selecting custom categories, click **Add** to save your changes.
+For **Categories (Custom)** there is the additional option to expose specific categories. To select specific custom categories, choose **Select** beneath the **Category (Custom)** option to display the list of categories. Click on a category in the **Available Items** area to add it to the **Selected Items** area. To remove a category from the **Selected Items** area, click the **X** next to the category name. When you have finished selecting custom categories, click **Add** to save your changes.
 
 ### Step 3: Save your settings
 

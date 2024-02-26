@@ -11,8 +11,7 @@ ms.date: 10/28/2023
 
 ## What is a split?
 
-When you create a [line item](create-an-augmented-line-item-ali.md), you specify the inventory you'd like to target, the budget
-you'd like to spend over the line item's flight, how you want to track revenue, and how to use Microsoft Advertising optimization. If you choose, you can also split up the line item inventory with **programmable splits**, which you can use to:
+When you create a [line item](create-an-augmented-line-item-ali.md), you specify the inventory you'd like to target, the budget you'd like to spend over the line item's flight, how you want to track revenue, and how to use Microsoft Advertising optimization. If you choose, you can also split up the line item inventory with **programmable splits**, which you can use to:
 
 :::image type="content" source="media/li-splits.png" alt-text="Diagram of a split line item.":::
 

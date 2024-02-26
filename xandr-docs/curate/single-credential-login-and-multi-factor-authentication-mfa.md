@@ -35,9 +35,7 @@ To make new accounts more secure, Microsoft Advertising’s new Information Secu
 
 ## What isn't changing?
 
-This new authentication method only applies to users who access our applications via the UI. Users will continue accessing their API user
-accounts using their individual sets of authentication credentials. Changes to how users authenticate into their API accounts will be made
-to API access in the near future.
+This new authentication method only applies to users who access our applications via the UI. Users will continue accessing their API user accounts using their individual sets of authentication credentials. Changes to how users authenticate into their API accounts will be made to API access in the near future.
 
 API access still relies on username and password.
 

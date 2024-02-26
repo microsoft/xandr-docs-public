@@ -8,8 +8,7 @@ ms.date: 10/28/2023
 
 Third-party tracking pixels are used for a variety of purposes such as performing ad verification and collecting data about the creative.
 
-Third-party tracking pixels can be created at either the advertiser or Member level and associated with the appropriate
-creatives. You can also associate custom third-party tracking pixels with your creatives if you want to use another system to track impressions.
+Third-party tracking pixels can be created at either the advertiser or Member level and associated with the appropriate creatives. You can also associate custom third-party tracking pixels with your creatives if you want to use another system to track impressions.
 
 There are many advantages to creating and associating third-party tracking pixels at the advertiser or Member level. For example, creating and applying third-party tracking pixels at the advertiser or Member level saves time by eliminating manual steps. In some situations, instead of creating these tracking pixels for each advertiser, it might be more efficient to create and add tracking pixels at the Member level. These Member-level pixels can then be applied to creatives under any advertiser for the Member.
 

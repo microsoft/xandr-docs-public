@@ -13,7 +13,7 @@ This page contains an extensive list of Interactive Advertising Bureau (IAB) con
 > The specific version of the specs described here is a combination of IABv1 categorisation as well as codes
 > from the [Digital Audio Ad Serving Template (DAAST)](https://iabtechlab.com/standards/digital-audio-ad-serving-template-daast/) (now deprecated and replaced by VAST).
 >
-> Spec References:
+> **Spec References**:
 > - The complete list for IAB v1 specifications are listed [here](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fiabtechlab.com%2Fwp-content%2Fuploads%2F2021%2F10%2FContent-Taxonomy-1.0.xlsx&amp;wdOrigin=BROWSELINK).
 > - The supplemental DAAST content categories are listed [here](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fwww.iab.com%2Fwp-content%2Fuploads%2F2015%2F06%2FDAASTAdCategories.xlsx&amp;wdOrigin=BROWSELINK).
 

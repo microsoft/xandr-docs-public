@@ -16,9 +16,7 @@ ms.date: 10/28/2023
 
 ### Endpoints
 
-You will receive one or more endpoints that you can use to `POST` bid requests. Please contact your Xandr representative to receive your endpoints.
-
-Endpoints will generally look like the following:
+You will receive one or more endpoints that you can use to `POST` bid requests. Contact your Xandr representative to receive your endpoints. Endpoints will generally look like the following:
 
 ```
 https://seller-region.adnxs.com/openrtb2?member_id=YOUR_MEMBER_ID
@@ -32,7 +30,7 @@ Any other query string value will be ignored.
 ### Bid request object
 
 > [!NOTE]
-> The `tmax` field is not supported. Please speak with your Integrations Consultant to configure auction timeout limits. **Multi-format impressions** are not supported. The format's precedence if we receive multi-format impression is as following:
+> The `tmax` field is not supported. Speak with your Integrations Consultant to configure auction timeout limits. **Multi-format impressions** are not supported. The format's precedence if we receive multi-format impression is as following:
 >
 > - video
 > - audio
@@ -51,7 +49,7 @@ Xandr supports the following fields in the top-level bid request object:
 | `user` | object | Specifies information about the person to whom the impressions will be delivered. See [User Object](#user-object) below. |
 | `test` | integer | Indicates that this auction is in test mode and is not billable. If not present, default is used.<br>`0`: live mode; billable (default)<br>`1`: test mode; not billable |
 | `wseat` | array of strings | Specifies an array representing a allowlist of buyer seats allowed to bid on this impression. If omitted, there are no seat restrictions for this impression. |
-| `cur` | array of strings | Specifies an array of allowed currencies for bids on this impression. USD is assumed by default.<br>**Note**: By default, this field is NOT supported. Please speak with your Integrations Consultant if you would like to be enabled for bids non-USD currencies. |
+| `cur` | array of strings | Specifies an array of allowed currencies for bids on this impression. USD is assumed by default.<br><br>**Note**: By default, this field is NOT supported. Speak with your Integrations Consultant if you would like to be enabled for bids non-USD currencies. |
 | `bcat` | array of strings | Specifies a list of blocked content categories. Can include both IAB categories (listed in section 5.1 of the specification) and Xandr category ID values. Xandr categories are in this format `APN-ID` where ID is the Xandr category ID; for example, `APN-13`. |
 | `badv` | array of strings | Specifies a list of blocked top-level advertiser domains that correspond to brand URLs in the Xandr system. For example, `["company1.com", "company2.com"]`. For more information, see the [Brand Service](../bidders/brand-service.md). |
 | `regs` | object | Specifies information about an industry, legal, or governmental regulation in force for this request. See [Regs Object below](#regs-object). |
@@ -81,9 +79,9 @@ Xandr supports the following fields in the `schain` (Supply Chain) object:
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `ver` | string | Version of the supply chain specification in use, in the format of “major.minor”. Currently using version 1.0 of the spec. |
-| `complete` | enum | Flag indicating whether the chain contains all nodes involved in the transaction leading back to the owner of the site, app or other medium of the inventory, where 0 = no, 1 = yes. |
-| `nodes` | object | Array of SupplyChainNode objects in the order of the chain. In a complete supply chain, the first node represents the initial advertising system and seller ID involved in the transaction, i.e. the owner of the site, app, or other medium. In an incomplete supply chain, it represents the first known node. The last node represents the entity sending this bid request, which will be the Xandr node. Xandr supports the following fields in the nodes object. <br><br> **Note**: In order for a node to be considered complete, the following fields must be included in the node object.<br><br>- **asi** (mandatory string): The canonical domain name of the SSP, Exchange, Header Wrapper, etc system that bidders connect to. This should be the same value as used to identify sellers in an ads.txt file if one exists.<br>- **sid** (mandatory string): The identifier associated with the seller or reseller account within the advertising system.<br>**rid** (optional string): The OpenRTB RequestId of the request as issued by the seller.<br>- **hp** (mandatory integer): Indicates whether this node will be involved in the flow of payment for the inventory. For version 1.0 of SupplyChain, this property should always be `1`. |
+| `ver` | string | Version of the supply chain specification in use, in the format of `“major.minor”`. Currently using version 1.0 of the spec. |
+| `complete` | enum | Flag indicating whether the chain contains all nodes involved in the transaction leading back to the owner of the site, app or other medium of the inventory, where `0` = no, `1` = yes. |
+| `nodes` | object | Array of `SupplyChainNode` objects in the order of the chain. In a complete supply chain, the first node represents the initial advertising system and seller ID involved in the transaction, i.e. the owner of the site, app, or other medium. In an incomplete supply chain, it represents the first known node. The last node represents the entity sending this bid request, which will be the Xandr node. Xandr supports the following fields in the nodes object. <br><br> **Note**: In order for a node to be considered complete, the following fields must be included in the node object.<br><br>- **asi** (mandatory string): The canonical domain name of the SSP, Exchange, Header Wrapper, etc system that bidders connect to. This should be the same value as used to identify sellers in an ads.txt file if one exists.<br>- **sid** (mandatory string): The identifier associated with the seller or reseller account within the advertising system.<br> - **rid** (optional string): The OpenRTB RequestId of the request as issued by the seller.<br>- **hp** (mandatory integer): Indicates whether this node will be involved in the flow of payment for the inventory. For version 1.0 of SupplyChain, this property should always be `1`. |
 
 ### Impression object
 
@@ -133,7 +131,7 @@ For banner impressions, Xandr supports the following fields:
 | `battr` | array of integers | Specifies the banner creative attributes to block. Refer to section 5.3 of the IAB specification for a list of attributes. |
 | `pos` | integer | Specifies the position of the banner on the screen. Currently supported values are:<br>`0`: Unknown (default)<br>`1`: Above the fold<br>`3`: Below the fold |
 | `api` | array of integers | Specifies the supported API frameworks for this impression. Parsed, but not used. If an API is not explicitly listed, vpaid support is deduced from mime types sent:  VPAID 1 and 2 would be allowed for javascript and flash mimes. Refer to section 5.6 of the IAB specification for a list of API frameworks. |
-| `format` | object array | Array of format objects representing the banner sizes permitted. If none are specified, then use of the h and w attributes is highly recommended. |
+| `format` | object array | Array of format objects representing the banner sizes permitted. If none are specified, then use of the `h` and `w` attributes is highly recommended. |
 
 ### Format object
 
@@ -249,12 +247,11 @@ Xandr currently supports the following native versions:
 - `1.2`
 
 > [!NOTE]
-> Required if using `1.1` or `1.2`. If no version is submitted, then we will default to `1.0`.
-
-> [!NOTE]
-> For more information on different OpenRTB Native Ad specifications, go to [OpenRTB Dynamic Native Ads](https://iabtechlab.com/standards/openrtb-native/) and refer to specs for v1.0, v1.1 and v1.2.
+> - Required if using `1.1` or `1.2`. If no version is submitted, then we will default to `1.0`.
 >
-> Follow the above specifications and pass the necessary **required** fields in the mentioned objects such as asset ID (`id`) in the [Asset Object](#asset-object) described below.
+> - For more information on different OpenRTB Native Ad specifications, go to [OpenRTB Dynamic Native Ads](https://iabtechlab.com/standards/openrtb-native/) and refer to specs for v1.0, v1.1 and v1.2.
+>
+> - Follow the above specifications and pass the necessary **required** fields in the mentioned objects such as asset ID (`id`) in the [Asset Object](#asset-object) described below.
 
 ### Request object
 
@@ -273,7 +270,7 @@ Xandr supports the following fields to define one or more `asset` objects in the
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `id` | integer | Specifies a unique identifier for the asset in this bid request.Â Typically, the first asset in the array is `1` and subsequent assets increment from there. |
+| `id` | integer | Specifies a unique identifier for the asset in this bid request. Â Typically, the first asset in the array is `1` and subsequent assets increment from there. |
 | `required` | integer | Specifies if the asset is required:<br>`0`: Asset is optional<br>`1`: Asset is required |
 | `title` | object | Specifies information about the title of the asset. See [Title Object](#title-object) below. |
 | `img` | object | Specifies information about the image for the asset. See [Image Object](#image-object) below. |
@@ -316,7 +313,7 @@ Xandr supports the following fields in the `video` object of the `assets` ob
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `mimes` | array of strings | Content MIME types supported. If mimes are not specified in the bid request, then we will default to “video/mp4” for regular video and “video/x-flv” for mobile. |
+| `mimes` | array of strings | Content MIME types supported. If mimes are not specified in the bid request, then we will default to `“video/mp4”` for regular video and `“video/x-flv”` for mobile. |
 | `minduration` | integer | Minimum video ad duration in seconds. |
 | `maxduration` | integer | Maximum video ad duration in seconds. |
 | `protocols` | array of integers | An array of video protocols the publisher can accept in the bid response.<br>Currently supported values are:<br>`1`: VAST 1.0<br>`2`: VAST 2.0<br>`3`: VAST 3.0<br>`4`: VAST 1.0 Wrapper<br>`5`: VAST 2.0 Wrapper<br>`6`: VAST 3.0 Wrapper<br>`7`: VAST 4.0<br>`8`: DAAST 1.0 |
@@ -354,7 +351,7 @@ Xandr supports the following fields in the `site` object:
 | `cat` | array of strings | Specifies a list of IAB content categories (listed in section 5.1 of the specification) and Xandr category ID values. Xandr categories are in this format `APN-ID` where ID is the Xandr category ID; for example, `APN-13`. |
 | `page` | string | Specifies the full URL of the page where the impression will be shown (for example, page.publishersite.com/path/to/page). This should be the referrer URL and is preferred over the `domain` field. |
 | `publisher` | object | Specifies information about the publisher. See [Publisher Object](#publisher-object) below. |
-| `keywords` | string | Comma separated list of keywords about the site. Keywords are global to the request and apply to all imp objects.<br>Example:<br>`"keywords":"car_make=ford,my_other_value"`<br><br>In this example, we look for<br>- a querystring mapping segment for car_make and set the value to ford (based on the segment's settings).<br>- a querystring key/value segment for car_make=ford.<br>- a querystring mapping segment with my_other_value as the key and set no value.<br><br>**Note**: The keywords feature is not available by default. Please contact your Xandr representative to enable this feature. |
+| `keywords` | string | Comma separated list of keywords about the site. Keywords are global to the request and apply to all imp objects.<br>Example:<br>`"keywords":"car_make=ford,my_other_value"`<br><br>In this example, we look for<br>- a querystring mapping segment for `car_make` and set the value to ford (based on the segment's settings).<br>- a querystring key/value segment for `car_make=ford`.<br>- a querystring mapping segment with `my_other_value` as the key and set no value.<br><br>**Note**: The keywords feature is not available by default. Contact your Xandr representative to enable this feature. |
 | `content` | object | Details about the Content within the site. See [Content Object](#content-object) below. |
 
 ### App object
@@ -372,7 +369,7 @@ Xandr supports the following fields in the `app` object:
 | `cat` | array of strings | Specifies a list of IAB content categories (listed in section 5.1 of the specification) and Xandr category ID values. Xandr categories are in this format `APN-ID` where ID is the Xandr category ID; for example, `APN-13`. |
 | `publisher` | object | Specifies information about the publisher. See [Publisher Object](#publisher-object) below. |
 | `name` | string | The full name of the app (i.e. Angry Birds). (This value may be aliased at the publisher's request.) |
-| `keywords` | string | Comma separated list of keywords about the app. Keywords are global to the request and apply to all imp objects.<br>Example:<br>`"keywords":"car_make=ford,my_other_value"`<br><br>In this example, we look for<br> - a querystring mapping segment for car_make and set the value to ford (based on the segment's settings).<br>- a querystring key/value segment for car_make=ford.<br>- a querystring mapping segment with my_other_value as the key and set no value.<br><br> **Note**: The keywords feature is not available by default. Please contact your Xandr representative to enable this feature. |
+| `keywords` | string | Comma separated list of keywords about the app. Keywords are global to the request and apply to all imp objects.<br>Example:<br>`"keywords":"car_make=ford,my_other_value"`<br><br>In this example, we look for<br> - a querystring mapping segment for `car_make` and set the value to ford (based on the segment's settings).<br>- a querystring key/value segment for `car_make=ford`.<br>- a querystring mapping segment with `my_other_value` as the key and set no value.<br><br> **Note**: The keywords feature is not available by default. Contact your Xandr representative to enable this feature. |
 | `content` | object | Details about the Content within the site. See [Content Object](#content-object) below. |
 
 ### Publisher object
@@ -417,7 +414,7 @@ Xandr supports the following fields in the Content object:
 
 ### Content extension object
 
-Xandr supports the following fields in the ext object:
+Xandr supports the following fields in the `ext` object:
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -439,7 +436,7 @@ any device IDs in the [Bid Request Extension Object](#bid-request-extension-obje
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `ua` | string | (Recommended) Specifies the user agent string from the browser. User agent often identifies such information as the application, operating system, and software vendor acting on behalf of the user, e.g., "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.0.4) Gecko/2008102920 Firefox/3.0.4". |
+| `ua` | string | (Recommended) Specifies the user agent string from the browser. User agent often identifies such information as the application, operating system, and software vendor acting on behalf of the user, e.g., `"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.0.4) Gecko/2008102920 Firefox/3.0.4"`. |
 | `geo` | object | Specifies the location of the device, as derived from the device's location services (such as cell tower triangulation or GPS) or IP address. See [Geo Object](#geo-object) for details. |
 | `dnt` | integer | Specifies the Do Not Track setting:<br>`0`: Do Not Track is set to false in browser (tracking is allowed)<br>`1`: Do Not Track is set to true in browser (user has opted out of tracking) |
 | `ip` | string | Specifies the IPv4 address closest to the device. Omitted when sent to buyers if seller visibility settings prohibit sharing. |
@@ -450,13 +447,13 @@ any device IDs in the [Bid Request Extension Object](#bid-request-extension-obje
 | `os` | string | This is the code field that you obtain from operating system code. |
 | `carrier` | string | Specifies carrier for the device. Only used if not supported via the `ua` field. |
 | `language` | string | Specifies the browser language; use ISO 639-1 or ISO 3166 alpha-2. |
-| `ifa_type` | string | Identify the source of the IFA, whether that is device-generated (and therefore used across apps) or whether it is a publisher-provided IFA, or a temporary/session IFA. (e.g., dpid, ppid, sspid, sessionid, idfa, aaid, rida, afai, tifa, vida, lgudid). |
+| `ifa_type` | string | Identify the source of the IFA, whether that is device-generated (and therefore used across apps) or whether it is a publisher-provided IFA, or a temporary/session IFA. (e.g., `dpid`, `ppid`, `sspid`, `sessionid`, `idfa`, `aaid`, `rida`, `afai`, `tifa`, `vida`, `lgudid`). |
 | `ifa` | string | The "identifier for advertising" is an unhashed device ID sanctioned for advertiser use. This will be the IDFA on iOS or AAID on Android.<br>Example: `"ifa": "AA000DFE74168477C70D291f574D344790E0BB12"`. |
 | `didsha1` | string | Specifies the SHA1-encrypted unique identifier for the mobile device. |
 | `didmd5` | string | Specifies the MD5-encrypted unique identifier for the mobile device. |
 | `dpidsha1` | string | Specifies the SHA1-encrypted, platform-specific (e.g., `ANDROID_ID` or `UDID` for iOS) unique identifier for the mobile device. |
 | `dpidmd5` | string | Specifies the MD5-encrypted, platform-specific (e.g., `ANDROID_ID` or `UDID` for iOS) unique identifier for the mobile device. |
-| `lmt` | integer | "Limit Ad Tracking" signal commercially endorsed (e.g., iOS, Android), where 0=tracking is unrestricted, 1=tracking must be limited per commercial guidelines. |
+| `lmt` | integer | "Limit Ad Tracking" signal commercially endorsed (e.g., iOS, Android), where `0`=tracking is unrestricted, `1`=tracking must be limited per commercial guidelines. |
 
 ### User Object
 
@@ -469,8 +466,8 @@ Xandr supports the following fields in the `user` object:
 | `yob` | integer | Specifies the year of birth as a 4-digit integer. Omitted when sent to buyers if unknown or value set to `0`. |
 | `gender` | string | Specifies the gender. Set to `null` if unknown. Omitted when sent to buyers if unknown.<br>`M`: male<br>`F`: female<br>`O`: other |
 | `customdata` | string | A properly encoded string that can contain an Xandr user ID. Will be ignored if `buyeruid` is set. |
-| `keywords` | string | Comma separated list of keywords about the user. Keywords are global to the request and apply to all imp objects.<br>Example:<br>`"keywords":"car_make=ford,my_other_value"`<br><br>In this example, we look for<br>- a querystring mapping segment for car_make and set the value to ford (based on the segment's settings).<br>- a querystring key/value segment for car_make=ford.<br>- a querystring mapping segment with my_other_value as the key and set no value.<br><br>**Note**: The keywords feature is not available by default. Please contact your Xandr representative to enable this feature. |
-| `geo` | object | Location of the user’s home base defined by a Geo object. This is not necessarily their current location.<br><br>**Note**: By default, this field is not supported. Please contact support or your account representative for more information. |
+| `keywords` | string | Comma separated list of keywords about the user. Keywords are global to the request and apply to all imp objects.<br>Example:<br>`"keywords":"car_make=ford,my_other_value"`<br><br>In this example, we look for<br>- a querystring mapping segment for `car_make` and set the value to ford (based on the segment's settings).<br>- a querystring key/value segment for `car_make=ford`.<br>- a querystring mapping segment with `my_other_value` as the key and set no value.<br><br>**Note**: The keywords feature is not available by default. Contact your Xandr representative to enable this feature. |
+| `geo` | object | Location of the user’s home base defined by a Geo object. This is not necessarily their current location.<br><br>**Note**: By default, this field is not supported. Contact support or your account representative for more information. |
 | `ext` | object | Used for identifying Xandr-specific extensions to OpenRTB for the `user` object. |
 | `eids` | object array | This object can contain one or more UIDs from a single source or a technology provider. Extended Identifiers support in OpenRTB allows buyers to use audience data in real time bidding. For more information, see [eid Object](#eid-object). |
 
@@ -490,8 +487,8 @@ Xandr supports the following fields in the `geo` object:
 |:---|:---:|:---|
 | `lat` | float | Specifies the latitude of the device, as derived from the device's location services (such as cell tower triangulation or GPS) or IP address. This can range from `-90` to `90`. South is negative. |
 | `lon` | float | Specifies the longitude of the device, as derived from the device's location services (such as cell tower triangulation or GPS) or IP address. This can range from `-180` to `180`. West is negative. |
-| `country` | string | Country code using ISO-3166-1-alpha-3.<br><br>**Note**: By default, this field is not supported. Your account can be enabled to add support for this field, in which case country + zip will be used to determine location information. Please contact support or your account representative for more information. |
-| `zip` | string | Zip or postal code.<br><br>**Note**: By default, this field is not supported. Your account can be enabled to add support for this field, in which case country + zip will be used to determine location information. Please contact support or your account representative for more information. |
+| `country` | string | Country code using ISO-3166-1-alpha-3.<br><br>**Note**: By default, this field is not supported. Your account can be enabled to add support for this field, in which case country + zip will be used to determine location information. Contact support or your account representative for more information. |
+| `zip` | string | Zip or postal code.<br><br>**Note**: By default, this field is not supported. Your account can be enabled to add support for this field, in which case country + zip will be used to determine location information. Contact support or your account representative for more information. |
 
 ### User extension object
 
@@ -510,8 +507,7 @@ Xandr supports the following fields in the regs object:
 | `coppa` | integer | Indicates if this request is subject to the United States Children's Online Privacy Protection Act (COPPA).<br>`0`: Not subject to COPPA. Treat as a normal auction.<br>`1`: Subject to COPPA. Limit what is allowed for targeting and logging as required. |
 | `ext` | object | Used for identifying Xandr-specific extensions to OpenRTB for the reg object. |
 | `gpp` |  | Indicates the actual IAB GPP consent string. It implies which vendors are permitted to process personal data and under which conditions.<br>Example:<br>```{ "Regs": { "ext": { "gpp": "DBACNYA~CPXxRfAPXxRfAAfKABENB-CgAAAAAAAAAAYgAAAAAAAA~1YNN", "gpp_sid": [5]} } }``` |
-| `gpp_sid` |  | Optional: indicates which regulations or GPP logics are to be applied, or whether a user is located in a country (EEA country) with a framework that is part of the GPP.<br>Example: <br> `{ "Regs": { "ext": { "gpp": "DBACNYA~CPXxRfAPXxRfAAfKABENB-CgAAAAAAAAAAYgAAAAAAAA~1YNN", "gpp_sid": [5]} } }`
- |
+| `gpp_sid` |  | Optional: indicates which regulations or GPP logics are to be applied, or whether a user is located in a country (EEA country) with a framework that is part of the GPP.<br>Example: <br> `{ "Regs": { "ext": { "gpp": "DBACNYA~CPXxRfAPXxRfAAfKABENB-CgAAAAAAAAAAYgAAAAAAAA~1YNN", "gpp_sid": [5]} } }`|
 
 ### Regs extension object
 

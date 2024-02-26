@@ -103,16 +103,14 @@ Microsoft Advertising supports the non-USD currencies listed below.
 
 ## Exchange rates
 
-Exchange Rates are sourced once daily from [Oanda](https://www.oanda.com/) at approximately 3:00 a.m. UTC. All Microsoft Advertising applications (bidder, budgeting, billing, etc.) use the [API Currency Service](../digital-platform-api/currency-service.md) (also available to
-clients) to access the latest rates. This service provides centralized, consistent, and uniform exchange rates across the entire platform. The API Currency Service is available to clients solely to reconcile amounts paid or received by them resulting from their transactions through the Microsoft Advertising Platform and may not be used by clients for any other purpose.
+Exchange Rates are sourced once daily from [Oanda](https://www.oanda.com/) at approximately 3:00 a.m. UTC. All Microsoft Advertising applications (bidder, budgeting, billing, etc.) use the [API Currency Service](../digital-platform-api/currency-service.md) (also available to clients) to access the latest rates. This service provides centralized, consistent, and uniform exchange rates across the entire platform. The API Currency Service is available to clients solely to reconcile amounts paid or received by them resulting from their transactions through the Microsoft Advertising Platform and may not be used by clients for any other purpose.
 
 > [!NOTE]
 > Due to the distributed nature of our systems, new rates will not be populated across all of our servers simultaneously.
 
 ## Account setup
 
-Users can set the transaction currency for certain buy and sell side objects (listed below under Currency Settings per Object) under their
-member. The buy/sell side object currency settings control one or both of the following:
+Users can set the transaction currency for certain buy and sell side objects (listed below under Currency Settings per Object) under their member. The buy/sell side object currency settings control one or both of the following:
 
 1. The default currency for any child objects created under the parent (e.g., Insertion Order determines the currency of its Line Items). The user can override the default currency set at the parent object.
 1. Transacting (buying or selling inventory). This is the currency of record for the object since it's what is actually logged for each auction.
@@ -156,11 +154,9 @@ Once you've set the currency for your member and any objects (e.g., Insertion Or
 
 ### Conversions made during the auction
 
-We convert all non-USD bids (e.g., if Line Item has been set to a currency other than USD) into USD (Base Currency) so we can compare bids
-in the same unit of measurement. All these converted bids are sent through our auction logic and the winning bid is priced appropriately in USD. Finally, after the auction is complete, we log all results in USD, along with your Transaction Currency and the applicable exchange rate that was used to initially convert the bid into USD.
+We convert all non-USD bids (e.g., if Line Item has been set to a currency other than USD) into USD (Base Currency) so we can compare bids in the same unit of measurement. All these converted bids are sent through our auction logic and the winning bid is priced appropriately in USD. Finally, after the auction is complete, we log all results in USD, along with your Transaction Currency and the applicable exchange rate that was used to initially convert the bid into USD.
 
-When viewing your auction activity via reporting or log level data feeds, you have the option to view monetary fields in either USD or the
-Transaction Currency (labeled Buying Currency in reports). To display reports in the Transaction Currency(ies), we convert the USD values to the Transaction Currency using the rates logged for each auction. This provides you with the most accurate local currency values which you can then use for forecasting and billing reconciliation.
+When viewing your auction activity via reporting or log level data feeds, you have the option to view monetary fields in either USD or the Transaction Currency (labeled Buying Currency in reports). To display reports in the Transaction Currency(ies), we convert the USD values to the Transaction Currency using the rates logged for each auction. This provides you with the most accurate local currency values which you can then use for forecasting and billing reconciliation.
 
 ## Reporting and analytics
 

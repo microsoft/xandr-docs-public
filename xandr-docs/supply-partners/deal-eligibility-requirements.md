@@ -81,14 +81,14 @@ Once you feel confident that you've appropriately built to our [Deal Service](..
 
 Add a new deal:
 
-``` 
+```
 POST https://api.appnexus.com/deal 
 (deal JSON)
 ```
 
 Modify an existing deal:
 
-``` 
+```
 PUT https://api.appnexus.com/deal?id=DEAL_ID
 (deal_update JSON)
 ```

@@ -52,8 +52,7 @@ Also known as: **Apps vs. Apps**
 
 Also known as: **Safari vs. The World**
 
-**Problem**: Mobile Safari (the default browser on iOS devices) does not accept third party cookies, which impacts our ability to segment,
-re-target, and apply frequency caps.
+**Problem**: Mobile Safari (the default browser on iOS devices) does not accept third party cookies, which impacts our ability to segment, re-target, and apply frequency caps.
 
 **Solution**: Like **App-to-Browser Targeting and Attribution**, possible solutions include integration with one or more device recognition vendors, partnerships with major carriers, or both.
 

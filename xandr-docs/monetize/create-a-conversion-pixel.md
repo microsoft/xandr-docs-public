@@ -10,7 +10,7 @@ A conversion pixel is used to track user actions in response to an advertiser's 
 
 ## Step 1. Get started
 
-Go to the **Conversion Pixel**s screen (**Advertisers \>  Conversion Pixels**) and click the **+ New** button. This opens the **Create New Pixel** dialog.
+Go to the **Conversion Pixel**s screen (**Advertisers** \>  **Conversion Pixels**) and click the **+ New** button. This opens the **Create New Pixel** dialog.
 
 ## Step 2. Enter the conversion pixel details
 
@@ -66,7 +66,6 @@ To finish adding the conversion pixel to the Microsoft Advertising platform, cli
 
 > [!TIP]
 > The conversion pixel can be attached to a line item for valuation.
-
 > [!NOTE]
 > Conversion pixels show as **Paused** in the User Interface when they are not attached to a line item, or the attached line item is inactive.
 > This is an indicator that the pixel will not be attributing any conversions. It is not attached to an object that those conversions can be attached. Once the pixel is attached to an active line item, the indicator will switch to **Active**. This does not impede its functionality, because the pixel state (in the API) is still active.

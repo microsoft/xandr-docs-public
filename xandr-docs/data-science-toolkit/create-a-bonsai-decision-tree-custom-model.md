@@ -25,8 +25,7 @@ The Bid Price model uses a decision tree to determine a campaign's CPM bid. This
 
 ### Bid modifier
 
-The Bid Modifier model uses a decision tree to adjust a campaign's optimization-derived CPM bid up or down. This type of model is used in
-conjunction with a buying strategy that uses Xandr's optimization, like "Optimize to a predicted CPA goal" or "Optimize to a predicted CPC goal".
+The Bid Modifier model uses a decision tree to adjust a campaign's optimization-derived CPM bid up or down. This type of model is used in conjunction with a buying strategy that uses Xandr's optimization, like "Optimize to a predicted CPA goal" or "Optimize to a predicted CPC goal".
 
 > [!NOTE]
 > The bids calculated by the model are always expressed in the currency set on the advertiser, even if you have specified a different currency for the campaign.

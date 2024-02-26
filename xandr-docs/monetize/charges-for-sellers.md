@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Charges for Sellers
-description: The article details charges for sellers, covering the Seller Auction Service Charge (SASC), Managed Ad Serving Fee, Seller Revenue Share Minimum Fee, and other pertinent fees.
+description: Explore seller charges, encompassing Seller Auction Service Charge, Managed Ad Serving Fee, Seller Revenue Share Minimum Fee, and other fees.
 ms.date: 10/28/2023
 ---
 

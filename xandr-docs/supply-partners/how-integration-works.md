@@ -7,9 +7,9 @@ ms.date: 10/28/2023
 
 # How integration works
 
-:::image type="content" source="./media/c.png" alt-text="Diagram explaining the outcome of receiving an ad call by an integrated supply partner.":::
+Here's a diagram and description of what happens when a supply partner that has integrated with Xandr's platform receives an ad call:
 
-Here's a diagram and description of what happens when a supply partner that has integrated with Xandr's platform receives an ad call.
+:::image type="content" source="./media/c.png" alt-text="Diagram explaining the outcome of receiving an ad call by an integrated supply partner.":::
   
 1. A user views a web page that contains an ad tag belonging to the supply partner. The ad tag calls the supply partner.
 1. The supply partner starts an auction for the inventory and sends a bid request to Xandr.

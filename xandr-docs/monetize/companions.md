@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Companions
-description: The article explains that a companion is a creative commonly displayed in the form of a standard banner or rich media. It can also enhance the video ad experience. 
+description: Explore how companions, often in standard banners or rich media, enhance video ad experiences, making them more creative. 
 ms.date: 10/28/2023
 ---
 

@@ -51,8 +51,7 @@ where,
 
 ### Expected valuation model with offline factors
 
-The probability of a client-specific offline event, given an online event (`Pr(offline event | online event)`), is not a model that
-Xandr could ever construct. Since these types of models would involve non-fixed values of `R`, a number of Conditional Component Model Types can be associated with an Augmented Line Item or campaign. A '`custom_models`' array field can be used to influence the calculation of an EV for a given impression. In the case where a specific model is not associated in the `custom_models` group setting, a default or Xandr derived value will be used in the calculation.
+The probability of a client-specific offline event, given an online event (`Pr(offline event | online event)`), is not a model that Xandr could ever construct. Since these types of models would involve non-fixed values of `R`, a number of Conditional Component Model Types can be associated with an Augmented Line Item or campaign. A '`custom_models`' array field can be used to influence the calculation of an EV for a given impression. In the case where a specific model is not associated in the `custom_models` group setting, a default or Xandr derived value will be used in the calculation.
 
 ### Cadence modifier
 

@@ -1,6 +1,6 @@
 ---
 title: Content Categories
-description: The article discusses content categories as metadata linked to a specific inventory slice, providing descriptive information about the contents of that inventory.
+description: Categorize inventory slices with metadata, offering details about contents in this article on content categories.
 ms.date: 10/28/2023
 ---
 
@@ -42,8 +42,7 @@ For more details, see [Content Category Targeting](content-category-targeting.md
 
 ## Universal content categories list
 
-Below is a list of universal content categories and subcategories we maintain. The most up-to-date list will always be available in the **Campaign Manager** under the
-**Inventory** tab. For more information, see [Create a Campaign](create-a-campaign.md).
+Below is a list of universal content categories and subcategories we maintain. The most up-to-date list will always be available in the **Campaign Manager** under the **Inventory** tab. For more information, see [Create a Campaign](create-a-campaign.md).
 
 | Top-level category | Second-level category |
 |--|--|

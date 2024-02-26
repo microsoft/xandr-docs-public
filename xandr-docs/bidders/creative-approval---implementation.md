@@ -1,6 +1,6 @@
 ---
 title: Creative Approval - Implementation
-description: Learn how the sell-side does creative approval. 
+description: Learn what is an ad profile and how many elements it consists of. Also, this page covers what is a trusted brand and banned brand.
 ms.date: 11/20/2023
 ---
 

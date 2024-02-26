@@ -23,7 +23,7 @@ The formula for logistic regression is:
 
 Where the probability (p) being modeled is that of a binary outcome: event = 1 or event = 0. For online advertising, the event is a click, a pixel fire, or another online action. The probability is conditional on both the predictors x1 through xn and on an implicit set of variables that represent the features in a bid request. The beta coefficients are the weights that the model assigns to the different predictors.
 
-We convert this probability of an event happening to an expected value by multiplying the probability by the event's value (e.g., The eCPC goal for a click prediction), adding an additive offset to the estimate, and then applying min/max expected value limits to reduce the impact of mispredictions.
+We convert this probability of an event happening to an expected value by multiplying the probability by the event's value (e.g., the eCPC goal for a click prediction), adding an additive offset to the estimate, and then applying min/max expected value limits to reduce the impact of mispredictions.
 
 The formula for deriving an expected value for an impression from the probability of an event happening is:
 
@@ -31,7 +31,7 @@ The formula for deriving an expected value for an impression from the probabilit
 
 The offset will usually be 0. However, a negative value may be useful as a security factor to ensure performance at the expense of delivery on low-performing inventory. That will ensure that the advertiser does not bid instead of bidding very little and potentially incurring fixed fees.  
 
-**Example using categorical features from online advertising**
+### Example using categorical features from online advertising
 
 Online advertising has many categorical features, that is, features that can have many possible values. Some examples include browser, domain, and day of the week. These features are usually represented with "one-hot" encoding (using "dummy variables"), meaning that x1 would be 1 if "browser = safari" and 0 if not, x2 would be 1 if "browser = firefox", and so on.
 
@@ -64,7 +64,7 @@ These values then become incremental terms in the formula (x3 is 1 if "domain =
 
 When the ad impression is served, Xandr identifies the browser as Safari and the domain as nytimes.com. The corresponding variables for browser = Safari and domain = nytimes.com are set to 1 and the other variables are set to 0, resulting in the equation:
 
-:::image type="content" source="./media/datascience-n.png" alt-text="Screenshot showing the corresponding variables for browser and domain set to 1 and the other variables set to 0.":::
+:::image type="content" source="./media/datascience-n.png" alt-text="Screenshot showing the corresponding variables for browser and domain set to 1 and other variables set to 0.":::
 
 ## Higher-order predictors
 
@@ -87,7 +87,7 @@ Each of these paired predictors becomes a term in the logistic regression equati
 
 Combining multiple categorical predictors creates extremely large tables that cannot be easily mapped into memory for a real-time system. Instead of trying to pull values from such tables, you can hash the feature combinations to create collisions – in effect, reducing the number of combinations that need to be mapped into memory in real-time.
 
-**Example of hashed predictors**
+### Example of hashed predictors
 
 As a simple example, you can hash the browser-domain combinations from the previous example using a 2-bit hash function:
 
@@ -137,7 +137,7 @@ In order to define the mapping from categorical feature to weight, Xandr uses AP
 
 Let's use the information from above to create a sample workflow.
 
-Suppose you set up an exploratory campaign to gather training data with a small budget. You wish to optimize a given retargeting line item to minimize cost-per-click.  Each impression won generates a row in the [Log Level Data Feeds](../log-level-data/log-level-data-feeds.md) with the `is_click` column set to false. When a click is eventually generated, an identical row is generated in the data feed with the `is_click` column set to true. You partition the data between the training, validation, and testing sets by looking at the last few bits of `user_id_64`.  The user_id_64 determines which part the data will be assigned to. You eventually determine that the key variables are:
+Suppose you set up an exploratory campaign to gather training data with a small budget. You wish to optimize a given retargeting line item to minimize cost-per-click.  Each impression won generates a row in the [Log Level Data Feeds](../log-level-data/log-level-data-feeds.md) with the `is_click` column set to `false`. When a click is eventually generated, an identical row is generated in the data feed with the `is_click` column set to `true`. You partition the data between the training, validation, and testing sets by looking at the last few bits of `user_id_64`.  The `user_id_64` determines which part the data will be assigned to. You eventually determine that the key variables are:
 
 - The user's browser (categorical)
 - The user's country and day of the week (higher-order categorical)
@@ -149,15 +149,15 @@ Since there aren't that many browsers, it's reasonable to have one weight for ea
 For each row in LLD, you first filter out rows that do not come from your training campaign. Now that you have defined the events you're
 interested in, you can extract the variables:
 
-- browser id
-- country id
+- browser ID
+- country ID
 - user's day of the week (by adding the timezone offset to the impression's timestamp and mapping that to a 7-day week)
-- publisher id
+- publisher ID
 - advertiser recency, with a max of one hour (if this is the first ad we're showing to this user, the recency defaults to one hour)
 
 You reserve one feature ID for recency and 4096 IDs for the hashed (publisher:country), and dynamically generate feature IDs for each browser and (country:day of week) pair. The hashed feature needs one more extra step: you take the two IDs (publisher and country), write them out to a little endian vector of 8 32-bit integers, and find the [bucket](./linear-log-bucketing.md) with MurmurHash3_x86_32(vector, 32, 0xC0FFEE) % 4096 (0xC0FFEE is an arbitrary seed). That gives you a (sparse) vector of feature values for each row, so you can count the number of impressions and the number of clicks for each such vector.
 
-After a day of slowly buying impressions, you try the logistic regression model you trained on (a subset of) LLD. The sparse vector of feature values is a one-hot encoding of the feature space. You must convert back from this encoding to the more logical functions from categorical value to weight (lookup tables). Todo this join the table of feature to feature id and the vector of weights to get the following: 
+After a day of slowly buying impressions, you try the logistic regression model you trained on (a subset of) LLD. The sparse vector of feature values is a one-hot encoding of the feature space. You must convert back from this encoding to the more logical functions from categorical value to weight (lookup tables). To do this join the table of feature to feature ID and the vector of weights to get the following:
 
 | Feature | Index | Weight |
 |:---|:---|:---|
@@ -187,7 +187,7 @@ Once the line item passes targeting, Xandr uses its logistic regression model to
 1. The same is done for hashed tables, except that Xandr hashes the values to find a bucket, and then look for that bucket in the hashed table's list of bucket -> value mappings. Again, the default value is used if the specified value does not appear in the table.
 1. Finally, Xandr looks for Bonsai features. We perform the lookup for each feature, multiply by the weight, and apply min/max limits.
 1. Xandr then sums the components and Beta0 and passes that to the logistic function to compute the estimated probability of a click. The estimated probability is multiplied by the goal value to obtain the expected value, which is then clamped between 1 and 100 CPM to curb any unrealistically high valuations.
-1. Xandr then uses the expected value and the amount of inventory available to compute a bid. The exact computations vary depending on the line item's setup, but the result is that Xandr will automatically scale down the expected value until the bids are just high enough that the line item spends its daily budget at the end of each day. For more information on this scaling, see ["Adaptive Pacing"](../invest/adaptive-pacing.md) (log in required) in  documentation.
+1. Xandr then uses the expected value and the amount of inventory available to compute a bid. The exact computations vary depending on the line item's setup, but the result is that Xandr will automatically scale down the expected value until the bids are just high enough that the line item spends its daily budget at the end of each day. For more information on this scaling, see [Adaptive Pacing](../invest/adaptive-pacing.md) (log in required) in  documentation.
 
 ## Related topics
 

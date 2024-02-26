@@ -1,13 +1,12 @@
 ---
 title: Microsoft Monetize - Comparison of Video Complete Buying Strategies
-description: The article delves into the comparison of Video Complete Buying Strategies (CPCV), highlighting their related features, diverse benefits, and various applications.
+description: Explore Video Complete Buying Strategies (CPCV), highlighting their related features, benefits, and applications.
 ms.date: 10/28/2023
 ---
 
 # Microsoft Monetize - Comparison of video complete buying strategies
 
-CPCV optimization and Guaranteed Completes are related features with different benefits and applications: you can't use them simultaneously.
-Similarly, you can choose to optimize for video completion rate (VCR) or target inventory with a set video completion rate. While you can use these features together, their use cases are different.
+CPCV optimization and Guaranteed Completes are related features with different benefits and applications: you can't use them simultaneously. Similarly, you can choose to optimize for video completion rate (VCR) or target inventory with a set video completion rate. While you can use these features together, their use cases are different.
 
 | Name | Description | When to Use | How to Configure |
 |--|--|--|--|

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Control Your Deals with Sellers
-description: The article helps you to control deals received from sellers.
+description: Streamline seller deals on Deals screen, set preferences, accept/decline, and manage status using internal names for efficient organization.
 ms.date: 10/28/2023
 ---
 
@@ -14,8 +14,7 @@ You can control deals received from sellers on the **Deals** screen. You can:
 - Assign a deal alias (internal name) to any seller deal for easier management within your organization
 
   > [!NOTE]
-  > For more information on managing deals with sellers including viewing basic and advanced deal metrics, monitoring each deal's health, and running detailed reports, see
-  > [Manage Your Deals with Sellers](manage-your-deals-with-sellers.md).
+  > For more information on managing deals with sellers including viewing basic and advanced deal metrics, monitoring each deal's health, and running detailed reports, see [Manage Your Deals with Sellers](manage-your-deals-with-sellers.md).
 
 ## Getting to the deals screen
 
@@ -27,8 +26,7 @@ Buyers can configure the default manner in which they process new seller deals b
 
 - **Default Active**: new seller deals will be set to **Active** status by default when received. Deals can be declined or changed to **Inactive** status later if necessary (see [Managing Deal Status](control-your-deals-with-sellers.md#managing-deal-status)).
   
-- **Require Review**: new seller deals will be set to **Pending** status by default when received until the deals are reviewed by the buyer and
-  accepted or declined (see [Accepting or Declining Deals](control-your-deals-with-sellers.md#accepting-or-declining-deals)).
+- **Require Review**: new seller deals will be set to **Pending** status by default when received until the deals are reviewed by the buyer and accepted or declined (see [Accepting or Declining Deals](control-your-deals-with-sellers.md#accepting-or-declining-deals)).
 
   > [!NOTE]
   > - **Default Active** is the default setting if no deal review preference is set.
@@ -36,12 +34,12 @@ Buyers can configure the default manner in which they process new seller deals b
   >
   >  To set the deal review preference for new seller deals, do the following:
 
-1.  Select **Partners \> Deals**.
-1.  On the top right of the **Deals** screen, click the edit icon on **New Deals Do Not Require Approval** (or **New Deals Require Approval** if it’s been changed previously) to open **Review Preferences**.
-1.  On the **Review Preferences** page, select either:
+1. Select **Partners \> Deals**.
+1. On the top right of the **Deals** screen, click the edit icon on **New Deals Do Not Require Approval** (or **New Deals Require Approval** if it’s been changed previously) to open **Review Preferences**.
+1. On the **Review Preferences** page, select either:
     - **Default Active** – to accept all new deals and set their status to **Active**
     - **Require Review** – to require review of all new deals before accepting or declining them
-1.  Click **Save**.
+1. Click **Save**.
 
 ## Accepting or declining deals
 
@@ -71,14 +69,13 @@ When you select **Decline**, the deal is:
 
 To accept or decline one or more new deals:
 
-1.  Select **Partners \> Deals**.
-2.  Check the box next to any deals you want to accept or decline (you can search by **Deal Name**, **Deal Alias**, **Deal ID**, or **Code**).
-3.  In the **Select** drop-down, select **Accept** or **Decline**.
+1. Select **Partners \> Deals**.
+1. Check the box next to any deals you want to accept or decline (you can search by **Deal Name**, **Deal Alias**, **Deal ID**, or **Code**).
+1. In the **Select** drop-down, select **Accept** or **Decline**.
 
 ## Managing deal status
 
-You can manage the status of deals so you can control when each deal is available for targeting. A deal can have a status of **Pending**, **Active**, **Declined**, or **Inactive**. The following table provides a description of each status, when the status occurs, and available actions you can perform given the status of
-the deal:
+You can manage the status of deals so you can control when each deal is available for targeting. A deal can have a status of **Pending**, **Active**, **Declined**, or **Inactive**. The following table provides a description of each status, when the status occurs, and available actions you can perform given the status of the deal:
 
 | Buyer Deal Status | Description | Status Occurs When: | Available Actions |
 |--|--|--|--|
@@ -101,13 +98,11 @@ To change the status of deals you receive from sellers to **Active**, **Inactive
 
 ### Setting groups of deals to active or declined status
 
-While you can change the status of each deal to **Active** or **Declined** using the **Deal Controls** of each deal, you can only make these changes one deal at a time. If you
-have a group of deals that you’d like to set to **Active** or **Declined** status, you can check the box next to these deals and click **Accept** in the **Select** drop-down to set them to **Active** status, or **Decline** to set them to **Declined** status (see [Accepting or Declining Deals](control-your-deals-with-sellers.md#accepting-or-declining-deals)).
+While you can change the status of each deal to **Active** or **Declined** using the **Deal Controls** of each deal, you can only make these changes one deal at a time. If you have a group of deals that you’d like to set to **Active** or **Declined** status, you can check the box next to these deals and click **Accept** in the **Select** drop-down to set them to **Active** status, or **Decline** to set them to **Declined** status (see [Accepting or Declining Deals](control-your-deals-with-sellers.md#accepting-or-declining-deals)).
 
 ## Assigning a deal alias
 
-You can assign a **Deal Alias** to use as a buyer internal name for seller deals so you can manage these deals by a name you provide for it.
-The alias you assign to a deal appears in the **Deal Alias** column of the **Deals with Sellers** page along with the **Deal Name** that the seller provided for the deal.
+You can assign a **Deal Alias** to use as a buyer internal name for seller deals so you can manage these deals by a name you provide for it. The alias you assign to a deal appears in the **Deal Alias** column of the **Deals with Sellers** page along with the **Deal Name** that the seller provided for the deal.
 
 > [!NOTE]
 > The Deal Alias you assign to a deal is not viewable by the seller of the deal.
@@ -124,7 +119,7 @@ To assign a **Deal Alias** to a deal, do the following:
 
 ### Related topics
 
-- [Manage Your Deals with Sellers](manage-your-deals-with-sellers.md) 
+- [Manage Your Deals with Sellers](manage-your-deals-with-sellers.md)
 - [Partnership Details Screen - Buyer View](partnership-details-screen-buyer-view.md)
 - [Get Deals from Seller Packages](get-deals-from-seller-packages.md)
 - [Buy-Side Reporting on Deals](buy-side-reporting-on-deals.md)

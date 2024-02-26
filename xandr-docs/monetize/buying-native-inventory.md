@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Buying Native Inventory
-description: The article discusses the concept of buying native inventory, which involves seamlessly integrating advertising into a placement's context.
+description: Examine Carrier Analytics Report; explore seamlessly integrating native ads into context for effective advertising.
 ms.date: 10/28/2023
 ---
 
@@ -13,8 +13,7 @@ From the Microsoft Advertising platform you have access to a number of native su
 For specific information on individual sellers, see [Native Inventory Seller Specifications](native-inventory-seller-specifications.md).
 
 > [!IMPORTANT]
-> **Third-party pixel support** - For HTML based banner creatives, tracking pixels are always fired. With native, creative assets are typically rendered outside of an
-> iframe, therefore publishers are selective about the javascript they allow to run on their pages. Some publishers may not fire all javascript pixels attached to a creative. However, IAS javascript based pixels are now supported by Outbrain, Sharethrough, Triplelift, and AdYouLike. Note that AdYouLike only supports javascript pixels on deal ID buying.
+> **Third-party pixel support** - For HTML based banner creatives, tracking pixels are always fired. With native, creative assets are typically rendered outside of an iframe, therefore publishers are selective about the javascript they allow to run on their pages. Some publishers may not fire all javascript pixels attached to a creative. However, IAS javascript based pixels are now supported by Outbrain, Sharethrough, Triplelift, and AdYouLike. Note that AdYouLike only supports javascript pixels on deal ID buying.
 
 ## Step 1. Ensure you are in native sellers' allowlists
 
@@ -23,7 +22,7 @@ Some native sellers require you to go through a quick buyer audit before they'll
 | Native Seller | Are you in an allowlist? | How to be put in an allowlist |
 |--|--|--|
 | Ligatus | You must be in an allowlist to buy Ligatus inventory. You can determine whether you're eligible to serve on Ligatus by checking your settings in Partner Center. See the [Partner Center Guide](partner-center-guide.md) documentation for more information. | Please reach out to [rta@ligatus.com](mailto:rta@ligatus.com) for allowlist approval. |
-| Sanoma Finland | If you have not previously bought Sanoma Finland via Microsoft Advertising, you are not yet in an allowlist. | Reach out to [programmatic@sanoma.com](mailto:programmatic@sanoma.com). |
+| Sanoma Finland | If you have not previously bought Sanoma Finland via Microsoft Advertising, you are not yet in an allowlist. | Reach out to [programmatic@sanoma.com](mailto:programmatic@sanoma.com).|
 | TripleLift | If you have not previously bought TripleLift via Microsoft Advertising, you are not yet in an allowlist. | Reach out to [appnexus@triplelift.com](mailto:appnexus@triplelift.com).|
 
 The following sellers do not currently have any allowlist requirements:
@@ -60,5 +59,4 @@ For detailed information on additional fields and uploading a native creative se
 
 ## Step 3. Targeting
 
-In terms of targeting, Microsoft Advertising recommends you do not target individual sellers as part of your setup. Instead, we recommend serving on Microsoft Advertising-audited inventory and
-using [inventory lists](inventory-targeting-ali.md) to focus delivery on relevant supply.
+In terms of targeting, Microsoft Advertising recommends you do not target individual sellers as part of your setup. Instead, we recommend serving on Microsoft Advertising-audited inventory and using [inventory lists](inventory-targeting-ali.md) to focus delivery on relevant supply.

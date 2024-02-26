@@ -6,8 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Buyer Geo Analytics report
 
-The **Buyer Geo Analytics** report allows you to break down delivery and performance by geographic area. Sample use cases for this report
-include:
+The **Buyer Geo Analytics** report allows you to break down delivery and performance by geographic area. Sample use cases for this report include:
 
 - Buyers who would like to optimize their ad campaigns.
 - Buyers who need to report to their client advertisers or agencies on line item delivery by geo.

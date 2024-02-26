@@ -1,6 +1,6 @@
 ---
 title: Create a Campaign
-description: The article you to understand how to create a campaign to run on web inventory.
+description: Learn to craft web and mobile ad campaigns for effective online advertising. For deal campaigns, check Create a Deal Campaign instructions.
 ms.date: 10/28/2023
 ---
 
@@ -15,7 +15,7 @@ Creating campaign involves defining:
 - **Targeting** - What specific inventory you want to run on, and how precisely you want to target users (via frequency, segments, geography, OS, etc.).
 
   > [!IMPORTANT]
-  > **Automatic archiving of objects:** Campaigns that have not served or been edited in more than 180 days and that are not scheduled to serve in the future are automatically archived. If a campaign is in the "archived" state, it cannot spend or be edited. However, it can still be copied, deleted or used in reports (or exported for use in an external reporting tool). In addition, once an object is archived, any child objects it may own (e.g., **Insertion Order \> Line Item \> Campaign**) will also be archived and no additional child objects may be created beneath the archived parent object. For details, see [Automatic Archiving of Buy-Side Objects](automatic-archiving-of-buy-side-objects.md).
+  > **Automatic archiving of objects:** Campaigns that have not served or been edited in more than 180 days and that are not scheduled to serve in the future are automatically archived. If a campaign is in the "archived" state, it cannot spend or be edited. However, it can still be copied, deleted or used in reports (or exported for use in an external reporting tool). In addition, once an object is archived, any child objects it may own (e.g., **Insertion Order** \> **Line Item** \> **Campaign**) will also be archived and no additional child objects may be created beneath the archived parent object. For details, see [Automatic Archiving of Buy-Side Objects](automatic-archiving-of-buy-side-objects.md).
 
 ## Before you begin
 
@@ -24,7 +24,7 @@ Creating campaign involves defining:
 
 ### Retargeting versus audience buying campaigns
 
-**Audience Buying**
+**Audience buying**
 
 Audience buying is a basic kind of campaign setup used by many buyers to target a specific segment of users. Audience buying campaigns are **motivated by reaching a group of unique user IDs**, designed to follow them around within the course of a browsing session. The assumption is that this group of unique user IDs will have a higher likelihood of
 engaging or clicking an ad, and drive more traffic to your advertiser's offer or website. This is a very commonly employed strategy for direct response campaigns. The segments used for this type of campaign are usually acquired in one of two ways:
@@ -58,15 +58,14 @@ Click the name of the advertiser under which you want to create a new campaign. 
 
 ### Step 2. Start a new campaign
 
-On the **Advertiser Details** screen, click **Create New \> Campaign**. The **Create New \> Campaign** option can also be accessed from the insertion order, line item, and campaign screens under the advertiser. This opens the initial **Create New Campaign** screen.
+On the **Advertiser Details** screen, click **Create New** \> **Campaign**. The **Create New** \> **Campaign** option can also be accessed from the insertion order, line item, and campaign screens under the advertiser. This opens the initial **Create New Campaign** screen.
 
 ### Step 3. Select the parent line item
 
 In the **Select a Line** Item section, select the line item under which you want to create your campaign and then click **Continue**. If you are creating your campaign directly from a line item or there is only one line item associated with the advertiser, the line item is selected by default.
 
 > [!NOTE]
-> You can use the search field to find a particular line item by name or ID. Also, all active and inactive line items are listed by default, but you can use the filter to the
-> right of the search field to show just active or inactive line items.
+> You can use the search field to find a particular line item by name or ID. Also, all active and inactive line items are listed by default, but you can use the filter to the right of the search field to show just active or inactive line items.
 
 ### Step 4. Select the campaign type
 
@@ -80,8 +79,7 @@ In the **Campaign Type** section, select **Buy direct/third-party inventory**. T
 In the **Basic Setup** section, enter the basic details and flight dates for the campaign.
 
 - **Name** - Enter the name for the campaign. You will later be able to search for and report on the campaign using this name.
-- **External Code** - If you want to report on the campaign using an external code (rather than the internal ID that Microsoft Advertising assigns automatically), enter the code
-  here.
+- **External Code** - If you want to report on the campaign using an external code (rather than the internal ID that Microsoft Advertising assigns automatically), enter the code here.
 - **State** - The state is set to "Inactive" by default to prevent the campaign from spending before all necessary settings and creatives are complete. You can set the state to "Active" at any time.
 - **Flight Dates** - Set the start for the campaign and set an end date or select **Run Indefinitely**. Note that the time format (12-hour or 24-hour) and time zone are inherited from the advertiser. Enter or select the start and end dates and times for the campaign.
 
@@ -95,8 +93,7 @@ In the **Basic Setup** section, enter the basic details and flight dates for the
 By default, your campaign media Budget is unlimited. If you prefer, you can define exactly how much you are willing to spend on buying inventory for the campaign. The budget can be in impressions or in media cost (dollars). Note that media cost is in USD rather than the advertiser's currency because USD is the currency in which Microsoft Advertising transacts.
 
 > [!IMPORTANT]
-> You can set budgets at the insertion order and line item levels as well. Budgets at these levels take precedence over a child campaign's budget; if they run out, the
-> campaign will stop buying impressions, whether or not it has reached its own budget. For more details about budgeting and best practices, see [Budgeting and Pacing](budgeting-and-pacing.md).
+> You can set budgets at the insertion order and line item levels as well. Budgets at these levels take precedence over a child campaign's budget; if they run out, the campaign will stop buying impressions, whether or not it has reached its own budget. For more details about budgeting and best practices, see [Budgeting and Pacing](budgeting-and-pacing.md).
 
 - **Lifetime** - This is the budget that you are willing to spend over the entire lifetime of the campaign. There are two options:
   - **Custom** - Select this option to enter a specific amount of impressions or dollars.
@@ -122,8 +119,7 @@ By default, your campaign media Budget is unlimited. If you prefer, you can defi
 
 ### Step 7. Define the buying strategies
 
-In the **Buying Strategies** section, choose whether you want to buy direct inventory, third-party inventory, or both. Direct inventory includes only inventory managed by your
-network, whereas third-party inventory includes all inventory not managed by your network that has been enabled for reselling (including external supply partners such as Microsoft Advertising Exchange and Google Ad Manager).
+In the **Buying Strategies** section, choose whether you want to buy direct inventory, third-party inventory, or both. Direct inventory includes only inventory managed by your network, whereas third-party inventory includes all inventory not managed by your network that has been enabled for reselling (including external supply partners such as Microsoft Advertising Exchange and Google Ad Manager).
 
 - [Buy Direct Inventory](create-a-campaign.md#buy-direct-inventory)
 - [Buy Third-Party Inventory](create-a-campaign.md#buy-third-party-inventory)
@@ -136,8 +132,7 @@ To run the campaign on your own managed publishers or direct buys, check the **B
   information about managing priority, see [Bidding Priority](bidding-priority.md).
   
   > [!TIP]
-  > By default, campaign priority is 5. If you leave this default for all of your direct campaigns, no campaign will be given precedence over any other. As soon as you
-  > change the priority in one of your direct campaigns, however, ALL of your eligible campaigns are potentially impacted.
+  > By default, campaign priority is 5. If you leave this default for all of your direct campaigns, no campaign will be given precedence over any other. As soon as you change the priority in one of your direct campaigns, however, ALL of your eligible campaigns are potentially impacted.
 
 - **Enable Roadblocking** - In cases where your managed publishers are using Microsoft Advertising's Seller Tag (AST) to conduct a single auction for multiple ad slots on a page, you can serve multiple linked creatives in response, also known as roadblocking. If a roadblock campaign is eligible, the campaign priority is effectively 11. There are three possible types of roadblocks:
   - **Normal Roadblock** - The number of creatives is greater than or equal to the number of ad slots.
@@ -154,9 +149,7 @@ To run the campaign on your own managed publishers or direct buys, check the **B
 
 #### Buy Third-Party Inventory
 
-To run the campaign on inventory from other members of the Microsoft Advertising platform and from external partners and exchanges, check the **Buy Third-Party Inventory** box. Then decide how
-you want to pay for third-party inventory (per impression, per click, and/or per conversion) and define exactly how you want to calculate your bids. Note that the revenue type of the parent line item determines which buying strategy options are available and, of those available, which are recommended. For a detailed explanation of your options, see
-[Buying Strategies](buying-strategies.md).
+To run the campaign on inventory from other members of the Microsoft Advertising platform and from external partners and exchanges, check the **Buy Third-Party Inventory** box. Then decide how you want to pay for third-party inventory (per impression, per click, and/or per conversion) and define exactly how you want to calculate your bids. Note that the revenue type of the parent line item determines which buying strategy options are available and, of those available, which are recommended. For a detailed explanation of your options, see [Buying Strategies](buying-strategies.md).
 
 > [!WARNING]
 > Mobile Conversion Tracking
@@ -188,9 +181,9 @@ you want to pay for third-party inventory (per impression, per click, and/or per
     - **Enable Cadence Modifier** - This option appears under OTHER OPTIONS and cannot be deselected. When optimizing to a predicted CPA goal, your bids will always vary based on how often and recently users have seen your creatives. This feature is based on the idea that an ad is more effective (and therefore worth more) when a user hasn't seen
       it before or hasn't seen it many times or seen it recently. For more details, see [Cadence Modifier and the Chaos Factor](cadence-modifier-and-the-chaos-factor.md).
   - **Optimize to a predicted CPC goal** - Use this strategy to vary bids based on the likelihood of a click for each piece of inventory. This strategy uses the Microsoft Advertising optimization engine.
-      - **Optimize to $\_ per click** - Enter the dollar amount per click that you want the optimization engine to aim for when calculating bids.
-      - **Learn Budget** - The learn budget is the portion of your campaign budget that you want to commit to optimizing your campaign, which helps you quickly find slices of third-party inventory that provide a positive ROI. The first phase of this process is called Learn. You can set a lifetime learn budget of up to 100% of the campaign budget as well as a daily cap for learning. For more information about optimization and learning, see [Targeted Learn](targeted-learn.md).
-      - **Bid at most $\_ CPM in Learn Phase** - When your campaign starts to spend on new inventory, the optimization engine submits "learn" bids. It is recommended to enter a max CPM dollar about for these bids. In doing so, you will avoid learning on inventory that is too expensive while not limiting yourself from optimized inventory sources that are worth higher prices. For more details and suggestion for using this feature, see Max Learn CPM.
+    - **Optimize to $\_ per click** - Enter the dollar amount per click that you want the optimization engine to aim for when calculating bids.
+    - **Learn Budget** - The learn budget is the portion of your campaign budget that you want to commit to optimizing your campaign, which helps you quickly find slices of third-party inventory that provide a positive ROI. The first phase of this process is called Learn. You can set a lifetime learn budget of up to 100% of the campaign budget as well as a daily cap for learning. For more information about optimization and learning, see [Targeted Learn](targeted-learn.md).
+    - **Bid at most $\_ CPM in Learn Phase** - When your campaign starts to spend on new inventory, the optimization engine submits "learn" bids. It is recommended to enter a max CPM dollar about for these bids. In doing so, you will avoid learning on inventory that is too expensive while not limiting yourself from optimized inventory sources that are worth higher prices. For more details and suggestion for using this feature, see Max Learn CPM.
 
       > [!NOTE]
       > When you set both a cap for learn bids and a max CPM for non-learn bids (next option), the lower of the two will be used for learn.
@@ -200,10 +193,10 @@ you want to pay for third-party inventory (per impression, per click, and/or per
       will always vary based on how often and recently users have seen your creatives. This feature is based on the idea that an ad is
       more effective (and therefore worth more) when a user hasn't seen it before or hasn't seen it many times or seen it recently. For more details, see [Cadence Modifier and the Chaos Factor](cadence-modifier-and-the-chaos-factor.md).
 - **Bid a base $\_ CPM** - Use this strategy to bid a fixed dollar amount.
-    - **Base CPM $\_\_** - Enter the fixed dollar amount to bid per thousand impressions.
-    - **Enable Cadence Modifier** - This option appears under OTHER OPTIONS and cannot be deselected. When optimizing to a predicted CPA goal, your bids will always vary based on how often and recently users have seen your creatives. This feature is based on the idea that an ad is more effective (and therefore worth more) when a user hasn't seen
+  - **Base CPM $\_\_** - Enter the fixed dollar amount to bid per thousand impressions.
+  - **Enable Cadence Modifier** - This option appears under OTHER OPTIONS and cannot be deselected. When optimizing to a predicted CPA goal, your bids will always vary based on how often and recently users have seen your creatives. This feature is based on the idea that an ad is more effective (and therefore worth more) when a user hasn't seen
       it before or hasn't seen it many times or seen it recently. For more details, see [Cadence Modifier and the Chaos Factor](cadence-modifier-and-the-chaos-factor.md).
-    - **Bid CPM: max $\_CPM min $\_ CPM** - This option is available under OTHER OPTIONS only once you enable Cadence Modifier. Enter the highest and lowest CPM dollar amount that you are willing to spend on an impression.
+  - **Bid CPM: max $\_CPM min $\_ CPM** - This option is available under OTHER OPTIONS only once you enable Cadence Modifier. Enter the highest and lowest CPM dollar amount that you are willing to spend on an impression.
   - **Target reach and delivery** - Use this strategy to bid the going platform rate for each piece of inventory.
     - **Auto-bid to win most platform impressions (ECP)** - Select this option to bid an estimate of the price that is likely to win most impressions from Microsoft Advertising platform sellers
       based on historical bids and their success or failure. Since off-platform sellers (e.g., Google Ad Manager, Rubicon, etc.)
@@ -211,8 +204,7 @@ you want to pay for third-party inventory (per impression, per click, and/or per
     - **Auto-bid to win ~50% of platform impressions (EAP)** - Select this option to bid an estimate of the price that is likely to win about half of the impressions from Microsoft Advertising
       platform sellers based on historical bids and their success or failure. Since off-platform sellers (e.g., Google Ad Manager, Rubicon, etc.) conduct a secondary auction, bidding EAP does not necessarily ensure winning half of off-platform impressions.
     - **Bid CPM: max $\_ CPM min $\_ CPM** - Enter the highest and lowest CPM dollar amount that you are willing to spend on an impression.
-    - **Enable Cadence Modifier** - Under OTHER OPTIONS, check this box to vary your bid based on how often and recently users have seen your creatives. This feature is based on the idea that an ad is more effective (and therefore worth more) when a user hasn't seen it before or hasn't seen it many times or seen it recently. For
-      more details, see [Cadence Modifier and the Chaos Factor](cadence-modifier-and-the-chaos-factor.md).
+    - **Enable Cadence Modifier** - Under OTHER OPTIONS, check this box to vary your bid based on how often and recently users have seen your creatives. This feature is based on the idea that an ad is more effective (and therefore worth more) when a user hasn't seen it before or hasn't seen it many times or seen it recently. For more details, see [Cadence Modifier and the Chaos Factor](cadence-modifier-and-the-chaos-factor.md).
 
      > [!NOTE]
      > If minimum margin is set on the line item, this will ensure campaigns will bid at or below the minimum margin %. This setting effectively sets a bid cap on your third-party campaigns.
@@ -258,8 +250,7 @@ In the **Targeting** section, you can [Apply a Targeting Template](apply-a-targe
 > [!NOTE]
 > **Boolean Logic**
 >
-> When you apply multiple types of targeting (e.g., inventory, segment, geography, etc.), keep in mind that your campaign will buy only impressions that match all targeting. In other words, there is an AND relationship between the main types of targeting. For example, if you target seller 123, segment ABC, and the United States, your campaign
-> will bid only on impressions from that seller being viewed by users in that segment and in the United States.
+> When you apply multiple types of targeting (e.g., inventory, segment, geography, etc.), keep in mind that your campaign will buy only impressions that match all targeting. In other words, there is an AND relationship between the main types of targeting. For example, if you target seller 123, segment ABC, and the United States, your campaign will bid only on impressions from that seller being viewed by users in that segment and in the United States.
 
 **Target inventory**
 
@@ -311,8 +302,7 @@ be either a percentage of costs or a flat CPM.
 Please note the following:
 
 - Serving fees are added to your media cost.
-- When you use a third-party buying strategy that involves optimization ("Optimize to a predicted CPA/CPC goal" or "Optimize to a % margin of booked revenue"),
-bids are automatically reduced to account for serving fees.
+- When you use a third-party buying strategy that involves optimization ("Optimize to a predicted CPA/CPC goal" or "Optimize to a % margin of booked revenue"), bids are automatically reduced to account for serving fees.
 - When you buy direct inventory or use a third-party buying strategy that does not involve optimization, bids are not reduced to account for serving fees.
 
 To add a new serving fee:
@@ -347,8 +337,7 @@ To approve the campaign, another user from your team must log in, go to the **Ca
 
 ## Next steps
 
-Once you've created a campaign, you can [View Campaign Details](view-campaign-details.md). You can also continue [Associate
-Creatives to Campaigns](associate-creatives-to-campaigns.md).
+Once you've created a campaign, you can [View Campaign Details](view-campaign-details.md). You can also continue [Associate Creatives to Campaigns](associate-creatives-to-campaigns.md).
 
 ## Related topics
 

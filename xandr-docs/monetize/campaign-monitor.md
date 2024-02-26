@@ -1,6 +1,6 @@
 ---
 title: Campaign Monitor
-description: The article highlights Campaign Monitor, a tool that aids campaign managers and ad operations teams in quickly assessing the delivery and performance of line items and campaigns.
+description: Explore Campaign Monitor, aiding campaign managers to swiftly assess delivery and performance of line items and campaigns.
 ms.date: 10/28/2023
 ---
 
@@ -9,18 +9,17 @@ ms.date: 10/28/2023
 > [!IMPORTANT]
 > This guide only applies to the legacy line item. If you are using the augmented line item (ALI), see [Optimization Guide - ALI](optimization-guide-ali.md).
 
-We built the Campaign Monitor to help campaign managers and ad operations teams view delivery and performance of line items and campaigns at-a-glance. The Campaign Monitor allows you to quickly view which line items and campaigns are on track for performance and delivery and which may need a little more attention to get back on track. The
-Campaign Monitor also allows you to dig into line item and campaign setup quickly and easily. You can go directly from the Campaign Monitor to the line item or campaign in question to view and edit targeting details and campaign settings.
+We built the Campaign Monitor to help campaign managers and ad operations teams view delivery and performance of line items and campaigns at-a-glance. The Campaign Monitor allows you to quickly view which line items and campaigns are on track for performance and delivery and which may need a little more attention to get back on track. The Campaign Monitor also allows you to dig into line item and campaign setup quickly and easily. You can go directly from the Campaign Monitor to the line item or campaign in question to view and edit targeting details and campaign settings.
 
 ## At-a-glance
 
-To open Campaign Monitor, select **Advertiser >  Campaign Monitor**. Note that this option is not available for all customers.
+To open Campaign Monitor, select **Advertiser** >  **Campaign Monitor**. Note that this option is not available for all customers.
 
 You can view metrics for the lifetime of a line item or for yesterday. Metrics are based on the local time for your network. Data is current to within approximately one hour.
 
 To view the available metrics, click the **Columns** button to drop down a list of metrics you can choose to display in the Campaign Monitor grid.
 
-  :::image type="content" source="media/display-columns.png" alt-text="The screenshot illustrates the functionality of the Columns button, which, when clicked, reveals a dropdown menu displaying various metrics that users can select to be displayed in the Campaign Monitor grid.":::
+  :::image type="content" source="media/display-columns.png" alt-text="Screenshot that illustrates the functionality of the Columns button, revealing a dropdown menu for selecting metrics in the Campaign Monitor grid.":::
 
 The following metrics are selected by default:
 
@@ -119,8 +118,7 @@ In the details pane, you can view expected metrics compared to actual metrics ba
 
 ## Line item or campaign settings
 
-The details pane displays the most prominent line item or campaign settings. You can also easily click through directly to the line item or campaign in question by
-clicking the **Edit settings for this line item** (or campaign) option at the bottom of the details pane.
+The details pane displays the most prominent line item or campaign settings. You can also easily click through directly to the line item or campaign in question by clicking the **Edit settings for this line item** (or campaign) option at the bottom of the details pane.
 
 You can also click through directly to any creatives that may be causing alerts. Click the Status button to see alert details.
 

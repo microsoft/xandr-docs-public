@@ -37,9 +37,9 @@ The purpose of this document is to serve as a temporary API resource for the Dat
 
 **Example:**
 
-```pre
+```
 {
-        "type": "scalar_descriptor",
+    "type": "scalar_descriptor",
     "feature_keyword": "cookie_age",
     "default_value": 0,               //Value returned by the descriptor if no match is found
     "initial_range_log": 4,           //Used for log bucketing, initial range
@@ -61,7 +61,7 @@ The purpose of this document is to serve as a temporary API resource for the Dat
 
 **Example:**
 
-```pre
+```
 {
     "type": "segment_descriptor",
     "feature_keyword": "segment_age",
@@ -92,7 +92,7 @@ The purpose of this document is to serve as a temporary API resource for the Dat
 
 **Example:**
 
-```pre
+```
 {
     "type": "frequency_recency_descriptor",
     "feature_keyword": 'frequency_life',
@@ -150,7 +150,7 @@ The purpose of this document is to serve as a temporary API resource for the Dat
 
 **Example:**
 
-```pre
+```
 {
     "type": "categorical_descriptor",
     "feature_keyword": "city"
@@ -165,7 +165,7 @@ The purpose of this document is to serve as a temporary API resource for the Dat
 
 **Example:**
 
-```pre
+```
 {
     "type": "hashed",
     "keys": [ array of one to 5 descriptors in this list:
@@ -186,7 +186,7 @@ The purpose of this document is to serve as a temporary API resource for the Dat
 
 This endpoint is to submit a pre-hashed table. `bucket_index0` and `bucket_index1`, each 64 bits long, are there to support hashing algorithms that produce long values as keys. Currently, we only support one hashing algorithm: `MurmurHash3_x64_128`, which will create two 64 bit integers but we only use the lower 64 bits of the hash.
 
-Values in `bucket_index0` must always be smaller than `(2 ^ hash_table_size_log)` or they will get rejected
+Values in `bucket_index0` must always be smaller than `(2 ^ hash_table_size_log)` or they will get rejected.
 
 Currently, the values in `bucket_index1` are ignored as this is to be used for future expansion. If a value is sent for `bucket_index1`, it must be `0`. The parameter is optional.
 
@@ -204,21 +204,21 @@ Model creation and update are similar, same request format is to be used for bot
 
 | Method | Endpoint | Purpose |
 |:---|:---|:---|
-| GET | `/custom-model-logit` | Retrieve a Logit function associated with the parameters provided. |
-| PUT |  `/custom-model-logit` | Update an existing Logit function with data in the JSON payload. |
-| POST | `/custom-model-logit` | Create a new Logit function from data in the JSON payload. |
-| DELETE | `/custom-model-logit` | Delete an existing Logit function matching the parameters provided. |
+| `GET` | `/custom-model-logit` | Retrieve a Logit function associated with the parameters provided. |
+| `PUT` |  `/custom-model-logit` | Update an existing Logit function with data in the JSON payload. |
+| `POST` | `/custom-model-logit` | Create a new Logit function from data in the JSON payload. |
+| `DELETE` | `/custom-model-logit` | Delete an existing Logit function matching the parameters provided. |
 
 **Parameters**
 
 | Name | Data Type | Parameter Type | Required On | Example |
 |:---|:---|:---|:---|:---|
-| id | int | Query | GET, PUT, DELETE | ?id=1 |
-| member_id | int | Query | PUT, POST | ?member_id=1 |
+| `id` | int | Query | `GET`, `PUT`, `DELETE` | `?id=1` |
+| `member_id` | int | Query | `PUT`, `POST` | `?member_id=1` |
 
-**Example POST**
+**Example `POST`**
 
-```pre
+```
 {"custom-model-logit": {
   "member_id": 1,
   "beta0": 1.2,

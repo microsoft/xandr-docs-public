@@ -86,9 +86,7 @@ Formula: Channel Earned Revenue / (Channel Consumed Impressions/1000)
 
 ### Channel rCPM
 
-Channel "real" CPM. This is a measure of how well a channel is monetizing the opportunity that it is presented with. It is useful for
-comparing the value brought by various partners. rCPM uses the "Channel Received Impressions" instead of Channel Consumed Impressions when
-determining value.
+Channel "real" CPM. This is a measure of how well a channel is monetizing the opportunity that it is presented with. It is useful for comparing the value brought by various partners. rCPM uses the "Channel Received Impressions" instead of Channel Consumed Impressions when determining value.
 
 Formula: Channel Earned Revenue / (Channel Received Impressions/1000)
 
@@ -150,8 +148,7 @@ The number of impressions that have been consumed in the past, as measured by 
 
 ### Consumption type
 
-Describes the way inventory is being consumed by the order lines flighting on that inventory. The consumption-type relationship is always
-defined in the context of a specific order line, to a specific inventory product (also called focus product):
+Describes the way inventory is being consumed by the order lines flighting on that inventory. The consumption-type relationship is always defined in the context of a specific order line, to a specific inventory product (also called focus product):
 
 - Direct – Indicates order lines that have been targeted to exactly the same targeting attributes as the focus product.
 - Contained – Indicates order lines that have been targeted to a set of attributes that are entirely contained within the focus product.
@@ -175,8 +172,7 @@ Then the consumption types for the order lines can be represented as follows:
 
 ### Consumption-to-schedule Percentage
 
-A measure of pacing per schedule. For future time periods, this number takes into account the expected consumption based on the allocation
-forecast. Guaranteed order lines with pricing types CPM, CPD, and CPC are subject to this calculation.
+A measure of pacing per schedule. For future time periods, this number takes into account the expected consumption based on the allocation forecast. Guaranteed order lines with pricing types CPM, CPD, and CPC are subject to this calculation.
 
 C:S % is event agnostic, meaning that clicks and impressions are used interchangeably, determined by order line pricing type.
 
@@ -212,8 +208,7 @@ The number of clicks contractually obligated for a CPC order line, based on the�
 
 ### Contracted CPD
 
-Contracted CPD rate for the order line. When aggregated as a metric, this is the weighted average of the Contracted CPD for the selected
-order lines.
+Contracted CPD rate for the order line. When aggregated as a metric, this is the weighted average of the Contracted CPD for the selected order lines.
 
 Metric formula: Contracted revenue / Number of days in the campaign
 
@@ -237,8 +232,7 @@ Metric formula: Contracted revenue / Contracted impressions x 1000
 
 ### Contracted impressions
 
-The total contracted impressions per the order management system, prorated evenly over time. Order lines that do not have an impression
-goal (Example: sponsorships) will not have contracted impressions.
+The total contracted impressions per the order management system, prorated evenly over time. Order lines that do not have an impression goal (Example: sponsorships) will not have contracted impressions.
 
 > [!NOTE]
 > Proposed order lines are not included in the calculations.
@@ -391,9 +385,7 @@ Indicates whether an order line is sold as guaranteed or pre-emptible, based on 
 
 ### Metrics
 
-Metrics represent the quantifiable aspects of your business that you want to measure and track. For example, Earned Revenue and eCPM are
-metrics that you may want to track over time. Metrics can be aggregated for dimensions. For example, Earned Revenue can be aggregated by
-Advertiser, Salesperson, or Target.
+Metrics represent the quantifiable aspects of your business that you want to measure and track. For example, Earned Revenue and eCPM are metrics that you may want to track over time. Metrics can be aggregated for dimensions. For example, Earned Revenue can be aggregated by Advertiser, Salesperson, or Target.
 
 Certain metrics are considered "dynamic" metrics. These include:
 
@@ -469,8 +461,7 @@ A measure of unmet demand for a product. This metric should be used to identify 
 | Sports | 500,000 | 600,000 | 100,000 |
 | News | 500,000 | 0 | 0 |
 
-Only guaranteed order lines with impressions goals are included in this calculation. In addition, since this metric is only available for
-products, only those order lines that are direct or contained to the product are included in the computation.
+Only guaranteed order lines with impressions goals are included in this calculation. In addition, since this metric is only available for products, only those order lines that are direct or contained to the product are included in the computation.
 
 Formula: Scheduled impressions − Capacity
 
@@ -480,8 +471,7 @@ This is the hierarchical relationship between products that determines how order
 
 ### Oversold
 
-A measure of the amount of delivery available for a specific product, when displacement and indirect order line distribution is taken into
-consideration.
+A measure of the amount of delivery available for a specific product, when displacement and indirect order line distribution is taken into consideration.
 
 Oversold = total sold impressions - direct capacity
 
@@ -535,9 +525,7 @@ Priority of the order line in the ad server.
 
 ### Product
 
-Products are a way to represent inventory within a structure that carries pricing and/or reporting metadata. Products are given targeting
-characteristics that define the ad server implementation of the Product in terms of what inventory it captures. A product's targeting
-characteristics can be changed using the Edit Product window, and the Product will maintain a continuous history across all previous versions of its targeting characteristics.
+Products are a way to represent inventory within a structure that carries pricing and/or reporting metadata. Products are given targeting characteristics that define the ad server implementation of the Product in terms of what inventory it captures. A product's targeting characteristics can be changed using the Edit Product window, and the Product will maintain a continuous history across all previous versions of its targeting characteristics.
 
 ### Product external ID
 
@@ -562,8 +550,7 @@ The unique identifier for the product in Yield Analytics.
 
 ### Revenue against goal
 
-A measure of the revenue that is at risk of underdelivering. This metric includes both underdelivery and overdelivery, and should be used to measure both. When dimensioning by product, only those order lines that are direct or contained to the product are included in the
-computation.
+A measure of the revenue that is at risk of underdelivering. This metric includes both underdelivery and overdelivery, and should be used to measure both. When dimensioning by product, only those order lines that are direct or contained to the product are included in the computation.
 
 Formula: Earned revenue - Contracted revenue
 

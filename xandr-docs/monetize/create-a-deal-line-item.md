@@ -1,6 +1,6 @@
 ---
 title: Create a Deal Line Item
-description: The article shows how to create a deal line item.
+description: Create advanced deals in Microsoft Advertising Monetize with Deal Line Items. Monetize provides latest features for buyer interactions.
 ms.date: 10/28/2023
 ---
 
@@ -86,8 +86,7 @@ In the **Basic Setup** section, enter the basic details for the deal line item.
   
   > [!NOTE]
   >
-  > When you create a deal line item, the line item will inherit its budget type from the parent insertion order, and this will impact the revenue types available on
-  > the line item. For example, if the budget type of an insertion order is **Impressions**, the child deal line item can only set up budgets using impressions.
+  > When you create a deal line item, the line item will inherit its budget type from the parent insertion order, and this will impact the revenue types available on the line item. For example, if the budget type of an insertion order is **Impressions**, the child deal line item can only set up budgets using impressions.
 
 ## Deal details
 
@@ -236,23 +235,20 @@ You can edit the following creative attributes for a deal by clicking **Edit** u
   - **Ad Quality Settings** tab: Select the languages on which you want to override ad quality settings. When you select **Ignore**, the language will be allowed on the deal despite ad quality settings. All languages will default to **Follow** so they comply with ad quality settings.
 - **Trust Level** (see Trust Level section in [Override Ad Quality Settings on a Deal](override-ad-quality-settings-on-a-deal.md) for detailed setup information)
 - **Creative Category**
-  - **Creative Category** tab: Only selected creative categories will be allowed to serve; any creative categories not selected will not be allowed. If no creative
-    categories are selected, all creative categories that follow ad quality rules are allowed.
+  - **Creative Category** tab: Only selected creative categories will be allowed to serve; any creative categories not selected will not be allowed. If no creative categories are selected, all creative categories that follow ad quality rules are allowed.
   - **Ad Quality Settings** tab: Select the creative categories on which you want to override ad quality settings. When you select **Ignore**,the creative category will be allowed on the deal despite ad quality settings. All creative categories will default to **Follow** so they comply with ad quality settings.
 - **Specific Creatives**: Include specific creatives to either **Approve** (always allow) or **Block** (always block) on the deal.
 - **Media Type**: Select the media types you want to include on the deal.
   
   > [!NOTE]
   >
-  > Limiting the media types of creatives allowed on the deal will also limit the media types of requests sent through the deal. For example, if you select to only allow
-  > **Banner** creatives, the deal will only send banner requests to the buyer.
+  > Limiting the media types of creatives allowed on the deal will also limit the media types of requests sent through the deal. For example, if you select to only allow **Banner** creatives, the deal will only send banner requests to the buyer.
 
 - **Technical Attributes**: Select the technical attributes on which you want to override ad quality settings. When you select **Ignore**, the technical attribute will be allowed on the deal despite ad quality settings. All technical attributes will default to **Follow** so they comply with ad quality settings.
 
 **Reporting labels**
 
-Enter any reporting labels if desired. Reporting labels let you associate a person or other metadata with advertisers. You can then run reports using these labels. See
-[Reporting Guide](reporting-guide.md) for more information.
+Enter any reporting labels if desired. Reporting labels let you associate a person or other metadata with advertisers. You can then run reports using these labels. See [Reporting Guide](reporting-guide.md) for more information.
 
 ## Comments
 

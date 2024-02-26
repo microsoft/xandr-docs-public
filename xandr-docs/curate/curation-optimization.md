@@ -9,13 +9,9 @@ ms.date: 10/28/2023
 > [!NOTE]
 > The Curation Optimization feature will roll out in phases through 2023. You will receive a notification when your account is enabled. Contact your Microsoft Advertising Account Representative for any queries.
 
-With the growth of the programmatic industry, systems are having to process a greater volume of auctions with more and more information in
-them. For example, there are now industry IDs, schains, and, since the last few years, curated deals that have been incorporated into the
-auction. In programmatic auctions, each system participating has a fixed amount of time (a few milliseconds) in which to process the auction and respond. Each system must therefore ensure that it processes auctions as efficiently as possible and deprioritizing unnecessary information is one way to drive efficiency.
+With the growth of the programmatic industry, systems are having to process a greater volume of auctions with more and more information in them. For example, there are now industry IDs, schains, and, since the last few years, curated deals that have been incorporated into the auction. In programmatic auctions, each system participating has a fixed amount of time (a few milliseconds) in which to process the auction and respond. Each system must therefore ensure that it processes auctions as efficiently as possible and deprioritizing unnecessary information is one way to drive efficiency.
 
-As a part of the curation process, we can deprioritize unnecessary information by sampling curated deals that buyers are not currently
-bidding on. Sampling allows the deal to remain active in case a buyer begins to bid. However, most of the resources are directed towards
-processing curated deals that buyers are actively using and spending against. In this way, buyers, curators, and sellers will be able to achieve better results.
+As a part of the curation process, we can deprioritize unnecessary information by sampling curated deals that buyers are not currently bidding on. Sampling allows the deal to remain active in case a buyer begins to bid. However, most of the resources are directed towards processing curated deals that buyers are actively using and spending against. In this way, buyers, curators, and sellers will be able to achieve better results.
 
 ## Curation optimization process
 

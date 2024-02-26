@@ -6,8 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Mobile debug auction tips
 
-In order to run a debug auction on mobile inventory, you must pass additional mobile device parameters in on the ad call. This page
-describes how to spoof various mobile ad call parameters so that you can successfully run mobile debug auctions.
+In order to run a debug auction on mobile inventory, you must pass additional mobile device parameters in on the ad call. This page describes how to spoof various mobile ad call parameters so that you can successfully run mobile debug auctions.
 
 ## Call format
 
@@ -27,13 +26,11 @@ There are query string parameters that tell the impression bus the user agent, c
 
 ## Spoof an operating system
 
-Our ad server uses the device's User Agent to determine the operating system. This gives us two ways to spoof the OS: using query string
-parameters, or using developer tools.
+Our ad server uses the device's User Agent to determine the operating system. This gives us two ways to spoof the OS: using query string parameters, or using developer tools.
 
 ### Using query string parameters
 
-By passing in a different value for the `ua` query string parameter, we can tell the impression bus what operating system we use, since the impression bus determines the device OS from the User Agent. In this example, we set the User Agent so that we appear to be running an
-iPhone:
+By passing in a different value for the `ua` query string parameter, we can tell the impression bus what operating system we use, since the impression bus determines the device OS from the User Agent. In this example, we set the User Agent so that we appear to be running an iPhone:
 
 ```
 https://mobile..com/mob?id=1280178&size=320x50&debug_member=2048&dongle=DEBUG_AUTH&ua=Mozilla/5.0%20(iPhone;%20CPU%20iPhone%20OS%206_0%20like%20Mac%20OS%20X)%20AppleWebKit/536.26%20(KHTML,%20like%20Gecko)%20Version/6.0%20Mobile/10A5376e%20Safari/8536.25

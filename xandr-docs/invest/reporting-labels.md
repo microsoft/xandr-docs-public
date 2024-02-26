@@ -6,8 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Reporting labels
 
-Reporting Labels allow you to report by metrics that are important to your business. You can assign an Account Manager, a Salesperson, and
-Advertiser Type, allowing you to report by these labels in order to better assess performance. You can also assign a Trafficker, Sales Rep, and Type (Insertion Order of Line Item) to your insertion order or line item.
+Reporting Labels allow you to report by metrics that are important to your business. You can assign an Account Manager, a Salesperson, and Advertiser Type, allowing you to report by these labels in order to better assess performance. You can also assign a Trafficker, Sales Rep, and Type (Insertion Order of Line Item) to your insertion order or line item.
 
 ## Assigning labels
 

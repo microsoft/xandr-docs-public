@@ -7,13 +7,11 @@ ms.date: 10/28/2023
 
 # Lazy Load for iOS
 
-The Lazy Load feature provides a new API call to manage when all trackers are fired, including third-party trackers and Mobile SDK trackers. It also optimizes the Banner AdUnit by allowing the host app to load its webview only when it is needed and just before it is
-needed. When this feature is enabled, the traditional **loadAd** method is followed later by a second method, **loadLazyAd**.
+The Lazy Load feature provides a new API call to manage when all trackers are fired, including third-party trackers and Mobile SDK trackers. It also optimizes the Banner AdUnit by allowing the host app to load its webview only when it is needed and just before it is needed. When this feature is enabled, the traditional **loadAd** method is followed later by a second method, **loadLazyAd**.
 
 ## Firing trackers
 
-The Lazy Load feature is developed to fire all Mobile SDK and third-party trackers at the same instance, ensuring an alignment between
-both the metrics can be maintained. This feature splits the AdUnit load process into two steps as **loadAd** and **loadLazyAd**.
+The Lazy Load feature is developed to fire all Mobile SDK and third-party trackers at the same instance, ensuring an alignment between both the metrics can be maintained. This feature splits the AdUnit load process into two steps as **loadAd** and **loadLazyAd**.
 
 The high-level lifecycle of an AdUnit consists of two stages as **load** and **display**. This feature divides the **load** stage into two further steps as **loadAd** and **loadLazyAd**, followed by **display** stage. Having said that, a banner webview can be attached to the **display**, even before **loadAd** is called. However the **display** stage is a convenience provided by the platform and is separate from the **load** portion of the AdUnit lifecycle.
 
@@ -40,7 +38,7 @@ Lazy Load enhances the Mobile SDK public API with a property which indicates wh
 |:---|:---|:---|:---|
 | `enableLazyLoad` | BOOL | readwrite | Indicates if Lazy Load is enabled and if not, enable the same. |
 
-``` 
+```
 @property (nonatomic, readwrite)  BOOL  enableLazyLoad
 ```
 
@@ -50,7 +48,7 @@ Lazy Load enhances the Mobile SDK public API with a property which indicates wh
 
 Loads the webview of a lazy-loaded AdUnit and fires all trackers, including third-party and Mobile SDK trackers.  
 
-``` 
+```
 (BOOL) loadLazyAd;
 ```
 
@@ -60,13 +58,13 @@ Loads the webview of a lazy-loaded AdUnit and fires all trackers, including thir
 
 **lazyAdDidReceiveAd** is fired when the **loadAd** method successfully returns a lazy loaded AdUnit, that is, an AdUnit with an unallocated webview. All other features of the AdUnit instance are available, including a populated instance of **ANAdResponseInfo**. If **loadAd** fails, then the same callbacks are used as for an AdUnit that was not lazy-loaded.
 
-``` 
+```
 (void)lazyAdDidReceiveAd:(nonnull id)ad;
 ```
 
 ## Example - Objective C
 
-``` 
+```
 @property  (nonatomic, strong, nullable)  ANBannerAdView  *lazyBanner;
  
 // ...
@@ -119,7 +117,7 @@ Loads the webview of a lazy-loaded AdUnit and fires all trackers, including thir
 
 ## Example - Swift
 
-``` 
+```
 import UIKit
 import AppNexusSDK
 class BannerAdViewController: UIViewController , ANBannerAdViewDelegate{

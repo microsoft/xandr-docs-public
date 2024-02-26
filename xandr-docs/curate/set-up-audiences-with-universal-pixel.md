@@ -21,7 +21,7 @@ To configure an audience:
     You can use this name to select an audience segment in your line item settings under **Audience Location and Targeting**.
 
 1. Under **Include people who**, create conditions to define the audience segment you want your pixel to populate. Use AND if you want all conditions to be fulfilled to qualify a user for the segment. Use OR if any of the conditions will qualify the user.
-1. Under K**eep people in audience**, decide how long the users you have identified should remain in the audience segment you are creating.
+1. Under **Keep people in audience**, decide how long the users you have identified should remain in the audience segment you are creating.
 
     This number is sometimes called “Time to Live,” or TTL. The maximum TTL is 180 days. However, because cookies may become inactive, or
     users may no longer be relevant to the segment, we recommend a value of 60 days or less for most segments. For example, the users in a

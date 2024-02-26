@@ -9,9 +9,7 @@ ms.date : 10/28/2023
 
 ## Overview
 
-A publisher can opt for the SDK to handle various ad events such as AdClick, occurrence of impressions etc., by registering into
-**NativeAdEventListener** API. Using the API, SDK handles all the mentioned events and notify the publishers whether the impression
-trackers are fired or not for the creatives. To listen to the Ad events, publishers need to register first using **registerViewForTracking**, after which SDK uses **NativeAdEventListener** to track the ad events. Publishers need to unregister using **NativeAdResponse** when they are finished with the views for the response or wish to reuse the vieww object(s) for a new **NativeAdResponse**.
+A publisher can opt for the SDK to handle various ad events such as AdClick, occurrence of impressions etc., by registering into **NativeAdEventListener** API. Using the API, SDK handles all the mentioned events and notify the publishers whether the impression trackers are fired or not for the creatives. To listen to the Ad events, publishers need to register first using **registerViewForTracking**, after which SDK uses **NativeAdEventListener** to track the ad events. Publishers need to unregister using **NativeAdResponse** when they are finished with the views for the response or wish to reuse the vieww object(s) for a new **NativeAdResponse**.
 
 ## Scope of listen to native ad events
 
@@ -23,7 +21,7 @@ The scope of this feature is limited to native creatives only.
 
 Method that registers a single or a list of the developer views that will track impressions and respond to clicks for the native ad.
 
-``` 
+```
 - (BOOL)registerViewForTracking:(nonnull UIView *)view
          withRootViewController:(nonnull UIViewController *)rvc
                  clickableViews:(nullable NSArray *)views
@@ -32,7 +30,7 @@ Method that registers a single or a list of the developer views that will track 
 
 You can pass friendly obstruction list also in this method. For more information about Friendly Obstructions, see [OMID-Friendly Obstruction for iOS](omid-friendly-obstruction-for-ios.md).
 
-``` 
+```
 - (BOOL)registerViewForTracking:(nonnull UIView *)view
          withRootViewController:(nonnull UIViewController *)rvc
                  clickableViews:(nullable NSArray<UIView *> *)views
@@ -52,7 +50,7 @@ API with methods to track the ad events such as:
 - when the in-app browser has closed and control has been returned to the application.
 - when the ad is about to leave the app or when an impression is recorded for a native creative.
 
-  ``` 
+  ```
   /*!
    * Sent when the native view is clicked by the user.
    */
@@ -118,13 +116,13 @@ API with methods to track the ad events such as:
 
 Method to unregister a native creative from tracking.
 
-``` 
+```
 self.nativeAdResponse = nil
 ```
 
 ## Example
 
-``` 
+```
 - (void)adWasClicked: (nonnull id)response
              withURL: (nonnull NSString *)clickURLString
          fallbackURL: (nonnull NSString *)clickFallbackURLString

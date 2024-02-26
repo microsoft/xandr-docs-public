@@ -6,8 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Data Usage report
 
-The Data Usage report gives details related to your usage of data provided by third parties (e.g., user segment providers), the costs of
-that data usage and campaigns in which that data was used to target users.
+The Data Usage report gives details related to your usage of data provided by third parties (e.g., user segment providers), the costs of that data usage and campaigns in which that data was used to target users.
 
 > [!NOTE]
 > This report will only return data for buyers in the data marketplace.

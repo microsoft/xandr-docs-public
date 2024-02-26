@@ -1,6 +1,6 @@
 ---
 title: Choose the Programmatic Guaranteed Deal Type
-description: The article discusses when to create a Programmatic Guaranteed Deal by selecting this deal type.
+description: The article discusses when to create a Programmatic Guaranteed Deal by selecting this deal type on the screen for optimal results.
 ms.date: 10/28/2023
 ---
 
@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 To create a Programmatic Guaranteed Deal, select this deal type in the **Create New Deal Line Item** screen.
 
-## Choose the Programmatic Guaranteed deal type:
+## Choose the programmatic guaranteed deal type
 
 | Type | Description |
 |--|--|

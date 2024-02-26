@@ -6,8 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Reporting on Guaranteed Outcomes
 
-Throughout Microsoft Invest reporting, transaction data from Guaranteed Outcomes is identifiable by the underlying Clearing
-Event associated with the type of outcome purchased. For the list of supported Clearing Events, see [Supported Viewability Standards for Guaranteed Outcomes](supported-viewability-standards-for-guaranteed-outcomes.md) and [Supported Video Completion Standards](supported-video-completion-standards.md).
+Throughout Microsoft Invest reporting, transaction data from Guaranteed Outcomes is identifiable by the underlying Clearing Event associated with the type of outcome purchased. For the list of supported Clearing Events, see [Supported Viewability Standards for Guaranteed Outcomes](supported-viewability-standards-for-guaranteed-outcomes.md) and [Supported Video Completion Standards](supported-video-completion-standards.md).
 
 ## Network and Video Analytics reports
 
@@ -26,8 +25,7 @@ Currently available in the Network and Video Analytics Reports, the column Clear
 | Clearing Event Booked Revenue eCPM | The total revenue per 1000 events, for the associated Clearing Event. |
 | Clearing Event Buyer Media Cost eCPM | The total media cost per 1000 events, for the associated Clearing Event. |
 
-The Clearing Event data in Microsoft Invest analytics reporting is available as of September 20th, 2017. For report data before this date, the Clearing Event column will display "-", and the metrics will all report zero. Note that in reporting on Standard Line
-Items (non-ALI), the Clearing Event dimension is also displayed as "-".
+The Clearing Event data in Microsoft Invest analytics reporting is available as of September 20th, 2017. For report data before this date, the Clearing Event column will display "-", and the metrics will all report zero. Note that in reporting on Standard Line Items (non-ALI), the Clearing Event dimension is also displayed as "-".
 
 > [!TIP]
 > To eliminate the noise of other impression types in reporting, use the report filters to select Impression Type=RTB. This configuration ensures the report will only be generated for RTB impressions (the only impression type eligible for Guaranteed Outcomes)

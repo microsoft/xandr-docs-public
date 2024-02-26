@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Buying Video Inventory
-description: This page provides you with a suggested workflow to optimize the new enhancements around our buy-side video offering.
+description: Explore optimizing buy-side video enhancements with suggested workflow to optimize the new enhancements for a seamless experience.
 ms.date: 10/28/2023
 ---
 
@@ -25,8 +25,7 @@ Target your own managed video inventory or third-party inventory. (See [Third-Pa
 
 ## Step 3b. Target video (optional)
 
-Set video targeting parameters to target specific types of inventory. For more information, see [Video Targeting](video-targeting.md).
-For Deals targeting, see [Video Player Targeting](video-player-targeting.md).
+Set video targeting parameters to target specific types of inventory. For more information, see [Video Targeting](video-targeting.md). For Deals targeting, see [Video Player Targeting](video-player-targeting.md).
 
 > [!NOTE]
 > Setting any of the video targeting parameters will reduce targeting to the corresponding attributes and will significantly limit your delivery potential.

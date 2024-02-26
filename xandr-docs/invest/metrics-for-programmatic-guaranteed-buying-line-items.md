@@ -6,11 +6,9 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Metrics for Programmatic Guaranteed buying line items
 
-Programmatic guaranteed (PG) buying line items bring with them a unique set of metrics for analyzing the line item's performance in bidding and delivering toward a targeted PG deal. You can find these metrics being monitored for any PG buying line item within
-the **Line Item Details** pane's **Analytics** tab.
+Programmatic guaranteed (PG) buying line items bring with them a unique set of metrics for analyzing the line item's performance in bidding and delivering toward a targeted PG deal. You can find these metrics being monitored for any PG buying line item within the **Line Item Details** pane's **Analytics** tab.
 
-Below are categorized PG buying line item metrics and their descriptions. As a PG buyer, some of these metrics may or may not apply
-to your specific PG buying scenario and needs, but they serve as an exhaustive list of PG metrics that you may encounter.
+Below are categorized PG buying line item metrics and their descriptions. As a PG buyer, some of these metrics may or may not apply to your specific PG buying scenario and needs, but they serve as an exhaustive list of PG metrics that you may encounter.
 
 ## Key metrics
 

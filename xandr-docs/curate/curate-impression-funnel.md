@@ -6,8 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Curate - Impression funnel
 
-The **Impression Funnel** provides detailed deal line item metric information in the form of graphs and charts. The **Impression Funnel**
-is available in the **Troubleshooting** window. For more information, see [Troubleshooting Line Items](curate-troubleshooting-line-items.md).
+The **Impression Funnel** provides detailed deal line item metric information in the form of graphs and charts. The **Impression Funnel** is available in the **Troubleshooting** window. For more information, see [Troubleshooting Line Items](curate-troubleshooting-line-items.md).
 
 You can use the **Impression Funnel** to:
 

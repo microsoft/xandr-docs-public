@@ -1,7 +1,7 @@
 ---
-title : Click Tracking and Cache-Busting Examples for Top Ad Servers
-description : Learn about the appropriate locations in which to insert the click tracking macro in your third-party ad tags in order for Xandr to track clicks properly.
-ms.date : 11/20/2023
+title: Click Tracking and Cache-Busting Examples for Top Ad Servers
+description: Learn about the appropriate locations in which to insert the click tracking macro in your third-party ad tags in order for Xandr to track clicks properly.
+ms.date: 11/20/2023
 
 ---
 
@@ -12,28 +12,16 @@ ms.date : 11/20/2023
 
 **Click tracking**
 
-If you want to track clicks and you are hosting your creatives on one of
-the ad servers below, this page shows the appropriate locations in which
-to insert the click tracking macro in your third-party ad tags in order
-for Xandr to track clicks properly. To locate it
-in the samples below, search for `CLICK_URL`.
+If you want to track clicks and you are hosting your creatives on one of the ad servers below, this page shows the appropriate locations in which to insert the click tracking macro in your third-party ad tags in order for Xandr to track clicks properly. To locate it in the samples below, search for `CLICK_URL`.
 
-| Macro            | Description                                                                                                            |
-|------------------|------------------------------------------------------------------------------------------------------------------------|
-| `${CLICK_URL}`     | The click tracking URL. For example:  `https://xandr.com`                                                                |
+| Macro | Description |
+|--|--|
+| `${CLICK_URL}` | The click tracking URL. <br> For example:  `https://xandr.com` |
 | `${CLICK_URL_ENC}` | The encoded click tracking URL (only necessary for some third-party ad servers). For example:  `https%3A%2F%2Fxandr.com` |
 
 **Cache-busting**
 
-The cache-buster macro ensures that a fresh call is made to the ad
-server every time the tag is called, so you’re accurately counting
-impressions. If you don't add the cache-busting macro to the tag, you
-will be more likely to see impression counting discrepancies. If you
-want to perform cache-busting and you are hosting your creatives on one
-of the ad servers below, use the examples on this page to find the
-appropriate locations in which to insert the cache-busting macro in your
-third-party ad tags. To locate it in the samples below, search
-for `CACHEBUSTER`.
+The cache-buster macro ensures that a fresh call is made to the ad server every time the tag is called, so you’re accurately counting impressions. If you don't add the cache-busting macro to the tag, you will be more likely to see impression counting discrepancies. If you want to perform cache-busting and you are hosting your creatives on one of the ad servers below, use the examples on this page to find the appropriate locations in which to insert the cache-busting macro in your third-party ad tags. To locate it in the samples below, search for `CACHEBUSTER`.
 
 > [!NOTE]
 > All examples on this page were provided by clients or a third-party server. As a result, Xandr has no control over any changes made by those third-party servers that may cause these macros not to function. If the macro you are using is not working correctly, please contact your third-party server. If the third-party server you use is not listed here, Xandr will be unable to confirm the proper placement of these macros in their tag as the location of the tag in which you place the macro must be provided by your third-party server (Xandr only provides the click URL by filling the macro). For troubleshooting tips, see the [Click Tracking page](../monetize/click-tracking.md) in the UI.
@@ -120,8 +108,7 @@ src="http://this.content.served.by.adshuffle.com/p/kl/01/234/r/56/7/8/abdef/ghij
 
 **Xandr**
 
-If you are using a Xandr placement tag as a
-creative, please use this format:
+If you are using a Xandr placement tag as a creative, please use this format:
 
 ``` 
 <!-- BEGIN JS TAG - 728x90 < - DO NOT MODIFY --> <SCRIPT SRC="http://ib..com/ttj?id=1812103&cb=${CACHEBUSTER}&pubclick=${CLICK_URL_ENC}" TYPE="text/javascript"></SCRIPT>
@@ -157,8 +144,6 @@ alt=""></a></noscript>
 > [!NOTE]
 > If you need to pass an encoded URL in a DoubleClick tag, please use the `{CLICK_URL_ENC}` macro.
 
-
-
 **DoubleClick (New Ins Tag)**
 
 ``` 
@@ -176,12 +161,7 @@ alt=""></a></noscript>
 
 **DoubleVerify**
 
-DoubleVerify's tags will wrap around your adserver's tag. So, if you're
-using DoubleVerify with Atlas, the tag would look like the following
-code. Note that the Atlas tag is contained within the `this.tagsrc`
-variable. `This.altrc` should be altered to contain a clickable PSA,
-otherwise the creative will be rejected. Consult with your DoubleVerify
-rep for more information on how to implement the alternate PSA.
+DoubleVerify's tags will wrap around your adserver's tag. So, if you're using DoubleVerify with Atlas, the tag would look like the following code. Note that the Atlas tag is contained within the `this.tagsrc` variable. `This.altrc` should be altered to contain a clickable PSA, otherwise the creative will be rejected. Consult with your DoubleVerify rep for more information on how to implement the alternate PSA.
 
 ``` 
 <script language="javascript" type="text/javascript">
@@ -258,7 +238,7 @@ ftTag += '">' + ftBuildTag2 + 'script>'; document.write(ftTag);
 **Integral Ad science (formerly AdSafe)**
 
 > [!NOTE]
-> Please remember to include the IS_PREVIEW macro at the end of the [fw.adsafeprotected.com](http://fw.adsafeprotected.com/) URLs. Otherwise, the creative will not preview correctly in our Impression Bus and will be rejected in the audit process.
+> Please remember to include the IS_PREVIEW macro at the end of the [adsafeprotected](http://fw.adsafeprotected.com/) URLs. Otherwise, the creative will not preview correctly in our Impression Bus and will be rejected in the audit process.
 ``` 
 <script language="JavaScript" type="text/javascript" src="http://fw.adsafeprotected.com/rjss/at/53729/573929/CAT/jview/101010101/direct/01/${CACHEBUSTER}?click=${CLICK_URL}&adsafe_preview=${IS_PREVIEW}">
 </script><noscript><a href="${CLICK_URL}http://clk.atdmt.com/CAT/go/101010101/direct/01/" target="_blank"><img border="0" src="http://fw.adsafeprotected.com/rfw/at/53729/573930/CAT/view/101010101/direct/01/${CACHEBUSTER}?adsafe_preview=${IS_PREVIEW}" /></a></noscript>
@@ -370,7 +350,7 @@ document.write("<scr"+"ipt type='text/javascript' src='"+prHost+pr_s+"'></scr"+"
 **Project sunblock**
 
 > [!NOTE]
->  When previewing Project Sunblock tags, please ensure you deselect Serve in iFrame as this will stop the tags previewing in our UI and you will be unable to test click-tracking.
+> When previewing Project Sunblock tags, please ensure you deselect Serve in iFrame as this will stop the tags previewing in our UI and you will be unable to test click-tracking.
 
 ``` 
 <script type='text/javascript'>

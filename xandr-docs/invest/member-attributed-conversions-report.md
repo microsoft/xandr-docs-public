@@ -6,8 +6,7 @@ ms.date: 10/28/2023
 
 # Member Attributed Conversions report
 
-When a conversion pixel fires, Microsoft Advertising determines if the conversion can be attributed (tied to a creative that the user
-previously viewed or clicked). For more information about how conversion attribution works, see [Conversion Attribution](conversion-attribution.md).
+When a conversion pixel fires, Microsoft Advertising determines if the conversion can be attributed (tied to a creative that the user previously viewed or clicked). For more information about how conversion attribution works, see [Conversion Attribution](conversion-attribution.md).
 
 The Member Attributed Conversions Report lets you see conversion pixel IDs, order IDs, when clicks or impressions were attributed, and other information related to attributed conversions for a member.
 

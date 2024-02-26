@@ -6,8 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Deal lists
 
-A deal is an agreement between a buyer and a seller that provides special access to inventory and/or data. Deals are primarily used to
-access preferred premium inventory or negotiated inventory. A deal list is a group of deals IDs categorized under a single heading for targeting across line items. Deal lists allow inventory specialists to curate deals inventory for traders as well as to streamline trader workflows, such as targeting the same set of deals across line items. If deal grouping requirements change, you can make the changes in the deal list and all line items will be updated accordingly.
+A deal is an agreement between a buyer and a seller that provides special access to inventory and/or data. Deals are primarily used to access preferred premium inventory or negotiated inventory. A deal list is a group of deals IDs categorized under a single heading for targeting across line items. Deal lists allow inventory specialists to curate deals inventory for traders as well as to streamline trader workflows, such as targeting the same set of deals across line items. If deal grouping requirements change, you can make the changes in the deal list and all line items will be updated accordingly.
 
 ## Manage deal lists
 

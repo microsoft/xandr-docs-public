@@ -1,6 +1,6 @@
 ---
 title: Create a Custom Profile
-description: The article helps you to create a custom profile.
+description: Create a unique Ad Quality Profile for a publisher, either from scratch or based on a template. Future template changes won't affect the Custom Profile.
 ms.date: 10/28/2023
 ---
 
@@ -17,8 +17,7 @@ In the rule editing dialog that appears, under **Profile Kind**, click **Custom*
 
 Click **Save** to update your settings.
 
-After saving, you'll return to the Publisher
-Ad Quality screen. Note that your currently highlighted rule is
+After saving, you'll return to the Publisher **Ad Quality** screen. Note that your currently highlighted rule is
 now marked as "Custom".
 
 ## Step 2. Determine which creatives are eligible to serve on your inventory
@@ -48,8 +47,7 @@ You can manage bidders and individual bidder seats that serve on your inventory 
 The bidders and their seats are mapped to the existing buyer IDs, and all trust settings are inherited by both. Updating trust settings to either one of the sections (Buyers or Bidders) will update trust settings for the same bidder or seat in both sections.
 
 > [!NOTE]
-> Updating the trust level for Bidders will apply the same trust level to all Seats. However, Bidder trust can be overridden by updating Seat-level trust settings from
-> Use Bidder to another trust level.
+> Updating the trust level for Bidders will apply the same trust level to all Seats. However, Bidder trust can be overridden by updating Seat-level trust settings from Use Bidder to another trust level.
 
 The default trust setting for Bidders is inherited from the Buyers section and any adjustments to the trust settings should be made in the Buyer’s section. To know more about Buyer Seat IDs, see: [Understanding Buyer Seat IDs](understanding-buyer-seat-ids.md).
 
@@ -101,7 +99,7 @@ Your inventory may interest users who speak certain languages; you can choose to
 - **Banned**: The creative will not serve.
 - **Default**: Reuse the default settings (i.e., mark as **Eligible**).
 
-### Ad Servers
+### Ad servers
 
 You can choose to serve only those creatives that are hosted on a specific set of ad server domains. All ad servers are eligible by default. If you want to allow or ban creatives based on the ad server called by that creative, click **Edit** under **Ad Servers**. This will take you to the **Ad Server** screen. See [Ad Server Settings](ad-server-settings.md) for information on using the **Ad Server** screen to create collections of eligible or banned ad servers.
 
@@ -112,8 +110,7 @@ You can apply per-user frequency caps to particular creatives based on one or bo
 - **Sensitive Categories**: The creative may belong to a sensitive category such as "Dating" or "Politics".
 - **Technical Attributes**: The creative may have undesirable technical attributes, such as whether it plays audio.
 
-By default frequency caps are turned off, in which case you'll see **No limit per user** in the upper right corner of the section. To change this, click
-**No limit per user**. (If frequency caps have already been set, this area will show the frequency, such as **2 imps per day**, rather than **No limit per user**.) This will expand an area where you can set the frequency caps for the attributes and categories to which they're applied.
+By default frequency caps are turned off, in which case you'll see **No limit per user** in the upper right corner of the section. To change this, click **No limit per user**. (If frequency caps have already been set, this area will show the frequency, such as **2 imps per day**, rather than **No limit per user**.) This will expand an area where you can set the frequency caps for the attributes and categories to which they're applied.
 
 For more information on frequency caps, see [Frequency and Recency Caps](frequency-and-recency-caps.md).
 

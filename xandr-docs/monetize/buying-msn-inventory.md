@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Buying MSN Inventory
-description: The article discusses the process and considerations involved in purchasing MSN (Microsoft Network) inventory.
+description: Explore the process and considerations involved in purchasing MSN (Microsoft Network) inventory.
 ms.date: 10/28/2023
 ---
 

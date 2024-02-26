@@ -9,8 +9,7 @@ ms.date: 10/28/2023
 
 Native video gives publishers the ability to render ads on their site from within their preferred video player. A video file is delivered to the publisher, who then has control over how and where that ad is played.
 
-Working with native video is similar to working with any other type of native creative in that the publisher is responsible for correctly
-inserting the content provided by the bidder onto the site. However, in place of the creative, a native bid response will contain a string that has the full XML VAST for the video.
+Working with native video is similar to working with any other type of native creative in that the publisher is responsible for correctly inserting the content provided by the bidder onto the site. However, in place of the creative, a native bid response will contain a string that has the full XML VAST for the video.
 
 ## AST implementation
 

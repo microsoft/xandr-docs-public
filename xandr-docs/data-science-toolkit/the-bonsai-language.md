@@ -22,9 +22,9 @@ custom model being used. For example, if you used a [Custom Model](./custom-mode
 
 Every `if` must have a matching `else`. There can be 0 or more `elif` expressions between the `if` and the matching `else`.
 
-**Example:**
+#### Example
 
-```pre
+```
 if country = "US":
         1
 elif user_hour range (8, 12):
@@ -61,9 +61,9 @@ Some things to note about `switch` expressions:
 - A case can lead to a leaf or to another expression.
 - A `switch` expression must conclude with a `default` case. This ensures that every leaf of the tree has a value.
 
-**Example:**
+#### Example
 
-```pre
+```
 switch user_hour: 
     case (1 .. 3): 
         0.4 
@@ -100,7 +100,7 @@ When you use the `any` condition in an `if` or `elif` statement, the comma separ
 
 In this example, if hour is present OR country is present OR and it is Sunday, Monday, or Tuesday, the `1` leaf will be evaluated:
 
-```pre
+```
 if any user_hour present, country present, user_day < 4:
         1
 else:
@@ -122,7 +122,7 @@ A central syntactic element of Bonsai is the **feature**. A feature is composed
 
 In the example below, the feature keyword is `user_day`, and its valid values are integers between `0`-`6`, where `0` is Sunday and `6` is Saturday.
 
-```pre
+```
 if user_day < 6:
         1
 else:
@@ -131,14 +131,14 @@ else:
 
 When you use an invalid value for a feature keyword, the API will return an error informing you of the exact location and nature of the problem in your decision tree:
 
-```pre
+```
 if user_day < 100:
         1
 else:
         2
 ```
 
-```pre
+```
 ERROR: Invalid value on line 1 at position 13; user_day must be between 0 and 6
 ```
 
@@ -156,11 +156,11 @@ For a full list of available features and their valid values, see [Bonsai Featur
 
 ## Operators
 
-**Presence/Absence**
+### Presence/Absence
 
 The `present` and `absent` operators are used to test for feature presence/absence:
 
-```pre
+```
 if country present:
         2
 else:
@@ -181,7 +181,7 @@ The following comparison operators are supported.
 | `<=` | Less than or equal to (can be used with integers only) |
 | `>=` | Greater than or equal to (can be used with integers only) |
 
-```pre
+```
 if country = "US":
         2
 else:
@@ -192,7 +192,7 @@ else:
 
 The `in` operator is used to test whether a feature value matches any value in a list of possible values. Note that the list must be wrapped in parentheses.
 
-```pre
+```
 if country in ("US", "MX", "CA"):
         2
 else:
@@ -206,7 +206,7 @@ The `range` operator is used to test a feature value for membership in an inclu
 - This operator can be used with integer values only. 
 - The integer range must be wrapped in parentheses.
 
-  ```pre
+  ```
   if user_hour range (1, 12):
           1
   else:
@@ -222,7 +222,7 @@ The example above would test if the hour is anywhere between 1 am and 12 pm in t
 
 The `not` keyword is used to negate a condition.
 
-```pre
+```
 if not country present:
         1
 else:
@@ -239,10 +239,9 @@ Every tree branch leads to a leaf value.
 - For custom models with the `"bid_modifier"` `model_output`:
   - Each leaf is a multiplier to be applied to a Xandr optimization-derived CPM bid.
 
-In the `"bid"` `model_output` example below, when used in a in USD, the leaves result in bid values of
-$1.00 CPM and $0.25 CPM.
+In the `"bid"` `model_output` example below, when used in a in USD, the leaves result in bid values of $1.00 CPM and $0.25 CPM.
 
-```pre
+```
 if not country present:
         1
 else:
@@ -264,7 +263,7 @@ Smart leaves dynamically modify bids based on a number of estimated ad performan
 
 In the example below, the bid price is the estimated average price multiplied by 1.5 and offset by $0.03, with a minimum value of $1 and a maximum value of $5:
 
-```pre
+```
 if country = "US":
         leaf_name: "10000"
         value: compute(estimated_average_price, 1.50, 0.03, 1.00, 5.00)
@@ -290,7 +289,7 @@ Comments make your code easier to understand. When you look back at your code or
 
   **Valid comment**
 
-  ```pre
+  ```
   # Evaluate if hour is between 1am and 12pm in the user's time zone. If so, bid $1.00. If not, bid $0.20.
   if user_hour range (1, 12):
           1
@@ -300,7 +299,7 @@ Comments make your code easier to understand. When you look back at your code or
 
   **Valid comment**
 
-  ```pre
+  ```
   # Evaluate if hour is between 1am and 12pm in the user's time zone. 
   # If so, bid $1.00. If not, bid $0.20.
   if user_hour range (1, 12):
@@ -311,7 +310,7 @@ Comments make your code easier to understand. When you look back at your code or
 
   **Invalid comment**
 
-  ```pre
+  ```
   if user_hour range (1, 12): # Evaluate if hour is between 1am and 12pm in the user's time zone. if so, bid $1.00. If not, bid $0.20.
           1
   else:
@@ -320,11 +319,11 @@ Comments make your code easier to understand. When you look back at your code or
 
 ## Full grammar
 
-This full grammar is in [Backus-Naur Form](https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form) notation.
+This full grammar is in Backus-Naur Form notation.
 
-**Expand source**
+### Expand source
 
-```pre
+```
 expression : ifExpression
         | switchExpression
         | leaf

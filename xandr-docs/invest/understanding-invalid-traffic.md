@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Understanding Invalid Traffic
-description: In this article, learn the process of submitting claims and simplifying refunds for buyers (excluding bidders) who have purchased invalid traffic.
+description: Learn the process of submitting claims and simplifying refunds for buyers (excluding bidders) who have purchased invalid traffic.
 ms.date: 10/28/2023
 ---
 
@@ -30,8 +30,7 @@ On receipt of the a buyer's report, Client Finance takes the following steps:
 
 ## Seller adjustments and disputes
 
-Adjustments related to invalid traffic will be quoted on the Seller Remittance Statement, which is sent to the seller when the associated
-revenue payment is released to them based on the contractual payment terms.
+Adjustments related to invalid traffic will be quoted on the Seller Remittance Statement, which is sent to the seller when the associated revenue payment is released to them based on the contractual payment terms.
 
 To obtain information on invalid traffic adjustment amounts sooner, the seller can submit a Client Finance case or email [billing@xandr.com](mailto:billing@xandr.com) after the 15th of the month following the activity period in question.
 

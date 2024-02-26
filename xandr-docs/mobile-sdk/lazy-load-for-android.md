@@ -7,16 +7,13 @@ ms.date : 10/28/2023
 
 # Lazy Load for Android
 
-The Lazy Load feature provides a new API call to manage when all trackers are fired, including third-party trackers and Mobile SDK trackers. It also optimizes the Banner AdUnit by allowing the host app to load its webview only when it is needed and just before it is
-needed. When this feature is enabled, the traditional **loadAd** method is followed later by a second method, **loadLazyAd**.  
+The Lazy Load feature provides a new API call to manage when all trackers are fired, including third-party trackers and Mobile SDK trackers. It also optimizes the Banner AdUnit by allowing the host app to load its webview only when it is needed and just before it is needed. When this feature is enabled, the traditional **loadAd** method is followed later by a second method, **loadLazyAd**.  
 
 ## Firing trackers
 
 The Lazy Load feature is developed to fire all Mobile SDK and third-party trackers at the same instance, ensuring an alignment between both the metrics can be maintained.
 
-The high-level lifecycle of an AdUnit consists of two stages as **load** and **display**. This feature divides the **load** stage
-into two further steps as **loadAd** and **loadLazyAd**, followed by **display** stage. Having said that, a banner webview can be attached
-to the **display**, even before **loadAd** is called. However, the **display** stage is a convenience provided by the platform and is separate from the **load** portion of the AdUnit lifecycle.  
+The high-level lifecycle of an AdUnit consists of two stages as **load** and **display**. This feature divides the **load** stage into two further steps as **loadAd** and **loadLazyAd**, followed by **display** stage. Having said that, a banner webview can be attached to the **display**, even before **loadAd** is called. However, the **display** stage is a convenience provided by the platform and is separate from the **load** portion of the AdUnit lifecycle.  
 
 The second step **loadLazyAd** in load stage accomplishes two tasks:
 
@@ -31,8 +28,7 @@ Additionally, it allows the host app to choose the optimal moment to fire tracke
 
 ## Scope of Lazy Load
 
-The scope of this feature is limited to Banner AdUnits that display banner and native assembly renderer Media Types. It does not apply to
-any other AdUnit, including instream video and native, nor does it apply to Media Types returned by a multi-format Banner AdUnit other than banner and native assembly renderer including banner-video (outstream video) and banner-native.
+The scope of this feature is limited to Banner AdUnits that display banner and native assembly renderer Media Types. It does not apply to any other AdUnit, including instream video and native, nor does it apply to Media Types returned by a multi-format Banner AdUnit other than banner and native assembly renderer including banner-video (outstream video) and banner-native.
 
 ## Properties
 
@@ -42,7 +38,7 @@ Lazy Load enhances the Mobile SDK public API with a property (a getter method) 
 |:---|:---|:---|:---|
 | `isLazyLoadEnabled` | boolean | -- | Indicates if Lazy Load feature is enabled. |
 
-``` 
+```
 public boolean isLazyLoadEnabled;  // getter
 ```
 
@@ -52,7 +48,7 @@ public boolean isLazyLoadEnabled;  // getter
 
 Setter method which enables the Lazy Load feature.
 
-``` 
+```
 public void enableLazyLoad();  // setter
 ```
 
@@ -60,7 +56,7 @@ public void enableLazyLoad();  // setter
 
 Loads the webview of a lazy loaded AdUnit and fires all trackers, including third-party and Mobile SDK trackers.  
 
-``` 
+```
 public void loadLazyAd()
 ```
 
@@ -72,13 +68,13 @@ public void loadLazyAd()
 webview. All other features of the AdUnit instance are available, including a populated instance of **ANAdResponseInfo**. If **loadAd**
 fails, then the same callbacks are used as for an AdUnit that was not lazy loaded.
 
-``` 
+```
 public void onLazyAdLoaded(AdView adView)
 ```
 
 ## Example
 
-``` 
+```
 override fun onCreate(savedInstanceState: Bundle?)
 {
         super.onCreate(savedInstanceState)

@@ -7,11 +7,9 @@ ms.date: 10/28/2023
 
 # Define ad quality rules
 
-Publishers want to ensure that advertisements served on their websites don't take away from website content or the user's experience.
-Publishers are also concerned with serving competing ads on their sites. Since upholding your publisher's ad quality standards is vital to your relationships with them, Xandr makes it easy to do so.
+Publishers want to ensure that advertisements served on their websites don't take away from website content or the user's experience. Publishers are also concerned with serving competing ads on their sites. Since upholding your publisher's ad quality standards is vital to your relationships with them, Xandr makes it easy to do so.
 
-Ad quality profiles are set at two levels: the network level, which is applied to all publishers, and the publisher level, which allows
-different settings per publisher. There are a variety of ad quality standards options that you can choose from. These are discussed in greater detail in Ad Quality Standards below.
+Ad quality profiles are set at two levels: the network level, which is applied to all publishers, and the publisher level, which allows different settings per publisher. There are a variety of ad quality standards options that you can choose from. These are discussed in greater detail in Ad Quality Standards below.
 
 For a list of our baseline platform-wide creative standards, see "Creative Standards and Auditing" in documentation. To change your ad quality profile through the API, see [Ad Profile Service](../digital-platform-api/ad-profile-service.md).
 
@@ -28,20 +26,16 @@ For a list of our baseline platform-wide creative standards, see "Creative Stand
 
 ## Advanced options: Publisher-level ad quality
 
-At the publisher level, you can apply publisher-specific ad quality profiles. You can either create a custom ad quality profile or use a
-template created at the network level.
+At the publisher level, you can apply publisher-specific ad quality profiles. You can either create a custom ad quality profile or use a template created at the network level.
 
-**Base Rule**: If you choose to create a base rule, it will be your catchall rule for that publisher in addition to the global ad quality
-profile settings. This rule will always have a priority of 1. You can create a base rule in the Publisher Manager.
+**Base Rule**: If you choose to create a base rule, it will be your catchall rule for that publisher in addition to the global ad quality profile settings. This rule will always have a priority of 1. You can create a base rule in the Publisher Manager.
 
-**Conditional Rule**: Conditional Rules are ad quality profiles that have targeting settings and priorities. You can target based on
-geography, session frequency, sizes and placements. In order to create conditional rules you must go to the Ad Quality tab in the Publisher Tab.
+**Conditional Rule**: Conditional Rules are ad quality profiles that have targeting settings and priorities. You can target based on geography, session frequency, sizes and placements. In order to create conditional rules you must go to the Ad Quality tab in the Publisher Tab.
 
 > [!TIP]
 > When you work with publisher ad quality profiles, you have the option to create a Base Rule as a catchall rule and conditional ad quality rules that have targeting and priority settings. Only one publisher ad quality rule will be applied at any given time.  
 >
-> Here's an example of how it works: You have a relationship with FancyCrackers.com and they have different ad quality standards based on
-> the country the impression is served in. You can create different conditional rules based on the geography of the impression.
+> Here's an example of how it works: You have a relationship with FancyCrackers.com and they have different ad quality standards based on the country the impression is served in. You can create different conditional rules based on the geography of the impression.
 
 ### Publisher ad quality standards options
 

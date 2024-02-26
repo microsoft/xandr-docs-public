@@ -1,13 +1,12 @@
 ---
 title: Microsoft Monetize - Buying Spotify Audio Inventory
-description: This article details Spotify Audio, covering creative specs, setting up campaigns, targeting Spotify audio inventory, available supply info, data in deals, and reporting options.
+description: Explore Spotify Audio, grasp creative specs, campaign setup, target inventory, access supply info, leverage data, and utilize reporting options.
 ms.date: 10/28/2023
 ---
 
 # Microsoft Monetize - Buying spotify audio inventory
 
-This page provides specific information for **Spotify Audio** which includes, creative specifications, setting up a line item or campaign to target **Spotify** audio inventory,
-information regarding the available supply, what data is available through deals and reporting options.
+This page provides specific information for **Spotify Audio** which includes, creative specifications, setting up a line item or campaign to target **Spotify** audio inventory, information regarding the available supply, what data is available through deals and reporting options.
 
 ## Creative specifications
 
@@ -38,8 +37,7 @@ The following are the specifications of available Spotify Microsoft Advertising 
 
 ## Deals data
 
-All deals have data protection (User IDs not available in reporting and no segments are allowed to be attached to a creative on view or click).
-Buyer segment targeting will still function properly.
+All deals have data protection (User IDs not available in reporting and no segments are allowed to be attached to a creative on view or click). Buyer segment targeting will still function properly.
 
 The following categories are available via deals:
 

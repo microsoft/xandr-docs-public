@@ -8,12 +8,9 @@ ms.date: 10/28/2023
 
 ## Microsoft Curate client overview
 
-Microsoft Curate enables curators like retailers, data companies, independent trading desks, and other media companies to use their proprietary assets to enhance the value of a seller’s inventory and create unique offerings for buyers. These proprietary assets can include audience data, preferred inventory access, specially negotiated rates with sellers, optimization capabilities, investment
-strategy, and other features. Curated deals can be bought via Microsoft's Invest and all major DSPs.
+Microsoft Curate enables curators like retailers, data companies, independent trading desks, and other media companies to use their proprietary assets to enhance the value of a seller’s inventory and create unique offerings for buyers. These proprietary assets can include audience data, preferred inventory access, specially negotiated rates with sellers, optimization capabilities, investment strategy, and other features. Curated deals can be bought via Microsoft's Invest and all major DSPs.
 
-In addition, for buyers who execute a large volume of campaigns and need to manage their media investment, Microsoft Curate’s
-deal curation technology offers a single platform to easily centralize their business rules and targeting configurations across DSPs to
-simplify campaign execution. Using Microsoft Curate, buyers could act as curators to create deals that reflect their decisions about segments, supply types, inventory lists, margin percentage, optimization, and so on.
+In addition, for buyers who execute a large volume of campaigns and need to manage their media investment, Microsoft Curate’s deal curation technology offers a single platform to easily centralize their business rules and targeting configurations across DSPs to simplify campaign execution. Using Microsoft Curate, buyers could act as curators to create deals that reflect their decisions about segments, supply types, inventory lists, margin percentage, optimization, and so on.
 
 ## Common questions
 

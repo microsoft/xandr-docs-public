@@ -29,7 +29,7 @@ Not all impressions are successfully measured, because of one, or more of the fo
 | Viewability Measurement Rate | The percentage of impressions measured for viewability out of the total number of impressions. (View Measured Imps / Imps) |
 
 > [!NOTE]
-> The Microsoft Advertising measured viewability rate should not be directly compared to other measurement vendors, due to differences in what, where and how impressions were served.
+> The Microsoft Advertising measured viewability rate should not be directly compared to other measurement vendors, due to differences in what, where, and how impressions were served.
 
 ### Viewability metrics
 

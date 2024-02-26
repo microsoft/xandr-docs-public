@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Conversion Pixels Advanced
-description: The article defines advanced options in conversion pixels.
+description: Define advanced options for conversion pixels, including creation and export details. Explore available advanced features.
 ms.date: 10/28/2023
 ---
 
@@ -13,8 +13,7 @@ When creating and exporting conversion pixels, there are some advanced options a
 
 ## Use secure pixels
 
-The UI allows you to create secure pixels, which should be used on HTTPS webpages. You can choose secure pixels as an option in Monetize when you export a pixel. Or
-you can convert a pixel manually by making two changes:
+The UI allows you to create secure pixels, which should be used on HTTPS webpages. You can choose secure pixels as an option in Monetize when you export a pixel. Or you can convert a pixel manually by making two changes:
 
 1. Replace "http" with "https".
 1. The sub-domain should be "ib.adnxs.com".
@@ -37,7 +36,7 @@ This pixel adds the user to two segments, and removes them from one:
 > There are two ways to add a user to a segment after a conversion:
 >
 > 1. Add a user at the same time the conversion pixel is fired.
-> 1. Add a Segment pixel as a piggyback to the conversion pixel. 
+> 1. Add a Segment pixel as a piggyback to the conversion pixel.
 >
 > It is preferable to use the first scenario, keeping the conversion and segment pixel as one call, over having the segment be a piggy back. There are several reasons for this. First only one call, rather then two, is made as the page loads reducing latency. Second if the user clicks away from the page before it fully loads it is possible for the conversion pixel to fire but not the piggybacked segment causing a mismatch. If you use the first scenario, you will not have a mismatch
 > assuming you are not adding users to the segment some place else.
@@ -46,8 +45,7 @@ This pixel adds the user to two segments, and removes them from one:
 
 ### Order ID/SKU: order_id
 
-You can pass in an order ID or SKU in your pixel and then see this data in conversion reporting. For example, the user sees a ProStarr Sportswear ad, clicks on it, and orders a t-shirt with SKU 124252334. The advertiser populates the pixel with order_id=124252334, which then flows into the reporting tables. You can put letters and numbers in an
-order ID and there is a 36 character limit.
+You can pass in an order ID or SKU in your pixel and then see this data in conversion reporting. For example, the user sees a ProStarr Sportswear ad, clicks on it, and orders a t-shirt with SKU 124252334. The advertiser populates the pixel with order_id=124252334, which then flows into the reporting tables. You can put letters and numbers in an order ID and there is a 36 character limit.
 
 You can report on this data using the [Advertiser Attributed Conversions Report](advertiser-attributed-conversions-report.md) or the [Log-Level Data Feeds](../log-level-data/log-level-data-feeds.md) if you subscribe to our Log-Level Data.
 
@@ -57,8 +55,7 @@ You can report on this data using the [Advertiser Attributed Conversions Report]
 
 ## Dynamic revenue values: value
 
-You can pass in dynamic revenue values which will show up in reporting as post-click and post-view revenue. This is most often used to pass in the advertiser's revenue and keep it separate from the network's revenue. To see these dynamic values in reporting, select "PC/PV Revenue" as a **dimension** on your Attributed Conversions report, or
-select "Post View Revenue" and "Post Click Revenue" as **metrics** in your Analytics Report. Note that the "Revenue" metric in Analytics reports will not be affected by dynamic revenue values - it is static and pulled from the Post-view revenue and Post-click revenue values entered at the Line Item level. Note that for a CPA line item or campaign, we cannot optimize to a moving target, so we will optimize to the static value entered at the line item level.
+You can pass in dynamic revenue values which will show up in reporting as post-click and post-view revenue. This is most often used to pass in the advertiser's revenue and keep it separate from the network's revenue. To see these dynamic values in reporting, select "PC/PV Revenue" as a **dimension** on your Attributed Conversions report, or select "Post View Revenue" and "Post Click Revenue" as **metrics** in your Analytics Report. Note that the "Revenue" metric in Analytics reports will not be affected by dynamic revenue values - it is static and pulled from the Post-view revenue and Post-click revenue values entered at the Line Item level. Note that for a CPA line item or campaign, we cannot optimize to a moving target, so we will optimize to the static value entered at the line item level.
 
 ```
 <img src="media/px?id=1&value=[REVENUE]&t=2" width="1" height="1" /> 
@@ -69,8 +66,7 @@ select "Post View Revenue" and "Post Click Revenue" as **metrics** in your Analy
 
 ## Redirect URL/piggybacking: redir
 
-You can piggyback off the Microsoft Advertising conversion pixel and notify your internal or third-party server about conversion events. When you create a conversion pixel in Monetize,
-you can input the URL of your pixel and mark it as image or JavaScript. Please note that following restrictions:
+You can piggyback off the Microsoft Advertising conversion pixel and notify your internal or third-party server about conversion events. When you create a conversion pixel in Monetize, you can input the URL of your pixel and mark it as image or JavaScript. Please note that following restrictions:
 
 - Image pixels can only piggyback off other other image pixels, and JavaScript pixels can only piggyback other JavaScript pixels.
 

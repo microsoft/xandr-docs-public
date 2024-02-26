@@ -11,7 +11,7 @@ This page has instructions on how to control the alignment of banner ads.
 
 Use the `ANBannerViewAdAlignment` property of banner ad views to override the alignment of the ad unit within the banner ad view:
 
-``` 
+```
 banner.alignment = ANBannerViewAdAlignmentBottomCenter;
 ```
 

@@ -9,9 +9,7 @@ ms.date: 10/28/2023
 > [!IMPORTANT]
 > This report is only available to curators.
 
-The **Curator Segment Performance Report** provides curators insights into how their targeted segments are contributing to the overall
-performance of their curated deals. The report provides data on all targeted segments (includes and excludes) that contributed towards
-transacted impressions. For curators, this includes all curated deal activity.
+The **Curator Segment Performance Report** provides curators insights into how their targeted segments are contributing to the overall performance of their curated deals. The report provides data on all targeted segments (includes and excludes) that contributed towards transacted impressions. For curators, this includes all curated deal activity.
 
 ## Time frame
 

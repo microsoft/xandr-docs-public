@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Additional Geo Restrictions
-description: In this article, learn about the geographic targeting restrictions for impressions that the users are viewing. These restrictions help in customizing content delivery. 
+description: Learn about the geographic targeting restrictions for impressions that the users are viewing; these restrictions help in customizing content delivery.
 ms.date: 10/28/2023
 ---
 
@@ -21,14 +21,11 @@ To restrict the impressions you target based on other geographic details of the 
 > [!NOTE]
 > If you have not targeted at least one country on your line item, you will be required to target a region, city, metro code, or postal code.
 
-For third-party buying, geographic targeting is limited by any existing country settings in your Third-Party Buying Filters at the network
-level. If countries are included in your Third-Party Buying Filters, only those countries and the regions and cities within them will be
-available for targeting. If you target (include) geographies at the Region, City, Metro Code, or Postal Code level, Microsoft Advertising will use these settings to derive the country target to be compared with your Third-Party Buying filters.
+For third-party buying, geographic targeting is limited by any existing country settings in your Third-Party Buying Filters at the network level. If countries are included in your Third-Party Buying Filters, only those countries and the regions and cities within them will be available for targeting. If you target (include) geographies at the Region, City, Metro Code, or Postal Code level, Microsoft Advertising will use these settings to derive the country target to be compared with your Third-Party Buying filters.
 
 ## Restrict users by country, region, or city
 
-When creating ALIs, you will be required to include at least one geographic location. You can either chose to target an entire
-country, or use the **Additional Geo Restrictions** section within **Audience and location targeting** to include/exclude specific regions, or cities.
+When creating ALIs, you will be required to include at least one geographic location. You can either chose to target an entire country, or use the **Additional Geo Restrictions** section within **Audience and location targeting** to include/exclude specific regions, or cities.
 
 - The **Countries** list shows all of the countries that can be targeted. You can include countries or drill into a country to see its regions/states.
 - The **Regions** list is more granular than countries. Generally speaking, regions are based upon whatever method the country in question uses to divide itself into parts. For example, regions within the United States are states. Canada is divided into its provinces, and India is divided into its states and union territories. The **Regions** list shows all of the regions/states that can be targeted. You can either include or exclude regions/states or drill into a region/state to view its cities. When you exclude a region, its cities are not available for further inclusion or exclusion.
@@ -67,8 +64,7 @@ The countries that support metro code targeting are:
 On the **Postal Code** tab, once you select a country, you can include up to 4,000 postal codes using a comma-separated or line-separated list. Postal codes can be alphanumeric strings of up to 14 characters and can contain a space or hyphen. Unlike other types of geographic targeting, postal codes may only be included (not excluded).
 
 > [!NOTE]
-> Certain legitimate ZIP or postal codes are unrecognizable or invalid within the Microsoft Advertising geography targeting system. This can happen because [Digital Envoy](https://www.digitalelement.com/), a Microsoft Advertising partner that handles geolocation data, can't recognize a ZIP or postal
-code's existence until an IP address (user) has been associated with it. Postal codes that don't exist in the system often represent obscure or otherwise small geographical zones with minimal internet activity.
+> Certain legitimate ZIP or postal codes are unrecognizable or invalid within the Microsoft Advertising geography targeting system. This can happen because [Digital Envoy](https://www.digitalelement.com/), a Microsoft Advertising partner that handles geolocation data, can't recognize a ZIP or postal code's existence until an IP address (user) has been associated with it. Postal codes that don't exist in the system often represent obscure or otherwise small geographical zones with minimal internet activity.
 
 As a guide to how postal codes should be formatted for each country, consult the list below.
 
@@ -123,8 +119,7 @@ If your list contains postal/zip codes that don't exist in the Microsoft Adverti
 
 You can include and exclude postal code lists and individual postal codes from targeting on a line item.
 
-To target specific postal code lists available to you, click on the **Postal Codes** section within **Additional Geo Restrictions**, and
-then use the **Postal Code List** tab. You can search for available postal code lists by ID or name, and then click the **green check** to include a list or the **red dash** to exclude a list. For the United States, you can target the full 9-digit postal code (also known as zip +4). For example, 10010-7456.
+To target specific postal code lists available to you, click on the **Postal Codes** section within **Additional Geo Restrictions**, and then use the **Postal Code List** tab. You can search for available postal code lists by ID or name, and then click the **green check** to include a list or the **red dash** to exclude a list. For the United States, you can target the full 9-digit postal code (also known as zip +4). For example, 10010-7456.
 
 ## Restrict users by political districts
 
