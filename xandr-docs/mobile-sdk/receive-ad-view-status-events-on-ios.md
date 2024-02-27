@@ -2,7 +2,7 @@
 title: Receive Ad View Status Events on iOS
 description: Learn how to receive ad view status events from the SDK using the ANAdDelegate protocol.
 ms.custom: ios-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
 ---
 
 # Receive ad view status events on iOS
@@ -18,9 +18,9 @@ In order to receive status events during the life cycle of the ad view, you must
 - `(void)adWasClicked:(id)ad withURL:(NSString *)urlString`: Sent when the ad is clicked by the user and allows you to determine how the value of the `click_url` string in the bid response will be handled.
 - `(void)adWillClose:(id)ad`: Sent when the ad view is about to close.
 - `(void)adDidClose:(id)ad`: Sent when the ad view has finished closing.
-- `(void)adWillPresent:(id)ad`: Sent when the ad is clicked, and the SDK is about to open inside the in-SDK browser (a WebView). If you would prefer that ad clicks open the native browser instead, set `opensInNativeBrowser` to true.
+- `(void)adWillPresent:(id)ad`: Sent when the ad is clicked, and the SDK is about to open inside the in-SDK browser (a WebView). If you would prefer that ad clicks open the native browser instead, set `opensInNativeBrowser` to `true`.
 - `(void)adDidPresent:(id)ad`: Sent when the ad has finished being viewed using the in-SDK browser.
-- `(void)adWillLeaveApplication:(id)ad`: Sent when the ad is about to leave the app; this can happen if you have `opensInNativeBrowser` set to true, for example.
+- `(void)adWillLeaveApplication:(id)ad`: Sent when the ad is about to leave the app; this can happen if you have `opensInNativeBrowser` set to `true`, for example.
 - `(void)adDidLogImpression:(nonnull id)ad`: Sent when an ad impression is observed during a banner or interstitial ad event.
 
 The example below implements this protocol:

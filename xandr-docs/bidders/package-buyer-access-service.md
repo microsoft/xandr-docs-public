@@ -6,8 +6,7 @@ ms.date: 10/28/2023
 
 # Bidders - Package buyer access service
 
-This read-only service lets buyers view information about sellers' packages. A package is a deal that a seller is prepared to offer to any
-buyer. Buyers browse through available packages and then use the [Deal From Package Service](../digital-platform-api/deal-from-package-service.md) to generate deals for themselves.
+This read-only service lets buyers view information about sellers' packages. A package is a deal that a seller is prepared to offer to any buyer. Buyers browse through available packages and then use the [Deal From Package Service](../digital-platform-api/deal-from-package-service.md) to generate deals for themselves.
 
 ## REST API
 

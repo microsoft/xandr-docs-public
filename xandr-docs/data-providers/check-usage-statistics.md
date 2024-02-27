@@ -1,6 +1,6 @@
 ---
 title: Data Providers - Check Usage Statistics
-description: Learn about Usage Statistics in this page. 
+description: The statistics are deduplicated per request made to the service. This page explains about the fields that can be set in the query string when making a call to the API to retrieve statistics.
 ms.custom: data-providers
 ms.date: 11/30/2023
 ---
@@ -13,30 +13,18 @@ ms.date: 11/30/2023
 
 ## REST API call
 
-When making a call to the API to retrieve statistics, the following
-fields can be set in the query string:
+When making a call to the API to retrieve statistics, the following fields can be set in the query string:
 
 - `agg` can be omitted in order to obtain an hourly/detailed report.
 - `agg=true` can be used to obtain an aggregated report.
-- `start` date should be set in the following
-  format: `2015-11-01+01:00:00.`
-- `end` date should be set in the following
-  format: `2015-12-01+01:00:00.` 
+- `start` date should be set in the following format: `2015-11-01+01:00:00.`
+- `end` date should be set in the following format: `2015-12-01+01:00:00.`
   
   ``` 
   curl -H "Authorization: hbapi:123456:9876abcd54321:nym2" -X GET "https://streaming-data.appnexus.com/rt-segment-processed?member_id=100&start=2014-05-22+00:00:00&end=2014-05-22+01:00:00"
   ```
 
-The statistics are deduplicated per request made to the service. For
-example, if the same user is added to the same segment in three
-different requests, `num_valid_adds` and `num_valid_users` would show
-"3". When using `agg=true`, there will be one entry in the report
-property of the response. It will be an aggregation of all usage
-statistics in the date range that's specified.
-`error_log_lines` and `segment_log_lines` will be empty, and the
-processed hour will be for the last hour in the date range that's
-specified. However, if no date range is specified, the report will show
-the data from the last two weeks.
+The statistics are deduplicated per request made to the service. For example, if the same user is added to the same segment in three different requests, `num_valid_adds` and `num_valid_users` would show "3". When using `agg=true`, there will be one entry in the report property of the response. It will be an aggregation of all usage statistics in the date range that's specified. `error_log_lines` and `segment_log_lines` will be empty, and the processed hour will be for the last hour in the date range that's specified. However, if no date range is specified, the report will show the data from the last two weeks.
 
 **Ex: Aggregated usage report**
 
@@ -114,9 +102,9 @@ Valid removals (user id, segment id, expiration): (1580557697843484206, 3737552,
 ## Report object JSON (for objects in report array)
 
 | Field name | Description | Example value |
-|---|---|---|
+|--|--|--|
 | `error_log_lines` | An updating 200 line sample of the errors that prevented the user and segment associations from being successful. | `"Inactive users: 15805576978434842 Inactive segments (id, code, segment owner member id): (321456, 'segment_312456', 123) Invalid segments (id, code, segment owner member id): (0, 'segment_654321', 123) Unauthorized segments (id, code, segment owner member id): (0, 'segment_123456', 123)"` |
-| `match_rate` | The percentage of valid users uploaded (num_valid_users/(num_valid_users+num_invalid_users)). |  75.00 |
+| `match_rate` | The percentage of valid users uploaded (num_valid_users/(num_valid_users+num_invalid_users)). | 75.00 |
 | `num_inactive_segments` | Total number of associations that failed due to attempting to access inactive segments. | 200 |
 | `num_invalid_segments` | Total number of associations that failed due to attempting to access invalid segments. | 3 |
 | `num_invalid_users` | Total number of users that were in requests, but do not exist on Xandr's platform. | 4000 |

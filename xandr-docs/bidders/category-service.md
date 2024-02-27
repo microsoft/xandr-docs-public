@@ -60,7 +60,7 @@ The read-only Category Service allows you to view all categories that are regist
 
 ### View all categories
 
-``` 
+```
 $ curl -b cookies -c cookies "https://api.adnxs.com/category"
 {
   "response": {
@@ -120,7 +120,7 @@ $ curl -b cookies -c cookies "https://api.adnxs.com/category"
 
 ### View a specific category
 
-``` 
+```
 $ curl -b cookies -c cookies "https://api.adnxs.com/category/1"
 {
   "response": {

@@ -40,8 +40,7 @@ Notifications are set up by the bidder software that provide the results of an a
 
 ### Pricing
 
-Preemptive auctions occur when the impbus is participating in a third-party auction as a bidder. The impbus runs its own auction and
-passes the winning bid along to the third-party auction. The seller does not automatically display content for the winning bid because this winning bid is not guaranteed to win the final auction.
+Preemptive auctions occur when the impbus is participating in a third-party auction as a bidder. The impbus runs its own auction and passes the winning bid along to the third-party auction. The seller does not automatically display content for the winning bid because this winning bid is not guaranteed to win the final auction.
 
 | Name | Definition |
 |:---|:---|

@@ -1,6 +1,6 @@
 ---
 title: TinyTags
-description: Learn how TinyTags work in this page. 
+description: This page provides an overview on the working of TinyTags. Learn about various sample tags through which TinyTags are called.
 ms.date: 11/28/2023
 ---
 
@@ -10,7 +10,7 @@ This page provides an overview of how TinyTags (tt) work. For more details, see 
 
 ## Overview
 
-A publisher creates a TinyTag ID via the TinyTag Service or with Xandr assistance. The TinyTag ID can either be used to create an ad tag which is placed on an inventory page, or simply stored server side and referenced during ad calls. The most basic form of a TinyTag is: [https://ib.adnexus.com/tt?id=123](https://ib.adnexus.com/tt?id=123) where "123" is the TinyTag ID.
+A publisher creates a TinyTag ID via the TinyTag Service or with Xandr assistance. The TinyTag ID can either be used to create an ad tag which is placed on an inventory page, or simply stored server side and referenced during ad calls. The most basic form of a TinyTag is: `https://ib.adnexus.com/tt?id=123` where "123" is the TinyTag ID.
 
 When an inventory page loads, the ad call pings Xandr's impression bus. If necessary, the impression bus references the server-side TinyTag ID. It then looks up any information associated with the tag, such as minimum acceptable reserve price and a reserve creative. The impression bus sends bidders the appropriate user and webpage information from the tag and asks for their bids in 1/20th of a second (50 ms).
 

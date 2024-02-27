@@ -6,8 +6,7 @@ ms.date: 10/28/2023
 
 # Bidder Platform Buyer report
 
-The Bidder Platform Buyer Report provides granular transaction information to buyers (down to the tag level). For instructions on
-retrieving this report, see the [Example](#example) below.
+The Bidder Platform Buyer Report provides granular transaction information to buyers (down to the tag level). For instructions on retrieving this report, see the [Example](#example) below.
 
 > [!TIP]
 > Need more than 90 days of data?
@@ -96,7 +95,7 @@ The `report_interval` field in the JSON request can be set to one of the followi
 
 The JSON file should include the `report_type` `bidder_platform_buyer`, as well as the `columns` (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter specific dimensions, define granularity (year, month, day), and specify the format in which the data should be returned (csv, excel, or html). For a full explanation of fields that can be included in the JSON file, see the [Report Service](report-service.md).
 
-``` 
+```
 $ cat report
 {
     "report": {
@@ -121,13 +120,13 @@ $ cat report
 > [!NOTE]
 > To order by day, insert this object into your JSON file after the "columns" array:
 >
-> ``` 
+> ```
 > "orders": ["day"]
 > ```
 
 ### `POST` the request to the reporting service
 
-``` 
+```
 $ curl -b cookies -c cookies -X POST -d @report 'https://api.adnxs.com/report'
 {
   "response": {
@@ -141,7 +140,7 @@ $ curl -b cookies -c cookies -X POST -d @report 'https://api.adnxs.com/report'
 
 Make a `GET` call with the Report ID to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is `"ready"`. Then use the **report-download** service to save the report data to a file, as described in the next step.
 
-``` 
+```
 $ curl -b cookies -c cookies 'https://api.adnxs.com/report?id=bfe2ba2ea54a51115db942d591a7b5d9'
 {
    "response":{
@@ -163,7 +162,7 @@ To download the report data to a file, make another `GET` call with the Report I
 > [!NOTE]
 > If an error occurs during download, the response header will include an HTTP error code and message. Use {{-i}} or {{-v}} in your call to expose the response header.
 
-``` 
+```
 curl -b cookies -c cookies 'https://api.adnxs.com/report-download?id=bfe2ba2ea54a51115db942d591a7b5d9' > report.csv
 ```
 

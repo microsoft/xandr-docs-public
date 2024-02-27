@@ -20,8 +20,7 @@ This is the total number of requests that come into Xandr's platform. It is not 
 
 ### Bid requests sent
 
-This is not actually the number of requests that are sent to your bidder. It is the number of number of requests that are actually sent to
-your bidder minus the number of aborted bids. The following shows an example of an aborted bid on a given connection - since only one bid request can be out on a given connection at a time:
+This is not actually the number of requests that are sent to your bidder. It is the number of number of requests that are actually sent to your bidder minus the number of aborted bids. The following shows an example of an aborted bid on a given connection - since only one bid request can be out on a given connection at a time:
 
 Time 0 ms: bid request 1 sent to your bidder
 
@@ -39,8 +38,7 @@ Time 102: bid request 3 aborted because it timed out before the request was sent
 
 For each graph in the Metrics section, you can download a text file with the raw data.
 
-On the upper right corner of each graph, there is a button called 'Export Raw Data'. When this button is clicked, you will be prompted to
-save a file. This file will contain all the data points in the graph.
+On the upper right corner of each graph, there is a button called 'Export Raw Data'. When this button is clicked, you will be prompted to save a file. This file will contain all the data points in the graph.
 
 For example:
 

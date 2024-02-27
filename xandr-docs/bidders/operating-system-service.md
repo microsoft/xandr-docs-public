@@ -28,7 +28,7 @@ This is a read-only service that shows you the list of operating systems that yo
 
 To return a specific operating system
 
-``` 
+```
 $ curl -b cookies -c cookies  https://api.adnxs.com/operating-system/1
 {
    "response":{

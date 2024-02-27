@@ -1,8 +1,8 @@
 ---
 title: SDK Privacy for Android
-description: Mobile SDKs include client support for Global Privacy Platform, the General Data Protection Regulations, and the California Consumer Protection Act.
+description: Mobile SDKs include client support for Global Privacy Platform, General Data Protection Regulations, and the California Consumer Protection Act.
 ms.custom: android-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
 ---
 
 # SDK privacy for Android
@@ -13,22 +13,21 @@ The Global Privacy Platform (GPP) enables advertisers, publishers and technology
 
 > [!WARNING]
 > This resource should not be construed as legal advice and Xandr makes no guarantees about compliance with any law or regulation. Please note that because every company and its collection, use, and storage of personal data is different, you should also seek independent legal advice relating to obligations under European regulations, including the GDPR and the existing ePrivacy Directive. Only a lawyer can provide you with legal advice specifically tailored to your situation. Nothing in this guide is intended to provide you with, or should be used as a substitute for, legal advice tailored to your business.
+> [!NOTE]
+> - Publishers are responsible for providing notice, transparency, and choice and for collecting consent from their users in accordance with the [Framework policies](https://iabeurope.eu/transparency-consent-framework/), either using their own Consent Management Provider or working with a vendor.
+    > - [Register your own CMP](https://register.consensu.org/CMP)
+    > - [List of registered CMPs](https://iabeurope.eu/cmp-list/)
 >
-> [!NOTE]
-> Publishers are responsible for providing notice, transparency, and choice and for collecting consent from their users in accordance with the [Framework policies](https://iabeurope.eu/transparency-consent-framework/), either using their own Consent Management Provider or working with a vendor.
-> - [Register your own CMP](https://register.consensu.org/CMP)
-> - [List of registered CMPs](https://iabeurope.eu/cmp-list/)
-> [!NOTE]
-> - Note our Service Policies (for Buying, Selling, and Data Providers) include privacy-specific obligations of which you should be aware.
+> - Our Service Policies (for Buying, Selling, and Data Providers) include privacy-specific obligations of which you should be aware.
 > - All vendor SDKs (including mediation SDKs) are responsible for looking up approved vendor and consent information on their own; Xandr does not pass this information to these SDKs.
-> 
+
 ## General Data Protection Regulations (GDPR)
 
 In order for our clients to meet their transparency, notice and choice/consent requirements under the GDPR and the existing ePrivacy Directive, Xandr supports the [IAB Europe Transparency & Consent Framework](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/TCFv2/IAB%20Tech%20Lab%20-%20CMP%20API%20v2.md#tcdata) (the "Framework").
 
 This is a reference for mobile app publishers using Xandr's Mobile SDK to surface notice, transparency and choice to end users located in the EEA and signal approved vendors and, where necessary, pass consent, to Xandr and demand sources and their vendors through the Xandr platform.
 
-Xandr provides three APIs in the Mobile SDK for mobile app publishers to use the Framework. (These  APIs are available in Mobile SDK version 4.8+ for Android and 4.7.1+ for iOS.) These APIs allow you to:
+Xandr provides three APIs in the Mobile SDK for mobile app publishers to use the Framework. These  APIs are available in Mobile SDK version 4.8+ for Android and 4.7.1+ for iOS. These APIs allow you to:
 
 - Define whether the user is located in the European Economic Area (the "EEA") and that European privacy regulations should apply
 - Set the [IAB Europe](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/commit/a32574941ce201708e30e78702278efe1ce6cd59) (IAB) consent string
@@ -74,7 +73,7 @@ The table below describes the actions taken for the different `purposeConsents`
 
 ## California Consumer Privacy Act (CCPA)
 
-Xandr provides three APIs that enable SDK users to set, retrieve and clear U.S. Privacy User Signal Mechanism controls. The IAB Tech Lab has formalized and adopted the "us_privacy" string as the mechanism to encode data about the information disclosed to the user and user elections under various US privacy laws, starting with the CCPA.
+Xandr provides three APIs that enable SDK users to set, retrieve and clear U.S. Privacy User Signal Mechanism controls. The IAB Tech Lab has formalized and adopted the `"us_privacy"` string as the mechanism to encode data about the information disclosed to the user and user elections under various US privacy laws, starting with the CCPA.
 
 This information will be persisted by the SDK and will be added to each ad call for applying platform controls.  
 
@@ -128,8 +127,10 @@ Xandr SDK will then read the values from [SharedPreferences](https://developer.a
 
 The Digital Services Act (DSA) oversees online intermediaries and platforms, where its primary objective is to curb illegal and harmful activities on the internet and to mitigate the dissemination of disinformation. The DSA is a key legislative measure by the European Union aimed at enhancing transparency in digital advertising, with a core objective of promoting transparency, accountability, and user protection in online services.
 
-### Set DSA Values in the SDK:
-**SDK will then pass these values to the ad call.**
+### Set DSA Values in the SDK
+
+#### SDK will then pass these values to the ad call
+
 ```
 /**
  * Set the DSA information requirement.
@@ -164,15 +165,19 @@ transparencyList.add(new ANDSATransparencyInfo("example.net", new ArrayList<>(Ar
   
 ANDSASettings.setTransparencyList(transparencyList);
 ```
-**Retrieve the DSA values set in SDK:**
+
+#### Retrieve the DSA values set in SDK
+
 ```
 ANDSASettings.getDSARequired()
 ANDSASettings.getPubRender()
 ANDSASettings.getTransparencyList()
 ```
 
-### Retrieve DSA Response values:
-**Code Sample Java**
+### Retrieve DSA Response values
+
+#### Code Sample Java
+
 ```
 // Request Banner Ad
 bav = new BannerAdView(this);
@@ -215,7 +220,9 @@ ArrayList<Integer> params = tranparencyInfo.getDSAParams();
 int adRender = dsaResponseInfo.getAdRender();
 }
 ```
-**Code Sample Kotlin**
+
+#### Code Sample Kotlin
+
 ```
 // Request Banner Ad
 banner = BannerAdView(this)
@@ -257,6 +264,7 @@ for (i in 0 until transparencyList.size) {
  */
 val adRender: Int = dsaResponseInfo.adRender
 ```
+
 > [!NOTE]
 > ANDSAResponseInfo can be retrieved using Video Ad instance, Interstitial Ad View instance and Native Ad Response also apart from Banner Ad View.
 
@@ -279,7 +287,3 @@ val dsaResponseInfo = nativeAdResponse.adResponseInfo.dsaResponseInfo
 //Insterstitial Ad View
 val dsaResponseInfo = interstitial.adResponseInfo.dsaResponseInfo
 ```
-
-
-
-

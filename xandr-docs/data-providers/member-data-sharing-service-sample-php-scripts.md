@@ -16,9 +16,9 @@ The following scripts will help you interface with the member-data-sharing servi
 
 ### List existing sharing records
 
-This script will print the list of buyer_member_ids that you are currently sharing data with and their respective record_ids.
+This script will print the list of `buyer_member_ids` that you are currently sharing data with and their respective `record_ids`.
 
-``` 
+```
 <?
 $PROD_URL = "https://api.adnxs.com"; // for impression bus API logins
 //$PROD_URL = "https://api.appnexus.com"; // for API logins
@@ -57,9 +57,9 @@ function get_sharing_ids($ch, $api_url, $member_id) {
 
 ### View segments shared in existing sharing record
 
-The following script takes in a record id and prints the segments shared in that sharing record.
+The following script takes in a record ID and prints the segments shared in that sharing record.
 
-``` 
+```
 <?
 if ($argc < 2) {
   die("Please provide a record id!\n");
@@ -101,9 +101,9 @@ else {
 
 ### Add single segment to an existing sharing record
 
-The following script takes in a specific record id and segment id and adds the segment id to that record.
+The following script takes in a specific record ID and segment ID and adds the segment ID to that record.
 
-``` 
+```
 <?
 if ($argc < 3) {
   die("Please provide a record id and a segment id!\n");
@@ -146,9 +146,9 @@ print $api_url."/member-data-sharing?data_member_id=".$member_id."&id=".$record_
 
 ### Add list of segments to existing sharing record
 
-This script adds a list of segments to an existing sharing record. The script takes in as input the record_id as well as the file_name where the list of segment_ids is saved. The script expects that the file be formatted as list of comma separated values.
+This script adds a list of segments to an existing sharing record. The script takes in as input the `record_id` as well as the `file_name` where the list of `segment_ids` is saved. The script expects that the file be formatted as list of comma separated values.
 
-``` 
+```
 <?
 if ($argc < 3) {
   die("Please provide a record id and a segment id!\n");
@@ -200,10 +200,9 @@ print $api_url."/member-data-sharing?data_member_id=".$member_id."&id=".$record_
 
 ### Delete a single segment from a sharing record
 
-This script takes in as inputs the record_id and the segment_id and deletes the segment_id from that record_id. You can use this script in
-conjunction with a bash script to delete that specific segment from multiple records at once.
+This script takes in as inputs the `record_id` and the `segment_id` and deletes the `segment_id` from that `record_id`. You can use this script in conjunction with a bash script to delete that specific segment from multiple records at once.
 
-``` 
+```
 <?
 if ($argc < 3) {
   die("Please provide a record id and a segment id!\n");

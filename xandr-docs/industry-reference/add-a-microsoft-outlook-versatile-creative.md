@@ -7,8 +7,7 @@ ms.custom: industry-reference
 
 # Add a Microsoft Outlook versatile creative
 
-Microsoft Outlook creatives show up in the right-hand sidebar of the free Outlook.com webmail service after a user securely logs in. This
-page provides specifications for elements of Outlook creatives and shows you how to add them in Console.
+Microsoft Outlook creatives show up in the right-hand sidebar of the free Outlook.com webmail service after a user securely logs in. This page provides specifications for elements of Outlook creatives and shows you how to add them in Console.
 
 > [!TIP]
 > What's New?
@@ -168,8 +167,7 @@ On the **Budget** tab, under **Creative Frequency**, you can cap how frequent
 
 ## Step 10: Set the budget for the creative (optional)
 
-On the **Budget** tab, under **Creative Budget**, you can set an impression or media cost budget for the Outlook creative. By default,
-the budget is unlimited. If you prefer, you can define exactly how much you are willing to spend on buying inventory for the creative. Note that media cost is in USD rather than the advertiser's currency because USD is the currency in which Xandr transacts.
+On the **Budget** tab, under **Creative Budget**, you can set an impression or media cost budget for the Outlook creative. By default, the budget is unlimited. If you prefer, you can define exactly how much you are willing to spend on buying inventory for the creative. Note that media cost is in USD rather than the advertiser's currency because USD is the currency in which Xandr transacts.
 
 > [!TIP]
 > You can set budgets at the insertion order, line item, and campaign levels as well. These parent budgets takes precedence over your creative budget. When the campaign budget runs out, for example, all creatives associated to the campaign will stop buying impression for that campaign, whether or not they have reached their own budgets. For more details about budgeting, see **Budget and Pacing**.
@@ -198,8 +196,7 @@ Confirm that the Outlook creative details are correct and then click the **Save
 
 ### Check the audit status of an Outlook creative
 
-Once you've added an Outlook creative and submitted it for Platform Secure and Microsoft Advertising Exchange audit, there are three
-possible audit statuses that your creative can have:
+Once you've added an Outlook creative and submitted it for Platform Secure and Microsoft Advertising Exchange audit, there are three possible audit statuses that your creative can have:
 
 ### Platform secure audit
 

@@ -1,8 +1,8 @@
 ---
 title: Resize the Banner Ad View to the Size of the Winning Creative on iOS
-description: Resize the banner ad view on iOS to the size of the winning creative after winning a bid using methods for height and width retrieval.
+description: Resize the banner ad view on iOS to the size of the winning creative using methods for height and width retrieval.
 ms.custom: ios-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
 ---
 
 # Resize the banner ad view to the size of the winning creative on iOS
@@ -11,7 +11,7 @@ When you win a bid, you may want to resize the banner ad view to the size of the
 
 To retrieve the height and width of the winning creative, use the `loadedAdSize` method.
 
-## loadedAdSize
+## `loadedAdSize` method
 
 | Parameter | Description |
 |:---|:---|

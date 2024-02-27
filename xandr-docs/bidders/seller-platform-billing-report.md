@@ -1,14 +1,12 @@
 ---
 title: Seller Platform Billing Report
-description: Learn how Suppliers gather transaction information using the Seller Platform Billing Report to invoice buyers or reconcile their internal transaction records.   
+description: Learn how Suppliers gather transaction information using the Seller Platform Billing Report to invoice buyers. This page covers an example on retrieving a report.
 ms.date: 11/27/2023
 ---
 
 # Seller platform billing report
 
-Learn about Seller Platform Billing Report in this page.
-
-Suppliers gather transaction information using the Seller Platform Billing Report to invoice buyers or reconcile their internal transaction records.
+Learn about Seller Platform Billing Report in this page. Suppliers gather transaction information using the Seller Platform Billing Report to invoice buyers or reconcile their internal transaction records.
 
 For instructions on retrieving a report, see the [Example](#example) below.
 
@@ -31,56 +29,56 @@ The `report_interval` field in the JSON request can be set to one of the followi
 
 ## Dimensions
 
-| Column             | Type    | Group? | Filter? | Description                                                                                                                                                                                                    |
-|--------------------|---------|--------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `bidder`             | string  | No     | No      | **Deprecated**.                                                                                                                                                                                                    |
-| `bidder_id`          | int     | Yes    | Yes     | The internal ID of the bidder.                                                                                                                                                                                 |
-| `bidder_name`        | string  | No     | No      | The display name of the bidder.                                                                                                                                                                                |
-| `buyer_currency`     | string  | No     | Yes     | The buyer member's selected currency. For a list of supported currencies, see [Supported Currencies](supported-currencies.md).                                                                                                            |
-| `buyer_member`       | string  | No     | No      | **Deprecated**.                                                                                                                                                                                                    |
-| `buyer_member_id`    | int     | Yes    | Yes     | The internal ID of the buyer member.                                                                                                                                                                           |
-| `buyer_member_name`  | string  | No     | No      | The display name of the buyer member.                                                                                                                                                                          |
-| `cleared_direct`     | int     | No     | Yes     | If this is set to 1, then the impression was successfully served on direct inventory. <br>  Possible values: <br> - 0 = not direct inventory <br> - 1 = direct inventory                                                           |
-| `day`                | date    | Yes    | Yes     | Day.                                                                                                                                                                                                           |
-| `geo_country`        | string  | No     | Yes     | The display name of the country followed by the ID (Xandr format).                                                                                                                                             |
-| `geo_country_name`   | string  | No     | No      | Country.                                                                                                                                                                                                       |
-| `hour`               | date    | Yes    | Yes     | The hour of the auction. <br> **Note**: For impressions older than 100 days, the day will be returned rather than the hour.                                                                                             |
-| `imp_type`           | string  | No     | Yes     | The type of impression served. Possible values: <br> - 1 = blank <br> - 2 = PSA <br> - 3 = default error <br> - 4 = default <br> - 5 = kept <br> - 6 = resold <br> - 7 = RTB <br> - 8 = PSA resulting from a default error  <br> - 9 = external impression <br> - 10 = external click |
-| `is_delivered`       | boolean | No     | Yes     | If true, the impression was served successfully.                                                                                                                                                               |
-| `is_dw`              | boolean | No     | Yes     | If true, the impression was served by Xandr.                                                                                                                                                                   |
-| `month`              | time    | Yes    | No      | Month.                                                                                                                                                                                                         |
-| `publisher`          | string  | No     | No      | **Deprecated**.                                                                                                                                                                                                    |
-| `publisher_code`     | string  | No     | No      | The custom code for the publisher, entered to correspond to the publisher code within the external system.                                                                                                     |
-| `publisher_id`       | int     | Yes    | Yes     | The internal ID of the publisher.                                                                                                                                                                              |
-| `publisher_name`     | string  | No     | No      | The display name of the publisher.                                                                                                                                                                             |
-| `seller_currency`    | string  | No     | Yes     | The seller member's selected currency. For a list of supported currencies, see [Supported Currencies](supported-currencies.md).                                                                                                           |
-| `seller_member`      | string  | No     | No      | **Deprecated**.                                                                                                                                                                                                    |
-| `seller_member_id`   | int     | Yes    | Yes     | The internal ID of the seller member.                                                                                                                                                                          |
-| `seller_member_name` | string  | No     | No      | The display name of the seller member.                                                                                                                                                                         |
-| `site`               | string  | No     | No      | **Deprecated**.                                                                                                                                                                                                    |
-| `site_code`          | string  | No     | No      | The custom code for the site, entered to correspond to the site code within the external system.                                                                                                               |
-| `site_id`            | int     | Yes    | Yes     | The internal ID of the site.                                                                                                                                                                                   |
-| `site_name`          | string  | No     | No      | The display name of the site.                                                                                                                                                                                  |
-| `year`               | date    | Yes    | Yes     | Year.                                                                                                                                                                                                          |
+| Column | Type | Group? | Filter? | Description |
+|--|--|--|--|--|
+| `bidder` | string | No | No | **Deprecated**. |
+| `bidder_id` | int | Yes | Yes | The internal ID of the bidder. |
+| `bidder_name` | string | No | No | The display name of the bidder. |
+| `buyer_currency` | string | No | Yes | The buyer member's selected currency. For a list of supported currencies, see [Supported Currencies](supported-currencies.md). |
+| `buyer_member` | string | No | No | **Deprecated**. |
+| `buyer_member_id` | int | Yes | Yes | The internal ID of the buyer member. |
+| `buyer_member_name` | string | No | No | The display name of the buyer member. |
+| `cleared_direct` | int | No | Yes | If this is set to 1, then the impression was successfully served on direct inventory. <br>  Possible values: <br> - 0 = not direct inventory <br> - 1 = direct inventory |
+| `day` | date | Yes | Yes | Day. |
+| `geo_country` | string | No | Yes | The display name of the country followed by the ID (Xandr format). |
+| `geo_country_name` | string | No | No | Country. |
+| `hour` | date | Yes | Yes | The hour of the auction. <br> **Note**: For impressions older than 100 days, the day will be returned rather than the hour. |
+| `imp_type` | string | No | Yes | The type of impression served. Possible values: <br> - 1 = blank <br> - 2 = PSA <br> - 3 = default error <br> - 4 = default <br> - 5 = kept <br> - 6 = resold <br> - 7 = RTB <br> - 8 = PSA resulting from a default error  <br> - 9 = external impression <br> - 10 = external click |
+| `is_delivered` | boolean | No | Yes | If true, the impression was served successfully. |
+| `is_dw` | boolean | No | Yes | If true, the impression was served by Xandr. |
+| `month` | time | Yes | No | Month. |
+| `publisher` | string | No | No | **Deprecated**. |
+| `publisher_code` | string | No | No | The custom code for the publisher, entered to correspond to the publisher code within the external system. |
+| `publisher_id` | int | Yes | Yes | The internal ID of the publisher. |
+| `publisher_name` | string | No | No | The display name of the publisher. |
+| `seller_currency` | string | No | Yes | The seller member's selected currency. For a list of supported currencies, see [Supported Currencies](supported-currencies.md). |
+| `seller_member` | string | No | No | **Deprecated**. |
+| `seller_member_id` | int | Yes | Yes | The internal ID of the seller member. |
+| `seller_member_name` | string | No | No | The display name of the seller member. |
+| `site` | string | No | No | **Deprecated**. |
+| `site_code` | string | No | No | The custom code for the site, entered to correspond to the site code within the external system. |
+| `site_id` | int | Yes | Yes | The internal ID of the site. |
+| `site_name` | string | No | No | The display name of the site. |
+| `year` | date | Yes | Yes | Year. |
 
 ## Metrics
 
-| Column                                      | Type  | Formula                                                                       | Description                                                                                                                                                                                                                                                |
-|---------------------------------------------|-------|-------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `imps`                                        | int   | `imps`                                                                          | The total number of impressions (served and resold).                                                                                                                                                                                                       |
-| `imps_delivered`                              | int   | `imps_delivered`                                                                | The total number of impressions served successfully.                                                                                                                                                                                                       |
-| `imps_not_delivered`                          | int   | `imps_not_delivered`                                                            | The total number of impressions where someone other than Xandr served the impression.                                                                                                                                                                      |
-| `imps_appnexus_cleared`                       | int   | `imps_appnexus_cleared`                                                         | The total number of impressions where Xandr collects cost of media and pays out seller payment for transactions between this buyer-seller pair.                                                                                                            |
-| `imps_direct_cleared`                         | int   | `imps_direct_cleared`                                                           | The total number of impressions where Xandr does NOT collect cost of media or pay out seller payment for transactions between this buyer-seller pair.                                                                                                      |
-| `seller_revenue`                              | money | `seller_revenue`                                                                | The seller's revenue per impression.                                                                                                                                                                                                                       |
-| `seller_revenue_appnexus_cleared`             | money | `seller_revenue for imps_appnexus_cleared`                                      | The seller's revenue for impressions where Xandr pays out the seller payment.                                                                                                                                                                              |
-| `seller_revenue_direct_cleared`               | money | `seller_revenue for imps_direct_cleared`                                        | The seller's revenue for impressions where the seller payment is transacted directly between this buyer-seller pair, not through AppNexus.                                                                                                                 |
-| `seller_ecpm`                                 | money | `seller_revenue x 1000 / imps_delivered`                                        | The seller's revenue expressed in eCPM.                                                                                                                                                                                                                    |
-| `seller_revenue_seller_curr`                  | money | `seller_revenue, expressed in the seller's currency`.                           | The seller's revenue per impression in their selected currency. For a list of supported currencies, see [Supported Currencies](supported-currencies.md).                                                                                                                              |
-| `seller_revenue_appnexus_cleared_seller_curr` | money | `seller_revenue for imps_appnexus_cleared, expressed in the seller's currency`. | The seller's revenue for impressions where Xandr pays out the seller payment, per impression, in their selected currency. For a list of supported currencies,  [Supported Currencies](supported-currencies.md).                                                                    |
-| `seller_revenue_direct_cleared_seller_curr`   | money | `seller_revenue for imps_direct_cleared, expressed in the seller's currency`.   | The seller's revenue for impressions where the seller payment is transacted directly between this buyer-seller pair and not through Xandr, per impression, in their selected currency. For a list of supported currencies, see  [Supported Currencies](supported-currencies.md).       |
-| `seller_revenue_direct_cleared_buyer_curr`    | money | `seller_revenue for imps_direct_cleared, expressed in the buyer's currency`.    | The seller's revenue for impressions where the seller payment is transacted directly between this buyer-seller pair and not through Xandr, per impression, in the buyer's selected currency. For a list of supported currencies, see  [Supported Currencies](supported-currencies.md). |
-| `seller_ecpm_seller_curr`                     | money | `(seller_revenue / imps_delivered) * 1000, expressed in the seller's currency`  | The seller's revenue expressed in eCPM, in the seller's selected currency. For a list of supported currencies, see  [Supported Currencies](supported-currencies.md).                                                                                                                   |
+| Column | Type | Formula | Description |
+|--|--|--|--|
+| `imps` | int | `imps` | The total number of impressions (served and resold). |
+| `imps_delivered` | int | `imps_delivered` | The total number of impressions served successfully. |
+| `imps_not_delivered` | int | `imps_not_delivered` | The total number of impressions where someone other than Xandr served the impression. |
+| `imps_appnexus_cleared` | int | `imps_appnexus_cleared` | The total number of impressions where Xandr collects cost of media and pays out seller payment for transactions between this buyer-seller pair. |
+| `imps_direct_cleared` | int | `imps_direct_cleared` | The total number of impressions where Xandr does NOT collect cost of media or pay out seller payment for transactions between this buyer-seller pair. |
+| `seller_revenue` | money | `seller_revenue` | The seller's revenue per impression. |
+| `seller_revenue_appnexus_cleared` | money | `seller_revenue for imps_appnexus_cleared` | The seller's revenue for impressions where Xandr pays out the seller payment. |
+| `seller_revenue_direct_cleared` | money | `seller_revenue for imps_direct_cleared` | The seller's revenue for impressions where the seller payment is transacted directly between this buyer-seller pair, not through AppNexus. |
+| `seller_ecpm` | money | `seller_revenue x 1000 / imps_delivered` | The seller's revenue expressed in eCPM. |
+| `seller_revenue_seller_curr` | money | `seller_revenue, expressed in the seller's currency`. | The seller's revenue per impression in their selected currency. For a list of supported currencies, see [Supported Currencies](supported-currencies.md). |
+| `seller_revenue_appnexus_cleared_seller_curr` | money | `seller_revenue for imps_appnexus_cleared, expressed in the seller's currency`. | The seller's revenue for impressions where Xandr pays out the seller payment, per impression, in their selected currency. For a list of supported currencies,  [Supported Currencies](supported-currencies.md). |
+| `seller_revenue_direct_cleared_seller_curr` | money | `seller_revenue for imps_direct_cleared, expressed in the seller's currency`. | The seller's revenue for impressions where the seller payment is transacted directly between this buyer-seller pair and not through Xandr, per impression, in their selected currency. For a list of supported currencies, see  [Supported Currencies](supported-currencies.md). |
+| `seller_revenue_direct_cleared_buyer_curr` | money | `seller_revenue for imps_direct_cleared, expressed in the buyer's currency`. | The seller's revenue for impressions where the seller payment is transacted directly between this buyer-seller pair and not through Xandr, per impression, in the buyer's selected currency. For a list of supported currencies, see  [Supported Currencies](supported-currencies.md). |
+| `seller_ecpm_seller_curr` | money | `(seller_revenue / imps_delivered) * 1000, expressed in the seller's currency` | The seller's revenue expressed in eCPM, in the seller's selected currency. For a list of supported currencies, see  [Supported Currencies](supported-currencies.md). |
 
 ## Example
 

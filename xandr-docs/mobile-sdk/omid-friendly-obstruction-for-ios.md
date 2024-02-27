@@ -2,7 +2,7 @@
 title: OMID-Friendly Obstruction for iOS
 description: The Open Measurement SDK enables third-party viewability and verification measurement for mobile ads without multiple SDKs. Publishers can get data on ad viewability.
 ms.custom: ios-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
 ---
 
 # OMID friendly obstruction for iOS
@@ -22,13 +22,13 @@ The OMID API enables:
 The details of these APIs for iOS platform for different AdUnits are discussed in the API details section.
 
 In addition to the above mentioned functionalities, the OM SDK facilitates a property (`enableOMIDOptimization`) that enables optimization. Here, as part of optimization, viewability is tracked until an ad is fully visible to the user. Once the ad ceases to be
-visible, viewability tracking stops. By default this property is set as "NO" and when set as "YES", the OM SDK takes care of performing Open-Measurement Optimization.
+visible, viewability tracking stops. By default this property is set as `"NO"` and when set as `"YES"`, the OM SDK takes care of performing Open-Measurement Optimization.
 
 ## Properties
 
 | Property | Type | Attribute | Description |
 |:---|:---|:---|:---|
-| `enableOMIDOptimization` | BOOL | readwrite | Indicates if Open-Measurement Optimization  for viewability and verification measurement for ads served is enabled and if not, enable the same. Default value is NO.<br>***This API supports only banner and native ad types.*** |
+| `enableOMIDOptimization` | BOOL | readwrite | Indicates if Open-Measurement Optimization for viewability and verification measurement for ads served is enabled and if not, enable the same. Default value is `NO`.<br>***This API supports only banner and native ad types.*** |
 
 ```
 /**
@@ -37,15 +37,15 @@ visible, viewability tracking stops. By default this property is set as "NO" and
 @property (nonatomic, readwrite) BOOL enableOMIDOptimization;
 ```
 
-## Example
+## Examples
 
-**Objective C**
+### Objective C
 
 ```
 ANSDKSettings.sharedInstance.enableOMIDOptimization = true;
 ```
 
-**Swift**
+### Swift
 
 ```
 ANSDKSettings.sharedInstance().enableOMIDOptimization = true
@@ -53,34 +53,33 @@ ANSDKSettings.sharedInstance().enableOMIDOptimization = true
 
 ## API details
 
-**Adding a friendly obstruction**
+### Adding a friendly obstruction
 
 To add a friendly obstruction for Banner, Interstitial and Video AdUnits, you need to pass the view as an argument to the API.
 
-**API for adding friendly obstruction**
+### API for adding friendly obstruction
 
 ```
 (void)addOpenMeasurementFriendlyObstruction:(nonable UIView *)obstructionView;
 ```
 
-For Native AdUnits, you need to pass a friendly obstruction views list
-to add views as friendly obstruction with register view tracking.
+For Native AdUnits, you need to pass a friendly obstruction views list to add views as friendly obstruction with register view tracking.
 
-**API for adding friendly obstruction**
+### API for adding friendly obstruction
 
 ```
 (BOOL)registerViewForTracking:(nonnull UIView *)view withRootViewController:(nonnull UIViewController *)rvc clickableViews:(nullable NSArray<UIView *> *)views openMeasurementFriendlyObstructions:(nonnull NSArray<UIView *> *)obstructionViews error:(NSError *__nullable*__nullable)error;
 ```
 
-**Examples for adding a friendly obstruction for AdUnits (Banner, Interstitial and Video)**
+### Example for adding a friendly obstruction for AdUnits (Banner, Interstitial and Video)
 
 ```
 [adObject addOpenMeasurementFriendlyObstruction:friendlyObstructionView]; 
 ```
 
-**Example for adding a friendly obstruction for native AdUnit**
+### Example for adding a friendly obstruction for native AdUnits
 
-``` pre
+```
 [self.nativeResponse
     registerViewForTracking:self.nativeView
     withRootViewController:self clickableViews:@[]
@@ -93,14 +92,13 @@ to add views as friendly obstruction with register view tracking.
 > [!NOTE]
 > Native AdUnits does not support remove API. Friendly obstruction for Banner, Interstitial and Video AdUnits, you need to pass the view as an argument to the API.
 
-**API for removing a friendly obstruction**
+### API for removing a friendly obstruction
 
 ```
 (void)removeOpenMeasurementFriendlyObstruction:(nonable UIView*)obstructionView;
 ```
 
-**Examples for Removing a friendly obstruction for AdUnits (Banner,
-Interstitial and Video)**
+### Example for Removing a friendly obstruction for AdUnits (Banner, Interstitial and Video)
 
 ```
 [adObject removeOpenMeasurementFriendlyObstruction:friendlyObstructionView];
@@ -111,13 +109,13 @@ Interstitial and Video)**
 > [!NOTE]
 > Native AdUnits does not support remove API.
 
-**API for removing all friendly obstruction**
+### API for removing all friendly obstruction
 
 ```
 (void)removeAllOpenMeasurementFriendlyObstructions;
 ```
 
-**Examples for removing all friendly obstruction for AdUnits  (Banner, Interstitial and Video)**
+### Example for removing all friendly obstruction for AdUnits (Banner, Interstitial and Video)
 
 ```
 [adObject removeAllOpenMeasurementFriendlyObstructions];

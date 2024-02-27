@@ -1,14 +1,13 @@
 ---
 title: Introduction to Integrating with the Xandr Impression Bus
-description: Learn the various points to consider while integrating with the Xandr impression bus. 
+description: In this page, learn about the various pointers to consider while integrating with the Xandr impression bus. 
 ms.custom: data-providers
 ms.date: 11/30/2023
 ---
 
 # Introduction to integrating with the Xandr impression bus
 
-When considering integrating with the impression bus, there are many things to consider. Most people underestimate the volume of requests
-that Xandr has to offer and the infrastructure required in order to properly process those requests efficiently.
+When considering integrating with the impression bus, there are many things to consider. Most people underestimate the volume of requests that Xandr has to offer and the infrastructure required in order to properly process those requests efficiently.
 
 ## Our Impression Bus’ connection management behavior
 
@@ -23,8 +22,7 @@ As our volume grows, the number of instances in our impression bus will grow, an
 
 ## Architecting a solution
 
-Too many people do not value the phase of architecting a solution before they begin tackling it. Whether you are building a bidding solution or looking to integrate data, the biggest mistake you can make is architecting and building the software without considering the
-environment as a whole, including the layers that must function below the software. Before you begin coding, be sure you have laid out all the pieces necessary for your solution. This article covers the commonly missed aspects outside of your proprietary software to aid you in proper planning and realizing the magnitude and scope of this integration.
+Too many people do not value the phase of architecting a solution before they begin tackling it. Whether you are building a bidding solution or looking to integrate data, the biggest mistake you can make is architecting and building the software without considering the environment as a whole, including the layers that must function below the software. Before you begin coding, be sure you have laid out all the pieces necessary for your solution. This article covers the commonly missed aspects outside of your proprietary software to aid you in proper planning and realizing the magnitude and scope of this integration.
 
 ## Server specifications
 
@@ -32,8 +30,7 @@ There are three components to consider when deciding the appropriate hardware to
 
 ## Software stack
 
-To begin, let us be sure to decouple two very distinct pieces of this stack, your listener and your application. The listener is there to
-listen for requests being sent from our impression bus. Conventional wisdom has most engineers running web serving software to handle this; however, this is not a web server. I want to be sure that point is made clear. Web serving software is built to manage connections that stay open for the shortest amount of time possible due to the potential of millions of users connecting to your server. In this scenario, you are integrating with a known set of users, the servers in our impression bus equaling ~1600 connections today (but growing as our impression volume rows).
+To begin, let us be sure to decouple two very distinct pieces of this stack, your listener and your application. The listener is there to listen for requests being sent from our impression bus. Conventional wisdom has most engineers running web serving software to handle this; however, this is not a web server. I want to be sure that point is made clear. Web serving software is built to manage connections that stay open for the shortest amount of time possible due to the potential of millions of users connecting to your server. In this scenario, you are integrating with a known set of users, the servers in our impression bus equaling ~1600 connections today (but growing as our impression volume grows).
 
 The impression bus will establish a connection, utilize keep-alive, and attempt to send thousands of requests over that same connection in order to be as efficient as possible. This is equivalent to a user base connecting to a web server and clicking refresh thousands of times per second. If your listener is not configured to handle this behavior appropriately, it will be overwhelmed. Web serving software can be configured to handle this form of traffic, but it is recommended to develop your own listener that is built specifically for this behavior.
 

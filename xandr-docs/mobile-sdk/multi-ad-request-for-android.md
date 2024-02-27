@@ -1,8 +1,8 @@
 ---
 title: Multi Ad Request for Android
 description: This article has instructions and code samples for initiating and configuring multi ad reqguest for Android.
-ms.custom : android-sdk
-ms.date : 10/28/2023
+ms.custom: android-sdk
+ms.date: 10/28/2023
 ---
 
 # Multi ad request for Android
@@ -15,14 +15,14 @@ This page has instructions and code samples for initiating and configuring a `AN
 
 ## Initialization
 
-Users can select from one of two initialization methods. Both require a memberId and a `multiAdRequestListener` object as arguments in order for `ANMultiAdRequest` to be initialized. The memberId and `multiAdRequestListener` may only be set once per instance. An optional [Publisher ID parameter](./publisher-id-for-android.md) can be set at this time. All `AdUnits` must contain the same `memberId` as the one passed in the initialization process `AdUnits` containing `placementIds` will use the associated `memberId` of that placement. Upon successful initialization, a `ANMultiAdRequest` class instance is returned.
+Users can select from one of two initialization methods. Both require a memberId and a `multiAdRequestListener` object as arguments in order for `ANMultiAdRequest` to be initialized. The `memberId` and `multiAdRequestListener` may only be set once per instance. An optional [Publisher ID parameter](./publisher-id-for-android.md) can be set at this time. All `AdUnits` must contain the same `memberId` as the one passed in the initialization process `AdUnits` containing `placementIds` will use the associated `memberId` of that placement. Upon successful initialization, a `ANMultiAdRequest` class instance is returned.
 
 > [!NOTE]
 > The `MultiAdRequest` instance will reject `AdUnits` with `memberId` values different from their own.
 
 ### Initialization methods
 
-#### Initialize with a list of AdUnits and call the load method
+#### Initialize with a list of `AdUnits` and call the `load` method
 
 Enables initialization and calls the `load` method with a single line of code. The instance is initialized with a list of one or more `AdUnits`. If a failure occurs during the `load` lifecycle, the class is not initialized and a nil object is returned. When a successful `load` process occurs, a class instance is returned.
 
@@ -58,7 +58,7 @@ public ANMultiAdRequest(Context context, int memberId, int publisherId, MultiAdR
 
 | Variable | Type | Scope | Description |
 |:---|:---|:---|:---|
-| `memberId` | int | Required | A member id. Any `AdUnits` contained within the `ANMultiAdRequest` must have identical `memberIds` or the `ANMultiAdRequest` will be rejected. The `memberId` can also be attained by passing in a `placementId`. |
+| `memberId` | int | Required | A member ID. Any `AdUnits` contained within the `ANMultiAdRequest` must have identical `memberIds` or the `ANMultiAdRequest` will be rejected. The `memberId` can also be attained by passing in a `placementId`. |
 | `multiAdRequestListener` | MultiAdRequestListener | Required | Used to share information about the response whether it is success or failure. |
 | `loadOnInit` | boolean | Optional | Boolean value to decide whether to load the `ANMultiAdRequest` during its initialization. |
 | `ads` | Ad | Optional | Variable-length argument for taking in a list of Ads. |
@@ -69,16 +69,16 @@ All `ANMultiAdRequest` configuration properties and methods are the same in ty
 
 | Parameter | Type | Description |
 |:---|:---|:---|
-| `memberId` | int | A member id. Any `AdUnits` contained within the `ANMultiAdRequest` must have identical `memberIds` or the `ANMultiAdRequest` will be rejected by Xandr's Impression Bus. The `memberId` can also be attained by passing in a `placementId`. |
+| `memberId` | int | A member ID. Any `AdUnits` contained within the `ANMultiAdRequest` must have identical `memberIds` or the `ANMultiAdRequest` will be rejected by Xandr's Impression Bus. The `memberId` can also be attained by passing in a `placementId`. |
 | `age` | String | The user's age. |
 | `gender` | AdView.GENDER | The user's gender. |
-| `externalUid` | String | User generated id that can be mapped with Xandr's internal ids and that mapping shared amongst the members of clients with multiple seats. |
+| `externalUid` | String | User generated ID that can be mapped with Xandr's internal IDs and that mapping shared amongst the members of clients with multiple seats. |
 | `customKeyword` | ArrayList<Pair<String, String>> | Custom keywords applied to the `ANMultiAdRequest`. These keywords will be inherited by the attached AdUnits. This list can be supplemented within each `AdUnit` with additional custom keywords. |
 | `AdUnit` | Ad | An AdUnit item to add to the `ANMultiAdRequest`. |
 
-## ANMultiAdRequest methods
+## `ANMultiAdRequest` methods
 
-### load()
+### `load()`
 
 Loads all contained `AdUnits` by sending a `multi-tag UTv3` request to Xandr's Impression Bus. For each `ANMultiAdRequest` instance, only one load may be active at a time. Loads are complete when one of the `Listner` methods is fired. Returns `true` on success and `false` on failure.
 
@@ -86,7 +86,7 @@ Loads all contained `AdUnits` by sending a `multi-tag UTv3` request to Xandr
 public boolean load()
 ```
 
-### addAdUnit(Ad adUnit)
+### `addAdUnit(Ad adUnit)`
 
 Adds an `AdUnit` to the `ANMultiAdRequest`. `AdUnits` will be rejected if their `memberId` does not match the `memberId` assigned to the `ANMultiAdRequest` or does not match the `memberId` of the other `AdUnits` contained within the `ANMultiAdRequest`. Returns `true` on success and `false` on failure.
 
@@ -94,13 +94,13 @@ Adds an `AdUnit` to the `ANMultiAdRequest`. `AdUnits` will be rejected if the
 public boolean addAdUnit(Ad adUnit)
 ```
 
-**Arguments**
+#### Arguments
 
 | Parameter | Type | Scope | Description |
 |:---|:---|:---|:---|
 | `AdUnit` | Ad | Required | An `AdUnit` item to add to the `ANMultiAdRequest`. |
 
-### removeAdUnit(Ad adUnit)
+### `removeAdUnit(Ad adUnit)`
 
 Removes an `AdUnit` from the `ANMultiAdRequest` Returns `true` on success and `false` on failure.
 
@@ -108,13 +108,13 @@ Removes an `AdUnit` from the `ANMultiAdRequest` Returns `true` on success and
 public void removeAdUnit(Ad adUnit)
 ```
 
-**Arguments**
+#### Arguments
 
 | Parameter | Type | Scope | Description |
 |:---|:---|:---|:---|
 | `AdUnit` | Ad | Required | An `AdUnit` item to remove from the `ANMultiAdRequest`. |
 
-### addCustomKeywordWithKey
+### `addCustomKeywordWithKey`
 
 Adds a custom keyword to the `ANMultiAdRequest`. Stored as a pair of keys and value, custom keywords are inherited by the `AdUnits` contained within the `ANMultiAdRequest`.
 
@@ -122,14 +122,14 @@ Adds a custom keyword to the `ANMultiAdRequest`. Stored as a pair of keys and va
 public void addCustomKeywords(String key, String value)
 ```
 
-**Arguments**
+#### Arguments
 
 | Parameter | Type | Scope | Description |
 |:---|:---|:---|:---|
 | `key` | String | Required | The key identifier for the custom keyword. |
 | `value` | String | Required | The value of the custom keyword. |
 
-### removeCustomKeywordWithKey
+### `removeCustomKeywordWithKey`
 
 Removes a custom keyword from the `MultiAdRequest`. The remove keyword will no longer be inherited by the `AdUnits` contained within the `ANMultiAdRequest`.
 
@@ -137,13 +137,13 @@ Removes a custom keyword from the `MultiAdRequest`. The remove keyword will no 
 public void removeCustomKeyword(String key)
 ```
 
-**Arguments**
+#### Arguments
 
 | Parameter | Type | Scope | Description |
 |:---|:---|:---|:---|
 | `key` | String | Required | The key identifier for the custom keyword to be removed. |
 
-### clearCustomKeywords
+### `clearCustomKeywords`
 
 Removes all custom keywords from the `MultiAdRequest`. The cleared keywords will no longer be inherited by the `AdUnits` contained within the `ANMultiAdRequest`. 
 
@@ -151,7 +151,7 @@ Removes all custom keywords from the `MultiAdRequest`. The cleared keywords wil
 public void clearCustomKeywords()
 ```
 
-### stop()
+### `stop()`
 
 Stops the `MultiAdRequest`, before the request is completed.
 
@@ -159,7 +159,7 @@ Stops the `MultiAdRequest`, before the request is completed.
 public void stop()
 ```
 
-### activityOnDestroy()
+### `activityOnDestroy()`
 
 Destroys the ad-unit after activity is completed to prevent memory leaks.
 
@@ -172,7 +172,7 @@ adUnit.activityOnDestroy()
 > - All SDK methods must be called on the main thread.
 > - `activityOnDestroy()` must be called for the attached AdUnits when they are expected to be destroyed.
 
-**Example**
+#### Example
 
 ```
 if (anMultiAdRequest != null) {
@@ -189,9 +189,9 @@ if (anMultiAdRequest != null) {
         }
 ```
 
-## MultiAdRequestListener methods
+## `MultiAdRequestListener` methods
 
-### onMultiAdRequestCompleted()
+### `onMultiAdRequestCompleted()`
 
 Returns success of `ANMultiAdRequest`. Success indicates that all contained `AdUnits` have loaded and have a clear outcome.
 
@@ -199,7 +199,7 @@ Returns success of `ANMultiAdRequest`. Success indicates that all contained `A
 void onMultiAdRequestCompleted()
 ```
 
-**onMultiAdRequestFailed(ResultCode code)**
+### `onMultiAdRequestFailed(ResultCode code)`
 
 Returns an error message if the `UT Request` generated by an `ANMultiAdRequest` instance fails, for any reason.
 

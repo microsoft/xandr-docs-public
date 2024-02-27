@@ -13,14 +13,12 @@ This is an overview of single credential login and multi-factor authentication.
 >
 > For more details, visit [Microsoft Identity Platform Login](microsoft-identity-platform-login.md).
 
-Microsoft Advertising is changing the way users access their digital platform application user accounts via the user interfaces. As a result of the changes, users will use a single set of authentication credentials (email and password) to access all of their digital application user accounts. After they're signed in, they will seamlessly switch between their user accounts, using the **Member Switcher UI**, without having
-to log in to each one individually. At the same time, we are introducing a compulsory second factor of authentication (MFA) in the form of a one-time passcode (for example, Google Authenticator).
+Microsoft Advertising is changing the way users access their digital platform application user accounts via the user interfaces. As a result of the changes, users will use a single set of authentication credentials (email and password) to access all of their digital application user accounts. After they're signed in, they will seamlessly switch between their user accounts, using the **Member Switcher UI**, without having to log in to each one individually. At the same time, we are introducing a compulsory second factor of authentication (MFA) in the form of a one-time passcode (for example, Google Authenticator).
 
 > [!NOTE]
 > This is a one-time use code. You need to enter a new one-time use code every time that you try to authenticate.
 
-You can use your existing API credentials for API access. The only change is that you need to reset your password when you log in to the
-user interface and go to your account.
+You can use your existing API credentials for API access. The only change is that you need to reset your password when you log in to the user interface and go to your account.
 
 > [!NOTE]
 > Not all of our current accounts have been migrated into this new way of authenticating. This only applies to accounts who have already been migrated into the new system.
@@ -37,8 +35,7 @@ To make new accounts more secure, Microsoft Advertising’s new Information Secu
 
 ## What isn't changing?
 
-This new authentication method only applies to users who access our applications via the UI. Users will continue accessing their API user accounts using their individual sets of authentication credentials. Changes to how users authenticate into their API accounts will be made
-to API access in the near future.
+This new authentication method only applies to users who access our applications via the UI. Users will continue accessing their API user accounts using their individual sets of authentication credentials. Changes to how users authenticate into their API accounts will be made to API access in the near future.
 
 API access still relies on username and password.
 

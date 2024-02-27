@@ -1,6 +1,6 @@
 ---
 title: Member Data Sharing Service (Contextual Only)
-description: Learn how Member Data Sharing Service allows you to share your segments with other platform members. 
+description: In this page, learn steps on how Member Data Sharing Service allows you to share your segments with other platform members, along with some examples. 
 ms.custom: data-providers
 ms.date: 11/30/2023
 ---
@@ -11,43 +11,29 @@ ms.date: 11/30/2023
 ## Member data sharing service (for real-time data providers)
 
 > [!TIP]
-> To make the Member Data Sharing documentation clearer, we've created this page which has <u>only the calls that are relevant to data providers with a real time integration</u> (i.e. data providers who have a bidder).
+> To make the Member Data Sharing documentation clearer, we've created this page which has only the calls that are relevant to data providers with a real time integration (i.e. data providers who have a bidder).
 
-The Member Data Sharing Service allows you to share your segments with
-other platform members. Here's how it works:
+The Member Data Sharing Service allows you to share your segments with other platform members. Here's how it works:
 
-1. You ask the buyer to enable you (the data provider) in Invest DSP.
-    The setting they must use to do this is located in the Invest DSP
-    **Segment Manager**, under
-    **Manage Data Providers**.
-1. You create a sharing record for a member that you want to share
-    segments with.
-1. In the sharing record, you specify whether you want to share all of
-    your segments or a specific list of segments.
-1. The member that you've shared your segments with can then target
-    your segments in campaigns.
+1. You ask the buyer to enable you (the data provider) in Invest DSP. The setting they must use to do this is located in the Invest DSP **Segment Manager**, under **Manage Data Providers**.
+1. You create a sharing record for a member that you want to share segments with.
+1. In the sharing record, you specify whether you want to share all of your segments or a specific list of segments.
+1. The member that you've shared your segments with can then target your segments in campaigns.
 
 > [!NOTE]
 > In the case of bidders, shared segments will be sent with each bid request. It is up to the bidder to expose the segment to its relevant members. You can not share segments with external bidders.
 
-Note that when you remove a segment from a sharing record, the member
-cannot add the segment to the targeting profile of any new or existing
-campaign. If the member is already targeting the segment in an existing
-campaign, however, the campaign will continue to target the segment
-until the member manually removes it from the campaign's targeting
-profile. Once the segment has been removed, the member will not be able
-to add it to the campaign's targeting profile again.
+Note that when you remove a segment from a sharing record, the member cannot add the segment to the targeting profile of any new or existing campaign. If the member is already targeting the segment in an existing campaign, however, the campaign will continue to target the segment until the member manually removes it from the campaign's targeting profile. Once the segment has been removed, the member will not be able to add it to the campaign's targeting profile again.
 
 > [!TIP]
 > If you have custom segments intended for specific members, you should set `segment_exposure` to "list" in each sharing record and use the `segments` array to identify the segments that each member should have access to.
-
 > [!NOTE]
 > The Member Data Sharing service works on BOTH Xandr's API (api.appnexus.com) as well as the impression bus API (api.adnxs.com). Although only api.adnxs.com is used below, it may be replaced with api.appnexus.com for those clients who have access to Xandr's API. Only members who are on Xandr will have access to the API. The majority of data providers can only access the impression bus API.
 
 ## REST API
 
 | HTTP Method | Endpoint | Description |
-|---|---|---|
+|--|--|--|
 | DELETE | [https://api.adnxs.com/member-data-sharing?id=RECORD_ID](https://api.adnxs.com/member-data-sharing/RECORD_ID)<br>[https://api.adnxs.com/member-data-sharing/RECORD_ID](https://api.adnxs.com/member-data-sharing/RECORD_ID) | Delete a sharing record |
 | GET | [https://api.adnxs.com/member-data-sharing](https://api.adnxs.com/member-data-sharing) | View all of your sharing records |
 | GET | [https://api.adnxs.com/member-data-sharing?id=RECORD_ID](https://api.adnxs.com/member-data-sharing/RECORD_ID) <br> [https://api.adnxs.com/member-data-sharing/RECORD_ID](https://api.adnxs.com/member-data-sharing/RECORD_ID)<br>If you don't know the record ID, you can use below endpoint<br>[https://api.adnxs.com/member-data-sharing?data_member_id=MEMBER_ID&buyer_member_id=CLIENT_MEMBER_ID](https://api.adnxs.com/member-data-sharing?data_member_id=MEMBER_ID&buyer_member_id=CLIENT_MEMBER_ID) | View a specific sharing record |
@@ -63,7 +49,7 @@ to add it to the campaign's targeting profile again.
 ## JSON fields
 
 | Field | Type (Length) | Description |
-|---|---|---|
+|--|--|--|
 | buyer_member_id | int | The ID of the member with whom you are sharing segments.<br>**Required On**: POST |
 | data_member_id | int | **Read-only**. Your member ID. |
 | id | int | The ID of the sharing record.<br>**Default**: Auto-generated number<br>**Required On**: PUT/DELETE, in query string |

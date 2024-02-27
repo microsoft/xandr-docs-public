@@ -1,22 +1,22 @@
 ---
 title: Reporting Options for Dimension, Primary, and Secondary Metrics
-description: This article lists the reporting options for Dimension, Primary, and Secondary metrics.
+description: This article lists the reporting options for dimension, primary and secondary metrics.
 ms.date: 11/06/2023
 ms.custom: yield-analytics-ui
 ---
 
-# Reporting options for Dimension, Primary, and Secondary metrics
+# Reporting options for dimension, primary and secondary metrics
 
 The most commonly used dimension and metric options are noted with an asterisk.
 
 ## Options for dimension
 
-**Product dimensions**
+### Product dimensions
 
 - Product\*
 - Target\*
 
-**Order/Order line dimensions**
+### Order/Order line dimensions
 
 - Close Date
 - Consumption Date\*
@@ -34,21 +34,21 @@ The most commonly used dimension and metric options are noted with an asterisk.
 - Source System
 - Start Date
 
-**Customer dimensions**
+### Customer dimensions
 
 - Advertiser
 - Agency
 - Industry
 
-**Sales team dimensions**
+### Sales team dimensions
 
 Salesperson
 
-## Options for Primary and Secondary metrics
+## Options for primary and secondary metrics
 
 The available metrics options depend on the which dimension you choose. You cannot select the same option for the primary and secondary metric.
 
-**Sales**
+### Sales
 
 - Contracted CPD
 - Contracted CPM
@@ -63,7 +63,7 @@ The available metrics options depend on the which dimension you choose. You cann
 - Scheduled Impressions
 - Scheduled Impressions (Lifetime)
 
-**Consumption/Performance**
+### Consumption/Performance
 
 - Consumed Impressions
 - Consumed Impressions (Lifetime)
@@ -73,7 +73,7 @@ The available metrics options depend on the which dimension you choose. You cann
 - Earned Revenue (Lifetime)
 - eCPM
 
-**Reach/Frequency**
+### Reach/Frequency
 
 - Average Frequency (Daily)
 - Average Frequency (Weekly)
@@ -81,28 +81,28 @@ The available metrics options depend on the which dimension you choose. You cann
 - Average Uniques (Weekly)
 - Uniques (Lifetime)
 
-**Value**
+### Value
 
 - Consumed Value (@Rate Card)
 - Effective Discount % (@Rate Card)
 - Effective Discount Value (@Rate Card)
 
-**Capacity**
+### Capacity
 
 - Impression Capacity
 - Revenue Capacity (@Rate Card)
 
-**Availability**
+### Availability
 
 - Available Impressions
 - Available Revenue (@Rate Card)
 
-**Yield**
+### Yield
 
 - Sell Through
 - Yield % (@Rate Card)
 
-**At-Risk**
+### At-Risk
 
 - Overbooked Impressions
 - Revenue Against Goal

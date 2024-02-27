@@ -15,19 +15,19 @@ This guide explains how to use Adobe Animate CC to build HTML5 creatives that wi
 
 1. Open the **Actions** window.
 
-    :::image type="content" source="media/actions-window.png" alt-text="Screenshot of the Actions window.":::
+    :::image type="content" source="media/actions-window.png" alt-text="Screenshot that illustrates the process of selecting Actions from the Window menu in Adobe Animate C C.":::
 
 1. Select **Code Snippets** in Actions toolbar.  
 
-   :::image type="content" source="media/code-snippet-in-actions.png" alt-text="Screenshot of Code Snippets in Actions toolbar.":::
+   :::image type="content" source="media/code-snippet-in-actions.png" alt-text="Screenshot of the Actions toolbar with Code Snippets selected.":::
 
 1. Click **HTML Canvas**, then **Event Handlers**, and then select **Mouse Click** and click **OK** if you receive a warning.  
 
-    :::image type="content" source="media/click-html-canvas.png" alt-text="Screenshot of the HTML Canvas screen.":::
+    :::image type="content" source="media/click-html-canvas.png" alt-text="Screenshot of the Code Snippets window with Mouse Click event selected.":::
 
 1. You will see a text editor pre-populated with code. Replace the “`alert("Mouse clicked");`” with:
 
-    ``` 
+    ```
     function getParameterByName(name) {
       var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
       return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
@@ -35,7 +35,7 @@ This guide explains how to use Adobe Animate CC to build HTML5 creatives that wi
     window.open(getParameterByName('clickTag'), '_blank');
     ```
 
-    :::image type="content" source="media/mouse-clicked.png" alt-text="Screenshot of text editor pre-populated with code.":::
+    :::image type="content" source="media/mouse-clicked.png" alt-text="Screenshot of the text editor pre-populated with a code.":::
 
 1. Save and **Publish** your work. Open the project's `.html` file in your web browser. Add `?clickTag=http://www.appnexus.com` at the end of the URL in the address bar.
 

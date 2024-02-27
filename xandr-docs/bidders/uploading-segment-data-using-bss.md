@@ -1,6 +1,6 @@
 ---
 title: Bidders - Uploading Segment Data Using BSS
-description: Learn adding your segment file to the system in a multi-step process. 
+description: This page is a step-by-step guide to add your segment file to the system with examples.
 ms.date: 11/28/2023
 ---
 
@@ -30,7 +30,7 @@ Note that your data file must meet the following requirements:
 
 Each segment data file that is uploaded must be associated with a particular job ID. This ID is used to create the upload URL and to track the file's processing status. The first step is to send an empty `POST` request to the service.
 
-This service works for both [api.appnexus.com](https://api.appnexus.com/) and for [adnxs.com](http://api.adnxs.com/). It is available for both bidder and UI logins.
+This service works for both `api.appnexus.com` and for `adnxs.com`. It is available for both bidder and UI logins.
 
 ``` 
 $ curl -b cookies -X POST "https://api.appnexus.com/batch-segment?member_id=456"
@@ -62,8 +62,7 @@ The file upload URL is given in the JSON response in Step 1 by the field upload
 
 - Do not hard-code the upload URL in your application. Make sure to dynamically grab it from the upload_url field.
 - You must begin your upload to the given Upload URL within five (5) minutes, and only one URL is valid at any given time. If you wait longer than 5 minutes to start your upload, you must request a new URL.
-- We recommend, you do not exceed one upload per minute. If you have more than 200 jobs waiting to be processed at any given time, you will
-  be prohibited from uploading additional jobs.
+- We recommend, you do not exceed one upload per minute. If you have more than 200 jobs waiting to be processed at any given time, you will be prohibited from uploading additional jobs.
 
 > [!WARNING]
 > To upload the file correctly, you must specify the MIME type in the HTTP header as `"Content-Type: application octet-stream"`. Don't use `"Content-Type: application x-www-form-urlencode"` (`-d or --data flags in curl`). Using an incorrect MIME type will prevent the file from being processed.

@@ -15,13 +15,13 @@ Client Hints are intended to be an alternative source of information contained i
 
 **Current UA string (detected as Tablet device):**
 
-``` pre
+```
 Mozilla/5.0 (Linux; Android 9; SM-T810) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.1234.56 Safari/537.36
 ```
 
 **Same user with reduced UA string - not using Client Hints (detected as Desktop device):**
 
-``` pre
+```
 Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.0.0 Safari/537.36
 ```
 
@@ -55,6 +55,6 @@ In this scenario, the cross-domain server needs to set the http headers. For exa
 
 Here, the `allow` attribute should also be present on the iframe with value set to `ch-ua-platform-version;ch-ua-model`. For example,
 
-``` pre
+```
 <iframe allow="ch-ua-platform-version;ch-ua-model" src="https://adscripthost.com/ad_placement_setup.html" style="width: 100%; height: 400px"></iframe>  
 ```

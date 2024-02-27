@@ -1,6 +1,6 @@
 ---
 title: Data Providers - Home
-description: This page gives information to data providers on processes to integrate data, share data with buyer and maintain data.
+description: Learn how our technical team helps data providers integrate with the platform and assist purchasers in using the data they have purchased. 
 ms.custom: data-providers
 ms.date: 11/29/2023
 ---

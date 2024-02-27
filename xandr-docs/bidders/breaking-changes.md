@@ -6,8 +6,7 @@ ms.date: 10/28/2023
 
 # Bidders - Breaking changes
 
-Our impression bus API and bidding protocol are continually changing. The vast majority of changes are seamless additions of new
-functionality, but occasionally we introduce "breaking changes" that may require you to adjust your integration.
+Our impression bus API and bidding protocol are continually changing. The vast majority of changes are seamless additions of new functionality, but occasionally we introduce "breaking changes" that may require you to adjust your integration.
 
 This page explains what changes qualify as "breaking changes" to our impression bus API and our bidding protocol. It also gives you examples of changes that do not quality as breaking changes.
 
@@ -39,8 +38,7 @@ We will announce breaking changes to our bidding protocol at least 45 days befor
 
 ## Examples of non-breaking changes
 
-The following types of changes do not quality as breaking changes. Note that this list is not exhaustive; these are just some
-examples of non-breaking changes.
+The following types of changes do not quality as breaking changes. Note that this list is not exhaustive; these are just some examples of non-breaking changes.
 
 - Addition of a new non-mandatory field (API or bidding protocol).
 - Addition of a new service (API).

@@ -12,7 +12,7 @@ This function resets the state of the `apntag` back to its uninitialized state. 
 > [!NOTE]
 > Unlike the refresh function, `clearRequest` does not remove any DOM elements, including `iFrames`. It is the responsibility of the user to manage their DOM elements.
 
-``` pre
+```
 clearRequest(targetId)
 ```
 
@@ -26,18 +26,18 @@ The parameters listed below can be sent as arguments in the function.
 
 To completely reset all tags that are currently defined:
 
-``` pre
+```
 apntag.clearRequest(); 
 ```
 
 To reset a single tag using its `targetId` value:
 
-``` pre
+```
 apntag.clearRequest('adslot1');
 ```
 
 To reset multiple tags using their `targetId` values:
 
-``` pre
+```
 apntag.clearRequest(['adslot1', 'adslot2']);
 ```

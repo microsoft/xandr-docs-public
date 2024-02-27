@@ -1,6 +1,6 @@
 ---
 title: Data Usage Report for Data Providers
-description: This page defines the Data Usage Report. 
+description: This page talks about your data usage information provided by third parties, costs of that data usage, and the campaigns in which that data was used.    
 ms.custom: data-providers
 ms.date: 11/30/2023
 ---
@@ -33,7 +33,7 @@ The `report_interval` field in the JSON request must be set to one of the foll
 ## Dimensions
 
 | Column | Type | Group? | Filter? | Example | Description |
-|---|---|---|---|---|---|
+|--|--|--|--|--|--|
 | month | date | no | yes | `"2010-02"` | The month at which the auction associated with the impression occurred |
 | day | date | yes | yes | `"2010-02-01"` | The day at which the auction associated with the impression occurred |
 | hour | date | yes | yes | `"2010-02-01 05:00:00"` | The hour at which the auction associated with the impression occurred. |
@@ -45,15 +45,15 @@ The `report_interval` field in the JSON request must be set to one of the foll
 | geo_country_code | string | yes | yes | `"CA"` | A two-character string denoting the country associated with the impression. For a complete listing of allowed values, see ISO 3166-1 country codes. |
 | campaign_id | int | yes | yes | `31` | The ID of the campaign associated with the impressions that used third-party data targeting. |
 | campaign_name | string | no | no | `"Prospect Campaign"` | The name of the campaign associated with the impressions that used third-party data targeting. |
-| data_provider_id | int | yes | yes  | `517` | The ID of the third-party that provided the targeting data. |
-| targeted_segment_ids | string | no | no  | `"935035, 935146"`  | The comma-separated list of IDs for each of the segments used when targeting. |
-| data_provider_name | string | no | no | `"Peer 39 (Data Provider)"` | The name and ID of the third-party that provided the targeting data.  |
+| data_provider_id | int | yes | yes | `517` | The ID of the third-party that provided the targeting data. |
+| targeted_segment_ids | string | no | no | `"935035, 935146"` | The comma-separated list of IDs for each of the segments used when targeting. |
+| data_provider_name | string | no | no | `"Peer 39 (Data Provider)"` | The name and ID of the third-party that provided the targeting data. |
 | cpm_usd | int | yes | no | `"0.75"` | The CPM value of the data segment used |
 
 ## Metrics
 
 | Column | Type | Example | Formula | Description |
-|---|---|---|---|---|
+|--|--|--|--|--|
 | imps | int | `34534` | imps | The total number of impressions that used third-party data to serve the ad. |
 | data_costs | money | `3.50` | imps * CPM/1000 | The monetary value of the data segments that were purchased from third-party data providers. |
 | data_clearing_fee_usd | money | `0.50` | data_costs * Xandr revshare | The monetary value of the revshare earned by Xandr. |

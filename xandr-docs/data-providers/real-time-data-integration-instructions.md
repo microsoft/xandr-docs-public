@@ -17,13 +17,11 @@ Complete the following steps to begin using the Impression Bus API (api.adnxs.co
 
 **Step 1:** Use your API credentials to [authenticate](../bidders/authentication-service.md).
 
-**Step 2:** You must set your ACL settings so as to accept Xandr's impression bus IP ranges. Make sure to allow IP ranges from the datacenters where you are listening to traffic and exclusively allowlist impression bus IPs (contact your Xandr Account Manager for a list of Xandr-specific ACLs). Please remember to allow both NYM1 and NYM2 IP ranges if you are in the NY datacenter and to allow AMS3 and FRA1 IP ranges if you are in the AMS datacenter.
+**Step 2:** You must set your ACL settings so as to accept Xandr's impression bus IP ranges. Make sure to allow IP ranges from the datacenters where you are listening to traffic and exclusively allowlist impression bus IPs (contact your Xandr Account Manager for a list of Xandr-specific ACLs). Remember to allow both NYM1 and NYM2 IP ranges if you are in the NY datacenter and to allow AMS3 and FRA1 IP ranges if you are in the AMS datacenter.
 
 **Step 3:** [Create your parent profile through the API Bidder Profile Service](../bidders/legacy-bidder-profile-service.md). The profile will allow you to pre-filter traffic by parameters such as country, seller, and overall percentage. For testing purposes, it is recommended that you set the `passthrough_percent` field to something small like 5% until you are ready to take in a larger amount. Data provider bidders cannot have child profiles, they can only have a single parent profile.
 
-**Step 4:** Configure your bidder by setting the `bid_uri` (endpoint for bid requests), `ready_uri` (endpoint for ready requests), and
-`parent_profile_id` fields. The `parent_profile_id` should be the ID of the profile you created in step 3. The other bidder object fields
-(`notify_uri`, `pixel_uri`, `click_uri`, etc) should not be set as they do not apply to data providers.
+**Step 4:** Configure your bidder by setting the `bid_uri` (endpoint for bid requests), `ready_uri` (endpoint for ready requests), and `parent_profile_id` fields. The `parent_profile_id` should be the ID of the profile you created in step 3. The other bidder object fields (`notify_uri`, `pixel_uri`, `click_uri`, etc) should not be set as they do not apply to data providers.
 
 - Ensure that you include at least one of our macros in your `bid_uri`. For a complete list of available macros, see Xandr [Macros for Data Providers](xandr-macros-for-data-providers.md).
 
@@ -45,7 +43,7 @@ not have any segments for a given impression, respond with a new line:
 
 **Step 8:** Confirm that your integration is working correctly by looking at metrics in our [Bidder UI](https://bidder.xandr.com/login).
 
-**Step 9:** Share your segments with clients using the [Member-Data-Sharing Service](member-data-sharing-service.md).
+**Step 9:** Share your segments with clients using the [Member Data Sharing Service](member-data-sharing-service.md).
 
 **Step 10:** Ongoing: Monitor your metrics in the [Bidder UI](https://bidder.xandr.com/login) on the Metrics tab.
 

@@ -1,6 +1,6 @@
 ---
 title: Run an Existing Order Line through Scenario Manager
-description: Use Scenario Manager to simulate changes to an order line to troubleshoot under or over delivering orders and how it would affect other products.
+description: Use Scenario Manager to simulate changes to an order line to troubleshoot under or over delivering orders.
 ms.date: 11/06/2023
 ms.custom: yield-analytics-ui
 ---
@@ -23,7 +23,7 @@ You can add the order line to Scenario Manager from its **Order Line Visibilit
 1. In the **Change Type** dropdown menu, choose **Select order line** to modify and click **Go**.
 1. On the **Find Order Lines** page that is displayed, use the filer criteria to find the specific order line.
 1. Click for the order line and select **Add to Scenario**.
-1. Return to Scenario Manager.
+1. Return to **Scenario Manager**.
 
 The order lines that you added to Scenario Manager appear twice:
 

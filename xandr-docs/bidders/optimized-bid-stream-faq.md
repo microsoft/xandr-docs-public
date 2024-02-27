@@ -34,8 +34,7 @@ With Optimized Bid Stream, you receive more bid requests for inventory you've be
 
 ## What changes have been made to the Optimized Bid Stream?
 
-On September 5, 2018, we updated our OBS algorithm. Traffic will be maximized to meet your QPS cap. Low priority traffic that exceeds your
-QPS cap will not be sent. You may see an uptick in incoming traffic; however, your QPS cap will always be respected.
+On September 5, 2018, we updated our OBS algorithm. Traffic will be maximized to meet your QPS cap. Low priority traffic that exceeds your QPS cap will not be sent. You may see an uptick in incoming traffic; however, your QPS cap will always be respected.
 
 ## What should I do if I have feedback or more questions on Optimized Bid Stream?
 

@@ -17,8 +17,7 @@ Outlook.com combines the best of Outlook and Hotmail to offer a clutter-free env
 1. **High Relevance**: Active(100% logged in) users provide a large pool of targeting options, which helps increase ROI.
 1. **Simple, yet visual**: Simple creatives deliver imagery that stands out against a clean environment.
 
-Outlook.com ad experiences are designed with both advertisers and consumers in mind. Located on the right side of users' email, the
-Skyscraper unit is fully integrated into the user experience. For more information about adding Outlook.com creatives, see [Add a Microsoft Outlook Skyscraper Creative](../industry-reference/add-a-microsoft-outlook-versatile-creative.md). Review the specifications for Outlook skyscraper creatives and add them to Xandr.
+Outlook.com ad experiences are designed with both advertisers and consumers in mind. Located on the right side of users' email, the Skyscraper unit is fully integrated into the user experience. For more information about adding Outlook.com creatives, see [Add a Microsoft Outlook Skyscraper Creative](../industry-reference/add-a-microsoft-outlook-versatile-creative.md). Review the specifications for Outlook skyscraper creatives and add them to Xandr.
 
 > [!NOTE]
 > Packages bundled with Microsoft user data are available through the packages marketplace. For more information, see [Buying Microsoft Deals](../invest/buying-microsoft-deals.md).

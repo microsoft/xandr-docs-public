@@ -1,6 +1,6 @@
 ---
 title: Data Cost Calculation
-description: Learn about key steps in assessing data cost. 
+description: Learn about key steps in assessing data cost. This page illustrates segment targeting using *AND* and *OR* boolean along with examples.
 ms.custom: data-providers
 ms.date: 11/29/2023
 ---
@@ -31,7 +31,7 @@ The examples below illustrate in more detail how this process works.
 
 In the simplest scenario, the campaign is targeting just a single segment. The presence of the user's unique identifier (a parameter in the auction) determines whether the demographic segment is relevant. For campaigns targeting one segment, if a segment is relevant, then the segment is used to bid in the auction.
 
-:::image type="content" source="media/simple-segment-targeted.png" alt-text="Screenshot of Simplet Segment Targeted.":::
+:::image type="content" source="media/simple-segment-targeted.png" alt-text="Screenshot of Single Segment Targeted.":::
 
 ## Multiple segments targeted
 
@@ -44,13 +44,13 @@ If multiple segments are targeted with a campaign, the boolean *AND/OR* logic 
 
 #### If the ad request is relevant in ALL targeted segments, a bid is made
 
-:::image type="content" source="media/ad-request-a.png" alt-text="Screenshot of Ad Request.":::
+:::image type="content" source="media/ad-request-a.png" alt-text="Screenshot of when a bid will be made.":::
 
 #### If the ad request isn't relevant in multiple targeted segments, then no bid is made
 
-:::image type="content" source="media/ad-request-b.png" alt-text="Screenshot Ad Request B.":::
+:::image type="content" source="media/ad-request-b.png" alt-text="Screenshot of when an ad request is not relevant to one or many of the targeted segment.":::
 
-:::image type="content" source="media/ad-request-c.png" alt-text="Screenshot of Ad Request C.":::
+:::image type="content" source="media/ad-request-c.png" alt-text="Screenshot of when no bid will be made.":::
 
 > [!NOTE]
 > Since the ad request is required to be relevant for ALL targeted segments using the AND boolean, the buyer is charged for the use of ALL segments if the impression is won.
@@ -59,17 +59,17 @@ If multiple segments are targeted with a campaign, the boolean *AND/OR* logic 
 
 #### If the ad request is relevant to ANY segment, a bid is made using the relevant segment
 
-:::image type="content" source="media/ad-request-d.png" alt-text="Screenshot of Ad Request D.":::
+:::image type="content" source="media/ad-request-d.png" alt-text="Screenshot of when the ad request is relevant to ANY segment, a bid will be made.":::
 
-:::image type="content" source="media/ad-request-e.png" alt-text="Screenshot of Ad Request E.":::
+:::image type="content" source="media/ad-request-e.png" alt-text="Screenshot of when a bid will be made using the relevant segment.":::
 
 #### If an ad request is relevant to multiple segments (overlaps), Xandr uses the lowest-priced segment for bidding in the auction
 
-:::image type="content" source="media/ad-request-f.png" alt-text="Screenshot of Ad Request F.":::
+:::image type="content" source="media/ad-request-f.png" alt-text="Screenshot of ad request when it is relevant to more than one segment.":::
 
 #### If the ad request is NOT relevant to any targeted segment, then no bid is made
 
-:::image type="content" source="media/ad-request-g.png" alt-text="Screenshot of Ad Request G.":::
+:::image type="content" source="media/ad-request-g.png" alt-text="Screenshot of ad request when it is NOT relevant to any targeted segment.":::
 
 ## Multiple groups of segments targeted
 
@@ -78,13 +78,13 @@ tiering of boolean operations (e.g., an AND within an ORed group) the calculatio
 
 ### AND targeting using segment groups
 
-:::image type="content" source="media/multiple-groups-of-segments-targeted-a.png" alt-text="Screenshot of Multiple groups of segments targeted A.":::
+:::image type="content" source="media/multiple-groups-of-segments-targeted-a.png" alt-text="Screenshot of AND Targeting using Segment Groups.":::
 
 When using the AND boolean against segment groups, the boolean within each group is set to OR. OR pricing logic described in the section above is used to determine which segments to use in each group. Then a second calculation is done to verify that at least one segment is relevant in each group. At least one segment from each group is used to bid on the auction.
 
 ### OR targeting using segment groups
 
-:::image type="content" source="media/multiple-groups-of-segments-targeted-b.png" alt-text="Screenshot of Multiple groups of segments targeted B.":::
+:::image type="content" source="media/multiple-groups-of-segments-targeted-b.png" alt-text="Screenshot of When the segment groups have been ORed.":::
 
 When using the OR boolean against segment groups, the boolean within each group is set to AND. As such, each segment group is evaluated using the AND pricing logic described in the section above to calculate the prices for each group. Then a second calculation is done to evaluate each group using the OR pricing logic described above. All segments within one segment group is used to bid on the auction.
 
@@ -110,21 +110,45 @@ Pricing of segments is determined by the following pricing methodologies. We off
 
 ### Pricing methodology 2
 
-| Summary | Diagram | Example |
+|  |  |
 |--|--|
-| When multiple segments are used under this pricing methodology, Xandr charges the highest CPM segment across all publishers. | :::image type="content" source="media/pricing-methodology-a.png" alt-text="Screenshot of Pricing Methodology A."::: | Final Price: $1.50 CPM <br><br>:::image type="content" source="media/pricing-methodology-b.png" alt-text="Screenshot of Pricing Methodology B."::: <br><br> - Four segments were used to win the impression and the buyer is charged for the usage of all segments. <br> - The bundled price for all four segments is $1.50 CPM (the highest CPM category.) |
+| Summary | When multiple segments are used under this pricing methodology, Xandr will charge the highest CPM segment across all publishers. |
+
+|  |  |
+|--|--|
+| Diagram | :::image type="content" source="media/pricing-methodology-a.png" alt-text="Screenshot of Pricing Methodology 2."::: |
+
+|  |  |
+|--|--|
+| Example | Final Price: $1.50 CPM<br>:::image type="content" source="media/pricing-methodology-b.png" alt-text="Screenshot showing the bundled price for all four segments."::: <br> - Four segments were used to win the impression and the buyer will be charged for the usage of all segments <br> - The bundled price for all four segments is $1.50 CPM (the highest CPM category) |
 
 ### Pricing methodology 3
 
-| Summary | Diagram | Example |
+|  |  |
 |--|--|
-| When multiple segments are used under this pricing methodology, Xandr charges for all categories. | :::image type="content" source="media/pricing-methodology-c.png" alt-text="Screenshot of Pricing Methodology C."::: | Final Price: $1.25 CPM <br><br>:::image type="content" source="media/pricing-methodology-d.png" alt-text="Screenshot of Pricing Methodology D."::: <br><br> - Seven segments were used to win the impression and the buyer is charged for the usage of all segments. <br> - The bundled price is determined by adding the price of each that category is used <br> - The bundled price is $1.25 CPM = $0.10 + $0.20 + $0.25 + $0.30 + $0.40. |
+| Summary | When multiple segments are used under this pricing methodology, Xandr will charge for all categories. |
+
+|  |  |
+|--|--|
+| Diagram | :::image type="content" source="media/pricing-methodology-c.png" alt-text="Screenshot of Pricing Methodology 3."::: |
+
+|  |  |
+|--|--|
+| Example | Final Price: $1.25 CPM <br>:::image type="content" source="media/pricing-methodology-d.png" alt-text="Screenshot of Pricing Methodology when the bundled price is $1.25 CPM."::: <br> - Seven segments were used to win the impression and the buyer will be charged for the usage of all segments <br> - The bundled price will be determined by adding the price of each that category is used <br> - The bundled price is $1.25 CPM = $0.10 + $0.20 + $0.25 + $0.30 + $0.40 |
 
 ### Pricing methodology 4
 
-| Summary | Diagram | Example |
+|  |  |
 |--|--|
-| When multiple segments are used under this pricing methodology, Xandr charges for the highest CPM category. | :::image type="content" source="media/pricing-methodology-e.png" alt-text="Screenshot of Pricing Methodology E."::: | Final Price: $0.40 CPM <br><br> :::image type="content" source="media/pricing-methodology-f.png" alt-text="Screenshot of Pricing Methodology F."::: <br><br> - Seven segments were used to win the impression and the buyer is charged for the usage of all segments. <br> - The bundled price is determined by the highest CPM price of the categories used. <br> - The bundled price is $0.40 CPM. |
+| Summary | When multiple segments are used under this pricing methodology, Xandr will charge for the highest CPM category. |
+
+|  |  |
+|--|--|
+| Diagram | :::image type="content" source="media/pricing-methodology-e.png" alt-text="Screenshot of Pricing Methodology 4."::: |
+
+|  |  |
+|--|--|
+| Example | Final Price: $0.40 CPM <br>:::image type="content" source="media/pricing-methodology-f.png" alt-text="Screenshot of Pricing Methodology when the bundled price is $0.40 CPM."::: <br> - Seven segments were used to win the impression and the buyer will be charged for the usage of all segments <br> - The bundled price will be determined by the highest CPM price of the categories used <br> - The bundled price is $0.40 CPM |
 
 ## Glossary
 

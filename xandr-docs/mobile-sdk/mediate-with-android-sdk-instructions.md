@@ -2,7 +2,7 @@
 title: Mediate with Android SDK Instructions
 description: Mediate with Android SDK instructions. Mediation allows selling ad impressions through multiple networks initiated by the main SDK.
 ms.custom: android-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
 ---
 
 # Mediate with Android SDK instructions
@@ -31,7 +31,7 @@ This section lists the networks that we support with mediation adaptors, as well
 
 ## Maven settings
 
-To mediate these networks, you'll need a supported release of our SDK, and a mediation adaptor that allows our SDK to communicate with the network's SDK. The easiest way to get the SDK and adaptors is to use Maven from your `build.gradle` as shown in the example below. The first block includes the dependencies for the SDK itself. The second block lists adaptors to mediate other SDKs. (Note that these are top-level blocks, not part of the buildscript block.) You can include or exclude any of the adaptors in the second block. Including an adaptor causes it to automatically include the appropriate 3rd party SDK (which is downloaded from our CDN at Gradle sync time).
+To mediate these networks, you'll need a supported release of our SDK, and a mediation adaptor that allows our SDK to communicate with the network's SDK. The easiest way to get the SDK and adaptors is to use Maven from your `build.gradle` as shown in the example below. The first block includes the dependencies for the SDK itself. The second block lists adaptors to mediate other SDKs. Note that these are top-level blocks, not part of the buildscript block. You can include or exclude any of the adaptors in the second block. Including an adaptor causes it to automatically include the appropriate 3rd party SDK (which is downloaded from our CDN at Gradle sync time).
 
 Finally, note that the `[8,9)` notation means that when your app is compiled, the latest version of the SDK in the 8.x series will be included. When we release a new version of the SDK, all that you'll have to do to get the new version is recompile your app.
 
@@ -84,7 +84,7 @@ dependencies {
 > **Lifecycle Callbacks Required**
 >
 > When mediating AdMob/DFP banners, you must add lifecycle callbacks to your code as described in the section below.
-> 
+>
 > **Implementation Note - Forwarding Lifecycle Callbacks**
 >
 > As we need to forward the lifecycle callbacks to the AdMob/DFP banner as required by them. For more information about activity lifecycles, see [Managing the Activity Lifecycle](https://developer.android.com/training/basics/activity-lifecycle/index.html) in the Android docs.
@@ -110,7 +110,7 @@ abstract public void activityOnPause();
 abstract public void activityOnResume();
 ```
 
-**Native mediation**
+#### Native mediation
 
 > [!NOTE]
 > Starting with v5.1 of the SDK, the AdMob Native Mediation adapter code was modified support the Google [UnifiedNativeAd](https://developers.google.com/admob/android/native/advanced).
@@ -124,13 +124,13 @@ abstract public void activityOnResume();
 
 For native mediation, add initialization code as described here:
 
-If you intend to use MediaView for displaying Images/Video, you need to enable MediaView before making an ad request. If you don't explicitly enable it, we download the images for you and MediaView will not fill the images automatically.
+If you intend to use `MediaView` for displaying Images/Video, you need to enable `MediaView` before making an ad request. If you don't explicitly enable it, we download the images for you and `MediaView` will not fill the images automatically.
 
 ```
 AdMobNativeSettings.setEnableMediaView(true);
 ```
 
-If the NativeAdResponse is from AdMob, create a View of type UnifiedNativeAdView.
+If the `NativeAdResponse` is from AdMob, create a View of type `UnifiedNativeAdView`.
 
 ```
 private NativeAdRequestListener nativeAdRequestListener = new NativeAdRequestListener() {
@@ -151,9 +151,9 @@ private NativeAdRequestListener nativeAdRequestListener = new NativeAdRequestLis
 }
 ```
 
-**Setting the custom keyword**
+#### Setting the custom keyword
 
-For passing the content URL to the Google SDK, the contenturl needs to be passed as a custom keyword with the requester ad object (BannerAdView, InterstitialAdView, NativeAdRequest). The key to be used is `content_url`. Here is an example:
+For passing the content URL to the Google SDK, the contenturl needs to be passed as a custom keyword with the requester ad object (`BannerAdView`, `InterstitialAdView`, `NativeAdRequest`). The key to be used is `content_url`. Here is an example:
 
 ```
 // Add key content_url with a value (www.appnexus.com).
@@ -176,7 +176,7 @@ maven { url '[https://developer.huawei.com/repo/](https://developer.huawei.com/r
 ```
 
 > [!WARNING]
-> 
+>
 > **Interstitials**
 >
 > If you are using SmartAdServer interstitial, be aware that `SASInterstitialView` does not have `loadAd()` and `showAd()` methods corresponding to our mobile SDK's `InterstitialAdView`. `SASInterstitialView` has only the `loadAd()` method which does both loading and showing of ads just in one call.

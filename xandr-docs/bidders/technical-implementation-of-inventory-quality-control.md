@@ -1,7 +1,7 @@
 ---
 title: Inventory Quality Control Implementation
-description: This page deals with Xandr's inventory solution that allows branded advertisers to buy through our platform and proactively protect their brand.
-ms.date : 11/28/2023
+description: Learn about Xandr's inventory solution that allows branded advertisers to buy through our platform and proactively protect their brand. This page lists various implementations for Inventory quality control. 
+ms.date: 11/28/2023
 ---
 
 # Inventory quality control implementation

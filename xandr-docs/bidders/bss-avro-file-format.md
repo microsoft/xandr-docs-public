@@ -148,7 +148,7 @@ Only one id type can be uploaded per uid record (e.g. Xandr User ID, IFA, Device
 
 ##### Python library example: `Device ID`
 
-``` 
+```
 
 {'uid': {'id': 
 'qweqeqweq', 
@@ -181,7 +181,7 @@ Only one id type can be uploaded per uid record (e.g. Xandr User ID, IFA, Device
 
 ##### Python library example: `Extended ID's(eid) or Publisher-provided ID's(PPID)`
 
-``` 
+```
 
 {'uid': {'id': 
 'qweqeqweq', 
@@ -208,13 +208,13 @@ You can upload to multiple segments within the same uid record by creating an ar
 
 - Java library
 
-  ``` 
+  ```
   Curl -o http://archive.apache.org/dist/avro/avro-1.10.1/java/avro-tools-1.10.1.jar
   ```
 
 - Python library
 
-  ``` 
+  ```
   python3 -m pip install avro
   ```
 
@@ -230,7 +230,7 @@ For examples using the Java and Python libraries, see below.
 
 #### Create an audience file
 
-``` 
+```
 {"uid":{"long":12345},"segments":[{"id":123,"code":"","member_id":0,"expiration":0,"timestamp":0,"value":0}]}
 {"uid":{"external_id":{"id":"clientid1","member_id":958}},"segments":[{"id":123,"code":"","member_id":0,"expiration":0,"timestamp":0,"value":0}]}
 {"uid":{"ifa":{"id":"99136473264876328","type":"atif"}},"segments":[{"id":123,"code":"","member_id":0,"expiration":0,"timestamp":0,"value":0}]}
@@ -242,7 +242,7 @@ For examples using the Java and Python libraries, see below.
 
 Run the following command:
 
-``` 
+```
 java -jar avro-tools-1.10.1.jar fromjson --codec deflate --schema-file xandr_schema.avsc sample.json > sample.avro  
 ```
 

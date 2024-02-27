@@ -2,14 +2,14 @@
 title: Multi Ad Request for iOS
 description: This article provides instructions and code samples for using ANMultiAdRequest to initiate multiple auctions in a single server response. 
 ms.custom: ios-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
 ---
 
 # Multi ad request for iOS
 
 ## Overview
 
-This article provides instructions and code samples for initiating and configuring a multi ad request (`ANMultiAdRequest`). `ANMultiAdRequest` enables you to use a single universal tag (UTv3) request to initiate multiple auctions, the results of which are returned in a single server response.
+This article provides instructions and code samples for initiating and configuring a multi ad request (`ANMultiAdRequest`). `ANMultiAdRequest` enables you to use a single universal tag (UTv3) request to initiate multiple auctions, the results of which are returned in a single server response.
 
 `ANMultiAdRequest`, like an `AdUnit`, implements a subset of `ANAdProtocol`. This enables a `ANMultiAdRequest` to adopt the type and behavior of different `AdUnits` ([banner](./show-banners-on-ios.md), [native](./show-banner-native-on-ios.md), [video](./show-instream-video-ads-on-ios.md), etc.) using the same specifications of each `AdUnit` type. Custom keywords can be assigned to a `ANMultiAdRequest` and will be inherited by the contained `AdUnits`.
 
@@ -22,9 +22,9 @@ Users can select from one of three initialization methods. All require a `member
 
 ### Initialization methods
 
-#### Initialize with a list of one or more AdUnits
+#### Initialize with a list of one or more `AdUnits`
 
-Initializes an instance of `ANMultiAdRequest` with a list of one or more AdUnits. For example,
+Initializes an instance of `ANMultiAdRequest` with a list of one or more `AdUnits`. For example,
 
 **Without publisher ID**
 
@@ -46,7 +46,7 @@ Initializes an instance of `ANMultiAdRequest` with a list of one or more AdUnits
                      ... NS_REQUIRES_NIL_TERMINATION;
 ```
 
-#### Initialize with a list of AdUnits and call the load method
+#### Initialize with a list of `AdUnits` and call the `load` method
 
 Enables initialization and calls the `load` method with a single line of code. Like the process above, the instance is initialized with a list of one or more `AdUnits`. If a failure occurs during the `load` lifecycle, the class is not initialized and a null object is returned. When a successful `load` process occurs, a class instance is returned, after which the success or failure of the instance is communicated to the caller via `ANMultiAdRequestDelegate`. For example,
 
@@ -95,12 +95,12 @@ This basic initialization returns an instance of the class but takes no action. 
 
 | Variable | Type | Attributes | Scope | Description |
 |:---|:---|:---|:---|:---|
-| `memberId` | NSInteger | nonatomic, readonly, assign | `Required` | A member id. Any `AdUnits` contained within the `ANMultiAdRequest` must have identical `memberIds` or the `ANMultiAdRequest` will be rejected. The `memberId` can also be attained by passing in a `placementId`. |
+| `memberId` | NSInteger | nonatomic, readonly, assign | `Required` | A member ID. Any `AdUnits` contained within the `ANMultiAdRequest` must have identical `memberIds` or the `ANMultiAdRequest` will be rejected. The `memberId` can also be attained by passing in a `placementId`. |
 | `delegate` | ANMultiAdRequestDelegate | nonnull | Required | An object to be notified with relevant callbacks and information. |
 | `adUnits` | List of adUnits | nonnull | Optional | A list of `AdUnits` for initialization of a `ANMultiAdRequest`. |
 
 > [!NOTE]
-> If initialization is successful, SDK returns  `YES`, otherwise returns `NO`. 
+> If initialization is successful, SDK returns `YES`, otherwise returns `NO`.
 
 ## Configuration
 
@@ -110,7 +110,7 @@ All `ANMultiAdRequest` configuration properties and methods are the same in type
 
 | Parameter | Type | Attributes | Description |
 |:---|:---|:---|:---|
-| `memberId` | NSInteger | readonly | A member id. Any `AdUnits` contained within the `MultiAdRequest` must have identical `memberIds` or the `MultiAdRequest` will be rejected by Xandr's Impression Bus. The `memberId` can also be attained by passing in a `placementId`. |
+| `memberId` | NSInteger | readonly | A member ID. Any `AdUnits` contained within the `MultiAdRequest` must have identical `memberIds` or the `MultiAdRequest` will be rejected by Xandr's Impression Bus. The `memberId` can also be attained by passing in a `placementId`. |
 | `location` | ANLocation | readwrite | The user location. `Location` can be set with `horizontalAccuracy` and a `precision` level. See [Location Methods](#location-methods) below. |
 | `age` | NSString | readwrite | The user's age. |
 | `gender` | ANGender | readwrite | The user's gender. |
@@ -219,7 +219,6 @@ All `ANMultiAdRequest` configuration properties and methods are the same in type
   |---|---|---|---|
   | `key` | NSString | Required | The key identifier for the custom keyword to be removed. |
   
-
 - **`clearCustomKeywords`**  
 
   Removes all custom keywords from the `ANMultiAdRequest`. The removed keywords will no longer be inherited by the `AdUnits` contained within the `ANMultiAdRequest`.

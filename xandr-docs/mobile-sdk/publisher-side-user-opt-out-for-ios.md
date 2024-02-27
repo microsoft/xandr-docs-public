@@ -1,8 +1,8 @@
 ---
 title: Publisher-side User Opt-Out for iOS
-description: The publisher-side user opt-out feature allows publishers to set users' opt-in/out from tracking in ad requests.
+description: The publisher-side user opt-out feature allows publishers to set users' choice of opt-in/out for iOS from tracking in ad requests.
 ms.custom: ios-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
 ---
 
 # Publisher side user opt-out for iOS
@@ -15,7 +15,7 @@ The publisher side user opt-out feature enhances the MobileSDK API with a proper
 
 | Property | Type | Attribute | Description |
 |:---|:---|:---|:---|
-| `doNotTrack` | BOOL | readwrite | Indicates if you have information in the app about user opt-out. If set to YES, tracking cookies and IDFA will be disabled for all future auctions.<br>Default value is NO. |
+| `doNotTrack` | BOOL | readwrite | Indicates if you have information in the app about user opt-out. If set to `YES`, tracking cookies and IDFA will be disabled for all future auctions.<br>Default value is `NO`. |
 
 ```
 /**

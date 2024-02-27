@@ -1,6 +1,6 @@
 ---
 title: Creating and Managing Segments
-description: Learn how Data providers can create and manage their own segments using API and bidder UI.
+description: Learn how data providers can create and manage their own segments using API and bidder UI. This page explains how data providers will require Xandr's impression bus API and what are the best practices that need to be adhered to.
 ms.custom: data-providers
 ms.date: 11/29/2023
 ---
@@ -29,8 +29,8 @@ When managing the data provider segments, the following best practices should be
   - Hierarchies are denoted using the greater than symbol ("\>"), e.g., "Parent Group \> Child Group (Data Provider Name)".
   - The segment name must not be longer 255 characters, including the data provider name. If a segment name with the data provider name appended is longer than 255 characters, the segment name should be truncated to fit the data provider name.
 
-  > [!TIP]
-  > The "segment name" here corresponds to the value of the `short_name` field in the JSON used to create the segment (see [Segment Service](../digital-platform-api/segment-service.md) for more information).
+    > [!TIP]
+    > The "segment name" here corresponds to the value of the `short_name` field in the JSON used to create the segment (see [Segment Service](../digital-platform-api/segment-service.md) for more information).
 
 - **Specify an expiry time**: Many integrations will only consist of adding users to segments and not removing users from segments. For this reason, it is necessary to specify a period of time after which a user will drop out of a segment if they are not added to that segment prior to the expiration. If no expiration time is specified, a user remains in the segment until they are explicitly removed or they purge their cookies.
 - **Set max usersync pixels to 0**: (This is only relevant for audience segments that are being placed on a page.) By default, all client-side segment pixel calls will redirect the user to a usersync pixel for at least one of Xandr's supply, demand, or data partners, depending on the pixel rotation and the number of times the user has already been synced in recent history.

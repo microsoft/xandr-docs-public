@@ -1,13 +1,13 @@
 ---
 title: Segment Usage by Buyers
-description: In this article, explore information about segment usage by buyers.
+description: Explore this article to understand how clients can get detailed auction information from their bidder or view available segments using traffic campaigns. 
 ms.custom: data-providers
 ms.date: 10/28/2023
 ---
 
 # Segment usage by buyers
 
-The way a given client utilizes shared segments, contextual, behavioral or otherwise, is highly dependent upon they way the client is integrated with Xandr. Clients who have implemented their own bidder will see the full details for every impression. For more details, see [Xandr's Bidders](#xandrs-bidders). Clients using traffic campaigns will see the segments available for targeting but do not have visibility into the details for each auction. For more details, see [Xandr's UI clients](#xandrs-ui-clients).
+The way a given client utilizes shared segments, whether contextual, behavioral, or otherwise, is highly dependent upon the way the client is integrated with Xandr. Clients who have implemented their own bidder will see the full details for every impression. For more details, see [Xandr's Bidders](#xandrs-bidders). Clients using traffic campaigns will see the segments available for targeting but do not have visibility into the details for each auction. For more details, see [Xandr's UI clients](#xandrs-ui-clients).
 
 ## Xandr's Bidders
 
@@ -22,9 +22,9 @@ Bidders receive full details of every auction on the bid request. These details 
 
 Use of this information is entirely reliant upon targeting logic built into the bidder's architecture.
 
-Below is a sample bid request containing the information mentioned above. Note the fields "auction_id_64", "user_id_64", "segments", "url" and "ip_address":
+Below is a sample bid request containing the information mentioned above. Note the fields `"auction_id_64"`, `"user_id_64"`, `"segments"`, `"url"`, and `"ip_address"`:
 
-``` 
+```
 {
    "bid_request":{
       "members":[

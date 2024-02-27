@@ -1,6 +1,6 @@
 ---
 title: Remove the Scheduling from a Saved Lookup
-description: You can remove scheduling from saved availability lookups with administrative permissions to keep the lookup saved but remove its schedules.
+description: Learn how to remove the scheduling from saved availability lookups. This keeps the lookup saved in the system, but removes its schedules.
 ms.date: 11/06/2023
 ms.custom: yield-analytics-ui
 ---

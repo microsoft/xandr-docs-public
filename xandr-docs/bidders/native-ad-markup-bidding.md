@@ -254,8 +254,7 @@ Xandr supports the following fields in the `appnexus` extension object:
 
 ### Data object
 
-Used to define a data asset in a native object. Used for all miscellaneous elements in a native ad, such as ratings, price, review
-count, downloads, and so on.
+Used to define a data asset in a native object. Used for all miscellaneous elements in a native ad, such as ratings, price, review count, downloads, and so on.
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -274,7 +273,7 @@ Used to define the link for a native asset. When clicked, the user is taken to t
 
 ## Bid response example
 
-``` 
+```
 {
     "seatbid": [
         {
@@ -303,8 +302,7 @@ Used to define the link for a native asset. When clicked, the user is taken to t
 
 ### Why do I have to register a creative for each brand I represent?
 
-Xandr policy prohibits brand rotation on creatives. By registering a creative for each brand you work with, your creative will be able to pass Xandr's audit. This will maximize the native inventory on which it can serve. Xandr ensures that each creative complies with
-our audit policies by performing an initial audit and then periodically scanning the creative content that your bidder dynamically passes in its bid responses. If the dynamic content served by your bidder differs substantially from the registered creative (i.e. images and text for a different brand) it will be reaudited and may be rejected.
+Xandr policy prohibits brand rotation on creatives. By registering a creative for each brand you work with, your creative will be able to pass Xandr's audit. This will maximize the native inventory on which it can serve. Xandr ensures that each creative complies with our audit policies by performing an initial audit and then periodically scanning the creative content that your bidder dynamically passes in its bid responses. If the dynamic content served by your bidder differs substantially from the registered creative (i.e. images and text for a different brand) it will be reaudited and may be rejected.
 
 ### Will I be charged creative audit fees for periodically reaudited creative ad markup?
 

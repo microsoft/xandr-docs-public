@@ -38,16 +38,16 @@ Xandr can populate the following information.
 >
 > This is a reference for publishers using the macros to surface notice, transparency and choice to end users located in applicable US states and the EEA and signal approved vendors, and where necessary pass consent and/or Do Not Share/Sell signals to Xandr and demand sources and their vendors through the Xandr Platform.
 >
-> This resource should not be construed as legal advice and Xandr makes no guarantees about compliance with any law or regulation. Please note that because every company and its collection, use, and storage of personal data is different, you should also seek independent legal advice relating to obligations under US state law, European regulations, including the GDPR and the existing ePrivacy Directive. Only a lawyer can provide you with legal advice specifically tailored to your situation. Nothing in this guide is intended to provide you with, or should be used as a substitute for legal advice tailored to your business.
+> This resource should not be construed as legal advice and Xandr makes no guarantees about compliance with any law or regulation. Note that because every company and its collection, use, and storage of personal data is different, you should also seek independent legal advice relating to obligations under US state law, European regulations, including the GDPR and the existing ePrivacy Directive. Only a lawyer can provide you with legal advice specifically tailored to your situation. Nothing in this guide is intended to provide you with, or should be used as a substitute for legal advice tailored to your business.
 > [!NOTE]
-> Our [Part of Service Policies](../policies-regulations/index.yml) (for Buying, Selling, and Data Providers) include privacy-specific obligations of which you should be aware. These Service Policies have been updated effective 1st of January 2023.
+> Our [Service Policies](../policies-regulations/index.yml) (for Buying, Selling, and Data Providers) include privacy-specific obligations of which you should be aware. These Service Policies have been updated effective 1st of January 2023.
 
 | Macro | Description |
 |:---|:---|
 | `${GDPR_APPLIES}` | Designates whether GDPR regulations are applied. Specifically, it indicates whether the user is located in a GDPR impacted country, or if we have a GDPR-required signal passed with the request. 1 if yes, 0 if no.<br><br>**Warning:** A "0" may be received from an EEA country. It is the publisher's choice to signal in this manner. |
 | `${GDPR_CONSENT_STRING}` | This is the IAB GDPR consent string. If the GDPR applies, then this will have a list of user approved vendors based on the [IAB GDPR Transparency and Consent Framework](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework). |
 | `${GPP_SID}` | Designates whether a section (i.e. regulatory framework) of the [Global Privacy Platform](https://iabtechlab.com/gpp) should be applied. Specifically, it indicates whether the user is located in a country affected by legislation covered by the GPP. |
-| `${GPP_STRING_XXXXX*}` | This is the IAB [Global Privacy Platform](https://iabtechlab.com/gpp) (GPP) string. If a section of the GPP applies, then this will contain framework-dependent information reflecting the consent elections of the user.<br><br>**Note:** * XXXXX can represent any numerical id. |
+| `${GPP_STRING_XXXXX*}` | This is the IAB [Global Privacy Platform](https://iabtechlab.com/gpp) (GPP) string. If a section of the GPP applies, then this will contain framework-dependent information reflecting the consent elections of the user.<br><br>**Note:** * XXXXX can represent any numerical ID. |
 
 ## Macros for mobile impressions
 

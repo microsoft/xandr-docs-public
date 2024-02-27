@@ -19,30 +19,30 @@ There's no single right way to set up your bidder profile ([Legacy Bidder Profil
 - **Filtering by selling member**
   - The `member_targets` array should be populated depending on how you'd like to buy.
     - Buying only a select set of sellers:
-      - "member_targets": \[{"id": "100","action": "include"},{"id": "101","action": "include"},{"id": "102","action": "include"}\]
+      - `"member_targets": [{"id": "100","action": "include"},{"id": "101","action": "include"},{"id": "102","action": "include"}]`
     - Excluding a select group of sellers:
-      - "member_targets": \[{"id": "100","action": "exclude"},{"id": "101","action": "exclude"}\]
+      - `"member_targets": [{"id": "100","action": "exclude"},{"id": "101","action": "exclude"}]`
 - **Filtering by country**
   - Set up a global "include" or "exclude" using the `"country_action"` parameter.
   - Add the countries that you would like to include or exclude to the `"country_targets"` array as objects.
-    - "country_targets": \[{"country": "GB"},{"country": "US"},{"country": "DE"}\]
+    - `"country_targets": [{"country": "GB"},{"country": "US"},{"country": "DE"}]`
 - **Filtering by segment**
   - Set the `"segment_boolean_operator"` parameter to either "and or "or".
   - Add the segment(s) that you want to use as filters to the `segment_targets` parameter.
-    - "segment_targets": \[{"id": "100","action": "include"},{"id": "101","action": "include"}\]
+    - `"segment_targets": [{"id": "100","action": "include"},{"id": "101","action": "include"}]`
 - **Filtering by size**
   - Include the list of creative sizes for which your bidder has creatives. This list should be exhaustive if you choose to filter by creative size.
-    - "size_targets":\[{"width": "100","height": "200"},{"width": "100","height": "200"}\]
+    - `"size_targets":[{"width": "100","height": "200"},{"width": "100","height": "200"}]`
 - **Filtering by domain list**
   - Include or exclude lists of domains. These are created using the [Domain List Service](domain-list-service.md).
-    - "domain_list_target":\[{"id":1}, {"id":2}\]
-    - "domain_list_action":"include"
+    - `"domain_list_target":[{"id":1}, {"id":2}]`
+    - `"domain_list_action":"include"`
 - **Filtering by seller classified inventory attributes**
   - This option allows you to opt-in to inventory that has been classified with a sensitive attribute. When `"use_inventory_attribute_targets"` is set to `true`, your bidder will receive traffic from inventory classified with the inventory attributes listed in the `inventory_attribute_targets` array and all unclassified inventory.
 
   - For example, if you wanted to receive bid requests from all inventory except that inventory classified as Toolbar, you should adjust your bidder profile to contain the following information:
 
-    ``` 
+    ```
     "use_inventory_attribute_targets": true,
     "inventory_attribute_targets": [
                 {
@@ -82,7 +82,7 @@ There's no single right way to set up your bidder profile ([Legacy Bidder Profil
 
 - **General notes**
   - Once you have included any item in any array, you don't need to exclude items you don't want to see, as only those that are explicitly included will be sent.
-  - Do not set the action to be "include" if you haven't set any targets to include. For example, country_action should not be include if `country_targets` has no elements.
+  - Do not set the action to be "include" if you haven't set any targets to include. For example, `country_action` should not be include if `country_targets` has no elements.
 
 ## Parent and child profiles
 
@@ -94,8 +94,7 @@ No. If there are no child profiles, all impressions that match the parent profil
 
 ### Are parent profiles required?
 
-No. If there is no parent profile, all impressions that match any of the child profiles will be sent to your bidder. If you have no parent
-profile and no child profiles, all impressions will be sent to your bidder.
+No. If there is no parent profile, all impressions that match any of the child profiles will be sent to your bidder. If you have no parent profile and no child profiles, all impressions will be sent to your bidder.
 
 > [!NOTE]
 > If there is no parent profile in place, the bidder configuration element, `bid_percent`, will be ignored.
@@ -106,15 +105,14 @@ There are a few steps in this process. The first would be deciding on what logic
 
 The first step is creating the profiles themselves. A profile is an object on the Xandr platform that can be created using the [Legacy Bidder Profile Service](legacy-bidder-profile-service.md). The sample below can be used in a `POST` to create the profile.
 
-``` 
+```
 {"profile":{
  "segment_targets": [{"id":"12345","action":"include"}]}}
 ```
 
-This will return the profile ID in Xandr. We will assume that this profile has ID 100. We will now need to make the child profiles. The
-following two code samples can be used in POSTs to the bidder profile service.
+This will return the profile ID in Xandr. We will assume that this profile has ID 100. We will now need to make the child profiles. The following two code samples can be used in POSTs to the bidder profile service.
 
-``` 
+```
 {"profile":{
  "country_action":"include",
  "country_targets": [{"country":"US"},{"country":"CA"}],
@@ -123,7 +121,7 @@ following two code samples can be used in POSTs to the bidder profile service.
 
 and
 
-``` 
+```
 {"profile":{
  "country_action":"include",
  "country_targets": [{"country":"US"}],
@@ -132,7 +130,7 @@ and
 
 We will assume that these two profiles are created and given IDs of 101 and 102, respective. If you are bidder 15, you will need to update your bidder using the [Bidder Service](bidder-service.md). Using the following in a `PUT`, you can update your bidder to have a parent profile with profile 100 and child profiles of profiles 101 and 102 with the following:
 
-``` 
+```
 {"bidder":{
  "id":15,
  "parent_profile_id":100,

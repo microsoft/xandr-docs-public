@@ -6,12 +6,11 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Smart Image Adjustments for native creatives
 
-Buyers can use Smart Image Adjustments to automatically resize their main native creative image and icon with a few clicks of the mouse so
-that they can quickly meet the publisher's placement criteria.
+Buyers can use Smart Image Adjustments to automatically resize their main native creative image and icon with a few clicks of the mouse so that they can quickly meet the publisher's placement criteria.
 
 ## Accessing Smart Image Adjustments for native creatives
 
-By default, the **Allow Smart Image Adjustments** toggle is enabled for all buyers that have access to Microsoft Invest or Microsoft Monetize. To keep to our recommended native best practices, see [Native Buy-Side Best Practices](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Microsoft Advertising/Buy-Side-Native-Best-Practices.pdf).
+By default, the **Allow Smart Image Adjustments** toggle is enabled for all buyers that have access to Microsoft Invest or Microsoft Monetize. To keep to our recommended native best practices, see [Native Buy-Side Best Practices](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Xandr/Buy-Side-Native-Best-Practices.pdf).
 
 ## How Smart Image Adjustments works
 

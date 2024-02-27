@@ -7,7 +7,7 @@ ms.custom: yield-analytics-ui
 
 # Reports overview
 
-The **Reports** tab provides access to a flexible analytics engine that supports both recurring and ad hoc inventory and yield analysis. Yield Analytics Reports integrate data from multiple sources to provide a centralized view of your business.
+The **Reports** tab provides access to a flexible analytics engine that supports both recurring and ad hoc inventory and yield analysis. Yield Analytics reports integrate data from multiple sources to provide a centralized view of your business.
 
 Because the **Reports** tab includes inventory forecast and order line allocation data, it provides not only historical analysis but predictive analytics as well. In addition, because the data structures take into account inventory overlaps, all analysis can be performed at the network-level as well as against a specific inventory set.
 

@@ -36,8 +36,7 @@ The majority of Microsoft Windows App inventory supports mobile creative standar
 
 **Legacy Ads SDK Creative Specs:**
 
-Microsoft is phasing out a legacy SDK which lacks support for mobile standard third-party ad serving, impression tracking, Javascript and
-MRAID. As such, the majority of bidders will not be able to consume the inventory with a standard integration. However, since this accounts for 50% of the inventory today it is a significant opportunity to explore. If you are interested in more detail on this inventory opportunity, contact your Xandr account representative.
+Microsoft is phasing out a legacy SDK which lacks support for mobile standard third-party ad serving, impression tracking, Javascript and MRAID. As such, the majority of bidders will not be able to consume the inventory with a standard integration. However, since this accounts for 50% of the inventory today it is a significant opportunity to explore. If you are interested in more detail on this inventory opportunity, contact your Xandr account representative.
 
 ## Buying Microsoft Windows app mobile inventory
 
@@ -56,16 +55,13 @@ Bidder profiles allow you to filter for the bid requests that you want to receiv
 
 ### Step 2: Target and bid on Windows app inventory
 
-When Xandr receives an impression from Windows App, we route these impressions through a publisher, site, and tag ID combination, in
-increasing order of granularity. Xandr's bid request includes these IDs (`adid`), allowing you to target specific slices of Windows App
-inventory. The `adid` is passed through the [device.ifa field](outgoing-bid-request-to-bidders.md) in the OpenRTB request.
+When Xandr receives an impression from Windows App, we route these impressions through a publisher, site, and tag ID combination, in increasing order of granularity. Xandr's bid request includes these IDs (`adid`), allowing you to target specific slices of Windows App inventory. The `adid` is passed through the [device.ifa field](outgoing-bid-request-to-bidders.md) in the OpenRTB request.
 
 Xandr's bid request for a Windows App impression includes [standard mobile fields](mobile-for-bidders.md) useful for your bidder to target.
 
 ### Step 3: Receive auction results
 
-Xandr's Notify request is essential to tracking when an impression is served, the win price of the impression, and to provide you with any
-custom notify data you may have included with the bid. This information will be helpful for understanding bid rejections due to Microsoft-specific creative requirements on Windows 8 or the legacy SDKs.
+Xandr's Notify request is essential to tracking when an impression is served, the win price of the impression, and to provide you with any custom notify data you may have included with the bid. This information will be helpful for understanding bid rejections due to Microsoft-specific creative requirements on Windows 8 or the legacy SDKs.
 
 ### Example request/response chain
 

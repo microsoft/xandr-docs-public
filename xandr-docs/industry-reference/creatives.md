@@ -10,9 +10,7 @@ ms.custom: industry-reference
 > [!NOTE]
 > You may want to read [Introduction to Ad Serving](introduction-to-ad-serving.md) and [Ad Tags](ad-tags.md) first.
 
-A creative is the actual advertisement viewed by a user. Creatives can function purely to promote a brand, but because the Internet is based round interactive media and experiences, many online creatives are intended to convince a user to take some action, like sign up for
-membership or make a purchase. Creative formats include GIF, JPEG, JavaScript, Flash, HTML5, video, and mobile. Creatives can be static
-images or they can contain video; they can expand or respond to user input. These files are managed via an [ad server](introduction-to-ad-serving.md), which is responsible for sending the file to the browser at the time of an ad call.
+A creative is the actual advertisement viewed by a user. Creatives can function purely to promote a brand, but because the Internet is based round interactive media and experiences, many online creatives are intended to convince a user to take some action, like sign up for membership or make a purchase. Creative formats include GIF, JPEG, JavaScript, Flash, HTML5, video, and mobile. Creatives can be static images or they can contain video; they can expand or respond to user input. These files are managed via an [ad server](introduction-to-ad-serving.md), which is responsible for sending the file to the browser at the time of an ad call.
 
 ## Types of creatives
 
@@ -20,15 +18,13 @@ There are many kinds of creatives used on the Internet. Some of the key types in
 
 - **Banner ads** - Text or image ads that appear above or alongside content.
 - **Expandable ads** - Ads that can be enlarged beyond their initial dimensions, often by user interactions such as scrolling down the page or mousing over the ad.
-- **Pop ads** - Ads that display in a secondary browser window. Pop-up ads display in front of the initial browser window, while pop-under
-  ads display behind it.
+- **Pop ads** - Ads that display in a secondary browser window. Pop-up ads display in front of the initial browser window, while pop-under ads display behind it.
 - **Video ads** - Video ads may play before, during, or after the main video content. You can see examples of this type of ad on [YouTube](https://www.youtube.com) and [Hulu](https://www.hulu.com).
 - **Mobile ads** - Mobile ads may be in-app ads or web ads that are optimized for display on mobile devices.
 
 ## Creatives and impressions
 
-An impression is the display of a single creative to a single user at a certain point in time. Sometimes serving a creative and serving an
-impression are essentially the same thing, but often the server deciding which advertiser should display a creative, the server deciding which creative should be shown, and the [CDNs](#what-are-cdns-content-delivery-networks) (content delivery network) that actually hosts and returns the creative image file are all different. In this case, the act of serving an impression and the act of serving the creative are two different events. In reporting, no matter how many servers are involved, the number of impressions and creatives served should match, if all went smoothly.
+An impression is the display of a single creative to a single user at a certain point in time. Sometimes serving a creative and serving an impression are essentially the same thing, but often the server deciding which advertiser should display a creative, the server deciding which creative should be shown, and the [CDNs](#what-are-cdns-content-delivery-networks) (content delivery network) that actually hosts and returns the creative image file are all different. In this case, the act of serving an impression and the act of serving the creative are two different events. In reporting, no matter how many servers are involved, the number of impressions and creatives served should match, if all went smoothly.
 
 :::image type="content" source="media/creatives-and-impressions.png" alt-text="Diagram of how impression tracking pixels work.":::
 

@@ -25,7 +25,7 @@ You can add the product to Scenario Manager from the **Find Products** page. 
 1. In the **Change Type** dropdown menu, choose **Select product for order line creation** and click **Go**.
 1. On the **Find Products** page that is displayed, use the filer criteria to find the specific product.
 1. Click for the product and select **Add to Scenario**.
-1. Return to Scenario Manager.
+1. Return to **Scenario Manager**.
 
 The product that you added to Scenario Manager is displayed in the **New Order Lines** section.
 

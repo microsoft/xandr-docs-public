@@ -6,8 +6,7 @@ ms.date: 10/28/2023
 
 # Bidders - Brand service
 
-Use the read-only Brand Service to see what brands are registered in the Xandr system. You can also use the Brand Service
-to obtain the ID assigned to a certain brand. This ID is used as an optional input for the [Creative Service](creative-service.md).
+Use the read-only Brand Service to see what brands are registered in the Xandr system. You can also use the Brand Service to obtain the ID assigned to a certain brand. This ID is used as an optional input for the [Creative Service](creative-service.md).
 
 ## REST API
 
@@ -36,7 +35,7 @@ to obtain the ID assigned to a certain brand. This ID is used as an optional inp
 
 ### View all brands (below output is truncated)
 
-``` 
+```
 curl -b cookies -c cookies "https://api.adnxs.com/brand"
 {
    "response":{

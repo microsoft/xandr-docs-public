@@ -1,7 +1,7 @@
 ---
-title : Datacenter (FAQ)
-description: Learn to route traffic to different datacenters.  
-ms.date : 11/21/2023
+title: Datacenter (FAQ)
+description: Learn how client-side routing can be used to send the bid request from the datacenter closest to the user.   
+ms.date: 11/21/2023
 ---
 
 
@@ -11,8 +11,7 @@ ms.date : 11/21/2023
 
 **How do you route traffic to different datacenters?**
 
-We use client-side routing to send the bid request from the datacenter
-closest to the user.
+We use client-side routing to send the bid request from the datacenter closest to the user.
 
 ## Related topics
 

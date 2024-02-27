@@ -22,8 +22,7 @@ Upload both your audience and modifier segments using the Batch Segment Service.
 > [!NOTE]
 > Each modifier segment may only be associated with a single audience segment, whereas a single audience segment can be part of more than one modifier segment.
 
-The user bid price and user bid modifier need to be decimal values (e.g., floating-point numbers). Unfortunately, the segment data file
-format only accepts integers in the `VALUE` field where you define your *user bid price or user bid modifier*. Therefore you'll need to multiply your desired bid price or bid modifier by 1000. For example, to specify a user bid price of $0.75, write the integer `750` into the `VALUE` field of the segment data file. For a complete description of the file format, see Batch Segment Service - File Format.
+The user bid price and user bid modifier need to be decimal values (e.g., floating-point numbers). Unfortunately, the segment data file format only accepts integers in the `VALUE` field where you define your *user bid price or user bid modifier*. Therefore you'll need to multiply your desired bid price or bid modifier by 1000. For example, to specify a user bid price of $0.75, write the integer `750` into the `VALUE` field of the segment data file. For a complete description of the file format, see Batch Segment Service - File Format.
 
 ## Step 2: Associate a modifier segment with your campaign via the API
 
@@ -36,7 +35,7 @@ You can determine how your campaign should weight the modifier segment's `VALUE`
 
 Here's an example of a campaign object using this format:
 
-``` 
+```
 {
   "campaign": {
     "id": 123,

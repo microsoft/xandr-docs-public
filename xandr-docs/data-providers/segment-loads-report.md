@@ -48,11 +48,11 @@ The `report_interval` field in the JSON request can be set to:
 
 ## Examples
 
-### Viewing monthly and average daily metrics for all segments
+### View monthly and average daily metrics for all segments
 
 1. **Create the JSON request for the report.**
 
-    ``` 
+    ```
     $ cat segments_monthly
     {
         "report":
@@ -79,9 +79,9 @@ The `report_interval` field in the JSON request can be set to:
     }
     ```
 
-1. **POST the request to the Report Service.**
+1. **`POST` the request to the Report Service.**
 
-    ``` 
+    ```
     $ curl -b cookies -c cookies -X POST -d @segments_monthly 'https://api.appnexus.com/report'
     {
         "response":{
@@ -91,11 +91,11 @@ The `report_interval` field in the JSON request can be set to:
     }
     ```
 
-1. **GET the report status from the Report Service.**
+1. **`GET` the report status from the Report Service.**
 
-    Make a GET call with the Report ID to retrieve the status of the report. Continue making this GET call until the execution_status is "ready". Then use the report-download service to save the report data to a file, as described in the next step.
+    Make a `GET` call with the Report ID to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is `"ready"`. Then use the **report-download** service to save the report data to a file, as described in the next step.
 
-    ``` 
+    ```
     $ curl -b cookies -c cookies 'https://api.appnexus.com/report?id=07af1282c9485adcef49c95fa5d7496b'
     {
         "response": {
@@ -121,22 +121,22 @@ The `report_interval` field in the JSON request can be set to:
     }
     ```
 
-1. **GET the report data from the Report Download Service.**
+1. **`GET` the report data from the Report Download Service.**
 
-    To download the report data to a file, make another GET call with the Report ID, but this time to the report-download service. You can find the service and Report ID in the url field of the previous GET response. When identifying the file that you want to save to, be sure to use the file extension of the "format" that you specified in your initial POST.
-    
-    ``` 
+    To download the report data to a file, make another `GET` call with the Report ID, but this time to the **report-download** service. You can find the service and Report ID in the `url` field of the previous `GET` response. When identifying the file that you want to save to, be sure to use the file extension of the `"format"` that you specified in your initial `POST`.
+
+    ```
     curl -b cookies -c cookies 'https://api.appnexus.com/report-download?id=07af1282c9485adcef49c95fa5d7496b' > /temp/segement_loads.csv
     ```
 
-### Viewing daily metrics for segment 184531
+### View daily metrics for segment 184531
 
 1. **Create the JSON request for the report.**
 
     > [!NOTE]
-    > To get metrics for a specific segment, you must filter the report by segment_id.
-    
-    ``` 
+    > To get metrics for a specific segment, you must filter the report by `segment_id`.
+
+    ```
     $ cat segment_daily
     {
         "report":
@@ -167,9 +167,9 @@ The `report_interval` field in the JSON request can be set to:
     }
     ```
 
-1. **POST the request to the Reporting Service.**
+1. **`POST` the request to the Reporting Service.**
 
-    ``` 
+    ```
     $ curl -b cookies -c cookies -X POST -d @segment_daily 'https://api.appnexus.com/report'
     {
         "response":{
@@ -179,11 +179,11 @@ The `report_interval` field in the JSON request can be set to:
     }
     ```
 
-1. **GET the report status from the Report Service.**
+1. **`GET` the report status from the Report Service.**
 
-    Make a GET call with the Report ID to retrieve the status of the report. Continue making this GET call until the execution_status is "ready". Then use the report-download service to save the report data to a file, as described in the next step.
-    
-    ``` 
+    Make a `GET` call with the Report ID to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is `"ready"`. Then use the **report-download** service to save the report data to a file, as described in the next step.
+
+    ```
     $ curl -b cookies -c cookies 'https://api.appnexus.com/report?id=c5975474b00c68f3cd1db49b8fe758da'
     {
         "response": {
@@ -209,13 +209,13 @@ The `report_interval` field in the JSON request can be set to:
     }
     ```
 
-1. **GET the report data from the Report Download Service.**
+1. **`GET` the report data from the Report Download Service.**
 
-    To download the report data to a file, make another GET call with the Report ID, but this time to the report-download service. You can find the service and Report ID in the url field of the previous GET response. When identifying the file that you want to save to, be sure to use the file extension of the "format" that you specified in your initial POST.
-    
-    ``` 
+    To download the report data to a file, make another `GET` call with the Report ID, but this time to the **report-download** service. You can find the service and Report ID in the `url` field of the previous `GET` response. When identifying the file that you want to save to, be sure to use the file extension of the `"format"` that you specified in your initial `POST`.
+
+    ```
     curl -b cookies -c cookies 'https://api.appnexus.com/report-download?id=c5975474b00c68f3cd1db49b8fe758da' > /temp/segment_loads.csv
     ```
-    
+
     > [!NOTE]
     > There is a limit of 100,000 rows per report when you download them as XLSX and Excel file.

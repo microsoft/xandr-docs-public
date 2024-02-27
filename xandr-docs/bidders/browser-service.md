@@ -28,7 +28,7 @@ This is a **read-only** service that shows you the mapping between the browser I
 
 ### To return a specific browser
 
-``` 
+```
 $ curl -b cookies -c cookies  https://api.adnxs.com/browser/2
 {
    "response":{

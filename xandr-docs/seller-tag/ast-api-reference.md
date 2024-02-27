@@ -33,7 +33,7 @@ To run a debug auction, add `?ast_debug=true&ast_dongle=ABC&ast_debug_member=123
 
 Alternatively, debug mode can be enabled on the tag using:
 
-``` pre
+```
 apntag.debug = true;
 apntag.dongle = 'ABC';
 apntag.debug_member = '1234';

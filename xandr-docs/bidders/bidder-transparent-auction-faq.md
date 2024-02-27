@@ -6,16 +6,13 @@ ms.date: 10/28/2023
 
 # Bidder transparent auction FAQ
 
-Xandr aims to provide full transparency for bidders to help ensure each bidder knows the auction type they're participating in. This page
-provides answers to some of the most common questions around transparent auctions.
+Xandr aims to provide full transparency for bidders to help ensure each bidder knows the auction type they're participating in. This page provides answers to some of the most common questions around transparent auctions.
 
 ## What are transparent auctions?
 
 Transparent auctions are a way of letting bidders know what type of auction they're participating in so they can make more informed decisions on the amounts they bid.
 
-In the past, auctions were always first price (pay what you bid) or second price (winning bid is price-reduced to achieve a fairer market
-price). In addition, some auctions included soft floors, which use a floor price to achieve a combination of first and second price in a
-single auction. While the type of auction being held could be different depending on the situation, that information was invisible to bidders. Bidders had no way of knowing which type of auction they were bidding into.
+In the past, auctions were always first price (pay what you bid) or second price (winning bid is price-reduced to achieve a fairer market price). In addition, some auctions included soft floors, which use a floor price to achieve a combination of first and second price in a single auction. While the type of auction being held could be different depending on the situation, that information was invisible to bidders. Bidders had no way of knowing which type of auction they were bidding into.
 
 With transparent auctions, bidders now receive an auction type (see below) in the bid request. This auction type tells the bidder which type of auction is being held.
 
@@ -31,7 +28,7 @@ There are two auction types: impression (at) and deal (pmp.deal.at). There are t
 
 Most bid requests have auction type = 1 (`"at": 1`). For example:
 
-``` 
+```
 {
     "id": "43212345678987",
     "at": 1,
@@ -54,8 +51,7 @@ Most bid requests have auction type = 1 (`"at": 1`). For example:
 
 Xandr determines the auction type (as shown in the table under "[How does Xandr determine the auction types?](#how-does-xandr-determine-the-auction-types)") and sends the auction type in the bid request. We do not use auction types passed to us.
 
-Transparent auction has not changed the actual behavior of the auction; only the determination as to which auction type is sent in the bid
-request is different than is was previously.
+Transparent auction has not changed the actual behavior of the auction; only the determination as to which auction type is sent in the bid request is different than is was previously.
 
 ## Do you pass the auction type (at) flag on all open auction and PMP deals?
 
@@ -63,8 +59,7 @@ Yes. Auction type is always passed in the bid request.
 
 ## Will Xandr ultimately decide winning/clearing price? Are there any modifications made?
 
-Xandr determines the highest bid that gets sent to the publisher. Buyer fees are taken into account when sending the final
-bid.
+Xandr determines the highest bid that gets sent to the publisher. Buyer fees are taken into account when sending the final bid.
 
 ## How does Xandr determine the auction types?
 
@@ -85,13 +80,11 @@ bid.
 
 ## Can a seller be both first and second price?
 
-A single seller cannot be both first and second price on a single impression, but the different publishers associated with a seller can
-have first price or second price auctions.
+A single seller cannot be both first and second price on a single impression, but the different publishers associated with a seller can have first price or second price auctions.
 
 ## Can a domain be both first and second price?
 
-Yes, across many auctions. (Not on a single impression.) Because of this, you'll need to listen to the auction type signal in real-time
-rather than infer post-auction.
+Yes, across many auctions. (Not on a single impression.) Because of this, you'll need to listen to the auction type signal in real-time rather than infer post-auction.
 
 ## How do I identify the type of inventory?
 

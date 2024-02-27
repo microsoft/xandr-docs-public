@@ -1,8 +1,8 @@
 ---
 title: Receive Ad View Status Events on Android
-description: Learn how to receive ad view status events from the SDK to determine ad clicks and expanded state. Implement AdListener interface and attach it to ad view.
+description: Learn how to receive ad view status events from the SDK to determine ad clicks and expanded state. Implement AdListener interface and attach it to the ad view.
 ms.custom: android-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
 ---
 
 # Receive ad view status events on Android
@@ -18,7 +18,7 @@ In order to receive status events during the life cycle of the ad view, you must
 - `void onAdLoaded(AdView adView)`: Called when an ad has successfully been loaded from the server.
 - `void onAdLoaded(NativeAdResponse nativeAdResponse)`: Called when an ad has successfully been loaded from the server. Used for Banner Native ads.
 - `void onAdRequestFailed(AdView adView, ResultCode errorCode)`: Called when an ad request has failed.
-- void onAdImpression (`AdView adView`): Called when an ad impression is observed during a banner or interstitial ad event.
+- void on `AdImpression` (`AdView adView`): Called when an ad impression is observed during a banner or interstitial ad event.
 
 The example below implements this interface:
 

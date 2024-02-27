@@ -1,6 +1,6 @@
 ---
 title: Integrating Your Data
-description: Learn the process in Data Provider Integration that helps in integrating your data. 
+description: In this page, learn steps involved in typical data provider integration. 
 ms.custom: data-providers
 ms.date: 11/29/2023
 ---

@@ -6,9 +6,7 @@ ms.date: 10/28/2023
 
 # Bidder Instance service
 
-A bidder will likely have at least two instances running at any given time. Each instance is associated with the impression bus in one of the Xandr datacenters. The instance itself may either be hosted with Xandr at the datacenter or located nearby. To decrease latency for global impressions, you may set up bidder instances in the various Xandr datacenters (see `datacenter_id` below). Each bidder instance is
-associated with one datacenter. As load on your bidders increases, you will likely require multiple instances per datacenter. Instead of
-setting up your own local load-balancing pool for these multiple instances, the impression bus can handle the load balancing for you.
+A bidder will likely have at least two instances running at any given time. Each instance is associated with the impression bus in one of the Xandr datacenters. The instance itself may either be hosted with Xandr at the datacenter or located nearby. To decrease latency for global impressions, you may set up bidder instances in the various Xandr datacenters (see `datacenter_id` below). Each bidder instance is associated with one datacenter. As load on your bidders increases, you will likely require multiple instances per datacenter. Instead of setting up your own local load-balancing pool for these multiple instances, the impression bus can handle the load balancing for you.
 
 You will need to register the hostname/IP/port combination for each of your bidder instances with the impression bus using the Bidder Instance Service API. This API service also allows you to view, modify, and remove any instances. Each bidder instance must use the nomenclature for request handlers that is defined by the [Bidder Service](bidder-service.md).
 
@@ -51,7 +49,7 @@ Authentication is always the first step when using the API Services. The authent
 
 ### View existing instances
 
-``` 
+```
 $ curl -b cookies -c cookies 'https://api.adnxs.com/bidder-instance/2'
 {
    "response":{
@@ -76,7 +74,7 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/bidder-instance/2'
 
 I have a New York (NYM2) instance; now I want to register my LAX1 bidder instance. I create the following JSON:
 
-``` 
+```
 $ cat bidder_instance
 {
    "instance":{
@@ -92,7 +90,7 @@ $ cat bidder_instance
 
 Then to add this new instance to my bidder (2):
 
-``` 
+```
 $ curl -b cookies -c cookies -X POST --data-binary @bidder_instance 'https://api.adnxs.com/bidder-instance/2'
 {
    "response":{
@@ -104,7 +102,7 @@ $ curl -b cookies -c cookies -X POST --data-binary @bidder_instance 'https://api
 
 And to view the newly added instance:
 
-``` 
+```
 $ curl -b cookies -c cookies 'https://api.adnxs.com/bidder-instance/2/53'
 {
    "response":{
@@ -129,7 +127,7 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/bidder-instance/2/53'
 
 If I want to add a QPS cap to an existing instance:
 
-``` 
+```
 $ cat bidder-instance
 {
    "instance":{
@@ -148,7 +146,7 @@ $ curl -b cookies -c cookies -X PUT --data-binary @bidder-instance  "https://api
 
 Then if I want to view the instance:
 
-``` 
+```
 $ curl -b cookies -c cookies 'https://api.adnxs.com/bidder-instance/2'
 {
    "response":{
@@ -183,7 +181,7 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/bidder-instance/2'
 
 If I need to change an IP address:
 
-``` 
+```
 $ cat bidder-instance
 {
    "instance":{
@@ -202,7 +200,7 @@ $ curl -b cookies -c cookies -X PUT --data-binary @bidder-instance  "https://api
 
 Then to view the current status of all instances for my bidder(2):
 
-``` 
+```
 $ curl -b cookies -c cookies 'https://api.adnxs.com/bidder-instance/2'
 {
    "response":{

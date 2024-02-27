@@ -23,7 +23,7 @@ The following section describes the various eventType fields and their respectiv
 
 **Data objects:**
 
-```pre
+```
 adObj = {
 cpm: 10,
 cpm_publisher_currency: 10,
@@ -55,7 +55,7 @@ When source is real-time bidding (rtb), the Ad Object includes the ad; when sour
 
 **Data objects:**
 
-```pre
+```
 adObj = {
 auctionId : '123456',
 nobid : true,
@@ -72,9 +72,8 @@ tagId : 6051399,
 **Callback Function Signature:** `function(adError){}`
 
 **Data objects:**
-Click to see details
 
-```pre
+```
 adError = {
 code : 0
 errMessage : 'error message';,
@@ -97,7 +96,7 @@ Ad Object is the same as for `adAvailable`.
 
 **Data objects:** The tag called a placement that doesn't exist. This could indicate an error from the Impression Bus.
 
-```pre
+```
 adError = {
 code : 0
 errMessage : 'error message';,
@@ -118,7 +117,7 @@ targetId : 'apn_ad_slot_1'
 
 **Data objects:**
 
-```pre
+```
 adObj = {
 cpm: 10,
 cpm_publisher_currency: 10,
@@ -142,7 +141,7 @@ content: "<!-- Creative 26299226 served by Member 12345 via Xandr --><a href=\"h
 
 **Data objects:**
 
-```pre
+```
 adObj = {
 cpm: 10,
 cpm_publisher_currency: 10,
@@ -168,7 +167,7 @@ The following section describes examples for the various adType objects:
 
 ### Banner with RTB as source
 
-```pre
+```
 adObj = {
 adType: "banner",
 cpm: 10,
@@ -194,7 +193,7 @@ impression_urls: ["http://lax1.ib.adnxs.com/it?e=wqT_3QK2BMAtAgAAAgDWAAUIo4aftQU
 
 ### Banner with CSM as source
 
-```pre
+```
 adObj = {
 adType: "banner",
 cpm: 10,
@@ -209,7 +208,7 @@ targetId : "target_id_123",
 
 ### Video with RTB as source
 
-```pre
+```
 adObj = {
 adType: "video",
 cpm: 10,
@@ -231,7 +230,7 @@ content: "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><VAST ver
 
 ### Video with CSM as source
 
-```pre
+```
 adObj = {
 adType: "video",
 cpm: 10,
@@ -246,7 +245,7 @@ targetId : "target_id_123",
 
 ### Native with RTB as source
 
-```pre
+```
 adObj = {
 adType": "native",
 cpm: 10,

@@ -13,8 +13,7 @@ Bidder Profiles (both the legacy Profile Service and Enhanced Bidder Profiles) a
 >
 > Breaking Change Notice: If You Don't Complete the Migration:
 >
-> On October 4th, 2019, we will enable your bidder for Enhanced Bidder Profiles, at which point your new profile(s) will control how you
-> receive traffic, and your legacy profiles will be deprecated. If you do not update your Enhanced Bidder Profiles before this date, by default your bidder will have no inventory restrictions configured.
+> On October 4th, 2019, we will enable your bidder for Enhanced Bidder Profiles, at which point your new profile(s) will control how you receive traffic, and your legacy profiles will be deprecated. If you do not update your Enhanced Bidder Profiles before this date, by default your bidder will have no inventory restrictions configured.
 
 ## Migration process overview
 
@@ -59,7 +58,7 @@ Reference: [Authentication Service](authentication-service.md) and [Bidder Servi
 
 ###### Example
 
-``` 
+```
 -> curl -b cookie -c cookie -s "https://api.adnxs.com/bidder/129" # 129 is a sample bidder ID.
 {
     "response": {
@@ -91,7 +90,7 @@ Reference: [Legacy Bidder Profile Service](legacy-bidder-profile-service.md)
 
 ###### Step 1.2: Example
 
-``` 
+```
 -> curl -b cookie -c cookie -s "https://api.adnxs.com/profile/129/12345" # 129 is a sample bidder id and 12345 is a sample bider profile ID.
 {
     "response": {
@@ -113,8 +112,7 @@ Reference: [Legacy Bidder Profile Service](legacy-bidder-profile-service.md)
 
 ##### Step 1.3: Summarize the results
 
-Remember to evaluate the parent & child profile logic: traffic is sent when it meets the criteria in
-`(Parent Profile) AND (Child Profile 1 OR Chile Profile 2 OR ... OR Child Profile N)`.
+Remember to evaluate the parent & child profile logic: traffic is sent when it meets the criteria in `(Parent Profile) AND (Child Profile 1 OR Chile Profile 2 OR ... OR Child Profile N)`.
 
 There are multiple deprecated fields in the legacy Profile API service. We recommend you only focus on these targetable fields below. There is a guide to which exact fields to look at in the Mapping of Legacy To Enhanced Bidder Profile Fields section on this page.
 
@@ -134,8 +132,7 @@ To make it easier to set up the new Enhanced Bidder Profiles, for each of these 
 > [!TIP]
 > What is AppNexus Direct?
 >
-> Depending on your legacy profile setup, Xandr's direct supply may be included in your profile object, in addition to
-> your included seller members. For more information, see: [Microsoft Monetize Supply for External Demand Partners](xandr-monetize-supply-for-external-demand-partners.md).
+> Depending on your legacy profile setup, Xandr's direct supply may be included in your profile object, in addition to your included seller members. For more information, see: [Microsoft Monetize Supply for External Demand Partners](xandr-monetize-supply-for-external-demand-partners.md).
 >
 > In the new Bidder Platform UI, you will be able to see which seller members belong to Xandr's "direct" exchange group.
 >
@@ -161,8 +158,7 @@ Non-italic child profiles are currently active. If you click on a child profile,
 
 ##### Step 1.2: Summarize the results
 
-Remember to evaluate the parent & child profile logic: All incoming traffic from Xandr must meet the conditions in
-the parent profile first; in addition, the traffic must pass one of the child profiles if you have child profiles set up.
+Remember to evaluate the parent & child profile logic: All incoming traffic from Xandr must meet the conditions in the parent profile first; in addition, the traffic must pass one of the child profiles if you have child profiles set up.
 
 To make it easier to set up the new Enhanced Bidder Profiles, for each of these fields, list included/excluded attributes:
 
@@ -232,11 +228,9 @@ Impression must meet requirements of a single profile to be sent to your bidder.
 
 ### Adjusting traffic volume: Passthrough percent alternative
 
-In legacy Bidder Profile, some clients used `passthrough_percent` to control traffic volume or bid request QPS (query per second).
-Enhanced Bidder Profile does not have a volume control feature; instead, use the **`qps_limit`** field in [Bidder Instance](bidder-instance-service.md) to set up a QPS safety cap per datacenter. To see your current traffic volume, see the Metrics tab in the legacy bidder UI: [https://bidder.adnxs.net/metrics](https://bidder.adnxs.net/metrics).
+In legacy Bidder Profile, some clients used `passthrough_percent` to control traffic volume or bid request QPS (query per second). Enhanced Bidder Profile does not have a volume control feature; instead, use the **`qps_limit`** field in [Bidder Instance](bidder-instance-service.md) to set up a QPS safety cap per datacenter. To see your current traffic volume, see the Metrics tab in the legacy bidder UI: [https://bidder.adnxs.net/metrics](https://bidder.adnxs.net/metrics).
 
-If you have QPS safety caps in all bidder instances, you have an option to enable the Optimized Bid Stream feature. All traffic is sent until your QPS cap is met; when there is more available traffic than your QPS cap, instead of cutting off the traffic volume randomly to meet your QPS cap, low priority traffic based on your buying behavior that exceeds your QPS cap will be cut. For more information, see [Optimized Bid Stream FAQ](optimized-bid-stream-faq.md). If you're interested in the feature, contact your account manager or
-Xandr Support.
+If you have QPS safety caps in all bidder instances, you have an option to enable the Optimized Bid Stream feature. All traffic is sent until your QPS cap is met; when there is more available traffic than your QPS cap, instead of cutting off the traffic volume randomly to meet your QPS cap, low priority traffic based on your buying behavior that exceeds your QPS cap will be cut. For more information, see [Optimized Bid Stream FAQ](optimized-bid-stream-faq.md). If you're interested in the feature, contact your account manager or Xandr Support.
 
 ### Activating a new bidder profile
 
@@ -268,8 +262,7 @@ I have reviewed and configured Enhanced Bidder Profiles. Migrate my profile setu
 
 #### What will happen next?
 
-Our support specialists will review the legacy and Enhanced Bidder Profile setup first. If they look good, support specialists will flip
-the switch in the backend and send a confirmation note to you. When this happens, your new Enhanced Bidder Profile configuration will start taking affect on the traffic flow, and the legacy bidder profile setup will be ignored.
+Our support specialists will review the legacy and Enhanced Bidder Profile setup first. If they look good, support specialists will flip the switch in the backend and send a confirmation note to you. When this happens, your new Enhanced Bidder Profile configuration will start taking affect on the traffic flow, and the legacy bidder profile setup will be ignored.
 
 Monitor your traffic flow using the Metrics tab in the legacy bidder UI: [https://bidder.adnxs.net/metrics](https://bidder.adnxs.net/metrics). If there is any problem, support specialists can switch back to the legacy profile setup immediately (which will take effect on the traffic flow in 5-10 minutes), and you can work on troubleshooting the Enhanced Bidder Profile setup.
 
@@ -280,5 +273,4 @@ If there's no problem on the traffic flow for a day, your migration is complete,
 
 #### If you do not complete Step 4
 
-On May 21st, 2019, we will enable your bidder for Enhanced Bidder Profiles, at which point your new profile(s) will control how you
-receive traffic, and your legacy profiles will be deprecated. If you do not update your Enhanced Bidder Profiles before this date, by default your bidder will have no inventory restrictions configured.
+On May 21st, 2019, we will enable your bidder for Enhanced Bidder Profiles, at which point your new profile(s) will control how you receive traffic, and your legacy profiles will be deprecated. If you do not update your Enhanced Bidder Profiles before this date, by default your bidder will have no inventory restrictions configured.

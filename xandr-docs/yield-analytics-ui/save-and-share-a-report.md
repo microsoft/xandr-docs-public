@@ -1,6 +1,6 @@
 ---
 title: Save and Share a Report
-description: Save reports to share them with other people.
+description: Learn how to save reports to share them with other people.
 ms.date: 11/06/2023
 ms.custom: yield-analytics-ui
 ---

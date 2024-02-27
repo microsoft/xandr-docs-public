@@ -23,7 +23,7 @@ You can add the order to Scenario Manager from its **Order Visibility** page.�
 1. In the **Change Type** dropdown menu, choose **Select order to modify** and click **Go**.
 1. On the **Find Orders** page that is displayed, use the filer criteria to find the specific order.
 1. Click for the order and select **Add to Scenario**.
-1. Return to Scenario Manager.
+1. Return to **Scenario Manager**.
 
 The orders that you added to Scenario Manager appear twice:
 

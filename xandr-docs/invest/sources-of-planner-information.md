@@ -10,7 +10,7 @@ Impression estimates are based on a seven-day sample of data, defined at the dai
 
 The following table shows the scale of historical data underlying the estimates:
 
-|  |  |
+| Period | Scale of Data |
 |---|---|
 | **Daily** | 10 million auctions/users from the past day |
 | **Weekly** | 20 million impressions/users from the past 7 days |

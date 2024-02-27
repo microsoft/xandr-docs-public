@@ -11,7 +11,7 @@ If you are familiar with using pivot tables, you'll find Yield Analytics Report
 
 Below is a visual that describes how yield analytics builds out reports:
 
-:::image type="content" source="./media/ff.png" alt-text="Screenshot describing how Yield Analytics builds out reports.":::
+:::image type="content" source="./media/ff.png" alt-text="Screenshot that describes how Yield Analytics builds out reports.":::
 
 ## Report filter
 
@@ -23,7 +23,7 @@ Dimensions define how you divide your data. This is equivalent to Row Labels.
 
 Additional Dimensions divides the data in a more granular way than Dimensions does. This is equivalent of adding multiple Row Labels.
 
-## Column Labels
+## Column labels
 
 Using the Group By feature in Yield Analytics Reports (Configuration Section) is the equivalent of moving a dimension to the Column Label section in a pivot table. This produces the same data as before, but organized into columns instead of rows.
 

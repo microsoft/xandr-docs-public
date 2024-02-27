@@ -42,7 +42,7 @@ Each object in the `codes` array contains the following fields.
 
 ### View all mobile carriers
 
-``` 
+```
 $ curl -b cookies -c cookies 'https://api.adnxs.com/carrier'
 {
     "response": {
@@ -393,7 +393,7 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/carrier'
 
 ### View a specific mobile carrier
 
-``` 
+```
 $ curl -b cookies -c cookies 'https://api.adnxs.com/carrier/1'
 {
     "response": {

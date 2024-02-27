@@ -2,7 +2,7 @@
 title: OMID Friendly Obstruction for Android
 description: The Open Measurement SDK enables third-party viewability and verification measurement for mobile ads without multiple SDKs. It is an API provided by IAB.
 ms.custom: android-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
 ---
 
 # OMID friendly obstruction for Android
@@ -25,17 +25,17 @@ The details of these APIs for Android platform for different AdUnits are discuss
 
 ## API details: Android
 
-**Adding a friendly obstruction**
+### Adding a friendly obstruction
 
 To add a friendly obstruction for Banner, Interstitial and Video AdUnits, pass the view as an argument to the API.
 
-**API for adding friendly obstruction**
+#### API for adding friendly obstruction
 
 ```
 public void addFriendlyObstruction(View view)
 ```
 
-**Examples for adding a friendly obstruction for AdUnits (Banner, Interstitial, Video and Native)**
+#### Example for adding a friendly obstruction for AdUnits (Banner, Interstitial, Video and Native)
 
 ```
 //Banner
@@ -48,27 +48,27 @@ videoAd.addFriendlyObstruction(view);
 
 For Native AdUnits, pass the list of friendly obstruction views with register tracking.
 
-**Example for adding a friendly obstruction for native AdUnit**
+#### Example for adding a friendly obstruction for native AdUnit
 
 ```
 public static void registerTracking(final NativeAdResponse response, final View view, final NativeAdEventListener listener, final List<View> friendlyObstructionsList);
 public static void registerTracking(final NativeAdResponse response, final View container, final List<View> views, final NativeAdEventListener listener, final List<View> friendlyObstructionsList)
 ```
 
-## Removing a friendly obstruction
+### Removing a friendly obstruction
 
 > [!NOTE]
 > Native AdUnits does not support remove API.
 
 To remove a friendly obstruction for Banner, Interstitial and Video AdUnits, pass the view as an argument to the API.
 
-**API for removing a friendly obstruction**
+#### API for removing a friendly obstruction
 
 ```
 public void removeFriendlyObstruction(View view)
 ```
 
-**Examples for removing a friendly obstruction for AdUnits (Banner, Interstitial and Video)**
+#### Example for removing a friendly obstruction for AdUnits (Banner, Interstitial and Video)
 
 ```
 //Banner
@@ -79,18 +79,18 @@ iav.removeFriendlyObstruction(view);
 videoAd.removeFriendlyObstruction(view);
 ```
 
-## Removing all friendly obstructions
+### Removing all friendly obstructions
 
 > [!NOTE]
 > Native AdUnits does not support remove API.
 
-**API for removing all friendly obstruction**
+#### API for removing all friendly obstruction
 
 ```
 public void removeAllFriendlyObstructions()
 ```
 
-**Examples for removing all friendly obstruction for AdUnits (Banner, Interstitial and Video)**
+#### Example for removing all friendly obstruction for AdUnits (Banner, Interstitial and Video)
 
 ```
 //Banner

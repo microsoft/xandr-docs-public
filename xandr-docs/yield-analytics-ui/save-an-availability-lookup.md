@@ -1,6 +1,6 @@
 ---
 title: Save an Availability Lookup
-description: Save a lookup for available inventory to run again later.
+description: Learn how to save a lookup for available inventory to run again later.
 ms.date: 11/06/2023
 ms.custom: yield-analytics-ui
 ---

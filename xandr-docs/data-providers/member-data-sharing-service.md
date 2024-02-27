@@ -17,7 +17,7 @@ The Member Data Sharing Service allows you to share your segments with other pla
 > [!NOTE]
 > When you remove a segment from a sharing record, the member cannot add the segment to the targeting profile of any new or existing campaign. If the member is already targeting the segment in an existing campaign, however, the campaign will continue to target the segment until the member manually removes it from the campaign's targeting profile. Once the segment has been removed, the member will not be able to add it to the campaign's targeting profile again.
 >
-> - Advertiser-level segments cannot be shared. Only member/network-level segments can be shared. To move segments from the advertiser to network level, you may set advertiser_id to NULL via the [Segment Service](../digital-platform-api/segment-service.md).
+> - Advertiser-level segments cannot be shared. Only member/network-level segments can be shared. To move segments from the advertiser to network level, you may set `advertiser_id` to `NULL` via the [Segment Service](../digital-platform-api/segment-service.md).
 > - You can not share segments with buyer members who belong to externally integrated DSPs.
 > - The Member Data Sharing service now works on BOTH Xandr's API (api.appnexus.com) as well as the impression bus API (api.adnxs.com). Although only api.adnxs.com is used below, it may be replaced with api.appnexus.com for those clients who have access to Xandr's API. Only members who are on Xandr will have access to the API. The majority of data providers can only access the impression bus API.
 
@@ -25,35 +25,35 @@ The Member Data Sharing Service allows you to share your segments with other pla
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| GET | [https://api.adnxs.com/member-data-sharing](https://api.adnxs.com/member-data-sharing) | View all of your existing sharing records. |
-| GET | [https://api.adnxs.com/member-data-sharing?id=RECORD_ID](https://api.adnxs.com/member-data-sharing?id=RECORD_ID) | View a specific sharing record. |
-| GET | [https://api.adnxs.com/member-data-sharing?data_member_id=MEMBER_ID&buyer_member_id=CLIENT_MEMBER_ID](https://api.adnxs.com/member-data-sharing?data_member_id=MEMBER_ID&buyer_member_id=CLIENT_MEMBER_ID)<br>where data_member_id = your member ID, and buyer_member_id = the recipient's member ID | Retrieve the sharing record ID using member ID's. |
-| POST | [https://api.adnxs.com/member-data-sharing?data_member_id=MEMBER_ID](https://api.adnxs.com/member-data-sharing?data_member_id=MEMBER_ID) <br>(sharing JSON)<br><br>**Note:** The member-data-sharing object cannot be an array if singular. | Create one sharing record to share segments with one member. |
-| POST | [https://api.adnxs.com/member-data-sharings?data_member_id=MEMBER_ID](https://api.adnxs.com/member-data-sharings?data_member_id=MEMBER_ID)<br>(sharing JSON)<br><br>**Note:** The member-data-sharings (plural) object must be an array if plural. | Create multiple sharing records to share segments with multiple members. |
-| PUT | [https://api.adnxs.com/member-data-sharing?id=RECORD_ID](https://api.adnxs.com/member-data-sharing?id=RECORD_ID)<br><br>**Note:**<br> - This method removes all existing segments, replacing the segments with only the newly specified list.<br> - To remove one or more segments from a list, you must replace the entire list with your intended segments. | Replace the list of segments shared within a sharing record. |
-| PUT | [https://api.adnxs.com/member-data-sharing?id=RECORD_ID&append=true](https://api.adnxs.com/member-data-sharing?id=RECORD_ID&append=true)<br><br>**Note:** Segments can only be added to the list using the "append" flag, and not deleted. | Appending segments from shared segment list within a sharing record. |
-| DELETE | [https://api.adnxs.com/member-data-sharing?id=RECORD_ID](https://api.adnxs.com/member-data-sharing?id=RECORD_ID) | Delete a sharing record. |
+| `GET` | [https://api.adnxs.com/member-data-sharing](https://api.adnxs.com/member-data-sharing) | View all of your existing sharing records. |
+| `GET` | [https://api.adnxs.com/member-data-sharing?id=RECORD_ID](https://api.adnxs.com/member-data-sharing?id=RECORD_ID) | View a specific sharing record. |
+| `GET` | [https://api.adnxs.com/member-data-sharing?data_member_id=MEMBER_ID&buyer_member_id=CLIENT_MEMBER_ID](https://api.adnxs.com/member-data-sharing?data_member_id=MEMBER_ID&buyer_member_id=CLIENT_MEMBER_ID)<br>where `data_member_id` = your member ID, and `buyer_member_id` = the recipient's member ID | Retrieve the sharing record ID using member ID's. |
+| `POST` | [https://api.adnxs.com/member-data-sharing?data_member_id=MEMBER_ID](https://api.adnxs.com/member-data-sharing?data_member_id=MEMBER_ID) <br>(sharing JSON)<br><br>**Note:** The member-data-sharing object cannot be an array if singular. | Create one sharing record to share segments with one member. |
+| `POST` | [https://api.adnxs.com/member-data-sharings?data_member_id=MEMBER_ID](https://api.adnxs.com/member-data-sharings?data_member_id=MEMBER_ID)<br>(sharing JSON)<br><br>**Note:** The member-data-sharings (plural) object must be an array if plural. | Create multiple sharing records to share segments with multiple members. |
+| `PUT` | [https://api.adnxs.com/member-data-sharing?id=RECORD_ID](https://api.adnxs.com/member-data-sharing?id=RECORD_ID)<br><br>**Note:**<br> - This method removes all existing segments, replacing the segments with only the newly specified list.<br> - To remove one or more segments from a list, you must replace the entire list with your intended segments. | Replace the list of segments shared within a sharing record. |
+| `PUT` | [https://api.adnxs.com/member-data-sharing?id=RECORD_ID&append=true](https://api.adnxs.com/member-data-sharing?id=RECORD_ID&append=true)<br><br>**Note:** Segments can only be added to the list using the "append" flag, and not deleted. | Appending segments from shared segment list within a sharing record. |
+| `DELETE` | [https://api.adnxs.com/member-data-sharing?id=RECORD_ID](https://api.adnxs.com/member-data-sharing?id=RECORD_ID) | Delete a sharing record. |
 
 > [!TIP]
 > JSON Structure:
 >
-> When adding or updating a single sharing record, you should structure the JSON as a single object called "member_data_sharing". When adding POST multiple sharing records, you should structure the JSON as an array of objects called "member_data_sharings" (note the plural) and place the sharing data in an array. You cannot update (PUT) multiple sharing records at the same time. For exact formatting, see the [examples](#examples) below.
+> When adding or updating a single sharing record, you should structure the JSON as a single object called `"member_data_sharing"`. When adding `POST` multiple sharing records, you should structure the JSON as an array of objects called `"member_data_sharings"` (note the plural) and place the sharing data in an array. You cannot update (`PUT`) multiple sharing records at the same time. For exact formatting, see the [examples](#examples) below.
 
 ## JSON fields
 
 | Field | Type (Length) | Description |
 |:---|:---|:---|
-| `id` | int | The ID of the sharing record.<br>**Default:** Auto-generated number<br>**Required On:** PUT/DELETE, in query string |
+| `id` | int | The ID of the sharing record.<br>**Default:** Auto-generated number<br>**Required On:** `PUT`/`DELETE`, in query string |
 | `data_member_id` | int | **Read-only.** Your member ID. |
-| `buyer_member_id` | int | The ID of the member with whom you are sharing segments.<br>**Required On:** POST |
-| `segment_exposure` | enum | Whether you share all of your segments or a list of specific segments with the member. Possible values: "all" or "list".  If you choose "all", any newly created segments will automatically be shared with the buyer member. If you create custom segments that should only be accessible to certain buyers, you should use "list" exposure.<br>**Required On:** POST |
-| `segments` | array of objects | If segment_exposure is "list", the list of segments that you are sharing with the member. See the first example below for formatting.<br>**Required On:** POST/PUT, if segment_exposure is "list". |
+| `buyer_member_id` | int | The ID of the member with whom you are sharing segments.<br>**Required On:** `POST` |
+| `segment_exposure` | enum | Whether you share all of your segments or a list of specific segments with the member. Possible values: `"all"` or `"list"`.  If you choose `"all"`, any newly created segments will automatically be shared with the buyer member. If you create custom segments that should only be accessible to certain buyers, you should use `"list"` exposure.<br>**Required On:** `POST` |
+| `segments` | array of objects | If `segment_exposure` is `"list"`, the list of segments that you are sharing with the member. See the first example below for formatting.<br>**Required On:** `POST`/`PUT`, if `segment_exposure` is `"list"`. |
 
 ## Examples
 
 ### Share segments with members 103 and 104
 
-``` 
+```
 $ cat data_share_multiple
 {
     "member_data_sharings": [
@@ -134,7 +134,7 @@ $ curl -b cookies -c cookies -X POST -d @data_share_multiple 'https://api.adnxs.
 
 ### Share segments with member 105
 
-``` 
+```
 $ cat data_share_single
 {
     "member_data_sharing": {
@@ -166,9 +166,9 @@ $ curl -b cookies -c cookies -X POST -d @data_share_single 'https://api.adnxs.co
 
 ### Update the sharing record for member 104
 
-In this example, the PUT request adds segment 121179 to sharing record 55 (the sharing record for member 104).
+In this example, the `PUT` request adds segment 121179 to sharing record 55 (the sharing record for member 104).
 
-``` 
+```
 $ cat data_share_update
 {
     "member_data_sharing": {
@@ -236,7 +236,7 @@ $ curl -b cookies -c cookies -X PUT -d @data_share_update 'https://api.adnxs.com
 
 ### View all of your sharing records
 
-``` 
+```
 $ curl -b cookies -c cookies 'https://api.adnxs.com/member-data-sharing'
 {
     "response": {
@@ -318,7 +318,7 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/member-data-sharing'
 
 ### View sharing record 55
 
-``` 
+```
 $ curl -b cookies -c cookies 'https://api.adnxs.com/member-data-sharing?id=55'
 {
     "response": {

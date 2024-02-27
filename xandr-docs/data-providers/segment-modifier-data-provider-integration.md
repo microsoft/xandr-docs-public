@@ -13,7 +13,7 @@ Server-side integrations allow for near-realtime updates to modifier values. Thi
 
 1. Build an application in the Xandr cloud. The application should respond to an HTTP request with a line-delimited list of segment codes and their corresponding segment values. For example, if your application is located at DNS location `test-location.nym1`, we can send you an HTTP request like the following:
 
-    ``` 
+    ```
     test-location.nym1?an_user_id=123
     ```
 
@@ -21,7 +21,7 @@ Server-side integrations allow for near-realtime updates to modifier values. Thi
 
 1. Send a response from your application with a list of segment codes and values such as:
 
-    ``` 
+    ```
     CS_MODIFIER_001:9000
     CS_MODIFIER_002:8000
     ```

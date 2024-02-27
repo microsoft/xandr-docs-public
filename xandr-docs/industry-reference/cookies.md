@@ -11,12 +11,11 @@ While you may have heard that browser cookies track your actions on the Internet
 
 ## Cookies overview
 
-When you log in to Facebook, there are many HTTP requests and responses set in the short time it takes for you to navigate to your home page. The example below uses Tamper Data, another Firefox Add-On, to view the HTTP GET and POST calls sent when signed into Facebook.
-(HTTP GET calls requests data from a specified source, whereas POST calls submits data to be processed to a specified source). This is the first POST request received by the browser.
+When you log in to Facebook, there are many HTTP requests and responses set in the short time it takes for you to navigate to your home page. The example below uses Tamper Data, another Firefox Add-On, to view the HTTP `GET` and `POST` calls sent when signed into Facebook. (HTTP `GET` calls requests data from a specified source, whereas `POST` calls submits data to be processed to a specified source). This is the first `POST` request received by the browser.
 
 :::image type="content" source="media/cookies-set.png" alt-text="Screenshot of the POST request received by the browser.":::
 
-Below, you can see the very next "PUT" request the browser sent, including the cookie.
+Below, you can see the very next `"PUT"` request the browser sent, including the cookie.
 
 :::image type="content" source="media/put-request.png" alt-text="Screenshot of the PUT request sent to the browser.":::
 
@@ -24,11 +23,9 @@ Your browser client can store hundreds of thousands of cookies. Each website has
 
 ## Cookies on desktop browsers
 
-When your client sends an HTTP request to a server, the server has no way of distinguishing which client sends which requests. You may be
-wondering why servers don't use your IP address to keep track of who is sending which requests. IP addresses are not unique to one single user; they can be shared by multiple users. This often happens in offices. Because of IP sharing, cookies were developed to identify individual users and their actions.
+When your client sends an HTTP request to a server, the server has no way of distinguishing which client sends which requests. You may be wondering why servers don't use your IP address to keep track of who is sending which requests. IP addresses are not unique to one single user; they can be shared by multiple users. This often happens in offices. Because of IP sharing, cookies were developed to identify individual users and their actions.
 
-Websites need to know that it's you (or your user account) every time that you send an HTTP request for data from a specified source. For
-example, when you sign into Facebook, you're assigned multiple cookies. One of these cookies is to keep you logged in to Facebook as yourself. If Facebook didn't know that it was you sending the HTTP GET request to see your friend's profile, it would not know whether or not you should be given access, and you would have to log in on every single page.
+Websites need to know that it's you (or your user account) every time that you send an HTTP request for data from a specified source. For example, when you sign into Facebook, you're assigned multiple cookies. One of these cookies is to keep you logged in to Facebook as yourself. If Facebook didn't know that it was you sending the HTTP `GET` request to see your friend's profile, it would not know whether or not you should be given access, and you would have to log in on every single page.
 
 ### Example
 
@@ -38,14 +35,12 @@ The screenshot below shows an example of what you'll see when you use the Firefo
 
 ## Cookies and mobile applications
 
-A common misconception regarding mobile devices and the Internet is that cookies don't work on mobile devices. That's not exactly the case. However, it is true that cookies don't work in all mobile environments. There are limitations in functionality between mobile web
-and native applications. If you're accessing a desktop version of a website from a mobile device, then cookies work just fine. However, most often, you'll be accessing a mobile application on your phone or tablet, in which case, a different method is used to capture information. Device identifiers are leveraged, often designated specifically for advertising, to provide you relevant advertising across different native mobile applications. The most common ones are:
+A common misconception regarding mobile devices and the Internet is that cookies don't work on mobile devices. That's not exactly the case. However, it is true that cookies don't work in all mobile environments. There are limitations in functionality between mobile web and native applications. If you're accessing a desktop version of a website from a mobile device, then cookies work just fine. However, most often, you'll be accessing a mobile application on your phone or tablet, in which case, a different method is used to capture information. Device identifiers are leveraged, often designated specifically for advertising, to provide you relevant advertising across different native mobile applications. The most common ones are:
 
 - IDFA (for iOS)
 - AAID (for android)
 - Windows advertising ID (for Windows)
 
-Advertising SDKs are able to access device identifier information. However, because of the different tracking methodology for mobile web
-and mobile applications, each mobile environment of a single device will often have different user IDs.
+Advertising SDKs are able to access device identifier information. However, because of the different tracking methodology for mobile web and mobile applications, each mobile environment of a single device will often have different user IDs.
 
 For more information about targeting on mobile, see [Introduction to Mobile Advertising](introduction-to-mobile-advertising.md).

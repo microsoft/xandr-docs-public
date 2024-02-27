@@ -62,7 +62,7 @@ AppNexus does not impose limits on data passed in the `custom_macros` array or t
 
 ### Single tag response (using creative ID with pixel)
 
-``` 
+```
 {
    "bid_response":{
       "responses":[
@@ -81,7 +81,7 @@ AppNexus does not impose limits on data passed in the `custom_macros` array or t
 
 #### Single tag, multiple bids (using creative ID with pixel)
 
-``` 
+```
 {
    "bid_response":{
       "responses":[
@@ -108,7 +108,7 @@ AppNexus does not impose limits on data passed in the `custom_macros` array or t
 
 #### Multi tag response (using creative code and custom macros)
 
-``` 
+```
 {
    "bid_response":{
       "responses":[
@@ -153,7 +153,7 @@ AppNexus does not impose limits on data passed in the `custom_macros` array or t
 
 #### Response to a deal
 
-``` 
+```
 {
    "bid_response":{
       "responses":[

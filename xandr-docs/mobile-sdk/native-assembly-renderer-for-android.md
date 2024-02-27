@@ -1,8 +1,8 @@
 ---
 title: Native Assembly Renderer for Android
 description: The native assembly renderer simplifies the use of Banner Native, allowing it to behave like web display banners. It simplifies generating Native display.
-ms.custom : android-sdk
-ms.date : 10/28/2023
+ms.custom: android-sdk
+ms.date: 10/28/2023
 ---
 
 # Native assembly renderer for Android
@@ -30,7 +30,7 @@ The following fields must be set:
 public void enableNativeRendering(boolean enabled);
 ```
 
-Example:
+### Example
 
 ```
 bannerAdView.enableNativeRendering(true);
@@ -38,13 +38,13 @@ bannerAdView.enableNativeRendering(true);
 
 ## Response API for native assembly renderer
 
-Banner's Delegate is being used to handle Banner-Native RendererAd
+Banner's Delegate is being used to handle Banner-Native `RendererAd`
 
 ```
 public void onAdLoaded(AdView adView)
 ```
 
-Example:
+### Example
 
 ```
 public void onAdLoaded(AdView adView){
@@ -54,6 +54,4 @@ public void onAdLoaded(AdView adView){
 
 ## Tracker management
 
-Impression trackers are automatically handled by the SDK in the same manner as HTML banner ads.
-
-Click trackers should be setup via the renderer console and be managed in the renderer itself.
+Impression trackers are automatically handled by the SDK in the same manner as HTML banner ads. Click trackers should be setup via the renderer console and be managed in the renderer itself.

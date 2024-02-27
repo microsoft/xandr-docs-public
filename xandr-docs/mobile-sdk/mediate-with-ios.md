@@ -2,7 +2,7 @@
 title: Mediate with iOS
 description: This article provides information on mediation with iOS. Mediation lets you sell ad impressions through multiple networks to generate more revenue.
 ms.custom: ios-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
 ---
 
 # Mediate with iOS
@@ -53,42 +53,43 @@ If you use the following adaptor, you need to initialize the adaptor's SDK as ea
 > The instructions in this section are only needed if you are doing native mediation. Mediating banners and interstitials should not require any initialization code or further work.
 
 To handle AdMob native ads, you need to:
-1. Create a native ad view
-Create a native ad view that inherits from GADNativeAdView:
 
-```
-#pragma mark - ANNativeAdRequestDelegate
-- (void)adRequest:(ANNativeAdRequest *)request didReceiveResponse:(ANNativeAdResponse *)response
-{
-   ...
-   if (self.nativeAdResponse.networkCode == ANNativeAdNetworkCodeAdMob) {
-    // If ANNativeAdNetworkCodeAdMob, special Steps are there for creating a View which supports Google's MediaView Requirements.
-        
-    GADNativeAdView *nativeAdView = // Pass your Google Admob View(Step 2)for rendering Native Ad response ;
-    ...
-    // All the native components will be set as regular Ad  
-    // Main Image is automatically added by GoogleSDK in the MediaView
-   }else{
-     ...
-      // If not ANNativeAdNetworkCodeAdMob, create a regular View for all others.
-   }
-}
-```
-> [!NOTE]
-> For SDK v5.3 and higher, you need to specify the GADIsADManagerApp key in the app's info.plist with a boolean YES value.
-> ```
-> <key>GADIsAdManagerApp</key>
->  <true/>
-> ```
+1. Create a native ad view that inherits from `GADNativeAdView`:
 
-2. Set up the custom keyword
+    ```
+    #pragma mark - ANNativeAdRequestDelegate
+    - (void)adRequest:(ANNativeAdRequest *)request didReceiveResponse:(ANNativeAdResponse *)response
+    {
+       ...
+       if (self.nativeAdResponse.networkCode == ANNativeAdNetworkCodeAdMob) {
+        // If ANNativeAdNetworkCodeAdMob, special Steps are there for creating a View which supports Google's MediaView Requirements.
+            
+        GADNativeAdView *nativeAdView = // Pass your Google Admob View(Step 2)for rendering Native Ad response ;
+        ...
+        // All the native components will be set as regular Ad  
+        // Main Image is automatically added by GoogleSDK in the MediaView
+       }else{
+         ...
+          // If not ANNativeAdNetworkCodeAdMob, create a regular View for all others.
+       }
+    }
+    ```
 
-For passing the content URL to the Google SDK, the content url needs to be passed as a custom keyword with the requester ad object (BannerAdView, InterstitialAdView, NativeAdRequest). The key to be used is `content_url`. Here is an example:
+    > [!NOTE]
+    > For SDK v5.3 and higher, you need to specify the `GADIsADManagerApp` key in the app's `info.plist` with a boolean `YES` value.
+    > ```
+    > <key>GADIsAdManagerApp</key>
+    >  <true/>
+    > ```
 
-```
-// Add key content_url with a value (www.appnexus.com).
-[adView addCustomKeywordWithKey:@"content_url" value:@"www.appnexus.com"];
-```
+1. Set up the custom keyword
+
+    For passing the content URL to the Google SDK, the content URL needs to be passed as a custom keyword with the requester ad object (`BannerAdView`, `InterstitialAdView`, `NativeAdRequest`). The key to be used is `content_url`. Here is an example:
+    
+    ```
+    // Add key content_url with a value (www.appnexus.com).
+    [adView addCustomKeywordWithKey:@"content_url" value:@"www.appnexus.com"];
+    ```
 
 ### AdMob banner mediation  
 
@@ -110,9 +111,10 @@ To handle AdMob banner ads for the apps that support multi-window capability in 
   + (void)setIPadMultiSceneSupport:(BOOL)setIPadMultiSceneSupport;
   + (BOOL)getIPadMultiSceneSupport;
   ```
+
 Additionally, publishers should load the ad from `viewDidAppear` method instead of `viewDidLoad` in the app.
 
-**Example of use (Objective C)**
+#### Example of use (Objective C)
 
 ```
 /**

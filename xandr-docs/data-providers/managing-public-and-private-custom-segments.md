@@ -1,14 +1,13 @@
 ---
 title: Managing Public and Private (Custom) Segments
-description: Learn creating and managing public and private (custom) segments. 
+description: The Data Marketplace supports both public and private segments. This page covers creating a new segment object, a new private segment, changing a public segment to private and a private segment to public segment.   
 ms.custom: data-providers
 ms.date: 11/30/2023
 ---
 
 # Managing public and private (custom) segments
 
-The Data Marketplace supports both public and private segments. This means that any segment – whether public or private – used through the
-Data Marketplace is cleared and reported on by Xandr. Both the data provider and data buyer benefit from the operational savings of our clearing house and the detailed reporting of data usage. The purpose of this page is to provide best practices depending on the types of data you provide through the marketplace.
+The Data Marketplace supports both public and private segments. This means that any segment – whether public or private – used through the Data Marketplace is cleared and reported on by Xandr. Both the data provider and data buyer benefit from the operational savings of our clearing house and the detailed reporting of data usage. The purpose of this page is to provide best practices depending on the types of data you provide through the marketplace.
 
 ## Public segments
 
@@ -51,8 +50,7 @@ Public segments are segments that are immediately available to all data buyers i
 
 ## Private (custom) segments
 
-Private segments are segments that require explicit sharing by the data provider to the data buyer. Private segments are typically custom
-segments built for a specific data buyer and are not meant to be seen by any other buyer. Any segment that should not be available to all Data Marketplace buyers should be set as a private segment.
+Private segments are segments that require explicit sharing by the data provider to the data buyer. Private segments are typically custom segments built for a specific data buyer and are not meant to be seen by any other buyer. Any segment that should not be available to all Data Marketplace buyers should be set as a private segment.
 
 > [!IMPORTANT]
 > **Before sharing a private segment with a buyer, verify that buyers have added your company in the Data Marketplace as described in the Add Data Provider section of [Data Buyer Workflow Changes](data-buyer-workflow-changes.md). Sharing segments with non-activated buyers results in un-tracked and un-billed data usage. See [Data Buyer Provider Service](data-buyer-provider-service.md).**

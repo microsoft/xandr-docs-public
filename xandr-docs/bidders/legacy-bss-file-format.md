@@ -59,8 +59,7 @@ The following table list the possible values that may be included in the `SEG_FI
 
 ## Separators
 
-Read on for definitions of each separator type. Each separator must be different, except for `SEPARATOR1` and `SEPARATOR3`, which may be
-identical (`SEPARATOR2` and `SEPARATOR4`, cannot be identical). Each separator must be only 1 character in length.
+Read on for definitions of each separator type. Each separator must be different, except for `SEPARATOR1` and `SEPARATOR3`, which may be identical (`SEPARATOR2` and `SEPARATOR4`, cannot be identical). Each separator must be only 1 character in length.
 
 > [!WARNING]
 > Disallowed characters

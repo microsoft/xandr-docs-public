@@ -1,6 +1,6 @@
 ---
 title: Reset a User's Password
-description: You can reset a user's password if you have administrative permissions.
+description: Learn how to reset a user's password if you have administrative permissions.
 ms.date: 11/06/2023
 ms.custom: yield-analytics-ui
 ---

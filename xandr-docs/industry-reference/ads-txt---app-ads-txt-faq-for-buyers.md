@@ -9,18 +9,15 @@ ms.custom: industry-reference
 
 ## What are ads.txt and app-ads.txt?
 
-Ads.txt and App-Ads.txt are IAB initiatives aimed to help prevent unauthorized inventory sales. Publishers can drop these text files on
-their web servers to list all of the resellers that are authorized to sell the publishers’ inventory. Similarly, programmatic platforms also integrate ads.txt and app-ads.txt files to confirm which publishers’ inventory they are authorized to sell. This allows buyers to check the validity of the inventory they purchase.
+Ads.txt and App-Ads.txt are IAB initiatives aimed to help prevent unauthorized inventory sales. Publishers can drop these text files on their web servers to list all of the resellers that are authorized to sell the publishers’ inventory. Similarly, programmatic platforms also integrate ads.txt and app-ads.txt files to confirm which publishers’ inventory they are authorized to sell. This allows buyers to check the validity of the inventory they purchase.
 
-Ads.txt files are used to declare authorized sellers of display inventory on domains. App-Ads.txt files are used to declare authorized
-sellers of application inventory.
+Ads.txt files are used to declare authorized sellers of display inventory on domains. App-Ads.txt files are used to declare authorized sellers of application inventory.
 
 To learn more about what problems these two standards are meant to solve, read the IAB Tech Lab blog on the topic: [https://iabtechlab.com/ads-txt-about/](https://iabtechlab.com/ads-txt-about/).
 
 ## Why did the the IAB implement ads.txt and app-ads.txt?
 
-Unauthorized reselling is a major concern in programmatic advertising, and unless buyers contacted publishers directly, they would have had no way of knowing which SSPs are authorized to sell a particular publisher’s inventory. With Ads.txt and App-Ads.txt, the industry has
-created a quick, easy way for buyers to know which programmatic firms have legitimate access to the inventory they want to buy.
+Unauthorized reselling is a major concern in programmatic advertising, and unless buyers contacted publishers directly, they would have had no way of knowing which SSPs are authorized to sell a particular publisher’s inventory. With Ads.txt and App-Ads.txt, the industry has created a quick, easy way for buyers to know which programmatic firms have legitimate access to the inventory they want to buy.
 
 ## How is Xandr approaching ads.txt and app-ads.txt implementations?
 
@@ -28,15 +25,11 @@ Xandr uses ads.txt and app-ads.txt files as the source of truth for who is autho
 
 ## How easy are ads.txt and app-ads.txt for a publisher to implement?
 
-Very easy. It is as simple as posting a text file to a publisher's domain similar to what virtually every website already does today with
-their robots.txt file. Additionally, there are many free resources on the internet to help validate ads.txt and app-ads.txt files, via a
-cursory internet search. These resources can help digital publishers ensure their ads.txt and app-ads.txt files are free of errors.
+Very easy. It is as simple as posting a text file to a publisher's domain similar to what virtually every website already does today with their robots.txt file. Additionally, there are many free resources on the internet to help validate ads.txt and app-ads.txt files, via a cursory internet search. These resources can help digital publishers ensure their ads.txt and app-ads.txt files are free of errors.
 
 ## What percent of publishers and top publishers have implemented ads.txt and app-ads.txt already? Where can I get an up-to-date list?
 
-Since the launch of the ads.txt in the Winter of 2018, adoption rose quickly, with over 90 percent of our top 1,000 domains having adopted
-ads.txt already. This figure is likely to continue increasing, along with the app-ads.txt standard, which launched in the Spring of 2019.
-Because ads.txt and app-ads.txt have been developed and publicized by the IAB, Xandr expects and encourages all publishers and exchanges to adopt this standard, as it is in publishers' best interests to do so.
+Since the launch of the ads.txt in the Winter of 2018, adoption rose quickly, with over 90 percent of our top 1,000 domains having adopted ads.txt already. This figure is likely to continue increasing, along with the app-ads.txt standard, which launched in the Spring of 2019. Because ads.txt and app-ads.txt have been developed and publicized by the IAB, Xandr expects and encourages all publishers and exchanges to adopt this standard, as it is in publishers' best interests to do so.
 
 ## Does Xandr enforce direct versus reseller declarations?
 
@@ -64,8 +57,7 @@ No.
 
 ## What does that mean for me as a buyer? Do I have to do anything?
 
-No. Buyers don't have to do anything. Publishers only list sellers in their ads.txt / app-ads.txt file and do not need to list any sort of
-buyer ID from any platform, including ours. APP automatically uses ads.txt / app-ads.txt to filter out Publisher who are not authorized to sell a domain, and if a publisher does not have ads.txt / app-ads.txt implemented, we will not do anything.
+No. Buyers don't have to do anything. Publishers only list sellers in their ads.txt / app-ads.txt file and do not need to list any sort of buyer ID from any platform, including ours. APP automatically uses ads.txt / app-ads.txt to filter out Publisher who are not authorized to sell a domain, and if a publisher does not have ads.txt / app-ads.txt implemented, we will not do anything.
 
 ## If I buy, am I only buying on Ads.txt enabled domains or App-Ads.txt enabled applications?
 

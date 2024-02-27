@@ -1,8 +1,8 @@
 ---
 title: Location Controls on iOS
-description: This article provides instructions for controlling location data accuracy and HTML5 location access for advertisers to improve monetization of ads.
+description: This article provides instructions to control location data accuracy and HTML5 location access for advertisers to improve monetization of ads.
 ms.custom: ios-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
 ---
 
 # Location controls on iOS
@@ -11,7 +11,7 @@ On this page you'll find instructions for controlling the accuracy of the locati
 
 ## Location accuracy
 
-Use the ANAdProtocol  setLocationWithLatitude method to control how accurate the location data is that you pass to the ad server:
+Use the ANAdProtocol `setLocationWithLatitude` method to control how accurate the location data is that you pass to the ad server:
 
 ```
 CLLocation *location = [locationManager location];
@@ -36,7 +36,7 @@ The `precision` parameter will cause all location information to be internally
 
 Creatives rendered in a WebView can access a user's location through HTML5 location API's. By default, when a creative asks for location, a popup is displayed to the users asking for explicit consent/permission to use the location. App developers can control this behavior and disable location access for creatives using the APIs describe below. When location access is disabled, popups won't be shown to the users and the creative will receive a PERMISSION_DENIED error for HTML5 location API calls.
 
-Use the  ANSDKSettings.sharedInstance locationEnabledForCreative property to control the location access for creatives. Default is YES.
+Use the `ANSDKSettings.sharedInstance.locationEnabledForCreative` property to control the location access for creatives. Default is `YES`.
 
 The following code disables location for the creative:
 

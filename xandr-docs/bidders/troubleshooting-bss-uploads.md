@@ -1,47 +1,34 @@
 ---
-title : Bidders - Troubleshooting BSS Uploads
-description : Learn troublshooting any problems with your segment data upload.  
-ms.date : 11/28/2023
+title: Bidders - Troubleshooting BSS Uploads
+description: Learn troublshooting any problems with your segment data upload. This page covers different phases of Batch Segment Service and possible uploading and processing errors that you can come across.  
+ms.date: 11/28/2023
 
 ---
 
 
 # Bidders - Troubleshooting BSS uploads
 
-You can use the methods in this topic to diagnose any problems with your
-segment data upload. 
+You can use the methods in this topic to diagnose any problems with your segment data upload.
 
 ## Different Phases of Batch Segment Service
 
-This section describes the phases of upload, so you can understand where
-problems may be occurring.
+This section describes the phases of upload, so you can understand where problems may be occurring.
 
 **Starting - Request upload URL and Job ID**
 
-In this phase, the clients request an upload URL and a job ID. This
-stage times out in 5 minutes. If jobs are stuck in this phase, it
-indicates that the clients requested the URL but failed to upload
-anything within the allotted time.
+In this phase, the clients request an upload URL and a job ID. This stage times out in 5 minutes. If jobs are stuck in this phase, it indicates that the clients requested the URL but failed to upload anything within the allotted time.
 
 **Uploading**
 
-In this phase, the clients upload the file to the given URL. It is
-recommended not to exceed one upload per minute. If the clients have
-more than 200 jobs waiting to be processed at any given time, they will
-be prohibited from uploading additional jobs.
+In this phase, the clients upload the file to the given URL. It is recommended not to exceed one upload per minute. If the clients have more than 200 jobs waiting to be processed at any given time, they will be prohibited from uploading additional jobs.
 
 **Validating and Processing**
 
-Once the clients upload the file, processing of the file occurs in the
-next phase where the validation of segment IDs and user IDs is carried
-out. If a record contains invalid segment or user IDs, the platform does
-not process the record. When the clients check the job status, they will
-be able to view statistics regarding the number of invalid users.
+Once the clients upload the file, processing of the file occurs in the next phase where the validation of segment IDs and user IDs is carried out. If a record contains invalid segment or user IDs, the platform does not process the record. When the clients check the job status, they will be able to view statistics regarding the number of invalid users.
 
 **Completion**
 
-In this phase, the data of the file is successfully uploaded to the
-platform, and it is available for targeting.
+In this phase, the data of the file is successfully uploaded to the platform, and it is available for targeting.
 
 ## Possible upload errors
 
@@ -102,7 +89,6 @@ The following errors may happen when:
 
     Attempting to exceed hourly byte upload limit
 
-
     ``` 
     {"response":{"status":"ERROR","error_code":"RATE_LIMIT_EXCEEDED","errors":["Member
                       exceeds maximum allowed bytes per hour"]}}
@@ -115,9 +101,7 @@ The following errors may happen when:
                       exceeds maximum allowed number of lines per day"]}} 
     ```
 
-
     Attempting to exceed hourly lines upload limit
-
 
     ``` 
     {"response":{"status":"ERROR","error_code":"RATE_LIMIT_EXCEEDED","errors":["Member
@@ -130,7 +114,6 @@ The following errors may happen when:
 
     Exceeding maximum time to upload
 
-
     ``` 
     {"response":{"status":"ERROR","error_code":"RATE_LIMIT_EXCEEDED","errors":["Maximum
                       upload time exceeded"]}}
@@ -140,23 +123,16 @@ The following errors may happen when:
 
 **Invalid format**
 
-If the value of the `num_invalid_format` field is greater than `"0"`,
-check the values in the `error_log_lines` field.
+If the value of the `num_invalid_format` field is greater than `"0"`, check the values in the `error_log_lines` field.
 
-In the example below, the `num_invalid_format` field displays a value of
-`"1"`, with details provided in the `error_log_lines` field.
+In the example below, the `num_invalid_format` field displays a value of `"1"`, with details provided in the `error_log_lines` field.
 
 In the `error_log_lines` field:
 
-- `num_invalid_format` indicates that there was a problem parsing a line
-  in the uploaded file.
-- `"failed with an illegal number of fields"` indicates that the number
-  of fields in a `segment_fields` block did not match what was defined
-  in the batch-segment config (for more information, see [Initial BSS Account Setup](initial-bss-account-setup.md)).
+- `num_invalid_format` indicates that there was a problem parsing a line in the uploaded file.
+- `"failed with an illegal number of fields"` indicates that the number of fields in a `segment_fields` block did not match what was defined in the batch-segment config (for more information, see [Initial BSS Account Setup](initial-bss-account-setup.md)).
 
-In this case, the config expects three fields to be defined in the
-block: `SEG_ID`, `VALUE`, `EXPIRATION`, but the parser only found two
-fields - `SEG_ID` and `VALUE`, thus showing an error.
+In this case, the config expects three fields to be defined in the block: `SEG_ID`, `VALUE`, `EXPIRATION`, but the parser only found two fields - `SEG_ID` and `VALUE`, thus showing an error.
 
 **num_invalid_format and error_log_lines example**
 
@@ -192,17 +168,12 @@ phase": "completed",
 
 ## View your file upload history
 
-To see metadata about all your segment file uploads within the last 30
-days, make a `GET` call to the service with your `member_id` specified
-in the query string. The JSON response will include an array of
-`batch_segment_upload_job` objects.
+To see metadata about all your segment file uploads within the last 30 days, make a `GET` call to the service with your `member_id` specified in the query string. The JSON response will include an array of `batch_segment_upload_job` objects.
 
-For more information about the specific fields of the
-`batch_segment_upload_job` object, see [JSON Fields](#json-fields).
+For more information about the specific fields of the `batch_segment_upload_job` object, see [JSON Fields](#json-fields).
 
 > [!NOTE]
 > File upload history is available for the last 30 days only.
-
 
 ``` 
 $ curl -b cookies 'https://api.appnexus.com/batch-segment?member_id=456'
@@ -241,65 +212,61 @@ $ curl -b cookies 'https://api.appnexus.com/batch-segment?member_id=456'
 
 > [!NOTE]
 > Our API limits responses to 100 objects via pagination. You can view additional objects by appending one of these to the API call:
+>
 > - `&start_element=101`
 > - `&sort=last_modified.desc`
 >
-> You can read more about pagination on our Documentation Portal [here](../digital-platform-api/05---throttling-pagination-and-filtering.md). 
+> You can read more about pagination on our Documentation Portal [here](../digital-platform-api/05---throttling-pagination-and-filtering.md).
 >
 > If you're still experiencing technical issues, you can submit a request on our [Customer Support Portal](https://help.xandr.com/s/login/). Don't forget to include the job ID in your support request.
 
 ## JSON fields
 
-| HTTP Method | Endpoint                                    | Description                                                        |
-|-------------|---------------------------------------------|--------------------------------------------------------------------|
-| `GET`         | [https://api.appnexus.com/batch-segment/meta](https://api.appnexus.com/batch-segment/meta) | Use this call to find out which fields you can filter and sort by. |
+| HTTP Method | Endpoint | Description |
+|--|--|--|
+| `GET` | `https://api.appnexus.com/batch-segment/meta` | Use this call to find out which fields you can filter and sort by. |
 
-| Fields                   | Type   | Description                                                                                                                                                                                                            |
-|--------------------------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Fields | Type | Description |
+|--|--|--|
 | `batch_segment_upload_job` | object | This is an object whose fields contain metadata describing the upload and processing job. If you are using the Impbus API, this will be an array containing a single object. See [Batch Segment Upload Job](#batch-segment-upload-job) for details. |
-| `id`                       | int    | This is the ID of the `batch_segment_upload_job` object associated with this request. <br>**Default**: An automatically generated number.                                                                                        |
-| `status`                   | string | The status of the API call; successful calls return `"OK"`.                                                                                                                                                              |
-
+| `id` | int | This is the ID of the `batch_segment_upload_job` object associated with this request. <br>**Default**: An automatically generated number. |
+| `status` | string | The status of the API call; successful calls return `"OK"`. |
 
 ### Batch segment upload job
 
-When you request the status of your processing job, the system returns a
-`batch_segment_upload_job` object (if you are a data provider, this will
-be an array containing a single object). Depending on which request
-you're making to the service, it will contain some or all of the
-following metadata.
+When you request the status of your processing job, the system returns a `batch_segment_upload_job` object (if you are a data provider, this will be an array containing a single object). Depending on which request you're making to the service, it will contain some or all of the following metadata.
 
 > [!NOTE]
 > Most metadata will only be present when `"phase": "completed"`.
 
-| Fields                | Type    | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-|-----------------------|---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `completed_time`        | date    | The time at which file processing was completed.                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| `created_on`            | date    | The creation date of this object.                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| `error_code`            | int     | If `"phase": "error"`, this error code describes the type of error encountered. Note that an error code will only be shown here if there was an error with the uploading, validating, or processing of the file itself (i.e., does not include invalid format or invalid segment errors). Common errors are caused by unreadable files and exceeding defined object limits. Returns `null` if no errors were found.                                                                                               |
-| `error_log_lines`       | string  | A string containing newline-separated lines. Each line lists a validation error or the reason for an error while uploading your file. You can choose how many lines appear in this field. <br> **Default**: 200 lines                                                                                                                                                                                                                                                                                                  |
-| `id`                    | int     | The unique identifier of this object.                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| `job_id`                | string  | A string of alphanumeric characters that uniquely identifies the processing job associated with this file.                                                                                                                                                                                                                                                                                                                                                                                                    |
-| `last_modified`         | date    | The most recent modification date of this object (usually via `POST`).                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| `member_id`             | int     | Your member ID. <br> **Required on**: `PUT`, `POST`                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| `num_inactive_segment`  | int     | The number of inactive segments in the file. Deduplicated.                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| `num_invalid_format`    | int     | The number of uploaded lines containing formatting errors. This depends upon your particular file format configuration. Duplicate lines will also be considered an invalid format.                                                                                                                                                                                                                                                                                                                            |
-| `num_invalid_segment`   | int     | The number of invalid segments in the file. Deduplicated.                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `num_invalid_timestamp` | int     | The number of invalid timestamps in the file.                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| `num_invalid_user`      | int     | A count of unique input lines that have an invalid or non-existent user.                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| `num_other_error`       | int     | This is a placeholder value not currently in use.                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| `num_past_expiration`   | int     | The number of expired segments in the file. Deduplicated.                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `num_unauth_segment`    | int     | The number of segments in the file which you are unauthorized to access. Deduplicated.                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| `num_valid`             | int     | The number of valid lines in the uploaded file. Each user/segment combination is considered 1 line.                                                                                                                                                                                                                                                                                                                                                                                                           |
-| `num_valid_user`        | int     | A count of unique input lines that have a valid user ID.                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| `percent_complete`      | int     | The percentage of the processing that has been completed, given the current `phase` at the time of the request.                                                                                                                                                                                                                                                                                                                                                                                                 |
-| `phase`                 | enum    | The current processing status. Returns one of the following values: <br> - error <br> - starting <br> - uploading <br> - validating <br> - processing <br> - completed                                                                                                                                                                                                                                                                                                                                                                                  |
-| `segment_log_lines`     | string  | A string containing newline-separated lines consisting of the segment ID and the number of users successfully added or removed. This field defaults to 200 lines. The format is `added: SEG_ID:COUNT SEG_ID:COUNT ... removed:` `SEG_ID:COUNT` ... where `SEG_ID` is the segment ID and `COUNT` is the number of users successfully added or removed. `SEG_ID:COUNT` pairs are sorted by `COUNT` (descending).   Example: ``added: 15889133:386221 15547290:186227 removed: 15889278:369734 15889206:255307 15889179:232831`` |
-| `start_time`            | date    | The time at which file upload began.                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| `time_to_process`       | decimal | The time it took to process the segment file, in minutes.                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `upload_url`            | string  | The URL where you'll upload your segment data file.                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| `uploaded_time`         | date    | The time at which the file associated with this job ID was uploaded.                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| `validated_time`        | date    | The time at which file validation was completed.                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Fields | Type | Description |
+|--|--|--|
+| `completed_time` | date | The time at which file processing was completed. |
+| `created_on` | date | The creation date of this object. |
+| `error_code` | int | If `"phase": "error"`, this error code describes the type of error encountered. Note that an error code will only be shown here if there was an error with the uploading, validating, or processing of the file itself (i.e., does not include invalid format or invalid segment errors). Common errors are caused by unreadable files and exceeding defined object limits. Returns `null` if no errors were found. |
+| `error_log_lines` | string | A string containing newline-separated lines. Each line lists a validation error or the reason for an error while uploading your file. You can choose how many lines appear in this field. <br> **Default**: 200 lines |
+| `id` | int | The unique identifier of this object. |
+| `job_id` | string | A string of alphanumeric characters that uniquely identifies the processing job associated with this file. |
+| `last_modified` | date | The most recent modification date of this object (usually via `POST`). |
+| `member_id` | int | Your member ID. <br> **Required on**: `PUT`, `POST` |
+| `num_inactive_segment` | int | The number of inactive segments in the file. Deduplicated. |
+| `num_invalid_format` | int | The number of uploaded lines containing formatting errors. This depends upon your particular file format configuration. Duplicate lines will also be considered an invalid format. |
+| `num_invalid_segment` | int | The number of invalid segments in the file. Deduplicated. |
+| `num_invalid_timestamp` | int | The number of invalid timestamps in the file. |
+| `num_invalid_user` | int | A count of unique input lines that have an invalid or non-existent user. |
+| `num_other_error` | int | This is a placeholder value not currently in use. |
+| `num_past_expiration` | int | The number of expired segments in the file. Deduplicated. |
+| `num_unauth_segment` | int | The number of segments in the file which you are unauthorized to access. Deduplicated. |
+| `num_valid` | int | The number of valid lines in the uploaded file. Each user/segment combination is considered 1 line. |
+| `num_valid_user` | int | A count of unique input lines that have a valid user ID. |
+| `percent_complete` | int | The percentage of the processing that has been completed, given the current `phase` at the time of the request. |
+| `phase` | enum | The current processing status. Returns one of the following values: <br> - `error` <br> - `starting` <br> - `uploading` <br> - `validating` <br> - `processing` <br> - `completed` |
+| `segment_log_lines` | string | A string containing newline-separated lines consisting of the segment ID and the number of users successfully added or removed. This field defaults to 200 lines. <br> The format is `added: SEG_ID:COUNT SEG_ID:COUNT ... removed:` `SEG_ID:COUNT` ... where `SEG_ID` is the segment ID and `COUNT` is the number of users successfully added or removed. `SEG_ID:COUNT` pairs are sorted by `COUNT` (descending). <br>  Example:<br> ``added: 15889133:386221 15547290:186227 removed: 15889278:369734 15889206:255307 15889179:232831`` |
+| `start_time` | date | The time at which file upload began. |
+| `time_to_process` | decimal | The time it took to process the segment file, in minutes. |
+| `upload_url` | string | The URL where you'll upload your segment data file. |
+| `uploaded_time` | date | The time at which the file associated with this job ID was uploaded. |
+| `validated_time` | date | The time at which file validation was completed. |
 
 ## Related topics
 

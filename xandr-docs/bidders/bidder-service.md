@@ -6,8 +6,7 @@ ms.date: 10/28/2023
 
 # Bidder service
 
-The Bidder Service connects a bidder to Xandr's impression bus and allows the bidder and the impression bus to begin communication. Your
-Xandr representative will create the bidder in the system, and you will use the Bidder Service to make modifications or retrieve your bidder ID.
+The Bidder Service connects a bidder to Xandr's impression bus and allows the bidder and the impression bus to begin communication. Your Xandr representative will create the bidder in the system, and you will use the Bidder Service to make modifications or retrieve your bidder ID.
 
 You may need your bidder ID for some of the Services. To find out what your bidder ID is, run the "see all bidders" command described below.
 
@@ -62,8 +61,7 @@ In bidder sandbox environments, all functionality is available for integration p
 > [!NOTE]
 > Use Bidder Profile Service to Filter and Throttle.
 
-To filter the traffic your bidder will receive, use the [Legacy Bidder Profile Service](legacy-bidder-profile-service.md). A few
-filtering and throttling fields still exist in the Bidder Service, but they will be migrated to the Bidder Profile Service soon. Class filters are available in both; we recommend using the Bidder Profile Service for these.
+To filter the traffic your bidder will receive, use the [Legacy Bidder Profile Service](legacy-bidder-profile-service.md). A few filtering and throttling fields still exist in the Bidder Service, but they will be migrated to the Bidder Profile Service soon. Class filters are available in both; we recommend using the Bidder Profile Service for these.
 
 ## Deprecated fields
 
@@ -87,7 +85,7 @@ Authentication is always the first step when using the API Services. The authent
 
 If Xandr has already added your bidder for you, you will already have some bidder information, like your bidder ID, in JSON format. You can view this information with the below command.
 
-``` 
+```
 S curl -b cookies -c cookies "https://api.adnxs.com/bidder"
 {
    "response":{
@@ -118,7 +116,7 @@ Now that you know your bidder ID, you can use a text file in JSON format to modi
 > [!NOTE]
 > These included fields will be updated. All other fields will be unchanged.
 
-``` 
+```
 $ cat bidder
 {
       "bidder":{
@@ -130,7 +128,7 @@ $ cat bidder
 
 Then you use the `PUT` command to update this data in the impression bus cache.
 
-``` 
+```
 $ curl -b cookies -c cookies -X PUT --data-binary @bidder 'https://api.adnxs.com/bidder/4'
 {
    "response":{
@@ -142,7 +140,7 @@ $ curl -b cookies -c cookies -X PUT --data-binary @bidder 'https://api.adnxs.com
 
 Now when you view Bidder 4, you get:
 
-``` 
+```
 $ curl -b cookies -c cookies 'https://api.adnxs.com/bidder/4'
 {
    "response":{

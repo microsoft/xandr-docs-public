@@ -2,7 +2,7 @@
 title: Open Ad Clicks in the Native Browser on Android
 description: This article provides information on how to open ad clicks in the native browser on Android. By default, the SDK will open clicks in an in-app browser.
 ms.custom: android-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
 ---
 
 # Open ad clicks in the native browser on android

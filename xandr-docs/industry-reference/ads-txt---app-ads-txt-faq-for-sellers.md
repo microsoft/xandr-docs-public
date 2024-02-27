@@ -11,9 +11,7 @@ ms.custom: industry-reference
 
 The goal of Ads.txt and App-Ads.txt is to give publishers a way to list ALL their approved SSP, ad network, and exchange partners (both direct and resellers). Theoretically, the publisher’s inventory should not be found via other partners.
 
-Technically, Ads.txt and App-Ads.txt are files the publisher places on their domain (`website.com/ads.txt`, or `website.com/app-ads.txt`).
-Ads.txt is a file used to declare authorized sellers of display inventory on the web, whereas app-ads.txt is a file used to declare authorized sellers of application inventory. Within the respective files each approved partner is listed with their tech platform
-(Xandr, Google, Rubicon, etc.), account detail, and the relationship. DSPs & SSPs will regularly crawl these files to discover the approved inventory sources.
+Technically, Ads.txt and App-Ads.txt are files the publisher places on their domain (`website.com/ads.txt`, or `website.com/app-ads.txt`). Ads.txt is a file used to declare authorized sellers of display inventory on the web, whereas app-ads.txt is a file used to declare authorized sellers of application inventory. Within the respective files each approved partner is listed with their tech platform (Xandr, Google, Rubicon, etc.), account detail, and the relationship. DSPs & SSPs will regularly crawl these files to discover the approved inventory sources.
 
 You can read more about what problems these standards are meant to solve on the IAB Tech Lab blog: [https://iabtechlab.com/ads-txt-about/](https://iabtechlab.com/ads-txt-about/).
 
@@ -27,8 +25,7 @@ For more information on how publishers and networks should use ads.txt and app-a
 
 ## Does Xandr recommend that all publishers and networks implement ads.txt?
 
-Yes. The Ads.txt standard was launched in early 2018, and has gained significant traction in the industry. Some buyers will exclusively
-purchase content that is considered "authorized" by Ads.txt. App-Ads.txt formally launched in the Spring of 2019, and is also quickly gaining traction.  
+Yes. The Ads.txt standard was launched in early 2018, and has gained significant traction in the industry. Some buyers will exclusively purchase content that is considered "authorized" by Ads.txt. App-Ads.txt formally launched in the Spring of 2019, and is also quickly gaining traction.  
 
 ## Where can I find an example ads.txt file?
 
@@ -48,8 +45,7 @@ Buyers (both Xandr UI and API users as well as external bidder clients) benefit 
 
 ## What percentage of buyers are actively crawling publishers' files currently? At what cadence? Is this number expected to rise in the near future?
 
-We have no way to know which bidders are crawling and which are not. Some buyers have publicly said that they both crawl for ads.txt and
-app-ads.txt files, and enforce inventory standards on the basis of these results. Xandr performs scanning and enforcement on a daily basis for display inventory, and a weekly basis for application inventory.
+We have no way to know which bidders are crawling and which are not. Some buyers have publicly said that they both crawl for ads.txt and app-ads.txt files, and enforce inventory standards on the basis of these results. Xandr performs scanning and enforcement on a daily basis for display inventory, and a weekly basis for application inventory.
 
 ## Can publishers be blocked by buyers because they do not support ads.txt or app-ads.txt, or because their files are incorrect?
 

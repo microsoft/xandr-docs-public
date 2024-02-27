@@ -30,8 +30,7 @@ Yes, you must have bidder instances that are active and respond to the [Ready Re
 
 Xandr uses global load balancing to send an impression from a user to the closest Xandr datacenter to that user. We will then send a bid request to bidders that have bidder instances in that datacenter.
 
-For example, if a user is in Australia, their impression would be sent to our Singapore data center. Only bidders with bidder instances in
-Singapore will receive the bid request for that impression.
+For example, if a user is in Australia, their impression would be sent to our Singapore data center. Only bidders with bidder instances in Singapore will receive the bid request for that impression.
 
 To ensure you are able to receive traffic from France, you will need to register a bidder instance in our AMS datacenter.
 

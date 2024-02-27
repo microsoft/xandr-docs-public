@@ -76,10 +76,9 @@ The `report_interval` field in the JSON request can be set to one of the follo
 
 ### Create the JSON-formatted report request
 
-The JSON file should include the `report_type` `bidder_pricing_report`, as well as the `columns` (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (year, month, day),
-and specify the format in which the data should be returned (csv, excel, or html). For a full explanation of fields that can be included in the JSON file, see the [Report Service](report-service.md).
+The JSON file should include the `report_type` `bidder_pricing_report`, as well as the `columns` (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (year, month, day), and specify the format in which the data should be returned (csv, excel, or html). For a full explanation of fields that can be included in the JSON file, see the [Report Service](report-service.md).
 
-``` 
+```
 $ cat buyer_invoice_report_request.json
 {
     "report": {
@@ -97,7 +96,7 @@ $ cat buyer_invoice_report_request.json
 
 ### `POST` the request to the reporting service
 
-``` 
+```
 $ curl -b cookies -c cookies -X POST -d @bidder_pricing_report_request.json 'https://api.adnxs.com/report'
 {
  "response": {
@@ -116,7 +115,7 @@ $ curl -b cookies -c cookies -X POST -d @bidder_pricing_report_request.json 'htt
 
 Make a `GET` call with the Report ID to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is `"ready"`. Then use the **report-download** service to save the report data to a file, as described in the next step.
 
-``` 
+```
 $ curl -b cookies -c cookies 'https://api.adnxs.com/report?id=39c4855a07e92433947886b5aabd267d'
 {
  "response": {
@@ -156,7 +155,7 @@ To download the report data to a file, make another `GET` call with the Report I
 > [!NOTE]
 > If an error occurs during download, the response header will include an HTTP error code and message. Use \\i or \\v in your call to expose the response header.
 
-``` 
+```
 $ curl -b cookies -c cookies 'https://api.adnxs.com/report-download?id=39c4855a07e92433947886b5aabd267d' > bidder_pricing_report.csv
 ```
 

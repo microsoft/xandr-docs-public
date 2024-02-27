@@ -19,8 +19,7 @@ As you integrate your bidder and get set to go live, there are a number of wiki 
 
 ## Recommended
 
-We recommend to set the `audit_notify_email` and `sherlock_notify_email` fields in the [Member Service](member-service.md) to valid email
-addresses. This will ensure you are notified when your creatives are audited and will enable you to take action, where needed.
+We recommend to set the `audit_notify_email` and `sherlock_notify_email` fields in the [Member Service](member-service.md) to valid email addresses. This will ensure you are notified when your creatives are audited and will enable you to take action, where needed.
 
 ## Not recommended
 

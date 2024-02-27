@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 
 This function adds a click event listener to an HTML element that fires click trackers for native ad units.
 
-``` pre
+```
 attachClickTrackers(adObj,'htmlId');
 ```
 
@@ -22,7 +22,7 @@ The parameters listed below can be sent as arguments in the function.
 
 ## Example
 
-``` pre
+```
 apntag.onEvent('adLoaded', function(tag) {
     apntag.attachClickTrackers(tag, 'nativeDivId');
 });

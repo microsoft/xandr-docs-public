@@ -9,8 +9,7 @@ ms.date: 10/28/2023
 > [!NOTE]
 > Members are integrated into Xandr's system and managed via the Member Service.
 
-Any entity that has a financial relationship with Xandr's platform (usually a buyer or seller) needs to be added to Xandr's system as a
-"member" before they can conduct transactions. Members can be registered with the Member Service either by a bidder or by Xandr personnel.
+Any entity that has a financial relationship with Xandr's platform (usually a buyer or seller) needs to be added to Xandr's system as a "member" before they can conduct transactions. Members can be registered with the Member Service either by a bidder or by Xandr personnel.
 
 ## Members and contracts
 
@@ -124,8 +123,7 @@ Authentication is always the first step when using the API Services. The authent
 
 ### Create a JSON-formatted file describing the member
 
-The only required fields are `billing_name` and `bidder_id` if the member is associated with a bidder, but since a member has a financial
-relationship with Xandr, you will probably want to include other billing-related information.
+The only required fields are `billing_name` and `bidder_id` if the member is associated with a bidder, but since a member has a financial relationship with Xandr, you will probably want to include other billing-related information.
 
 ```
 $ cat member
