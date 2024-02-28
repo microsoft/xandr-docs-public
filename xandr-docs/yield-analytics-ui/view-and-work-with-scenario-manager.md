@@ -21,7 +21,7 @@ Scenario Manager prevents you from running scenarios during a system refresh.
 
 There are several ways to add a specific order line to a scenario:
 
-- When viewing in the **Performance Summary** section of the **Order Line Visibility** page, click **What Should I Do?**. Click **Add to Scenario**.
+- When viewing in the **Performance Summary** section of the **Order Line Visibility** page, click **What Should I Do?** Click **Add to Scenario**.
 - In **Evaluate Orders**, when viewing an order line, click **Add to Scenario**.
 - In the **Find Products** page, when viewing a product, click **Add to Scenario**.
 - Add the line by specifying it within Scenario Manager.

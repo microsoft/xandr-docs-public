@@ -22,7 +22,7 @@ If you use multiple ad servers, you can specify which one is the default.
 
 ## About priority labels
 
-You can customize priority labels, which are searchable, organized from high to low, and displayed throughout Yield Analytics. In addition, Yield Analytics can hide priority labels that you don't use. Please contact your services representative for more information.
+You can customize priority labels, which are searchable, organized from high to low, and displayed throughout Yield Analytics. In addition, Yield Analytics can hide priority labels that you don't use. Contact your services representative for more information.
 
 ## Filtering with multiple ad servers
 

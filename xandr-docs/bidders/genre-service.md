@@ -12,20 +12,20 @@ Use the read-only Genre Service to see what video content genres are registered 
 
 | HTTP Method | Endpoint | Description  |
 |:---|:---|:---|
-| GET | `https://api.adnxs.com/video-content-genre` | To view all defined genres |
-| GET | `https://api.adnxs.com/video-content-genre?id=<id value>` | To view a defined genre |
+| `GET` | `https://api.adnxs.com/video-content-genre` | To view all defined genres |
+| `GET` | `https://api.adnxs.com/video-content-genre?id=<id value>` | To view a defined genre |
 
 ## JSON fields
 
 | Field | Type | Description  |
 |:---|:---|:---|
 | `id` | int | The Xandr referential ID associated with the genre |
-| `name` | string | **Required on**:  POST/PUT<br><br>The video taxonomy referential value |
+| `name` | string | **Required on**:  `POST`/`PUT`<br><br>The video taxonomy referential value |
 | `last_modified` | timestamp | The time of last modification |
 
 ## Example
 
-**To retrieve all defined genres**
+### To retrieve all defined genres
 
 ```
 curl -b cookies -c cookies "https://api.adnxs.com/video-content-genre"

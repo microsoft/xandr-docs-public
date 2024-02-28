@@ -28,11 +28,11 @@ At a high level, there are two "layers" of the system we need to be concerned wi
 
   :::image type="content" source="media/config-layer.png" alt-text="Diagram that explains how the bidder's business logic can be configured.":::
 
-## A note on object hierarchy
+## Note on object hierarchy
 
 It is important to understand how our platform objects relate to one another. Below is an outline of our object hierarchy.
 
-**Bidders, Members, Seats**
+### Bidders, Members, Seats
 
 - Bidders are the highest object in our buy side hierarchy. It represents your entity's presence on our platform.
 - Below them are members. The relationship used to be one-to-many, with a bidder possibly having several member breakouts.
@@ -44,13 +44,13 @@ It is important to understand how our platform objects relate to one another. Be
   - The bidder is where you set up a connection with Xandr (such as what kind of requests to receive, to which endpoint, etc.).
   - The member is where you set up campaign-related objects such as creatives.
   - The bidder is integrated into our UI. The impression bus connects bidders with various sources of inventory, including aggregators, ad exchanges, and network resold inventory.
-- Seats are your internal entities which you can use to bid in our auctions, and purchase impressions with their corresponding internal id.
+- Seats are your internal entities which you can use to bid in our auctions, and purchase impressions with their corresponding internal ID.
 - The diagram below illustrates this hierarchy
   - With the previous member breakouts, we held a mapping of which of a bidder's seats corresponded to which breakout member. This allowed bidders to bid with their internal IDs 100% of the time.
   - Since you will be integrating with only one member, and with buyer seat bidding, you will only have the one default member, and do not have to worry about the seat-member mapping.
   :::image type="content" source="media/hierarchy.png" alt-text="Diagram that illustrates the hierarchy between bidders, members, and seats.":::
 
-**Users**
+### Users
 
 - Traditionally, bidders can act on behalf of themselves, or they can have several 3rd-party members.
 - Members must have at least one user, regardless of whether the member acts on behalf of a third party (for more details, see the [User Service](user-service.md)).
@@ -80,7 +80,7 @@ Before we can do anything else, we have to log in. Below is an example of the au
 > [!TIP]
 > For more detailed information about authenticating via our API, see the [Authentication Service](./authentication-service.md).
 
-**Example authentication JSON**
+### Example authentication JSON
 
 ```
 $ cat auth.json
@@ -97,7 +97,7 @@ $ cat auth.json
 
 Post to the production API to authenticate:
 
-**Example auth call in production API**
+### Example auth call in production API
 
 ```
 $ export IB="https://api.adnxs.com";
@@ -110,7 +110,7 @@ $ curl -b cookies -c cookies -X POST -d @auth.json $IB/auth
 
 Similarly, post to the test environment to authenticate:
 
-**Example auth call in testing API**
+### Example auth call in testing API
 
 ```
 $ export IB_TESTING="https://api-test.adnxs.com";
@@ -119,13 +119,14 @@ $ curl -b cookies -c cookies -X POST -d @auth.json $IB_TESTING/auth
 { response": { "status": "OK", ... } }
       
 ```
+
 ## View your bidder object
 
 The bidder object represents your bidder in our system. As such, it has a lot of fields that you can use to configure how your bidder interacts with our platform. Think of it as the central "hook" on which you'll hang much of the rest of your configuration. A bidder object should already have been created for you by your Xandr representative.
 
 In the example below, we make a `GET` call to view the bidder object, but we don't explain any of its details. For more detailed information about the bidder object, see the [Bidder Service](./bidder-service.md).
 
-**Expand for call example**
+### Expand for call example
 
 ```
 $ export IB="https://api.adnxs.com";
@@ -215,7 +216,7 @@ You need to have at least one member that buys through your bidder. You should h
 > [!TIP]
 > In the example below, we make a `GET` call to view the member object, but we don't explain any of its details. Some of the fields which are displayed to you may be deprecated. For more detailed information about the member object, including which fields are currently supporting, see the [Member Service](./member-service.md).
 
-**Expand for call example**
+### Expand for call example
 
 ```
 $ export IB="https://api.adnxs.com";
@@ -331,7 +332,7 @@ In the example below, the targeting breaks down like this:
 - Web traffic
 - [Allow for unknown users](./unknown-users.md)
 
-**Bidder profile example JSON**
+### Bidder profile example JSON
 
 ```
 $ cat create-bidder-profile-json
@@ -420,7 +421,7 @@ In this step, we'll add a creative. After we upload this creative, you will need
 > - The `"allow_audit"` field submits the creative for our platform human audit.
 > - The `"allow_ssl_audit"` submits the creative for our automated scan to determine if the creative can serve on secure inventory.
 
-**Example creative JSON**
+### Example creative JSON
 
 ```
 $ cat add-creative.json
@@ -445,7 +446,7 @@ $ cat add-creative.json
 }
 ```
 
-**Example creative upload**
+### Example creative upload
 
 ```
 $ export IB="https://api.adnxs.com";
@@ -585,7 +586,7 @@ In this example we set an IP address and port to which traffic should be sent.
 - It is also highly recommended that you place a queries per second (QPS) limit on the bidder instance to ensure your servers are not inundated with traffic.
 - We highly recommend keeping the bidder instance inactive until you are ready to receive traffic in order to avoid accidental spend.
 
-**Example bidder instance object**
+### Example bidder instance object
 
 ```
 $ cat create-bidder-instance.json
@@ -601,7 +602,7 @@ $ cat create-bidder-instance.json
 }
 ```
 
-**Output**
+### Output
 
 ```
 $ export IB="https://api.adnxs.com";
@@ -651,14 +652,14 @@ $ curl -b cookies -X POST -d @create-bidder-instance.json $IB/bidder-instance/12
 
 - If you require an example of a bid request to use, your Xandr representative should be able to provide you with one. The supported bid request fields with examples can be found [here](./outgoing-bid-request-to-bidders.md).
 
-**User Sync**
+### User sync
 
 - In order to inform your bidding activity, we have methods for syncing your internal user IDs with Xandr's.
 - For our bidder partners, the norm is to use `/getuid`. More information on this service can be found here: [Synchronize Your User IDs](./synchronize-your-user-ids.md).
 
 ## Test the integration
 
-**Ready requests**
+### Ready requests
 
 - In order to receive bid requests from our servers, your bidder must first respond correctly to our ready requests.
 - Ready requests are sent to https://\[hostname or IP\]:\[port\]\[bidder.ready_uri\]
@@ -666,7 +667,7 @@ $ curl -b cookies -X POST -d @create-bidder-instance.json $IB/bidder-instance/12
 - Your response must contain `"1"` somewhere in the body.
 - Further Details can be found [here](./ready-request.md).
 
-**Bid stream testing**
+### Bid stream testing
 
 - Your Xandr Integration Engineer will help you test the bid stream.
 - This will likely involve sending you bid requests from a testing publisher page.
@@ -704,11 +705,11 @@ For reference, here are the endpoints for the Production and Client Testing envi
 
 ## Example updates
 
-**Bidder object `ready_uri` and `bid_uri`**
+### Bidder object `ready_uri` and `bid_uri`
 
 Update these fields to ensure our ready requests and bid requests, respectively, are sent to the right endpoints.
 
-**Example bidder update**
+#### Example bidder update
 
 ```
 $ cat update-uris.json
@@ -721,7 +722,7 @@ $ cat update-uris.json
 }
 ```
 
-**Example bidder update output**
+#### Example bidder update output
 
 ```
 $ export IB="https://api.adnxs.com";
@@ -749,11 +750,11 @@ $ curl -b cookies -X PUT -d @update-uris.json $IB/bidder/1234?fields=active,bid_
 } 
 ```
 
-**Update member object audit notify email**
+### Update member object audit notify email
 
 Update these fields to ensure you receive notifications for creatives you upload to our system.
 
-**Example member update**
+#### Example member update
 
 ```
 $ cat update-email.json
@@ -765,7 +766,7 @@ $ cat update-email.json
 }
 ```
 
-**Example member update output**
+#### Example member update output
 
 ```
 $ export IB="https://api.adnxs.com";

@@ -34,7 +34,7 @@ In addition to *when* an impression is counted, you'll want to note *how* impres
 
 ## Where are impressions counted?
 
-After evaluation *when* and *how*, you should look at *where* impression-counting is happening. Possible locations include:
+After evaluating *when* and *how*, you should look at *where* impression-counting is happening. Possible locations include:
 
 - A specific creative
 - Seller
@@ -54,4 +54,4 @@ If you're having spend discrepancies, note how you're getting your spend:
 - Macro `${AUCTION_PRICE}` in nurl
 - Macro `${PRICE_PAID}` in a tracking pixel
 - Macro `${PRICE_PAID}` in the creative code call
-- Macro `${PRICE_PAID}` in the redirecting url of the creative url call
+- Macro `${PRICE_PAID}` in the redirecting URL of the creative URL call

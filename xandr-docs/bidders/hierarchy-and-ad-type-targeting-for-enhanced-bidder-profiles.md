@@ -1,19 +1,18 @@
 ---
 title: Enhanced Bidder Profiles Ad Type Targeting
-description: This article explains about the hierarchy and ad type targeting for enhanced bidder profiles.
+description: This article explains the hierarchy and ad type targeting for enhanced bidder profiles.
 ms.date: 11/23/2023
 ---
 
-# Enhanced bidder profiles ad type targeting
+# Enhanced Bidder profiles ad type targeting
 
 ## Hierarchy
 
-In the past, bidder profiles had a parent/child hierarchy. This added additional complexity to the bidder profiles. Now bidder profiles have only a single level. For traffic to get through, it only needs to meet the requirement of one active profile. This results in a very simple, manageable system that is an ally in troubleshooting endeavors.
+In the past, bidder profiles had a parent/child hierarchy. This added additional complexity to the bidder profiles. Now bidder profiles have only a single level. For traffic to get through, it only needs to meet the requirement of one active profile. This results in a very simple, manageable system that is an ally in troubleshooting endeavors.
 
 In summary:
 
-- Bidder profiles only have a single level.
-  - Parent/child hierarchy is not there anymore.
+- Bidder profiles only have a single level. Parent/child hierarchy is not there anymore.
 - The impression must meet all the requirements of any of the profile objects to be sent to the bidder (see the chart below for more information).
   - OR relationship across profile objects
   - AND relationship within the profile
@@ -37,8 +36,7 @@ In Enhanced Bidder Profiles, we wanted to give users the ability to target/filte
 
 The following rules apply:
 
-- An ad type must be explicitly excluded in a `PUT`/`POST` in order to be excluded.
-  - Otherwise, it is implied to be included.
+- An ad type must be explicitly excluded in a `PUT`/`POST` in order to be excluded. Otherwise, it is implied to be included.
 - If no size is listed, then all sizes are assumed to be excluded or included (depending on ad type action).
 - If a size is listed, then it is included or excluded depending on the action for that ad type.
 - Sizes only apply to video and banner ad types.
@@ -48,7 +46,7 @@ The following rules apply:
 
 #### Exclude native ad type
 
-**`PUT`/`POST` Call**
+##### `PUT`/`POST` Call
 
 ```
 {
@@ -66,7 +64,7 @@ The following rules apply:
 }
 ```
 
-**`GET` response**
+##### `GET` response
 
 ```
 {
@@ -102,7 +100,7 @@ The following rules apply:
 
 #### Include only the banner ad type
 
-**`PUT`/`POST` call**
+##### `PUT`/`POST` call
 
 ```
 {
@@ -129,7 +127,7 @@ The following rules apply:
 }
 ```
 
-**`GET` response**
+##### `GET` response
 
 ```
 {
@@ -163,7 +161,7 @@ The following rules apply:
 
 #### Include only banner ad type with size 200x100
 
-**`PUT`/`POST` call**
+##### `PUT`/`POST` call
 
 ```
 {
@@ -195,7 +193,7 @@ The following rules apply:
 }
 ```
 
-**`GET` response**
+##### `GET` response
 
 ```
 {
@@ -233,7 +231,7 @@ The following rules apply:
 
 #### Include a video ad type with size 1x1
 
-**`PUT`/`POST` call**
+##### `PUT`/`POST` call
 
 ```
 {
@@ -265,7 +263,7 @@ The following rules apply:
 }
 ```
 
-**`GET` response**
+##### `GET` response
 
 N/A - Error
 
@@ -274,7 +272,7 @@ N/A - Error
 
 #### Target the native ad type with size
 
-**`PUT`/`POST` call**
+##### `PUT`/`POST` call
 
 ```
 {
@@ -306,7 +304,7 @@ N/A - Error
 }
 ```
 
-**`GET` response**
+##### `GET` response
 
 N/A - Error
 

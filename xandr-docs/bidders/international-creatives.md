@@ -17,7 +17,7 @@ The Xandr auditing team will continue to test these creatives for proper display
 - The more obvious the brand alignment between the creative and the landing page, the easier it is for the audit team to approve the creative.
 - While it is great to use geo-targeting in campaigns, make sure that the creative landing page is accessible in all geos so that the audit team can evaluate it appropriately.
 
-Don't hesitate to contact Product Support at [https://help.xandr.com/s/login/](https://help.xandr.com/s/login/).
+Don't hesitate to contact [Product Support](https://help.xandr.com/s/login/).
 
 ## Related topics
 

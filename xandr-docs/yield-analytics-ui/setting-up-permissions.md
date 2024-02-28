@@ -12,7 +12,7 @@ ms.custom: yield-analytics-ui
 
 1. Under the **Admin Tools** section, click **Permissions**. From this screen, you can add a new group or edit an existing group.
 1. To add a new group, click the **Add Group** button.
-1. To edit an existing group, click on the group(s) that you would like to edit.
+1. To edit an existing group, click on the **group(s)** that you would like to edit.
 
 ## Product Permissions tab
 
@@ -63,7 +63,9 @@ From the **Consumption** Tab, you can see what products are consuming against f
 > [!TIP]
 > The display will default to whatever your most expansive privilege is. Your greatest asset to the data will determine what your experience is as a user. You may log-in and see something very different than what you are used to. This is especially true for people who are running dashboards at a lower level. The data will not match the data from someone a higher level, with more access.
 
-Example: I belong to one User Group today, and then I get added to a separate User Group tomorrow. Everything could change: My data viewpoint, reports, everything I have saved.
+### Example
+
+I belong to one User Group today, and then I get added to a separate User Group tomorrow. Everything could change: My data viewpoint, reports, everything I have saved.
 
 Here are some other points to remember:
 

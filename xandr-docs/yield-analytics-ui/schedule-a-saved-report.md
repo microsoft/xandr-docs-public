@@ -7,7 +7,7 @@ ms.custom: yield-analytics-ui
 
 # Schedule a saved report
 
-You can share the report with one or more user groups by selecting Group(s) from the left-hand list. When the Group appears on the right, select the **Allow Editing** button to let people in this Group edit and save over your report. To remove a Group from the shared list, click the red "x" icon next to the name of the Group.
+You can share the report with one or more user groups by selecting **Group(s)** from the left-hand list. When the Group appears on the right, select the **Allow Editing** button to let people in this Group edit and save over your report. To remove a Group from the shared list, click the red "x" icon next to the name of the Group.
 
 1. Name the report.
 1. Set the recurrence.
@@ -16,7 +16,7 @@ You can share the report with one or more user groups by selecting Group(s) from
 1. Select the type of file you would like the attachment to be in the dropdown.
 1. Click **Save**.
 
-If the Analysis has been scheduled for delivery using the **Send** button in Analyzer, an entry will appear in the Schedules for Analysis table. Click the **Edit** button to make changes to a Report's analysis schedule. Note that the **Save** button is not required to commit the schedule changes.
+If the Analysis has been scheduled for delivery using the **Send** button in Analyzer, an entry will appear in the **Schedules for Analysis** table. Click the **Edit** button to make changes to a Report's analysis schedule. Note that the **Save** button is not required to commit the schedule changes.
 
 ## Related topic
 

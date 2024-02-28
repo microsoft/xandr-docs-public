@@ -1,6 +1,6 @@
 ---
 title: Getting Started - FAQ
-description: This article provides answers to the frequently asked questions on how to get started with Bidders.
+description: This article provides answers to the frequently asked questions on how to get started with Bidder.
 ms.date: 11/23/2023
 ---
 
@@ -18,7 +18,7 @@ To run a debug tag in the sandbox run: `https://ib-test.adnxs.com/tt?id=YOUR_DEB
 
 1. [Pool isn't available](#pool-isnt-available).
 1. Bidder does not accept unaudited URLs - change the `"send_unaudited"` flag on your bidder to `"true"`.
-1. Member doesn't have a contract - please reach out to your technical and account contacts at Xandr.
+1. Member doesn't have a contract - reach out to your technical and account contacts at Xandr.
 
 ### Pool isn't available
 
@@ -27,7 +27,7 @@ When running a debugging session for your tinytag, if you see "Skipping bidder x
 1. Your bidder is active.
 1. Your member is active.
 1. You have registered bidder instances for your bidder, and that the bidder instances are active.
-1. You are running a debug in a datacenter in which you have an active bidder instance (for example, if you only have a bidder instance in new york, but you are physically in LA, you will be routed to the LA datacenter and will not have any active bidder instances). To force an auction at a particular datacenter, you can run ib.nym1.adnxs.com. Currently the Test environment is only in NYM so please ensure you have a bidder instance registered in our NYM datacenter.
+1. You are running a debug in a datacenter in which you have an active bidder instance. For example, if you only have a bidder instance in New York, but you are physically in LA, you will be routed to the LA datacenter and will not have any active bidder instances. To force an auction at a particular datacenter, you can run `ib.nym1.adnxs.com`. Currently the Test environment is only in NYM so ensure you have a bidder instance registered in our NYM datacenter.
 1. Your bidder instances are responding to ready requests with a `1` (is there a firewall blocking outside IPs?).
 
 ## General settings

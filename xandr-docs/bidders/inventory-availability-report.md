@@ -1,21 +1,21 @@
 ---
-title: Bidders - Inventory Availability Report
-description: Use the Inventory availability report to get an insight into the types of inventory available on the platform.
+title: Bidder - Inventory Availability Report
+description: Use the Inventory Availability report to get an insight into the types of inventory available on the platform.
 ms.date: 11/27/2023
 ---
 
-# Bidders - Inventory availability report
+# Bidder - Inventory Availability report
 
-Inventory availability report offers insight into the types of inventory available on the platform. These reports are available by request only; please use the [support portal](https://help.xandr.com/s/login/). Due to the structure of our impression availability databases, reporting dimensions are limited to those outlined below. Please also note:
+Inventory Availability report offers insight into the types of inventory available on the platform. These reports are available by request only; use the [support portal](https://help.xandr.com/s/login/). Due to the structure of our impression availability databases, reporting dimensions are limited to those outlined below. Also note:
 
 - Our databases contain 30 days worth of historical inventory availability data. Reports are therefore limited to this timeframe.
-- Additional reporting restrictions may apply to mobile impressions. Please contact your Xandr representative for further information.
+- Additional reporting restrictions may apply to mobile impressions. Contact your Xandr representative for further information.
 
 ## Time frame
 
 You can run this report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these fields, see [Report Service](./report-service.md).
 
-**Data retention period**
+### Data retention period
 
 Data in this report is retained for 30 days.
 
@@ -39,8 +39,8 @@ Data in this report is retained for 30 days.
 | `operating_system_family_id` | int | Yes | `5` | The ID associated with a certain operating system family. For example, Microsoft Windows. For more details, see [Operating System Family Service](../digital-platform-api/operating-system-family-service.md). |
 | `datacenter_id` | int | Yes | `001` | The ID of the data center used to route the request to demand partners. |
 | `seller_join_date` | int | Yes | `20220901` | The date when a seller member was added. If less than a year, the exact date will show; if over a year, the join date will show as **+1 year**. |
-| `mobile_application_id` | string | Yes | "343200656" (iOS) or "com.rovio.angrybirds" (Android) | A targetable Apple App Store ID, Google Play package name, or Windows application ID. |
-| `device_type` | int | Yes | 1 | Device type ID on which the impression was served. Possible values are:<br>`0` (other devices)<br>`1` (desktops & laptops)<br>`2` (mobile phones)<br>`3` (tablets)<br>`4` (tv)<br>`5` (game consoles)<br>`6` (media players)<br>`7` (set top box) |
+| `mobile_application_id` | string | Yes | `"343200656"` (iOS) or `"com.rovio.angrybirds"` (Android) | A targetable Apple App Store ID, Google Play package name, or Windows application ID. |
+| `device_type` | int | Yes | `1` | Device type ID on which the impression was served. Possible values are:<br>`0` (other devices)<br>`1` (desktops & laptops)<br>`2` (mobile phones)<br>`3` (tablets)<br>`4` (tv)<br>`5` (game consoles)<br>`6` (media players)<br>`7` (set top box) |
 
 ## Metrics
 
@@ -53,8 +53,6 @@ Data in this report is retained for 30 days.
 ### Create the JSON-formatted report request
 
 The JSON file should include the `report_type` of `"platform_inventory_availability"`, as well as the `columns` (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`year`, `month`, `day`), and specify the `format` in which the data should be returned (`csv`, `excel`, or `html`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](./report-service.md).
-
->
 
 ```
 $ cat platform_inventory_availability

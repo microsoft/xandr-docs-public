@@ -1,12 +1,12 @@
 ---
 title: Guaranteed Outcomes Bidder Integration Guide
-description: This article outlines the Guaranteed Outcome feature of Xandr's Exchange.
+description: This article outlines the Guaranteed Outcome feature of Xandr's Exchange.
 ms.date: 11/23/2023
 ---
 
 # Guaranteed Outcomes Bidder Integration Guide
 
-This page outlines the specifications that define the method by which Xandr enables a Bidder to bid for, and to be billed for, an outcome (view and/or complete) vs. the typical served impression. In addition, since different buyers have different standards for what constitutes a "viewable impression", the specification is designed to support a variety of standards, including different definitions (e.g., IAB vs. GroupM) and different measurement technology vendors (e.g. DoubleVerify).  In the future, the specification may also be used to support additional transaction events, for example, an in demo impression.
+This page outlines the specifications that define the method by which Xandr enables a Bidder to bid for, and to be billed for, an outcome (view and/or complete) vs. the typical served impression. In addition, since different buyers have different standards for what constitutes a "viewable impression", the specification is designed to support a variety of standards, including different definitions (e.g., IAB vs. GroupM) and different measurement technology vendors (e.g. DoubleVerify). In the future, the specification may also be used to support additional transaction events, for example, an in demo impression.
 
 For more information see [Guaranteed Outcomes](./guaranteed-outcomes.md).
 
@@ -52,7 +52,7 @@ Xandr supports the following fields in the `appnexus` extension object of the�
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `allowed_payment_types` | array of objects | Specifies the allowable payments types for this impression. If this field is not present, then the only allowed payment type is 'impression'. |
+| `allowed_payment_types` | array of objects | Specifies the allowable payments types for this impression. If this field is not present, then the only allowed payment type is `'impression'`. |
 
 ### Allowed payment type object
 
@@ -98,7 +98,7 @@ Xandr supports the following fields in the `bid_payment_type` object of the bid
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `payment_type` | integer | Specifies the payment type for which the Bidder is bidding and will be billed. If the payment type is not 'impression', then a billing notify url must be set on the bid object. See [Currently supported values for bid payment type object](#currently-supported-values-for-bid-payment-type-object) below.|
+| `payment_type` | integer | Specifies the payment type for which the Bidder is bidding and will be billed. If the payment type is not `'impression'`, then a billing notify url must be set on the bid object. See [Currently supported values for bid payment type object](#currently-supported-values-for-bid-payment-type-object) below.|
 | `price` | double | Specifies the bid price for the payment type, expressed on an outcome basis (see Bid Type in the [Currently supported values for bid payment type object](#currently-supported-values-for-bid-payment-type-object)) below.<br>For example, if the `payment_type` is set to 2 ('Views - Standard Display'), `price` is interpreted as a vCPM value. It is also the maximum charge, which is only accrued if the creative is served and measured viewable, according to the IAB definition and the Xandr viewability measurement script. <br><br>**Note**: Only USD bids are supported for payment types other than Impression. |
 
 #### Currently supported values for bid payment type object

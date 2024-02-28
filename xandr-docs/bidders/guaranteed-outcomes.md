@@ -1,10 +1,10 @@
 ---
-title: Bidders - Guaranteed Outcomes
+title: Bidder - Guaranteed Outcomes
 description: This article describes how an auction works when a buyer submits an outcome-based bid using Guaranteed Outcomes.
 ms.date: 11/23/2023
 ---
 
-# Bidders - Guaranteed Outcomes
+# Bidder - Guaranteed Outcomes
 
 With Guaranteed Outcomes, buyers can achieve maximum reach while paying for media in a way that makes sense for their business, and sellers benefit from increased demand in the auction without having to manage the risk of impressions that don’t achieve the buyer’s desired outcome. Guaranteed Outcomes (formerly Guaranteed Views) is a feature of Xandr's Exchange, designed to reduce friction in the programmatic marketplace by enabling buyers to purchase 100% of their media with the assurance that it will be viewed completely.
 
@@ -124,7 +124,7 @@ If the Exchange perfectly predicts the viewability rate for a given piece of inv
 
 ### Over-prediction
 
-If the Exchange over-predicts the viewability of the inventory, then the aggregate amount charged to the vCPM buyer is less than the aggregate amount paid to the seller.  In this example, the Exchange predicted a 50% viewability rate, but the inventory had only a 25% viewability rate. The Exchange is left with a negative balance.
+If the Exchange over-predicts the viewability of the inventory, then the aggregate amount charged to the vCPM buyer is less than the aggregate amount paid to the seller. In this example, the Exchange predicted a 50% viewability rate, but the inventory had only a 25% viewability rate. The Exchange is left with a negative balance.
 
 ### Under-prediction
 

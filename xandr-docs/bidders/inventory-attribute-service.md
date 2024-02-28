@@ -1,10 +1,10 @@
 ---
-title: Bidders - Inventory Attribute Service
+title: Bidder - Inventory Attribute Service
 description: Use the Inventory Attribute Service to view the inventory attributes that are registered in the system. 
 ms.date: 11/24/2023
 ---
 
-# Bidders - Inventory attribute service
+# Bidder - Inventory attribute service
 
 Use the read-only Inventory Attribute Service to see what inventory attributes are registered in the Xandr system. These IDs are provided in the `inventory_audits` objects on the bid request.
 
@@ -12,10 +12,10 @@ Use the read-only Inventory Attribute Service to see what inventory attributes a
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| GET | https://api.adnxs.com/inventory-attribute | To view all the inventory attributes in the Xandr system |
-| GET | https://api.adnxs.com/inventory-attribute/INVENTORY_ATTRIBUTE_ID | To view information about a particular inventory attribute |
+| `GET` | `https://api.adnxs.com/inventory-attribute` | To view all the inventory attributes in the Xandr system |
+| `GET` | `https://api.adnxs.com/inventory-attribute/INVENTORY_ATTRIBUTE_ID` | To view information about a particular inventory attribute |
 
-## JSON Fields
+## JSON fields
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -25,7 +25,7 @@ Use the read-only Inventory Attribute Service to see what inventory attributes a
 
 ## Example
 
-**View all inventory attributes (below output is subject to change)**
+### View all inventory attributes (below output is subject to change)
 
 ```
 curl -b cookies -c cookies "https://api.adnxs.com/inventory-attribute"

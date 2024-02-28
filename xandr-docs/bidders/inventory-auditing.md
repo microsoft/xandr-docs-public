@@ -4,11 +4,10 @@ description: Learn about inventory auditing process, procedure, and standards.
 ms.date: 11/24/2023
 ---
 
-
 # Inventory auditing
 
 > [!NOTE]
-> For inventory audit data on each impression, please see the `inventory_audits` array in the [Bid Request](./bid-request.md).
+> For inventory audit data on each impression, see the `inventory_audits` array in the [Bid Request](./bid-request.md).
 
 Xandr invests significant resources toward the safety and quality on both sides of transactions taking place on our platform.
 
@@ -30,11 +29,11 @@ For advertiser’s safety, Xandr provides two modes of inventory auditing. First
   > [!NOTE]
   > **Disclaimer**
   >
-  > While we believe that our audited domains are of a high quality, the nature of the internet is such that we cannot provide any guarantee regarding the nature or content of any inventory sold on the platform. For questions about this, or to report miscategorized inventory, or inventory that should be banned under our blocklist criteria, contact us via the [Customer Support form](https://help.xandr.com/) (select "Inventory Quality" as the request type).
+  > While we believe that our audited domains are of a high quality, the nature of the internet is such that we cannot provide any guarantee regarding the nature or content of any inventory sold on the platform. For questions about this, or to report miscategorized inventory, or inventory that should be banned under our blocklist criteria, contact us via the [Customer Support form](https://help.xandr.com/) (select **Inventory Quality** as the request type).
 
 ## Standards
 
-**Prohibited and restricted inventory**
+### Prohibited and restricted inventory
 
 > [!TIP]
 > **About Flagged Impressions**
@@ -50,11 +49,11 @@ In applying content policies, Xandr's policy does not differentiate between inve
 Except for creatives banned by Xandr policies, networks may run any creatives on their own inventory regardless of
 audit status (see [Creative Standards and Auditing](./creative-standards-and-auditing.md)). To allow this, under the Ad Quality manager for each publisher, leave this unchecked: "Ban unaudited creatives for direct advertisers"
 
-**Restricted content**
+### Restricted content
 
 In keeping with our inventory standards, there are categories of sites that Xandr will not serve impressions. These categories are outlined clearly in our Service Policies, under [Policies for Selling (Part of Service Policies)](../policies-regulations/index.yml).
 
-**Unauditable inventory**
+### Unauditable inventory
 
 Domains listed as "unauditable" will be available for managed campaigns, campaigns from those who set you as a "trusted partner", as well as campaign that have not enabled inventory-quality filtering.
 
@@ -63,11 +62,11 @@ Domains listed as "unauditable" will be available for managed campaigns, campaig
 - **Website does not appear to function**:  Sites that appear to be broken or have no content.
 - **Website has no ads on page**:  Sites that contain no visible ad units.
 
-To contest the audit status of a site, contact us via the [Customer Support form](https://help.xandr.com/s/login/) (select "Inventory Quality" as the request type). In the request, please detail your relationship with the publisher and a brief description of why you believe the site has not been audited correctly.
+To contest the audit status of a site, contact us via the [Customer Support form](https://help.xandr.com/s/login/) (select **Inventory Quality** as the request type). In the request, detail your relationship with the publisher and a brief description of why you believe the site has not been audited correctly.
 
 ## Inventory categorization standards
 
-**Sensitive attributes**
+### Sensitive attributes
 
 These are qualities of a site or page that advertisers may wish to exclude from an order. They are loosely based on similarly named IASH categories. Xandr is not an IASH certified member and does not guarantee that inventory meets IASH contract requirements. We encourage all members, including IASH certified members to use these categories and descriptions when self classifying their own inventory.
 
@@ -82,7 +81,7 @@ These are qualities of a site or page that advertisers may wish to exclude from 
 - **Toolbars, plug-ins or extensions**: Ad-supported browser plug-in inventory installed with user consent. More information on compliant toolbars can be found under [Policies for Selling (Part of Service Policies)](../policies-regulations/index.yml).
 - **Contextual nudity**: Non-sexual, non-vulgar nudity that appears as an incidental aspect of the site without being the focus of it.
 
-**Intended Audience**
+### Intended audience
 
 This category is used to indicate the age range of the target audience for the content on the site. A site falls into "General audiences" unless it contains content that is specifically targeted toward children, young adults, or the 18+ category. (18+, also called “mature”, does not include so-called “adult” content, i.e. pornography.)
 

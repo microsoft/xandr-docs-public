@@ -1,6 +1,6 @@
 ---
 title: Working with Channel Metrics
-description: Use the Channels tab to view high-level metrics for integrated supply-side platform along with adserver data.
+description: Use the Channels tab to view high-level metrics for integrated supply-side platform along with the adserver data.
 ms.date: 11/08/2023
 ms.custom: yield-analytics-ui
 ---
@@ -27,7 +27,7 @@ Since the **Channels** tab is powered by the **reporting** tab, custom reports c
 | Channel Earned Revenue | The total revenue earned by the channel. |
 | Channel eCPM | - The computed eCPM for the channel.<br> - Formula: Channel Earned Revenue / (Channel Consumed Impressions/1000) |
 | Channel rCPM | - Channel "real" CPM. This is a measure of how well a channel is monetizing the opportunity that it is presented with. It is useful for comparing the value brought by various partners. rCPM uses the "Channel Received Impressions" instead of Channel Consumed Impressions when determining value. <br><br> - Formula: Channel Earned Revenue / (Channel Received Impressions/1000) |
-| Channel Fill % | - A measure of the utilization rate of the channel. In the case of the Direct Sales Channel, the Channel Fill % will equal the Sell Through % (This is calculated based on the consumed impressions associated to the Direct channel).<br><br> - Formula: Channel Consumed Impressions/Channel Received Impressions * 100 |
+| Channel Fill % | - A measure of the utilization rate of the channel. In the case of the Direct Sales Channel, the Channel Fill % will equal the Sell Through %. This is calculated based on the consumed impressions associated to the Direct channel.<br><br> - Formula: Channel Consumed Impressions/Channel Received Impressions * 100 |
 | Channel Advertiser | - Guaranteed, Non-SSP Order Lines – Populates from the order line in ad server <br> - Preemptible, SSP Order Lines – Populates from SSP <br>  - Preemptible, Non-SSP Order Lines – Shows as “N/A” |
 | Channel Received Impressions | Impressions that are received by the SSP, as recorded by the SSP. In the case of the Direct Sales Channel, the Channel Received Impressions will equal Capacity Impressions. This is only available in product and targeting reports. |
 
@@ -47,8 +47,8 @@ Since the **Channels** tab is powered by the **reporting** tab, custom reports c
 | PubMatic Dimension | Definition |
 |:---|:---|
 | Ad Tag ID (PubMatic) | The ad tag ID from PubMatic. |
-| Demand Source (PubMatic) | The demand partner name field from PubMatic (Typically, this is always null). |
-| Demand Type (PubMatic) | The demand type field from PubMatic (This is not yet available in the PubMatic API, so it will always be null at this point in time). |
+| Demand Source (PubMatic) | The demand partner name field from PubMatic (typically, this is always null). |
+| Demand Type (PubMatic) | The demand type field from PubMatic. This is not yet available in the PubMatic API, so it will always be null at this point in time. |
 | Network (PubMatic) | The Network name field from PubMatic. |
 | Site (PubMatic) | The site name field from PubMatic. |
 
