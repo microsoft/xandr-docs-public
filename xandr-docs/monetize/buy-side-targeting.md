@@ -1,17 +1,13 @@
 ---
 title: Microsoft Monetize - Targeting (Buy-Side)
-description: This page lists the types of user and inventory targeting you can apply on your line items or campaigns.
+description: This page lists the types of user and inventory targeting you can apply on your line items or campaigns. Go through a list of links for user targeting and Inventory targeting. 
 ms.date: 10/28/2023
 ---
 
 
 # Microsoft Monetize - Targeting (buy-side)
 
-This page lists the types of user and inventory targeting you can apply
-on your line items or campaigns. If a particular kind of targeting is
-only available to Standard or Augmented line items, that is stated.
-Otherwise, you can assume that the targeting is available to both types
-of line items. Augmented line items do not use campaigns.
+This page lists the types of user and inventory targeting you can apply on your line items or campaigns. If a particular kind of targeting is only available to Standard or Augmented line items, that is stated. Otherwise, you can assume that the targeting is available to both types of line items. Augmented line items do not use campaigns.
 
 ## User targeting
 
@@ -52,7 +48,5 @@ of line items. Augmented line items do not use campaigns.
 ## Other targeting guidance
 
 - [Apply a Targeting Template](apply-a-targeting-template.md) (Standard Line Item only)
-- [Target Inventory on the Microsoft Advertising Exchange](target-inventory-on-the-microsoft-advertising-exchange.md)
-  (Standard Line Item only)
-- [Target Inventory on the Yahoo Ad Exchange](target-inventory-on-the-yahoo-ad-exchange.md) (Standard
-  Line Item only)
+- [Target Inventory on the Microsoft Advertising Exchange](target-inventory-on-the-microsoft-advertising-exchange.md) (Standard Line Item only)
+- [Target Inventory on the Yahoo Ad Exchange](target-inventory-on-the-yahoo-ad-exchange.md) (Standard Line Item only)

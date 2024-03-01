@@ -28,8 +28,7 @@ $ cat profile
 
 ## Day part
 
-The example below will target impressions from 3:00 PM to 11:59 PM based on the user's timezone. If a timezone is not specified for the
-"daypart_timezone" field, the platform will use the timezone of the user based on the geography data derived from the user's IP address.
+The example below will target impressions from 3:00 PM to 11:59 PM based on the user's timezone. If a timezone is not specified for the `"daypart_timezone"` field, the platform will use the timezone of the user based on the geography data derived from the user's IP address.
 
 ```
 $ cat profile
@@ -74,7 +73,7 @@ $ cat profile
 
 ## Geography targets
 
-We are able to target geography on the country, region, city and DMA (US only) levels. The example below shows how to target users in the New York City, NY, USA. Note that you can target just the city without specifying the country or state. If you do not wish to use geography targeting, leave the "country_action", "region_action", "dma_action" and "city_action" fields set to "exclude" and the targets fields set to null. This will effectively exclude nothing with respect to geography targets.
+We are able to target geography on the country, region, city and DMA (US only) levels. The example below shows how to target users in the New York City, NY, USA. Note that you can target just the city without specifying the country or state. If you do not wish to use geography targeting, leave the `"country_action"`, `"region_action"`, `"dma_action"` and `"city_action"` fields set to `"exclude"` and the targets fields set to `null`. This will effectively exclude nothing with respect to geography targets.
 
 ```
 $ cat profile
@@ -95,7 +94,7 @@ $ cat profile
 
 ## Domain lists
 
-Targeting by doamains can be done through two options: targeting a domain list as a whole (see the domain list service) or targeting a short list of domains (25 or less). The example below shows how to do both:
+Targeting by domains can be done through two options: targeting a domain list as a whole (see the domain list service) or targeting a short list of domains (25 or less). The example below shows how to do both:
 
 ```
 $ cat profile
@@ -117,8 +116,7 @@ $ cat profile
 
 ## Inventory trust and attributes
 
-Inventory trust and attributes correspond to the inventory quality targeting on the campaign inventory targeting screen. It includes the
-level of trust ("appnexus" or "seller"), intended audience ("general", "children", "young_adult" and "mature") as well as specific inventory attributes to allow.
+Inventory trust and attributes correspond to the inventory quality targeting on the campaign inventory targeting screen. It includes the level of trust (`"appnexus"` or `"seller"`), intended audience (`"general"`, `"children"`, `"young_adult"`, and `"mature"`) as well as specific inventory attributes to allow.
 
 ```
 $ cat profile

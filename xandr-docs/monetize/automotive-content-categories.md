@@ -7,10 +7,7 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize - Automotive content categories
 
-The top-level **Automotive and Vehicles**
-content category has separate categories for dealerships, manufacturers,
-and more. You can use these content categories to tag your inventory
-more accurately.
+The top-level **Automotive and Vehicles** content category has separate categories for dealerships, manufacturers, and more. You can use these content categories to tag your inventory more accurately.
 
 This page contains:
 
@@ -20,7 +17,7 @@ This page contains:
 ## Automotive content categories
 
 | ID | Name |
-|---|---|
+|--|--|
 | 139 | Auto: Manufacturers |
 | 140 | Auto: Dealerships |
 | 141 | Auto: Parts and Services |
@@ -31,7 +28,7 @@ This page contains:
 ## Auto manufacturer brand list
 
 | ID | Name | Dealership ID (NEW) | Dealership Name (NEW) |
-|---|---|---|---|
+|--|--|--|--|
 | 113482 | Abarth | 247633 | Abarth: Dealerships |
 | 4 | Acura | 247641 | Acura: Dealerships |
 | 228039 | Arrinera | 247642 | Arrinera: Dealerships |

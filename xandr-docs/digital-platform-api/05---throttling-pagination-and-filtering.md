@@ -9,13 +9,9 @@ ms.custom: digital-platform-api
 
 ## Throttling
 
-In order to prevent abuse of the API services, all accounts are generally limited to 1000 reads and writes per minute. This limit is
-enforced programmatically by the API on a member level. That means if there are two API users for a single member, they will share the
-throttling limit (i.e., two users can average 50 reads per minute each, four users can average 25 reads per minute each). However,
-Xandr adjusts the rate limits dynamically when our platform has free capacity.
+In order to prevent abuse of the API services, all accounts are generally limited to 1000 reads and writes per minute. This limit is enforced programmatically by the API on a member level. That means if there are two API users for a single member, they will share the throttling limit (i.e., two users can average 50 reads per minute each, four users can average 25 reads per minute each). However, Xandr adjusts the rate limits dynamically when our platform has free capacity.
 
-If you exceed the throttling limit, the API will respond with the HTTP 429 (Too Many Requests) response code. The `Retry-After` header
-specifies the number of seconds you should wait before trying again.
+If you exceed the throttling limit, the API will respond with the HTTP 429 (Too Many Requests) response code. The `Retry-After` header specifies the number of seconds you should wait before trying again.
 
 You can use the HTTP status 429 as the indication that you need to pause and wait for the amount of time specified in the `Retry-After` field in the response header before continuing with your API call. This will allow you to take advantage of the opportunity to exceed your rate limits when our platform has the free capacity to handle your API calls.
 
@@ -79,8 +75,7 @@ $ curl -c cookies -b cookies 'https://api.appnexus.com/creative?start_element=20
 
 ## Filtering
 
-Filtering allows you to specify a subset of objects to be returned by the API. The most common, and arguably most useful filter is
-`min_last_modified`, which only returns objects that have been changed since the date specified. In the example below, we use filtering in an API `GET` request to return only those creatives modified after 05/14/2013 00:00:00 UTC.
+Filtering allows you to specify a subset of objects to be returned by the API. The most common, and arguably most useful filter is `min_last_modified`, which only returns objects that have been changed since the date specified. In the example below, we use filtering in an API `GET` request to return only those creatives modified after 05/14/2013 00:00:00 UTC.
 
 > [!NOTE]
 > The output of the API call has been abbreviated to save space.

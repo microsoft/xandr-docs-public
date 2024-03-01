@@ -13,12 +13,12 @@ Once the advertiser is properly configured, we can begin building out the sell-s
 
 In order to start the hierarchy, an insertion order must be created first. For any insertion order, you should supply the following details:
 
-- Advertiser ID ("advertiser_id").
-- Name ("name").
-- Flight dates ("start_date" and "end_date") - **Optional**.
-- Budget ("lifetime_budget", "lifetime_budget_imps", "daily_budget", "daily_budget_imps") - **Optional**.
-- Pacing ("enable_pacing") - **Optional**.
-- Currency ("currency") - **Optional (default set at advertiser level)**.
+- Advertiser ID (`"advertiser_id"`).
+- Name (`"name"`).
+- Flight dates (`"start_date"` and `"end_date"`) - **Optional**.
+- Budget (`"lifetime_budget"`, `"lifetime_budget_imps"`, `"daily_budget"`, `"daily_budget_imps"`) - **Optional**.
+- Pacing (`"enable_pacing"`) - **Optional**.
+- Currency (`"currency"`) - **Optional (default set at advertiser level)**.
 
 ### Insertion order example
 
@@ -38,7 +38,7 @@ $ cat insertion_order
 }
 ```
 
-Then to create the new insertion order, send a POST request to the API.
+Then to create the new insertion order, send a `POST` request to the API.
 
 ```
 $ curl -b cookies -c cookies -X POST --data-binary @insertion_order 'https://api.appnexus.com/insertion-order?advertiser_id=1234'
@@ -50,7 +50,7 @@ $ curl -b cookies -c cookies -X POST --data-binary @insertion_order 'https://api
 }
 ```
 
-This returns the ID of the insertion order (in this case, the insertion order ID is 53). To view the newly added insertion order send a GET request to the insertion order service, including the advertiser ID and the insertion order ID.
+This returns the ID of the insertion order (in this case, the insertion order ID is 53). To view the newly added insertion order send a `GET` request to the insertion order service, including the advertiser ID and the insertion order ID.
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/insertion-order?id=53&advertiser_id=1234'
@@ -90,21 +90,20 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/insertion-order?id=53&adv
 
 ## Line item
 
-The next level of the hierarchy is to set up the line item. The line item must be associated with an insertion order or it will not serve.
-For any line item, you should supply the following details:
+The next level of the hierarchy is to set up the line item. The line item must be associated with an insertion order or it will not serve. For any line item, you should supply the following details:
 
-- Advertiser ID ("advertiser_id").
-- Name ("name").
-- Flight dates ("start_date" and "end_date") - **Optional**.
-- Budget ("lifetime_budget", "lifetime_budget_imps", "daily_budget", "daily_budget_imps") - **Optional**.
-- Pacing ("enable_pacing") - **Optional**.
-- Currency ("currency") - **Optional (default set at advertiser or insertion order level)**.
-- Revenue ("revenue_type", "revenue_value" and "pixels").
-- Insertion order ID ("insertion_orders\[{id}\]").
+- Advertiser ID (`"advertiser_id"`).
+- Name (`"name"`).
+- Flight dates (`"start_date"` and `"end_date"`) - **Optional**.
+- Budget (`"lifetime_budget"`, `"lifetime_budget_imps"`, `"daily_budget"`, `"daily_budget_imps"`) - **Optional**.
+- Pacing (`"enable_pacing"`) - **Optional**.
+- Currency (`"currency"`) - **Optional (default set at advertiser or insertion order level)**.
+- Revenue (`"revenue_type"`, `"revenue_value"`, and `"pixels"`).
+- Insertion order ID (`"insertion_orders[{id}]"`).
 
 ## Line item example
 
-Make a file containing JSON and add the correct values. Necessary fields include advertiser ID, name and revenue.
+Make a file containing JSON and add the correct values. Necessary fields include advertiser ID, name, and revenue.
 
 ```
 $ cat line-item
@@ -125,7 +124,7 @@ $ cat line-item
 }
 ```
 
-Then to create the new line item, send a POST request to the API.
+Then to create the new line item, send a `POST` request to the API.
 
 ```
 $ curl -b cookies -c cookies -X POST --data-binary @line-item 'https://api.appnexus.com/line-item?advertiser_id=1234'
@@ -137,7 +136,7 @@ $ curl -b cookies -c cookies -X POST --data-binary @line-item 'https://api.appne
 }
 ```
 
-This returns the ID of the line item (in this case, the line item ID is 205). To view the newly added line item send a GET request to the line item service, including the advertiser ID and the line item ID.
+This returns the ID of the line item (in this case, the line item ID is 205). To view the newly added line item send a `GET` request to the line item service, including the advertiser ID and the line item ID.
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/line-item?id=205&advertiser_id=1234'

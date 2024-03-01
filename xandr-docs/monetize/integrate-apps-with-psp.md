@@ -9,8 +9,8 @@ ms.date: 10/28/2023
 Prebid Server Premium (PSP) supports three options for SSP customers to integrate app inventory:
 
 - Prebid Mobile SDK
-- Non-SDK
-- Long-Form Video
+- [Non-SDK](non-prebid-integrations-with-psp.md)
+- [Long Form Video Service](../digital-platform-api/long-form-video-service.md)
 
 Microsoft Monetize Ad Server customers do not need to change their current integration into Microsoft Advertising and can instead follow the steps mentioned in [Integrate with PSP](integrate-with-psp.md).
 
@@ -48,7 +48,7 @@ To set up Prebid Mobile SDK with PSP:
     VideoAdUnit adUnit = new VideoAdUnit("Your placement id", 640, 480, VideoAdUnit.PlacementType.IN_BANNER);
     ```
 
-## Non-SDK
+<!--## Non-SDK
 
 ### Context
 
@@ -73,9 +73,11 @@ SSP customers with long-form, ad pod app inventory must use the `/prebid/lfv` en
 
 ### Implementation
 
-In this scenario, make POST calls to the `/prebid/lfv` endpoint as detailed under the [Long Form Video Service](../digital-platform-api/long-form-video-service.md).
+In this scenario, make POST calls to the `/prebid/lfv` endpoint as detailed under the [Long Form Video Service](../digital-platform-api/long-form-video-service.md).-->
 
 ## Related topics
 
 - [Integrate Web/Mobile Web with PSP](integrate-web-mobile-web-with-psp.md)
 - [Integrate Accelerated Mobile Pages with PSP](integrate-accelerated-mobile-pages-with-psp.md)
+- [Non-prebid Integrations with PSP](non-prebid-integrations-with-psp.md)
+- [Long Form Video Service](../digital-platform-api/long-form-video-service.md)

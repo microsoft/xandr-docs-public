@@ -13,8 +13,8 @@ Once the publisher is properly configured, we can begin building out the buy-sid
 
 In order to start the hierarchy, a site must be created. For any site, you should supply the following details:
 
-- Publisher ID ("publisher_id")
-- Name ("name")
+- Publisher ID (`"publisher_id"`)
+- Name (`"name"`)
 
 ### Sites: Example
 
@@ -30,7 +30,7 @@ $ cat site
 }
 ```
 
-Then to create the new site, send a POST request to the API.
+Then to create the new site, send a `POST` request to the API.
 
 ```
 $ curl -b cookies -c cookies -X POST --data-binary @site 'https://api.appnexus.com/site?publisher_id=1234'
@@ -46,11 +46,11 @@ $ curl -b cookies -c cookies -X POST --data-binary @site 'https://api.appnexus.c
 
 The next (and last) level of the hierarchy is to set up the placement. For any placement, you should supply the following details:
 
-- Publisher ID ("publisher_id").
-- Site ID ("site_id").
-- Size ("width" and "height") - **Optional (leaving these parameters out will create a "sizeless" tag)**.
-- Ad Profile ID ("ad_profile_id").
-- Allow Reselling ("exclusive") - **Optional (setting this to true will disable reselling)**.
+- Publisher ID (`"publisher_id"`).
+- Site ID (`"site_id"`).
+- Size (`"width"` and `"height"`) - **Optional (leaving these parameters out will create a `"sizeless"` tag)**.
+- Ad Profile ID (`"ad_profile_id"`).
+- Allow Reselling (`"exclusive"`) - **Optional (setting this to true will disable reselling)**.
 
 ### Placements: Example
 
@@ -71,7 +71,7 @@ $ cat placement
 }
 ```
 
-Then to create the new placement, send a POST request to the API.
+Then to create the new placement, send a `POST` request to the API.
 
 ```
 $ curl -b cookies -c cookies -X POST --data-binary @placement 'https://api.appnexus.com/placement?publisher_id=1234&site_id=5546'

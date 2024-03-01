@@ -10,8 +10,7 @@ ms.custom: digital-platform-api
 > [!NOTE]
 > This service is currently available to a limited set of clients and Microsoft employees only.
 
-The **access-policy-object-team** service allows you to retrieve a list of all the teams a given resource is on. You can query on any
-combination of advertisers, insertion orders, publishers, sites, and placements. If you query on multiple objects, your results will include all the teams that any of the objects is on, not the teams that *all* of the objects are on. For example, if AdvertiserA is on Team1 and Team2, and PublisherA is on Team2 and Team3, querying access-policy-object-team on AdvertiserA and PublisherA would return Team1, Team2, and Team3.
+The **access-policy-object-team** service allows you to retrieve a list of all the teams a given resource is on. You can query on any combination of advertisers, insertion orders, publishers, sites, and placements. If you query on multiple objects, your results will include all the teams that any of the objects is on, not the teams that *all* of the objects are on. For example, if AdvertiserA is on Team1 and Team2, and PublisherA is on Team2 and Team3, querying access-policy-object-team on AdvertiserA and PublisherA would return Team1, Team2, and Team3.
 
 ## REST API
 

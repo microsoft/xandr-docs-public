@@ -1,6 +1,6 @@
 ---
 title: Budgeting and Pacing
-description: This page deals with information on Budgeting and Pacing.
+description: Learn how Budgeting allows you to determine how much money you will earn or spend, while Pacing allows you to control the frequency with which the system attempts to win impressions in order to spend a budget as evenly as possible across a defined time period.
 ms.date: 10/28/2023
 ---
 
@@ -10,10 +10,7 @@ ms.date: 10/28/2023
 > [!IMPORTANT]
 > All information and recommendations regarding Budgeting and Pacing are provided to the best of our knowledge and are believed to be accurate. However, we cannot control the specific manner in which you apply this information and these recommendations. Therefore, we strongly encourage you to use your own judgment in any given situation.
 
-Budgeting allows you to determine how much money you will earn or spend,
-while Pacing allows you to control the frequency with which the system
-attempts to win impressions in order to spend a budget as evenly as
-possible across a defined time period.
+Budgeting allows you to determine how much money you will earn or spend, while Pacing allows you to control the frequency with which the system attempts to win impressions in order to spend a budget as evenly as possible across a defined time period.
 
 - **[Why Use Budgeting?](why-use-budgeting.md)**  
   Learn about what budgeting is and how you can apply it.

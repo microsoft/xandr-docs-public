@@ -7,7 +7,7 @@ ms.custom: digital-platform-api
 
 # Understand best practices
 
-Understanding and implementing the best practices laid out on the [API Best Practices](api-best-practices.md) wiki page is crucial to a smoothly operating integration. These will help you:
+Understanding and implementing the best practices laid out on the [API Best Practices](api-best-practices.md) page is crucial to a smoothly operating integration. These will help you:
 
 - Avoid common pitfalls.
 - Better handle potential errors.

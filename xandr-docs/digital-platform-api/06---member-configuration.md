@@ -7,14 +7,13 @@ ms.custom: digital-platform-api
 
 # Member configuration
 
-Prior to creating any objects via the API, it is best practice to fully configure the member first. The reason for this is that there are
-defaults that can be specified on a member level which cascade to child objects under the member.
+Prior to creating any objects via the API, it is best practice to fully configure the member first. The reason for this is that there are defaults that can be specified on a member level which cascade to child objects under the member.
 
 There are a number of different parameters which can be configured at the member level:
 
 ## No reselling priority
 
-This setting, stored in the "no_reselling_priority" parameter, specifies the priority at which managed impressions will never be resold. Put another way, if there is a campaign at or above this priority which is eligible to serve, it will always serve above any RTB campaigns from other buyers. Among managed campaigns of the same priority, the usual auction mechanics still apply. The sample JSON below shows how to set this parameter.
+This setting, stored in the `"no_reselling_priority"` parameter, specifies the priority at which managed impressions will never be resold. Put another way, if there is a campaign at or above this priority which is eligible to serve, it will always serve above any RTB campaigns from other buyers. Among managed campaigns of the same priority, the usual auction mechanics still apply. The sample JSON below shows how to set this parameter.
 
 ```
 {
@@ -26,8 +25,7 @@ This setting, stored in the "no_reselling_priority" parameter, specifies the pri
 
 ## Content categories
 
-This parameter, stored in the "content_categories" parameter, defines the list of custom content categories that can be used to categorize
-managed inventory.
+This parameter, stored in the `"content_categories"` parameter, defines the list of custom content categories that can be used to categorize managed inventory.
 
 > [!NOTE]
 > These categories will not be targeted by other buyers.
@@ -49,7 +47,7 @@ The sample JSON below shows how to set this parameter.
 
 ## Standard sizes
 
-This setting, stored in the "standard_sizes" parameter, specifies the creative and placement sizes which are shown in. The sample JSON below shows how to set this parameter.
+This setting, stored in the `"standard_sizes"` parameter, specifies the creative and placement sizes which are shown in. The sample JSON below shows how to set this parameter.
 
 ```
 {
@@ -67,7 +65,7 @@ This setting, stored in the "standard_sizes" parameter, specifies the creative a
 
 ## Timezone
 
-This parameter, stored in the "timezone" field, defines the default timezone that will be applied to newly created objects unless otherwise specified at the time of their creation. For a list of valid timezone values, see [API Timezones](api-timezones.md). The sample JSON below shows how to set this parameter.
+This parameter, stored in the `"timezone"` field, defines the default timezone that will be applied to newly created objects unless otherwise specified at the time of their creation. For a list of valid timezone values, see [API Timezones](api-timezones.md). The sample JSON below shows how to set this parameter.
 
 ```
 {
@@ -123,8 +121,7 @@ The default currency, like the timezone, is applied to advertisers and line item
 
 ## Use Insertion Orders
 
-This setting, stored in the "use_insertion_orders" parameter, specifies whether or not insertion orders should be used on all advertisers within the account. This setting is also available on an advertiser-by-advertiser basis. The sample JSON below shows how to set
-this parameter.
+This setting, stored in the `"use_insertion_orders"` parameter, specifies whether or not insertion orders should be used on all advertisers within the account. This setting is also available on an advertiser-by-advertiser basis. The sample JSON below shows how to set this parameter.
 
 ```
 {
@@ -165,7 +162,7 @@ $cat member
 }
 ```
 
-In order to make the modifications, you should PUT the member specification to the API.
+In order to make the modifications, you should `PUT` the member specification to the API.
 
 ```
 $ curl -b cookies -c cookies -X PUT --data-binary @member 'https://api.appnexus.com/member?id=123'
@@ -177,7 +174,7 @@ $ curl -b cookies -c cookies -X PUT --data-binary @member 'https://api.appnexus.
 }
 ```
 
-To verify that the changes were made, you can pull down the member from the API using a GET request.
+To verify that the changes were made, you can pull down the member from the API using a `GET` request.
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/member?id=123'

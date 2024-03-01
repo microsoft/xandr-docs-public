@@ -15,7 +15,7 @@ There are a number of different parameters which can be configured at the publis
 
 ### Timezone
 
-This parameter, stored in the "timezone" field, defines the default timezone that will be applied to newly created objects unless otherwise specified at the time of their creation. For a list of valid timezone values, see [API Timezones](api-timezones.md). The sample JSON below shows how to set this parameter.
+This parameter, stored in the `"timezone"` field, defines the default timezone that will be applied to newly created objects unless otherwise specified at the time of their creation. For a list of valid timezone values, see [API Timezones](api-timezones.md). The sample JSON below shows how to set this parameter.
 
 ```
 {
@@ -67,8 +67,7 @@ This setting, stored in the parameter in the sample below, specifies the billing
 
 ## Ad quality settings
 
-The ad profile service allows you to specify the types of creatives which are eligible to serve on a given publisher based on creative
-attributes. The JSON samples below show how to set these parameters.
+The ad profile service allows you to specify the types of creatives which are eligible to serve on a given publisher based on creative attributes. The JSON samples below show how to set these parameters.
 
 ### Buyers
 
@@ -196,7 +195,7 @@ attributes. The JSON samples below show how to set these parameters.
 
 ### Pricing type
 
-The payment type setting specifies the way that the publisher is going to be paid. The choices for pricing type are "cpm" and "revshare". The sample JSON below shows how to set these parameters:
+The payment type setting specifies the way that the publisher is going to be paid. The choices for pricing type are `"cpm"` and `"revshare"`. The sample JSON below shows how to set these parameters:
 
 ```
 {

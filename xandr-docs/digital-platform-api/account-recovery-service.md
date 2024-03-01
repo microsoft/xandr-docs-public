@@ -140,8 +140,7 @@ $ curl -X POST -d @retrieve_username 'https://api.appnexus.com/account-recovery'
 
 ### Step 3: Check your email (retrieve username)
 
-The previous step triggers the system to send an email to the address specified in the file. The email includes the username(s) that are
-associated with the email address. Once you receive the email, you can log in to the API with your username and new password. For guidance, see [Authentication Service](authentication-service.md).
+The previous step triggers the system to send an email to the address specified in the file. The email includes the username(s) that are associated with the email address. Once you receive the email, you can log in to the API with your username and new password. For guidance, see [Authentication Service](authentication-service.md).
 
 > [!NOTE]
 > If you don't receive an email, the email address or host URL in the file may not be valid. Check the values for accuracy and try again.

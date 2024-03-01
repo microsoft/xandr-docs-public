@@ -1,16 +1,13 @@
 ---
 title: Automatic Archiving of Buy-Side Objects
-description: Learn the benefits of archiving campaigns.
+description: Learn how campaigns are archived once they are identified as stale or unused. This page talks about do's and dont's of Archived campaigns.   
 ms.date: 10/28/2023
 ---
 
 
 # Automatic archiving of Buy-Side objects
 
-Microsoft Advertising automatically archives campaigns that have
-been identified as "stale" or unused. Archiving reduces the overhead of
-managing older campaigns and makes it easier to stay below
-[your object limits](viewing-your-object-limits.md). It also releases system resources that Microsoft Advertising can use to drive better results for your active campaigns.
+Microsoft Advertising automatically archives campaigns that have been identified as "stale" or unused. Archiving reduces the overhead of managing older campaigns and makes it easier to stay below [your object limits](viewing-your-object-limits.md). It also releases system resources that Microsoft Advertising can use to drive better results for your active campaigns.
 
 > [!NOTE]
 > This feature is only enabled for campaigns using the standard line item.
@@ -39,30 +36,24 @@ A campaign is archived if:
 
 ## Action required by clients
 
-**None.** Your stale objects are automatically archived. Archived
-objects appear in the UI and their status is
-prominently marked. In the API, you can sort them using a flag (see
-**Technical Notes** below for more detail).
+**None.** Your stale objects are automatically archived. Archived objects appear in the UI and their status is prominently marked. In the API, you can sort them using a flag (see **Technical Notes** below for more detail).
 
 ## Preventing an object from being archived
 
-To prevent a campaign from being archived, edit it to extend the last
-edit date. You can also set a flight date that occurs in the future.
+To prevent a campaign from being archived, edit it to extend the last edit date. You can also set a flight date that occurs in the future.
 
 ## Technical notes for API clients
 
 The following fields have been added to the [Campaign Service](../digital-platform-api/campaign-service.md):
 
-- `is_archived` (boolean) - indicates whether the object has been
-  archived
+- `is_archived` (boolean) - indicates whether the object has been archived
 - `archived_on` (timestamp) - when the object was archived
 
-The **only method allowed** on objects with `is_archived` set to `true`
-is `DELETE`.
+The **only method allowed** on objects with `is_archived` set to `true` is `DELETE`.
 
 ## Related topics
 
-- [Explore Campaigns](explore-campaigns.md)<a href="" class="xref"></a>
+- [Explore Campaigns](explore-campaigns.md)
 - [View Campaign Details](view-campaign-details.md)
 - [Viewing Your Object Limits](viewing-your-object-limits.md)
 - [Create a Campaign](create-a-campaign.md)

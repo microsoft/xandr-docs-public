@@ -10,8 +10,8 @@ Prebid Server Premium (PSP) supports four options for SSP customers to integrate
 
 - Prebid.js Send Top Bid
 - Prebid.js Send All Bids
-- Non-Prebid
-- Long-Form Video
+- [Non-prebid](non-prebid-integrations-with-psp.md)
+- [Long Form Video Service](../digital-platform-api/long-form-video-service.md)
 
 Monetize Ad Server customers do not need to change their current integration into Microsoft Advertising and can instead follow the [PSP Setup Steps](integrate-with-psp.md).
 
@@ -116,7 +116,7 @@ pbjs.setConfig({
 
 When using Send All Bids, report on the key values in an external ad server, such as Google Ad Manager (GAM), by defining key values appropriately and setting them as reportable. GAM documentation can be found [here](https://support.google.com/admanager/answer/7352444?hl=en).
 
-## Non-prebid
+<!--## Non-prebid
 
 ### Context
 
@@ -142,10 +142,12 @@ SSP customers with long-form, ad pod web inventory must use the `/prebid/lfv` en
 
 ### Implementation
 
-In this scenario, make POST calls to the `/prebid/lfv` endpoint as detailed under the [Long Form Video Service](../digital-platform-api/long-form-video-service.md).
+In this scenario, make POST calls to the `/prebid/lfv` endpoint as detailed under the [Long Form Video Service](../digital-platform-api/long-form-video-service.md).-->
 
 ## Related topics
 
 - [Integrate Apps with PSP](integrate-apps-with-psp.md)
 - [Integrate Accelerated Mobile Pages with PSP](integrate-accelerated-mobile-pages-with-psp.md)
 - [Prebid Server Premium Identity & User Syncing](prebid-server-premium-identity-and-user-syncing.md)
+- [Non-prebid Integrations with PSP](non-prebid-integrations-with-psp.md)
+- [Long Form Video Service](../digital-platform-api/long-form-video-service.md)

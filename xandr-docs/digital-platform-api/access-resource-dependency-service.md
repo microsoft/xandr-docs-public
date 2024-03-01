@@ -10,8 +10,7 @@ ms.custom: digital-platform-api
 > [!NOTE]
 > This service is currently available to a limited set of clients and Microsoft employees only.
 
-The **access-resource-dependency** service retrieves a list of resource IDs for all parents, children, and dependencies associated with a
-resource. Use this service to manage dependencies within the system that are under access control.
+The **access-resource-dependency** service retrieves a list of resource IDs for all parents, children, and dependencies associated with a resource. Use this service to manage dependencies within the system that are under access control.
 
 ## REST API
 

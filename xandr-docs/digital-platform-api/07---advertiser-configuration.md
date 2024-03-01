@@ -30,7 +30,7 @@ This setting, stored in the parameter in the sample below, specifies the billing
 
 ## Timezone
 
-This parameter, stored in the "timezone" field, defines the default timezone that will be applied to newly created objects unless otherwise specified at the time of their creation. For the list of valid timezones, see [API Timezones](api-timezones.md). The sample JSON below shows how to set this parameter.
+This parameter, stored in the `"timezone"` field, defines the default timezone that will be applied to newly created objects unless otherwise specified at the time of their creation. For the list of valid timezones, see [API Timezones](api-timezones.md). The sample JSON below shows how to set this parameter.
 
 ```
 {
@@ -42,7 +42,7 @@ This parameter, stored in the "timezone" field, defines the default timezone tha
 
 ## Time format
 
-This parameter, stored in the "time_format" field, defines whether times will be displayed in the 12-hour or 24-hour format in reporting. The sample JSON below shows how to set this parameter.
+This parameter, stored in the `"time_format"` field, defines whether times will be displayed in the 12-hour or 24-hour format in reporting. The sample JSON below shows how to set this parameter.
 
 ```
 {
@@ -66,7 +66,7 @@ The default currency, like the timezone, is applied to line items unless otherwi
 
 ## Use Insertion Orders
 
-This setting, stored in the "use_insertion_orders" parameter, specifies whether or not insertion orders should be used within this advertiser. The sample JSON below shows how to set this parameter.
+This setting, stored in the `"use_insertion_orders"` parameter, specifies whether or not insertion orders should be used within this advertiser. The sample JSON below shows how to set this parameter.
 
 ```
 {
@@ -99,7 +99,7 @@ $ cat advertiser
 }
 ```
 
-In order to create the advertiser, you should POST the specification to the API.
+In order to create the advertiser, you should `POST` the specification to the API.
 
 ```
 $ curl -b cookies -c cookies -X POST --data-binary @advertiser 'https://api.appnexus.com/advertiser'

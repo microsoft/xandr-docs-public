@@ -10,7 +10,7 @@ ms.custom: digital-platform-api
 > [!NOTE]
 > This service is currently available to a limited set of clients and Microsoft employees only.
 
-The access-member-config service allows you to manage which members on the platform are subject to access control enforcement. This service is available only to Xandr administrators.
+The **access-member-config** service allows you to manage which members on the platform are subject to access control enforcement. This service is available only to Xandr administrators.
 
 ## REST API
 

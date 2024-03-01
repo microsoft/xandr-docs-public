@@ -9,17 +9,15 @@ ms.custom: digital-platform-api
 
 A network may want to create "ad approval profiles" to define what kinds of brands and creatives can and cannot run on their publishers' pages. The Ad Profile Service lets you create your ad approval profiles at the member level or the publisher level. To create them at the publisher level, include a publisher ID. If no publisher ID is included, it will be a network-level profile available for use with all publishers.
 
-Ad profiles consist of several elements: members, brands, creatives, language, technical attributes, categories, and ad servers. When
-creating an ad profile, you can approve or ban each creative in the system individually, but you may prefer to save time by approving or
-banning entire brands or members.
+Ad profiles consist of several elements: members, brands, creatives, language, technical attributes, categories, and ad servers. When creating an ad profile, you can approve or ban each creative in the system individually, but you may prefer to save time by approving or banning entire brands or members.
 
 - **A member should be trusted:** If you believe their ads will always be acceptable. For instance, you may "trust" Network A to run quality ads, so you can mitigate the need to audit each of their creatives.
 - **A brand should be trusted:** If you believe that ads of this brand will almost always be acceptable. However you will always have the ability to ban a specific creative even if it is part of a "trusted" brand. If the specific creative is not banned, it will run by default.
 - **A brand should be banned:** If you believe that ads of this brand will never be acceptable. You will still have the ability to approve a specific creative assigned a "banned" brand, unless the member is banned.
-- The default profile (blank or ID set to 0) will ban unaudited ads from other members (i.e. where the `member_id` of the creative is different than the `member_id` of the TinyTag).
+- The default profile (blank or ID set to `0`) will ban unaudited ads from other members (i.e. where the `member_id` of the creative is different than the `member_id` of the TinyTag).
 
 > [!NOTE]
-> A brand can have a Parent Brand, as a way of gathering brands by parent company/ child company. If a seller blocks/approves a parent brand, all child brands without an \*explicit \*approve/block setting will match the parent brand setting.
+> A brand can have a Parent Brand, as a way of gathering brands by parent company/ child company. If a seller blocks/approves a parent brand, all child brands without an \*explicit\* approve/block setting will match the parent brand setting.
 
 ## REST API
 
@@ -28,9 +26,9 @@ banning entire brands or members.
 | `GET` | [https://api.appnexus.com/ad-profile](https://api.appnexus.com/ad-profile) | View all ad profiles for a member. |
 | `GET` | [https://api.appnexus.com/ad-profile?id=AD_PROFILE_ID](https://api.appnexus.com/ad-profile?id=AD_PROFILE_ID) | View a particular ad profile. |
 | `GET` | [https://api.appnexus.com/ad-profile?publisher_id=PUBLISHER_ID](https://api.appnexus.com/ad-profile?publisher_id=PUBLISHER_ID) | View all ad profiles for a specific publisher. |
-| `POST` | [https://api.appnexus.com/ad-profile](https://api.appnexus.com/ad-profile)<br>(ad_profile JSON) | Add a new ad profile at the member level. |
-| `POST` | [https://api.appnexus.com/ad-profile?publisher_id=PUBLISHER_ID](https://api.appnexus.com/ad-profile?publisher_id=PUBLISHER_ID)<br>(ad_profile JSON) | Add a new ad profile at the publisher level. |
-| `PUT` | [https://api.appnexus.com/ad-profile?id=AD_PROFILE_ID](https://api.appnexus.com/ad-profile?id=AD_PROFILE_ID)<br>(ad_profile JSON) | Modify an existing ad profile. |
+| `POST` | [https://api.appnexus.com/ad-profile](https://api.appnexus.com/ad-profile)<br>(`ad_profile` JSON) | Add a new ad profile at the member level. |
+| `POST` | [https://api.appnexus.com/ad-profile?publisher_id=PUBLISHER_ID](https://api.appnexus.com/ad-profile?publisher_id=PUBLISHER_ID)<br>(`ad_profile` JSON) | Add a new ad profile at the publisher level. |
+| `PUT` | [https://api.appnexus.com/ad-profile?id=AD_PROFILE_ID](https://api.appnexus.com/ad-profile?id=AD_PROFILE_ID)<br>(`ad_profile` JSON) | Modify an existing ad profile. |
 | `DELETE` | [https://api.appnexus.com/ad-profile?id=AD_PROFILE_ID](https://api.appnexus.com/ad-profile?id=AD_PROFILE_ID) | Delete an existing ad profile. |
 | `GET` | [https://api.appnexus.com/ad-profile?sort=description](https://api.appnexus.com/ad-profile?sort=description) | Sort ad profiles alphabetically by description. |
 | `GET` | [https://api.appnexus.com/ad-profile?search=text_of_description](https://api.appnexus.com/ad-profile?search=text_of_description) | Search for an ad profile by its description. |
@@ -39,9 +37,9 @@ banning entire brands or members.
 
 | Fields | Type | Description |
 |:---|:---|:---|
-| `id` | int | Xandr ID assigned by the API to reference this ad_profile.<br>**Required On:** `PUT`, in query string. |
+| `id` | int | Xandr ID assigned by the API to reference this `ad_profile`.<br>**Required On:** `PUT`, in query string. |
 | `state` | enum | The state of the ad profile. Possible values: `"active"` or `"inactive"`.<br>**Default:** `"active"` |
-| `member_id` | int | The member ID that owns this ad_profile. |
+| `member_id` | int | The member ID that owns this `ad_profile`. |
 | `description` | string | Optional description. |
 | `default_member_status` | enum | The member status to be used by default when no explicit selection is made. Possible values:<br> - `"case-by-case"`: This member's creatives must pass all brand, language, technical attribute, category, and ad server filtering defined on the ad profile<br> - `"banned"`: None of this member's creatives are allowed to serve. |
 | `default_brand_status` | enum | The brand status to be used by default when no explicit selection is made. Possible values: `"trusted"` or `"banned"`. |
@@ -101,7 +99,7 @@ banning entire brands or members.
 |---|---|---|
 | `id` | int | The ID of the brand. You can use the [Brand Service](brand-service.md) to retrieve brand IDs. |
 | `status` | enum | Whether creatives of this brand can or cannot run on your publishers' pages. Possible values: `"trusted"` or `"banned"`.<br><br>**Note:** If a brand is marked as Eligible, creatives associated with this brand will serve even if the brand's category is Banned. For example, if you mark the brand "1 and 1 Internet (17310)" as Eligible it will serve even if you ban its overall category, "Telecommunications (27)". |
-| `parent_brand_id` | int | When a brand has a parent brand, the default value is set to null.  |
+| `parent_brand_id` | int | When a brand has a parent brand, the default value is set to `null`.  |
 
 ### Creatives
 
@@ -154,7 +152,7 @@ banning entire brands or members.
 ## Examples
 
 > [!WARNING]
-> **Append on PUT**
+> **Append on `PUT`**
 >
 > You will overwrite existing data with the contents of your `PUT` request unless you add the query string parameters `append=true` to the request. For more information, see [API Semantics](api-semantics.md) and the example **Update an existing ad profile** below.
 
@@ -223,8 +221,7 @@ $ cat ad_profile
 
 Given the ad profile JSON in the first example, let's say you want to update the `categories` array to include another item. In a real-world use case there might be 47 categories in the array. The semantics of `PUT` mean that in order to add another category to the array, you'll need to pass in all 47 of the existing categories plus the new one.
 
-You can avoid this extra work by adding the query string parameters `append=true` to your request as shown in the example below. (For
-backwards compatibility reasons the parameters `append_only=true` will also work.)
+You can avoid this extra work by adding the query string parameters `append=true` to your request as shown in the example below. For backwards compatibility reasons the parameters `append_only=true` will also work.
 
 ```
 $ cat ad-profile-update.json
@@ -412,7 +409,7 @@ $ curl -b cookies -c cookies -X PUT --data-binary @add_freq_cap_rule.json "https
 }
 ```
 
-#### The ad profile will now have the frequency cap rule
+#### Ad profile will now have the frequency cap rule
 
 ```
 $ curl -b cookies -c cookies -X GET "https://sand.api.appnexus.com/ad-profile?id=199943"
