@@ -135,8 +135,7 @@ Check the **Show to users without cookies** to have the rule also apply to bids 
 Select **Audience Targeting \> Geography** to create a bias rule that applies to impressions in certain geographic regions. You can target specific countries, regions, metro codes, cities, or zip codes.
 
 > [!WARNING]
-> Be careful which geographic targeting options you choose; you may significantly reduce the likelihood of matching an impression. For more information, see the note
-> below.
+> Be careful which geographic targeting options you choose; you may significantly reduce the likelihood of matching an impression. For more information, see the note below.
 > [!IMPORTANT]
 > **A note on the accuracy of geographic targeting by IP address**
 >
@@ -146,9 +145,7 @@ Select **Audience Targeting \> Geography** to create a bias rule that applies to
 >
 > **Geographic targeting and boolean logic**
 >
-> When more than one targeting type is selected (e.g. both **Region** and **Zip Code**), the set of matching impressions is reduced, sometimes significantly. For example, if
-> both the Boston MA-Manchester NH **Metro Code** and the **City** of Manchester, NH are selected, only users who are located in both will be targeted. Therefore, users in the
-> **City** of Boston will not be included at all. Another example: if both the California **Region** and Chicago, IL **Metro Code** are selected, then NO users will be targeted > since the Chicago metro code does not overlap with California.
+> When more than one targeting type is selected (e.g. both **Region** and **Zip Code**), the set of matching impressions is reduced, sometimes significantly. For example, if both the Boston MA-Manchester NH **Metro Code** and the **City** of Manchester, NH are selected, only users who are located in both will be targeted. Therefore, users in the **City** of Boston will not be included at all. Another example: if both the California **Region** and Chicago, IL **Metro Code** are selected, then NO users will be targeted  since the Chicago metro code does not overlap with California.
 
 **Target countries:**
 

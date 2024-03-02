@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Offline Conversion Attribution
-description: The artcile helps you to know Offline Conversion Attribution that shifts all data processing for conversion tracking to their warehouse. 
+description: Explore Offline conversion attribution, shifting data processing for tracking to a centralized warehouse, streamlining insights.
 ms.date: 10/28/2023
 ---
 
@@ -21,7 +21,7 @@ Offline attribution provides:
 
 The following diagram shows the major components involved in the conversion attribution process, as well as the steps that occur between a user converting and that conversion being attributed and made available in reporting. The left side of the diagram shows the previous "online" conversion attribution process. The right side of the diagram shows the current "offline" process.
 
-:::image type="content" source="media/oca.png" alt-text= "The diagram that defines the previous online conversion attribution process on your left side and the current offline process is on your right.":::
+:::image type="content" source="media/oca.png" alt-text= "Diagram that defines the previous online conversion attribution process on your left side and the current offline process is on your right.":::
 
 ## Previous method ("online")
 

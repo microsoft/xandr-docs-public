@@ -1,6 +1,6 @@
 ---
 title: Quickstart Guide - Set Up Outstream Video
-description: The article provides a quickstart guide for setting up outstream video.
+description: Explore Microsoft Ads Outstream Video, embed player on your page, support Flash/HTML5/VPAID, use VAST XML via RTB for video demand with AST tagging.
 ms.date: 10/28/2023
 ---
 

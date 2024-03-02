@@ -1,13 +1,12 @@
 ---
 title: Explore Line Items
-description: The articles defines the Line Items screen that displays metrics for all line items under a specific advertiser, alerts about serving conditions, provides quick access to insertion order details and child campaigns, and offers bulk editing and reporting options.
+description: Explore streamlined management for advertisers and publishers on the Line Items screen. Access metrics, alerts, and bulk editing options effortlessly.
 ms.date: 10/28/2023
 ---
 
 # Explore line items
 
-The **Line Items** screen shows you essential metrics about all line items under a specific advertiser, informs you of conditions preventing line items from serving, provides
-quick access to each insertion order's details and child campaigns, and offers bulk editing and reporting options.
+The **Line Items** screen shows you essential metrics about all line items under a specific advertiser, informs you of conditions preventing line items from serving, provides quick access to each insertion order's details and child campaigns, and offers bulk editing and reporting options.
 
 For publishers, the Line Items screen is where you'll go to manage demand from your direct-sold advertisers, including standard and guaranteed delivery line items.
 
@@ -21,7 +20,7 @@ Things you can do on this page include:
 
 To get to the line items screen:
 
-- Select **Advertisers >  Line Items** from the navigation menu at the top of the screen.
+- Select **Advertisers** >  **Line Items** from the navigation menu at the top of the screen.
 
   or
 
@@ -29,7 +28,7 @@ To get to the line items screen:
 
 Publisher users can:
 
-- Select **Orders >  Line Items** from the navigation menu at the top of the screen.
+- Select **Orders** >  **Line Items** from the navigation menu at the top of the screen.
 
   or
 
@@ -78,8 +77,8 @@ For more information about line item details, see [View Line Item Details](view-
 The metrics on the **Line Items** screen help you quickly assess the performance and delivery of your line items. Known as "quickstats", these metrics are faster and more readily
 accessed than standard reporting data. Quickstats are cached on a regular basis and are shown whenever you open the Line Items screen.
 
-Note that Quickstats may not match the data from standard reporting exactly for technical reasons. For more information, see [Availability of Reporting Data](availability-of-reporting-data.md).
-
+> [!NOTE]
+> Quickstats may not match the data from standard reporting exactly for technical reasons. For more information, see [Availability of Reporting Data](availability-of-reporting-data.md).
 > [!TIP]
 > To sort your line items by any given quickstat, click on the column name, e.g., **Profit**.
 
@@ -161,9 +160,7 @@ The exact requirements for calculating pacing depend on the quickstats interval 
 
 ## Report on line items
 
-You can initiate a report for one or more line items directly from this screen. Check the box for each line item that you want to report on and
-click **Actions >  Run Report**. This takes you to the [Advertiser Analytics Report](advertiser-analytics-report.md), where the line items you selected are set as
-filters. For further information about running the report, see [Advertiser Reporting](advertiser-reporting.md).
+You can initiate a report for one or more line items directly from this screen. Check the box for each line item that you want to report on and click **Actions >  Run Report**. This takes you to the [Advertiser Analytics Report](advertiser-analytics-report.md), where the line items you selected are set as filters. For further information about running the report, see [Advertiser Reporting](advertiser-reporting.md).
 
 ## Activate/deactivate line items
 

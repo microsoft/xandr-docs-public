@@ -1,6 +1,6 @@
 ---
 title: Navigate to the Native Assembly Gallery
-description: The article guides you in choosing pre-configured native assemblies or creating your own from the Native Assembly Gallery.
+description: Learn how to choose pre-configured native assemblies or create your own native assembly directly from the Native Assembly Gallery.
 ms.date: 10/28/2023
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Network Operations
-description: The article helps us to manage all of your business operations and billing through the platform.
+description: Explore efficient business operation and billing management on our platform. Easily handle all tasks through the listed features.
 ms.date: 10/28/2023
 ---
 

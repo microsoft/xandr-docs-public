@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - OTT Video Creative Specifications
-description: The article delves into the technical specifications of Over-the-Top (OTT) videos, focusing on the requirements for premium digital content.
+description: Explore technical specifications of Over-the-Top (OTT) videos, focusing on the requirements for premium digital content.
 ms.date: 10/28/2023
 ---
 
@@ -20,14 +20,13 @@ VPAID is not supported for OTT placements, and FLV, WebM and VPAID media types w
 
 ## OTT video creative limitations
 
-- Viewability reporting is not supported for OTT creatives. However, impression, quartile, and completion tracking are available. For more information, see
-  [Measurement of Video Viewability using VPAID Wrapper](video-viewability.md).
+- Viewability reporting is not supported for OTT creatives. However, impression, quartile, and completion tracking are available. For more information, see [Measurement of Video Viewability using VPAID Wrapper](video-viewability.md).
 - Do not include segment pixels in your inline VAST code, because they will not load in the SDK.
 - To use creatives of a different duration than 15 or 30 seconds, reach out to the publisher.
 
 ## Checking your creative's specifications
 
-To view the specifications of a particular creative in the XML code, paste its third-party VAST URL or the [Microsoft Advertising hosting URL](http://ib.adnxs.com/cr?id=CREATIVE_ID&amp;format=vast) into a browser. The VAST Check functionality in Monetize will also verify that all creatives meet the requirements for duration, format, OTT bitrate, and resolution.
+To view the specifications of a particular creative in the XML code, paste its third-party VAST URL or the Microsoft Advertising hosting URL (`https://ib.adnxs.com/cr?id=CREATIVE_ID&format=vast` where CREATIVE_ID is the identifier for your creative) into a browser. The VAST Check functionality in Monetize will also verify that all creatives meet the requirements for duration, format, OTT bitrate, and resolution.
 
 ## Publisher-specific OTT creative requirements
 

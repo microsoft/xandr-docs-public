@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Navigate to the Create New Line Item Screen
-description: The article guides you in creating augmented line items directly from the "Create New Line Item" screen.
+description: Explore Microsoft Monetization. Create augmented line items directly from the Create New Line Item screen.
 ms.date: 10/28/2023
 ---
 

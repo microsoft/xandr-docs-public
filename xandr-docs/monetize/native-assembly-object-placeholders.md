@@ -1,13 +1,12 @@
 ---
 title: Native Assembly Object Placeholders
-description: The article shows you how to add a variety of standard and custom data, image objects, and image object placeholders to the HTML text box within the Renderer tab for your native assemblies.
+description: Learn adding diverse data, images, and placeholders to HTML text box in Renderer tab for native assemblies in this article.
 ms.date: 10/28/2023
 ---
 
 # Native assembly object placeholders
 
-You can add a variety of standard and custom data and image object placeholders to the **HTML** text box within the **Renderer** tab for your native assemblies.
-Here's a list of available standard and custom data and image object placeholders:
+You can add a variety of standard and custom data and image object placeholders to the **HTML** text box within the **Renderer** tab for your native assemblies. Here's a list of available standard and custom data and image object placeholders:
 
 ## Standard data object placeholders
 

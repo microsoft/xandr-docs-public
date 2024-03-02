@@ -1,6 +1,6 @@
 ---
 title: Opt Out of Gambling Ads
-description: The article guides on blocking illegal gambling ads on publishers' inventory, detailing permissions in legal countries.
+description: Explore banning illegal gambling ads globally on Microsoft Advertising, control permissions in legal countries to protect publishers' inventory.
 ms.date: 10/28/2023
 ---
 
@@ -18,7 +18,7 @@ If you don't want to permit gambling ads to serve on any of your publishers, fol
 
 ### Step 1. Navigate to the network ad quality manager
 
-Open the network Ad Quality Manager by navigating to **Network \>  Ad Quality**.
+Open the network Ad Quality Manager by navigating to **Network** \>  **Ad Quality**.
 
 ### Step 2. Open the category eligibility settings dialog
 
@@ -28,7 +28,7 @@ Locate the **Categories** section. Find and click the **Edit** button to open th
 
 Search for the **Gambling** category and click the **Edit** link. Then change the status to **Banned**, and click **Save**.
 
-:::image type="content" source="media/gambling-network-optout.png" alt-text= "Diagram that ****explains how you can ban the gambling category.":::
+:::image type="content" source="media/gambling-network-optout.png" alt-text= "Diagram that explains how you can ban the gambling category.":::
 
 ## Option 3. Exclude gambling ads on a per-publisher basis
 
@@ -36,7 +36,7 @@ If you don't want to permit gambling ads to serve on specific publishers' invent
 
 ### Step 1. Navigate to the publisher ad quality manager
 
-Open the publisher Ad Quality Manager by navigating to **Publishers \> Ad Quality**.
+Open the publisher Ad Quality Manager by navigating to **Publishers** \> **Ad Quality**.
 
 ### Step 2. Ban the gambling category
 

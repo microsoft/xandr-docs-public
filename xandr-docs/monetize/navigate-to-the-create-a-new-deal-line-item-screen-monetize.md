@@ -1,9 +1,9 @@
 ---
-title: Navigate to the Create New Programmatic Guaranteed Deal Screen
-description: The article outlines the process of creating a programmatic guaranteed (PG) deal by selecting a pacing option and proceeding from the Create New Programmatic Guaranteed Deal screen.
+title: Navigate to the Create New PG Deal Screen
+description: Explore creating a programmatic guaranteed deal, choose pacing, and proceed on the Create New PG Deal screen for effective implementation.
 ms.date: 10/28/2023
 ---
-# Navigate to the create new programmatic guaranteed deal screen
+# Navigate to new PG Deal screen
 
 To create a new programmatic guaranteed (PG) deal, start by pre-selecting a pacing option for your guaranteed deal, then proceed from the **Create New Programmatic Guaranteed Deal** screen.
 

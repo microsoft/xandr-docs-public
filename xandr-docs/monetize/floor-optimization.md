@@ -1,6 +1,6 @@
 ---
 title: Floor Optimization
-description: The article details how enabling floor optimization, based on individual impression value, maximizes seller revenue by establishing a calculated hard floor for any floor rule.
+description: Optimize revenue by establishing calculated hard floors for floor rules, maximizing seller earnings based on individual impression value.
 ms.date: 10/28/2023
 ---
 
@@ -9,8 +9,7 @@ ms.date: 10/28/2023
 You can enable floor optimization for any floor rule. When enabled, floor optimization adjusts the hard floor for every impression to better protect and value a seller's inventory.
 
 > [!NOTE]
-> Floor Optimization is currently in a closed Beta. We are working to roll this feature out to more clients. This feature was built to support second-price auctions, and
-> may not perform as expected in other auctions.
+> Floor Optimization is currently in a closed Beta. We are working to roll this feature out to more clients. This feature was built to support second-price auctions, and may not perform as expected in other auctions.
 
 ## What is floor optimization
 
@@ -23,7 +22,7 @@ Regardless of whether or not floor optimization is enabled, bids are never reduc
 Floor optimization can be enabled or disabled for any base or conditional floor rule.
 
 1. From the **Floor Rules** screen, select the checkbox for each floor rule that you want to edit.
-1. Click **Actions >  Enable Floor Optimization** or **Actions >  Disable Floor Optimization** to enable or disable **Floor Optimization** for the selected floor rules.
+1. Click **Actions** >  **Enable Floor Optimization** or **Actions** >  **Disable Floor Optimization** to enable or disable **Floor Optimization** for the selected floor rules.
 1. Click **OK** in the confirmation dialog to confirm the change.
 
 > [!NOTE]

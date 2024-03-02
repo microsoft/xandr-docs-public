@@ -1,13 +1,13 @@
 ---
 title: Onboarding Mobile Supply
-description: The article defines mobile supply integration via ad calls, detailing supported integrations, including supply type and query parameters.
+description: Explore mobile supply integration via ad calls, detailing supported integrations, including supply type and query parameters.
 ms.date: 10/28/2023
 ---
 
 # Onboarding mobile supply
 
 > [!NOTE]
-> Microsoft Advertising now supports a domain, [adnxs-simple.com](http://adnxs-simple.com/), which does not send or read browser cookies on requests. Clients can leverage this cookie-free domain when there is no consent to use personal data. Relevant calls initiated by Microsoft Advertising will automatically use this domain when there is no consent or when cookies are not required for the function. For more information, see [Part of Service Policies](../policies-regulations/index.yml).
+> Microsoft Advertising now supports a domain, `adnxs-simple.com`, which does not send or read browser cookies on requests. Clients can leverage this cookie-free domain when there is no consent to use personal data. Relevant calls initiated by Microsoft Advertising will automatically use this domain when there is no consent or when cookies are not required for the function. For more information, see [Part of Service Policies](../policies-regulations/index.yml).
 
 There are several ways to onboard mobile supply. The type of mobile supply you are bringing on will determine the type of ad call your publishers need to make.
 
@@ -38,12 +38,10 @@ Follow the instructions in this section to set up a server-side integration with
 
 ### Supply type
 
-In Monetize, ensure that you have marked your placement group with a supply type of **Mobile Application**. For instructions on marking a site's supply type, see
-[Create a Placement Group](create-a-placement-group.md).
+In Monetize, ensure that you have marked your placement group with a supply type of **Mobile Application**. For instructions on marking a site's supply type, see [Create a Placement Group](create-a-placement-group.md).
 
 > [!NOTE]
-> Only traffic matching the placement group's supply type can serve within that placement group. For example, if a seller labels their placement group as **Standard
-> Website** but the traffic coming through that placement group is both **standard website** as well as mobile optimized, any campaign targeting **Mobile Application** placement groups will not be able to serve on this inventory.
+> Only traffic matching the placement group's supply type can serve within that placement group. For example, if a seller labels their placement group as **Standard Website** but the traffic coming through that placement group is both **standard website** as well as mobile optimized, any campaign targeting **Mobile Application** placement groups will not be able to serve on this inventory.
 
 ### Required parameters
 
@@ -55,8 +53,7 @@ Technically, the minimum required URL for a server-side ad call coming from a mo
 https://mobile.adnxs.com/ssmob?id=PLACEMENT_ID&size=WIDTHxHEIGHT&format=json 
 ```
 
-where `PLACEMENT_ID` is your placement ID (e.g., "123459") and `WIDTHxHEIGHT` is the width and height of the ad slot (e.g., "320x50").
-The `format` parameter is required to ensure that the server requesting the ad is getting the response in the format it needs.
+where `PLACEMENT_ID` is your placement ID (e.g., "123459") and `WIDTHxHEIGHT` is the width and height of the ad slot (e.g., "320x50"). The `format` parameter is required to ensure that the server requesting the ad is getting the response in the format it needs.
 
 Even though this call will fetch an ad, it doesn't provide as much information as it could to make the impression attractive to buyers; see the next section for a list of recommended parameters.
 
@@ -68,7 +65,7 @@ We recommend that you include the following parameters (in the table below) on s
 > We recommend creating separate placements for Android and iOS.
 
 | Name | Parameter | Description |
-|---|---|---|
+|--|--|--|
 | App ID | `appid` | The app ID is a string used to identify an app running on Android or iOS. Many buyers set campaign targeting and reporting based on app ID. Failing to supply a correct `appid` will make your inventory unattractive to these buyers. Therefore, passing this field is **strongly recommended**. For more information about the `appid` parameter, see our [Mobile Ad Call Reference](mobile-ad-call-reference.md). |
 | IP Address | `ip` | The IP address parameter provides Microsoft Advertising with the geographic location of the user, as well as the carrier whose network the device is connected to. Many buyers use carrier or geo targeting. Including this information on an ad call is important in order to capture mobile demand. |
 | User Agent | `ua` | The User Agent parameter provides us with the device's operating system as well its make and model. Many buyers are targeting based on these parameters and not including them will restrict demand. |
@@ -80,8 +77,7 @@ We recommend that you include the following parameters (in the table below) on s
 
 ### Supply type
 
-In Monetize, ensure that you have marked your site's supply type as **Mobile Optimized Website**. For instructions on marking a site's supply type, see [Create a Placement
-Group](create-a-placement-group.md).
+In Monetize, ensure that you have marked your site's supply type as **Mobile Optimized Website**. For instructions on marking a site's supply type, see [Create a Placement Group](create-a-placement-group.md).
 
 ### Required parameters for a server-side ad call
 
@@ -100,7 +96,7 @@ Even though this call will fetch an ad, it doesn't provide enough information to
 We recommend that you include the following parameters on server-side ad calls from mobile websites:
 
 | Name | Parameter | Description |
-|---|---|---|
+|--|--|--|
 | Location | `loc` | This is the user's location expressed in latitude and longitude, to allow geo-targeting. |
 
 > [!TIP]

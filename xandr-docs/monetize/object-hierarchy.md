@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Object Hierarchy
-description: This article introduces the main objects that you work with to buy and sell media.
+description: Explore vital media transaction elements, streamlining buying/selling with key objects for efficient transactions.
 ms.date: 10/28/2023
 ---
 
@@ -31,6 +31,7 @@ The following image illustrates the augmented line item.
 ## Network
 
 The [Network](network-guide.md) represents your account as a whole. At this level:
+
 - You decide who's eligible to sell to you and what level of inventory audit you require [seller settings](set-seller-defaults.md).
 - You create lists of domains and apps for efficient allowlist or blocklist targeting in campaigns [targeting lists](working-with-targeting-lists.md).
 - You put in place a cap on how much you are willing to spend per day on third-party inventory [safety budget](capping-daily-spend-on-third-party-inventory-safety-budget.md) and more.
@@ -49,8 +50,7 @@ You can have many insertion orders under a single advertiser.
 
 ## Line item
 
-The [line item(s)](working-with-line-items.md) under an advertiser or insertion order represent the agreed upon strategies you will be executing for the advertiser. It contains
-information that the advertiser specifies, such as how much your advertiser has budgeted toward an offering, or which targeting the advertiser requires.
+The [line item(s)](working-with-line-items.md) under an advertiser or insertion order represent the agreed upon strategies you will be executing for the advertiser. It contains information that the advertiser specifies, such as how much your advertiser has budgeted toward an offering, or which targeting the advertiser requires.
 
 You can have many line items under a single advertiser or insertion order.
 
@@ -58,8 +58,7 @@ There are several types of line items you may use depending on your business mod
 
 - [Standard Line Item](create-a-standard-line-item.md) (with no Insertion Order)
 - [Standard Line Item](working-with-line-items.md) (under an Insertion Order)
-- [Augmented Line Item](create-an-augmented-line-item-ali.md) (under an Insertion Order) **Recommended**. Augmented line items do not use campaigns. For an overview, see
-  [Augmented Line Items](augmented-line-items-ali.md).
+- [Augmented Line Item](create-an-augmented-line-item-ali.md) (under an Insertion Order) **Recommended**. Augmented line items do not use campaigns. For an overview, see [Augmented Line Items](augmented-line-items-ali.md).
 
 ## Campaign (standard line items only)
 
@@ -68,8 +67,7 @@ You can have many campaigns under a single line item.
 
 ## Creative
 
-A [creative](exploring-creatives.md) is an actual ad, hosted either by Microsoft Advertising or by a third-party ad server. The Microsoft Advertising platform enables you to traffic a wide range of
-[creative types](add-creatives-in-bulk.md), from banners to rich media types like interstitials and expandables.
+A [creative](exploring-creatives.md) is an actual ad, hosted either by Microsoft Advertising or by a third-party ad server. The Microsoft Advertising platform enables you to traffic a wide range of [creative types](add-creatives-in-bulk.md), from banners to rich media types like interstitials and expandables.
 
 Creatives belong to a specific advertiser. You can associate each creative to many line items or campaigns under an advertiser.
 
@@ -77,13 +75,11 @@ Creatives belong to a specific advertiser. You can associate each creative to ma
 
 A [segment pixel](working-with-segments.md) is placed on web pages to collect data about users, such as pages they visit, actions they take, or qualities such as gender, location, and wealth. When a segment pixel fires, the user is added to a segment, which can later be targeted in campaigns to attempt to reach the user again (retargeting).
 
-Segment pixels belong either to the entire network or to a specific advertiser. Network-level segments are available for targeting in all campaigns under all
-advertisers. Advertiser-level segments are available for targeting only in campaigns under that specific advertiser.
+Segment pixels belong either to the entire network or to a specific advertiser. Network-level segments are available for targeting in all campaigns under all advertisers. Advertiser-level segments are available for targeting only in campaigns under that specific advertiser.
 
 ## Conversion pixel
 
-A [conversion pixel](working-with-conversion-pixels.md) is placed on web pages to track user actions in response to an advertiser's creatives, such as registering at a site or
-making a purchase. When a conversion pixel fires, Microsoft Advertising determines if the conversion (the registration, the purchase, etc.) can be "attributed", or tied to the
+A [conversion pixel](working-with-conversion-pixels.md) is placed on web pages to track user actions in response to an advertiser's creatives, such as registering at a site or making a purchase. When a conversion pixel fires, Microsoft Advertising determines if the conversion (the registration, the purchase, etc.) can be "attributed", or tied to the
 user clicking on or viewing one of the advertiser's creatives previously [conversion attribution](conversion-attribution.md).
 
 You can have many conversion pixels under a single advertiser. You associate each conversion pixel to many line items (for tracking payment or performance goals on a CPA basis) or campaigns (for valuing impressions based on CPA optimization data).
@@ -144,8 +140,7 @@ You can have many publishers in your network.
 
 A [payment rule](working-with-payment-rules.md) represents the financial agreement between you and a publisher.
 
-You can have a single payment rule for all impressions from a publisher, or you might have a base rule that serves as a default and more specific [conditional payment
-rules](create-payment-rules.md) that apply to individual impressions based on geography, frequency, or other targeting criteria.
+You can have a single payment rule for all impressions from a publisher, or you might have a base rule that serves as a default and more specific [conditional payment rules](create-payment-rules.md) that apply to individual impressions based on geography, frequency, or other targeting criteria.
 
 ## Publisher ad quality
 

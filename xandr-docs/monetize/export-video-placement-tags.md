@@ -1,21 +1,19 @@
 ---
 title: Export Video Placement Tags
-description: The article outlines the video placement tags. You can modify the tag options or can generate the tags. 
+description: Explore video placement tags, modify the tag options, generate tags for effective content placement.
 ms.date: 10/28/2023
 ---
 
 # Export video placement tags
 
 > [!NOTE]
-> Microsoft Advertising now supports a domain, [adnxs-simple.com](http://adnxs-simple.com/) >, which does not send or read browser cookies on requests. Clients can leverage this cookie-free
-> domain when there is no consent to use personal data. Relevant calls initiated by Microsoft Advertising will automatically use this domain when there is no consent or when cookies are not
-> required for the function. For more information, see [Reinforcing Privacy Controls Through a Cookie-Free Domain (Part of Service Policies)](../policies-regulations/index.yml).
+> Microsoft Advertising now supports a domain, `adnxs-simple.com`, which does not send or read browser cookies on requests. Clients can leverage this cookie-free domain when there is no consent to use personal data. Relevant calls initiated by Microsoft Advertising will automatically use this domain when there is no consent or when cookies are not required for the function. For more information, see [Reinforcing Privacy Controls Through a Cookie-Free Domain (Part of Service Policies)](../policies-regulations/index.yml).
 
 This page focuses only on video placement tags. For more information and complete workflows, see [Onboarding Video Supply](onboarding-video-supply.md).
 
 ## Step 1. Select the placements to export
 
-Navigate to **Publisher > Placement Manager**, check the boxes next to placements that you want to export, click the **More Actions** button, and then select **Export** Tags. This displays the **Export Placement Tags** dialog.
+Navigate to **Publisher** > **Placement Manager**, check the boxes next to placements that you want to export, click the **More Actions** button, and then select **Export** Tags. This displays the **Export Placement Tags** dialog.
 
 ## Step 2. Modify the tag options
 
@@ -52,5 +50,4 @@ VAST validators won't work for a server-side tag. To test a server-side tag, you
 
 ## Recording impressions
 
-VAST impressions are always recorded after serving, per the [IAB guidelines](https://www.iab.net/media/file/dig_vid_imp_meas_guidelines_final.pdf). If you test VAST by
-loading in a browser, you should not see any impressions recorded. It is only when the VAST response is parsed by a video player and the impression tag is called that the impression is recorded.
+VAST impressions are always recorded after serving, per the [IAB guidelines](https://www.iab.net/media/file/dig_vid_imp_meas_guidelines_final.pdf). If you test VAST by loading in a browser, you should not see any impressions recorded. It is only when the VAST response is parsed by a video player and the impression tag is called that the impression is recorded.

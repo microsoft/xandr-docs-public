@@ -1,6 +1,6 @@
 ---
 title: Exchanges and Aggregators
-description: The article outlines inventory partners include major ad networks as well as exchanges and supply aggregators which are also known as SSPs. 
+description: Explore inventory partnerships with major ad networks, exchanges, and SSPs, key components in the outlined article.
 ms.date: 10/28/2023
 ---
 

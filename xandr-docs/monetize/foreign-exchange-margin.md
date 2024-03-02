@@ -1,14 +1,12 @@
 ---
 title: Microsoft Monetize - Foreign Exchange Margin
-description: The article reveals how Microsoft Advertising handles Foreign Exchange Margin (FX Margin) to mitigate currency risks in non-USD media costs during monthly transactions.
+description: Explore Microsoft Advertising's FX Margin strategy, managing non-USD media costs to mitigate currency risks in monthly transactions.
 ms.date: 10/28/2023
 ---
 
 # Microsoft Monetize - Foreign exchange margin
 
-Microsoft Advertising charges an **FX Margin** (Foreign Exchange Margin) for clearing media cost in non-USD currencies.This charge is applied to offset the risk that Microsoft Advertising assumes
-due to the natural fluctuations of currency exchange rates during the course of a month of buying/selling activity. If you have any questions
-about this charge, contact your Account Manager.
+Microsoft Advertising charges an **FX Margin** (Foreign Exchange Margin) for clearing media cost in non-USD currencies.This charge is applied to offset the risk that Microsoft Advertising assumes due to the natural fluctuations of currency exchange rates during the course of a month of buying/selling activity. If you have any questions about this charge, contact your Account Manager.
 
 ## Rates
 
@@ -60,7 +58,7 @@ Microsoft Advertising can charge FX Margin as either a fee or deduction (dependi
 
 | FX Margin as a Deduction | FX Margin as a Fee |
 |--|--|
-| - A revenue sharing percentage, calculated by multiplying the FX Margin Rate % * Media Cost<br> - **Included** in cost budget<br> - **Bid reduced**<br>Rolled into media cost during billing, will appear as "Cost of Media" on the buyer's invoice.<br> - Can be charged to both buyers and sellers depending on where the FX risk lies. |  - A revenue sharing percentage, calculated by multiplying the FX Margin Rate % * Media Cost<br> - **Not included** in cost budget<br> - **Not bid reduced**<br> - Not included in media cost during billing, therefore appears as a separate line item on an invoice as "FX Margin Fee".<br> - Can be charged to both buyers and sellers depending on where the FX risk lies. |
+| - A revenue sharing percentage, calculated by multiplying the FX Margin Rate % * Media Cost<br> - **Included** in cost budget<br> - **Bid reduced**<br>Rolled into media cost during billing, will appear as "Cost of Media" on the buyer's invoice.<br> - Can be charged to both buyers and sellers depending on where the FX risk lies. | - A revenue sharing percentage, calculated by multiplying the FX Margin Rate % * Media Cost<br> - **Not included** in cost budget<br> - **Not bid reduced**<br> - Not included in media cost during billing, therefore appears as a separate line item on an invoice as "FX Margin Fee".<br> - Can be charged to both buyers and sellers depending on where the FX risk lies. |
 
 ## Reconciliation
 

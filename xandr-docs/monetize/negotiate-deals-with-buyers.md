@@ -1,14 +1,12 @@
 ---
 title: Microsoft Monetize - Negotiate Deals with Buyers
-description: The article explains how Microsoft Advertising sellers can negotiate custom deals, providing buyers with special rate and inventory access options.
+description: Explore how Microsoft Advertising sellers negotiate custom deals, offering special rates and inventory access for buyers.
 ms.date: 10/28/2023
 ---
 
-
 # Microsoft Monetize - Negotiate deals with buyers
 
-Microsoft Advertising sellers can negotiate custom deals to offer buyers a variety of special rate and inventory access options.
-These include:
+Microsoft Advertising sellers can negotiate custom deals to offer buyers a variety of special rate and inventory access options. These include:
 
 - Special access to premium inventory
 - Inventory in bulk for discounted rates

@@ -1,6 +1,6 @@
 ---
 title: Network Audio Analytics Report
-description: The article focuses on Network Audio Analytics, a tool that monitors and evaluates audio metrics between network buyers and sellers.
+description: Explore Network Audio Analytics, a tool that monitors and evaluates audio metrics between network buyers and sellers, enhancing evaluation.
 ms.date: 10/28/2023
 ---
 
@@ -129,7 +129,7 @@ You can also choose to select the **Only include results where a Deal is present
 Follow these steps to run your report.
 
 1. Select **Reporting** from the appropriate top menu (depending on how your account has been configured).
-   1. Or, from the Publishers top menu, click on Prebid  Server **Premium \> Analytics \> Prebid Server Analytics**.
+   1. Or, from the Publishers top menu, click on Prebid  Server **Premium** \> **Analytics** \> **Prebid Server Analytics**.
 1. Select the relevant report from the list. The **Report** screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
 
    > [!IMPORTANT]
@@ -139,8 +139,7 @@ Follow these steps to run your report.
 1. Group by Dimension. Grouping allows you to display rows of data in the order you prefer.
 
     > [!WARNING]
-    > The more dimensions you group by, the larger the data set that is returned. Larger data sets can take substantially longer to process. Be sure to group using
-    > only the dimensions you need.
+    > The more dimensions you group by, the larger the data set that is returned. Larger data sets can take substantially longer to process. Be sure to group using only the dimensions you need.
 
 1. Choose a delivery option. Once you've selected your filters and grouped by your chosen dimensions, you need to choose a delivery method. Available delivery methods include:
     - **Run now, show results in screen**: For smaller amounts of data, you may want to view the report as soon as possible in your browser. You can download the report in XLSX, CSV, Excel/TSV and JSON format. However, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file.

@@ -1,6 +1,6 @@
 ---
 title: Optimization Buying Strategies
-description: This article explains legacy line items, focusing on optimizing buying strategies through two main approaches.managed and RTB.
+description: Explore legacy line items, focusing on optimizing buying strategies through two main approaches, managed and RTB.
 ms.date: 10/28/2023
 ---
 
@@ -22,8 +22,7 @@ Refer to [Buying Strategies](buying-strategies.md) for additional information.
 
 ## RTB
 
-**RTB** buying refers to a situation where a network is buying inventory from publishers with whom they do not have a direct financial relationship. This is most commonly done on a pay per impression basis (called CPM payout). This is also known as **Buying Third-Party Inventory**. RTB bids are always based on the cost of serving
-impressions.
+**RTB** buying refers to a situation where a network is buying inventory from publishers with whom they do not have a direct financial relationship. This is most commonly done on a pay per impression basis (called CPM payout). This is also known as **Buying Third-Party Inventory**. RTB bids are always based on the cost of serving impressions.
 
 The following buying strategies work for buying third party inventory that utilize optimization:
 
@@ -34,20 +33,19 @@ The following buying strategies work for buying third party inventory that utili
   >
   > For more information, see [Understanding Performance Goals](understanding-performance-goals.md) and [Using Performance Goals with CPM Booked Revenue](using-performance-goals-with-cpm-booked-revenue.md).
   >
-  > To learn about setting up **Performance Goals,** see [Add a Performance Goal to a Line Item<](add-a-performance-goal-to-a-line-item.md).
+  > To learn about setting up **Performance Goals,** see [Add a Performance Goal to a Line Item](add-a-performance-goal-to-a-line-item.md).
 
 - **Optimize to a % margin of booked revenue**: There are two types of booked revenue:
   - **CPM booked revenue** This strategy does not use optimization.
 
   - **CPA/CPC booked revenue** With this method, the system applies the desired margin, then applies optimization to achieve that predicted goal. **Example:** If you select a 60% margin of booked revenue and the line item booked revenue is $10 CPA, the system optimizes to achieve a $4 CPA goal.
 
-    This strategy requires the line item booked revenue to be a known value. It is not possible to optimize to a % margin of booked revenue if it is set as Cost Plus, or if booked revenue is not being tracked.
+     This strategy requires the line item booked revenue to be a known value. It is not possible to optimize to a % margin of booked revenue if it is set as Cost Plus, or if booked revenue is not being tracked.
 
 - **Pay on a Per-click (CPC) basis or Pay on a Per-conversion (CPA) basis** When choosing a Cross Net CPC/CPA bidding strategy, the user must specify what they are willing to pay per conversion (CPA) and/or per click (CPC). The optimization algorithm then uses this value to calculate a **CPM** bid. This payment type is only accepted by Microsoft Advertising sellers who choose to enable this payment method, so selecting this buying strategy exclusively limits the inventory available for a campaign.
   
    > [!NOTE]
-   > The ability to combine CPM booked revenue with either the **Pay on a Per-click (CPC) Basis** or the **Pay on a Per-conversion (CPA) Basis** buying strategy is being deprecated soon. Although this combination will remain functional for existing campaigns, you will no longer be able to use this combination on new campaigns or duplicate existing campaigns that use it. For best results, use the Performance Goals section on your line item (**Create New Line Item  \>  Basic Settings \>  Performance Goals**
-   >  or **Edit Line Item  \>  Basic Settings  \>  Performance Goals**) to set a CPC or CPA performance goal. Then use **Optimize to a % Margin of Booked Revenue** as your campaign buying strategy.
+   > The ability to combine CPM booked revenue with either the **Pay on a Per-click (CPC) Basis** or the **Pay on a Per-conversion (CPA) Basis** buying strategy is being deprecated soon. Although this combination will remain functional for existing campaigns, you will no longer be able to use this combination on new campaigns or duplicate existing campaigns that use it. For best results, use the Performance Goals section on your line item (**Create New Line Item**  \>  **Basic Settings** \>  **Performance Goals** or **Edit Line Item**  \>  **Basic Settings**  \>  **Performance Goals**) to set a CPC or CPA performance goal. Then use **Optimize to a % Margin of Booked Revenue** as your campaign buying strategy.
    >
    > For more information, see [Using Performance Goals with CPM Booked Revenue](using-performance-goals-with-cpm-booked-revenue.md).
    >
@@ -56,8 +54,7 @@ The following buying strategies work for buying third party inventory that utili
 For all RTB pay-per-impression optimization buying strategies, you have the option of specifying a **min CPM** and a **max CPM**.
 
 - If you set a **min CPM** for a campaign using optimization and the algorithm determines your bid is below this amount, the campaign will not bid on that impression.
-- If you set a **max CPM** for a campaign using optimization and the algorithm determines your bid is above this amount, the campaign will
-  bid on the impression at the max CPM price (not at the price calculated by the algorithm).
+- If you set a **max CPM** for a campaign using optimization and the algorithm determines your bid is above this amount, the campaign will bid on the impression at the max CPM price (not at the price calculated by the algorithm).
 
 The [Cadence Modifier and the Chaos Factor](cadence-modifier-and-the-chaos-factor.md) is automatically enabled for buying strategies that do use optimization, as cadence is an important feature of the optimization algorithm.
 

@@ -1,6 +1,6 @@
 ---
 title: Global Privacy Platform
-description: The article introduces a global privacy platform that serves as a protocol for efficiently managing user consent signals across various global privacy settings.
+description: Explore a global privacy platform efficiently managing user consent signals across diverse global privacy settings.
 ms.date: 10/28/2023
 ---
 
@@ -28,8 +28,8 @@ converts the consent choices of the user into a string, depending on the framewo
 
 In general, ad tech vendors need to know two things in order to process privacy controls:
 
-1.  The local legislative framework of the user (for example, if the user is in the EU, then it's GDPR.)
-1.  For which data processing purposes the user has granted consent (consent elections) or the legal bases for processing data which do/do not apply.
+1. The local legislative framework of the user (for example, if the user is in the EU, then it's GDPR.)
+1. For which data processing purposes the user has granted consent (consent elections) or the legal bases for processing data which do/do not apply.
 
 In the GPP framework, this information is conveyed by 'applicable sections' (which sections of the string should be enforced) and the GPP string itself. Taken together, these parameters allow Microsoft Advertising to understand the consent choices of the end user and to know which privacy law to apply.
 
@@ -40,11 +40,8 @@ In the GPP framework, this information is conveyed by 'applicable sections' (whi
 In order to use the GPP, website owners need to:
 
 1. Work with a GPP-enabled CMP
-
 1. Update to the latest version of prebid.js
-
 1. Install the consent management module
-
 1. Update the prebid config, as shown below:
 
     ```
@@ -81,9 +78,7 @@ In the above example, the GPP string contains sections for the TCF and the US Pr
 In order to use the GPP, website owners need to:
 
 1. Work with a GPP-enabled CMP
-
 1. Update to the latest version of ast.js
-
 1. Modify the setPageOpts, as shown below:
 
     ```

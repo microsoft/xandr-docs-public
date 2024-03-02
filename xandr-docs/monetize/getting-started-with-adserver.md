@@ -1,6 +1,6 @@
 ---
 title: Getting Started with Ad Server
-description: The article details how ad server users can access end-to-end setups of advertiser and publisher information.
+description: Optimize ad ops with an ad server,7 manage buy/sell-side, forecast, prioritize, ensure seamless functionality, and access advertiser/publisher setups.
 ms.date: 10/28/2023
 ---
 

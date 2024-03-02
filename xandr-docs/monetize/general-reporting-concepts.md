@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - General Reporting Concepts
-description: The article explains general reporting concepts.
+description: Explore reporting concepts, system's date/time handling, efficient report requests, data types/operations, and diverse data delivery methods.
 ms.date: 10/28/2023
 ---
 
@@ -15,8 +15,7 @@ This section of the Reporting Guide explains the concepts underlying our reporti
 
 In This Section
 
-- **[Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md)**: Learn how a report is run, so you can design your report requests
-  efficiently.
+- **[Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md)**: Learn how a report is run, so you can design your report requests efficiently.
 - **[Transactional Reporting Options](transactional-reporting-options.md)**: Learn about the different ways to retrieve data from our systems.
 - **[Dates and Times in Reporting](dates-and-times-in-reporting.md)**: How our systems handle dates and times.
 - **[Report Throttling](report-throttling.md)**: A description of how our system limits the number of report requests per member and per user.

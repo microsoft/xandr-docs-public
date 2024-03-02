@@ -1,6 +1,6 @@
 ---
 title: Floor Rule Targeting
-description: The article demonstrates that when creating a floor rule, various targeting criteria can be employed. Subsequent sections elaborate on the different types of floor rule targeting.
+description: Explore floor rule creation, using diverse targeting criteria. Subsequent sections detail various floor rule targeting types.
 ms.date: 10/28/2023
 ---
 
@@ -17,8 +17,7 @@ From the **Create New Floor Rule** or **Edit Floor Rule** page, locate **Targeti
 - Select the **Scope** to indicate whether you would like frequency to be calculated based on views on inventory across the entire platform (**Platform Wide**), or only views on the publisher's inventory (**Publisher Specific**).
 - Check the **User seen at most \_\__times** checkbox and then type the maximum number of impression views to which the rule will apply.
 - Check the **User seen at least \_\__times** checkbox and then type the minimum number of impression views you want to user to experience before the rule applies.
-- If you choose to set a minimum and/or maximum value, you can select the option to **Apply to users without a valid Microsoft Advertising User ID**. Doing this might violate
-  frequency caps.
+- If you choose to set a minimum and/or maximum value, you can select the option to **Apply to users without a valid Microsoft Advertising User ID**. Doing this might violate frequency caps.
 
 ## Geography targeting
 
@@ -34,8 +33,7 @@ By default, floor rules target all users. Segment targeting allows you to narrow
 
 From the **Create New Floor Rule** or **Edit floor rule** page, locate **Targeting**. Next to **Segment**, click **Edit**.
 
-See [Segment Targeting](segment-targeting.md) for details on setting up segment targeting using boolean
-logic.
+See [Segment Targeting](segment-targeting.md) for details on setting up segment targeting using boolean logic.
 
 ## Inventory targeting
 
@@ -75,14 +73,11 @@ By default, your campaign will target all universal categories. However, you can
 
 Click the the **Universal Categories** tab to include or exclude universal categories in the floor rule.
 
-- Click **Categories** to see the top-level universal categories. You can either include or exclude top-level categories or drill into a category to view its child
-  categories.
-- Click **Sub-Categories** to see the child universal categories in the context of their parent categories. You can either include or exclude sub-categories. Note that when you
-  exclude a top-level category, its sub-categories are not available for further inclusion or exclusion.
+- Click **Categories** to see the top-level universal categories. You can either include or exclude top-level categories or drill into a category to view its child categories.
+- Click **Sub-Categories** to see the child universal categories in the context of their parent categories. You can either include or exclude sub-categories. Note that when you exclude a top-level category, its sub-categories are not available for further inclusion or exclusion.
 
 > [!IMPORTANT]
-> When targeting more than one universal category, the categories have an OR relationship. For example, if you target the "News" and "Finance" categories, you will bid on
-> inventory that is in **either** category. The inventory does not need to be in both categories.
+> When targeting more than one universal category, the categories have an OR relationship. For example, if you target the "News" and "Finance" categories, you will bid on inventory that is in **either** category. The inventory does not need to be in both categories.
 
 ## Inventory targeting summary
 
@@ -93,12 +88,11 @@ To view a summary of the targeting you have applied to this rule, click the **Su
 When creating a floor rule, you can target users based on the position of the tag on the page or based on values passed in the query string of the ad call.
 
 > [!TIP]
-> Since tag position and query strings are passed by the seller, these targeting options are therefore most often used when buying direct inventory. For more details about
-> using query string targeting, see [Query String Targeting via Placement Tags and Segments](query-string-targeting-via-placement-tags-and-segments.md).
+> Since tag position and query strings are passed by the seller, these targeting options are therefore most often used when buying direct inventory. For more details about using query string targeting, see [Query String Targeting via Placement Tags and Segments](query-string-targeting-via-placement-tags-and-segments.md).
 
 From the **Create New Floor Rule** or **Edit floor rule** page, locate **Targeting**. Next to **Page Properties**, click **Edit**.
 
-See [Page Properties Targeting](page-properties-targeting.md)  for details on setting up your page properties targeting.
+See [Page Properties Targeting](page-properties-targeting.md) for details on setting up your page properties targeting.
 
 ## Size targeting
 

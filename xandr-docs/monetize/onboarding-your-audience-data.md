@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Onboarding Your Audience Data
-description: The article describes the process for onboarding your audience data.
+description: Explore client-side Segmentation for targeted pixels, while batch and streaming server-side segmentation adds users in real-time via API.
 ms.date: 10/28/2023
 ---
 

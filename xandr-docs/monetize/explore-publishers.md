@@ -6,8 +6,7 @@ ms.date: 10/28/2023
 
 # Explore publishers
 
-The **Publishers** screen lists the publishers with which your member is associated. In this list you can see information regarding network and publisher performance for each
-publisher. You can select individual publishers to display more information.
+The **Publishers** screen lists the publishers with which your member is associated. In this list you can see information regarding network and publisher performance for each publisher. You can select individual publishers to display more information.
 
 ## Getting to the publisher screen
 
@@ -20,16 +19,14 @@ From the **Inventory** tab: either select the **Inventory** option in the menu a
 
 ## Reviewing publisher performance
 
-You can select the time period you want to review by clicking the date- selector above the table. You can choose to view data from **Today**, **Yesterday**,
-**Last 7 Days**, or **Lifetime**.
+You can select the time period you want to review by clicking the date- selector above the table. You can choose to view data from **Today**, **Yesterday**, **Last 7 Days**, or **Lifetime**.
 
 The following information about the activity of each publisher associated to your member is available in the **Publishers** table:
 
 - **Name** - The name of the publisher.
 - **ID** - The unique identification number of the publisher.
 - **Placements** - The number of placements defined for the publisher. This information is displayed on a button; clicking this button will take you to the Placement Manager for that publisher. (See [Explore Placements](explore-placements.md) for more on using the Placement Manager.)
-- **Currency** - The currency units being displayed for the publisher. The default is USD (United States  Dollar). You can change your settings to display all currency values,
-  such as Revenue and Profit, in the local currency of each publisher. Note that as with all columns on this screen you can hide the Currency column from view. See Configuring Publisher Display below for information on configuring the currencies and columns that are displayed.
+- **Currency** - The currency units being displayed for the publisher. The default is USD (United States  Dollar). You can change your settings to display all currency values, such as Revenue and Profit, in the local currency of each publisher. Note that as with all columns on this screen you can hide the Currency column from view. See Configuring Publisher Display below for information on configuring the currencies and columns that are displayed.
 - **Network (member name)** -
   - **Revenue** - The total revenue for the network. This value includes the sum of booked and resold revenue.
   - **RPM** - The revenue per 1,000 impressions for the network. This value includes impressions from defaults, [Public Service Announcements](default-psas.md) and errors.
@@ -72,13 +69,11 @@ Select whether to view currency units for each publisher in **USD: United States
 
 ### Time zone display
 
-Click the  dropdown to select a time zone. This will be the time zone that is used to determine the data collected for the specified time period (**Today**, **Yesterday**, or
-**Last 7 Days**).
+Click the  dropdown to select a time zone. This will be the time zone that is used to determine the data collected for the specified time period (**Today**, **Yesterday**, or **Last 7 Days**).
 
 ## Filtering by publisher name/ID
 
-You can limit the number of publishers visible on the screen by searching for a Publisher by name or ID. In the text box labeled ID/Name, enter either an ID or a name. The system will automatically begin searching for matches to whatever you type. For example, if you type 123, all publishers with IDs containing the numbers 123 (in that
-order) will be displayed. If you type Pub1, all publishers whose names begin with "Pub1" will be displayed.
+You can limit the number of publishers visible on the screen by searching for a Publisher by name or ID. In the text box labeled ID/Name, enter either an ID or a name. The system will automatically begin searching for matches to whatever you type. For example, if you type 123, all publishers with IDs containing the numbers 123 (in that order) will be displayed. If you type Pub1, all publishers whose names begin with "Pub1" will be displayed.
 
 To see all publishers (or, if you have used the search text box to filter your list, all publishers that match that search), select **All** from the state dropdown. To see only active publishers, select **Active**. To see only inactive publishers, select **Inactive**.
 
@@ -95,8 +90,7 @@ You can sort the list of publishers on almost any column by clicking the column 
 - **Clicks**
 
 > [!NOTE]
-> When sorting on any column that displays values of currency, the sorting will always be done based on USD. This means that if you've chosen to display each publisher's local
-> currency, the values might look out of order because of the exchange rates.
+> When sorting on any column that displays values of currency, the sorting will always be done based on USD. This means that if you've chosen to display each publisher's local currency, the values might look out of order because of the exchange rates.
 
 ### Related topics
 

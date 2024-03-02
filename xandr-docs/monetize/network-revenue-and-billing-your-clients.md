@@ -32,8 +32,7 @@ Advertisers make all kinds of financial deals with networks, based on CPMs, CPAs
 - Cost Plus (Margin): Your total cost, plus a margin (total cost \*  (1+X%))
 - Fixed Fee: A flat payment on a specified allocation date
 
-Booked Revenue is set at the line item level. Setting these values allows the system to report back against how you should be billing your
-advertisers.
+Booked Revenue is set at the line item level. Setting these values allows the system to report back against how you should be billing your advertisers.
 
 Although defining your revenue values at the Line Item level is technically optional, please note that not entering your revenue values limits to a great degree the amount of information we can present in the billing reporting tools.
 

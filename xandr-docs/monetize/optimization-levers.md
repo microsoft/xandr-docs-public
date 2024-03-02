@@ -1,6 +1,6 @@
 ---
 title: Optimization levers
-description: The article guides you on optimizing legacy line item. For augmented line item (ALI), users can override learn bids using Optimization levers.
+description: Explore optimizing legacy line items, override ALI bids with Optimization levers to enhance performance. Reduce character count.
 ms.date: 10/28/2023
 ---
 
@@ -66,7 +66,7 @@ on a different system, and the data from that campaign indicates a different bid
 
 - **Bid Multiplier** - You can multiply the optimization-determined learn bids for all venues by a factor between **0.5** (one-half of the learn bid) to **5** (five times the learn bid). If you select this option, the **Bid Multiplier** field appears, where you can choose the multiplication factor from the drop-down list.
 
-  :::image type="content" source="media/learn-override-bid-multiplier.png" alt-text= "The diagram illustrates bid multiplier fields.":::
+  :::image type="content" source="media/learn-override-bid-multiplier.png" alt-text= "Diagram that illustrates bid multiplier fields.":::
 
   > [!WARNING]
   > The more data you acquire, the greater the range of learn bid amounts. Therefore, you may not wish to use this setting when you have a lot of data, as you may not know the entire range of learn bid amounts that you are multiplying.
@@ -87,19 +87,16 @@ You can apply a **Segment Modifier** or a **Segment Price** to update the bid de
 - Segment modifiers alter the optimization-determined bid price by a specific multiplier. Therefore, if you have a modifier of **1300**, and the optimization engine determines a bid of **$1.00**, the actual bid in the auction will be $1.00 \* (1300/1000) = **$1.30**.
 - Segment prices override the bid price determined by the optimization engine. Therefore, no matter what the optimization engine bid determines as the appropriate bid price, if the segment price is **$0.75**, the actual bid in the auction will be **$0.75**.
 
-For information on uploading modifiers and associating them to a
-campaign, see [Segment Modifier](segment-modifier.md).
+For information on uploading modifiers and associating them to a campaign, see [Segment Modifier](segment-modifier.md).
 
 > [!NOTE]
-> Do not set a segment price and use the **Learn Override** setting **Base CPM Bid** at the same time. Since these both set an exact bid price, this can have unintended
-> consequences. For the same reason, you should not set both a segment modifier and a segment price at the same time.
+> Do not set a segment price and use the **Learn Override** setting **Base CPM Bid** at the same time. Since these both set an exact bid price, this can have unintended consequences. For the same reason, you should not set both a segment modifier and a segment price at the same time.
 
 ## Phase thresholds
 
 The **Phase Thresholds** slider allows you to choose how many successful learn events are required to move a node from the learn phase to the optimized phase. You can set the value by moving the pointer as needed; the minimum number of events is **1**, while the maximum number is **15**.
 
-For more information about the learn and optimized phases, see
-[What is an Optimization Node?](what-is-an-optimization-node.md).
+For more information about the learn and optimized phases, see [What is an Optimization Node?](what-is-an-optimization-node.md).
 
 ## Restore defaults
 
@@ -119,7 +116,7 @@ When you are set to **Bid a Base CPM**, you can limit the upper and lower limits
 > [!IMPORTANT]
 > The default setting is **Advertiser**.
 
-:::image type="content" source="media/cadence-modifier.png" alt-text= "The diagram displays other options where you can enable the cadence modifier and choose the cadence type.":::
+:::image type="content" source="media/cadence-modifier.png" alt-text= "Diagram that displays other options where you can enable the cadence modifier and choose the cadence type.":::
 
 ## Related topics
 

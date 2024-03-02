@@ -1,12 +1,11 @@
 ---
 title: Microsoft Monetize - Explore Insertion Orders
-description: The article details how the Insertion Orders screen displays crucial metrics for all insertion orders under a specific advertiser, facilitates quick access to individual insertion order details, and offers reporting options.
+description: Explore vital metrics, swiftly access individual insertion orders, and provide reporting options on the Insertion Orders screen for a specific advertiser. 
 ms.date: 10/28/2023
 ---
 # Microsoft Monetize - Explore insertion orders
 
-The **Insertion Orders** screen shows you essential metrics about all insertion orders under a specific advertiser, provides quick access to each insertion order's details, and
-reporting options.
+The **Insertion Orders** screen shows you essential metrics about all insertion orders under a specific advertiser, provides quick access to each insertion order's details, and reporting options.
 
 This document describes the Insertion Order screen for individual advertisers.
 
@@ -30,8 +29,7 @@ The **Advanced Filters** menu lets you filter for insertion orders based on Adve
 
 ## View stats
 
-The metrics on the **Insertion Orders** screen help you quickly assess the performance and delivery of your insertion orders. These metrics are faster and more readily accessed
-than standard reporting data. They are cached on a regular basis and are shown whenever you open the **Insertion Orders** screen.
+The metrics on the **Insertion Orders** screen help you quickly assess the performance and delivery of your insertion orders. These metrics are faster and more readily accessed than standard reporting data. They are cached on a regular basis and are shown whenever you open the **Insertion Orders** screen.
 
 Note that these stats may not match the data from standard reporting exactly for technical reasons. For more information, see [Availability of Reporting Data](availability-of-reporting-data.md).
 
@@ -66,8 +64,7 @@ To get information about attributed conversions, rather than just conversion pix
 
 You can choose the columns that are displayed by clicking the **Modify Columns** button.
 
-This opens the **Modify Columns** dialog. From there you can use the checkboxes to select or deselect the columns you want to display. If you want the columns to appear in a
-certain order, then you can drag and drop the columns at your desired location.
+This opens the **Modify Columns** dialog. From there you can use the checkboxes to select or deselect the columns you want to display. If you want the columns to appear in a certain order, then you can drag and drop the columns at your desired location.
 
 ## View insertion order details
 

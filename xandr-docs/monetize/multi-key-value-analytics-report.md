@@ -1,6 +1,6 @@
 ---
 title: Multi-Key Value Analytics Report
-description: The article defines the Multi-Key Value Analytics report, which shows you information associated with the multiple targeting keys and values defined in your network.
+description: Explore analytics report for Multi-Key values in your network, revealing info linked to various targeting keys and values.
 ms.date: 10/28/2023
 ---
 
@@ -75,8 +75,7 @@ If you create a Multi-Key Value Analytics report with the Range field set to Cus
 - alter the way you structure your reports (if possible) so they do not
   include dates greater than 45 days ago.
 
-If you are frequently requesting Multi-Key Value Analytics reports which include dates longer than 45 days ago, you may need to consider running these reports via the API, caching the data and using [Bulk Reporting Feeds](../digital-platform-api/bulk-reporting-feeds.md) or [Log-Level Data Feeds](../log-level-data/log-level-data-feeds.md)(LLD). See
-[Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md) for more details on how to alter your reports to avoid these issues.
+If you are frequently requesting Multi-Key Value Analytics reports which include dates longer than 45 days ago, you may need to consider running these reports via the API, caching the data and using [Bulk Reporting Feeds](../digital-platform-api/bulk-reporting-feeds.md) or [Log-Level Data Feeds](../log-level-data/log-level-data-feeds.md)(LLD). See [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md) for more details on how to alter your reports to avoid these issues.
 
 ## Data retention period
 
@@ -116,7 +115,6 @@ Data in this report is retained for 428 days.
 | Reporting Key 3 Value Label | Yes | The label (alias) of the third reporting key value. |
 | Reporting Key 3 Name | Yes | The name of the third reporting key. |
 | Reporting Key 3 Value | Yes | The value associated with the third reporting key. |
-|  |  |  |
 
 > [!NOTE]
 > In addition, you can also filter on a particular number of impressions using the **Minimum Impressions** filter.

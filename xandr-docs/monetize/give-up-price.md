@@ -1,6 +1,6 @@
 ---
 title: Give Up Price
-description: The Give Up Price in an auction is a bid threshold that determines the order of bid consideration, establishing a criterion for prioritizing bids.
+description: Optimize bids, prioritize Give Up Price. Networks use Optimized/Learn Bids. Revenue Auctions favor accuracy. Learn Auctions prioritize new Bids. 
 ms.date: 10/28/2023
 ---
 
@@ -13,8 +13,7 @@ ms.date: 10/28/2023
 
 The Give Up Price is a bid price threshold which determines the order in which bids are considered in an auction.
 
-There are two types of bids (**Optimized Bids** and **Learn Bids**) that are designated by networks, and two types of auctions (**Revenue Auctions** and **Learn Auctions**) that are designated by publishers. Bids are assigned to auctions by system algorithms, which do not take into account the type of bid. For example, a Learn Bid can be assigned
-to an Optimized Auction, and an Optimized Bid can be assigned to a Learn Auction. This allows Learn Bids and Optimized Bids to compete for the same impressions.
+There are two types of bids (**Optimized Bids** and **Learn Bids**) that are designated by networks, and two types of auctions (**Revenue Auctions** and **Learn Auctions**) that are designated by publishers. Bids are assigned to auctions by system algorithms, which do not take into account the type of bid. For example, a Learn Bid can be assigned to an Optimized Auction, and an Optimized Bid can be assigned to a Learn Auction. This allows Learn Bids and Optimized Bids to compete for the same impressions.
 
 - **Revenue Auctions** give preference to Optimized bids in which there is high confidence in the accuracy of the bid compared to the current market (i.e., the bid has been refined so that it is likely to be a fair price for the market).
 - **Learn Auctions** give preference to Learn bids that are newer and do not yet have well-established parameters compared to the current market (i.e., the bid may be radically high or low for the market).

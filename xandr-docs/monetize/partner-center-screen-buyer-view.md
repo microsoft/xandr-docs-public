@@ -1,6 +1,6 @@
 ---
 title: Partner Center Screen - Buyer View
-description: On the Partner Center screen you can view your preferred partners, search all sellers, and review impression and click statistics for each seller.
+description: Explore Partner Center where you can view preferred partners, search sellers, and review impression and click statistics for each.
 ms.date: 10/28/2023
 ---
 
@@ -25,23 +25,19 @@ Click the **My Profile** button to edit the information that sellers will see on
 > [!NOTE]
 > Inventory trust settings only apply to standard line item targeting.
 
-You can establish inventory trust settings for all sellers. Click **Default Settings** to open the **Default Settings** dialog (see [Set Seller Defaults](set-seller-defaults.md)
-for step-by-step instructions). You can also override these settings for individual sellers (see [Edit Seller Defaults](edit-seller-defaults.md) for details).
+You can establish inventory trust settings for all sellers. Click **Default Settings** to open the **Default Settings** dialog (see [Set Seller Defaults](set-seller-defaults.md) for step-by-step instructions). You can also override these settings for individual sellers (see [Edit Seller Defaults](edit-seller-defaults.md) for details).
 
 ## Setting default inventory trust
 
 You can define which portion of an eligible seller's inventory you trust. There are three trust levels (they are listed here from least trusted to most trusted):
 
-- **Platform-reviewed**: Indicates that you trust only the inventory that has been audited by the Microsoft Advertising platform. The Microsoft Advertising domain-level platform-review consists of
-  categories, sensitive attributes, and intended audience. This is the lowest level of trust and offers the fewest options (domains) in which to serve impressions, but provides the highest level of assurance that ads will not be served on questionable sites.
-- **Seller-reviewed**: This indicates that, in addition to all platform-reviewed inventory (above), you also trust inventory audited by the seller. This expands the number of
-  domains on which an ad can serve, but requires confidence in the review process and standards of the seller.
+- **Platform-reviewed**: Indicates that you trust only the inventory that has been audited by the Microsoft Advertising platform. The Microsoft Advertising domain-level platform-review consists of categories, sensitive attributes, and intended audience. This is the lowest level of trust and offers the fewest options (domains) in which to serve impressions, but provides the highest level of assurance that ads will not be served on questionable sites.
+- **Seller-reviewed**: This indicates that, in addition to all platform-reviewed inventory (above), you also trust inventory audited by the seller. This expands the number of domains on which an ad can serve, but requires confidence in the review process and standards of the seller.
 - **All**: This indicates that you are comfortable serving ads on any domain sent to you by this supply partner. This allows access to all domains, but expands the possibility that an ad will be served on a questionable or inappropriate site. This setting should only be used for partners with a long history of exemplary activity.
 
 ## Viewing sellers
 
-The **Sellers** tab lists all sellers, both Monetize members and external suppliers. Their member name and ID will display along with statistics for each seller. The **Platform-wide
-Avails.** columns will display statistics on all of the seller's transactions across the platform. The **Transactions with Seller** columns will display statistics on your transactions with the seller. See [Searching for Sellers](partner-center-screen-buyer-view.md#searching-for-sellers) to find a specific type of seller and then review the statistics to determine if you'd like to partner with the seller.
+The **Sellers** tab lists all sellers, both Monetize members and external suppliers. Their member name and ID will display along with statistics for each seller. The **Platform-wide Avails.** columns will display statistics on all of the seller's transactions across the platform. The **Transactions with Seller** columns will display statistics on your transactions with the seller. See [Searching for Sellers](partner-center-screen-buyer-view.md#searching-for-sellers) to find a specific type of seller and then review the statistics to determine if you'd like to partner with the seller.
 
 ## Platform-wide avails
 
@@ -68,16 +64,13 @@ Avails.** columns will display statistics on all of the seller's transactions ac
   > For more information, please see [Microsoft Advertising Direct](appnexus-direct-for-buyers.md) or contact [appnexusdirect@appnexus.com](mailto:appnexusdirect@appnexus.com) or your Microsoft Advertising account manager.
 
 - **Seller Group** - Shows if the seller is labeled as Microsoft Advertising Direct.
-- **Eligibility** - Shows the transaction eligibility between members. A buyer may block a seller, a seller may block a buyer, or both buyer and seller may be blocked by each other.
-  Status is indicated by the circular eligibility icon in each row, and you can mouse over the row in the
-  **Eligibility** column for details.
+- **Eligibility** - Shows the transaction eligibility between members. A buyer may block a seller, a seller may block a buyer, or both buyer and seller may be blocked by each other. Status is indicated by the circular eligibility icon in each row, and you can mouse over the row in the **Eligibility** column for details.
 - **Deals** - Number of deals available to you from this seller.
 - **Join Date** - Shows the date a member was added. If less than a year, the exact date will show; if over a year, the join date will show as **+1 year**.
 
 ## Searching for sellers
 
-Use the filters to search the Sellers
-list for a seller that meets your partnership needs. You can filter the
+Use the filters to search the Sellers list for a seller that meets your partnership needs. You can filter the
 list of sellers by:
 
 - **Name/ID** - A specific seller's name or member ID.

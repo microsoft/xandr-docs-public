@@ -1,13 +1,12 @@
 ---
 title: Microsoft Monetize - Getting Paid
-description: The article instructs on securing prompt payments from Microsoft Advertising by providing banking details during contract signing, and it also mentions how to update this information.
+description: Secure prompt Microsoft Ad payments by sharing banking details at contract signing and learn to update this info for timely transactions.
 ms.date: 10/28/2023
 ---
 
 # Microsoft Monetize - Getting paid
 
-In order to receive prompt payment from Microsoft Advertising, you must submit your banking details to your Microsoft Advertising representative upon signing your contract.
-To update your banking details, contact Client Finance at [billing@xandr.com](mailto:billing@xandr.com).
+In order to receive prompt payment from Microsoft Advertising, you must submit your banking details to your Microsoft Advertising representative upon signing your contract. To update your banking details, contact Client Finance at [billing@xandr.com](mailto:billing@xandr.com).
 
 Microsoft Advertising pays you within a fixed period of time (e.g.. Net 60, Net 90) from the last day of the month in which the reselling activity occurs (so long as the total is at least $50 for that month). If reselling activity for a given month is under $50, we'll hold payment until you are able to compound at least $50. Once you have compounded in excess of $50 in resold revenue, we'll transfer the full amount to the bank account that we have on file.
 

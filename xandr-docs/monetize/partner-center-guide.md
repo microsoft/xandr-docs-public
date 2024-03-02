@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Partner Center Guide
-description: The Partner Center enables you to realize your full potential with other buyers and sellers. 
+description: Explore the Partner Center to unlock potential with buyers and sellers. Discover partners, cultivate relationships, motivate, and track success.
 ms.date: 10/28/2023
 ---
 

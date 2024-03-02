@@ -1,6 +1,6 @@
 ---
 title: Network Video Mediation Demand Report    
-description: The articles shows Network Video Mediation Demand Report that can be used to view video mediation demand metrics across multiple buyers and publishers.
+description: Explore Network Video Mediation Demand Report that can be used to view video mediation demand metrics across multiple buyers and publishers.
 ms.date: 10/28/2023
 ---
 

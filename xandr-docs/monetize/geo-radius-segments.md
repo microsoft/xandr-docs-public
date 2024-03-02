@@ -9,8 +9,7 @@ ms.date: 10/28/2023
 > [!NOTE]
 > Access to the geo radius segment targeting feature requires additional roles and permissions. Contact your Microsoft Advertising account representative for more information.
 
-A geo radius segment is a list of latitude, longitude, and radius data. You can use geo radius segments for geographical targeting of multiple user locations. When you create a geo radius segment, you add latitude, longitude, and radius data either manually (copy and paste) or by importing a file. Once the geo radius segment is created, these
-locations are easily targetable on your line item using the segment ID (see [Segment Targeting](segment-targeting.md) for more information).
+A geo radius segment is a list of latitude, longitude, and radius data. You can use geo radius segments for geographical targeting of multiple user locations. When you create a geo radius segment, you add latitude, longitude, and radius data either manually (copy and paste) or by importing a file. Once the geo radius segment is created, these locations are easily targetable on your line item using the segment ID (see [Segment Targeting](segment-targeting.md) for more information).
 
 > [!IMPORTANT]
 > Approximately 30% of impressions received contain location data that you can target with geo radius segments.
@@ -60,9 +59,9 @@ Click **Next**.
        48.376928,-54.986546,8 
        ```
 
-  2. Click **Validate Input Formatting** to ensure that the information is in the correct format. If the information is in the correct format, the **Next** button is enabled.
+ 1. Click **Validate Input Formatting** to ensure that the information is in the correct format. If the information is in the correct format, the **Next** button is enabled.
 
-3. Click **Next**.
+ 1. Click **Next**.
 
 ### Import from file
 
@@ -80,7 +79,7 @@ Click **Next**.
     48.376928,-54.986546,8 
     ```
 
-2. Click **Next**.
+1. Click **Next**.
 
 ### Step 4. Review geo radius segment features and create geo radius segment
 

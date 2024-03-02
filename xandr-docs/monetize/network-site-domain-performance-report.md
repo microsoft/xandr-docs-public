@@ -14,8 +14,7 @@ All dates and times are given in UTC.
 
 **Time ranges**
 
-Time ranges define the time period of the data extracted for the report.
-The following is a complete list of time ranges available for reports.
+Time ranges define the time period of the data extracted for the report. The following is a complete list of time ranges available for reports.
 
 However, all time ranges are not available for every report.
 

@@ -1,6 +1,6 @@
 ---
 title: Network Video Analytics Report
-description: The article highlights the Network Video Analytics report, which enables the viewing of video event metrics across various buyers and sellers for a network member.
+description: Explore the Network Video Analytics report, revealing video event metrics across buyers and sellers for network members.
 ms.date: 10/28/2023
 ---
 
@@ -67,7 +67,7 @@ Data in this report is retained for 420 days.
 | Seller | Yes | The seller of this impression. |
 | Advertiser | Yes | The advertiser whose creative served on this impression. |
 | Publisher | Yes | The publisher on whose inventory this impression occurred. |
-| Placement Group | Yes | The placement group (simply a collection of placements) which includes the placement through which this impression occurred.<br>**Note**: For impressions older than 100 days, the ID will be `0`. |
+| Placement Group | Yes | The placement group (simply a collection of placements) which includes the placement through which this impression occurred.<br>**Note**: For impressions older than 100 days, the ID will be `0`.|
 | Placement | Yes | The placement through which this impression occurred.<br>**Note**: For impressions older than 100 days, placements will be aggregated into one row with `-1` as the ID and a generic name. |
 | Insertion Order | Yes | The insertion order under which this impression was purchased. |
 | Line Item | Yes | The line item under which this impression was purchased. |

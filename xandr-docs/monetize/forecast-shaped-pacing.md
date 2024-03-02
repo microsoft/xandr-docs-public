@@ -1,6 +1,6 @@
 ---
 title: Forecast-Shaped Pacing 
-description: The article explains Forecast-Shaped Pacing which governs daily pacing schedules for all impression-based guaranteed line items on the platform.
+description: Explore Forecast-Shaped Pacing which governs daily pacing schedules for all impression-based guaranteed line items on the platform.
 ms.date: 10/28/2023
 ---
 

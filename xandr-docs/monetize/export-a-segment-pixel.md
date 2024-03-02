@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Export a Segment Pixel
-description: The article displays how to export a segment pixel.
+description: The article displays how to export a segment pixel.Export segment pixel. Choose the pixel format, recommend JavaScript tag. 
 ms.date: 10/28/2023
 ---
 
@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 ## Step 1: Get started
 
-Go to the Segment Pixel list in the **Segments** screen (**Network >  Segments > Segment Manager**), select the check box next to the segment pixel that you want to export, click **More Actions**, and select **Export** pixels. This displays the **Export Pixels** dialog.
+Go to the Segment Pixel list in the **Segments** screen (**Network** >  **Segments** > **Segment Manager**), select the check box next to the segment pixel that you want to export, click **More Actions**, and select **Export** pixels. This displays the **Export Pixels** dialog.
 
 ## Step 2: Select the pixel format
 
@@ -26,8 +26,7 @@ In the Advanced Options section, you can select additional values to include in 
 - **Add user to segments on call**: Enables you to add additional segments
 - **Remove user from segments on call**: Enables you to remove the user from segments
 - **Parameter**:
-  - Include dynamic value: Values are non-negative integers that can be associated and stored with the user at the time of firing the pixel.
-    The same value can be the same across segments in the pixel ("across all segments" option) or they can be specific to each segment in the pixel ("for each segment" option).
+  - Include dynamic value: Values are non-negative integers that can be associated and stored with the user at the time of firing the pixel. The same value can be the same across segments in the pixel ("across all segments" option) or they can be specific to each segment in the pixel ("for each segment" option).
   - Include a redirect URL: to redirect URL used to piggyback another pixel
 
 ## Step 5: Generate the tags

@@ -1,10 +1,10 @@
 ---
 title: Microsoft Monetize - grapeshot
-description: The article explains how grapeshot uses the Oracle Data Cloud Context Segment Builder to activate custom contextual audiences and brand suitability segments.
+description: Activate custom audiences using Oracle Data Cloud Context Segment Builder for precise brand targeting.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Monetize - grapeshot
+# Microsoft Monetize - Grapeshot
 
 **grapeshot** (Oracle Data Cloud Context Segment Builder from Oracle) accesses the Oracle Data Cloud Context Segment Builder to activate powerful custom or off-the-shelf contextual audiences and brand suitability segments.
 

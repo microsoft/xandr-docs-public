@@ -1,6 +1,6 @@
 ---
 title: Onboarding Audio Supply
-description: This page explains how to modify placement settings to accept audio creatives and how to export and test placement tags. 
+description: Leran how to modify and adjust placement settings to accept audio creatives and how to export and test placement tags. 
 ms.date: 10/28/2023
 ---
 

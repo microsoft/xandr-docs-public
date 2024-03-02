@@ -1,13 +1,12 @@
 ---
 title: Microsoft Monetize - Exploring Creatives
-description: The article guides you on managing creatives through the Creative Manager screen, where you can view, add, and update creatives associated with a specific advertiser.
+description: Manage creatives easily on the Creative Manager screen, view, add, and update creatives linked to an advertiser.
 ms.date: 10/28/2023
 ---
 
 # Microsoft Monetize - Exploring creatives
 
-You can work with creatives from the **Creative Manager** screen. From there you can view the creatives that are associated to a particular advertiser as well as add and update
-creatives.
+You can work with creatives from the **Creative Manager** screen. From there you can view the creatives that are associated to a particular advertiser as well as add and update creatives.
 
 The **Creative Manager** screen shows all the creatives associated with the selected advertiser. For each creative, the following information is displayed:
 

@@ -1,6 +1,6 @@
 ---
 title: Create a Guaranteed Delivery Line Item (GDALI)
-description: In this article, find information on how to create and set up a guaranteed delivery line item to meet delivery goals and serve budgets evenly and in full.
+description: Find information on how to create and set up a guaranteed delivery line item to meet delivery goals and serve budgets evenly and in full.
 ms.date: 10/28/2023
 ---
 
@@ -72,12 +72,17 @@ You can set the name, state, and ad type of the GDALI from the **Basic Setting
 
     Delivery of the **Master Creative** is used for pacing and budgeting. Defining **Master Creative** and **Companion Creative** sizes is used for forecasting and reservation purposes. Roadblock delivery is based on the creatives associated with the line item. For more information, see [Target Your Inventory with Roadblocking](target-your-inventory-with-roadblocking.md).
 
-    To enable **Roadblocking**:
+    To enable **Roadblocking** for line item with other ad types (non video):
 
     1. Click **Enable Roadblocking** to the on position.
-    1. Select a **Master Creative** size from the drop-down.
-    1. Select a **Companion Creative** size from the drop-down.
+    1. Select a **Master Creative** size from the dropdown.
+    1. Select a **Companion Creative** size from the dropdown.
     1. (Optionally) Click **+ Add Companion** to include additional **Companion Creative** sizes.
+
+    To enable **Roadblocking** for line item with video ad type:
+
+    1. Click **Enable Roadblocking** to the on position.
+    1. Select a **Master Creative Slot Position** from the dropdown. You can select one of these options: **Intro Bumper**, **Outro Bumper**, **First Slot**, or **Last Slot**. This is a mandatory field for line item with video ad type. Video roadblock line items are identified by the slot position and not the ad size of the master creative. This is because the ad size is automatically set to 1x1 for all videos.
 
 1. **Ad Size**: When you first create a GDALI, it's possible that you won't have creatives available for it yet. To enable you to forecast on your line item before you have available creatives, you can use the **Ad Size** field to identify the size (or sizes) of the impression you intend to deliver on. Forecasts (displayed in the forecasting footer at the bottom of the **Create New Guaranteed Delivery Line Item** screen) will take into account the **Ad Size** specified here, as well as the sizes of any actual creatives associated with the line item. By default, this field displays "Any Size", indicating that the line item may forecast and reserve inventory based on all ad sizes.
 

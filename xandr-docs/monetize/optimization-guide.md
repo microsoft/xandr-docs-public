@@ -1,6 +1,6 @@
 ---
 title: Optimization Guide
-description: The article reveals optimization engine power with insights on benefits, processes, and key components for effective use.
+description: Explore Microsoft Advertising for optimization insights. Uncover benefits, processes, and key components for effective utilization.
 ms.date: 10/28/2023
 ---
 
@@ -13,7 +13,6 @@ This guide helps you understand and take advantage of the Microsoft Advertising 
 
 ## In this guide
 
-- [Understanding Optimization](understanding-optimization.md) - This section explains why optimization is beneficial to you, provides a high-level overview of the process of
-  optimization, and tells you the information you can provide to Microsoft Advertising to make optimization as effective as possible. If you are unfamiliar with optimization, you should start here before moving on to other sections.
+- [Understanding Optimization](understanding-optimization.md) - This section explains why optimization is beneficial to you, provides a high-level overview of the process of optimization, and tells you the information you can provide to Microsoft Advertising to make optimization as effective as possible. If you are unfamiliar with optimization, you should start here before moving on to other sections.
 - [Prerequisite Knowledge](prerequisite-knowledge.md) - This section explains foundational concepts that you should be familiar with before diving into optimization, such as booked revenue, media cost, bidding strategies, and campaign setup. These concepts are not specific to optimization but understanding them will help you use optimization effectively.
 - [Optimization In-Depth](optimization-in-depth.md) - This section explains and demonstrates the detailed concepts and components involved in optimization, such as venues and nodes, and shows you how to influence the optimization engine.

@@ -1,6 +1,6 @@
 ---
 title: Explore Publisher Ad Quality
-description: The article details the Publisher Ad Quality screen, showcasing network-level ad settings including Network Profile, Publisher Templates and so on.
+description: Explore Publisher Ad Quality screen, highlighting network ad settings like Network Profile, Publisher Templates, and so on.
 ms.date: 10/28/2023
 
 ---
@@ -21,8 +21,7 @@ Choose **Ad Quality** from the **Publishers** menu. Select the publisher from th
 
 ## Network profile
 
-You can view your Network Profile settings here. To edit them, you'll need to go to the [Network Ad Quality Screen](network-ad-quality-screen.md). For more information, see
-[Update Your Network Profile](update-your-network-profile.md).
+You can view your Network Profile settings here. To edit them, you'll need to go to the [Network Ad Quality Screen](network-ad-quality-screen.md). For more information, see [Update Your Network Profile](update-your-network-profile.md).
 
 ## Base and conditional rules
 
@@ -49,8 +48,7 @@ Determine the eligibility of creatives based on technical attributes such as "Ex
 Allow or exclude creatives based on the brands they are associated with. You can apply a filter to see only new brands.
 
 > [!NOTE]
-> If an Ad Quality (AQ) is set as `default_brand_status:banned` but the parent brand is set as `status:trusted`, the child brand overrides the setting in
-> `default_brand_status` and it will be able to serve unless it is explicitly banned in the Ad Profile's brand override list.
+> If an Ad Quality (AQ) is set as `default_brand_status:banned` but the parent brand is set as `status:trusted`, the child brand overrides the setting in `default_brand_status` and it will be able to serve unless it is explicitly banned in the Ad Profile's brand override list.
 
 ### Languages
 

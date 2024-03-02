@@ -1,6 +1,6 @@
 ---
 title: Open Dynamic Allocation and Flexible Priorities
-description: The article delves into open dynamic allocation, flexible priorities, and adaptive ad-serving strategies for optimized resource allocation.
+description: Explore open dynamic allocation, flexible priorities, and adaptive ad-serving strategies for optimized resource allocation.
 ms.date: 10/28/2023
 ---
 
@@ -26,19 +26,17 @@ For more information on setting priorities, see [Create a Standard Line Item](cr
 
 The ability to set line items of any type to any priority (1-20) changes the dynamics of bid submissions. There are three factors relating to priority that determine how demand will compete:
 
-- **Reselling priority**: This is a value that is set at the Network (member) level. Reselling priority governs when inventory is available for resale to RTB demand. When a line item from a managed advertiser has a priority value *at or above* reselling priority and is eligible for an impression, then the impression is not available to RTB buyers.
-  (See [Managing Your Inventory Reselling Exposure](managing-your-inventory-reselling-exposure.md) for more information.) This value also impacts guaranteed line items. The system will identify the highest priority guaranteed bid and highest priority standard bid. If the highest of these two priorities is:
+- **Reselling priority**: This is a value that is set at the Network (member) level. Reselling priority governs when inventory is available for resale to RTB demand. When a line item from a managed advertiser has a priority value *at or above* reselling priority and is eligible for an impression, then the impression is not available to RTB buyers. (See [Managing Your Inventory Reselling Exposure](managing-your-inventory-reselling-exposure.md) for more information.) This value also impacts guaranteed line items. The system will identify the highest priority guaranteed bid and highest priority standard bid. If the highest of these two priorities is:
   - *below* the reselling priority, then we allow both the guaranteed demand from the highest guaranteed priority tier and the standard demand from the highest standard priority tier to compete in the auction.
   - *at or above* the reselling priority, then we allow only demand from that higher tier to compete in the auction.
 - **Standard line item priority**: The priority assigned to the standardline item. The default value is 5.
-- **Guaranteed delivery line item priority**: The priority assigned to the guaranteed delivery line item. The default value is 14 for   "Impressions" and 19 for "Exclusive".
+- **Guaranteed delivery line item priority**: The priority assigned to the guaranteed delivery line item. The default value is 14 for "Impressions" and 19 for "Exclusive".
 
 The following scenarios illustrate how the three settings above interact to determine how demand is allowed to compete in the auction.
 
 ## Example scenarios demonstrating flexible priorities
 
-These scenarios assume targeting is met for all line items in question. Other settings, such as targeting, also impact which line items are
-submitted.
+These scenarios assume targeting is met for all line items in question. Other settings, such as targeting, also impact which line items are submitted.
 
 > [!NOTE]
 > Under all these scenarios, if there is an eligible guaranteed delivery line item with:
@@ -54,7 +52,7 @@ In this first scenario, we have three guaranteed delivery line items, all with p
 
 In this scenario, one of the priority 12 guaranteed delivery line items will be sent, because it's set to a higher priority than any of the standard line items.
 
-:::image type="content" source="media/priority-scenario-a.png" alt-text= "The diagram depicts the ensured delivery of a priority 12 line item, highlighting its higher priority compared to standard line items.":::
+:::image type="content" source="media/priority-scenario-a.png" alt-text= "Diagram that depicts the ensured delivery of a priority 12 line item, highlighting its higher priority compared to standard line items.":::
 
 **Scenario 2**
 
@@ -64,8 +62,7 @@ In this scenario we have three guaranteed delivery line items, two with a priori
 
 **Scenario 3**
 
-In this final scenario, the reselling priority is higher than the highest line item priority. When that happens, all line items compete against RTB. In addition, we always send one guaranteed delivery line item with the highest priority in that tier, as well as all standard line items with the highest priority among the standard line items. The
-following examples demonstrate different possibilities in this scenario:
+In this final scenario, the reselling priority is higher than the highest line item priority. When that happens, all line items compete against RTB. In addition, we always send one guaranteed delivery line item with the highest priority in that tier, as well as all standard line items with the highest priority among the standard line items. The following examples demonstrate different possibilities in this scenario:
 
 *Example 1:* One guaranteed delivery line item at priority 12 and all priority 12 standard line items are submitted to auction to compete with RTB.
 

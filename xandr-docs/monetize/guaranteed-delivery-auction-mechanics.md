@@ -1,6 +1,6 @@
 ---
 title: Guaranteed Delivery Auction Mechanics
-description: The article explains Guaranteed Delivery Auction Mechanics option which available only to Microsoft Advertising Ad Server customers.
+description: Explore the Guaranteed Delivery Auction Mechanics option which available only to Microsoft Advertising Ad Server customers.
 ms.date: 10/28/2023
 ---
 
@@ -15,12 +15,11 @@ This page describes how auctions involving guaranteed line items work. If you ar
 
 When guaranteed line items are eligible to bid on an impression, the auction works as follows:
 
-1.  The ImpBus sends a bid request to the Bidder.
-1.  When the Bidder receives the bid request, it prepares to respond with - at most - one guaranteed bid and up to 14 non-guaranteed bids.
-1.  The Bidder ranks the guaranteed bids against each other according to their priority, and chooses one guaranteed bid to send to the ImpBus. If two guaranteed bids have the same priority, they will be compared to see which line item is further from its goal. The bid whose line item is furthest from goal is much more likely to serve. Which bid is selected is not strictly based on distance from goal; there is a weighted rotation established where line items further from goal are assigned a higher relative weight.
-1.  If the selected guaranteed bid is of the "Exclusive" Delivery Type, only the guaranteed bid is sent to the ImpBus, where it will serve without any competition from other bids.
-1.  If the guaranteed bid is of "Impressions" Delivery Type, the Bidder sends at most one guaranteed bid plus up to 14 non-guaranteed bids. The Bidder calculates a pCPM (priority CPM) to allow the guaranteed bid to compete with other bids (including RTB) in the auction held by the ImpBus. The pCPM value represents the risk that the line item
-    a. will not deliver in full. The "risk" is defined by considering factors such as pace towards goal and scarcity of inventory. Themore "at risk" the line item is of not achieving its goal, the higher the pCPM value will be.
+1. The ImpBus sends a bid request to the Bidder.
+1. When the Bidder receives the bid request, it prepares to respond with - at most - one guaranteed bid and up to 14 non-guaranteed bids.
+1. The Bidder ranks the guaranteed bids against each other according to their priority, and chooses one guaranteed bid to send to the ImpBus. If two guaranteed bids have the same priority, they will be compared to see which line item is further from its goal. The bid whose line item is furthest from goal is much more likely to serve. Which bid is selected is not strictly based on distance from goal; there is a weighted rotation established where line items further from goal are assigned a higher relative weight.
+1. If the selected guaranteed bid is of the "Exclusive" Delivery Type, only the guaranteed bid is sent to the ImpBus, where it will serve without any competition from other bids.
+1. If the guaranteed bid is of "Impressions" Delivery Type, the Bidder sends at most one guaranteed bid plus up to 14 non-guaranteed bids. The Bidder calculates a pCPM (priority CPM) to allow the guaranteed bid to compete with other bids (including RTB) in the auction held by the ImpBus. The pCPM value represents the risk that the line item will not deliver in full. The "risk" is defined by considering factors such as pace towards goal and scarcity of inventory. Themore "at risk" the line item is of not achieving its goal, the higher the pCPM value will be.
 
 For information about how to set your reselling priority, see [Bidding Priority](bidding-priority.md). For information on how guaranteed and standard line items compete based on
 priority, see [Open Dynamic Allocation and Flexible Priorities](open-dynamic-allocation-and-flexible-priorities.md).
@@ -38,11 +37,11 @@ Guaranteed line items' roadblocks serve (or not) based on their priority and dis
 
 The following examples show how Guaranteed Delivery roadblocks behave in different scenarios:
 
-1.  **Guaranteed Roadblock vs. Guaranteed Line**: Guaranteed roadblocks compete with guaranteed lines on their target delivery rate using the same method as for guaranteed line vs. guaranteed line competition. The guaranteed roadblock gets to serve if it wins all of the tags it is targeting and eligible to serve on.
-1.  **Guaranteed Roadblock vs. Standard Line**: Guaranteed roadblocks don't directly compete with standard line items. A guaranteed roadblock will always win over a standard line item if it is eligible to serve.
-1.  **Guaranteed Roadblock vs. Standard Roadblock**: The average CPM of the tag bids from the standard roadblock is compared with the pCPM of the guaranteed roadblock. Expressed as a formula:
+1. **Guaranteed Roadblock vs. Guaranteed Line**: Guaranteed roadblocks compete with guaranteed lines on their target delivery rate using the same method as for guaranteed line vs. guaranteed line competition. The guaranteed roadblock gets to serve if it wins all of the tags it is targeting and eligible to serve on.
+1. **Guaranteed Roadblock vs. Standard Line**: Guaranteed roadblocks don't directly compete with standard line items. A guaranteed roadblock will always win over a standard line item if it is eligible to serve.
+1. **Guaranteed Roadblock vs. Standard Roadblock**: The average CPM of the tag bids from the standard roadblock is compared with the pCPM of the guaranteed roadblock. Expressed as a formula:
     `[sum(all CPM bids) / number of ad slots]` vs. `pCPM`.
-1.  **Guaranteed Line vs. Standard Roadblock**: Uses the same logic as for \#3.
+1. **Guaranteed Line vs. Standard Roadblock**: Uses the same logic as for \#3.
 
 ## Deals and guarantees
 

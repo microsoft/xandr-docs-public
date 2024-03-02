@@ -1,6 +1,6 @@
 ---
 title: Move a Placement to a Different Placement Group
-description: This article explains how to organize and manage placements, open slots on a publisher's website, using placement groups. 
+description: Organize website placements efficiently using placement groups for effective management of open slots on a publisher's site.
 ms.date: 10/28/2023
 ---
 

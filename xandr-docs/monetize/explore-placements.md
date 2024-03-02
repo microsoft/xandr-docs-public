@@ -1,6 +1,6 @@
 ---
 title: Explore Placements
-description: The article details the Placement Manager screen, highlighting features such as key metrics for all placements, quick access to details and default creatives.
+description: Explore Placement Manager, discover key metrics, quick access to details, and default creatives for all placements. 
 ms.date: 10/28/2023
 ---
 
@@ -30,8 +30,7 @@ Click the **Currency** dropdown to select the currency units to display for all 
 
 ### Time zone
 
-Click the **Time Zone** dropdown to select a time zone. This will be the time zone that is used to determine the data collected for the specified interval (**Today**,
-**Yesterday**, or **Last 7 Days**).
+Click the **Time Zone** dropdown to select a time zone. This will be the time zone that is used to determine the data collected for the specified interval (**Today**, **Yesterday**, or **Last 7 Days**).
 
 ### Viewing data
 
@@ -46,8 +45,7 @@ The following information is shown for each placement. Note that the data always
 
 ### Filtering
 
-You can filter your list of placements by name or by ID. Click the **Filter** button and type any part of the name or ID, then click **Apply filter**.
-The filter will return placements matching the filter only within the selected placement group. It will not return placements from other placement groups.
+You can filter your list of placements by name or by ID. Click the **Filter** button and type any part of the name or ID, then click **Apply filter**. The filter will return placements matching the filter only within the selected placement group. It will not return placements from other placement groups.
 
 Click **Reset** to remove the filter and display all placements within the selected placement group.
 
@@ -57,8 +55,7 @@ You can assign a default creative to a placement by clicking the placement row t
 
 ### Reporting on the placement
 
-You can report on one or more placements by checking the boxes for the placements you want to report on, then going to More **Actions >  Run Report**. For more information, see
-[Publisher Reporting](publisher-reporting.md).
+You can report on one or more placements by checking the boxes for the placements you want to report on, then going to More **Actions** >  **Run Report**. For more information, see [Publisher Reporting](publisher-reporting.md).
 
 ### Related topics
 

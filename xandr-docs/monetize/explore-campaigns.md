@@ -1,24 +1,22 @@
 ---
 title: Explore Campaigns
-description: The article outlines the Campaigns screen, emphasizing its features like displaying key metrics for all campaigns, identifying serving issues, quick access to individual campaign details, and enabling bulk editing and reporting.
+description: Explore the Campaigns screen, highlight key metrics, detect issues, access campaigns swiftly, and enable bulk editing and reporting.
 ms.date: 10/28/2023
 ---
 
 # Explore campaigns
 
-The **Campaigns** screen shows you essential metrics about all campaigns under an advertiser or under a specific line item, informs you of conditions preventing campaigns from
-serving, provides quick access to each campaign's details, and offers bulk editing and reporting options.
+The **Campaigns** screen shows you essential metrics about all campaigns under an advertiser or under a specific line item, informs you of conditions preventing campaigns from serving, provides quick access to each campaign's details, and offers bulk editing and reporting options.
 
 **Automatic archiving of objects:** Campaigns that have not served or been edited in more than 180 days and that are not scheduled to serve in the future are automatically archived. If a campaign is in the "archived" state, it cannot spend or be edited. However, it can still be copied, deleted or used in reports (or exported for use in an external
-reporting tool). In addition, once an object is archived, any child objects it may own (e.g., **Insertion Order >  Line Item** **> Campaign**) will also be archived and no additional child objects may be created beneath the archived parent object. For details, see [Automatic Archiving of Buy-Side Objects](automatic-archiving-of-buy-side-objects.md).
+reporting tool). In addition, once an object is archived, any child objects it may own (e.g., **Insertion Order** >  **Line Item** **> **Campaign**) will also be archived and no additional child objects may be created beneath the archived parent object. For details, see [Automatic Archiving of Buy-Side Objects](automatic-archiving-of-buy-side-objects.md).
 
 ## Getting to the campaigns screen
 
 > [!TIP]
 > **Lost?**
 >
-> Did you know that you can verify where you are in Monetize and navigate easily among Monetize pages by using the breadcrumb at the top of all **Advertiser**, **Insertion Order**, **Line Item**, and **Campaign screens**? The rightmost section of the breadcrumb is the page you are on, and all the sections to the left of it are parent object
-> screens. You can click directly on any section to navigate there in one easy step.
+> Did you know that you can verify where you are in Monetize and navigate easily among Monetize pages by using the breadcrumb at the top of all **Advertiser**, **Insertion Order**, **Line Item**, and **Campaign screens**? The rightmost section of the breadcrumb is the page you are on, and all the sections to the left of it are parent object screens. You can click directly on any section to navigate there in one easy step.
 >
 > The breadcrumb may not function if you are not using the latest version of your browser.
 
@@ -51,8 +49,7 @@ The **Status** column shows you whether your campaigns are eligible or ineligibl
   - Daily cost budget has been met.
 
   > [!WARNING]
-  > Campaigns with the "warning" icon are ineligible to serve due to conditions are are likely unintentional and that should be addressed. When a campaign
-  > shows this status, hover over the icon to see exactly what conditions are preventing it from serving. The following conditions can provide this status:
+  > Campaigns with the "warning" icon are ineligible to serve due to conditions are are likely unintentional and that should be addressed. When a campaign shows this status, hover over the icon to see exactly what conditions are preventing it from serving. The following conditions can provide this status:
   >
   > - No creatives are associated with this campaign.
   > - All creatives associated to this campaign are either ineligible to serve (inactive, expired, prohibited) or can serve only on direct inventory and on supply partners who trust your network's self-classification (unaudited).
@@ -72,8 +69,7 @@ The stats on the **Campaigns** screen help you assess the performance and delive
 Because stats are dependent upon reporting data and are synched after reporting has closed for any given hour, for a small chunk of time each hour, there may be discrepancies between reporting and stats data. For more details, see [Availability of Reporting Data](availability-of-reporting-data.md).
 
 > [!TIP]
-> To sort your campaigns by any stat, click on the relevant metric column. For example, to sort yourcampaigns by the amount of money your network has made from advertisers
-> (revenue - media cost), click the **Profit** column.
+> To sort your campaigns by any stat, click on the relevant metric column. For example, to sort yourcampaigns by the amount of money your network has made from advertisers (revenue - media cost), click the **Profit** column.
 
 ## Intervals
 
@@ -93,18 +89,15 @@ The following stats are shown for each campaign. Columns that show an arrow in t
 - **Imps** Number of impressions for the campaign.
 
 > [!TIP]
-> For campaigns with specific lifetime impression budgets, you can select the **Pacing** toggle to visualize how well the campaigns are pacing for the selected stats
-> interval. For more details, see **Showing/Hiding Pacing Bars**.
+> For campaigns with specific lifetime impression budgets, you can select the **Pacing** toggle to visualize how well the campaigns are pacing for the selected stats interval. For more details, see **Showing/Hiding Pacing Bars**.
 >
 > - **Clicks** Number of clicks for the campaigns.
 >
-> - **Convs** Number of times conversion pixels under the parent line item have loaded. Note that a conversion pixel load does not necessarily mean that a conversion was
->   attributed to the campaign. To get information about attributed conversions, rather than just conversion pixel loads, see [Reporting on Conversions] (reporting-on-conversions.md).
+> - **Convs** Number of times conversion pixels under the parent line item have loaded. Note that a conversion pixel load does not necessarily mean that a conversion was attributed to the campaign. To get information about attributed conversions, rather than just conversion pixel loads, see [Reporting on Conversions](reporting-on-conversions.md).
 >
 > - **CTR** (Click-Through-Rate) Number of clicks divided by total impressions served for the campaign.
 >
-> - **Viewable Imps** The number of measured impressions that were viewable, per the IAB Viewability definition, which states that 50% of the pixels of a creative are in-view 
->   during 1 consecutive second.
+> - **Viewable Imps** The number of measured impressions that were viewable, per the IAB Viewability definition, which states that 50% of the pixels of a creative are in-view during 1 consecutive second.
 >
 > - **View-Measured Imps** The total number of impressions that were measured for viewability.
 >

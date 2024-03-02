@@ -1,6 +1,6 @@
 ---
 title: Native Assembly
-description: The article discusses Native Assembly, a tool streamlining the creation of seamless native experiences for publishers without guesswork or extensive development.
+description: Explore Native Assembly, simplifying seamless native experiences for publishers. No guesswork or extensive development needed.
 ms.date: 10/28/2023
 ---
 
@@ -13,7 +13,7 @@ By using Native Assembly, publishers can take the guesswork and manual developme
 
 ## Native assembly for Microsoft Monetize ad server publishers
 
-Microsoft Monetize Ad Server publishers can use Native Assembly on the client side whereMicrosoft Advertising's seller tag (AST) and mobile SDKs for Android and iOS can be leveraged. With Native Assembly, Microsoft Monetize Ad Server publishers can:
+Microsoft Monetize Ad Server publishers can use Native Assembly on the client side where Microsoft Advertising's seller tag (AST) and mobile SDKs for Android and iOS can be leveraged. With Native Assembly, Microsoft Monetize Ad Server publishers can:
 
 - Access a gallery of high impact templates and personalize them using HTML, CSS, and/or Javascript.
 - use custom native assets to enhance their users' experience.
@@ -24,8 +24,7 @@ Microsoft Monetize Ad Server publishers can use Native Assembly on the client si
 Third-party ad server publishers can use Native Assembly on the server side. Since third-party ad server publishers do not have access to Microsoft Advertising's seller tag (AST) and mobile SDKs for Android and iOS, their Native Assembly renderers are applied on the server side. With Native Assembly, third-party ad server publishers can:
 
 - expose native inventory to buyers.
-- render native inventory that matches their asset specifications to
-  create native assemblies.
+- render native inventory that matches their asset specifications to create native assemblies.
 
 ## Related topics
 

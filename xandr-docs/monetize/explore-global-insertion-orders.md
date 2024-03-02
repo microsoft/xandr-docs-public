@@ -1,6 +1,6 @@
 ---
 title: Explore Global Insertion Orders
-description: The article delves into global insertion orders, presenting key metrics for all insertion orders under direct-sold advertisers, offering quick access to individual insertion order details, and providing options for bulk editing and reporting.
+description: Explore global insertion orders, showcase metrics for direct-sold advertisers, enable swift access to details, and offer bulk editing/reporting options.
 ms.date: 10/28/2023
 ---
 
@@ -30,8 +30,7 @@ To get to the insertion orders screen, so one of the following:
 
 ### Filtering by status
 
-The selector dropdown at the top of the screen lets you filter for insertion orders based on status. You can choose to view only **Active** advertisers or **Inactive** advertisers,
-or to view **All** advertisers.
+The selector dropdown at the top of the screen lets you filter for insertion orders based on status. You can choose to view only **Active** advertisers or **Inactive** advertisers, or to view **All** advertisers.
 
 ### Filter Sidebar
 
@@ -108,8 +107,7 @@ The following fields will be displayed in local currency when the local currency
 
   When you sort on either of the columns above, the line items will be sorted according to the USD value. This means that if you've chosen to display in local currency, the values might look out of order because of the exchange rates.
 
-  Any value that was added to the system prior to July 7, 2016 cannot be converted to local currency. In these cases, when you select to
-  display line items with local currency values, no value will be retrieved and you'll see two dashes (--) in that field.
+  Any value that was added to the system prior to July 7, 2016 cannot be converted to local currency. In these cases, when you select to display line items with local currency values, no value will be retrieved and you'll see two dashes (--) in that field.
 
 ### Columns
 

@@ -1,19 +1,19 @@
 ---
 title: Onboarding video supply
-description: The article guides learning onboarding video supply, modifying placements, updating media types for videos, and testing tags for seamless integration.
+description: Explore onboarding video strategies, adjust placements, update media types, test tags for seamless integration in learning.
 ms.date: 10/28/2023
 ---
 
 # Onboarding video supply
 
 > [!NOTE]
-> Microsoft Advertising now supports a domain, [adnxs-simple.com](http://adnxs-simple.com/), which does not send or read browser cookies on requests. Clients can leverage this cookie-free domain when there is no consent to use personal data. Relevant calls initiated by Microsoft Advertising will automatically use this domain when there is no consent or when cookies are not required for the function. For more information, see [Part of Service Policies](../policies-regulations/index.yml)
+> Microsoft Advertising now supports a domain, `adnxs-simple.com`, which does not send or read browser cookies on requests. Clients can leverage this cookie-free domain when there is no consent to use personal data. Relevant calls initiated by Microsoft Advertising will automatically use this domain when there is no consent or when cookies are not required for the function. For more information, see [Part of Service Policies](../policies-regulations/index.yml)
 
 This page explains how to modify placement settings to accept video creatives and how to export and test placement tags.
 
 ## Placements
 
-In order to allow video creatives on your placements, update the media types or media subtypes that the placement allows. To accept all VAST creatives when creating a new placement, under **Placement Details**, set the allowed media type to **Video \> Standard VAST**.
+In order to allow video creatives on your placements, update the media types or media subtypes that the placement allows. To accept all VAST creatives when creating a new placement, under **Placement Details**, set the allowed media type to **Video** \> **Standard VAST**.
 
 Then, set the remaining video placement options in the Video Settings tab.
 

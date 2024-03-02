@@ -1,6 +1,6 @@
 ---
 title: Explore Trader Home
-description: The articles helps you to explore trader home.
+description: Explore limited-access Trader Home, showcasing insertion order metrics and facilitating quick access to details and child line items.
 ms.date: 10/28/2023
 ---
 
@@ -9,8 +9,7 @@ ms.date: 10/28/2023
 > [!IMPORTANT]
 > Trader Home is currently available to a limited set of clients.
 
-**Trader Home** displays a card for every insertion order that you have added to your **Trader Home** page, showing you essential metrics about the insertion order. The cards
-also provide quick access to insertion order details, as well as its child line items.
+**Trader Home** displays a card for every insertion order that you have added to your **Trader Home** page, showing you essential metrics about the insertion order. The cards also provide quick access to insertion order details, as well as its child line items.
 
 ## Getting to trader home
 

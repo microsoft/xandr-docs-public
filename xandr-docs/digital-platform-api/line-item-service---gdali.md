@@ -298,6 +298,8 @@ GDALIs support "page-level" roadblocks, where one impression is recorded for the
 > [!NOTE]
 > The `master_width` and `master_height` fields must be defined for roadblock line items. The master creative is the creative with a size matching the `master_height` and `master_width` specified in the `roadblock` object. If more than one creative matches that size, the system will choose one as the master.
 >
+> Video roadblock line items are identified by the slot position and not the ad size `master_width` and `master_height` of the master creative. This is because the ad size is set to 1x1 for all videos.
+>
 > To serve a roadblock, one creative for each size must be eligible to serve on the page. All creatives will serve if ad slots are available. If more than one creative per size exists, creatives will rotate through a single ad slot. There can be more ad slots available than there are creatives to fill them.
 
 For more on roadblocking, see [Target Your Inventory with Roadblocking](../monetize/target-your-inventory-with-roadblocking.md).
@@ -305,8 +307,9 @@ For more on roadblocking, see [Target Your Inventory with Roadblocking](../monet
 | Field | Type | Description |
 |:---|:---|:---|
 | `type` | enum | The type of roadblock. For GDALIs, this value must be either:<br>- `null`: (default) There is no roadblocking set at the line item level.<br>- `partial_roadblock`: Enables roadblocking on the line item. The line item serves when at least one creative of each size fits an eligible ad slot. |
-| `master_width` | int | The width of the master creative. This value is required when roadblock type equals `partial_roadblock`. |
-| `master_height` | int | The height of the master creative. This value is required when roadblock type equals `partial_roadblock`. |
+| `master_width` | int | The width of the master creative. This value is required when roadblock type equals `partial_roadblock`. **Note**: For all video ad types, the width must be set to `1`. |
+| `master_height` | int | The height of the master creative. This value is required when roadblock type equals `partial_roadblock`. **Note**: For all video ad types, the height must be set to `1`. |
+|`slot_type` |string|The slot position of the master creative. Possible values are: `"AD_POD_FIRST"` (First Slot), `"AD_POD_LAST"` (Last Slot), `"INTRO_BUMPER"`, `"OUTRO_BUMPER"`.|
 
 **Apply a partial roadblock to a line item**
 
@@ -320,6 +323,27 @@ $ cat LI-roadblock.json
           "type": "partial_roadblock",
           "master_width": 300,
           "master_height": 600
+          "ad_types": "banner"
+      }
+      ...
+    }
+}
+```
+
+**Apply a partial roadblock to a line item with video ad type**
+
+```
+$ cat LI-roadblock.json
+
+{
+    "line-item": {
+      ...
+      "roadblock": {
+          "type": "partial_roadblock",
+          "master_width": 1,
+          "master_height": 1,
+          "ad_types": "video",
+          "slot_type": "AD_POD_FIRST"
       }
       ...
     }

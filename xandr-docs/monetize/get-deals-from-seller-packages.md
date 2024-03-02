@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Get Deals from Seller Packages
-description: The article discusses deals associated with seller packages.
+description: Explore seller packages for ideal deals with pre-made inventory and data combos, aiding swift conversions or starting custom negotiations. 
 ms.date: 10/28/2023
 ---
 
@@ -10,7 +10,7 @@ As a buyer, the best way to find deals is to browse sellers' packages, which are
 
 ## Step 1. Browse seller packages
 
-On the **Package Marketplace** screen (**Partners \>  Package Marketplace**), browse through available packages from sellers. The following details display for each package:
+On the **Package Marketplace** screen (**Partners** \>  **Package Marketplace**), browse through available packages from sellers. The following details display for each package:
 
 - **Package Name** - The seller's name for the package.
 - **Seller Name** - The name of the seller offering the package.
@@ -34,16 +34,14 @@ Click **Add to Cart** next to each package that you want to convert into a deal.
 
 ### Option 2. Request a custom deal
 
-If you are interested in a package but would like to ask the seller to make modifications, click **Request a Custom Deal**, enter your message, and then click
-**Submit**. Your message will be posted in the seller's [Partnership Details Screen - Buyer View](partnership-details-screen-buyer-view.md). Continue to use the Activity Stream to negotiate with the seller.
+If you are interested in a package but would like to ask the seller to make modifications, click **Request a Custom Deal**, enter your message, and then click **Submit**. Your message will be posted in the seller's [Partnership Details Screen - Buyer View](partnership-details-screen-buyer-view.md). Continue to use the Activity Stream to negotiate with the seller.
 
 ## Step 3. Target deals
 
 If you generated a deal from a package, your deal ID is displayed in the **Selected Packages** section.
 
 - For Augmented Line Items, target deals using line item deal targeting.  For more information, see [Deal Targeting (ALI)](deal-targeting-ali.md).
-- For Standard Line Items, click **Target now!** to instantly create a new campaign targeting the deal or to add the deal to an existing campaign. For complete step-by-step
-  instructions on setting up your campaign, see [Create a Deal Campaign](create-a-deal-campaign.md). 
+- For Standard Line Items, click **Target now!** to instantly create a new campaign targeting the deal or to add the deal to an existing campaign. For complete step-by-step instructions on setting up your campaign, see [Create a Deal Campaign](create-a-deal-campaign.md).
 
 ### Related topics
 

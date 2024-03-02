@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Optimization Guide - ALI
-description: ALI Optimization Guide maximizes ad efficiency with sophisticated algorithms, adapting to business goals for optimal results, automating pacing, budget allocation.
+description: Explore ALI optimization for optimal ad efficiency. Utilize advanced algorithms, align with goals, automate pacing, optimize budget for results.
 ms.date: 10/28/2023
 ---
 

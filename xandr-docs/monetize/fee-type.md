@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Fee Type
-description: The article explains how you can use fee types to categorize fees by purpose.
+description: Categorize fees by purpose using fee types, including Ad serving, Algorithm, Data, Reporting, Service, Technology, Viewability, and Other. 
 ms.date: 10/28/2023
 ---
 

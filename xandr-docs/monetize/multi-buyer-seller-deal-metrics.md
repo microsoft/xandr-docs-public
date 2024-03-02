@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Multi-Buyer Seller Deal Metrics
-description: The article explains multi-buyer seller deal metrics and provides key information relevant to sellers about the performance and rejection reasons associated with multi-buyer deals.
+description: Explore metrics in the article, revealing insights for sellers on multi-buyer deal performance and rejection reasons.
 ms.date: 10/28/2023
 ---
 
@@ -10,8 +10,7 @@ ms.date: 10/28/2023
 The Multi-Buyer Seller Deal Metrics report provides key information relevant to sellers about multi-buyer deal metrics, performance, and rejection reasons.
 
 > [!NOTE]
-> As of May 3, 2021, Imps Matched and Bid Requests will be randomly sampled at a rate of 10 percent. The sampled values will be multiplied by 10 to give a reasonable estimate in
-> all screens where these two metrics are reported. No other deal metrics will be affected.
+> As of May 3, 2021, Imps Matched and Bid Requests will be randomly sampled at a rate of 10 percent. The sampled values will be multiplied by 10 to give a reasonable estimate in all screens where these two metrics are reported. No other deal metrics will be affected.
 
 ## Time frame
 
@@ -58,7 +57,7 @@ Intervals determine how your data is grouped together into rows in the report re
 ## Dimensions
 
 | Column | Filter? | Description |
-|---|---|---|
+|--|--|--|
 | Buyer Member | Yes | ID and name of the member whose advertiser purchased the impression. |
 | Buyer Seat Name | No | Display name for the buyer seat code |
 | Buyer Seat Code | No | Custom Buyer Seat ID (submitted by DSP) that was used to bid on the impression |
@@ -135,7 +134,7 @@ Intervals determine how your data is grouped together into rows in the report re
 Follow these steps to run your report.
 
 1. Select **Reporting** from the appropriate top menu (depending on how your account has been configured).
-   1.  Or, from the Publishers top menu, click on **Prebid Server Premium \>  Analytics \> Prebid Server Analytics**.
+   1. Or, from the Publishers top menu, click on **Prebid Server Premium** \>  **Analytics** \> **Prebid Server Analytics**.
 1. Select the relevant report from the list. The **Report** screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
 
     > [!IMPORTANT]

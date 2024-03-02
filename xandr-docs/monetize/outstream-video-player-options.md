@@ -1,6 +1,6 @@
 ---
 title: Outstream Video Player Options
-description: This topic describes the settings available for configuring outstream video which can be configured in page code.
+description: Explore outstream video settings for Microsoft Monetize, configure in page code or on placement. Note that  AST overrides Monetize settings.
 ms.date: 10/28/2023
 ---
 
@@ -16,24 +16,24 @@ This topic describes settings available for configuring outstream video that can
 ## General options
 
 | Option | Values | Default | Description |
-|---|---|---|---|
+|--|--|--|--|
 | **Video Player Setup** |  |  |  |
 | `audioOnMouseover` (deprecated) | - true<br> - false<br> - integer | `true` | This setting is no longer supported or tested because of current browser limitations on sounds.<br>Play audio when the user's mouse is over the video, pause/unmute audio when the mouse is not over the video.<br>If an integer is specified, the audio will not start until that many milliseconds of continuous mouse hovering over the video. |
 | `autoInitialSize` | true / false | `false` | If `true`, the player width will match the page container. If `false`, the player width set on the placement will be used. |
 | `alignment` | center / left / right | `center` | Alignment of the player if its size is smaller than the container. |
 | `playOnMouseover` | true / false | `false` | When this setting is `true`, while the user's mouse is over the video it will play. If the mouse leaves the video it will pause and resume playing when the mouse returns over the video.<br>When this setting is `false`, the video plays regardless of the user's mouse. |
 | `playVideoVisibleThreshold` | 0-100 | `50` | The video will not start playing until the video container's visibility is above this threshold. If the video container's visibility drops below this threshold the video follows the behavior specified in `nonViewableBehavior`. |
-| `nonViewableBehavior` | - "pause"<br> - "mute" | "`mute`" | - "pause"- Video will pause when below `playVideoViewableThreshold`, and resume playback when above `playVideoViewableThreshold`<br> - "mute" - Video will mute but not pause when below `playVideoViewableThreshold` and unmute when above `playVideoViewableThreshold`<br> &nbsp;&nbsp;  - When scrolled back above the viewable threshold, the video should not unmute if it has been muted or set to 0 volume explicitly by the user, we should simply restore the pervious volume state that existed when the user scrolled out of viewability.|
+| `nonViewableBehavior` | - "pause"<br> - "mute" | "`mute`" | - "pause"- Video will pause when below `playVideoViewableThreshold`, and resume playback when above `playVideoViewableThreshold`<br> - "mute" - Video will mute but not pause when below `playVideoViewableThreshold` and unmute when above `playVideoViewableThreshold`<br> &nbsp;&nbsp;  - When scrolled back above the viewable threshold, the video should not unmute if it has been muted or set to 0 volume explicitly by the user, we should simply restore the pervious volume state that existed when the user scrolled out of viewability. |
 | `expandTime` | integer (milliseconds) | `1000` | The amount of time in milliseconds it takes to expand the ad and to collapse the ad. |
-| `playerTechnology` | array of strings | [`"html5"`, `"flash"`] | VPAID media files with corresponding technology are given priority for display. Otherwise, other media files with their corresponding technology are displayed.|
-| `aspectRatio` | - "auto"<br> - "16:9"<br>"4:3" | If not defined, and `fixedSizePlayer` is `false`, `16:9` | The aspect ratio of the video portion of the player. Does not take into account any control bars which do not overlay the video. "auto" uses the aspect ratio defined in the video metadata.|
-| `maxHeight` | true / false / height in pixels | `false` | Optionally, enable and set a maximum height for the player as shown in the following example. The player will adjust to maintain the aspect ratio.<br><br> ``` "maxHeight": { "enabled": `true`, "height": 480 } ```<br><br>This setting was designed to optimize vertical video presentations and should only be used with a vertical aspect ratio. For more information, including recommended values, see [Vertical Video Formats](vertical-video-formats.md).|
-| `fixedSizePlayer` | true / false | `false` | If `true`, final rendered player height will be the height of the entire player, including any top or bottom control bars.<br>If `false`, final rendered player height will be the height of the video area, and any extra control bars (top bar, bottom control bar) will increase the total height of the player.|
+| `playerTechnology` | array of strings | [`"html5"`, `"flash"`] | VPAID media files with corresponding technology are given priority for display. Otherwise, other media files with their corresponding technology are displayed. |
+| `aspectRatio` | - "auto"<br> - "16:9"<br>"4:3" | If not defined, and `fixedSizePlayer` is `false`, `16:9` | The aspect ratio of the video portion of the player. Does not take into account any control bars which do not overlay the video. "auto" uses the aspect ratio defined in the video metadata. |
+| `maxHeight` | true / false / height in pixels | `false` | Optionally, enable and set a maximum height for the player as shown in the following example. The player will adjust to maintain the aspect ratio.<br><br> ``` "maxHeight": { "enabled": `true`, "height": 480 } ```<br><br>This setting was designed to optimize vertical video presentations and should only be used with a vertical aspect ratio. For more information, including recommended values, see [Vertical Video Formats](vertical-video-formats.md). |
+| `fixedSizePlayer` | true / false | `false` | If `true`, final rendered player height will be the height of the entire player, including any top or bottom control bars.<br>If `false`, final rendered player height will be the height of the video area, and any extra control bars (top bar, bottom control bar) will increase the total height of the player. |
 
 ### Player's chrome settings
 
 | Option | Values | Default | Description |
-|---|---|---|---|
+|--|--|--|--|
 | `adText` | string | `Ad` | Ad indicator text shown in the top-right hand corner of the outstream ad unit.<br>If `skipLocation` is also top-right, the `skipText`, and subsequently `skipButtonText`, will be shown to the left of `adText` in the top-right corner (see skippable object below). |
 | `disableCollapse` | true/false | `false` | If `true`, the outstream ad will not collapse at the end of the video. The last frame that was showing at the end of the video will show. No control bar, click to play button or countdown text will show. Ad Indicator and Skip button will remain. |
 | `replay` | true / false | `false` | Enables a replay button on the card that plays the ad a second time when clicked. |
@@ -60,8 +60,7 @@ the video playback has completed.
 These settings determine how the video player handles video documents that use VPAID.
 
 > [!NOTE]
-> When a VPAID ad reaches its final frame, the Outstream player hides the control bar, and does not display a replay button. This behavior prevents any potential conflicts with
-> interactive end screen elements supplied by VPAID. The player handles all VPAID ads this way, regardless of the configuration specified in Monetize or in page-level Outstream settings.
+> When a VPAID ad reaches its final frame, the Outstream player hides the control bar, and does not display a replay button. This behavior prevents any potential conflicts with interactive end screen elements supplied by VPAID. The player handles all VPAID ads this way, regardless of the configuration specified in Monetize or in page-level Outstream settings.
 
 | Option | Values | Default | Description |
 |---|---|---|---|

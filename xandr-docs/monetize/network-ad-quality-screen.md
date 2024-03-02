@@ -1,6 +1,6 @@
 ---
 title: Network Ad Quality Screen
-description: The article details the Network Ad Quality screen, which displays Network Profile settings, Publisher Template, enables updating of network-level ad quality settings, and notifies of new brands added to the platform.
+description: Explore the Network Ad Quality screen, view Network Profile, Publisher Template, update ad quality settings, and get notified of new platform brands.
 ms.date: 10/28/2023
 ---
 

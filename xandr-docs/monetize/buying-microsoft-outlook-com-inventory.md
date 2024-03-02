@@ -1,35 +1,24 @@
 ---
 title: Microsoft Monetize - Buying Microsoft Outlook.com Inventory
-description: Learn how to buy Microsoft Outlook.com inventory on the Microsoft Advertising platform and adding Outlook.com creatives.    
+description: Learn how to buy Microsoft Outlook.com inventory on the Microsoft Advertising platform and adding Outlook.com creatives. This page also focuses on four key points for advertisers.
 ms.date: 10/28/2023
 ---
 
 
 # Microsoft Monetize - Buying Microsoft Outlook.com inventory
 
-You can buy Microsoft Outlook.com inventory on the
-Microsoft Advertising platform.
+You can buy Microsoft Outlook.com inventory on the Microsoft Advertising platform.
 
 ## Inventory overview
 
-Outlook.com combines the best of Outlook and Hotmail to offer a
-clutter-free environment for communicating with family, friends, and
-colleagues. Outlook.com focuses on four key points for advertisers:
+Outlook.com combines the best of Outlook and Hotmail to offer a clutter-free environment for communicating with family, friends, and colleagues. Outlook.com focuses on four key points for advertisers:
 
-1. **Consumer Focus**: Designed with both the consumers and advertisers
-    in mind
-1. **Advertiser Exclusivity**: There's only one advertiser per page
-    (allowlist helps to ensure exclusivity)
-1. **High Relevance**: Active(100% logged in) users provide a large
-    pool of targeting options, which helps increase ROI
-1. **Simple, yet visual**: Simple creatives deliver imagery that stands
-    out against a clean environment
+1. **Consumer Focus**: Designed with both the consumers and advertisers in mind
+1. **Advertiser Exclusivity**: There's only one advertiser per page (allowlist helps to ensure exclusivity)
+1. **High Relevance**: Active(100% logged in) users provide a large pool of targeting options, which helps increase ROI
+1. **Simple, yet visual**: Simple creatives deliver imagery that stands out against a clean environment
 
-Outlook.com ad experiences are designed with both advertisers and
-consumers in mind. Located on the right side of users' email, the
-Skyscraper unit is fully integrated into the user experience. For more
-information about adding Outlook.com creatives, see [Add a Microsoft Outlook Skyscraper Creative](../industry-reference/add-a-microsoft-outlook-versatile-creative.md). Review the specifications for Outlook skyscraper creatives
-and add them to Microsoft Advertising.
+Outlook.com ad experiences are designed with both advertisers and consumers in mind. Located on the right side of users' email, the Skyscraper unit is fully integrated into the user experience. For more information about adding Outlook.com creatives, see [Add a Microsoft Outlook Skyscraper Creative](../industry-reference/add-a-microsoft-outlook-versatile-creative.md). Review the specifications for Outlook skyscraper creatives and add them to Microsoft Advertising.
 
 > [!NOTE]
 > Packages bundled with Microsoft user data are available through the packages marketplace. For more information, see [Buying Microsoft Deals](../Monetize/buying-microsoft-deals.md).
@@ -38,15 +27,14 @@ and add them to Microsoft Advertising.
 
 - Over 400 million active email accounts
 - 38 markets globally
-- 9.8 billion monthly global display impressions (over 1.4 billion in
-  US)
+- 9.8 billion monthly global display impressions (over 1.4 billion in US)
 
 ## Formats and specifications
 
 The recommended minimum creative dimensions are 160px x 600px.
 
 | Publisher | 160x600 | 728x90 | 300x50 | 300x600 |
-|---|---|---|---|---|
+|--|--|--|--|--|
 | Outlook | X |  |  |  |
 
 > [!NOTE]
@@ -58,11 +46,9 @@ For information on general inventory targeting, see [Buying Microsoft Inventory]
 
 To target Outlook.com inventory,
 
-1. On the **Specific Domains** tab,
-    click **Include**.
+1. On the **Specific Domains** tab, click **Include**.
 1. Enter **Outlook.com**.
-1. Click **Add Domains** to add it to the
-    included domains list.
+1. Click **Add Domains** to add it to the included domains list.
 1. Click **Add**.
 
 For instructions on how to target the Outlook app, see [Buying Microsoft Windows App Inventory](../Monetize/buying-microsoft-windows-3rd-party-appnetwork-inventory.md).
@@ -72,6 +58,4 @@ For instructions on how to target the Outlook app, see [Buying Microsoft Windows
 
 ## More questions?
 
-If you have any further questions about buying Outlook.com inventory,
-please contact your Microsoft Advertising account
-representative.
+If you have any further questions about buying Outlook.com inventory, please contact your Microsoft Advertising account representative.

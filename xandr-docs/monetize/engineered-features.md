@@ -1,14 +1,12 @@
 ---
 title: Microsoft Monetize - Engineered Features
-description: The article explores bidstream signals called engineered features, which are proprietary optimization components developed by Microsoft Advertising using historical data and their own data science and algorithms.
+description: Explore Microsoft Advertising's proprietary bidstream signals, engineered features, optimizing with historical and in-house data science.
 ms.date: 10/28/2023
 ---
 
 # Microsoft Monetize - Engineered features
 
-Engineered features are bidstream signals representing proprietary, high-quality optimization components developed by Microsoft Advertising, based on historical data analyzed by
-proprietary Microsoft Advertising data science and algorithms. We use these features ourselves in our own optimization tools, applying them at scale across the Microsoft Advertising platform and
-constantly refining their predictions based on incoming data. Now you can also use them as building blocks in [custom bidding models](../data-science-toolkit/custom-models.md).
+Engineered features are bidstream signals representing proprietary, high-quality optimization components developed by Microsoft Advertising, based on historical data analyzed by proprietary Microsoft Advertising data science and algorithms. We use these features ourselves in our own optimization tools, applying them at scale across the Microsoft Advertising platform and constantly refining their predictions based on incoming data. Now you can also use them as building blocks in [custom bidding models](../data-science-toolkit/custom-models.md).
 
 Most engineered features predict the probability of a specific outcome that will benefit your performance goals. For example, you can use predicted video viewability rate to modify your bid price for video inventory.
 

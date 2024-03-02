@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Page Properties Targeting
-description: The article elucidates page properties targeting, enabling advertisers to focus on impressions by considering the creative tag's position on the page or values in the ad call's query string.
+description: Explore advertisers' ability to target page properties, optimizing impressions based on creative tag position or ad call query string values.
 ms.date: 10/28/2023
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Network Users Screen
-description: The article explains how the Network Users screen details network-level users, enabling access, editing, and activation/deactivation of specific user details as necessary.
+description: Explore managing network users, access, edit, activate or deactivate user details on the Network Users screen for efficient control.
 ms.date: 10/28/2023
 ---
 
@@ -36,8 +36,7 @@ To edit an existing user, select the user in the table and click **Full Edit**. 
 
 ## Activating/deactivating users
 
-To activate or deactivate one or more users, check the box to the left of the row of each user that you want to change and select the **More Actions** button. Choose
-**Activate** or **Deactivate** from the drop-down list. Further details are available at [Create a User](create-a-user.md).
+To activate or deactivate one or more users, check the box to the left of the row of each user that you want to change and select the **More Actions** button. Choose **Activate** or **Deactivate** from the drop-down list. Further details are available at [Create a User](create-a-user.md).
 
 <!--## Related topics
 
