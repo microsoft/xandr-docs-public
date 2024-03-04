@@ -8,7 +8,7 @@ ms.date: 11/16/2023
 
 With the most basic implementation of the universal pixel, you can track page views and identify the URLs driving them. Setting up the basic implementation requires you to set up the Universal Pixel object in Curate, deploy the script code containing the pixel ID on your website, and check your pixel activity on the **Activity** tab in the **Universal Pixels** page.
 
-**To create, deploy, and test the pixel**:
+## Create, deploy, and test the pixel
 
 Configure your pixel code using the UI.
 

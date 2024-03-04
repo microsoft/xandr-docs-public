@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Digital Buying
-description: Learn about links to different resources to get information on API.
+description: This page gives a list of documents that you will get as a Digital Buyer. 
 ms.date: 10/28/2023
 ---
 

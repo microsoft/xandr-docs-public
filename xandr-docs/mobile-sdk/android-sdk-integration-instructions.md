@@ -26,11 +26,10 @@ In order to show ads, you must have a valid Xandr placement ID. This is a numeri
 >
 > - **Google Play**
 >
-> In order to enable the Android Advertising ID (AAID) for frequency capping and mobile app targeting, you must include Google Play Services as a dependency of your app. Xandr's SDK will still function without Google Play Services, but you won't have access to those features.
->
+>     In order to enable the Android Advertising ID (AAID) for frequency capping and mobile app targeting, you must include Google Play Services as a dependency of your app. Xandr's SDK will still function without Google Play Services, but you won't have access to those features.
 > - **Android Studio and Gradle**
 >
-> These instructions assume you are using Android Studio and Gradle. Most of the required `AndroidManifest.xml` entries (except the Location permissions) and ProGuard changes are automatically added to your app. If you are using other build systems, the steps may vary.
+>     These instructions assume you are using Android Studio and Gradle. Most of the required `AndroidManifest.xml` entries (except the Location permissions) and ProGuard changes are automatically added to your app. If you are using other build systems, the steps may vary.
 
 ## Installation
 
@@ -59,7 +58,7 @@ There are several ways to get our SDK:
 > ```
 >
 
-- Check out the source code from [Github](https://github.com/appnexus/mobile-sdk-android) and follow the instructions in [Build the Android SDK From Source](build-the-android-sdk-from-source.md).
+<!-- - Check out the source code from [Github](https://github.com/appnexus/mobile-sdk-android) and follow the instructions in [Build the Android SDK From Source](build-the-android-sdk-from-source.md). -->
 
 ### Step 2. Edit app permissions (optional)
 

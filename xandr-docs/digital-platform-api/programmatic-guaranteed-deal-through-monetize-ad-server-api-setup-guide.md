@@ -209,7 +209,7 @@ To create a deal, do the following (for more information, see [Deal Service](dea
 |:---|:---|:---|:---|
 | `name` | string | Required | The name of the deal. (**Note:** The buyer will see this name.) |
 | `active` | Boolean | Optional | The state of the insertion order: `true` or `false`. The default value for this field is `true`. |
-| `buyer` | object | Required, if not using the `buyer_seats` field | The buying bidder and member who can target this deal. A deal will only ever use the `buyer` field or the `buyer_seats` field, not both. For more details, see the "Buyer" section in the [Deal Service](deal-service.md).<br><br>**Note:** PG deals can only have one buyer.<br><br>**Warning:** We are planning to deprecate the `buyer` field. Please be prepared to use either `"buyer_seats"` or `"buyer_members"` fields in the future. |
+| `buyer` | object | Required, if not using the `buyer_seats` field | The buying bidder and member who can target this deal. A deal will only ever use the `buyer` field or the `buyer_seats` field, not both. For more details, see the "Buyer" section in the [Deal Service](deal-service.md).<br><br>**Note:** PG deals can only have one buyer.<br><br>**Warning:** We are planning to deprecate the `buyer` field. Be prepared to use either `"buyer_seats"` or `"buyer_members"` fields in the future. |
 | `buyer_seats` | object | Required, if not using the `buyer` field | The buying bidder and seat who can target this deal. A deal will only ever use the buyer field or the `buyer_seats` field, not both. For more details, see the "Buyer Seats" section in the [Deal Service](deal-service.md). |
 | `version` | int | Required | This field must be set to `"2"`. |
 | `auction_type` | object | Required | This object's fields must be set accordingly for a PG deal:<br>- `"id":` `3`<br>- `"name":` `"Fixed Price"`<br><br>**Note:** This field must be set upon creation, but it is not used on deal line items. It will not be updated if the line item is updated and in the auction; only the line item values are considered. |
@@ -411,7 +411,7 @@ To create a deal, do the following (for more information, see [Deal Service](dea
 ###### JSON fields for deal data protection (see [Visibility Profile Service](visibility-profile-service.md))
 
 > [!WARNING]
-> This beta feature isn't available for all clients. Please reach out to your account manager to discuss if you have a use case.
+> This beta feature isn't available for all clients. Reach out to your account manager to discuss if you have a use case.
 
 **User ID and device ID**
 
@@ -623,9 +623,7 @@ To create a PG deal line item profile, do the following (for more information, s
 
 #### Optional JSON fields for deal line item profile
 
-There are many optional fields available in the deal line item profile for targeting with the deal line item. For example, you can target
-properties associated with inventory, inventory types, allowlists, blocklists, device types, and so forth. For more information on
-available fields, see the [Profile Service](profile-service.md).
+There are many optional fields available in the deal line item profile for targeting with the deal line item. For example, you can target properties associated with inventory, inventory types, allowlists, blocklists, device types, and so forth. For more information on available fields, see the [Profile Service](profile-service.md).
 
 ### Step 6: Create a PG deal line item
 
@@ -759,7 +757,7 @@ To create a PG deal line item, do the following (for more information, see [Line
 | `supply_strategies` | object | Required | An object containing several boolean fields used to designate which inventory supply sources you would like to target. This object must have the following fields and values set for a PG deal:<br>- `"managed"`: `true`<br>- `"rtb"`: `false`<br>- `"deals"`: `false`<br>- `"programmatic_guaranteed"`: `false` |
 | `revenue_type` | enum | Required | Set this field to `"cpm"` for a PG deal. |
 | `revenue_value` | double | Required | Set this field to `"5"` for a PG deal. |
-| `auction_event` | object | Required | For a PG deal, fields and value for the `auction_event` object for must be set like [this](#auction_event-example). |
+| `auction_event` | object | Required | For a PG deal, fields and values for the `auction_event` object must be set like [this](#auction_event-example). |
 | `valuation` | object | Required | You must set this object's `min_revenue_value` to `null` for a PG deal. |
 | `bid_object_type` | enum | Required | Must be set to `"deal"` for a PG deal line item. |
 | `delivery_goal` | enum | Required | For a PG deal, set this field to `null`. |

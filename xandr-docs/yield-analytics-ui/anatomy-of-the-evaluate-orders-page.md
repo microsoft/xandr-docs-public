@@ -28,6 +28,30 @@ The **Order Lines** tab is comprised of the following sections:
 - **Order Line Listing panel** – Displays a list of all order lines in the proposal.
 - **Product Details panel** – Displays details for the selected order line in three tabs: Availability, Price, and Alternate Products.
 
+## Using alternative products to solve pricing/availability issues
+
+Alternative products are available in Evaluate Orders to help resolve! Price and Avails flags!
+
+### About alternate products
+
+The Score for an alternate product indicates how closely it's related to the order line's product, based on the following criteria:
+
+- Alternate sizes – Products with the same targeting as the order line's product, but with a different value for Size.
+- Audience affinity – Products that heavily overlap the same set of other products.
+- Purchase behavior – Products that frequently appear together on the same orders.
+
+### View alternate products
+
+In the **Product Details** panel, click the **Alternate Products** tab.
+
+### Add an alternate product to a proposal
+
+1. Click the **Add** button to the left of the product's name. A new order line with the selected product is created at the top of the **Order Line Listing** above the **Product Details**.
+1. Enter or change the order line parameters (e.g., Start date, End date, Imps) as needed.
+1. Click **Update**.
+
+To remove the order line, click **Edit** and clear the **Included** checkbox.
+
 ## Related topics
 
 - [Evaluate the Yield of an Order](evaluate-the-yield-of-an-order.md)

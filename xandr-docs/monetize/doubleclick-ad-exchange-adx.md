@@ -1,6 +1,6 @@
 ---
 title: Google Ad Manager
-description: Learn about requirements to run ads through Google Ad Manager. 
+description: This page lists different requirements to run ads through Google Ad Manager. 
 ms.date: 10/28/2023
 ---
 
@@ -18,6 +18,7 @@ Microsoft Advertising member seats do not have access to Google Ad Manager by de
 The standard setup is a simple process that does not require a waiting period. The alternate setup requires the client to work with Google Ad Manager to obtain a seat on their exchange. Once this seat is obtained, it needs to be linked to an Microsoft Advertising member ID. This process can take two to four weeks to complete.
 
 > [!NOTE]
+>
 > - Mapping of Google Ad Manager seats to Microsoft Advertising seats is 1:1 - you cannot link multiple Google Ad Manager seats to one Microsoft Advertising seat or vice versa
 >
 > - The seat in Google Ad Manager must exist as a child of the Microsoft Advertising Google Ad Manager seat - you cannot link any other type of Google Ad Manager seat to an Microsoft Advertising member

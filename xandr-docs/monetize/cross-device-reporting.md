@@ -1,17 +1,13 @@
 ---
 title: Microsoft Monetize - Reporting (Cross-Device)
-description: This page deals with Cross-Device Reporting that is present in the NetworkAnalytics report, the Device Analytics report, the Data Usage report, as well as on the Analytics tab for the augmented line item. 
+description: Learn how reporting on cross-device targeting and measurement is available across the Network Analytics report, the Device Analytics report, and the Data Usage report.  
 ms.date: 10/28/2023
 ---
 
 
 # Microsoft Monetize - Reporting (Cross-Device)
 
-Reporting on cross-device targeting and measurement is available in the
-NetworkAnalytics report, the Device Analytics
-report, and the Data Usage report, as well as on the
-**Analytics** tab for the augmented
-line item.
+Reporting on cross-device targeting and measurement is available in the Network Analytics report, the Device Analytics report, and the Data Usage report, as well as on the **Analytics** tab for the augmented line item.
 
 > [!NOTE]
 > Cross Device Metrics on the Line Item Analytics tab includes data for the last 60 days only.
@@ -22,7 +18,7 @@ line item.
 > Cross-device functionality is available to sellers when running line items that purchase inventory from the ad exchange using RTB. It's not available when sellers are running managed campaigns on their own inventory.
 
 | Report | Cross-Device Metric(s) | Notes |
-|---|---|---|
+|--|--|--|
 | Buyer Reach and Frequency | - Cross Device Incremental Device Reach<br> - Cross Device Incremental Imps | The number of unique devices reached and the number of impressions which are transacted due to cross-device audience extension. |
 | Data Usage | Data Type | Supported values are Segment and Cross Device. |
 | Device Analytics | - Conversion Device Make<br> - Conversion Device Type | Compare these metrics to the standard Device Make and Device Type metrics, which include all devices, not just ones where a conversion occurred. |

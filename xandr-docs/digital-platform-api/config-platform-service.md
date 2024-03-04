@@ -10,15 +10,15 @@ ms.custom: digital-platform-api
 > [!NOTE]
 > This service is currently available to a limited set of clients and Microsoft employees only.
 
-Config Platform is an admin-only service to update very specific multi-bid settings for bidder members (stored in the `common.config_platform` table). Please be very careful when adding or updating objects using this service.
+Config Platform is an admin-only service to update very specific multi-bid settings for bidder members (stored in the `common.config_platform` table). Be very careful when adding or updating objects using this service.
 
 ## REST API
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | [https://api.appnexus.com/config-platform](https://api.appnexus.com/config-platform)<br>(config JSON) | Add a new config-platform setting. |
-| `PUT` | [https://api.appnexus.com/config-platform?id=CONFIG_PLATFORM_ID](https://api.appnexus.com/config-platform?id=CONFIG_PLATFORM_ID)<br>(config_update JSON)<br><br>**Note:** `CONFIG_PLATFORM_ID` is a uniquely generated ID for the config platform setting and can be retrieved via `GET`. | Modify a config-platform setting. |
-| `GET` | [https://api.appnexus.com/config-platform](https://api.appnexus.com/config-platform) | View all config-platform settings. |
+| `POST` | `https://api.appnexus.com/config-platform`<br>(config JSON) | Add a new config-platform setting. |
+| `PUT` | `https://api.appnexus.com/config-platform?id=CONFIG_PLATFORM_ID`<br>(config_update JSON)<br><br>**Note:** `CONFIG_PLATFORM_ID` is a uniquely generated ID for the config platform setting and can be retrieved via `GET`. | Modify a config-platform setting. |
+| `GET` | `https://api.appnexus.com/config-platform` | View all config-platform settings. |
 
 ## JSON fields
 
@@ -32,7 +32,7 @@ Config Platform is an admin-only service to update very specific multi-bid setti
 
 ## Examples
 
-### View all config-platform settings
+### View all `config-platform` settings
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/config-platform'
@@ -82,7 +82,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/config-platform'
 }
 ```
 
-### Modify a config-platform setting
+### Modify a `config-platform` setting
 
 ```
 $ cat config_platform_update

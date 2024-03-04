@@ -36,7 +36,7 @@ The read-only City Service allows you to see information about the cities regist
 | `region_code` | string | The ISO or FIPS code for the region to which the city belongs. You can use the [Region Service](region-service.md) to retrieve a complete list of region codes. |
 | `dma_id` | int | The ID of the designated market area to which the city belongs. You can use the [Designated Market Area Service](designated-market-area-service.md) to retrieve a complete list of DMA IDs. |
 | `dma_name` | string | The name of the designated market area to which the city belongs. You can use the [Designated Market Area Service](designated-market-area-service.md) to retrieve a complete list of DMA names. |
-| `active` | Boolean | If `true`, the city is available for targeting. If false, there is no geolocation data for the city and so delivery is not possible. |
+| `active` | Boolean | If `true`, the city is available for targeting. If `false`, there is no geolocation data for the city and so delivery is not possible. |
 
 ## Examples
 

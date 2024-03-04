@@ -17,10 +17,10 @@ landingContent:
         links:
           - text: Overview
             url: xandr-mobile-sdks.md  
-      - linkListType: quickstart
-        links:
-          - text: Mobile SDK App
-            url: xandr-sdk-app.md
+      #- linkListType: quickstart
+        #links:
+          #- text: Mobile SDK App
+            #url: xandr-sdk-app.md
       - linkListType: tutorial
         links:
           - text: Impression Counting Mechanism

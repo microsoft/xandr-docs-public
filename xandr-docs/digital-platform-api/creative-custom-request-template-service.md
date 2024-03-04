@@ -90,9 +90,7 @@ You can use the [Media Subtype Service](media-subtype-service.md) and [Media Typ
 
 ### View all creative request templates (that you have permissions to view)
 
-In the example below, note the difference between how standard Xandr macros are displayed in the `uri` field, e.g., `* $\{USER_IP\}`
-and how the custom macros defined on a per-ad-server basis by this service are displayed: `* \#\{MK_SITEID\}`.
-You can see definitions for each macro in the `macros` array of objects below. You will only be able to view request templates belonging to your own member ID or public templates belonging to member ID `0`.
+In the example below, note the difference between how standard Xandr macros are displayed in the `uri` field, e.g., `* $\{USER_IP\}` and how the custom macros defined on a per-ad-server basis by this service are displayed: `* \#\{MK_SITEID\}`. You can see definitions for each macro in the `macros` array of objects below. You will only be able to view request templates belonging to your own member ID or public templates belonging to member ID `0`.
 
 ```
 
@@ -422,7 +420,7 @@ $ cat update.json
 Make the `PUT` call, including the JSON update.
 
 > [!NOTE]
-> In order to make a successful {{PUT}} call, you must do the following:
+> In order to make a successful `PUT` call, you must do the following:
 >
 > - Specify the ID of the request template in the JSON file
 > - Do not add any query string parameters (like `?id=123`) to your request (see the example below).

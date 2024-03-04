@@ -1,6 +1,6 @@
 ---
 title: Primary Ad Server Service
-description: Explore the Primary Ad Server service, enabling the creation, updating, and deletion of primary ad servers.
+description: Explore the Primary Ad Server service, which enables the creation, updating, and deletion of primary ad servers.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -9,8 +9,7 @@ ms.custom: digital-platform-api
 
 The Primary Ad Server Service returns all the primary ad servers for the caller's member. It enables the creation, updating and deleting of primary ad servers.
 
-The primary ad server makes the ultimate decision of what ads will be shown on the publishers inventory. In the context of PSP, demand
-partners, usually supply-side platforms (SSPs) like, create adapters for Prebid Server that receive and interpret header bidding ad requests. Demand partners hold an auction among their demand sources (usually demand-side-platforms (DSPs)) to collect bids on those ad requests and send the bids back to PSP, which holds another auction. Xandr holds another auction across its demand sources, including PSP demand partner(s)'s bid(s). If Monetize is not the primary ad server, the results of that auction are passed to the primary (external) ad server.
+The primary ad server makes the ultimate decision of what ads will be shown on the publishers inventory. In the context of PSP, demand partners, usually supply-side platforms (SSPs) like, create adapters for Prebid Server that receive and interpret header bidding ad requests. Demand partners hold an auction among their demand sources (usually demand-side-platforms (DSPs)) to collect bids on those ad requests and send the bids back to PSP, which holds another auction. Xandr holds another auction across its demand sources, including PSP demand partner(s)'s bid(s). If Microsoft Monetize is not the primary ad server, the results of that auction are passed to the primary (external) ad server.
 
 ## REST API
 
@@ -40,7 +39,7 @@ A successful response will returns a JSON array of ad server objects.
 | `id` | integer | A unique identifier for the ad server object. |
 | `name` | string | The name of the ad server. |
 
-### Example response
+### Response example
 
 ```
 [
@@ -72,7 +71,7 @@ curl -d @adserver.json -X POST --header "Content-Type: application/json" 'https:
 |:---|:---|:---|:---|
 | `name` | string | Required | The name of the configuration. |
 
-Example JSON file:
+JSON file example:
 
 ```
 {
@@ -101,7 +100,7 @@ curl -d @adserver-update.json -X PUT --header "Content-Type: application/json" '
 |:---|:---|:---|:---|
 | `name` | string | Required | The name of the ad server. |
 
-Example JSON file:
+JSON file example:
 
 ```
 {
@@ -116,7 +115,7 @@ On successful response, the updated ad server object will be returned.
 
 ## `DELETE`
 
-Enables deletion of all or an existing ad server object. Append the ad server id as the last path component of the URL.
+Enables deletion of all or an existing ad server object. Append the ad server ID as the last path component of the URL.
 
 Example call using cURL to delete all ad server objects:
 

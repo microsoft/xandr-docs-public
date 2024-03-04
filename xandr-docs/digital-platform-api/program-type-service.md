@@ -26,7 +26,7 @@ Use the read-only Program-Type Service to see what video content program types a
 
 ## Example
 
-### To retrieve all defined program types
+### Retrieve all defined program types
 
 ```
 curl -b cookies -c cookies "https://api.appnexus.com/video-program-type"

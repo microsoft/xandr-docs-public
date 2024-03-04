@@ -16,9 +16,9 @@ The Campaign UI service includes campaign meta information relating to campaign 
 >
 > - Campaign UI settings are not enforced in the service layer for campaign activation. This API service does not interact with API logic. The service cannot actually change campaign settings and cannot prevent unapproved campaign creation by a user in the API. Rather, the Campaign UI service's purpose is exclusively to maintain the permissions for GUI use cases around campaign activation, and to assist with workflow management in.
 > - This service is accessible only to the following user types:
->   - member
->   - advertiser
->   - member_advertiser
+>   - `member`
+>   - `advertiser`
+>   - `member_advertiser`
 
 ## REST API
 

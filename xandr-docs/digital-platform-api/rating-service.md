@@ -26,7 +26,7 @@ Use the read-only Rating Service to see what video content ratings are registere
 
 ## Example
 
-### To retrieve all defined ratings
+### Retrieve all defined ratings
 
 ```
 curl -b cookies -c cookies "https://api.appnexus.com/video-content-rating"  

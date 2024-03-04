@@ -7,8 +7,7 @@ ms.custom: digital-platform-api
 
 # Digital Platform API - Report service
 
-The Report Service is used to provide access to many different types of reports. It also ensures that each user types can only access the
-reports that are appropriate for that type. For example, network users have access to all report types, while advertiser and publisher users only have access to a few.
+The Report Service is used to provide access to many different types of reports. It also ensures that each user types can only access the reports that are appropriate for that type. For example, network users have access to all report types, while advertiser and publisher users only have access to a few.
 
 The available metrics vary depending on the report type, but can include how much money was spent on inventory, the number of impressions seen and/or sold, revenue earned, and more. This document describes how to request and download data from the Report Service. It also describes how to get more information about each of the supported report types, as well as providing links to further documentation about each report type.
 
@@ -249,9 +248,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/report?meta=network_analy
 
 ### Step 1: Create a JSON-formatted report request
 
-The JSON file should include the specific `report_type` that you want to run, as well as the `columns` (dimensions and metrics) and
-`report_interval` (`"today"`, `"yesterday"`, `"month_to_date"`, etc.) that you want to retrieve. You can also include `filters` for
-dimensions, define granularity (`year`, `month`, `day`), and specify the `format` in which the data should be returned. The `format` options are:
+The JSON file should include the specific `report_type` that you want to run, as well as the `columns` (dimensions and metrics) and `report_interval` (`"today"`, `"yesterday"`, `"month_to_date"`, etc.) that you want to retrieve. You can also include `filters` for dimensions, define granularity (`year`, `month`, `day`), and specify the `format` in which the data should be returned. The `format` options are:
 
 - `"csv"` - Comma-separated file
 - `"excel"` - Tab-separated file
@@ -270,7 +267,7 @@ dimensions, define granularity (`year`, `month`, `day`), and specify the `format
 > `"filters": [{"bid_type":"learn"},`
 > `{"bid_type":"optimized"},`` {"geo_country":"US"}]`
 
-For more details about the fields that can be included in the request, see [JSON Fields](#json-fields-for-data-retrieval) above. For a full list of available dimensions and metrics, see the documentation for the specific report type that you want to run, or pull that report's metadata as described in [REST API for Viewing Metadata](#rest-api-for-viewing-metadata).
+For more details about the fields that can be included in the request, see [JSON fields](#json-fields-for-data-retrieval) above. For a full list of available dimensions and metrics, see the documentation for the specific report type that you want to run, or pull that report's metadata as described in [REST API for Viewing Metadata](#rest-api-for-viewing-metadata).
 
 ```
 $ cat report_request
@@ -310,8 +307,7 @@ curl -c cookies -b cookies -X POST 'https://api.appnexus.com/report?saved_report
 
 ### Step 3: `GET` the report status from the Report service
 
-Make a `GET` call with the report ID to retrieve the status of the report. Continue making this call until the `execution_status` is
-`"ready"`. Then use the `report-download` service to save the reporting data to a file. (This is described in the next step.)
+Make a `GET` call with the report ID to retrieve the status of the report. Continue making this call until the `execution_status` is `"ready"`. Then use the `report-download` service to save the reporting data to a file. (This is described in the next step.)
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/report?id=ca9955709eade9a0e89f5cda5345c12r'
@@ -357,8 +353,7 @@ You can then open the csv file using Microsoft Excel or similar software.
 
 Report results larger than 15 MB will not be emailed to recipients specified in the JSON request.
 
-Reports that take longer than 15 minutes to process will timeout and return with an error status. This amount of processing time roughly
-corresponds to 1MM rows of data. If your reports routinely timeout, please consider one of the following options:
+Reports that take longer than 15 minutes to process will timeout and return with an error status. This amount of processing time roughly corresponds to 1MM rows of data. If your reports routinely timeout, consider one of the following options:
 
 - Verify that you really need all that data. If you don't, update your report requests with a shorter time interval or fewer dimensions. For tips on preventing reports from being unnecessarily large or taking too long to process, see [Reporting Best Practices](#reporting-best-practices) below.
 - If you really do need all of that data, follow the instructions in [Report Pagination](report-pagination.md).
@@ -395,8 +390,7 @@ Report request \# 6 is placed in the queue, since there are already 5 report req
 
 ## Conversion data
 
-Conversions (and related data) in reports are processed asynchronously. As a result, reports are available more quickly, while some
-conversion-related data is still being processed in the background. For more information, see "Asynchronous Conversion Attribution" on the [Availability of Reporting Data](../invest/availability-of-reporting-data.md) page.
+Conversions (and related data) in reports are processed asynchronously. As a result, reports are available more quickly, while some conversion-related data is still being processed in the background. For more information, see "Asynchronous Conversion Attribution" on the [Availability of Reporting Data](../invest/availability-of-reporting-data.md) page.
 
 ## Reporting best practices
 

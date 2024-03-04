@@ -76,7 +76,7 @@ This array shows you the line item associations. To associate a pixel to a line 
 
 Each object in the `piggyback_pixels` array contains the following fields.
 
-When adding piggyback pixels, please keep the following in mind:
+When adding piggyback pixels, keep the following in mind:
 
 - Image pixels can only piggyback off other image pixels, and JavaScript pixels can only piggyback other JavaScript pixels.
 - Image pixels can only have one piggyback pixel. If you need to piggyback multiple pixels, be sure to use a JavaScript pixel.

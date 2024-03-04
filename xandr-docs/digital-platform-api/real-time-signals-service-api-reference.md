@@ -55,7 +55,7 @@ The following segment fields are common to the services listed on this page, and
 | `POST` | `/members/{:member_id}/olcs/{:olc}` | Add or replace segment/value pair associated with an individual OLC code. |
 | `DELETE` | `/members/{:member_id}/olcs/{:olc}` | Removes specified segments for a given OLC code. |
 
-### Parameters
+### Parameters (OLC)
 
 | Name | Data Type | Description | Parameter Type | Required On | Example |
 |:---|:---|:---|:---|:---|:---|
@@ -64,7 +64,7 @@ The following segment fields are common to the services listed on this page, and
 | `segment_list` | array of ints | A list of segment IDs | JSON body | `DELETE` | `[123, 456]` |
 | `segval_list` | array of objects | A list of segments with associated values | JSON body | `POST` | `[{"seg_id":123,"seg_ttl":"25s","seg_val":345}]` |
 
-### Response fields
+### Response fields (OLC)
 
 | Name | Data Type | Description | Returned On | Example |
 |:---|:---|:---|:---|:---|
@@ -97,7 +97,7 @@ The following segment fields are common to the services listed on this page, and
 
 ## Geo administrative targeting
 
-### REST API (Country-regions)
+### REST API (country-regions)
 
 | Method | Endpoint | Description |
 |:---|:---|:---|
@@ -105,7 +105,7 @@ The following segment fields are common to the services listed on this page, and
 | `POST` | `/members/{:member_id}/countries/{:country}/regions/{:region}` | Add or replace segment/value pair associated with a region of country. |
 | `DELETE` | `/members/{:member_id}/countries/{:country}/regions/{:region}` | Removes specified segments for a region of a country. |
 
-### Geo administrative targeting: Parameters
+### Parameters (country-regions)
 
 | Name | Data Type | Description | Parameter Type | Required On | Example |
 |:---|:---|:---|:---|:---|:---|
@@ -115,7 +115,7 @@ The following segment fields are common to the services listed on this page, and
 | `segval_list` | array of objects | A list of segments with associated values | JSON body | `POST` | `[ { "seg_id": 123, "seg_ttl": "25s", "seg_val": 345 } ]` |
 | `segment_list` | Array of Segment IDs | List of segment IDs | JSON Body | `DELETE` | `[123, 456]` |
 
-### Response
+### Response (country-regions)
 
 | Name | Data Type | Description | Returned On | Example |
 |:---|:---|:---|:---|:---|
@@ -139,7 +139,7 @@ The following segment fields are common to the services listed on this page, and
 }
 ```
 
-### Geo administrative targeting: HTTP status codes
+### HTTP status codes (country-regions)
 
 | Status Code | Returned On | Reason | Headers | Header Description |
 |:---|:---|:---|:---|:---|
@@ -269,15 +269,15 @@ The following segment fields are common to the services listed on this page, and
 | Name | Data Type | Description | Parameter Type | Required On | Example |
 |:---|:---|:---|:---|:---|:---|
 | `member_id` | long | Member ID | URL Path | All Methods | `123` |
-| `ip` | string | An individual IP address | URL Path | All Methods | `192.168.0.20` |
-| `segval_list` | array of objects | A list of segments with associated values | JSON body | `POST` | `[ { "seg_id": 123, "seg_ttl": "25s", "seg_val": 345 } ]` |
-| `segment_list` | Array of Segment IDs | A list of segment IDs | JSON Body | `DELETE` | `[123, 456]` |
+| `ip` | string | An individual IP address. | URL Path | All Methods | `192.168.0.20` |
+| `segval_list` | array of objects | A list of segments with associated values. | JSON body | `POST` | `[ { "seg_id": 123, "seg_ttl": "25s", "seg_val": 345 } ]` |
+| `segment_list` | Array of Segment IDs | A list of segment IDs. | JSON Body | `DELETE` | `[123, 456]` |
 
 ### Response (IP address)
 
 | Name | Data Type | Description | Returned On | Example |
 |:---|:---|:---|:---|:---|
-| `segments` | Array of objects | An array of segments (id: value pairs) | `GET` | See [example](#segments-response-example-ip-address). |
+| `segments` | Array of objects | An array of segments (id: value pairs). | `GET` | See [example](#segments-response-example-ip-address). |
 
 #### `segments` response example (IP address)
 
@@ -323,7 +323,7 @@ Target URL components with `"OR"` logic, with up to 3 paths.
 | Name | Data Type | Description | Parameter Type | Required On | Example |
 |:---|:---|:---|:---|:---|:---|
 | `member_id` | long | Member ID | URL Path | `POST`, `DELETE`, `GET` | `123` |
-| `path` | string | Partial URL<br>- A partial URL should contain only secondary and top level domains of the host section of the authority URL part, and up to 3 segments of the path URL part.<br>- A partial URL may only contain path components.<br>- Partial URLs support `"OR"` matching on paths. | Query string | `POST`, `DELETE`, `GET` | See [example](#path-example).<br>[mysampledomain.com/en](https://mysampledomain.com/en) will match both:<br>- [mysampledomain.com/en](https://mysampledomain.com/en)<br>- [mysampledomain.com/en/buyers](https://mysampledomain.com/en/buyers) |
+| `path` | string | Partial URL<br>- A partial URL should contain only secondary and top level domains of the host section of the authority URL part, and up to 3 segments of the path URL part.<br>- A partial URL may only contain path components.<br>- Partial URLs support `"OR"` matching on paths. | Query string | `POST`, `DELETE`, `GET` | See [example](#path-example).<br>`mysampledomain.com/en` will match both:<br>- `mysampledomain.com/en`<br>- `mysampledomain.com/en/buyers` |
 | `segval_list` | array of objects | A list of segments with associated values | JSON body | `POST`, `DELETE` | See [example](#segval_list-example). |
 | `segment_list` | Array of Segment IDs | A list of segment IDs | JSON Body | `DELETE` | `[123, 456]` |
 
@@ -451,7 +451,7 @@ Target Full URL with exact matching.
 ## Events - Instantly activated segments
 
 > [!NOTE]
-> This RTSS functionality is no longer actively supported and is slated to be **deprecated**. You may be able to get the same results from other Xandr products. Please contact your account manager for assistance.
+> This RTSS functionality is no longer actively supported and is slated to be **deprecated**. You may be able to get the same results from other Xandr products. Contact your account manager for assistance.
 
 Events are segments which could become active instantly across all data centers, and expire within a specified period. **Events are not associated with any targeting.**
 
@@ -591,8 +591,8 @@ The maximum size for a single upload may not exceed 256 MB. Ensure that you comp
 | `1` | string | Country: Region<br>- `"US"`<br>- `"US:KY"` |
 | `2` | string | Geo hashcode in OLC format:<br>[OLC spec](https://openlocationcode.com/) |
 | `3` | string | Postal code<br>**Note:** Postal codes targets will be **deprecated** soon.<br>`"11235"` |
-| `4` | string | Partial URL (up to 3 paths)<br>- [mysampledomain.com](https://mysampledomain.com/)<br>- [mysampledomain.com/en/buyers](https://mysampledomain.com/en/buyers)<br>- [mysampledomain.com/en/buyers/page](https://mysampledomain.com/en/buyers/page) |
-| `6` | string | Full URL<br>[mysampledomain.com/many/paths/are/supported](https://mysampledomain.com/many/paths/are/supported) |
+| `4` | string | Partial URL (up to 3 paths)<br>- `mysampledomain.com`<br>- `mysampledomain.com/en/buyers`<br>- `mysampledomain.com/en/buyers/page` |
+| `6` | string | Full URL<br>`mysampledomain.com/many/paths/are/supported` |
 
 ##### `action` column
 
@@ -613,7 +613,7 @@ When only the `segment_id` is provided, RTSS will assume that segment value is `
 
 `segment_ttl` must be an integer, indicating TTL duration in **seconds** only.
 
-**Example CSV file**
+###### Example CSV file
 
 The header row in the sample file below can be excluded. The bulk upload service will accept files with or without a header.
 
@@ -632,14 +632,14 @@ keytype,key,action,segment
 
 #### Example `POST` method
 
-**`POST` request using cURL**
+##### `POST` request using cURL
 
 ```
 curl -X POST --header 'Content-Type: multipart/form-data' \
 -F file=@"member-1-test.csv.gz"  'https://api.appnexus.com/apd-api/members/1/uploads'
 ```
 
-**JSON response**
+##### JSON response
 
 Server responds with the job ID.
 
@@ -649,13 +649,13 @@ Server responds with the job ID.
 
 #### Example `GET` method
 
-**`GET` request using cURL**
+##### `GET` request using cURL
 
 ```
 curl https://api.appnexus.com/apd-api/members/1/uploads?id=a04d88c3-8cc7-11e6-868d-7cd30ab7f6e2
 ```
 
-**JSON response**
+##### `GET`: JSON response
 
 Server responds with information about the job ID specified in the Query Parameters.
 

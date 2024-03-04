@@ -7,7 +7,7 @@ ms.custom: digital-platform-api
 
 # Check the audit status of an Outlook creative via the API
 
-Once you've added an Outlook creative, you can make a GET call to the [Creative Service](creative-service.md) to check where the creative is in Xandr's secure platform and Microsoft audits. For each audit, there are three possible statuses your creative can have:
+Once you've added an Outlook creative, you can make a `GET` call to the [Creative Service](creative-service.md) to check where the creative is in Xandr's secure platform and Microsoft audits. For each audit, there are three possible statuses your creative can have:
 
 | Field | Statuses |
 |:---|:---|

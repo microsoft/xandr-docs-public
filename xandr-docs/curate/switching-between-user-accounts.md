@@ -1,12 +1,12 @@
 ---
-title: Microsoft Curate - Switching Between User Accounts
+title: Microsoft Curate - Switching between User Accounts
 description: Learn how to use the account switcher to switch between user accounts.
 ms.date: 11/15/2023
 ---
 
 # Microsoft Curate - Switching between user accounts
 
-This will instruct you how use the account switcher to switch between user accounts.
+This will instruct you how to use the account switcher to switch between user accounts.
 
 Once signed in, you are assigned to your default account. To switch between user accounts, you must select the user account you wish to switch into from the **account switcher**.
 

@@ -28,9 +28,9 @@ This admin-only service can be used to map blocks of IP addresses to internet pr
 | Field | Type | Description |
 |:---|:---|:---|
 | `id` | int | The ID of the carrier-netblock mapping.<br>**Default:** Auto-generated number.<br>**Required On:** `PUT` |
-| `carrier_id` | int | The ID of the internet carrier. You can use the [Carrier Service](../bidders/carrier-service.md) to see the list of available carriers and their ID's.<br>**Required On:** `POST` |
-| `start_ip` | int | The IP address at the start of the range of IP addresses you wish to map. This value must be entered as a flattened integer. Please convert the IP address using a tool such as [this](https://www.smartconversion.com/unit_conversion/IP_Address_Converter.aspx), in order to get a flattened integer to `POST` or `PUT`.<br>**Required On:** `POST` |
-| `end_ip` | int | The IP address at the end of the range of IP addresses you wish to map. Please convert the IP address using a tool such as [this](https://www.smartconversion.com/unit_conversion/IP_Address_Converter.aspx), in order to get a flattened integer to `POST` or `PUT`.<br>**Required On:** `POST` |
+| `carrier_id` | int | The ID of the internet carrier. You can use the [Carrier Service](carrier-service.md) to see the list of available carriers and their ID's.<br>**Required On:** `POST` |
+| `start_ip` | int | The IP address at the start of the range of IP addresses you wish to map. This value must be entered as a flattened integer. Convert the IP address using a tool such as [this](https://www.smartconversion.com/unit_conversion/IP_Address_Converter.aspx), in order to get a flattened integer to `POST` or `PUT`.<br>**Required On:** `POST` |
+| `end_ip` | int | The IP address at the end of the range of IP addresses you wish to map. Convert the IP address using a tool such as [this](https://www.smartconversion.com/unit_conversion/IP_Address_Converter.aspx), in order to get a flattened integer to `POST` or `PUT`.<br>**Required On:** `POST` |
 | `notes` | string | Any notes relevant to the carrier-netblock mapping.<br>**Default:** `null` |
 | `last_activity` | date | The date and time on which the carrier-netblock mapping was last modified. |
 

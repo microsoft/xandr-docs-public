@@ -15,6 +15,6 @@ Before you can set up deals with a DSP's buyer seats, the DSP needs to register 
 - DSPs can register new seats whenever they want using the [Seat service](../bidders/seat-service.md).
 - The first time a new seat ID is used to bid on inventory, Microsoft Advertising registers it automatically.
 
-If a DSP hasn't registered a seat or submitted bids with it before, you won't see the seat when you're trying to set up a deal. If you experience this problem, please reach out to the buyer and have them work with the DSP to get the seat registered with Microsoft Advertising.
+If a DSP hasn't registered a seat or submitted bids with it before, you won't see the seat when you're trying to set up a deal. If you experience this problem, reach out to the buyer and have them work with the DSP to get the seat registered with Microsoft Advertising.
 
 You may encounter seat IDs that are not yet eligible for creating deals. To ensure a successful deal, check the reference table in [External DSPs Using Buyer Seat IDs](./external-dsps-using-buyer-seat-ids.md).

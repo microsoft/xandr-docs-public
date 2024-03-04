@@ -49,7 +49,7 @@ Some users are reporting that the app that they are using for MFA authentication
 
 It's possible that some users are interpreting the concept of MFA's one-time passcode as "I only need to do it once and after that I can delete the app". However, this is not the case.
 
-**Solution**: Users need to have an MFA authentication app (for example, Google Authenticator, Auth0 Guardian, etc.) permanently install on one of their mobile devices for as long as they need to continue on accessing a Microsoft Advertising application that requires MFA as part of the authentication process. If you have deleted the app, the way to resolve this is to request for Product Support to reset MFA for the affected users. Please contact Product Support with the email address for the affected user.
+**Solution**: Users need to have an MFA authentication app (for example, Google Authenticator, Auth0 Guardian, etc.) permanently install on one of their mobile devices for as long as they need to continue on accessing a Microsoft Advertising application that requires MFA as part of the authentication process. If you have deleted the app, the way to resolve this is to request for Product Support to reset MFA for the affected users. Contact Product Support with the email address for the affected user.
 
 ## Multiple MFA accounts in the MFA authentication app
 

@@ -7,8 +7,7 @@ ms.custom: digital-platform-api
 
 # Clicktrackers feed
 
-You can use [click trackers](click-tracker-service.md) to track user clicks on creatives served by third-party ad servers (rather than by
-Xandr). This reporting feed provides data on those external clicks.
+You can use [click trackers](click-tracker-service.md) to track user clicks on creatives served by third-party ad servers (rather than by Xandr). This reporting feed provides data on those external clicks.
 
 > [!NOTE]
 > Each row returned is for a single click event.

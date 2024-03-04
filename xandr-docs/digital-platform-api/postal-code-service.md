@@ -7,9 +7,7 @@ ms.custom: digital-platform-api
 
 # Digital Platform API - Postal Code service
 
-The Postal Code Service is a read-only service. This service can be used to retrieve postal code IDs, that are registered with
-Xandr for geography targeting purposes when setting up a or for configuring reports that support that dimension. The main use case for the Postal Code Service is to keep your postal code database up-to-date with Xandr's. To access the changes that were made to
-the database since the last call that you made to the service, make sure to use the `min_last_modified` field in your call.
+The Postal Code Service is a read-only service. This service can be used to retrieve postal code IDs, that are registered with Xandr for geography targeting purposes when setting up a or for configuring reports that support that dimension. The main use case for the Postal Code Service is to keep your postal code database up-to-date with Xandr's. To access the changes that were made to the database since the last call that you made to the service, make sure to use the `min_last_modified` field in your call.
 
 > [!WARNING]
 > Due to the large number of `GET` calls you would need to make to obtain a complete list of postal codes (as a result of pagination), we recommend the following:

@@ -7,8 +7,7 @@ ms.custom: digital-platform-api
 
 # Prebid Demand Partner Params service
 
-The Prebid Demand Partner Params Service allows users to view, add, remove, enable, and disable specific partners on PSP configurations.
-Configurations are managed via the [Config Service](config-service.md). A demand partner must be enabled in the [Cross-Partner Settings Service](cross-partner-settings-service.md) to receive requests.
+The Prebid Demand Partner Params Service allows users to view, add, remove, enable, and disable specific partners on PSP configurations. Configurations are managed via the [Config Service](config-service.md). A demand partner must be enabled in the [Cross-Partner Settings Service](cross-partner-settings-service.md) to receive requests.
 
 > [!NOTE]
 > While a partner may be disabled via this service at the configuration level, any future changes to the partner in the [Cross-Partner Settings Service](cross-partner-settings-service.md) will override individual configurations and enable/disable the partner across all configurations. Details on the parameters supported by each partner can be found in the [Demand Partner Schema Service](demand-partner-schema-service.md).
@@ -30,7 +29,7 @@ Returns all or a specific Prebid demand partner config params for the caller's m
 
 ### Example call using cURL to return a specific config
 
-Append the config id as the last component of the URL.
+Append the config ID as the last component of the URL.
 
 ```
 curl --header "Content-Type: application/json" https://api.appnexus.com/prebid/prebid-demand-partner-params/{prebidSettingsId}
@@ -54,13 +53,13 @@ A successful response will return JSON containing all the Prebid configs for the
 |:---|:---|:---|
 | `deleted` | boolean | Indicates whether the params object for this partner has been deleted. |
 | `enabled` | boolean | Indicates if the Prebid demand partner params are enabled or disabled. |
-| `id` | integer | The caller's id. |
+| `id` | integer | The caller's ID. |
 | `last_modified` | string | The most recent modification date of the demand partner config params. |
 | `last_modified_by` | string | The person who made the last modifications to the demand partner params. |
-| `member_id` | integer | The caller's member id. |
+| `member_id` | integer | The caller's member ID. |
 | `name` | object | The name of the demand partner. |
-| `params` | object | An object containing the parameters supported by the partner and the mapped values. Supported parameters [can be found here](demand-partner-schema-service.md). |
-| `prebid_settings_id` | integer | The Prebid setting object's id. |
+| `params` | object | An object containing the parameters supported by the partner and the mapped values. Supported parameters can be found [here](demand-partner-schema-service.md). |
+| `prebid_settings_id` | integer | The Prebid setting object's ID. |
 
 ### Response example
 
@@ -103,9 +102,9 @@ curl -d @demand-partner-params.json -X POST --header "Content-Type: application/
 |:---|:---|:---|:---|
 | `name` | string | Required | The name of the Prebid demand partner. |
 | `enabled` | boolean | Required | Indicates if the Prebid demand partner params are enabled or disabled. |
-| `member_id` | integer | Required | The caller's member id. |
-| `params` | object | Required | An object containing the parameters supported by the partner and the mapped values. Supported parameters [can be found here](demand-partner-schema-service.md). |
-| `prebid_settings_id` | integer | Required | The `prebid_settings` id. |
+| `member_id` | integer | Required | The caller's member ID. |
+| `params` | object | Required | An object containing the parameters supported by the partner and the mapped values. Supported parameters can be found [here](demand-partner-schema-service.md). |
+| `prebid_settings_id` | integer | Required | The `prebid_settings` ID. |
 
 ### `POST`: Example response
 
@@ -130,8 +129,7 @@ curl -d @demand-partner-params.json -X POST --header "Content-Type: application/
 
 ## `PUT`
 
-Updates an existing Prebid demand partner param. Include the `prebidDemandPartnerParamId` as the last component of the URL path. Pass
-the update information as JSON in the body of the request.
+Updates an existing Prebid demand partner param. Include the `prebidDemandPartnerParamId` as the last component of the URL path. Pass the update information as JSON in the body of the request.
 
 ### `PUT`: Example call using cURL
 

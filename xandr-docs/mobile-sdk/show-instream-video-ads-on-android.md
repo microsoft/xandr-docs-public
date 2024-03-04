@@ -23,11 +23,11 @@ repositories {
      mavenCentral()
 }
 dependencies {
-     compile  'com.appnexus.opensdk:appnexus-instreamvideo:[5,6)'
+     compile  'com.appnexus.opensdk:appnexus-instreamvideo:[8,9)'
 }
 ```
 
-If you prefer to download the source code, you [can get the latest release from Github](https://github.com/appnexus/mobile-sdk-android/releases/tag/8.9).
+<!-- If you prefer to download the source code, you [can get the latest release from Github](https://github.com/appnexus/mobile-sdk-android/releases/tag/8.9). -->
 
 ## Step 2: Cache the video Ad
 

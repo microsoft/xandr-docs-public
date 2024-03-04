@@ -10,7 +10,7 @@ ms.custom: digital-platform-api
 This read-only service allows you to search for **active** creatives ased on specific criteria, such as audit status, ID, size, etc. You may then wish to use these creative IDs in the [Ad Profile Service](ad-profile-service.md). To add creatives to the system, see the [Creative Service](creative-service.md).
 
 > [!NOTE]
-> Since this service searches all active creatives on the AppNexus platform (not just your own), a search that is too broad might cause an error. To ensure that you get results, please narrow your search as much as possible.
+> Since this service searches all active creatives on the AppNexus platform (not just your own), a search that is too broad might cause an error. To ensure that you get results, narrow your search as much as possible.
 
 This API also enables certain native fields searchable through creative search.
 
@@ -50,10 +50,10 @@ The search will return a creative if the search term matches any text in any of 
 | `media_subtype_ids` | array of integers | Search for creatives by their media subtype via ID. You can use the [Media Subtype Service](media-subtype-service.md) to look up the desired ID's.<br>**Sortable:** Yes, use `"media_subtype_id"` in query string. |
 | `media_url` | string | Search for a creative by its URL.<br>**Sortable:** Yes |
 | `media_content` | string | Search for a creative by the data in its original_content field (see [Creative Service](creative-service.md)).<br>**Sortable:** No |
-| `sizes` | array of strings | Search for creatives by their sizes, for example, "728x90".<br>**Sortable:** Yes, use "width" and "height" in query string. |
+| `sizes` | array of strings | Search for creatives by their sizes, for example, "728x90".<br>**Sortable:** Yes, use `"width"` and `"height"` in query string. |
 | `brand_ids` | array of integers | Search for creatives by the IDs of their brands.<br>**Sortable:** No |
-| `member_ids` | array of integers | **Must be used with `member_action`.** Search for creatives by the IDs of their members.<br>**Sortable:** Yes, use "member_id" in query string. |
-| `member_action` | enum | **Must be used with `member_ids`.** If this is set to "exclude", you exclude the members specified in `member_ids` from the search. Otherwise, the specified IDs are included.<br>**Sortable:** No |
+| `member_ids` | array of integers | **Must be used with `member_action`.** Search for creatives by the IDs of their members.<br>**Sortable:** Yes, use `"member_id"` in query string. |
+| `member_action` | enum | **Must be used with `member_ids`.** If this is set to `"exclude"`, you exclude the members specified in `member_ids` from the search. Otherwise, the specified IDs are included.<br>**Sortable:** No |
 | `template_id` | int | Search for creatives by their creative template IDs.<br>**Sortable:** Yes |
 | `size_in_bytes` | string | **Not a filter.** Sort results in ascending/descending size order.<br>**Sortable:** Yes |
 | `click_url` | string | **Not a filter.** Sort results in ascending/descending alphabetical click URL order.<br>**Sortable:** Yes |

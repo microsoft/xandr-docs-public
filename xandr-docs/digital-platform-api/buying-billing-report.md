@@ -16,8 +16,7 @@ For instructions on retrieving a report, see [Report Service](report-service.md)
 
 ## Time frame
 
-The `report_interval` field in the JSON request can be set to one of the
-following:
+The `report_interval` field in the JSON request can be set to one of the following:
 
 - last_hour
 - today
@@ -102,7 +101,7 @@ Data retention period for this report is 1095 days.
 
 ### Create the JSON-formatted report request
 
-The JSON file should include the `report_type` `"buyer_invoice_report"`, as well as the columns (dimensions and metrics) and report_interval that you want to retrieve. You can also filter for specific dimensions, define granularity (year, month, day), and specify the format in which the data should be returned (csv, excel, or html). For a full explanation of fields that can be included in the JSON file, see the [Report Service](report-service.md).
+The JSON file should include the `report_type` `"buyer_invoice_report"`, as well as the columns (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`year`, `month`, `day`), and specify the format in which the data should be returned (`csv`, `excel`, or `html`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](report-service.md).
 
 ```
 $ cat buyer_invoice_report.json
@@ -123,7 +122,7 @@ $ cat buyer_invoice_report.json
 }
 ```
 
-### `POST` the request to the Reporting Service specifying a member ID by replacing INSERT_DESIRED_MEMBER_ID
+### `POST` the request to the Reporting Service specifying a member ID by replacing `INSERT_DESIRED_MEMBER_ID`
 
 ```
 $ curl -b cookies -c cookies -X POST -d @buyer_invoice_report.json 'https://api.appnexus.com/report?member_id=INSERT_DESIRED_MEMBER_ID'
@@ -142,8 +141,7 @@ $ curl -b cookies -c cookies -X POST -d @buyer_invoice_report.json 'https://api.
 
 ### `GET` the report status from the Report Service
 
-Make a `GET` call with the Report ID to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is
-`"ready"`. Then use the **report-download** service to save the report data to a file, as described in the next step.
+Make a `GET` call with the Report ID to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is `"ready"`. Then use the **report-download** service to save the report data to a file, as described in the next step.
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/report?id=39c4855a07e92433947886b5aabd267d'

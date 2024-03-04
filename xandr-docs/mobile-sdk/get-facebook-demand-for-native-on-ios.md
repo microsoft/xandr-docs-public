@@ -10,14 +10,15 @@ ms.date : 10/28/2023
 This document describes the process for retrieving native ad assets to display in Facebook's Audience Network SDK.
 
 > [!NOTE]
-> This SDK requires MacOS X 10.7+ and Xcode version 6.0+.
+> This SDK requires Xcode version 15.0 or higher and your app should target iOS version 12.0 or higher.
 
 ## Ensure that the proper SDKs are installed
 
-The Xandr SDK and Xandr-FAN-Demand Package will need to be installed. There are two ways to install our SDK:
+The Xandr SDK and Xandr-FAN-Demand Package will need to be installed. Use [CocoaPods](https://cocoapods.org/).
+<!-- There are two ways to install our SDK:
 
 1. Download and unzip the latest release of our SDK from our [Github Releases](https://github.com/appnexus/mobile-sdk-ios/releases/latest) page. If you don't want the binary release, you can clone the source code from our [Github repo](https://github.com/appnexus/mobile-sdk-ios) and build it yourself. Drag and drop the FacebookCSRAdapter folder into Xcode Project.
-1. Use [CocoaPods](https://cocoapods.org/).
+1. Use [CocoaPods](https://cocoapods.org/). -->
 
 Once you have CocoaPods installed.
 
@@ -27,11 +28,11 @@ Once you have CocoaPods installed.
     pod init
     ```
 
-1. Using a text editor, open the newly created podfile. Set the platform to 10.0 (AppNexus always supports two iOS releases back from the current release) and add pod 'AppNexusSDX' to the target.
+1. Using a text editor, open the newly created podfile. Set the platform to 12.0 (AppNexus always supports two iOS releases back from the current release) and add pod 'AppNexusSDX' to the target.
 
     ``` 
     # iOS: Podfile config to include our SDK
-    platform :ios, '10.0'
+    platform :ios, '12.0'
          
     project 'SampleApp'
          

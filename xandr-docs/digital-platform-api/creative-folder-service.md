@@ -7,8 +7,7 @@ ms.custom: digital-platform-api
 
 # Creative Folder service
 
-The creative folder service allows you to group creatives for organizational purposes. You can add multiple creatives at once to a
-folder as you create it.
+The creative folder service allows you to group creatives for organizational purposes. You can add multiple creatives at once to a folder as you create it.
 
 ## REST API
 
@@ -154,7 +153,7 @@ $ curl -b cookies -c cookies -X POST -d @creative-folder 'https://api.appnexus.c
 
 ### Add a creative to an existing creative folder
 
-Be sure to include append=true to your query statement. If you leave this off, all existing creatives in the folder will be overwritten.
+Be sure to include `append=true` to your query statement. If you leave this off, all existing creatives in the folder will be overwritten.
 
 ```
 $ cat creative-folder

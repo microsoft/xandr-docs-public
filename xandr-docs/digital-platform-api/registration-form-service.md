@@ -45,7 +45,7 @@ return response['location'];
 
 ### Upload a registration form and associate the form with an insertion order
 
-**Upload a registration form**
+#### Upload a registration form
 
 In this example, `NYS_Registration_Form_My_Favorite_Candidate.pdf` is the New York State disclosure form for the ad purchase by the independent expenditure committee.
 
@@ -61,7 +61,7 @@ The response includes the following:
 }
 ```
 
-**Associate the form with an insertion order**
+#### Associate the form with an insertion order
 
 In this example, the insertion order used for political advertisements is `5432`.
 

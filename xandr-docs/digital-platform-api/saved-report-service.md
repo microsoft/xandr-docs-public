@@ -7,8 +7,7 @@ ms.custom: digital-platform-api
 
 # Digital Platform API - Saved Report service
 
-The Saved Report service can be used to create new reports which are saved and can be retrieved at any time. They are useful for reports
-which are executed frequently. The Saved Report Service acts as a wrapper around the [Report Service](report-service.md).
+The Saved Report service can be used to create new reports which are saved and can be retrieved at any time. They are useful for reports which are executed frequently. The Saved Report Service acts as a wrapper around the [Report Service](report-service.md).
 
 > [!NOTE]
 > There is a limit of 100K rows per report.
@@ -56,11 +55,11 @@ A few facts to keep in mind about saved reports:
 
 ## Examples
 
-### Adding a new saved report for a publisher
+### Add a new saved report for a publisher
 
 1. Construct a report JSON (as described in [Report Service - Step 1](./report-service.md#step-1-create-a-json-formatted-report-request)).
 1. `POST` the JSON to the saved-report service.
-1. Store the id that is returned.
+1. Store the ID that is returned.
 
 ```
 $ cat saved-report
@@ -118,7 +117,10 @@ $ curl -b cookies -c cookies -X post --data-binary @saved-report 'https://api.ap
 }
 ```
 
-### Executing and retrieving a saved report (you must perform this step every time you wish to retrieve an updated report)
+### Execute and retrieve a saved report
+
+> [!NOTE]
+> You must perform this step every time you wish to retrieve an updated report.
 
 1. `POST` to the report service with the id from above, and store the returned `report_id`.
 1. Check the report's status with a `GET` to the report service with the `report_id` (as described in [Report Service - Step 3](./report-service.md#step-3-get-the-report-status-from-the-report-service)).

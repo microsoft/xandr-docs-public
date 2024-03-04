@@ -15,23 +15,23 @@ A debug auction simulates a real auction without actually logging or serving any
 A debug auction can be run using the following calls:
 
 > [!NOTE]
-> All debug auction and browser cookie override calls must use secure https protocols. Requests made using HTTP will not generate valid results.
+> All debug auction and browser cookie override calls must use secure HTTPS protocols. Requests made using HTTP will not generate valid results.
 
-**Production/Beta environment**
+### Production/Beta environment
 
 ```
 https://ib.adnxs.com/tt?id=[TAG_ID]&size=[WIDTH]x[HEIGHT]&debug_member=[BUYER_MEMBER_ID]&dongle=[PASSWORD] 
 ```
 
-**Client-testing environment**
+### Client-testing environment
 
 ```
 https://ib-test.adnxs.com/tt?id=[TAG_ID]&size=[WIDTH]x[HEIGHT]&debug_member=[BUYER_MEMBER_ID]&dongle=[PASSWORD] 
 ```
 
-**Video creatives**
+### Video creatives
 
-Make sure to use a **ptv** tag instead of a **tt** tag while running a debug auction for video creatives.
+Make sure to use a `ptv` tag instead of a `tt` tag while running a debug auction for video creatives.
 
 ```
 https://ib.adnxs.com/ptv?id=[TAG_ID]&debug_member=[BUYER_MEMBER_ID]&dongle=[PASSWORD] 
@@ -50,7 +50,7 @@ https://ib.adnxs.com/ptv?id=[TAG_ID]&debug_member=[BUYER_MEMBER_ID]&dongle=[PASS
 
 | Parameter |  |
 |:---|:---|
-| `bidder` | The bidder ID. Microsoft Curate uses bidder ID 2 in production |
+| `bidder` | The bidder ID. Microsoft Curate uses bidder ID `2` in production |
 | `referrer` | Simulate the referring URL from which the ad call is coming |
 | `prefer_learn` | Set to `"true"` to force a prefer learn auction |
 | `position` | Overrides fold position. Can be set to `"above"` or `"below"` |
@@ -67,7 +67,7 @@ https://ib.adnxs.com/ptv?id=[TAG_ID]&debug_member=[BUYER_MEMBER_ID]&dongle=[PASS
 | `region` | Overrides a cookie's current region (state) geo code with whatever is passed as a value. For example: `"region=NY"`. See [here](https://www.maxmind.com/download/geoip/misc/region_codes.csv) for a complete list of region (state) geo codes. |
 | `city` | Overrides a cookie's current city geo code with whatever is passed as a value. For example: `"city=New York"`. See [here](https://developers.google.com/google-ads/api/data/geotargets) for a complete list of city geo codes. |
 | `postal` | Overrides a cookie's current postal code with whatever is passed as a value. For example: `"postal=10010"`. See [here](https://worldpostalcode.com/) to find a particular postal code. |
-| `DMA` | Overrides a cookie's current Designated Market Area (DMA) geo code with whatever is passed as a value. For example: `"DMA=501"`. A DMA divides geographical regions by their television and radio markets. See [here](https://www.nielsen.com/dma-regions/) for info on how to obtain a region's DMA code. |
+| `DMA` | Overrides a cookie's current Designated Market Area (DMA) geo code with whatever is passed as a value. For example: `"DMA=501"`. A DMA divides geographical regions by their television and radio markets. See [here](https://www.nielsen.com/dma-regions/) for information on how to obtain a region's DMA code. |
 
 > [!NOTE]
 > If you are trying to spoof a particular region or city, you must include the most general to most specific geographically. For city targeting, you need to include the country, region (state), and city. For example:` &country=US&region=NY&city=New York`. Remember to type out the full city name.
@@ -88,7 +88,7 @@ https://ib.adnxs.com/tt?id=3457&size=728x90&dongle=MyPassWord&debug_member=999&r
 
 ## Override Microsoft Advertising browser cookie
 
-When debugging a particular ad campaign, it may help that your browser's cookie contains or excludes the specific user criteria being targeting (e.g. country or segment). Please see the below table for information on how to view/modify your cookie.
+When debugging a particular ad campaign, it may help that your browser's cookie contains or excludes the specific user criteria being targeting (e.g. country or segment). See the below table for information on how to view/modify your cookie.
 
 > [!IMPORTANT]
 > If using the cookie viewer, you must include your member ID and dongle. This ensures you will only see the segments that belong to your member. You can click on the **Debug** button on any placement and to see your member ID and dongle in the querystring.
@@ -109,11 +109,11 @@ When debugging a particular ad campaign, it may help that your browser's cookie 
 
 :::image type="content" source="media/debug-auction-payment-rules.png" alt-text="Screenshot of the debug auction log showing the payment rules details.":::
 
-Microsoft Advertising's bidder gives more detailed debug text, beginning with "Debug text from bidder 2" (live). This output includes information such as the bidder version, the region info., and user info. Excerpts from a live debug auction are below:
+Microsoft Advertising's bidder gives more detailed debug text, beginning with "Debug text from bidder 2" (live). This output includes information such as the bidder version, the region information, and user information. Excerpts from a live debug auction are below:
 
 :::image type="content" source="media/debug-auction-geo-b.png" alt-text="Screenshot of the debug auction log showing more detailed debug text.":::
 
-This debug info. continues, including information such as the segments that the user is in and other relevant objects.
+This debug information continues, including information such as the segments that the user is in and other relevant objects.
 
 :::image type="content" source="media/debug-auction-segments.png" alt-text="Screenshot of the debug auction log showing the segment the user is in and other details.":::
 
@@ -124,7 +124,7 @@ The debug auction then prints a table with the headings of Advertiser, Line Item
 
 After all ad campaigns are evaluated, you will see the summary table.
 
-:::image type="content" source="media/debug-auction-summary-table.png" alt-text="Screenshot of the summary table after evaluating the ad campaigns.":::
+:::image type="content" source="media/debug-auction-summary-table.png" alt-text="Screenshot of the summary table after the ad campaigns are evaluated.":::
 
 You will also see the performance summary.
 
@@ -236,9 +236,9 @@ Finally, we show the highest net bid, the member, and creative that would have s
 
 In addition to debug auctions, which simulate real auctions without logging or serving ads, you can also run a test auction. Test auctions are designed to allow clients to test if their ads are being delivered as expected and verify that everything is configured correctly.
 
-Like a debug auction, in a test auction Microsoft Advertising does not transact the impression; no one will be paid or billed, nothing is logged, and no ads will be served. In addition, in a test auction, the actual content of the ad being sent is ignored; even if a banned creative is sent, a test auction will not result in an IP being blocked.
+Like a debug auction, in a test auction, Microsoft Advertising does not transact the impression; no one will be paid or billed, nothing is logged, and no ads will be served. In addition, in a test auction, the actual content of the ad being sent is ignored; even if a banned creative is sent, a test auction will not result in an IP being blocked.
 
-To run a test auction, add the `test=1` parameter to an ad call; for example:
+To run a test auction, add the `test=1` parameter to an ad call, for example:
 
 ```
 https://ib.adnxs.com/tt?id=1234&test=1 

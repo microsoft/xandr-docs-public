@@ -12,5 +12,5 @@ This section provides instructions on integrating our Android SDK with your proj
 | Topics | Description |
 |---|---|
 | [Android SDK Initialization v8.0](android-sdk-initialization-v8-0.md) | Instructions for initializing our Android SDK v8.0 |
-| [Build the SDK from source](build-the-android-sdk-from-source.md) | Instructions for building our Android SDK from source. |
 | [Integration Instructions](android-sdk-integration-instructions.md) | Instructions for integrating our SDK with your project. |
+<!--| [Build the SDK from source](build-the-android-sdk-from-source.md) | Instructions for building our Android SDK from source.| -->

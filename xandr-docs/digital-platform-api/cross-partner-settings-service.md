@@ -18,7 +18,7 @@ The Cross-Partner Settings Service allows for the retrieval and editing of the t
 | `PUT` | [https://api.appnexus.com/prebid/cross-partner-settings](https://api.appnexus.com/prebid/cross-partner-settings) | Update an existing cross-partner setting. Pass the updated cross-partner settings as JSON in the body of the request. |
 | `PATCH` | [https://api.appnexus.com/prebid/cross-partner-settings](https://api.appnexus.com/prebid/cross-partner-settings) | Update a portion of an existing cross-partner setting. Pass the updated cross-partner settings as JSON in the body of the request. |
 
-## GET
+## `GET`
 
 Get all the cross-partner settings. In order for the request to be valid user session data must be included.
 
@@ -26,7 +26,7 @@ Get all the cross-partner settings. In order for the request to be valid user se
 
 | Name | Type | Scope | Description |
 |:---|:---|:---|:---|
-| `member_id` | integer | Required | The member id the cross-partner settings will be associated with. |
+| `member_id` | integer | Required | The member ID the cross-partner settings will be associated with. |
 
 ### Example call using curl
 
@@ -63,9 +63,9 @@ curl data = ([
 | Name | Type | Scope | Description |
 |:---|:---|:---|:---|
 | `username` | string | Required | The name of the user making the request. |
-| `user_id` | integer | Required | The id of the user making the request. |
+| `user_id` | integer | Required | The ID of the user making the request. |
 | `user_type` | string | Required | The type of user making the request. For example, `"admin"`. |
-| `entity_id` | integer | Required | The id of the user's entity. |
+| `entity_id` | integer | Required | The ID of the user's entity. |
 | `initial_user_id` | integer | Required |  |
 | `initial_user_name` | string | Required |  |
 | `access_control` | object | Required |  |
@@ -92,11 +92,11 @@ A successful response will return JSON containing the cross-partner settings for
 >
 > 1. [Debug Auction timeout value](../monetize/understanding-the-debug-auction.md) (2000ms) \[if debug=1/true\].
 > 1. Ad Request `auction_timeout_ms` value set by the publisher.
->    1. For AMP, [See guidance here](../monetize/add-or-edit-psp-global-settings.md).
->    1. For Android, [See guidance here](../mobile-sdk/set-the-auction-timeout-for-android.md).
->    1. For iOS, [See guidance here](../mobile-sdk/set-the-auction-timeout-for-ios.md).
+>    1. For AMP, see guidance [here](../monetize/add-or-edit-psp-global-settings.md).
+>    1. For Android, see guidance [here](../mobile-sdk/set-the-auction-timeout-for-android.md).
+>    1. For iOS, see guidance [here](../mobile-sdk/set-the-auction-timeout-for-ios.md).
 > 1. Placement-level `auction_timeout_ms` value. Contact your Xandr Representative to set this value.
-> 1. PSP Global Settings (Cross Partner) Timeout value set by the publisher. [See guidance here](../monetize/add-or-edit-psp-global-settings.md).
+> 1. PSP Global Settings (Cross Partner) Timeout value set by the publisher. See guidance [here](../monetize/add-or-edit-psp-global-settings.md).
 > 1. Member-level `default_auction_timeout_ms` value for the given data center. Contact your Xandr Representative to set this value.
 > 1. Member-level `default_auction_timeout_ms` value. Contact your Xandr Representative to set this value.
 > 1. Xandr data center/global default (150ms).
@@ -146,11 +146,11 @@ Price granularity defines the CPM price buckets into which demand partner bids w
             
 ```
 
-## POST
+## `POST`
 
 Create a new cross-partner setting.
 
-### POST: Example call using curl
+### `POST`: Example call using curl
 
 ```
 {
@@ -180,7 +180,7 @@ Create a new cross-partner setting.
             
 ```
 
-### POST: Parameters
+### `POST`: Parameters
 
 | Name | Type | Scope | Description |
 |:---|:---|:---|:---|
@@ -188,7 +188,7 @@ Create a new cross-partner setting.
 | `member_id` | integer | Required | The member id the cross-partner settings will be associated with. |
 | `price_granularity` | object | Required | The price granularity settings. For more details on this object, see the [price granularity table](#post-price-granularity) below. |
 
-### POST: Price granularity
+### `POST`: Price granularity
 
 Price granularity defines the CPM price buckets into which demand partner bids will be grouped. For more information, see [Prebid documentation](https://docs.prebid.org/adops/price-granularity.html).
 
@@ -200,7 +200,7 @@ Price granularity defines the CPM price buckets into which demand partner bids w
 | `precision` | integer | Required | The number of decimal places to round the price. Two is the default, so a price of 2.1234 would be rounded to two decimal places, 2.12. |
 | `currency_code` | string | Required | String containing desired currency code for price bucket calculations. Must be a part of the [Xandr-approved list of currencies](../monetize/currency-support.md). |
 
-### POST: Example
+### `POST`: Example
 
 ```
 {

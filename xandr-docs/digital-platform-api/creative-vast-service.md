@@ -14,12 +14,11 @@ You can use the Creative Vast Service to add **video** or **audio** creatives to
 - You can attach a creative to a publisher for use as a default creative for a placement. You would then attach the creative to a placement via its ID using the [Placement Service](placement-service.md).
 
 > [!NOTE]
-> `video_attribute`is always required on the `creative-vast`endpoint.
+> `video_attribute` is always required on the `creative-vast`endpoint.
 
 ## Auditing
 
-Xandr works with members who care deeply about brand and reputation. For this reason, we are careful to ensure that the advertisements
-(creatives) that pass through our system are acceptable to all parties. For quality assurance, all creatives that serve on third-party inventory must be pre-registered using the Creative Service.
+Xandr works with members who care deeply about brand and reputation. For this reason, we are careful to ensure that the advertisements (creatives) that pass through our system are acceptable to all parties. For quality assurance, all creatives that serve on third-party inventory must be pre-registered using the Creative Service.
 
 - Creatives are identified by their media_url (either a third-party adserver URL or a Content Delivery Network URL for a Flash or video file).
 - Xandr checks media_urls on a regular basis. If a file disappears, the creative will be treated as unaudited.
@@ -63,29 +62,29 @@ Xandr works with members who care deeply about brand and reputation. For this re
 | `status` | object | The status of the creative describing if the creative is ready to serve. For more details, see [Status](#status) below. |
 | `click_track_result` | enum | The result of the click track test, a feature only available in the Console user interface. <br>Possible values: `"not_tested"`, `"passed"`, or `"failed"`.<br>**Required On:** `POST`/`PUT`, in query string, if the creative is attached to a publisher. |
 | `campaigns` | array of objects | The list of campaigns to which the creative is associated. For more details, see [Campaigns](#campaigns) below.<br><br>**Tip:** This field will only be returned if an `advertiser_id` is specified in the querystring. |
-| template | object | The creative template (Example: `template_id` 6439) for the creative's format and media type. The template includes code to control how the creative renders on web pages.<br>Possible values:<br> - Video creatives: **6439**<br> - Audio creatives: **38745**<br>**Required On:** `POST` |
+| `template` | object | The creative template (Example: `template_id` 6439) for the creative's format and media type. The template includes code to control how the creative renders on web pages.<br>Possible values:<br> - Video creatives: **6439**<br> - Audio creatives: **38745**<br>**Required On:** `POST` |
 | `media_url` | string (1000) | The URL of the creative - can be flash, HTML, javascript (see format). URL must exist and should point to a CDN hosted VAST XML file.<br>*This field only applies to third party creatives.*<br>**Default:** `"not_tested"` |
 | `media_url_secure` | string (1000) | The URL of the secure (HTTPS) creative - can be flash, HTML, javascript (see format) to be served on a secure ad call. URL must exist and should point to a CDN hosted VAST XML file.<br>*This field only applies to third party creatives.* |
 | `click_url` | string (2000) | The (optional) landing page URL for non-3rd party image and flash creatives.<br><br>**Note:** This value must begin with "http://" or "https://"<br>**Required On:** `POST`, if not using content. |
 | `file_name` | string (1000) | *This field does not apply to hosted video creatives.* |
-| `audit_status` | enum | The audit status of the creative. Possible values: `"no_audit"`, `"pending"`, `"rejected"`, or `"audited"`.<br><br>**Note:**<br> - If `allow_audit` is `false`, this field must be `"no_audit"`.<br> - If a creative is expired, you can reanimate it by changing this field. Setting it to `"pending"` will resubmit it for auditing. For changes that automatically resubmit the creative for auditing, see [Changes That Cause Re-Audit](#changes-that-cause-re-audit) below.<br>**Required On:** `POST`, if template is for the "image" format. |
+| `audit_status` | enum | The audit status of the creative. Possible values: `"no_audit"`, `"pending"`, `"rejected"`, or `"audited"`.<br><br>**Note:**<br> - If `allow_audit` is `false`, this field must be `"no_audit"`.<br> - If a creative is expired, you can reanimate it by changing this field. Setting it to `"pending"` will resubmit it for auditing. For changes that automatically resubmit the creative for auditing, see [Changes That Cause Re-Audit](#changes-that-cause-re-audit) below.<br>**Required On:** `POST`, if template is for the `"image"` format. |
 | `audit_feedback` | string | The creative auditing team can pass messages about a creative in this field.<br>**Read Only.** |
 | `allow_audit` | Boolean | If `true`, the creative will be submitted for auditing. If `false`, the creative will not be submitted. Unaudited creatives can only run on a network's managed inventory.<br><br>**Note:**<br> - If `audit_status` is `"no_audit"`, this field must be `"false"`.<br> - If your member is not yet active, you can add creatives, but they will not be submitted for audit (`allow_audit` will be false). Once your member has been activated, if you want these creatives to be audited, you must update the creatives and set `allow_audit` to `true`.<br>**Default:** `"pending"` |
 | `ssl_status` | enum | The ssl (HTTPS) status of the creative. Only creatives with ssl_status = approved will be eligible to serve on secure inventory.<br><br>**Note:**<br>If a creative fails the ssl Sherlock audit, you can submit it for a retest (once you've fixed the downstream non-secure content) by changing this field to `"pending"`. Allowed values:<br> - `"disabled"`<br> - `"pending"`<br> - `"approved"`<br> - `"failed"`<br>**Default:** `"disabled"` |
 | `allow_ssl_audit` | Boolean | If `true`, the creative will be submitted for secure (HTTPS) auditing. If `false`, the creative will not be submitted. If `true`, either `media_url_secure` or `content_secure` is required as well.<br>**Default:** `"disabled"` |
-| `google_audit_status` | enum | **Deprecated.** Please see `adx_audit` instead. |
-| `google_audit_feedback` | string | **Deprecated.** Please see `adx_audit` instead. |
+| `google_audit_status` | enum | **Deprecated.** See `adx_audit` instead. |
+| `google_audit_feedback` | string | **Deprecated.** See `adx_audit` instead. |
 | `msft_audit_status` | enum | **Deprecated.** |
 | `msft_audit_feedback` | string | **Deprecated.** |
 | `is_self_audited` | Boolean | If `true`, the creative is self-audited and thus will not go through platform (Xandr) audit. The creative can only serve on inventory that accepts your self-classified creative or on inventory that accepts unaudited creatives.<br>**Default:** `false` |
 | `is_expired` | Boolean | If your creative (1) has not run and (2) has not been modified in 45 days, then it will be automatically marked expired and will not serve on any inventory.<br> - Expired creatives must be reaudited to run on third-party inventory. To unexpire a creative for third-party inventory, set `audit_status` to `"pending"`.<br> - Expired creatives do not need to be reaudited to run on direct inventory. To unexpire a creative for direct inventory, set `audit_status` to `"no_audit"`.<br>**Default:** `false`<br>**Read Only.** |
 | `is_prohibited` | Boolean | If Sherlock flags the creative for having malware or loading blocked domains, this is set to true to prevent the creative from serving.<br>**Default:** `false`<br>**Read Only.** |
 | `is_hosted` | Boolean | If `true`, the creative is hosted by Xandr.<br>**Read Only.** |
-| `lifetime_budget` | double | The lifetime budget in dollars.<br><br>**Note:**<br>To include this field in a GET response, pass attributes=1 in the query string.<br>**Default:** `false` |
-| `lifetime_budget_imps` | int | The lifetime limit for number of impressions.<br>**Note:**<br>To include this field in a GET response, pass attributes=1 in the query string.<br>**Default:** `unlimited` |
-| `daily_budget` | double | The daily budget in dollars.<br><br>**Note:**<br>To include this field in a GET response, pass attributes=1 in the query string.<br>**Default:** `unlimited` |
-| `daily_budget_imps` | int | The daily limit for number of impressions.<br><br>**Note:**<br>To include this field in a GET response, pass attributes=1 in the query string.<br>**Default:** `unlimited` |
-| `enable_pacing` | Boolean | If `true`, daily budgeted spend is spread evenly throughout a day.<br><br>**Note:** To include this field in a GET response, pass attributes=1 in the query string.<br>**Default:** `unlimited` |
+| `lifetime_budget` | double | The lifetime budget in dollars.<br><br>**Note:**<br>To include this field in a `GET` response, pass `attributes=1` in the query string.<br>**Default:** `false` |
+| `lifetime_budget_imps` | int | The lifetime limit for number of impressions.<br>**Note:**<br>To include this field in a `GET` response, pass `attributes=1` in the query string.<br>**Default:** `unlimited` |
+| `daily_budget` | double | The daily budget in dollars.<br><br>**Note:**<br>To include this field in a `GET` response, pass `attributes=1` in the query string.<br>**Default:** `unlimited` |
+| `daily_budget_imps` | int | The daily limit for number of impressions.<br><br>**Note:**<br>To include this field in a `GET` response, pass `attributes=1` in the query string.<br>**Default:** `unlimited` |
+| `enable_pacing` | Boolean | If `true`, daily budgeted spend is spread evenly throughout a day.<br><br>**Note:** To include this field in a `GET` response, pass `attributes=1` in the query string.<br>**Default:** `unlimited` |
 | `allow_safety_pacing` | Boolean | If `true`, spend per minute is limited to a maximum of 1% of the lifetime budget and 5% of the daily budget.<br>**Admin Only.** |
 | `profile_id` | int | You can attach targeting such as gender and geography to a creative by creating a profile and associating it here. |
 | `folder` | object | To arrange your creatives in folders for convenience (usually in the UI) you will create a folder using the [Creative Folder Service](creative-folder-service.md) and then associate it here via folder ID or in the Creative Folder service via creative ID. Output is `{"id": "41", "name": "MyFolder"}`. |
@@ -95,16 +94,16 @@ Xandr works with members who care deeply about brand and reputation. For this re
 | `created_on` | timestamp | The date and time when this creative was created. If it was created before January 2010, this will be zero.<br>**Read Only.** |
 | `last_modified` | timestamp | The date and time when the creative was last modified.<br>**Read Only.** |
 | `creative_upload_status` | enum | **Deprecated.** |
-| `categories` | array of objects | The categories that describe the creative and offer type.<br><br>**Note:**<br>To include categories in a GET response, pass attributes=1 in the query string. To retrieve a full list of categories, see the [Category Service](category-service.md) and the [example](#categories-example) below. |
-| `adservers` | array of objects | The ad servers that deliver the creative or are called for data collection purposes during the delivery the creative. <br><br>**Note:**<br> To include adservers in a GET response, pass attributes=1 in the query string. To retrieve a full list of ad servers, see the [Ad Server Service](ad-server-service.md) and the [example](#adservers-example) below.<br>**Read Only.** |
-| `technical_attributes` | array of objects | The attributes that describe technical characteristics of the creative, such as "Expandable" or "Video".<br><br>**Note:**<br>To include technical attributes in a GET response, pass attributes=1 in the query string. To retrieve a full list of technical attributes, see the [Technical Attribute Service](technical-attribute-service.md) and the [example](#technical_attributes-example) below. |
+| `categories` | array of objects | The categories that describe the creative and offer type.<br><br>**Note:**<br>To include categories in a `GET` response, pass `attributes=1` in the query string. To retrieve a full list of categories, see the [Category Service](category-service.md) and the [example](#categories-example) below. |
+| `adservers` | array of objects | The ad servers that deliver the creative or are called for data collection purposes during the delivery the creative. <br><br>**Note:**<br> To include adservers in a `GET` response, pass `attributes=1` in the query string. To retrieve a full list of ad servers, see the [Ad Server Service](ad-server-service.md) and the [example](#adservers-example) below.<br>**Read Only.** |
+| `technical_attributes` | array of objects | The attributes that describe technical characteristics of the creative, such as `"Expandable"` or `"Video"`.<br><br>**Note:**<br>To include technical attributes in a `GET` response, pass `attributes=1` in the query string. To retrieve a full list of technical attributes, see the [Technical Attribute Service](technical-attribute-service.md) and the [example](#technical_attributes-example) below. |
 | `language` | object | The language of the creative. To retrieve a full list of languages, see the [Language Service](language-service.md) and the [example](#language-example) below. |
 | `brand` | object | The brand of the company advertising the creative and the category associated with the brand. For more details, see [Brand](#brand) below.<br>**Read Only.** |
-| `sla` | int | Creatives set to "0" will be submitted for audit with a standard SLA.<br><br>**Caution:** Creatives submitted with any number other than 0 will result in a priority audit (when enabled) and resulting fees.<br>If you have a supplemental services agreement with Xandr for priority audits, you can submit a creative for priority audit (auditing within 2 hours during business hours) by setting this field to 2. For more details about priority auditing, see [Creative Standards and Auditing](../bidders/creative-standards-and-auditing.md). |
+| `sla` | int | Creatives set to `0` will be submitted for audit with a standard SLA.<br><br>**Caution:** Creatives submitted with any number other than 0 will result in a priority audit (when enabled) and resulting fees.<br>If you have a supplemental services agreement with Xandr for priority audits, you can submit a creative for priority audit (auditing within 2 hours during business hours) by setting this field to `2`. For more details about priority auditing, see [Creative Standards and Auditing](../bidders/creative-standards-and-auditing.md). |
 | `sla_eta` | timestamp | The estimate time of completion for a priority audit.<br>**Read Only.** |
 | `currency` | string | The code that defines the advertiser's primary currency (for example, **USD**). For more details about the currency types available, see [Currency Service](currency-service.md).<br> **Default:** Member's default currency.<br>**Read Only.** |
-| `first_run` | timestamp | The date and time when the creative first served, refreshed on an hourly basis. This value reflects the UTC time zone. To include this information in a GET response, pass `flight_info=true` in the query string. For details about how to filter creatives based on when they first served, see [First Run/Last Run](#first-runlast-run) below.<br>**Read Only.** |
-| `last_run` | timestamp | The date and time when the creative last served, refreshed on an hourly basis. This value reflects the UTC time zone. To include this information in a GET response, pass `flight_info=true` in the query string. For details about how to creatives based on when they last served, see [First Run/Last Run](#first-runlast-run) below.<br>**Read Only.** |
+| `first_run` | timestamp | The date and time when the creative first served, refreshed on an hourly basis. This value reflects the UTC time zone. To include this information in a `GET` response, pass `flight_info=true` in the query string. For details about how to filter creatives based on when they first served, see [First Run/Last Run](#first-runlast-run) below.<br>**Read Only.** |
+| `last_run` | timestamp | The date and time when the creative last served, refreshed on an hourly basis. This value reflects the UTC time zone. To include this information in a `GET` response, pass `flight_info=true` in the query string. For details about how to creatives based on when they last served, see [First Run/Last Run](#first-runlast-run) below.<br>**Read Only.** |
 | `video_attribute` | object | Attributes for third-party in-stream (VAST) and hosted video and audio creatives. For more details, see [Video Attribute](#video-attribute) below.<br> **Default:** Member's default currency.<br> **Required On:** `POST`, if template is for "Standard VAST" media subtype. |
 | `competitive_brands` | array of objects | Creatives associated with the brands in this array will not serve together in `/mtj` auctions. The classic example of competing brands is Coke vs. Pepsi. See [Competitive Brands](#competitive-brands) below. For more information about the brands in our system, see the [Brand Service](brand-service.md).<br>**Default:** **N/A** |
 | `competitive_categories` | array of objects | Creatives associated with the categories in this array will not serve together in `/mtj` auctions, e.g., "Dating" and "Education". See [Competitive Categories](#competitive-categories) below. For more information about the categories we apply to creatives (and brands), see the [Category Service](category-service.md).<br>**Default:** **N/A** |
@@ -257,7 +256,7 @@ Each object in the `campaigns` array includes the following fields. To obtain in
 
 ### Video Attribute
 
-`video_attribute` is required for both audio and video creatives on the `creative-vast` endpoint. Template ids are:
+`video_attribute` is required for both audio and video creatives on the `creative-vast` endpoint. Template IDs are:
 
 - 6439 - Video: Standard VAST
 - 38745 - Audio: Standard VAST
@@ -386,8 +385,7 @@ The `brand` object contains the following fields.
 
 ## First run/last run
 
-To include the `first_run` and `last_run` fields in a GET response, pass `flight_info=true` in the query string. You can also filter for
-creatives based on when they first and last served, as follows:
+To include the `first_run` and `last_run` fields in a `GET` response, pass `flight_info=true` in the query string. You can also filter for creatives based on when they first and last served, as follows:
 
 ### Retrieve only creatives that have never served
 
@@ -398,7 +396,7 @@ curl -b cookies -c cookies 'https://api.appnexus.com/creative-vast?advertiser_id
 ```
 
 > [!TIP]
-> You can use `never_run=true` in combination with other filters, but please note that it will always be an OR relationship. For example, if you pass both `never_run=true` and `min_first_run=2012-01-01 00:00:00` in the query string, you will be looking for creatives that have never served OR line items that first served on or after 2012-01-01.
+> You can use `never_run=true` in combination with other filters, but note that it will always be an OR relationship. For example, if you pass both `never_run=true` and `min_first_run=2012-01-01 00:00:00` in the query string, you will be looking for creatives that have never served OR line items that first served on or after 2012-01-01.
 
 ### Retrieve only creatives that first served on or after a specific date
 
@@ -450,18 +448,17 @@ curl -b cookies -c cookies 'https://api.appnexus.com/creative-vast?advertiser_id
 
 ## Changes that cause re-audit
 
-Once a creative has passed Xandr audit (`audit_status` is `"audited"`), changing any of the following fields causes the creative to be
-resubmitted for audit (`allow_audit` is set to `"pending"`).
+Once a creative has passed Xandr audit (`audit_status` is `"audited"`), changing any of the following fields causes the creative to be resubmitted for audit (`allow_audit` is set to `"pending"`).
 
-- media_url
-- click_url
-- language
-- categories
-- technical_attributes
-- brand_id
-- pixel_url
-- video_attribute
-- media_assets
+- `media_url`
+- `click_url`
+- `language`
+- `categories`
+- `technical_attributes`
+- `brand_id`
+- `pixel_url`
+- `video_attribute`
+- `media_assets`
 
 Also, if the `audit_status` is `"no_audit"`, changing `allow_audit` from `"false"` to `"true"` causes the creative to be resubmitted for Xandr audit.
 

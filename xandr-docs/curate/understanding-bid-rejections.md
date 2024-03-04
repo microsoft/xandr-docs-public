@@ -10,6 +10,7 @@ There are many reasons a bid might be rejected. Rejected bids show up on the **D
 
 > [!IMPORTANT]
 > **About Impbus Error IDs, Error Messages, and Bid Rejection Reasons**
+>
 > Each bid rejection reason has a distinct error ID or set of error IDs connected to it. The **Impbus Error ID** shows up as a validation in the Impbus API and in the API and UI Bid Error Report. The **Error Message** shows up in the Bid Error Reports as well as in the **Rejections** section of the **Deal Details** screen.
 
 | Impbus Error ID | Error Message | Owner | What's Causing It? | Resolution for seller | Resolution for buyer |

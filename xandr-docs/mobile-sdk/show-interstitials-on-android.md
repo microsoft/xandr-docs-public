@@ -5,7 +5,6 @@ ms.custom: android-sdk
 ms.date: 10/28/2023
 ---
 
-
 # Show interstitials on Android
 
 This page has instructions and code samples for showing interstitial ads on Android.
@@ -28,7 +27,7 @@ Showing interstitial ads is a little more work. In addition to setting up an `I
 Furthermore, actually showing interstitial ads to users is a two-step process:
 
 1. Call `InterstitialAdView.loadAd()` to fetch the ad contents from our server and cache them locally. Note that any ad content is rendered in a WebView at the time it is fetched from the ad server and cached. This means that any third-party tracking pixels that are part of the ad content will be fired at the time of the call to `loadAd()`, not when the call to `show()` is made at a later time.
-1. When you're ready to show the interstitial ad to the user, call `show()`. This needs to happen within approximately 4 minutes of the call to `loadAd()` in order for the impression to be counted by Xandr. (For the exact timing in milliseconds, see the value of `InterstitialAdView.MAX_AGE` in the source code.)
+1. When you're ready to show the interstitial ad to the user, call `show()`. This needs to happen within approximately 4 minutes of the call to `loadAd()` in order for the impression to be counted by Xandr. <!-- (For the exact timing in milliseconds, see the value of `InterstitialAdView.MAX_AGE` in the source code.) -->
 
 > [!NOTE]
 > The close button appears after ten seconds by default. You can set the delay using `InterstitialAdView.setCloseButtonDelay(int closeButtonDelay)`.
@@ -40,18 +39,18 @@ For more information, see the code sample below.
 > [!NOTE]
 > Beginning with version RC2.8, you can also use an inventory code and member ID to request an ad (placement ID is still supported). Currently this is only available from Java (not XML). Note that if both inventory code and placement ID are passed in, the inventory code will be passed to the server instead of the placement ID.
 
-``` 
+```
 // Android: Java code that uses inventory code and member ID instead of placement ID (optional)
 adview.setInventoryCodeAndMemberID(int memberID, String inventoryCode)
 ```
 
 > [!NOTE]
-> As best practices :
+> As best practices:
 >
 > - All SDK methods must be called on the main thread.
 > - `activityOnDestroy()` must be called for the Interstitial that is expected to be destroyed.
 
-``` 
+```
 // Android: Java code to show an interstitial ad
 package com.example.simpleinterstitial;
 import android.os.Bundle;
@@ -128,7 +127,7 @@ By default, if you don't specify an ad size, the SDK will fetch ads in any of th
 
 If you want to show interstitial ads in sizes other than the defaults, use the `setAllowedSizes` method on the interstitial ad view as shown below. Note that the detected size of the screen will still be passed as the primary size. The sizes set using `setAllowedSizes` will be passed in as additional size on the interstitial ad view and will replace the defaults of 300x250, 320x480, 900x500, and 1024x1024.
 
-``` 
+```
 // Android: Java code to show interstitial ads in sizes other than the defaults (optional)
 InterstitialAdView iav = new InterstitialAdView(this);
 iav.setPlacementID("1326299");
@@ -140,7 +139,7 @@ test_array_list.add(test_size2);
 iav.setAllowedSizes(test_array_list);
 ```
 
-## Auto-Close an interstitial
+## Auto-close an interstitial
 
 If you want to auto-close an interstitial ad after a specific timeout period, do not call `show()` as described in the above sections. Instead call `showWithAutoDismissDelay(delayinseconds)`, where `delayinseconds` is the number of seconds the ad will be displayed before it closes.
 

@@ -44,7 +44,7 @@ When a piece of inventory included in an "open auction" deal comes up for auctio
 > [!IMPORTANT]
 > **Why does this example have two floors? And why does the non-deal bid win?**
 >
-> In the example above, each of the deal bids has a different floor applied to it. This can happen when the seller uses floor rule demand filtering to target the floor to a specific buyer, brand, or offer category. 
+> In the example above, each of the deal bids has a different floor applied to it. This can happen when the seller uses floor rule demand filtering to target the floor to a specific buyer, brand, or offer category.
 > The highest non-deal bid wins because:
 > - The deal does not have a deal ask price, and
 > - Neither of the deal bids met the floor targeted to their bids

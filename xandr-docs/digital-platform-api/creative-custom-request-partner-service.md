@@ -10,8 +10,7 @@ ms.custom: digital-platform-api
 > [!NOTE]
 > This service is currently available to a limited set of clients and Microsoft employees only.
 
-This service is used to define custom request partners that sellers on our platform can send ad requests to via mediation. Custom request
-partners are usually ad networks that are not connected to our exchange, but that sellers on our platform would like to sell to nonetheless.
+This service is used to define custom request partners that sellers on our platform can send ad requests to via mediation. Custom request partners are usually ad networks that are not connected to our exchange, but that sellers on our platform would like to sell to nonetheless.
 
 Custom request partners can be integrated with either:
 
@@ -20,8 +19,7 @@ Custom request partners can be integrated with either:
 
 Most custom request partners are made available for all members to sell to (as of the time of this writing in Q3 2014).
 
-This service allows you to define many of the necessary details involved with integrating an external network with our systems. It works in concert with the [Mediated Bid Service](mediation-services.md), [Mediated Network Service](mediated-network-service.md), and others.
-For more information, see the pages listed in the [Related Topics](#related-topics) section.
+This service allows you to define many of the necessary details involved with integrating an external network with our systems. It works in concert with the [Mediated Bid Service](mediation-services.md), [Mediated Network Service](mediated-network-service.md), and others. For more information, see the pages listed in the [Related Topics](#related-topics) section.
 
 ## REST API
 

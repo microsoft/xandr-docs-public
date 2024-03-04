@@ -13,7 +13,7 @@ The Prebid Server Premium Seller Analytics Report contains performance informati
 - Track lift on inventory you've opened up to header bidding demand.
 - Monitor the health and efficiency of your Prebid Server Premium partners and placements.
 
-For information on other reports via API, see [Report Service](report-service.md). For information on accessing data via UI, see [Reporting Guide](../monetize/reporting-guide.md) for Microsoft Monetize and [Prebid Server Premium Seller AnalyticsReport](../monetize/prebid-server-premium-seller-analytics.md).
+For information on other reports via API, see [Report Service](report-service.md). For information on accessing data via UI, see [Reporting Guide](../monetize/reporting-guide.md) for Microsoft Monetize and [Prebid Server Premium Seller Analytics Report](../monetize/prebid-server-premium-seller-analytics.md).
 
 ## Time frame
 
@@ -79,8 +79,7 @@ Data retention period for this report is 30 days.
 
 ### Create JSON formatted report request
 
-The JSON file should include the `report_type` of `"prebid_server_analytics"`, as well as the columns (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`year`, `month`, `day`), and specify the `"format"` in which the data should be returned (`"csv"`, `"excel"`, or `"html"`). For a full explanation of fields that
-can be included in the JSON file, see the [Report Service](report-service.md).
+The JSON file should include the `report_type` of `"prebid_server_analytics"`, as well as the columns (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`year`, `month`, `day`), and specify the `"format"` in which the data should be returned (`"csv"`, `"excel"`, or `"html"`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](report-service.md).
 
 ```
 $ cat prebid_server_analytics
@@ -110,8 +109,7 @@ $ curl -b cookies -c cookies -X post -d @prebid_server_analytics "https://api.ap
 
 ### `GET` the report status from the Report service
 
-Make a `GET` call with the report ID to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is
-`"ready"`. Then use the **report-download** service to save the report data to a file, as described in the next step.
+Make a `GET` call with the report ID to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is `"ready"`. Then use the **report-download** service to save the report data to a file, as described in the next step.
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/report?id=97a181df6d77a8f3cd5a45eff4ea3dab'

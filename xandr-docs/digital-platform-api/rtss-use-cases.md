@@ -11,7 +11,7 @@ ms.custom: digital-platform-api
 > **Beta Notice**
 >
 > - The Real-Time Signals Service is in closed beta status, and is subject to change in the future.
-> - As we transition to open beta, **we will be adding a monthly charge for new and existing clients that use RTSS**. For more information, please speak to your account manager.
+> - As we transition to open beta, **we will be adding a monthly charge for new and existing clients that use RTSS**. For more information, speak to your account manager.
 
 The RTSS beta is still under development, and may have additional features deployed in response to changing use cases. This page lists the current supported use cases.
 

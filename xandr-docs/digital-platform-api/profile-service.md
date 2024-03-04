@@ -7,9 +7,7 @@ ms.custom: digital-platform-api
 
 # Profile service overview
 
-A profile is a set of targeting parameters, such as gender, age, geography, and frequency. It can be applied to several objects in the
-system, most of which are listed below. The most common use of the profile service is to run a campaign; you create a profile and then
-associate it with the [Campaign Service](campaign-service.md). The campaign object includes fields such as flight dates and associated creatives.
+A profile is a set of targeting parameters, such as gender, age, geography, and frequency. It can be applied to several objects in the system, most of which are listed below. The most common use of the profile service is to run a campaign; you create a profile and then associate it with the [Campaign Service](campaign-service.md). The campaign object includes fields such as flight dates and associated creatives.
 
 - Except for segment targeting, parameters are absolute. For example, if the geographical target is set only to the United States, ONLY U.S.-based impressions will receive bids.
 - Segment targeting uses and/or Boolean logic.
@@ -75,13 +73,12 @@ For details on Frequency and Recency Targeting and the below fields, see [here](
 
 ### Targeting
 
-When multiple targets are set, only inventory that satisfies all targeting criteria is eligible. For example, if you target intended
-audience `general` and inventory sources x, y, and z, then the profile will only target `general` audience inventory from inventory sources x, y, and z.
+When multiple targets are set, only inventory that satisfies all targeting criteria is eligible. For example, if you target intended audience `general` and inventory sources x, y, and z, then the profile will only target `general` audience inventory from inventory sources x, y, and z.
 
 > [!NOTE]
 > You may not specify both the `segment_targets` and `segment_group_targets` fields in any `POST` or `PUT` calls (only one of the two may be specified).
 >
-> - Please be aware that some targets accept an array of **objects** rather than integers or strings. The format can be found in the examples at the bottom of this page.
+> - Be aware that some targets accept an array of **objects** rather than integers or strings. The format can be found in the examples at the bottom of this page.
 > - For **Programmatic Guaranteed Buying Line Items**:
 >   - You can only target one deal target (see [Deal Targets](#deal-targets) below) and the `allow_unaudited` field must be set to `true`.
 >   - **Do not set any other targeting fields**.
@@ -90,7 +87,7 @@ audience `general` and inventory sources x, y, and z, then the profile will only
 >   - TapAd's Graph will provide global coverage excluding Europe.
 >   - Xandr's Graph will provide coverage for Europe and the United States.
 >
->     Please adjust your code accordingly.
+>     Adjust your code accordingly.
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -107,7 +104,7 @@ audience `general` and inventory sources x, y, and z, then the profile will only
 | `region_targets` | array of objects | The region/state IDs to be either excluded or included in a profile, as defined by the `region_action` field. You can use the [Region Service](region-service.md) to retrieve a list of region IDs. For more details and format, see [Region Targets](#region-targets) below.<br>**Required On:** `POST`/`PUT`, when `region_action` is `include`. |
 | `require_transparency_and_consent_framework_string` | boolean | - If `true`, only allow associated objects to purchase inventory where valid TCF string is present.<br>- If `false`, allow associated objects to purchase any inventory that falls within pre-defined targeting declarations.<br>- This is only supported on advertiser level as targeting at other levels may lead to undefined behavior.<br><br>**Note:** This parameter is only applicable to the traffic coming from territories where GDPR applies.<br><br>**Default:** `false` |
 | `region_action` | enum | Action to be taken on the `region_targets` list.<br>Possible values: `include` or `exclude`.<br>**Default:** `exclude` |
-| `dma_targets` | array of objects | The IDs of designated market areas to be either excluded or included in a profile, as defined by the `dma_action` field. You can use the [Designated Market Area Service](designated-market-area-service.md) to retrieve a list of DMA IDs. See [Format example](#dma_targets-format). |
+| `dma_targets` | array of objects | The IDs of designated market areas to be either excluded or included in a profile, as defined by the `dma_action` field. You can use the [Designated Market Area Service](designated-market-area-service.md) to retrieve a list of DMA IDs. See [format example](#dma_targets-format). |
 | `dma_action` | enum | Action to be taken on the `dma_targets` list.<br>Possible values: include or exclude.<br>**Default:** `exclude` |
 | `city_targets` | array of objects | The IDs of cities to be either included or excluded in a profile, as defined by the `city_action` field. You can use the [City Service](city-service.md) to retrieve a list of city IDs. For more details and format, see [City Targets](#city-targets) below.<br>**Required On:** `POST`/`PUT`, when `city_action` is `include`. |
 | `city_action` | enum | Action to be taken on the `city_targets` list. Possible values: `include` or `exclude`.<br>**Default:** `exclude` |
@@ -356,7 +353,7 @@ For more information about mobile app instances, including instructions on addin
 
 ### Mobile app instance list targets
 
-For more information about mobile app instance lists, including nstructions on adding them to your profile, see the [Mobile App Instance List Service](mobile-app-instance-service.md).
+For more information about mobile app instance lists, including instructions on adding them to your profile, see the [Mobile App Instance List Service](mobile-app-instance-service.md).
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -376,15 +373,30 @@ Each object in the `daypart_targets` array includes the following fields. For fo
 
 ### Segment targets
 
-You define the Boolean logic between segments with `segment_boolean_operator` field outside of the array. If `segment_boolean_operator` is `AND`, then the profile will only target users that satisfy all segment targets. If the `segment_boolean_operator` is `OR`, then the profile will target users that satisfy any of the specified segments. For detailed guidance on Boolean logic for segment targeting, see Segment Targeting.
+You define the Boolean logic between segments with `segment_boolean_operator` field outside of the array. If `segment_boolean_operator` is `AND`, then the profile will only target users that satisfy all segment targets. If the `segment_boolean_operator` is `OR`, then the profile will target users that satisfy any of the specified segments. For detailed guidance on Boolean logic for segment targeting, see [Segment Targeting](../monetize/segment-targeting.md).
 
-In segment targeting, you need to keep the settings for the Boolean logic consistent, otherwise you would not be able to edit the segments in Microsoft Invest UI. For consistent Boolean logic settings, you need to ensure that
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the segment.<br>**Required On:** `POST` |
+| `code` | string | The custom code for the segment. |
+| `action` | enum | Possible values: `include` or `exclude`.<br>**Default:** `include` |
+| `start_minutes` | int | The lower bound for the amount of time since a user was added to the segment.<br>**Default:** `0` |
+| `expire_minutes` | int | The upper bound for the amount of time since a user was added to the segment.<br>**Default:** `-1` |
+| `other_equals` | int | The exact segment value to target.<br><br>**Note:** If you use `other_in_list`, you cannot use this field.<br>**Default:** `null` |
+| `other_less` | int | The non-inclusive upper bound for segment value targeting.<br>**Default:** `null` |
+| `other_greater` | int | The non-inclusive lower bound for segment value targeting.<br>**Default:** `null` |
+| `other_in_list` | array | The list of segment values to target.If you use `other_equals`, you cannot use this field.<br>**Default:** `null` |
+
+> [!NOTE]
+> For `other_equals`, `other_less`, `other_greater`, and `other_in_list`, the segment value can be an "other" value passed by the segment pixel or can be related to segment query string values (see the `"querystring_mapped"` field in the [Segment Service](segment-service.md)). For examples of how to target query string values in a segment, see other examples below.
+
+In segment targeting, you need to keep the settings for the Boolean logic consistent, otherwise you would not be able to edit the segments in Microsoft Invest UI. For consistent Boolean logic settings, you need to ensure that:
 
 - `segment_boolean_operator` field is set as either “`and`” or “`or`”.
 - The `boolean_operator` field in each object of the segment_group_targets array (See Segment Group Targets) is set as either “`and`” or “`or`”. However this value should be the opposite of what is set in `segment_boolean_operator` above. For example, if the value set in segment_boolean_operator is "`or`", the value of `boolean_operator` for the objects should be "`and`".
 - The value of `boolean_operator` field for all objects in the segment_group_targets array needs to be same. In short, you cannot have boolean_operator of one object as "`and`" and other as "`or`" in the same profile. For an example of consistent and inconsistent JSONs, see below.
 
-**Consistent JSONs**
+#### Consistent JSONs
 
 ```
 {
@@ -539,7 +551,7 @@ In segment targeting, you need to keep the settings for the Boolean logic consis
 }
 ```
 
-**Inconsistent JSONs**
+#### Inconsistent JSONs
 
 ```
 {
@@ -699,22 +711,7 @@ In segment targeting, you need to keep the settings for the Boolean logic consis
 }
 ```
 
-| Field | Type | Description |
-|:---|:---|:---|
-| `id` | int | The ID of the segment.<br>**Required On:** `POST` |
-| `code` | string | The custom code for the segment. |
-| `action` | enum | Possible values: `include` or `exclude`.<br>**Default:** `include` |
-| `start_minutes` | int | The lower bound for the amount of time since a user was added to the segment.<br>**Default:** `0` |
-| `expire_minutes` | int | The upper bound for the amount of time since a user was added to the segment.<br>**Default:** `-1` |
-| `other_equals` | int | The exact segment value to target.<br><br>**Note:** If you use `other_in_list`, you cannot use this field.<br>**Default:** `null` |
-| `other_less` | int | The non-inclusive upper bound for segment value targeting.<br>**Default:** `null` |
-| `other_greater` | int | The non-inclusive lower bound for segment value targeting.<br>**Default:** `null` |
-| `other_in_list` | array | The list of segment values to target.If you use `other_equals`, you cannot use this field.<br>**Default:** `null` |
-
-> [!NOTE]
-> For `other_equals`, `other_less`, `other_greater`, and `other_in_list`, the segment value can be an "other" value passed by the segment pixel or can be related to segment query string values (see the "querystring_mapped" field in the [Segment Service](segment-service.md)). For examples of how to target query string values in a segment, see other examples below.
-
-**Example**:
+#### Segment targets example
 
 In this example, since the `segment_boolean_operator` is `AND`, the profile will target only users that fit in both segment 86 and segment 202.
 
@@ -777,7 +774,7 @@ Each segment group object contains the following fields.
 > [!NOTE]
 > For `other_equals`, `other_less`, `other_greater`, and `other_in_list`, the segment value can be an `"other"` value passed by the segment pixel or can be related to segment query string values (see the `"querystring_mapped"` field in the [Segment Service](segment-service.md)). For examples of how to target query string values in a segment, see other examples below.
 
-**Example**:
+#### Segment group targets example
 
 In this example, since the `segment_boolean_operator` is `OR` and the `boolean_operator` for each group is `AND`, the profile will target only users that fit in both segment 11 and segment 22 or both segment 33 and segment 44.
 
@@ -848,14 +845,14 @@ In this example, since the `segment_boolean_operator` is `OR` and the `boolean_o
 | `allow_unknown` | Boolean | Determines whether to include targets where age is not know.<br>**Default:** `false` |
 | `ages` | array of objects | The age ranges targeted in this profile. |
 
-**ages object:**
+#### `ages` object
 
 | Field | Type | Description |
 |:---|:---|:---|
 | `low` | int | The lower bound of the age range (min 13). |
 | `high` | int | The upper bound of the age range (max 100). |
 
-**Example**:
+#### Age targets example
 
 ```
 {
@@ -893,7 +890,7 @@ Each object in the `country_targets` array contains the following fields.
 | `name` | string | **Read-only.** The name of the country. |
 | `code` | string | **Read-only.** The code for the country. |
 
-**Example**:
+#### Country targets example
 
 ```
 {
@@ -923,7 +920,7 @@ Each object in the `region_targets` array contains the following fields.
 | `country_name` | string | **Read-only.** The name of the country to which the region belongs. |
 | `country_code` | string | **Read-only.** The code for the country to which the region belongs. |
 
-**Example**:
+#### Region targets example
 
 ```
 {
@@ -952,7 +949,7 @@ Each object in the `region_targets` array contains the following fields.
 > [!NOTE]
 > This parameter is only applicable to the traffic coming from territories where GDPR applies.
 
-**Example**:
+#### Example
 
 ```
 {
@@ -976,7 +973,7 @@ Each object in the `city_targets` array contains the following fields.
 | `country_name` | enum | **Read-only.** The name of the country to which the region belongs. |
 | `country_code` | enum | **Read-only.** The code of the country to which the region belongs. |
 
-**Example**:
+#### City targets example
 
 ```
 {
@@ -1009,7 +1006,7 @@ Each object in the `inventory_url_list_targets` array includes the following fi
 | `name` | string | **Read-only.** Name of the allowlist or blocklist. |
 | `exclude` | Boolean | **Read-only.** If `true`, the inventory list will be excluded from targeting (i.e., treated as a blocklist). If `false`, the inventory list will be included in targeting (i.e., treated as an allowlist). This field is solely dependent on the inventory `list_type` field described above. |
 
-**Example**:
+#### Inventory lists example
 
 ```
 {
@@ -1059,7 +1056,7 @@ The `content_category_targets` object includes the `allow_unknown` field, which 
 | `id` | int | The ID of the content category to target.<br>**Default:** `null`<br>**Required On:** `POST` |
 | `action` | num | The action to take for this content category.<br>Possible values: `include` or `exclude`.<br>If `include`, then category will be targeted; if `exclude`, the category will explicitly not be targeted.<br>**Default:** `exclude` |
 
-**Example**:
+#### Content category targets example
 
 ```
 {
@@ -1080,8 +1077,7 @@ The `content_category_targets` object includes the `allow_unknown` field, which 
 
 ### Video targets
 
-The `video_targets` object contains the `allow_unknown_playback_method`, `allow_unknown_context`, `allow_unknown_player_size` fields and the `playback_methods` , `contexts` , `player_sizes` arrays. For Deals, it also contains the `deal_creative_duration` field and the
-`video_frameworks` arrays.
+The `video_targets` object contains the `allow_unknown_playback_method`, `allow_unknown_context`, `allow_unknown_player_size` fields and the `playback_methods`, `contexts`, `player_sizes` arrays. For Deals, it also contains the `deal_creative_duration` field and the `video_frameworks` arrays.
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -1125,8 +1121,7 @@ The default value is an empty array, and will target any player size. The `playe
 
 ### Creative duration
 
-The `deal_creative_duration` setting is only used by video deal line items. It lets deals target impressions that allow at least a given
-creative duration, so creatives of the defined length can successfully serve through a deal without errors. It will aggregate only the impressions with the given setting already in place.
+The `deal_creative_duration` setting is only used by video deal line items. It lets deals target impressions that allow at least a given creative duration, so creatives of the defined length can successfully serve through a deal without errors. It will aggregate only the impressions with the given setting already in place.
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -1141,7 +1136,7 @@ The `video_frameworks` array is only used by video deal line items. It lets de
 | `id` | int | The id of the video framework. IDs include:<br>- `VPAID 1.0`<br>- `VPAID 2.0`<br>- `MRAID-1`<br>- `ORMMA`<br>- `MRAID-2` |
 | `name` | string | The name of the video framework. <br>Possible values:<br>- `vpaid_1_0`<br>- `vpaid_2_0`<br>- `mraid_1`<br>- `ormma`<br>- `mraid_2` |
 
-**Example**:
+#### Video frameworks example
 
 ```
 {
@@ -1201,8 +1196,7 @@ The `video_frameworks` array is only used by video deal line items. It lets de
 
 ### Engagement rate targets
 
-The `engagement_rate_targets` array of objects is used to target specific, highly performant inventory based on historic performance. You
-can use targeting criteria to purchase either video inventory with a high completion rate, or highly viewable inventory, by specifying the desired video completion rate or viewability rate.
+The `engagement_rate_targets` array of objects is used to target specific, highly performant inventory based on historic performance. You can use targeting criteria to purchase either video inventory with a high completion rate, or highly viewable inventory, by specifying the desired video completion rate or viewability rate.
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -1226,7 +1220,7 @@ Each object in the `deal_targets` array contains the following fields.
 | `name` | string | **Read-only.** The name of the deal. |
 | `code` | string | **Read-only.** The custom code for the deal. For deals with external supply partners, this is generally the string that you will use to identify the deal. |
 
-**Example**:
+#### Deal targets example
 
 ```
 {
@@ -1257,7 +1251,7 @@ The `position_targets` object contains the following fields.
 | `allow_unknown` | Boolean | If `true`, the profile will target placements for which the fold position is not known.<br>**Default:** `false` |
 | `positions` | array of objects | The fold positions to target. Possible values: `"above"` or `"below"`. |
 
-**Example**:
+#### Position targets example
 
 ```
 {
@@ -1287,7 +1281,7 @@ Each object in the `device_model_targets` array contains the following fields.
 | `id` | int | The ID of the device model. |
 | `name` | string | **Read-only.** The name of the device model, i.e., `Onetab XST2`, `PAD7`, `A101`, etc. |
 
-**Example**:
+#### Device model targets example
 
 ```
 {
@@ -1324,7 +1318,7 @@ The `device_type_targets` array can contain one or more of the following strings
 - `stb`
 - `mediaplayer`
 
-**Example**:
+#### Device type targets example
 
 ```
 {
@@ -1356,7 +1350,7 @@ Each object in the `carrier_targets` array contains the following fields.
 | `name` | string | **Read-only.** The name of the mobile carrier. |
 | `country` | enum | **Read-only.** The ISO code for the country in which the carrier operates. |
 
-**Example**:
+#### Carrier targets example
 
 ```
 {
@@ -1388,7 +1382,7 @@ Each object in the `carrier_targets` array contains the following fields.
 
 For more information about IP range lists, see the [IP Range List Service](ip-range-list-service.md).
 
-Per profile, you can target up to 10 "include" IP range lists (`include` set to `true` in the IP range list) and no more than 1 "exclude" IP range list (`include` set to `false` in the IP range list). The excluded IP ranges must be a subset of the included IP ranges.
+Per profile, you can target up to 10 `"include"` IP range lists (`include` set to `true` in the IP range list) and no more than 1 `"exclude"` IP range list (`include` set to `false` in the IP range list). The excluded IP ranges must be a subset of the included IP ranges.
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -1419,7 +1413,7 @@ Each object in the `operating_system_extended_targets` array contains the follow
 | `name` | string | **Read-only.** The name of the operating system version, e.g., `Android 3.x`, `Apple iOS 5`, etc. |
 | `action` | enum | Action to be taken on `id`.<br>Possible values: `include` or `exclude`. |
 
-**Example**:
+#### Operating system extended targets example
 
 ```
 {
@@ -1460,7 +1454,7 @@ Each object in the `operating_system_family_targets` array contains the followin
 | `id` | int | The ID of the operating system family. To retrieve the IDs of operating system families registered in our system, use the [Operating System Family Service](operating-system-family-service.md). |
 | `name` | string | **Read-only.** The name of the operating system family, i.e., `Microsoft Windows`, `Android`, `Apple iOS`, etc. |
 
-**Example**:
+#### Operating system family targets example
 
 ```
 {
@@ -1518,7 +1512,7 @@ You can find more information on how key value targeting works and details on ho
 | `vna` | array of numeric values | A set of values as an array of floats. |
 | `vsa` | array of strings | A set of values as an array of strings. |
 
-**Example**:
+#### Key value targets example
 
 ```
 {
@@ -1566,7 +1560,7 @@ The fields in this object are used to set how allowlists attached to a line item
 | `apply_to_managed` | boolean | Designates whether the allowlist is to be applied to managed buying. If set to `true`, any allowlists associated with the line item will be applied to managed buying.<br><br>**Note:** Set this field to `true` if the line item associated with this profile has its `inventory_type` field set to `direct`.<br>**Default:** `false` |
 | `apply_to_rtb` | boolean | **Read-only.** All allowlists associated with the line item will be applied to RTB buying.<br>**Default:** `false` |
 
-**Example**:
+#### Inventory URL allowlist settings example
 
 ```
 {
@@ -2072,9 +2066,7 @@ $ curl -b cookies -c cookies -X PUT -d @profile_update 'https://api..com/profile
 
 ### Target an exact query string value
 
-Scenario: An auto publisher told you to expect the following key-values in the query strings of their placements: `car_color=red`,
-`car_color=blue`, or `car_color=black`. In order to target such information, you added the parameter and values to segment 15. Now you
-want to update the campaign's profile to target a specific query string value, `black`, so you create the following JSON and make a `PUT` call to update the profile.
+Scenario: An auto publisher told you to expect the following key-values in the query strings of their placements: `car_color=red`, `car_color=blue`, or `car_color=black`. In order to target such information, you added the parameter and values to segment 15. Now you want to update the campaign's profile to target a specific query string value, `black`, so you create the following JSON and make a `PUT` call to update the profile.
 
 ```
 $ cat profile_update
@@ -2113,8 +2105,7 @@ $ curl -b cookies -c cookies -X PUT -d @profile_update 'https://api..com/profile
 
 ### Target specific countries
 
-Scenario: You want to target your profile to the United States and Canada. This requires setting `country_action` to `include` and
-`country_targets` to `US` and `CA`, so you create the following JSON and make a `PUT` call to update the profile.
+Scenario: You want to target your profile to the United States and Canada. This requires setting `country_action` to `include` and `country_targets` to `US` and `CA`, so you create the following JSON and make a `PUT` call to update the profile.
 
 ```
 $ cat profile_update
@@ -2185,8 +2176,7 @@ $ curl -b cookies -c cookies -X PUT -d @profile_update 'https://api..com/profile
 
 ### Target a deal
 
-Scenario: You have negotiated a deal with a seller that grants you access to inventory that is not available to other buyers (i.e., a
-private auction). To take advantage of this deal, you need to use the Deal Buyer Access Service to find the deal ID and then update the `deal_targets` array of your profile to target that ID.
+Scenario: You have negotiated a deal with a seller that grants you access to inventory that is not available to other buyers (i.e., a private auction). To take advantage of this deal, you need to use the Deal Buyer Access Service to find the deal ID and then update the `deal_targets` array of your profile to target that ID.
 
 1. To find the ID for your deal, you make a `GET` call to the [Deal Buyer Access Service](deal-buyer-access-service.md) and identify the right deal. Alternately, if you know the member ID of the seller, you can pass it in the query string to retrieve only deals you have with that seller, as shown below.
 
@@ -2265,8 +2255,7 @@ private auction). To take advantage of this deal, you need to use the Deal Buyer
 
 ### Use OS family targets and OS extended targets together
 
-The OS extended and OS family targets work in tandem to allow different targeting scenarios for specific operating system families. This
-functionality is best represented by usage examples. This section contains the following examples (scroll down or search to view them).
+The OS extended and OS family targets work in tandem to allow different targeting scenarios for specific operating system families. This functionality is best represented by usage examples. This section contains the following examples (scroll down or search to view them).
 
 - Target iOS 7.0 devices; all other OS families and other iOS versions will not serve.
 - Target all iOS devices regardless of version; all other OS families will not serve.

@@ -12,12 +12,12 @@ A deal list is a group of deals IDs categorized under a single heading for targe
 
 ## Manage deal lists
 
-You can create and manage Deal Lists at the Member and Advertiser level. A deal list may contain one or more deal IDs and a deal ID can be added to multiple deal lists. However, a deal ID can be added only once to a single deal list. While adding or removing deals in a deal list, you can find the deals by deal id, deal name or deal alias. Additionally, deal IDs can be added to a list in bulk.
+You can create and manage Deal Lists at the Member and Advertiser level. A deal list may contain one or more deal IDs and a deal ID can be added to multiple deal lists. However, a deal ID can be added only once to a single deal list. While adding or removing deals in a deal list, you can find the deals by deal ID, deal name or deal alias. Additionally, deal IDs can be added to a list in bulk.
 
 ### Create a new deal list
 
-1. In the **Inventory** menu select **Deal Lists** from the dropdown.
-1. Click **New** on the **Deal List** page and provide the following details on the **Create a New Deal List** page:
+1. In the **Inventory** menu select **Deal Lists** from the dropdown.
+1. Click **New** on the **Deal List** page and provide the following details on the **Create a New Deal List** page:
     1. **Name**: Enter the name of the deal list.
     1. **Description**: Enter a description for the deal list which can offer a brief definition for it. For example, Deal list for Ford USA advertisers.
     1. **Available to**: *(Optional)* Select whether the deal list is specific to particular advertisers, or if it is available to all advertisers under the current member. If the deal list is available only to particular advertisers, enter the advertiser details by searching for the name or ID of the advertisers. You can add one or more advertisers in this field.
@@ -39,13 +39,13 @@ You can create and manage Deal Lists at the Member and Advertiser level. A d
 
 ## Target deal lists
 
-After creating a deal list you can target it on the curated deal line item setup screen. In the **Basic Setup** section, select the **Deals** option under **Supply Strategy**. You’ll then beable to target either individual deals or deal lists.
+After creating a deal list you can target it on the curated deal line item setup screen. In the **Basic Setup** section, select the **Deals** option under **Supply Strategy**. You’ll then be able to target either individual deals or deal lists.
 
-**To target all deals available to you**:
+### To target all deals available to you
 
 Select **All Deals**.
 
-**To target specific deals available to you:**
+### To target specific deals available to you
 
 1. Select **Specific Deals**.
 1. A pull-down menu displays with **Deals** selected by default.

@@ -6,7 +6,7 @@ ms.date: 11/15/2023
 
 # Microsoft Curate - Traffic quality
 
-Microsoft Advertising makes every effort to search for sellers, publishers, placements, or domains that are seeing illegitimate conversion or click rates. We continue to improve the automated and manual processes of analysis by which we patrol the inventory that runs through our platform. If you have specific questions on how our Traffic Quality team operates, please reach out to your Microsoft Advertising representative.
+Microsoft Advertising makes every effort to search for sellers, publishers, placements, or domains that are seeing illegitimate conversion or click rates. We continue to improve the automated and manual processes of analysis by which we patrol the inventory that runs through our platform. If you have specific questions on how our Traffic Quality team operates, reach out to your Microsoft Advertising representative.
 
 This page describes what to do if you discover suspicious traffic affecting your business and answers some frequently asked questions about traffic quality.
 
@@ -14,7 +14,7 @@ A campaign should have at least 10,000 impressions on a given slice of inventory
 
 ## Investigate and report suspicious traffic
 
-If you believe that you are serving on inventory with artificially inflated performance rates, our [support team](https://help.xandr.com/) is happy to investigate. Before submitting a support request, please confirm the issue and narrow down the scope as much as possible by following the steps below.
+If you believe that you are serving on inventory with artificially inflated performance rates, our [support team](https://help.xandr.com/) is happy to investigate. Before submitting a support request, confirm the issue and narrow down the scope as much as possible by following the steps below.
 
 ### Step 1. Provide a high-level description of the issue
 
@@ -22,7 +22,7 @@ What is the issue and what objects does it affect? For example, which advertiser
 
 ### Step 2. Determine the time range of the incident
 
-- Please include when the observed behavior began and if it is still happening.
+- Include when the observed behavior began and if it is still happening.
 - Note that historical changes in performance are far more difficult to diagnose as the behavior can no longer be observed live.
 
 ### Step 3. Run an Analytics report, breaking results out by various dimensions
@@ -47,7 +47,7 @@ After completing the above steps, if you believe you have isolated a specific ca
 This should include the following:
 
 - Demand-side object data from your line items and campaigns, grouped by day over the affected time range.
-- Remember to include relevant performance metrics (clicks & CTR, conv rate & total conversions).
+- Remember to include relevant performance metrics (clicks & CTR, convertion rate & total conversions).
 
 ## Frequently asked questions
 
@@ -63,7 +63,7 @@ No. We subscribe to the [IAB bots and spiders list](http://www.iab.net/1418/spid
 
 ### Does Microsoft Advertising allow bidders/advertisers to bid on ad requests where the UserAgent is not a known standard browser?
 
-We have a list of banned user agents. However, due to the rapid pace of change for many user agents, we can't guarantee we're blocking all unsuitable agents. If you see a suspect user agent, please let us know.
+We have a list of banned user agents. However, due to the rapid pace of change for many user agents, we can't guarantee we're blocking all unsuitable agents. If you see a suspect user agent, let us know.
 
 ### Does Microsoft Advertising have any detection for 'duplicate' clicks?
 

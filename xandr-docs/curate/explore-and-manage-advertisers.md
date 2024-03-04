@@ -10,11 +10,11 @@ The **Advertisers** screen is a management screen that shows you essential metri
 
 ## Managing advertisers
 
-- To reach the **Advertisers** screen, select **Package** \> **Advertisers** in the menu bar.
+- To reach the **Advertisers** screen, select **Package** > **Advertisers** in the menu bar.
 - To edit an advertiser, hover over the row for the advertiser you want to edit and then click the pencil icon.
 - To activate or deactivate an advertiser, select the checkbox for each advertiser you want to activate or deactivate and click **Activate** or **Deactivate**.
 - To delete an advertiser, select the checkbox next to each advertiser you want to delete and click **Delete**.
-  
+
   > [!WARNING]
   > Deleting an advertiser deletes all of its child objects as well, including insertion orders, line items, campaigns, creatives conversion pixels, and segments. The deletions are permanent and cannot be reverted. Although deleted objects continue to be available in reporting, you will no longer have visibility into their specific settings (revenue budget for line items, cost budget and targeting for campaigns, etc.).
 

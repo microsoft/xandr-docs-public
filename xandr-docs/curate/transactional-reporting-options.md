@@ -23,7 +23,7 @@ For more information about each option, click its name in the **Option** column.
 | Option | Documentation | Resource Level | Requirements | Features |
 |:---|:---|:---|:---|:---|
 | [Reporting](#reporting) | [Reporting Guide](./reporting-guide.md) | Low | Ability to manipulate reporting data offline (optional) | - Manual processing<br> - Can whitelabel UI for client reporting<br> - Can manually export and manipulate reports |
-| [Reporting API](#reporting-apis) | - [Report Service](../digital-platform-api/report-service.md)<br> - [Report Pagination](../digital-platform-api/report-pagination.md)<br> - [Bulk Reporting Feeds](../digital-platform-api/bulk-reporting-feeds.md) | Medium | Scripts to pull data<br>Offline data storage for local housing | - Can be automated<br> - Access to Bulk Reporting Feeds<br> - Additional granularity beyond Curate reports<br> - Use of custom `code` field |
+| [Reporting API](#reporting-apis) | - [Report Service](../digital-platform-api/report-service.md)<br> - [Report Pagination](../digital-platform-api/report-pagination.md)<br> - [Bulk Reporting Feeds](../digital-platform-api/bulk-reporting-feeds.md) | Medium | - Scripts to pull data<br> - Offline data storage for local housing | - Can be automated<br> - Access to Bulk Reporting Feeds<br> - Additional granularity beyond Curate reports<br> - Use of custom `code` field |
 | [Log Level Data](#log-level-data) | [Log-Level Data Feeds](../log-level-data/log-level-data-feeds.md) | High | Data storage and aggregation system | - Auction level granularity<br> - Additional parameters not available in Curate reporting<br> - Large data sets<br> - Aggregation is **not** handled by Microsoft Advertising |
 
 ## Reporting

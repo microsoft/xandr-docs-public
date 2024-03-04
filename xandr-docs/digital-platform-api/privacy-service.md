@@ -1,14 +1,13 @@
 ---
 title: Privacy Service
-description: Explore the Privacy service, enabling customers to create personalized consumer privacy experiences and respond to data subject access requests.
+description: Explore the Privacy Service, which enables customers to create personalized consumer privacy experiences and respond to data subject access requests.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
 # Privacy service
 
-The Xandr Privacy Service permits Xandr clients to delete and access personal data (personal information) to support complying with privacy regulations related to the provision and deletion of personal information such as the GDPR or CCPA. This enables Xandr customers
-to build custom consumer privacy experiences and reply to data subject access requests.
+The Xandr Privacy Service permits Xandr clients to delete and access personal data (personal information) to support complying with privacy regulations related to the provision and deletion of personal information such as the GDPR or CCPA. This enables Xandr customers to build custom consumer privacy experiences and reply to data subject access requests.
 
 There are two capabilities exposed by this API: Access and Delete. In both cases, only data that is related to your account for the given user is impacted. Deletion means the given ID will be disassociated from your segments; it does not imply forward-looking suppression.
 
@@ -115,4 +114,4 @@ $ curl -X POST -d @privacy.json 'https://api.appnexus.com/privacy/consumer-reque
 ## Related topics
 
 - [CCPA Client Overview (Part of Privacy Policies)](../policies-regulations/index.yml)
-- [CCPA Publisher Controls Provided by Xandr(Part of Privacy Policies)](../policies-regulations/index.yml)
+- [CCPA Publisher Controls Provided by Xandr (Part of Privacy Policies)](../policies-regulations/index.yml)

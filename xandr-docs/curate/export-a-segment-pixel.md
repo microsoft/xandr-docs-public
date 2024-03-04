@@ -24,12 +24,12 @@ In the **Delivery Options** section, select whether you want to generate the tag
 
 In the **Advanced Options** section, you can select additional values to include in the pixel tag.
 
-- **Use codes**: to generate a pixel with your external code (the value you entered when creating the pixel) and your member ID instead of the Microsoft Advertising pixel ID
-- **Add user to segments on call**: enables you to add additional segments
-- **Remove user from segments on call**: enables you to remove the user from segments
+- **Use codes**: To generate a pixel with your external code (the value you entered when creating the pixel) and your member ID instead of the Microsoft Advertising pixel ID.
+- **Add user to segments on call**: Enables you to add additional segments.
+- **Remove user from segments on call**: Enables you to remove the user from segments.
 - **Parameter**:
-  - Include dynamic value: Values are non-negative integers that can be associated and stored with the user at the time of firing the pixel. The same value can be the same across segments in the pixel ("across all segments" option) or they can be specific to each segment in the pixel ("for each segment" option).
-  - Include a redirect URL: Redirect URL used to piggyback another pixel
+  - **Include dynamic value**: Values are non-negative integers that can be associated and stored with the user at the time of firing the pixel. The same value can be the same across segments in the pixel ("across all segments" option) or they can be specific to each segment in the pixel ("for each segment" option).
+  - **Include a redirect URL**: Redirect URL used to piggyback another pixel.
 
 ## Step 5: Generate the tags
 

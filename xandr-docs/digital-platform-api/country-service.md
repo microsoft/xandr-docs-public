@@ -7,8 +7,7 @@ ms.custom: digital-platform-api
 
 # Digital Platform API - Country service
 
-The read-only Country Service allows you to see information about the countries registered in the Xandr system. You
-can use this service to retrieve the ID for targeting in campaigns (see `country_targets` in the [Profile Service](profile-service.md)).
+The read-only Country Service allows you to see information about the countries registered in the Xandr system. You can use this service to retrieve the ID for targeting in campaigns (see `country_targets` in the [Profile Service](profile-service.md)).
 
 ## REST API
 

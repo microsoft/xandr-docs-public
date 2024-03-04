@@ -26,7 +26,7 @@ To get to the **Insertion Orders** screen:
 
 ## Filter your insertion orders
 
-The **Advanced Filters** menu lets you filter for insertion orders based on **Advertiser**, **State**, **Type**, **Insertion Order Name**, **Flight Start and End Date**, and **External Code**. Click on **Apply** or **Apply and Save As**. The **Apply and Save As** option will save your filter for future purpose.
+The **Advanced Filters** menu lets you filter for insertion orders based on Advertiser, State, Type, Insertion Order Name, Flight Start and End Date, and External Code. Click on **Apply** or **Apply and Save As**. The **Apply and Save As** option will save your filter for future purpose.
 
 ## View stats
 
@@ -50,7 +50,7 @@ The following stats are shown for each insertion order. Note that the data alway
 | **Curator Impressions** | The number of delivered impressions. |
 | **Type** | The type of the insertion order. |
 | **Today's Delivery** | Displays the number of impressions delivered on the current calendar day. |
-| **Order Status** | The status of the insertion order (Active or Inactive). |
+| **Order Status** | The status of the insertion order (**Active** or **Inactive**). |
 | **Line Items** | Total number of in-progress, active, and associated line items under the insertion order. |
 | **Last Hour's Delivery** | Displays the number of impressions delivered on the current calendar day up to the last hour. |
 | **Last 7 Days Delivery** | Displays the number of impressions delivered on full 7 days previous to the current calendar day, i.e., excluding today. |

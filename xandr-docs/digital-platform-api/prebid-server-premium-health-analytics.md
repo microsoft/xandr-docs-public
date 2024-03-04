@@ -7,8 +7,7 @@ ms.custom: digital-platform-api
 
 # Prebid Server Premium Health Analytics
 
-The Prebid Server Premium (PSP) Health Analytics Report allows users to analyze data related to bid requests and transactions with their
-configured Demand Partners. This is most useful in troubleshooting known issues and proactively identifying optimization opportunities.
+The Prebid Server Premium (PSP) Health Analytics Report allows users to analyze data related to bid requests and transactions with their configured Demand Partners. This is most useful in troubleshooting known issues and proactively identifying optimization opportunities.
 
 > [!NOTE]
 > The dashboard is based on **sample data multiplied to estimate the full volume of PSP activity**. It is not intended to be used for delivery and revenue reporting. The [Prebid Server Premium Seller Analytics Report](../monetize/prebid-server-premium-seller-analytics.md) and other [Microsoft Monetize reports](../monetize/reporting-guide.md) should be used for those purposes.
@@ -135,8 +134,7 @@ Data retention period for this report is 99 days.
 
 ### Create JSON formatted report request
 
-The JSON file should include the `report_type` of `"psp_health_analytics"`, as well as the columns (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`year`, `month`, `day`), and specify the `"format"` in which the data should be returned (`"csv"`, `"excel"`, or `"html"`). For a full explanation of fields that
-can be included in the JSON file, see the [Report Service](report-service.md).
+The JSON file should include the `report_type` of `"psp_health_analytics"`, as well as the columns (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`year`, `month`, `day`), and specify the `"format"` in which the data should be returned (`"csv"`, `"excel"`, or `"html"`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](report-service.md).
 
 ```
 $ cat psp_health_analytics
@@ -166,8 +164,7 @@ $ curl -b cookies -c cookies -X post -d @psp_health_analytics "https://api.appne
 
 ### `GET` the report status from the Report service
 
-Make a `GET` call with the report ID to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is
-`"ready"`. Then use the **report-download** service to save the report data to a file, as described in the next step.
+Make a `GET` call with the report ID to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is `"ready"`. Then use the **report-download** service to save the report data to a file, as described in the next step.
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/report?id=97a181df6d77a8f3cd5a45eff4ea3dab'

@@ -1,6 +1,6 @@
 ---
 title: Monetize API
-description: Learn about API and the services that are available using the links given in this page. 
+description: The Digital Platform API is the only API shared across all digital platform products. Learn about API and the services that are available using the links given in this page. 
 ms.date: 10/28/2023
 ---
 

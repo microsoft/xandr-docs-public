@@ -7,13 +7,11 @@ ms.custom: digital-platform-api
 
 # Report pagination
 
-Report Pagination is a feature that allows API users to retrieve long-running reports that would otherwise time out before they complete
-processing. For more information about reporting API usage limits, see the **Report Throttling** section of the [Report Service](report-service.md) page.
+Report Pagination is a feature that allows API users to retrieve long-running reports that would otherwise time out before they complete processing. For more information about reporting API usage limits, see the **Report Throttling** section of the [Report Service](report-service.md) page.
 
 Crafting a more granular report with fewer dimensions and metrics or pulling a report on a shorter timeframe is usually the best option for ensuring that a report does not time out. For tips on keeping your reports lean and focused, see the [API Best Practices](api-best-practices.md) page.
 
-In some cases, however, it is not practical to change the dimensions, metrics or timeframe. Report pagination can help bridge the gap and
-allow you to retrieve a long-running report in smaller chunks.
+In some cases, however, it is not practical to change the dimensions, metrics or timeframe. Report pagination can help bridge the gap and allow you to retrieve a long-running report in smaller chunks.
 
 ## Report pagination required fields
 
@@ -37,8 +35,7 @@ The `"offset"` field should start at 0 and should increment in multiples of `"
 
 ## How many rows should you retrieve at once?
 
-There is no maximum value on the `"num_elements"` field, so you will want to tune this number against the time it takes to run a report in
-the specific member seat that you are retrieving. Most large reports can safely be retrieved with the `"num_elements"` field set to a value between 1MM rows and 2MM rows, but you should test that value for your own report.
+There is no maximum value on the `"num_elements"` field, so you will want to tune this number against the time it takes to run a report in the specific member seat that you are retrieving. Most large reports can safely be retrieved with the `"num_elements"` field set to a value between 1MM rows and 2MM rows, but you should test that value for your own report.
 
 ## Examples
 

@@ -30,18 +30,20 @@ To mediate these networks, you'll need the following:
 
 - A supported release of our SDK. For instructions on installing our SDK, see [Integrate with iOS](./ios-sdk-integration.md).
 - The SDK of the network you want to mediate.
-- A mediation adaptor that allows our SDK to communicate with the network's SDK. There are two ways to get our mediation adaptors:
-  - You can install the binary builds of the adaptors that are included with our [official releases](https://github.com/appnexus/mobile-sdk-ios/releases). You can also build the adaptors yourself from [source](https://github.com/appnexus/mobile-sdk-ios/tree/master/mediation/mediatedviews).
-  - If you use [CocoaPods](https://cocoapods.org/), use the code below in your project directory's PodFile. You can include as many or as few adaptors as you like from this list:
+- A mediation adaptor that allows our SDK to communicate with the network's SDK. If you use [CocoaPods](https://cocoapods.org/), use the code below in your project directory's PodFile. You can include as many or as few adaptors as you like from this list:
 
-      ```
-      platform :ios, '10.0'
+    ```
+    platform :ios, '12.0'
        
-      target 'SimpleBanner' do
-        pod 'AppNexusSDK/GoogleAdapter'
-        pod 'AppNexusSDK/SmartAdAdapter'
-      end   
-      ```
+    target 'SimpleBanner' do
+      pod 'AppNexusSDK/GoogleAdapter'
+      pod 'AppNexusSDK/SmartAdAdapter'
+    end   
+    ```
+
+<!-- - There are two ways to get our mediation adaptors:
+  - You can install the binary builds of the adaptors that are included with our [official releases](https://github.com/appnexus/mobile-sdk-ios/releases). You can also build the adaptors yourself from [source](https://github.com/appnexus/mobile-sdk-ios/tree/master/mediation/mediatedviews).
+  - If you use [CocoaPods](https://cocoapods.org/), use the code below in your project directory's PodFile. You can include as many or as few adaptors as you like from this list: -->
 
 ## Instantiating mediation adaptors
 
@@ -77,15 +79,16 @@ To handle AdMob native ads, you need to:
 
     > [!NOTE]
     > For SDK v5.3 and higher, you need to specify the `GADIsADManagerApp` key in the app's `info.plist` with a boolean `YES` value.
+    >
     > ```
     > <key>GADIsAdManagerApp</key>
     >  <true/>
     > ```
 
-1. Set up the custom keyword
+1. Set up the custom keyword.
 
     For passing the content URL to the Google SDK, the content URL needs to be passed as a custom keyword with the requester ad object (`BannerAdView`, `InterstitialAdView`, `NativeAdRequest`). The key to be used is `content_url`. Here is an example:
-    
+
     ```
     // Add key content_url with a value (www.appnexus.com).
     [adView addCustomKeywordWithKey:@"content_url" value:@"www.appnexus.com"];
@@ -98,9 +101,8 @@ To handle AdMob native ads, you need to:
 
 To handle AdMob banner ads for the apps that support multi-window capability in iPads, Xandr Mobile SDK provides a public class `ANGoogleMediationSettings`. This class contains:
 
-- Boolean method `setIPadMultiSceneSupport` that needs to be set as `YES`, if the app supports multi-screen in iPads
-
-- Getter method `getIPadMultiSceneSupport` to fetch the value set for the apps
+- Boolean method `setIPadMultiSceneSupport` that needs to be set as `YES`, if the app supports multi-screen in iPads.
+- Getter method `getIPadMultiSceneSupport` to fetch the value set for the apps.
 
   **Code Sample (Objective C)**
 

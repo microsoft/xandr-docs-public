@@ -26,7 +26,7 @@ This document describes the query string parameters and creative macros Xandr su
 |:---|:---|:---|:---|
 | `apid` | Ad placement ID assigned by Millennial. | Use custom macro. | `apid=#{APID}` |
 | `auid` | Unique ID. | `${DEVICE_OPENUDID}` |  |
-| `ua` | User agent. | `${USER_AGENT_ENC};`<br>User agent is also automatically passed in the header. | `ua=${USER_AGENT_ENC}` |
+| `ua` | User agent. | `${USER_AGENT_ENC}`; User agent is also automatically passed in the header. | `ua=${USER_AGENT_ENC}` |
 | `uip` | User's IP address. | `${USER_IP}` | `uip=${USER_IP}`<br><br>**Note:** Xandr is COPPA compliant so the last octet will be truncated as appropriate. |
 
 ## Optional

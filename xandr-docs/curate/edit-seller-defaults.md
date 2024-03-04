@@ -15,7 +15,8 @@ Sellers can see the settings you have set for them. Your default settings will a
 
 While you can change your settings for the seller, you cannot change the seller's settings for you. You can change your settings for the seller in the **Partner Center** screen and in the **My Settings for {Seller Name}** section of the **Partner Details** page. You can view the seller's current settings for you in the **{Seller Name} Settings for Me** section of the **Partner Details** page.
 
-**Get to Know Microsoft Advertising Direct:**
+## Get to Know Microsoft Advertising Direct
+
 Microsoft Advertising Direct is a group of 100+ sellers we have identified as mostly selling owned and operated inventory or selling through exclusive relationships with publishers. For more information, please see [Microsoft Advertising Direct for Buyers](appnexus-direct-for-buyers.md) or contact [appnexusdirect@appnexus.com](mailto:appnexusdirect@appnexus.com) or your Microsoft Advertising account manager.
 
 ## Edit seller settings
@@ -33,7 +34,7 @@ Go to the **Partner Center** screen (**Admin** \> **Partner Center**) and click 
 
 To apply seller defaults (see [Set Seller Defaults](set-seller-defaults.md)):
 
-- For a single seller in the **My Settings for {Seller Name}** section, select D**efault** from the dropdown.
+- For a single seller in the **My Settings for {Seller Name}** section, select **Default** from the dropdown.
 
 - For multiple sellers in the **Edit Partner Controls** section, select **Default**.
 

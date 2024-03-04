@@ -1,6 +1,6 @@
 ---
 title: Microsoft Curate - Edit a Member User
-description: In this article you'll find steps to edit a member user, including contact information and peer approval requirements.
+description: In this article, you'll find steps to edit a member user, including contact information and peer approval requirements.
 ms.date: 11/10/2023
 ---
 

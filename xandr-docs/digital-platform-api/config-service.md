@@ -7,8 +7,7 @@ ms.custom: digital-platform-api
 
 # Config service
 
-The Config Service enables the retrieval, creation, and editing of Prebid Server Premium (PSP) configurations. PSP configurations are
-objects used to facilitate PSP spend on a particular Xandr Targeting Object (placement, placement group, publisher). Each config has an array of demand partner parameters attached to it, as a way to indicate which of the external PSP demand partners should facilitate spend for that config.
+The Config Service enables the retrieval, creation, and editing of Prebid Server Premium (PSP) configurations. PSP configurations are objects used to facilitate PSP spend on a particular Xandr Targeting Object (placement, placement group, publisher). Each config has an array of demand partner parameters attached to it, as a way to indicate which of the external PSP demand partners should facilitate spend for that config.
 
 ## REST API
 
@@ -21,7 +20,7 @@ objects used to facilitate PSP spend on a particular Xandr Targeting Object (pla
 | `PATCH` | [https://api.appnexus.com/prebid/config/{prebidSettingsId}](https://api.appnexus.com/prebid/config/{prebidSettingsId}) | Update a portion of an existing Prebid config. |
 | `DELETE` | [https://api.appnexus.com/prebid/config/{prebidSettingsId}](https://api.appnexus.com/prebid/config/{prebidSettingsId}) | Delete an existing Prebid config. |
 
-## GET
+## `GET`
 
 Returns all Prebid configurations for the caller's member. Results are returned as JSON.
 
@@ -53,7 +52,7 @@ A successful response will return JSON containing all the Prebid configs for the
 |:---|:---|:---|
 | `bidder_timeout_ms` | integer | The timeout in milliseconds. |
 | `configs` | array | Container with the configs objects for the member or a specific config object. For items contained in a config object, see the [config properties](#config-properties) table below. |
-| `deleted` | boolean | If true, indicates that the config object is not available for use but its data is still viewable. |
+| `deleted` | boolean | If `true`, indicates that the config object is not available for use but its data is still viewable. |
 | `demand_partner_settings` | array | The demand partner properties. For the items contained in the `demand_partner_settings` object, see the [demand partner settings](#demand-partner-settings) table below. |
 | `id` | integer | A unique identifier for the config object being returned. This id is then referred to as `prebid_settings_id` in other endpoints of this API. |
 | `last_modified` | string | The most recent modification date of the config object. |
@@ -81,7 +80,7 @@ A successful response will return JSON containing all the Prebid configs for the
 | `media_types` | object | The media types associated with the config. For items contained in a media_types object, see the [media types](#media-types) properties table below. |
 | `member_id` | integer | The member_id associated with the config. |
 | `name` | string | The name of the config. |
-| `targeting_level_code` | integer | The rank of the type of object in the targeting hierarchy. Placement has targeting_level_code 0, placement group is 1, publisher is 2. |
+| `targeting_level_code` | integer | The rank of the type of object in the targeting hierarchy. Placement has `targeting_level_code` 0, placement group is 1, publisher is 2. |
 | `targeting_id` | integer | The id of the object the configuration is associated with. Requests will be sent to Demand Partners when that object or an object matching the criteria is in the request. |
 | `targeting_level_name` | string | The name of the level (example: publisher) |
 | `deleted` | boolean | If `true`, indicates that the config object is not available for use but its data is still viewable. |
@@ -90,8 +89,7 @@ A successful response will return JSON containing all the Prebid configs for the
 
 ### Media types
 
-The media type object determines which formats (currently banner, native, and video) and ad sizes are included in the requests to demand
-partners.
+The media type object determines which formats (currently banner, native, and video) and ad sizes are included in the requests to demand partners.
 
 | Property | Type | Description |
 |:---|:---|:---|
@@ -112,14 +110,14 @@ partners.
 | Property | Type | Description |
 |:---|:---|:---|
 | `enabled` | boolean | Indicates if the Demand Partner has been enabled or disabled. For more information, see the [Demand Partner Service](demand-partner-service.md). |
-| `deleted` | boolean | If true, indicates that the config object is not available for use but its data is still viewable. |
+| `deleted` | boolean | If `true`, indicates that the config object is not available for use but its data is still viewable. |
 | `id` | integer | The id of the parameter mappings for the specific demand partner. |
 | `last_modified` | string | The most recent modification date of the `demand_partner_config`. |
 | `last_modified_by` | string | The person who made the last modifications to the `demand_partner_config`. |
 | `member_id` | integer | The member_id associated with the `demand_partner_config`. |
 | `name` | string | The [Prebid bidder name](../monetize/prebid-server-premium-demand-partner-integrations.md) for the Demand Partner. |
 | `params` | object | The partner-specific parameters and mapped values. For more information, see the [Demand Partner Service](demand-partner-service.md). |
-| `prebid_settings_id` | integer | The id of the config which can contain multiple demand partner parameter mappings. |
+| `prebid_settings_id` | integer | The ID of the config which can contain multiple demand partner parameter mappings. |
 
 ### Price granularity
 
@@ -347,7 +345,7 @@ GET https://api.appnexus.com/prebid/config?num_element=15&start_element=10
             
 ```
 
-## POST
+## `POST`
 
 Enables the creation of a new config object.
 
@@ -357,7 +355,7 @@ Enables the creation of a new config object.
 curl -d @config.json -X POST --header "Content-Type: application/json" 'https://api.appnexus.com/prebid/config'
 ```
 
-### POST: Parameters
+### `POST`: Parameters
 
 | Property | Type | Scope | Description |
 |:---|:---|:---|:---|
@@ -369,7 +367,7 @@ curl -d @config.json -X POST --header "Content-Type: application/json" 'https://
 | `targeting_level_code` | integer | Required | The rank of the type of object in the targeting hierarchy. Placement has `targeting_level_code` 0, placement group is 1, publisher is 2. |
 | `targeting_metadata` | object | Optional | Includes modifiers for the targeting object. For items contained in the `targeting_metadata` object, see the [Targeting Metadata Properties](#post-targeting-metadata-properties) table below. |
 
-### POST: Demand partner configs properties
+### `POST`: Demand partner configs properties
 
 | Property | Type | Scope | Description |
 |:---|:---|:---|:---|
@@ -377,12 +375,11 @@ curl -d @config.json -X POST --header "Content-Type: application/json" 'https://
 | `member_id` | integer | Required | The member_id associated with the `demand_partner_config`. |
 | `name` | string | Required | The [Prebid bidder name](../monetize/prebid-server-premium-demand-partner-integrations.md) for the Demand Partner. |
 | `params` | object | Required | The partner-specific parameters and mapped values. For more information, see the [Demand Partner Service](demand-partner-service.md). |
-| `prebid_settings_id` | integer | Required | The id of the config which can contain multiple demand partner parameter mappings. |
+| `prebid_settings_id` | integer | Required | The ID of the config which can contain multiple demand partner parameter mappings. |
 
-### POST: Media types
+### `POST`: Media types
 
-The media type object determines which formats (currently banner, native, and video) and ad sizes are included in the requests to demand
-partners.
+The media type object determines which formats (currently banner, native, and video) and ad sizes are included in the requests to demand partners.
 
 | Property | Type | Scope | Description |
 |:---|:---|:---|:---|
@@ -392,7 +389,7 @@ partners.
 | `sizes.is_standard` | boolean | Optional | Denotes whether the size has been defined as standard by the member. |
 | `types` | array | Required | Includes the media type(s) eligible for the configuration. Only these types will be passed to demand partners in requests. Values are banner, native, video. |
 
-### POST: Targeting metadata properties
+### `POST`: Targeting metadata properties
 
 | Property | Type | Scope | Description |
 |:---|:---|:---|:---|
@@ -438,7 +435,7 @@ partners.
 
 A successful response will return the new config object.
 
-### POST: Click to view a sample JSON response
+### `POST`: Click to view a sample JSON response
 
 ```
 [
@@ -500,47 +497,47 @@ A successful response will return the new config object.
                 
 ```
 
-## PUT
+## `PUT`
 
-Updates an existing Prebid config. Include the prebidSettingsId as the last component of the URL path. Pass the update information as JSON in the body of the request.
+Updates an existing Prebid config. Include the `prebidSettingsId` as the last component of the URL path. Pass the update information as JSON in the body of the request.
 
-### PUT: Example call using curl
+### `PUT`: Example call using curl
 
 ```
 curl -d @config-update.json -X PUT --header "Content-Type: application/json https://api.appnexus.com/prebid/config/{prebidSettingsId}
 ```
 
-### PUT: Response
+### `PUT`: Response
 
 Returns a Prebid config object.
 
-## PATCH
+## `PATCH`
 
 Partially update an existing Prebid config. Include the `prebidSettingsId` as the last component of the path. Pass the update information as JSON in the body of the request.
 
-### PATCH: Example call using curl
+### `PATCH`: Example call using curl
 
 ```
 curl -d @config-update.json -X PATCH --header "Content-Type: application/json https://api.appnexus.com/prebid/config/{prebidSettingsId}
 ```
 
-### PATCH: Response
+### `PATCH`: Response
 
 Returns a Prebid config object.
 
-## DELETE
+## `DELETE`
 
 Delete an existing Prebid config. Include the `prebidSettingsId` as the last component of the path.
 
-### DELETE: Example call using curl
+### `DELETE`: Example call using curl
 
 ```
 curl -X DELETE https://api.appnexus.com/prebid/config/{prebidSettingsId}
 ```
 
-### DELETE: Response
+### `DELETE`: Response
 
-On success, the config indicated will be returned as a JSON object with the deleted property set to true. It will no longer be available within the system. All sub-objects will also be deleted.
+On success, the config indicated will be returned as a JSON object with the deleted property set to `true`. It will no longer be available within the system. All sub-objects will also be deleted.
 
 ## Related topics
 

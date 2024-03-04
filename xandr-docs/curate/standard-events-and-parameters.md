@@ -15,7 +15,7 @@ The following table shows the standard events you can track using the universal 
 | `ItemView` | Track key page views (for example, product page or article) |
 | `AddToCart` | Track when items are added to a shopping cart (for example, by visiting a landing page from an **Add to Cart** button) |
 | `InitiateCheckout` | Track when users enter the checkout flow (for example, by visiting a landing page from a **Checkout** button) |
-| `AddPaymentInfo` | Track when payment information is added in the checkout flow (e.g., landing page on billing info) |
+| `AddPaymentInfo` | Track when payment information is added in the checkout flow (e.g., landing page on billing information) |
 | `Purchase` | Track purchases or checkout flow completions (for example, landing on a "Thank You" or confirmation page) |
 | `Lead` | Track when users express interest in an offering (for example, submit a form, sign up for a trial, or register) |
 
@@ -23,7 +23,7 @@ The following table shows the standard query parameters you can pass as part of 
 
 | Parameter | Query String Key in Image Tag Implementation | Variable Type | Supports Arrays/Lists | Description |
 |:---|:---|:---|:---|:---|
-| `item_id` | `ii` | String | True | The item id associated with the event, for example, the product or catalog id |
+| `item_id` | `ii` | String | True | The item ID associated with the event, for example, the product or catalog ID |
 | `item_name` | `in` | String | True | The name of the page or product |
 | `item_type` | `itp` | String | True | The category of the page or product |
 | `value` | `va` | Float | False | The numerical value associated with the event, for example, the price or cart value. |

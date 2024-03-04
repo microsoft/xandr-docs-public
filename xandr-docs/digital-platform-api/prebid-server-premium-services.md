@@ -7,8 +7,7 @@ ms.custom: digital-platform-api
 
 # Prebid Server Premium services
 
-Xandr's Prebid Server Premium (PSP) is a self-service, server-side solution offering control over unified auctions that maximizes revenue
-for publishers' inventory. As part of Microsoft Monetize, users can manage settings, optimize partners, and review analytics within the Microsoft Monetize UI or via our APIs. PSP is supported across channels (web, mobile web, mobile app, over-the-top) and formats (display, native, video).
+Xandr's Prebid Server Premium (PSP) is a self-service, server-side solution offering control over unified auctions that maximizes revenue for publishers' inventory. As part of Microsoft Monetize, users can manage settings, optimize partners, and review analytics within the Microsoft Monetize UI or via our APIs. PSP is supported across channels (web, mobile web, mobile app, over-the-top) and formats (display, native, video).
 
 The following API services are available:
 

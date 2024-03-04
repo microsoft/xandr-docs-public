@@ -19,9 +19,7 @@ Follow the steps below to edit a buyer's settings.
 
 ### Step 1. Get started
 
-Go to the **Partnership Details** screen (**Partner Center** screen, then click on a buyer's name) and click on the **Partner Controls** tab.
-
-Then click **Edit** to make the settings editable.
+Go to the **Partnership Details** screen (**Partner Center** screen, then click on a buyer's name) and click on the **Partner Controls** tab. Then click **Edit** to make the settings editable.
 
 ### Step 2. Update buyer eligibility
 
@@ -55,7 +53,7 @@ Follow the steps below to edit the settings for multiple buyers.
 
 ### Step 1. Get started
 
-Go to the **Partner Center** screen (**Network** \> **Partner Center** screen), select at least one buyer and then click **Edit Selected Buyers** to display the **Edit Buyer Controls** section. The changes you make will be applied to all of the selected buyers.
+Go to the **Partner Center** screen (**Network** > **Partner Center** screen), select at least one buyer and then click **Edit Selected Buyers** to display the **Edit Buyer Controls** section. The changes you make will be applied to all of the selected buyers.
 
 ### Step 2. Update buyer eligibility
 

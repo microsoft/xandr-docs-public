@@ -17,7 +17,7 @@ This section describes situations and use cases that don't work well with RTSS.
 
 ## Target retrievals via segment ID
 
-Currently, there's no way to retrieve all targets associated with a segment. Please keep track of all targets uploaded to a segment. Alternatively, you can use the RTSS API service to make `GET` calls and check whether a single target belongs to a particular segment.
+Currently, there's no way to retrieve all targets associated with a segment. Keep track of all targets uploaded to a segment. Alternatively, you can use the RTSS API service to make `GET` calls and check whether a single target belongs to a particular segment.
 
 ## Anti-targeting
 

@@ -7,21 +7,18 @@ ms.custom: digital-platform-api
 
 # Digital Platform API - Creative Template service
 
-The Xandr platform categorizes creatives by format, media type, and media subtype. Format defines the resource type of creatives (flash,
-image, etc.); media type defines the general display style of creatives (banner, expandable, video, etc.); and media subtype defines the
-specific display style of creatives (standard banner, MediaMind expandable, Standard VAST, etc.).
+The Xandr platform categorizes creatives by format, media type, and media subtype. Format defines the resource type of creatives (flash, image, etc.); media type defines the general display style of creatives (banner, expandable, video, etc.); and media subtype defines the specific display style of creatives (standard banner, MediaMind expandable, Standard VAST, etc.).
 
 ## Standard templates
 
-For each format, media type, and media subtype combination, Xandr provides a standard creative template that ensures proper rendering on
-web pages when creatives are served. You cannot edit these templates, but the Creative Template Service allows you to view them and examine their rendering code.
+For each format, media type, and media subtype combination, Xandr provides a standard creative template that ensures proper rendering on web pages when creatives are served. You cannot edit these templates, but the Creative Template Service allows you to view them and examine their rendering code.
 
 ## Custom templates
 
 If you want to customize the way certain types of creatives render, you can build your own templates. With custom templates, you have complete control of the JavaScript, HTML, or XML rendering code, and you can define macros to prompt your traffickers to enter information and make decisions about the behavior of creatives when they are uploaded.
 
 > [!NOTE]
-> You can have up to 100 custom templates. Please note, however, that Xandr does not provide support for creatives that do not render correctly as a result of errors in custom template code.
+> You can have up to 100 custom templates. However, Xandr does not provide support for creatives that do not render correctly as a result of errors in custom template code.
 
 ## REST API
 
@@ -43,8 +40,7 @@ This functionality is for an ad to download a specific app from iTunes. A “dir
 
 To accomplish this:
 
-Create a placement that has a default creative that uses a template. This lists the templates the member has access to. There’s a set of
-Xandr creative templates that are not standard templates. This situation would require a custom template.
+Create a placement that has a default creative that uses a template. This lists the templates the member has access to. There’s a set of Xandr creative templates that are not standard templates. This situation would require a custom template.
 
 The template needs to be associated with the default creative. When that creative is selected, it finds this template. It sends out an additional JavaScript function, along with the creative. It calls that function and then sends that event to the Seller Tag library. This will open the iTunes app store from the main page frame, where the Seller Tag library is running.
 
@@ -77,7 +73,7 @@ style="border-style: none" src="${MEDIA_URL}"/></a>');
 | `description` | string | The description of the creative template. |
 | `member_id` | int | The ID of the member that owns the template. For standard Xandr templates, this is null.<br>**Read Only.** |
 | `ad_type` | string | **Note:**<br>This field only applies when you are associating creatives to [augmented line items](line-item-service---ali.md).<br>The type of creative used. Possible values:<br>- `"banner"`<br>- `"video"` (includes audio types)<br>- `"native"`<br>This value determines how auction items are tracked for the line item's buying strategy, paying strategy, optimization options, creative association, and targeting options.<br><br>**Note:**<br>All creatives associated to a line item must have the same ad type, which should match the `ad_type` selected in the [Line Item Service - ALI](line-item-service---ali.md). |
-| `media_subtype` | object | The display style of creatives that can use this template. Each media subtype belongs to a superordinate media type, for example, the "Standard Banner" media subtype belongs to the "Banner" media type. For more details, see [Media Subtype](#media-subtype) below.<br>**Required On:** `POST` |
+| `media_subtype` | object | The display style of creatives that can use this template. Each media subtype belongs to a superordinate media type, for example, the `"Standard Banner"` media subtype belongs to the `"Banner"` media type. For more details, see [Media Subtype](#media-subtype) below.<br>**Required On:** `POST` |
 | `format` | object | The format of creatives that can use this template, for example, `"image"` or `"flash"`. For more details, see [Format](#format) below.<br>**Required On:** `POST` |
 | `is_default` | boolean | If `true`, the template is automatically assigned to creatives that match the template's media type, media subtype, and format. When the creatives are uploaded, this default assignment can be overridden, if necessary. Note that there can be only one default creative template per media type, media subtype, and format combination.<br>**Default:** `false` |
 | `is_archived` | boolean | If `true`, the template is archived. Archiving a template prevents future creatives from using the template but does not affect creatives already using the template.<br>**Default:** `false` |
@@ -90,8 +86,7 @@ style="border-style: none" src="${MEDIA_URL}"/></a>');
 
 ## Media subtype
 
-You can use the [Media Subtype Service](media-subtype-service.md) and [Media Type Service](media-type-service.md) to view all
-supported media subtypes and the media types to which they belong.
+You can use the [Media Subtype Service](media-subtype-service.md) and [Media Type Service](media-type-service.md) to view all supported media subtypes and the media types to which they belong.
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -115,7 +110,7 @@ You must define each custom macro used in the `content_js`, `content_html`, or `
 
 | Field | Type (Length) | Description |
 |:---|:---|:---|
-| `code` | string (30) | The macro name exactly as it is used in the `content_js`, `content_html`, or `content_xml` field. For example, if #{BORDER_SIZE} is the macro in the `content_js` field, you would pass "BORDER_SIZE" here.<br>**Required On:** `POST` |
+| `code` | string (30) | The macro name exactly as it is used in the `content_js`, `content_html`, or `content_xml` field. For example, if `#{BORDER_SIZE}` is the macro in the `content_js` field, you would pass "BORDER_SIZE" here.<br>**Required On:** `POST` |
 | `name` | string (50) | The user-friendly name for this macro that traffickers will see when they add creatives that use this template via the UI.<br>**Required On:** `POST` |
 | `type` | enum | The type of value that traffickers will provide for this macro when they add creatives that use this template via the Creative Service or UI. Possible values: `"true/false"`, `"string"`, `"url"`, `"integer"`, `"decimal"`, `"string_list"`, `"select_from_list"` and `"file"`. For example, on the UI, if you set this to `"true/false"`, traffickers will see the macro name followed by a check box.<br>**Required On:** `POST` |
 | `is_required` | boolean | If `true`, traffickers will be required to provide a value for the macro when adding creatives that use this template.<br>**Required On:** `POST` |
@@ -272,8 +267,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/template'
 
 ### View a specific creative template
 
-In this example, the request gets details about the Xandr standard template for rendering creatives of the media type `"Banner"`, media
-subtype `"Standard Banner"`, and format `"flash"`.
+In this example, the request gets details about the Xandr standard template for rendering creatives of the media type `"Banner"`, media subtype `"Standard Banner"`, and format `"flash"`.
 
 ```
 {code}

@@ -25,10 +25,7 @@ When making a call to the API to retrieve statistics, the following fields can b
 curl -H "Authorization: hbapi:123456:9876abcd54321:nym2"-XGET"https://streaming-data.appnexus.com/rt-segment-processed?member_id=100&start=2014-05-22+00:00:00&end=2014-05-22+01:00:00"
 ```
 
-The statistics are deduplicated per request made to the service. For example, if the same user is added to the same segment in three
-different requests, `num_valid_adds` and `num_valid_users` would show "3". When using `agg=true`, there will be one entry in the report
-property of the response. It will be an aggregation of all usage statistics in the date range that's specified. `error_log_lines` and
-`segment_log_lines` will be empty, and the processed hour will be for the last hour in the date range that's specified. However, if no date range is specified, the report will show the data from the last two weeks.
+The statistics are deduplicated per request made to the service. For example, if the same user is added to the same segment in three different requests, `num_valid_adds` and `num_valid_users` would show `"3"`. When using `agg=true`, there will be one entry in the report property of the response. It will be an aggregation of all usage statistics in the date range that's specified. `error_log_lines` and `segment_log_lines` will be empty, and the processed hour will be for the last hour in the date range that's specified. However, if no date range is specified, the report will show the data from the last two weeks.
 
 ### Example: Aggregated Usage report
 

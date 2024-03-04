@@ -19,7 +19,7 @@ The key recommendations of this document are as follows:
 - Filter out as much data as possible - smaller data is faster data.
 - Choose as few dimensions as possible - the report automatically groups by all selected dimensions. The more dimensions you group by, the larger the data set becomes.
 
-**Key Terms**
+## Key terms
 
 | Term | Definition |
 |:---|:---|
@@ -38,7 +38,7 @@ In **Step 2**, the data set is automatically grouped by the selected dimensions.
 
 In **Step 3**, our systems generate the report. You have the option to view the report, have it run in the background or have it exported and emailed to you (in CSV or Excel format). This goes more quickly with smaller data sets.
 
-:::image type="content" source="media/filtering-and-grouping.png" alt-text="Diagram showing a simplified view of the process that generates the data set that you receive.":::
+:::image type="content" source="media/filtering-and-grouping.png" alt-text="Diagram that shows a simplified view of the process that generates the data set that you receive.":::
 
 ## A tiny example database
 
@@ -65,7 +65,7 @@ All of the examples below will use the same underlying "database", which contain
 | 17 | H | Hap's Go-Kart Track and Petting Zoo | 1108 | 87 |
 | 18 | H | Hap's Go-Kart Track and Petting Zoo | 1872 | 116 |
 
-You can also [download](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Microsoft Advertising/tiny-db.csv) the example in CSV format.
+You can also [download](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/xandr/tiny-db.csv) the example in CSV format.
 
 ## Filtering examples
 
@@ -74,7 +74,7 @@ The examples in this section illustrate how data set sizes are affected by filte
 - Filtering the data set reduces its size. A smaller data set is easier for a computer to process more quickly.
 - Filtering the data set reduces the amount of irrelevant information humans have to deal with.
 
-## Example 1. Filter by a minimum of 9,000 impressions
+### Example 1. Filter by a minimum of 9,000 impressions
 
 In this example, we use a filter to see which of our line items has at least the minimum specified amount of reach. This reduces the size of the data set from 18 rows to 5.
 
@@ -86,7 +86,7 @@ In this example, we use a filter to see which of our line items has at least the
 | 14 | F | Farmer Snowplows | 23984 | 782 |
 | 16 | G | Gretchen's Organic Chocolates | 48996 | 973 |
 
-## Example 2. Filter by two line items
+### Example 2. Filter by two line items
 
 In this example, we check the performance of two of our line items. This reduces our data set to 6 rows out of a possible 18.
 
@@ -99,7 +99,7 @@ In this example, we check the performance of two of our line items. This reduces
 | 11 | E | Best Soap & Candle | 902 | 81 |
 | 12 | E | Best Soap & Candle | 5352 | 212 |
 
-## Example 3. Filter by advertisers B and D
+### Example 3. Filter by advertisers B and D
 
 In this example, we filter out all but two advertisers. This reduces our data set size from 18 rows to 4 rows.
 

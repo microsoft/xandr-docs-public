@@ -1,29 +1,19 @@
 ---
 title: Microsoft Monetize - Targeting and Measurement (Cross-Device)
-description: Learn how Cross-device targeting and measurement can be used to tie together events or actions for a unique individual that occur on different devices. 
+description: Learn how Cross-device capability enhances targeting and attribution using information from an identity graph and a database of customer information. 
 ms.date: 10/28/2023
 ---
 
 
 # Microsoft Monetize - Targeting and measurement (Cross-Device)
 
-Cross-device targeting and measurement, which can be enabled at the line
-item level, ties together events or actions for a unique individual that
-occur on different devices.
+Cross-device targeting and measurement, which can be enabled at the line item level, ties together events or actions for a unique individual that occur on different devices.
 
-By tracking and managing each individual user's ad viewing and
-conversion experience across the various devices they use, advertisers
-can deliver a holistic brand experience to consumers and more accurately
-measure the impact of ad spending on driving conversions.
+By tracking and managing each individual user's ad viewing and conversion experience across the various devices they use, advertisers can deliver a holistic brand experience to consumers and more accurately measure the impact of ad spending on driving conversions.
 
-Cross-device capability enhances targeting and attribution using
-information from an identity graph, a database of customer information
-that allows Microsoft Advertising to identify users on multiple devices. Supported
-identity graphs are:
+Cross-device capability enhances targeting and attribution using information from an identity graph, a database of customer information that allows Microsoft Advertising to identify users on multiple devices. Supported identity graphs are:
 
-- Microsoft Advertising's identity graph, which covers the
-  United States and Europe. The Microsoft Advertising United
-  States and Europe graphs are powered by market-leading data partners.
+- Microsoft Advertising's identity graph, which covers the United States and Europe. The Microsoft Advertising United States and Europe graphs are powered by market-leading data partners.
   
   > [!IMPORTANT]
   > European cross device coverage is currently limited to the following key countries:
@@ -50,7 +40,6 @@ identity graphs are:
 
 > [!NOTE]
 > Cross-device audience targeting for CTV devices is only available in the United States.
-
 > [!WARNING]
 > Cross-device functionality is available to sellers when running line items that purchase inventory from the ad exchange using RTB. It's not available when sellers are running managed campaigns on their own inventory.
 

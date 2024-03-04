@@ -8,7 +8,7 @@ ms.date: 11/16/2023
 
 There are limits for how many audiences, conversions, custom events, and parameters you can create, as well as a data size limit for information transmitted by the parameters.
 
-**Object limits**
+## Object limits
 
 |  |  |
 |:---|:---|
@@ -17,7 +17,7 @@ There are limits for how many audiences, conversions, custom events, and paramet
 | **Custom Events** | 100 |
 | **Custom Parameters** | 100 |
 
-**Request limits**
+## Request limits
 
 |  |  |
 |:---|:---|

@@ -11,7 +11,7 @@ This article describes the process for retrieving native ad assets to display in
 
 ## Ensure proper SDKs installed
 
-The Mobile SDK and Xandr-FAN-Demand Package will need to be installed. To know more about the details of the releases, go to [our page](https://github.com/appnexus/mobile-sdk-android/releases) on the Github repo. In the dependencies section of the `build.gradle` of your project add these two lines:
+The Mobile SDK and Xandr-FAN-Demand Package will need to be installed. To know more about the details of the releases, see our [release page](android-sdk-release-notes.md). In the dependencies section of the `build.gradle` of your project add these two lines:
 
 ``` 
 dependencies {
@@ -156,7 +156,7 @@ NativeAdSDK.registerTracking(response, adView, clickableViews, new NativeAdEvent
 });
 ```
 
-## Access the original native object
+### Access the original native object
 
 Publishers can access the original native object through the `getNativeElements` method:
 

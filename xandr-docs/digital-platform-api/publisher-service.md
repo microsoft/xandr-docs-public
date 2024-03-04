@@ -118,6 +118,11 @@ curl -b cookies -c cookies "https://api.appnexus.com/publisher?id=2,3,5,8,13,21&
 > [!NOTE]
 > When you add a publisher, a default placement is created automatically and included in this array. You can prevent a default placement from being created automatically by passing `"create_default_placement=false"` in the query string of the `POST` request.
 
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the placement. |
+| `code` | string (100) | The custom code for the placement. |
+
 ### Publisher brand exceptions
 
 | Field | Type | Description |

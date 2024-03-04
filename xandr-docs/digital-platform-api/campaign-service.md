@@ -30,7 +30,7 @@ A campaign is a way to organize a set of targeting parameters within our platfor
 |:---|:---|:---|
 | `id` | int | The ID of the campaign.<br>**Required On:** `PUT`, in query string. |
 | `State` | enum | The state of the campaign. Possible values: `"active"` or `"inactive"`.<br>**Default:** `"active"` |
-| `parent_inactive` | boolean | If `true`, the campaign is inactive due to the parent line item being inactive, and the campaign's `state` is overridden (i.e., if `"parent_inactive": "true"` and `"state": "active"`, then the campaign is inactive).<br><br>**Note:**<br>To return this field, the `advertiser_id` must be included in the querystring.<br>**Default:** `false`<br>**Read Only.** |
+| `parent_inactive` | boolean | If `true`, the campaign is inactive due to the parent line item being inactive, and the campaign's `state` is overridden (i.e., if `"parent_inactive": "true"` and `"state": "active"`, then the campaign is inactive).<br><br>**Note:**<br>To return this field, the `advertiser_id` must be included in the query string.<br>**Default:** `false`<br>**Read Only.** |
 | `code` | string (100) | A custom code for the campaign. The code may only contain alphanumeric characters, periods, underscores or dashes. The code you enter is not case-sensitive (upper- and lower-case characters are treated the same). No 2 objects at the same level (e.g., line items or campaigns) can use the same code per advertiser. For example, 2 lines items cannot both use code "XYZ", but a single line item and its child campaign can. |
 | `name` | string (255) | The name of the campaign.<br>**Required On:** `POST` |
 | `short_name` | string (50) | The name used by the Imp Bus. |
@@ -39,7 +39,7 @@ A campaign is a way to organize a set of targeting parameters within our platfor
 | `line_item_id` | int | The ID of the line item to which the campaign is associated.<br><br>**Caution:**<br>No more than 500 campaigns can be associated to a single line item.<br><br>**Required On:** `POST` |
 | `start_date` | timestamp | The date and time when the campaign should start serving. Null corresponds to "immediately". This value reflects the Advertiser's time zone.<br>**Default:** `null` |
 | `end_date` | timestamp | The date and time when the campaign should stop serving. Null corresponds to "indefinitely". This value reflects the Advertiser's time zone.<br>**Default:** `null` |
-| `creatives` | array | The list of creative IDs or codes associated to the campaign. Update only requires id or code to be passed in but GET request will include more creative fields for convenience. <br>For more information, see [Creatives](#creatives) and the [example](#creatives-example) below. |
+| `creatives` | array | The list of creative IDs or codes associated to the campaign. Update only requires id or code to be passed in but `GET` request will include more creative fields for convenience. <br>For more information, see [Creatives](#creatives) and the [example](#creatives-example) below. |
 | `creative_groups` | array of IDs | You may wish to bucket a group of creatives and then add them to a campaign all at once. Create groups through the [Line Item Service](line-item-service.md). |
 | `timezone` | enum | The timezone of the campaign. For details and accepted values, see [API Timezones](api-timezones.md). If no timezone is set, this will default to the advertiser's timezone, which defaults to the member's timezone, which defaults to EST5EDT. Campaign daily budgets are reset at midnight in the timezone of the campaign, so this field determines that time.<br><br>**Note:**<br>Any `PUT` calls to the `advertiser` service which include `set_child_timezone=true` in the query string will cause any timezone settings on the lower level objects (e.g., insertion orders, line items, campaigns) to be overridden with the latest timezone value for that advertiser.<br><br>**Default:** The advertiser's timezone. |
 | `last_modified` | timestamp | The time of last modification to this campaign. |
@@ -88,7 +88,7 @@ A campaign is a way to organize a set of targeting parameters within our platfor
 | `enable_pacing` | boolean | If `true`, the campaign's daily budgeted spend is spread out evenly throughout each day. This is only applicable if `daily_budget` is set. For more details about even daily pacing, see "Daily Pacing" in the UI documentation.<br>**Default:** `false` |
 | `lifetime_pacing` | boolean | If `true`, the campaign will attempt to spend its overall lifetime budget evenly over the campaign flight dates. If true, you cannot set a `daily_budget`, you cannot set `enable_pacing` to false, and you must first establish a `lifetime_budget`, a `start_date`, and an `end_date` for the campaign.<br>**Default:** `false` |
 | `lifetime_pacing_span` | int | In the event of an underspend event, this indicates the number of days across which the underspent amount will be distributed. The default value of `null` indicates a value of three (3) days.<br>**Default:** `null` |
-| `priority` | int | For a campaign targeting direct inventory (`inventory_type` is "direct"), since you have already paid for inventory, there is no need to input a buying strategy. However, you can set the campaign's priority to weight the campaign against other direct campaigns within your account. The campaign with the highest priority will always win, even if a lower priority campaign bids more. For more information about managing priority, see "Bidding Priority" in the UI documentation.<br>**Default:** `5` |
+| `priority` | int | For a campaign targeting direct inventory (`inventory_type` is `"direct"`), since you have already paid for inventory, there is no need to input a buying strategy. However, you can set the campaign's priority to weight the campaign against other direct campaigns within your account. The campaign with the highest priority will always win, even if a lower priority campaign bids more. For more information about managing priority, see "Bidding Priority" in the UI documentation.<br>**Default:** `5` |
 | `cadence_modifier_enabled` | boolean | If `true`, bids will be adjusted upward and downward based on the frequency and recency of the user. Typically, bids are increased for low frequency-recency impressions and decreased for high frequency-recency users. This feature is based on the idea that the effectiveness of an ad differs when a user hasn't seen the ad before, hasn't seen it many times, or hasn't seen it recently. For more details, see "Cadence Modifier and the Chaos Factor" in the UI documentation.<br>**Default:** `false` |
 | `expected_pacing` | double | **Deprecated.**<br>**Note:**<br>The `stats` object and Quickstats have been deprecated (as of October 17, 2016). |
 | `total_pacing` | double | **Deprecated.**<br>**Note:**<br>The `stats` object and Quickstats have been deprecated (as of October 17, 2016). |
@@ -113,8 +113,7 @@ A campaign is a way to organize a set of targeting parameters within our platfor
 
 ### Optimization levers
 
-These optional fields give advanced users extra control over optimizing their campaigns. For detailed information on these fields, see
-"Optimization Levers" in the UI documentation.
+These optional fields give advanced users extra control over optimizing their campaigns. For detailed information on these fields, see "Optimization Levers" in the UI documentation.
 
 > [!TIP]
 > If you would like access to optimization levers, a Xandr admin must set the `expose_optimization_levers` field to `true` for your [member](member-service.md). For more details, contact your account representative.
@@ -124,13 +123,13 @@ These optional fields give advanced users extra control over optimizing their ca
 | `ecp_learn_divisor` | string | **Deprecated.** This feature is not supported in version 7 of the Optimization engine. For newer ways to adjust learn bids, see `learn_override_type`.<br>**Default:** `null (3)` |
 | `projected_learn_events` | int | **Deprecated.** This feature has been incorporated into the learn algorithm for version 7 of the Optimization engine.<br>**Default:** `null (3)` |
 | `learn_threshold` | int | The number of successful events (clicks or conversions) required before moving from the learn stage to the optimized stage. Possible values: 1 - 100.<br>**Default:** `null (3)` |
-| `max_learn_bid` | double | When using the `cpm_bid_type` "predicted", the optimization engine submits "learn" bids to learn about new inventory. If necessary, enter the max CPM dollar amount for these bids. <br><br>**Note:** When you set both `max_learn_bid` for learn bids and `max_bid` for non-learn bids, the lower of the two will be used for learn.<br>**Default:** `null` |
+| `max_learn_bid` | double | When using the `cpm_bid_type` "predicted", the optimization engine submits "learn" bids to learn about new inventory. If necessary, enter the max CPM dollar amount for these bids. <br><br>**Note:** When you set both `max_learn_bid` for learn bids and `max_bid` for non-learn bids, the lower of the two will be used for learn.<br><br>**Default:** `null` |
 | `cadence_type` | enum | The level at which the cadence modifier is applied. Possible values: `"advertiser"` or `"creative"`.<br>**Default:** `"advertiser"` |
 | `defer_to_li_prediction` | boolean | If true, this campaign will temporarily change the level at which it learns while maintaining a specified profit margin percentage. See "Optimization Levers" in the UI documentation for more details.<br>**Default:** `false` |
-| `optimization_lookback` | array of objects | Optimization is based on the last 30 days of data, evenly weighted. You can use this field to give more weight to certain days within that window. <br>Possible values for "day": 0 - 29. <br>Possible values for "bias_percent": 0 - 100. <br>For more details, see [example](#optimization_lookback-example) below. |
+| `optimization_lookback` | array of objects | Optimization is based on the last 30 days of data, evenly weighted. You can use this field to give more weight to certain days within that window. <br>Possible values for `"day"`: 0 - 29. <br>Possible values for `"bias_percent"`: 0 - 100. <br>For more details, see [example](#optimization_lookback-example) below. |
 | `optimization_version` | string | Indicates the version of optimization currently in use.<br>**Default:** `v7`<br>**Read Only.** |
 | `learn_override_type` | enum | If you want to override our algorithm's learn bid, this is the type of bid to submit instead. Possible values:<br> - `"base_cpm_bid"`: A flat CPM bid. You specify the CPM value in the `base_cpm_bid_value` field.<br> - `"venue_avg_cpm_bid"`: The average bid for each venue.<br>**Default:** `null` |
-| `base_cpm_bid_value` | double | The CPM value to use for learn bids, when `learn_override_type` is "cpm_learn_bid". This value cannot be greater than 10.0.<br>**Default:** `null`<br>**Required On:** `POST`/`PUT`, if `learn_override_type` is `"base_cpm_bid"`. |
+| `base_cpm_bid_value` | double | The CPM value to use for learn bids, when `learn_override_type` is `"cpm_learn_bid"`. This value cannot be greater than 10.0.<br>**Default:** `null`<br>**Required On:** `POST`/`PUT`, if `learn_override_type` is `"base_cpm_bid"`. |
 | `bid_multiplier` | double | The value by which to multiply the learn bid. This can be used for our algorithm's default learn bid or an override learn bid when `learn_override_type` is `"venue_average_cpm_bid"`. This value cannot be greater than `10.0`.<br>**Default:** `1.0` |
 | `impression_limit` | int | For a specific venue, the number of impressions after which to stop overriding our algorithm's learn bid. This value must be greater than 0.<br>**Default:** `40000` |
 | `campaign_modifiers` | array of objects | An array of objects containing the segment modifier-related settings associated with this campaign (format shown below). For more information, see "Segment Modifier" in the UI documentation.<br><br>**Note:**<br>You cannot set both `campaign_modifier` and `bid_modifier_model` in a single campaign.<br>For more details, see [example](#campaign_modifiers-example) below. |
@@ -179,8 +178,7 @@ These optional fields give advanced users extra control over optimizing their ca
 
 ### Broker fees
 
-When a network uses a broker to serve an impression, it pays a fee to the broker for that service. This value varies between different
-networks, different brokers, and different campaigns. Therefore, the network must specify how much it will pay each broker it uses. This can also be done at the Line Item level ([Line Item Service](line-item-service.md)) or at the Insertion Order level ([Insertion Order Service](insertion-order-service.md)).
+When a network uses a broker to serve an impression, it pays a fee to the broker for that service. This value varies between different networks, different brokers, and different campaigns. Therefore, the network must specify how much it will pay each broker it uses. This can also be done at the Line Item level ([Line Item Service](line-item-service.md)) or at the Insertion Order level ([Insertion Order Service](insertion-order-service.md)).
 
 To create or edit brokers, refer to the [Broker Service](broker-service.md).
 
@@ -296,17 +294,17 @@ Each object in the `labels` array includes the following fields.
 |:---|:---|:---|
 | `id` | int | The ID of the label. Possible value: 9 (Test/Control). |
 | `name` | enum | The name of the label. This field is read-only. Possible value: "Test/Control". |
-| `value` | string (100) | The value assigned to the label. This could be the name of the user_group_target in the associated [profile](profile-service.md). |
+| `value` | string (100) | The value assigned to the label. This could be the name of the `user_group_target` in the associated [profile](profile-service.md). |
 
 ### Pixels
 
 > [!NOTE]
-> Before you can associate a pixel to a campaign, the pixel must already be attached to the parent line item. Also, if `cpc_bid_type` is "predicted" and cpc_goal is not set, you must provide a value for either `roi_click_goal` or `roi_view_goal`.
+> Before you can associate a pixel to a campaign, the pixel must already be attached to the parent line item. Also, if `cpc_bid_type` is `"predicted"` and `cpc_goal` is not set, you must provide a value for either `roi_click_goal` or `roi_view_goal`.
 
 | Field | Type | Description |
 |:---|:---|:---|
 | `id` | int | The ID of the conversion pixel. |
-| `state` | enum | The state of the conversion pixel. Possible values: "active" or "inactive". |
+| `state` | enum | The state of the conversion pixel. Possible values: `"active"` or `"inactive"`. |
 | `name` | string | **Read-only.** The name of the conversion pixel. |
 | `roi_click_goal` | double | If paying on a per-impression (CPM) basis and optimizing to a predicted CPA goal, set this field to the click goal. |
 | `roi_view_goal` | double | If paying on a per-impression (CPM) basis and optimizing to a predicted CPA goal, set this field to the view goal. |
@@ -335,8 +333,7 @@ The `bid_modifier_model` object contains the following fields.
 
 ### First run/last run
 
-To include the `first_run` and `last_run` fields in a GET response, pass `flight_info=true` in the query string. You can also filter for
-campaigns based on when they first and last served, as follows:
+To include the `first_run` and `last_run` fields in a `GET` response, pass `flight_info=true` in the query string. You can also filter for campaigns based on when they first and last served, as follows:
 
 #### Retrieve only campaigns that have never served
 
@@ -359,7 +356,7 @@ curl -b cookies -c cookies 'https://api.appnexus.com/campaign?advertiser_id=100&
 
 #### Retrieve only campaigns that first served on or before a specific date
 
-Pass `max_first_run=YYYY-MM-DD HH:MM:SS`
+Pass `max_first_run=YYYY-MM-DD HH:MM:SS` in the query string.
 
 ```
 curl -b cookies -c cookies 'https://api.appnexus.com/campaign?advertiser_id=100&flight_info=true&max_first_run=2012-08-01+00:00:00'
@@ -401,7 +398,7 @@ curl -b cookies -c cookies 'https://api.appnexus.com/campaign?advertiser_id=100&
 
 This field notifies you of conditions that are preventing the campaign from serving. There are two types of alerts: pauses and warnings. Pauses are considered intentional and user-driven, whereas warnings are considered unintentional. For example, "State is set to inactive" is considered a pause, whereas "No creatives are associated with this campaign" is considered a warning.
 
-To retrieve campaigns based on pauses and/or warnings, you must pass certain query string parameters in the GET request. See below for use cases with query string parameters and examples. Note that you can use these query string parameters both when retrieving all campaigns or specific campaigns, but the examples below only cover retrieving all campaigns, as that is where this feature offers the most value.
+To retrieve campaigns based on pauses and/or warnings, you must pass certain query string parameters in the `GET` request. See below for use cases with query string parameters and examples. Note that you can use these query string parameters both when retrieving all campaigns or specific campaigns, but the examples below only cover retrieving all campaigns, as that is where this feature offers the most value.
 
 #### Retrieve all campaigns and show alerts
 
@@ -1336,7 +1333,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/campaign?show_alerts=true
 
 ## Examples
 
-### Viewing campaign 17607 for advertiser 9
+### View campaign 17607 for advertiser 9
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/campaign?id=17607&advertiser_id=11'
@@ -1567,7 +1564,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/campaign?id=17607&adverti
 }
 ```
 
-### Creating a direct campaign
+### Create a direct campaign
 
 This code represents the minimum information required to create an inactive campaign for direct inventory with no creatives and no targeting.
 

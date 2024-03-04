@@ -46,7 +46,7 @@ Data retention period for this report is 45 days.
 | `line_item_id` | int | yes | `111` | The ID of the line item. If the value is `0`, the impression was purchased by a third-party buyer. |
 | `advertiser_name` | string | no | `"Amco"` | The name of the advertiser. |
 | `advertiser` | string | no | `"Amco (789)"` | **Deprecated**. |
-| `line_item_name` | string | no | "Kitchen" | The name of the line item. |
+| `line_item_name` | string | no | `"Kitchen"` | The name of the line item. |
 | `line_item` | string | no | `"Kitchen (111)"` | **Deprecated**. |
 | `split_id` | int | yes | `342` | The ID of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any reports that contain campaigns, the `split_id` (if included) will be `null`. |
 | `split_name` | string | yes | `"Mobile Split A"` | The name of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any reports that contain campaigns, the `split_name` (if included) will be `null`. |
@@ -57,7 +57,7 @@ Data retention period for this report is 45 days.
 | `insertion_order_name` | string | no | `"Mobile Insertion Order"` | The name of the insertion order. |
 | `insertion_order` | string | no | `"Mobile Insertion Order (321)"` | **Deprecated**. |
 | `segment_code` | string | no | `"Mobile Insertion Order Code"` | The (optional) custom code associated with the user segment present for this impression. |
-| `pixel_id` | int | yes | `1942` | The unique identification number of the conversion pixel.<br><br>**Note:** This dimension will return a maximum of 10 conversion pixels. Also, you can filter by no more than 10 conversion pixels. Although `pixel_id` is groupable, we do not recommend that you group by this dimension since doing so will cause conversion events to then be shown in separate rows from impression and click events. We generally assume you want to view all of these events in a single row so as to be able to retrieve accurate and aggregated values for conversion rate and cost-per-conversion calculations. As a result, we instead recommend that you filter by `pixel_id` so you can retrieve conversion counts and related metrics for your most relevant pixel ids. |
+| `pixel_id` | int | yes | `1942` | The unique identification number of the conversion pixel.<br><br>**Note:** This dimension will return a maximum of 10 conversion pixels. Also, you can filter by no more than 10 conversion pixels. Although `pixel_id` is groupable, we do not recommend that you group by this dimension since doing so will cause conversion events to then be shown in separate rows from impression and click events. We generally assume you want to view all of these events in a single row so as to be able to retrieve accurate and aggregated values for conversion rate and cost-per-conversion calculations. As a result, we instead recommend that you filter by `pixel_id` so you can retrieve conversion counts and related metrics for your most relevant pixel IDs. |
 | `gender` | string | yes | `"m"`, `"f"`, `"u"` | The gender of the user.<br><br>**Note:** For impressions older than 100 days, the gender will be `"u"`. |
 | `age_bucket` | string | yes | `"18-24`, `"45-54"` | The age bucket in which the user is contained. For more information, see [Age Bucket](#age-bucket) below. |
 | `age_bucket_id` | int | yes | `1`, `3`, `0` | The ID of the age bucket. For more information, see [Age Bucket](#age-bucket) below. |
@@ -131,7 +131,7 @@ Data retention period for this report is 45 days.
 
 ### Create the JSON report request
 
-The JSON file should include the `report_type` of `"buyer_segment_performance"`, as well as the columns (dimensions and metrics) and {{report_interval}} that you want to retrieve. You can also filter for specific dimensions, define granularity (year, month, day), and specify the format in which the data should be returned (csv, excel, or html). For a full explanation of fields that can be included in the JSON file, see the [Report Service](report-service.md).
+The JSON file should include the `report_type` of `"buyer_segment_performance"`, as well as the columns (dimensions and metrics) and `{{report_interval}}` that you want to retrieve. You can also filter for specific dimensions, define granularity (`year`, `month`, `day`), and specify the format in which the data should be returned (`csv`, `excel`, or `html`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](report-service.md).
 
 ```
 $ cat buyer_segment_performance
@@ -164,8 +164,7 @@ $ curl -b cookies -c cookies -X POST -d @buyer_segment_performance "https://api.
 
 ### `GET` the report status from the Report Service
 
-Make a `GET` call with the report ID to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is
-`"ready"`. Then use the **report-download** service to save the report data to a file, as described in the next step.
+Make a `GET` call with the report ID to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is `"ready"`. Then use the **report-download** service to save the report data to a file, as described in the next step.
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/report?id=71816ec6d09b32a5140730afe5cf6af5'

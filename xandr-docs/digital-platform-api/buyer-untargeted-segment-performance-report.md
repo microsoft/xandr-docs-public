@@ -12,8 +12,7 @@ ms.custom: digital-platform-api
 >
 > In addition, due to the cost of running this report, it is limited to strategic/large clients only. Contact Steve Truxal to request access for your client and provide details on the revenue opportunity, expected hourly biddable impressions for 1 day, and how you expect the member's seat to scale over the next 6-12 months.
 
-The Buyer Untargeted Segment report can be used for discovery: to identify segments you have access to but may not be targeting. This
-report is available to members.
+The Buyer Untargeted Segment report can be used for discovery: to identify segments you have access to but may not be targeting. This report is available to members.
 
 For instructions on retrieving a report, see the [examples](#examples) below.
 
@@ -110,8 +109,7 @@ The JSON file should include the following:
 - `"columns"` (dimensions and metrics) you want to retrieve.
 - `"report_interval"` you want to retrieve.
 
-You can also include `filters` for dimensions, define granularity (`year`, `month`, `day`), and specify the `format` in which the data
-should be returned (`"csv"`, `"excel"`, or `"html"`).
+You can also include `filters` for dimensions, define granularity (`year`, `month`, `day`), and specify the `format` in which the data should be returned (`"csv"`, `"excel"`, or `"html"`).
 
 > [!NOTE]
 > To filter a dimension by more than one value, use an array. For example:
@@ -126,9 +124,7 @@ should be returned (`"csv"`, `"excel"`, or `"html"`).
 
 For more details about the columns that can be included in the request, see [Dimensions](#dimensions) and [Metrics](#metrics) above.
 
-The example below demonstrates how to retrieve the Buyer Untargeted Segment Performance Report. In this example, the report will display
-data for the `hour`, `campaign_id`, `imps`, `clicks`, `total_convs`, `ctr`, and `convs_rate` columns. This report will pull data from the
-last 48 hours and will format it as a CSV file.
+The example below demonstrates how to retrieve the Buyer Untargeted Segment Performance Report. In this example, the report will display data for the `hour`, `campaign_id`, `imps`, `clicks`, `total_convs`, `ctr`, and `convs_rate` columns. This report will pull data from the last 48 hours and will format it as a CSV file.
 
 ```
 $ cat report_request

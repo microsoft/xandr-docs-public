@@ -9,8 +9,7 @@ ms.custom: digital-platform-api
 
 The Conversion Pixel Fire report allows you to view the date and time when your advertisers' conversion pixels last fired. You can use this information both to verify the pixels that are firing properly and to identify the pixels in need of troubleshooting.
 
-For each conversion pixel, the last fire should correspond to the last time a user visited the web page on which the pixel is placed. If a
-pixel has never fired, or last fired a long time ago, it is a sign that the pixel may not be placed correctly on the page.
+For each conversion pixel, the last fire should correspond to the last time a user visited the web page on which the pixel is placed. If a pixel has never fired, or last fired a long time ago, it is a sign that the pixel may not be placed correctly on the page.
 
 For instructions on retrieving a report, see [Report Service](report-service.md) or the [examples](#examples) below.
 

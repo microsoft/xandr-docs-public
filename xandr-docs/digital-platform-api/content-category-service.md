@@ -20,7 +20,7 @@ You apply content categories to sites and placements through the [Site Service](
 | `GET` | [https://api.appnexus.com/content-category?id=1,2,3](https://api.appnexus.com/content-category?id=1,2,3) | View multiple content categories by ID using a comma-separated list. |
 | `POST` | [https://api.appnexus.com/content-category](https://api.appnexus.com/content-category) | Add a custom content category. |
 | `PUT` | [https://api.appnexus.com/content-category?id=CONTENT_CATEGORY_ID](https://api.appnexus.com/content-category?id=CONTENT_CATEGORY_ID) | Modify a custom content category. |
-| `DELETE` | [https://api.appnexus.com/content-category?id=CONTENT_CATEGORY_ID](https://api.appnexus.com/content-category?id=CONTENT_CATEGORY_ID) | Delete a custom content category.<br><br>**Tip:** You cannot add, modify, or delete universal content categories (where `is_system` is set to true). Universal content categories are managed by Xandr. |
+| `DELETE` | [https://api.appnexus.com/content-category?id=CONTENT_CATEGORY_ID](https://api.appnexus.com/content-category?id=CONTENT_CATEGORY_ID) | Delete a custom content category.<br><br>**Tip:** You cannot add, modify, or delete universal content categories (where `is_system` is set to `true`). Universal content categories are managed by Xandr. |
 
 ## JSON fields
 

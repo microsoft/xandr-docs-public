@@ -7,8 +7,7 @@ ms.custom: digital-platform-api
 
 # Digital Platform API - Category service
 
-The read-only Category Service allows you to view all buy-side categories that are registered in our system. Categories are applied to
-both brands and creatives - you can see what categories are assigned to a brand or creative using the [Brand Service](brand-service.md) or the [Creative Service](creative-service.md). Sellers can then allow or disallow these categories of brands and creatives using the [Ad Profile Service](ad-profile-service.md). When looking at a creative in , you will see "Sensitive categories" and "Offer category" - both of these pull from the Category Service. Sensitive categories will have the is_sensitive field set to true.
+The read-only Category Service allows you to view all buy-side categories that are registered in our system. Categories are applied to both brands and creatives - you can see what categories are assigned to a brand or creative using the [Brand Service](brand-service.md) or the [Creative Service](creative-service.md). Sellers can then allow or disallow these categories of brands and creatives using the [Ad Profile Service](ad-profile-service.md). When looking at a creative in , you will see "Sensitive categories" and "Offer category" - both of these pull from the Category Service. Sensitive categories will have the is_sensitive field set to true.
 
 Sellers will categorize sites and placements using the [Content Category Service](content-category-service.md).
 

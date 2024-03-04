@@ -1,6 +1,6 @@
 ---
 title: Microsoft Curate - Customize your Seller Profile
-description: This article provides instructions to customize the seller profile.
+description: This article provides instructions to customize your seller profile.
 ms.date: 11/10/2023
 ---
 
@@ -27,7 +27,7 @@ Complete the following fields:
 - **Contact Name** - Enter the name of the primary contact.
 - **Contact Title** - Enter the business title of the primary contact.
 - **Phone** - Enter the primary contact's phone number.
-- **Email** - Enter the primary contact's email address. A notification is sent to this address when the buyer posts a new message in the Activity Stream.
+- **Email** - Enter the primary contact's email address. A notification is sent to this address when the buyer posts a new message in the **Activity Stream**.
 - **Website** - Enter the URL of your company's web site.
 - **Address/Address 2** - Enter the mailing address for the primary contact.
 - **City** - Enter the city in which the primary contact is located.
@@ -36,7 +36,7 @@ Complete the following fields:
 - **Country** - Enter the country in which the primary contact is located.
 - **Company Info** - Enter any additional information about your company that may be relevant.
 - **Use the same information for my buyer profile** - Select this checkbox to use this same information when a seller is viewing your buyer profile in the **Partner Center** screen.
-- **Inventory Trust chart** - View an overview of the audit quality of your inventory. You can see the number of impressions as well as the percentage of your inventory that has been self-audited (**Seller-reviewed**) or audited by Microsoft Advertising (**Platform-reviewed**). The statistics for **All** inventory will include your audited and unauditedd inventory.
+- **Inventory Trust chart** - View an overview of the audit quality of your inventory. You can see the number of impressions as well as the percentage of your inventory that has been self-audited (**Seller-reviewed**) or audited by Microsoft Advertising (**Platform-reviewed**). The statistics for **All** inventory will include your audited and unaudited inventory.
 
 ## Step 3. Record your changes
 

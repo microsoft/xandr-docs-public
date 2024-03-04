@@ -17,8 +17,8 @@ Before careating an Outlook profile and campaign, you should add your Outlook cr
 
 To ensure that your campaign will reach Microsoft Outlook.com inventory, you should:
 
-- Set `supply_type_targets` to "web" and `supply_type_action` to "include".
-- Set `domain_targets` to "outlook.com" and `domain_action` to "include".
+- Set `supply_type_targets` to `"web"` and `supply_type_action` to `"include"`.
+- Set `domain_targets` to `"outlook.com"` and `domain_action` to `"include"`.
 
 You can also add targeting based on frequency, geography, daypart, segment, and system. However, note that you cannot target Outlook.com users based on age, gender, tag position, or tag query strings.
 
@@ -162,7 +162,7 @@ Setting up an Outlook campaign is similar to setting up any other web campaign. 
 
 - Use the `profile_id` field to associate the campaign to the Outlook targeting profile you created in [Step 1](#step-1-create-a-profile-that-targets-outlookcom-inventory).
 - Set `line_item_id` to the ID of the line item under which you want to create the Outlook campaign.
-- Set `supply_type` to "web".
+- Set `supply_type` to `"web"`.
 - Since Microsoft is an external supply partner, set `inventory_type` to `"real_time"`.
 - Use the `creatives` array to associate Outlook creatives to the campaign.
 

@@ -7,8 +7,7 @@ ms.custom: digital-platform-api
 
 # Publisher brand review report
 
-This report provides a view of brand performance across a specific publisher's inventory. This report is available to both network and
-publisher users. You can:
+This report provides a view of brand performance across a specific publisher's inventory. This report is available to both network and publisher users. You can:
 
 - Review what creative has served on your inventory under a specific publisher and how it performed.
 - Review creative performance by audit status.
@@ -69,7 +68,7 @@ Data retention period for this report is 428 days.
 | `deal` | string | no | `"Private deal for buyer 1085 with floor of $2.50 (45)"` | **Deprecated** (as of October 17, 2016). |
 | `deal_code` | string | no | `"Custom code"` | The custom code for the deal. |
 | `brand_offer_category_id` | int | yes | `1256` | The ID of the brand offer category associated with the impression. See `category_id` in the [Brand Service](brand-service.md) page. |
-| `brand_offer_category_name` | string | no | `"Luxury Cars"` | The name of the brand offer category associated with the impression. See category_id in the [Brand Service](brand-service.md) page. |
+| `brand_offer_category_name` | string | no | `"Luxury Cars"` | The name of the brand offer category associated with the impression. See `category_id` in the [Brand Service](brand-service.md) page. |
 | `creative_audit_status_id` | int | yes | `0` | The ID of the audit status of the creative associated with the impression:<br>- `0` = unaudited<br>- `1` = seller audited only<br>- `2` = appnexus audited |
 | `creative_audit_status` | string | no | `"Unaudited"` | The audit status of the creative associated with the impression:<br>- `"Unaudited"`<br>- `"Self Audit Only"`<br>- `"AppNexus Audited"` |
 | `size` | string | yes | `"728x90"` | The width and height of the creative associated with the impression. |
@@ -124,8 +123,7 @@ $ curl -b cookies -c cookies -X post -d @publisher_brand_review "https://api.app
 
 ### `GET` the report status from the Report service
 
-Make a `GET` call with the report ID to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is
-`"ready"`. Then use the **report-download** service to save the report data to a file, as described in the next step.
+Make a `GET` call with the report ID to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is `"ready"`. Then use the **report-download** service to save the report data to a file, as described in the next step.
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/report?id=97a181df6d77a8f3cd5a45eff4ea3dab'

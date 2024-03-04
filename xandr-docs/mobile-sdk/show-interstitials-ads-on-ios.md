@@ -5,7 +5,6 @@ ms.custom: ios-sdk
 ms.date: 10/28/2023
 ---
 
-
 # Show Interstitial Ads on iOS
 
 This page has instructions and code samples for showing interstitial ads on iOS.
@@ -17,7 +16,7 @@ Showing interstitial ads requires a little bit of more effort. In addition to im
 ## Process
 
 1. Call `loadAd` to fetch the ad contents from our server and cache them locally. Note that any ad content is rendered in a WebView at the time it is fetched from the ad server and cached. This means that any third-party tracking pixels that are part of the ad content will be fired at the time of the call to `loadAd`, not when the call to `displayAdFromViewController` is made at a later time.
-1. When the ad content is actually received from the ad server, your implementation of the `adDidReceiveAd` callback is fired. In the example below, we call `displayAdFromViewController` right away, but your implementation could wait until it's more convenient for your app to show the interstitial ad. Note that the call to `displayAdFromViewController` needs to happen within approximately 4 minutes of the call to `loadAd` in order for the impression to be counted by Xandr. (For the exact timing in milliseconds, see the value of `kANInterstitialAdTimeout` in the source code.)
+1. When the ad content is actually received from the ad server, your implementation of the `adDidReceiveAd` callback is fired. In the example below, we call `displayAdFromViewController` right away, but your implementation could wait until it's more convenient for your app to show the interstitial ad. Note that the call to `displayAdFromViewController` needs to happen within approximately 4 minutes of the call to `loadAd` in order for the impression to be counted by Xandr. <!-- (For the exact timing in milliseconds, see the value of `kANInterstitialAdTimeout` in the source code.) -->
 
   > [!NOTE]
   > The close button appears after ten seconds by default. You can set the delay using `ANInterstitialAd.setCloseDelay`.
@@ -31,15 +30,15 @@ The interstitial code samples below show how to request ads using the placement 
 > [!NOTE]
 > Beginning with version RC2.8, you can initialize interstitials using a combination of member ID and inventory code instead of placement ID though it is still supported. Here is the method that shows the initialization using inventory code and member ID:
 
-``` 
-> // iOS: ObjC code that uses inventory code and member ID instead of placement ID (optional)
+```
+// iOS: ObjC code that uses inventory code and member ID instead of placement ID (optional)
 -(instancetype)initWithMemberId:(NSInteger)memberId inventoryCode:(NSString *)inventoryCode;
  
 ```
 
-**Code sample (Objective C)**
+### Code sample (Objective C)
 
-``` 
+```
 // iOS: ObjC code to show an interstitial ad
 #import "ViewController.h"
 #import "ANInterstitialAd.h"
@@ -66,9 +65,9 @@ The interstitial code samples below show how to request ads using the placement 
 @end
 ```
 
-**Code sample (Swift)**
+### Code sample (Swift)
 
-``` 
+```
 
 // iOS: Swift code to show an interstitial ad
 // Import ANInterstitialAd.h in the bridging header.
@@ -108,7 +107,7 @@ By default, if you don't specify an ad size, the SDK will fetch ads in any of th
 
 If you want to show interstitial ads in sizes other than the defaults, set the `allowedAdSizes` property on the `ANInterstitialAd`. Note that the detected size of the screen will still be passed as the main size. The sizes set using the `allowedAdSizes` property will be passed in as `promo_sizes` on the placement and will replace the defaults of 300x250 and 320x480.
 
-## Auto-Close an interstitial
+## Auto-close an interstitial
 
 If you want to auto-close an interstitial ad after a specific timeout period, do not call `displayAdFromViewController` as described in the above sections. Instead,call `displayAdFromViewController:(UIViewController *)controller autoDismissDelay:(NSTimeInterval)delay`. The following examples sets the number of seconds the interstitial is displayed before it is closed to 10 seconds.
 

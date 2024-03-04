@@ -11,7 +11,7 @@ ms.custom: digital-platform-api
 > **Beta Notice**
 >
 > - The Real-Time Signals Service is in Beta, and is subject to change in the future.
-> - As we transition to open beta, **we will be adding a monthly charge for new and existing clients that use RTSS**. For more information, please speak to your account manager.
+> - As we transition to open beta, **we will be adding a monthly charge for new and existing clients that use RTSS**. For more information, speak to your account manager.
 
 The following best practices will help you be successful using RTSS.
 
@@ -27,14 +27,11 @@ The following best practices will help you be successful using RTSS.
 
 In order to prevent abuse of the API services, all accounts are generally limited to 10 read/writes per second. This limit is enforced programmatically by the API on a member level.
 
-To avoid exceeding the rate limits, please use the RTSS Bulk Upload service to upload multiple records. If the bulk upload file has more
-than 1 million records, please wait 10-15 minutes before trying the next upload. For more information on API rate limits, see the [API Throttling](05---throttling-pagination-and-filtering.md) documentation.
+To avoid exceeding the rate limits, use the RTSS Bulk Upload service to upload multiple records. If the bulk upload file has more than 1 million records, wait 10-15 minutes before trying the next upload. For more information on API rate limits, see the [API Throttling](05---throttling-pagination-and-filtering.md) documentation.
 
 ## Segment naming
 
-When you create segment objects for RTSS targets, it's a good idea to include `rtss` in the segment name, or to add this string as segment
-code. Labeling your RTSS segments makes it easier to identify which segments have RTSS real-time targets (IPs, OLCs, or lat/longs), as
-opposed to audiences (cookies/MAIDs). Clear naming also helps when troubleshooting segment objects.
+When you create segment objects for RTSS targets, it's a good idea to include `rtss` in the segment name, or to add this string as segment code. Labeling your RTSS segments makes it easier to identify which segments have RTSS real-time targets (IPs, OLCs, or lat/longs), as opposed to audiences (cookies/MAIDs). Clear naming also helps when troubleshooting segment objects.
 
 For example, you could use the following naming convention:
 
@@ -48,8 +45,7 @@ For best results, don’t mix cookies and RTSS targets in the same segment--alwa
 
 ## Target expiry
 
-When you upload targets to RTSS, make sure you keep track of their TTL. We assign a default expiry of 180 days per target unless otherwise
-specified. Keeping track of which targets will soon expire helps you avoid:
+When you upload targets to RTSS, make sure you keep track of their TTL. We assign a default expiry of 180 days per target unless otherwise specified. Keeping track of which targets will soon expire helps you avoid:
 
 - Running campaigns failing to serve, because they’re targeting RTSS segments with expired targets.
 - Uploading unnecessarily large files, instead of just the targets that will expire soon.
@@ -67,8 +63,7 @@ The following table shows the relationship between `seg_ttl` and `expiry` in the
 
 ## OLC and geo-targeting
 
-RTSS uploads will accept any string that represents a valid OLC. By shortening the OLC code provided, you can specify a less precise area
-and increase your targeting zone. We recommend using a minimum of 4 symbols for OLC codes (an approximately 110km block, and a maximum of 8 symbols (an approximately 275m block)).
+RTSS uploads will accept any string that represents a valid OLC. By shortening the OLC code provided, you can specify a less precise area and increase your targeting zone. We recommend using a minimum of 4 symbols for OLC codes (an approximately 110km block, and a maximum of 8 symbols (an approximately 275m block)).
 
 RTSS will use Lat/Long for location whenever it is provided at the time of impression, and will fall back to IP address otherwise. Lat/Long is usually only provided via in-app impressions, when the user has explicitly granted permission to the application to identify location of the device.
 
