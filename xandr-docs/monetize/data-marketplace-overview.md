@@ -43,7 +43,7 @@ The data marketplace provides multiple filtering options to simplify the process
 ### Environment filters
 
 | Filter Type | Examples | Description |
-|---|---|---|
+|--|--|--|
 | `Ad Format` | "Video", "Display" | Segments that have recently participated in auctions for this ad format(s) |
 | `Device Type` | "CTV", "Mobile" | Segments that have recently participated in auctions with this device type(s) |
 | `Geography` | "Canada", "United States" | Segments that have recently participated in auctions from the region(s) |
@@ -65,7 +65,7 @@ To offer clarification, the following are some of the metrics that appear in the
 > The expenses for segments for which the prices were not provided by the data provider, are presently not included in the overall cleared totals. For usage reports and the associated costs of such segments, you must coordinate with the data providers as billing for these segments will be handled separately by the Data Provider.
 
 | Report Type | Description |
-|---|---|
+|--|--|
 | `Data Usage Report (API)` | For details on the API version of this report, see the [Data Usage Report](data-usage-report.md). |
 | `Data Usage Report (UI)` | For details on the UI version of this report, see the [Data Usage Report](data-usage-report.md). |
 | `Network Analytics Report (API)` | The `data_costs` field in the `network_analytics` report contains the sum of all third-party data costs. For details on these data costs, see [Data Usage Report](data-usage-report.md). In addition, the `revenue` field in the `network_analytics` report includes all third-party data costs in totals when the Line Item's `revenue_type` is set to `cost_plus_cpm` or `cost_plus_margin`. |
@@ -73,7 +73,7 @@ To offer clarification, the following are some of the metrics that appear in the
 
 ## Data usage in invoices
 
-Your invoices contain the Cost of Data row. This row is a sum of all third-party data costs incurred for that month. To verify that these invoice values are accurate, compare them to the data in your [Data Usage Report](data-usage-report.md). For more details on invoices, see [Understanding Your Invoice](understanding-your-invoice.md).
+Your invoices contain the **Cost of Data** row. This row is a sum of all third-party data costs incurred for that month. To verify that these invoice values are accurate, compare them to the data in your [Data Usage Report](data-usage-report.md). For more details on invoices, see [Understanding Your Invoice](understanding-your-invoice.md).
 
 ### Setting data costs to display in grid views
 

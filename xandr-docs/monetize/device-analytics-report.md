@@ -7,24 +7,13 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize - Device analytics report
 
-The Device Analytics report enables you to retrieve buy-side and
-sell-side performance data based on devices where impressions were
-served. This is especially important for networks working with in-app
-advertisers who traffic creatives that encourage app installation and
-who therefore want confirmation that their creatives are targeting
-devices compatible with their apps. It also helps you answer the
-following questions:
+The Device Analytics report enables you to retrieve buy-side and sell-side performance data based on devices where impressions were served. This is especially important for networks working with in-app advertisers who traffic creatives that encourage app installation and who therefore want confirmation that their creatives are targeting devices compatible with their apps. It also helps you answer the following questions:
 
-- How many impressions have you seen for specific device makes and
-  models?
-- How many impressions have you seen for specific connection types
-  (i.e., WiFi/Static or Carrier-based)?
-- How do certain types of devices perform relative to others (i.e.,
-  tablets vs. phones)?
-- How do certain makes and models of devices perform relative to others
-  (i.e., Android vs. Apple)?
-- How do certain types of connections perform relative to others (i.e.,
-  Wifi/Static vs. Carrier-based)
+- How many impressions have you seen for specific device makes and models?
+- How many impressions have you seen for specific connection types (i.e., WiFi/Static or Carrier-based)?
+- How do certain types of devices perform relative to others (i.e., tablets vs. phones)?
+- How do certain makes and models of devices perform relative to others (i.e., Android vs. Apple)?
+- How do certain types of connections perform relative to others (i.e., Wifi/Static vs. Carrier-based)
 
 ## Time frame
 
@@ -32,8 +21,7 @@ All dates and times are given in UTC.
 
 **Time ranges**
 
-Time ranges define the time period of the data extracted for the report.
-The following is a complete list of time ranges available for reports.
+Time ranges define the time period of the data extracted for the report. The following is a complete list of time ranges available for reports.
 
 However, all time ranges are not available for every report.
 
@@ -62,21 +50,16 @@ However, all time ranges are not available for every report.
 
 **Intervals**
 
-Intervals determine how your data is grouped together into rows in the
-report response. The following is a complete list of intervals available
-for reports. However, all intervals are not available for every report.
+Intervals determine how your data is grouped together into rows in the report response. The following is a complete list of intervals available for reports. However, all intervals are not available for every report.
 
 - Hourly: Data is grouped into rows by the hour.
 - Daily: Data is grouped into rows by the day.
 - Monthly: Data is grouped into rows by the month.
-- Cumulative: Data is grouped together in one figure, covering the
-  entire selected time range.
+- Cumulative: Data is grouped together in one figure, covering the entire selected time range.
 
 ## Data retention period
 
-Most data in this report is maintained for 14 months. However, after 100
-days, you are no longer able to report on hourly data (daily, monthly
-and cumulative intervals are still available).
+Most data in this report is maintained for 14 months. However, after 100 days, you are no longer able to report on hourly data (daily, monthly and cumulative intervals are still available).
 
 > [!NOTE]
 > The first hour for which hourly reporting is supported is **2019-06-03 00:00 UTC**.
@@ -89,7 +72,7 @@ and cumulative intervals are still available).
 ## Dimensions
 
 | Column | Type | Filter? | Example | Description |
-|---|---|---|---|---|
+|--|--|--|--|--|
 | Advertiser | string | Yes | "Mobile Zombies (789)" | The name of the advertiser followed by the ID (Microsoft Advertising format). |
 | Bid Type | string | Yes | "Manual" | The optimization phase the node was in when it bid for the impression. Note that the term "give up" is appended to the bid types below if the valuation for that impression falls below the venue's "give up price". Allowed values:<br> - "Manual": Applies when you are bidding with a CPM goal, whether it's Base, EAP, or ECP.<br> - "Learn": Applies when you are bidding with optimization (CPA, CPC, or margin) and we do not yet have enough data to bid optimized.<br> - "Optimized": Applies when you are bidding with optimization (CPA, CPC, or margin) and we have enough data to bid optimized.<br> - "Unknown": The node was in an unknown optimization phase.<br> - "Optimized give up"<br> - "Learn give up"<br> - "Manual give up" |
 | Browser | string | Yes |  | The name of the browser followed by the ID (Microsoft Advertising format). |
@@ -126,7 +109,7 @@ and cumulative intervals are still available).
 > When values of a metric are displayed as percentages in the UI, they will be displayed as decimals when you export the report.
 
 | Column | Type | Example | Formula | Description |
-|---|---|---|---|---|
+|--|--|--|--|--|
 | 25% Video Complete | int | 10 |  | The total number of times the video creatives completed 25% of the entire duration. |
 | 50% Video Complete | int | 10 |  | The total number of times the video creatives completed 50% of the entire duration. |
 | 75% Video Complete | int | 10 |  | The total number of times the video creatives completed 75% of the entire duration. |
@@ -178,72 +161,30 @@ and cumulative intervals are still available).
 
 Follow these steps to run your report.
 
-1. Select **Reporting** from the
-    appropriate top menu (depending on how your account has been
-    configured).
-    1. Or, from the Publishers top menu, click on
-        **Prebid
-        Server Premium** \>
-        **Analytics** \>
-        **Prebid Server Analytics**.
-1. Select the relevant report from the list. The
-    **Report** screen shows the available
-    filters, dimensions, and delivery options for the report. The
-    selections you make here will determine what report data is
-    delivered to you, and how.
+1. Select **Reporting** from the appropriate top menu (depending on how your account has been configured), or, from the Publishers top menu, click on **Prebid Server Premium** \> **Analytics** \> **Prebid Server Analytics**.
+1. Select the relevant report from the list. The **Report** screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
 
     > [!IMPORTANT]
     > For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md).
 
-1. Select the relevant filters to limit the data displayed to just the
-    information you want. For example, rather than running a report that
-    shows impressions for all inventory sources, you may want to list
-    results for just a select few. When you select a filter (by clicking
-    **Edit**), a selection panel appears.
-    Select items in the **Available** list (left), then click
-    **Add** to include them in the
-    **Chosen** list (right).
-1. Group by Dimension. Grouping allows you to display rows of data in
-    the order you prefer.
+1. Select the relevant filters to limit the data displayed to just the information you want. For example, rather than running a report that shows impressions for all inventory sources, you may want to list results for just a select few. When you select a filter (by clicking **Edit**), a selection panel appears. Select items in the **Available** list (left), then click **Add** to include them in the **Chosen** list (right).
+1. Group by Dimension. Grouping allows you to display rows of data in the order you prefer.
 
     > [!WARNING]
-    > The more dimensions you group by, the larger the data set that is returned. Larger data sets
-    can take substantially longer to process. Be sure to group using only the dimensions you need.
+    > The more dimensions you group by, the larger the data set that is returned. Larger data sets can take substantially longer to process. Be sure to group using only the dimensions you need.
 
-1. Choose a delivery option. Once you've selected your filters and
-    grouped by your chosen dimensions, you need to choose a delivery
-    method. Available delivery methods include:
-    - **Run now, show results in screen**: For smaller amounts of data,
-      you may want to view the report as soon as possible in your
-      browser. You can download the report in XLSX, CSV, Excel/TSV and
-      JSON format. However, there is a limit of 100,000 rows per report
-      when downloading as XLSX and Excel file.
-    - **Run in background, notify me when results are ready to view**: A
-      popup notification will let you know when the report is ready to
-      view or download.
+1. Choose a delivery option. Once you've selected your filters and grouped by your chosen dimensions, you need to choose a delivery method. Available delivery methods include:
+    - **Run now, show results in screen**: For smaller amounts of data, you may want to view the report as soon as possible in your browser. You can download the report in XLSX, CSV, Excel/TSV and JSON format. However, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file.
+    - **Run in background, notify me when results are ready to view**: A popup notification will let you know when the report is ready to view or download.
 
       > [!TIP]
-      > The maximum size of the
-      report that can be downloaded from the UI is 100 MB. Also, there
-      is a limit of 100,000 rows per report when downloading as XLSX and
-      Excel file. If the size of the report is more than that, you can
-      try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service
-      (The limit here is 10 million rows).
+      > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and
+      Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service (The limit here is 10 million rows).
 
-    - **Export, send results via
-      email**: Run the report in the background and email the results to
-      one or more email addresses.
-    - **Save as report template**: Save your selected report settings so
-      that you can run this report again in the future. You can name
-      this template using the text entry field under
-      **Name this report** (its checkbox
-      is auto-selected when you choose this option). A saved report can
-      be rerun from the **Your Reports**
-      screen.
-    - **Add to scheduled reports**: Run this report automatically at
-      specified times and have it sent to one or more email addresses.
-    - **Name this report**: Give this report with its current settings a
-      name for future reference.
+    - **Export, send results via email**: Run the report in the background and email the results to one or more email addresses.
+    - **Save as report template**: Save your selected report settings so that you can run this report again in the future. You can name this template using the text entry field under **Name this report** (its checkbox is auto-selected when you choose this option). A saved report can be rerun from the **Your Reports** screen.
+    - **Add to scheduled reports**: Run this report automatically at specified times and have it sent to one or more email addresses.
+    - **Name this report**: Give this report with its current settings a name for future reference.
 1. Click **Run report** to send your report request.
 
 ## Related topics

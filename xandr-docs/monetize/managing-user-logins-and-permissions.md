@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Managing User Logins and Permissions
-description: Learn managing users, setting up passwords and permissions in this page.
+description: We have integrated the authentication process of the users due to which users are able to access Microsoft Advertising applications using the same sign-on methods to access other Microsoft products. 
 ms.date: 10/28/2023
 ---
 

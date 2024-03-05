@@ -1,6 +1,6 @@
 ---
 title: Manage Custom Content Categories
-description: Learn how this area of Monetize displays a working list of your custom content categories, allowing you to create buckets in which you can group your inventory. 
+description: Learn how you can create a new custom content category, edit the name and description of an existing custom content category and delete a custom content category in the Content Categories area of Microsoft Monetize.    
 ms.date: 10/28/2023
 ---
 
@@ -23,8 +23,7 @@ This screen shows the list of custom content categories that you have created. A
 
 ### Location
 
-To reach this screen, select
-**Network** > **Tools** > **General** and then click on the **Content Categories** tab.
+To reach this screen, select **Network** > **Tools** > **General** and then click on the **Content Categories** tab.
 
 ### Columns
 
@@ -40,10 +39,8 @@ The following columns exist for each custom category on the main screen.
 
 The following buttons are available on the main screen.
 
-- **New content category**: Use this
-  button to create a new custom content category. See [Create a Custom Content Category](#create-a-custom-content-category) below for further step-by-step instructions.
-- **Delete a custom content category**:
-  Use this button to delete custom content categories. See [Delete a Custom Content Category](#delete-a-custom-content-category) below for further step-by-step instructions.
+- **New content category**: Use this button to create a new custom content category. See [Create a Custom Content Category](#create-a-custom-content-category) below for further step-by-step instructions.
+- **Delete a custom content category**: Use this button to delete custom content categories. See [Delete a Custom Content Category](#delete-a-custom-content-category) below for further step-by-step instructions.
 
 ## Manage a custom content category
 
