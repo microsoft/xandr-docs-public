@@ -1,6 +1,6 @@
 ---
 title: Network Site Domain Performance
-description: Use the network site domain performance report to view performance and optimization data by domain for all of a network's advertisers.
+description: Use the Network Site Domain Performance report to view performance and optimization data by domain for all of a network's advertisers.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -25,7 +25,7 @@ The `report_interval` field can be set to one of the following:
 
 If you use the `start_date` and `end_date` fields to define the time range, the `start_date` must not be more than 30 days in the past. Since hourly data is not available for this report, the `start_date` and `end_date` cannot be identical and must be formatted as `"YYYY-MM-DD"` rather than `"YYYY-MM-DD HH:MM:SS"`.
 
-**Data retention period**
+### Data retention period
 
 Data retention period for this report is 45 days.
 
@@ -158,7 +158,7 @@ Data retention period for this report is 45 days.
 
 ## Example
 
-### Create JSON formatted report request
+### Create a JSON formatted report request
 
 ```
 $ cat network_site_domain_performance

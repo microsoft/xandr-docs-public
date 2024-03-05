@@ -1,11 +1,11 @@
 ---
 title: Moat Video Viewability Setup - API
-description: Use Moat to improve video viewability metrics with third-party data. Learn how to link an account or create one from scratch on their setup page.
+description: Use Moat to improve video viewability metrics. Learn how to link an account or create one from scratch on Moat Video Viewability Measurement Setup page.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Moat video viewability setup - API
+# Moat Video Viewability Setup - API
 
 You can amplify your video viewability metrics by tapping into a third-party video viewability data provider like Moat. This document will guide you through the process of updating a video creative to include Moat's reporting. For steps to link an existing account with Moat or to create one from scratch, see the [Moat Video Viewability Measurement Setup](../invest/moat-video-viewability-measurement.md) page in the UI.
 

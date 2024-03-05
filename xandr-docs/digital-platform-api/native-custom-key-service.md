@@ -1,11 +1,11 @@
 ---
 title: Native Custom Key Service
-description: Use the native custom key service to view and store custom key values for members' ads with a creative format ID of 12.
+description: Use the Native Custom Key service to view and store custom key values for members' ads with a creative format ID of 12.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Native custom key service
+# Native Custom Key service
 
 The **read-only** Native Custom Key Service is used to view the custom keys that belong to a certain member. Native custom keys are used by native ad creatives. Technically, native ads are identified by our system as those creatives that have a `template` with a `creative_format_id` of `12`, i e., `"native"`. Some sellers allow buyers to send along custom values with native ads, such as the advertiser's brand, and native custom keys are used to store this information.
 
@@ -13,10 +13,10 @@ The **read-only** Native Custom Key Service is used to view the custom keys that
 
 | Name | Type | Sort by? | Filter by? | Description |
 |:---|:---|:---|:---|:---|
-| `id` | int | No | No | **Deprecated**.<br>**Default**: N/A<br> |
-| `custom_key` | string | No | Yes | **Deprecated**.<br>**Default**: `null`<br> |
-| `last_modified` | date | No | No | **Deprecated**.<br>**Default**: Same as `created_on`, until modified.<br>**Required On**: N/A |
-| `created_on` | date | No | No | **Deprecated**.<br>**Default**: N/A<br>**Required On**: N/A |
+| `id` | int | No | No | **Deprecated**<br><br>**Default**: N/A<br> |
+| `custom_key` | string | No | Yes | **Deprecated**<br><br>**Default**: `null`<br> |
+| `last_modified` | date | No | No | **Deprecated**<br><br>**Default**: Same as `created_on`, until modified.<br>**Required On**: N/A |
+| `created_on` | date | No | No | **Deprecated**<br><br>**Default**: N/A<br>**Required On**: N/A |
 
 ## Example
 

@@ -1,11 +1,11 @@
 ---
 title: Member Relation Service
-description: The member relation service is an internal API service for monitoring financial arrangements between members, including clients, partners, buyers, and sellers.
+description: The Member Relation service is an internal API service for monitoring financial arrangements between members, including clients, partners, buyers, and sellers.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Member relation service
+# Member Relation service
 
 > [!NOTE]
 > This service is currently available to a limited set of clients and Microsoft employees only. This includes both clients and partners, as well as individual buyers and sellers. For example, a buyer member may want to set up a direct clearing relationship with a seller member rather than clearing through our platform.
@@ -20,13 +20,13 @@ In addition, the `apply_bid_landscape_priority` field allows sellers who are [Bi
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/member-relation?buyer_member_id=MEMBER_ID | View all of a member's financial relationships as a buyer with other sellers. |
-| `GET` | https://api.appnexus.com/member-relation?seller_member_id=MEMBER_ID | View all of a member's financial relationships as a seller with other buyers. |
-| `GET` | https://api.appnexus.com/member-relation?id=1,2,3 | View multiple member relationship objects by ID using a comma-separated list. |
-| `GET` | https://api.appnexus.com/member-relation?member_id=100&id=1 | View a specific member financial relationship:. |
-| `PUT` | https://api.appnexus.com/member-relation?member_id=100&id=1 | Update a specific member financial relationship. |
-| `POST` | https://api.appnexus.com/member-relation?member_id=100 | Create a specific member financial relationship. |
-| `GET` | https://api.appnexus.com/member-relation/meta | Find out what fields you can filter and sort by. |
+| `GET` | `https://api.appnexus.com/member-relation?buyer_member_id=MEMBER_ID` | View all of a member's financial relationships as a buyer with other sellers. |
+| `GET` | `https://api.appnexus.com/member-relation?seller_member_id=MEMBER_ID` | View all of a member's financial relationships as a seller with other buyers. |
+| `GET` |`https://api.appnexus.com/member-relation?id=1,2,3` | View multiple member relationship objects by ID using a comma-separated list. |
+| `GET` | `https://api.appnexus.com/member-relation?member_id=100&id=1` | View a specific member financial relationship:. |
+| `PUT` | `https://api.appnexus.com/member-relation?member_id=100&id=1` | Update a specific member financial relationship. |
+| `POST` | `https://api.appnexus.com/member-relation?member_id=100` | Create a specific member financial relationship. |
+| `GET` | `https://api.appnexus.com/member-relation/meta` | Find out what fields you can filter and sort by. |
 
 ## JSON fields
 

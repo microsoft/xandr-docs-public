@@ -14,7 +14,7 @@ The Network Analytics Feed offers you extensive data on your network's buy-side 
 >
 > For instructions on how to fetch this feed, see the example on the [Bulk Reporting Feeds](./bulk-reporting-feeds.md) page.
 
-**Data retention period**
+## Data retention period
 
 This report's data is retained for 30 days, and is available at an hourly time granularity.
 
@@ -36,7 +36,7 @@ This report's data is retained for 30 days, and is available at an hourly time g
 | `creative_id` | int | `50` | The ID of the creative. For external click or impression trackers, this will be `"External Clicks"` or `"External Imps"`. For `imp_type = 6`, no information is available in the `creative_id` field for this report. See the [Seller Brand Review Report](./seller-brand-review-report.md) instead. |
 | `creative_frequency_bucket` | string | `"15-30 minutes"` | **Deprecated**. If you request this dimension, only a default value will be returned. Please use the [Network Creative Frequency & Recency](./network-creative-frequency-and-recency.md) report to view creative frequency data. |
 | `creative_recency_bucket` | string | `"11-20"` | **Deprecated**. If you request this dimension, only a default value will be returned. Please use the [Network Creative Frequency & Recency](./network-creative-frequency-and-recency.md) report to view creative recency data. |
-| d``eal_id | int | `456` | The ID of the deal. For more information about negotiated deals between buyers and sellers, see [Deal Service](./deal-service.md) and [Deal Buyer Access Service](./deal-buyer-access-service.md). |
+| `deal_id` | int | `456` | The ID of the deal. For more information about negotiated deals between buyers and sellers, see [Deal Service](./deal-service.md) and [Deal Buyer Access Service](./deal-buyer-access-service.md). |
 | `entity_member_id` | int | `123` | If `imp_type` is `1`, `2`, `3`, `4`, `6`, or `8`, the ID of the buying member; otherwise, the ID of the selling member. |
 | `external_inv_id` | int | `8293` | The ID of the external inventory code passed in the ad call and predefined by the publisher. For more details, see [External Inventory Code Service](./external-inventory-code-service.md). |
 | `geo_country` | string | `"US"` | The code of the geographic country. |

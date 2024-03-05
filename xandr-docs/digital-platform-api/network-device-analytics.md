@@ -1,6 +1,6 @@
 ---
 title: Network Device Analytics
-description: Use the network device analytics report to view performance data for buy-side and sell-side ads targeting compatible devices, useful for networks working with in-app advertisers.
+description: Use the Network Device Analytics report to view performance data for buy-side and sell-side ads targeting compatible devices, useful for networks working with in-app advertisers.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -30,7 +30,7 @@ The `report_interval` field can be set to one of the following:
 
 Alternately, the `start_date` and `end_date` fields can be set to a range within the last 30 days. However, since hourly data is not available for this report, the `start_date` and `end_date` cannot be identical and must be formatted as `"YYYY-MM-DD"` rather than `"YYYY-MM-DD HH:MM:SS"`. The `timezone` field in the JSON request can be set only to `"UTC"`, but this is not necessary, as the timezone defaults to `"UTC"` if not specified.
 
-**Data retention period**
+### Data retention period
 
 Data in this report is retained for 428 days.
 
@@ -170,7 +170,7 @@ Data in this report is retained for 428 days.
 
 ## Example
 
-### Create JSON formatted report request
+### Create a JSON formatted report request
 
 The JSON file should include the `report_type` `"network_device_analytics"`, as well as the columns (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`year`, `month`, `day`), and specify the format in which the data should be returned (`csv`, `excel`, or `html`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](./report-service.md). In this example, we want to see performance data about US impressions for advertiser 1459 for each of the last 14 days. Specifically, for each combination of device make, device model, connection type, and impression type, we want the number of impressions, the number of clicks, the total money spent, the money spent per 1000 impressions, the money paid to us by the advertiser, and the total profit (money earned - money spent).
 

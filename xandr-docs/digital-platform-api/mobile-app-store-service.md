@@ -1,11 +1,11 @@
 ---
 title: Mobile App Store Service
-description: Use the mobile app store service to see all of the mobile app stores that are registered in the system.
+description: Use the Mobile App Store service to see all of the mobile app stores that are registered in the system.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Mobile app store service
+# Mobile App Store service
 
 The Mobile App Store Service is a **read-only** service that you can use to see all of the mobile app stores that are registered in our system.
 
@@ -13,8 +13,8 @@ The Mobile App Store Service is a **read-only** service that you can use to see
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/mobile-app-store?id=3 | View a single app store |
-| `GET` | https://api.appnexus.com/mobile-app-store | View all of your app stores registered in our system |
+| `GET` | `https://api.appnexus.com/mobile-app-store?id=3` | View a single app store |
+| `GET` | `https://api.appnexus.com/mobile-app-store` | View all of your app stores registered in our system |
 
 ## JSON fields
 

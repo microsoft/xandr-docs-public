@@ -1,6 +1,6 @@
 ---
 title: Advertiser Attributed Conversions
-description: Use the advertiser attributed conversions report to view conversion pixel IDs, order IDs, times of attributed clicks or impressions, and other related information.
+description: Use the Advertiser Attributed Conversions report to view conversion pixel IDs, order IDs, times of attributed clicks or impressions, and other related information.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -86,7 +86,7 @@ This report can retrieve data for the last 90 days and only in UTC timezone.
 
 ## Examples
 
-### Create the JSON-formatted report request
+### Create a JSON-formatted report request
 
 In this example, we set a filter to get information about conversion pixel 9012.
 

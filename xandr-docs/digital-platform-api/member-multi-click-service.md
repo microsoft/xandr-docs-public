@@ -1,27 +1,27 @@
 ---
 title: Member Multi Click Service
-description: Use the member multi click service to update the common.member_multi_click table.
+description: Use the Member Multi Click service to update the common.member_multi_click table.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Member multi click service
+# Member Multi Click service
 
 > [!NOTE]
 > This service is currently available to a limited set of clients and Microsoft employees only.
 
-The Member Multi Click service is an admin-only service that allows updates to the `common.member_multi_click` table. This table configures members to track multiple clicks for specific cases. Please be careful when adding or updating objects when using this service
+The Member Multi Click service is an admin-only service that allows updates to the `common.member_multi_click` table. This table configures members to track multiple clicks for specific cases. Be careful when adding or updating objects when using this service
 
 ## REST API
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | https://api.appnexus.com/member-multi-click <br>(template JSON) | Add a new member-multi-click setting |
-| `PUT` |  https://api.appnexus.com/member-multi-click?id=MULTI_CLICK_ID*<br><br>**Note**: `MULTI_CLICK_ID` is not the `member_id` but a uniquely generated ID for the setting. It can be retrieved via `GET`. <br>(template JSON) | Modify a member-multi-click setting |
-| `DELETE` | https://api.appnexus.com/member-multi-click?id=MULTI_CLICK_ID | Delete a member-multi-click setting |
-| `GET` |  https://api.appnexus.com/member-multi-click | View all member-multi-click settings |
-| `GET` | https://api.appnexus.com/member-multi-click?member_id=MEMBER_ID | View a specific member's multi click setting |
-| `GET` | https://api.appnexus.com/member-multi-click/meta | Find out which fields you can filter and sort by |
+| `POST` | `https://api.appnexus.com/member-multi-click` <br>(template JSON) | Add a new member-multi-click setting |
+| `PUT` |  `https://api.appnexus.com/member-multi-click?id=MULTI_CLICK_ID*`<br><br>**Note**: `MULTI_CLICK_ID` is not the `member_id` but a uniquely generated ID for the setting. It can be retrieved via `GET`. <br>(template JSON) | Modify a member-multi-click setting |
+| `DELETE` | `https://api.appnexus.com/member-multi-click?id=MULTI_CLICK_ID` | Delete a member-multi-click setting |
+| `GET` |  `https://api.appnexus.com/member-multi-click` | View all member-multi-click settings |
+| `GET` | `https://api.appnexus.com/member-multi-click?member_id=MEMBER_ID` | View a specific member's multi click setting |
+| `GET` | `https://api.appnexus.com/member-multi-click/meta` | Find out which fields you can filter and sort by |
 
 ## JSON fields
 
@@ -79,7 +79,7 @@ $ curl -b cookies -c cookies 'http:api.appnexus.com/member-multi-click'
 }
 ```
 
-### Add a multi-click-setting for a member
+### Add a member-multi-click setting for a member
 
 ```
 $ cat member-multi-click

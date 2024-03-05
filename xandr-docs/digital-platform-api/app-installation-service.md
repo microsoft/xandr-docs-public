@@ -1,11 +1,11 @@
 ---
 title: App Installation Service
-description: Use the app installation service allows app developers to install apps on client systems.
+description: The App Installation service allows app developers to install apps on client systems.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# App installation service
+# App Installation service
 
 This service allows app developers to install apps on client systems.
 
@@ -13,11 +13,11 @@ This service allows app developers to install apps on client systems.
 
 | Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/app-installation | View all installations |
-| `GET`  | https://api.appnexus.com/app-installation?id=ID | View a specific installation |
-| `POST` | https://api.appnexus.com/app-installation | Install an app for a client |
-| `PUT` | https://sand.api.appnexus.com/app-installation?id=ID | Update an app installation |
-| `DELETE` | https://api.appnexus.com/app-installation?id=ID | Delete an app installation  |
+| `GET` | `https://api.appnexus.com/app-installation` | View all installations |
+| `GET`  | `https://api.appnexus.com/app-installation?id=ID` | View a specific installation |
+| `POST` | `https://api.appnexus.com/app-installation` | Install an app for a client |
+| `PUT` | `https://sand.api.appnexus.com/app-installation?id=ID` | Update an app installation |
+| `DELETE` | `https://api.appnexus.com/app-installation?id=ID` | Delete an app installation  |
 
 ## JSON fields
 

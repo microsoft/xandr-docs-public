@@ -1,6 +1,6 @@
 ---
 title: Network Video Analytics
-description: Use the network video analytics report to view video event metrics for network members and granular analytics for specific advertisers/publishers.
+description: Use the Network Video Analytics report to view video event metrics for network members and granular analytics for specific advertisers/publishers.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -33,7 +33,7 @@ The `report_interval` field can be set to one of the following:
 - last_30_available_days
 - last_365_days
 
-**Data retention period**
+### Data retention period
 
 Data in this report is retained for 420 days.
 
@@ -254,7 +254,7 @@ Data in this report is retained for 420 days.
 
 ## Example
 
-### Create JSON formatted report request
+### Create a JSON formatted report request
 
 The JSON file should include the `report_type` of `"video_analytics_network"`, as well as the columns (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`year`, `month`, `day`), and specify the format in which the data should be returned (`csv`, `excel`, or `html`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](./report-service.md).
 

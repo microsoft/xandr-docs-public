@@ -1,27 +1,27 @@
 ---
 title: Member DC Setting Service
-description: Use the member datacenter setting service to add entries to the api.member_dc_setting table.
+description: Use the Member Datacenter Setting service to add entries to the api.member_dc_setting table.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Member DC setting service
+# Member DC Setting service
 
 > [!NOTE]
 > This service is currently available to a limited set of clients and Microsoft employees only.
 
-Member Datacenter Setting is an admin-only service that allows users to add entries to the `api.member_dc_setting` table. This table is consumed by impression bus and used to configure datacenter-specific settings for bidder members. Please be careful when modifying objects using this service.
+Member Datacenter Setting is an admin-only service that allows users to add entries to the `api.member_dc_setting` table. This table is consumed by impression bus and used to configure datacenter-specific settings for bidder members. Be careful when modifying objects using this service.
 
 ## REST API
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | https://api.appnexus.com/member-dc-setting <br>(`datacenter_setting` JSON) | Add a new Member Datacenter Setting |
-| `PUT` | https://api.appnexus.com/member-dc-setting?id=DATACENTER_SETTING_ID <br>(`datacenter_setting_update` JSON)<br><br>**Note**: The `DATACENTER_SETTING_ID` is a uniquely generated ID in the table; it's not the same as `member_id`. This value can be retrieved via `GET`. | Modify a Member Datacenter Setting |
-| `DELETE` | https://api.appnexus.com/member-dc-setting?id=DATACENTER_SETTING_ID | Delete a Member Datacenter Setting. |
-| `GET` | https://api.appnexus.com/member-dc-setting | View all Member Datacenter Settings. |
-| `GET` | https://api.appnexus.com/member-dc-setting?member_id=MEMBER_ID | View a specific member's Datacenter Setting. |
-| `GET` | https://api.appnexus.com/member-dc-setting/meta | Find out which fields you can filter and sort by. |
+| `POST` | `https://api.appnexus.com/member-dc-setting` <br>(`datacenter_setting` JSON) | Add a new Member Datacenter Setting |
+| `PUT` | `https://api.appnexus.com/member-dc-setting?id=DATACENTER_SETTING_ID` <br>(`datacenter_setting_update` JSON)<br><br>**Note**: The `DATACENTER_SETTING_ID` is a uniquely generated ID in the table; it's not the same as `member_id`. This value can be retrieved via `GET`. | Modify a Member Datacenter Setting |
+| `DELETE` | `https://api.appnexus.com/member-dc-setting?id=DATACENTER_SETTING_ID` | Delete a Member Datacenter Setting. |
+| `GET` | `https://api.appnexus.com/member-dc-setting` | View all Member Datacenter Settings. |
+| `GET` | `https://api.appnexus.com/member-dc-setting?member_id=MEMBER_ID` | View a specific member's Datacenter Setting. |
+| `GET` | `https://api.appnexus.com/member-dc-setting/meta` | Find out which fields you can filter and sort by. |
 
 ## JSON fields
 
@@ -35,7 +35,7 @@ Member Datacenter Setting is an admin-only service that allows users to add entr
 
 ## Examples
 
-### View a specific member's dc setting
+### View a specific member's DC setting
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/member-dc-setting?member_id=280'

@@ -13,16 +13,16 @@ The Advertiser service lets networks add, modify, and view the advertisers that 
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/advertiser | View all of your advertisers. |
-| `GET` | https://api.appnexus.com/advertiser?id=ADVERTISER_ID | View a specific advertiser. |
-| `GET` | https://api.appnexus.com/advertiser?code=ADVERTISER_CODE | View a specific advertiser. |
-| `GET` | https://api.appnexus.com/advertiser?id=1,2,3 | View multiple advertisers by ID using a comma-separated list. |
-| `GET` | https://api.appnexus.com/advertiser?search=SEARCH_TERM | Search for advertisers with IDs or names containing certain characters. |
-| `GET` | https://api.appnexus.com/advertiser/meta | Find out which fields you can filter and sort by. |
-| `POST` | https://api.appnexus.com/advertiser | Add a new advertiser. |
-| `PUT` | https://api.appnexus.com/advertiser?id=ADVERTISER_ID | Modify an existing advertiser. |
-| `PUT` | https://api.appnexus.com/advertiser?code=ADVERTISER_CODE | Modify an existing advertiser. |
-| `DELETE` | https://api.appnexus.com/advertiser?id=ADVERTISER_ID | Delete an advertiser.<br><br>**Note**:<br>Deleting an advertiser will delete all of its child insertion orders, line items, campaigns, creatives, conversion pixels, and segments. The deletions are permanent and cannot be reverted. Although deleted objects continue to be available in reporting, you will no longer have visibility into their specific settings, such as revenue budget for line items, cost budget, and targeting for campaigns. |
+| `GET` | `https://api.appnexus.com/advertiser` | View all of your advertisers. |
+| `GET` | `https://api.appnexus.com/advertiser?id=ADVERTISER_ID` | View a specific advertiser. |
+| `GET` | `https://api.appnexus.com/advertiser?code=ADVERTISER_CODE` | View a specific advertiser. |
+| `GET` | `https://api.appnexus.com/advertiser?id=1,2,3` | View multiple advertisers by ID using a comma-separated list. |
+| `GET` | `https://api.appnexus.com/advertiser?search=SEARCH_TERM` | Search for advertisers with IDs or names containing certain characters. |
+| `GET` | `https://api.appnexus.com/advertiser/meta` | Find out which fields you can filter and sort by. |
+| `POST` | `https://api.appnexus.com/advertiser` | Add a new advertiser. |
+| `PUT` | `https://api.appnexus.com/advertiser?id=ADVERTISER_ID` | Modify an existing advertiser. |
+| `PUT` | `https://api.appnexus.com/advertiser?code=ADVERTISER_CODE` | Modify an existing advertiser. |
+| `DELETE` | `https://api.appnexus.com/advertiser?id=ADVERTISER_ID` | Delete an advertiser.<br><br>**Note**:<br>Deleting an advertiser will delete all of its child insertion orders, line items, campaigns, creatives, conversion pixels, and segments. The deletions are permanent and cannot be reverted. Although deleted objects continue to be available in reporting, you will no longer have visibility into their specific settings, such as revenue budget for line items, cost budget, and targeting for campaigns. |
 
 ## JSON fields
 
@@ -68,8 +68,8 @@ The Advertiser service lets networks add, modify, and view the advertisers that 
 | `stats` | object | The `stats` object has been deprecated (as of October 17, 2016). Use the [Report Service](./report-service.md) to obtain statistical information instead. |
 | `timezone` | enum | The timezone of the advertiser. See [API Timezones](./api-timezones.md) for details and accepted values. For details on how to make the advertiser timezone "trickle down" to child objects, see [Timezone for Dependent Objects](#timezone-for-dependent-objects) below.<br><br>**Default**: `"EST5EDT"`, or the member's timezone. |
 | `thirdparty_pixels` | array | An array of third-party pixels associated with the advertiser. You can automatically attach these pixels to all creatives owned by this advertiser using the [Third-party Pixel service](./third-party-pixel-service.md) or attach them individually at the creative level using the [Creative Service](./creative-service.md).<br><br>**Read Only**.<br>**Default**: `null` |
-| **time_format** | enum | The format in which you would like to see times displayed in the UI. Possible values: `"12-hour"` or `"24-hour"`.<br><br>**Default**: `"12-hour"` |
-| `use_insertion_orders` | boolean | If `true`, the use of insertion orders which contain collections of line items, will be enabled for this advertiser. You will not be able to create insertion orders, if this field is set to `"false"`. Please see the [Insertion Order Service](./insertion-order-service.md) for details.<br><br>**CAUTION**:<br>**Preexisting line items**<br>If you set this field to `true` and have already created line items prior to enabling this setting, those line items will stop spending. To allow those line items to continue spending, create an insertion order (using the [Insertion Order Service](./insertion-order-service.md)) and associate the line items with the insertion order (using the [Line Item Service](./line-item-service.md)). All newly created line items will require an insertion order.<br><br>**Note**:<br>When the advertiser has associated insertion orders, you will not be able to update the value of `"use_insertion_orders"` to `false`.<br><br>**Default**: `true` |
+| `time_format` | enum | The format in which you would like to see times displayed in the UI. Possible values: `"12-hour"` or `"24-hour"`.<br><br>**Default**: `"12-hour"` |
+| `use_insertion_orders` | boolean | If `true`, the use of insertion orders which contain collections of line items, will be enabled for this advertiser. You will not be able to create insertion orders, if this field is set to `"false"`. See the [Insertion Order Service](./insertion-order-service.md) for details.<br><br>**CAUTION**:<br>**Pre-existing line items**<br>If you set this field to `true` and have already created line items prior to enabling this setting, those line items will stop spending. To allow those line items to continue spending, create an insertion order (using the [Insertion Order Service](./insertion-order-service.md)) and associate the line items with the insertion order (using the [Line Item Service](./line-item-service.md)). All newly created line items will require an insertion order.<br><br>**Note**:<br>When the advertiser has associated insertion orders, you will not be able to update the value of `"use_insertion_orders"` to `false`.<br><br>**Default**: `true` |
 
 ### Third-party pixels
 

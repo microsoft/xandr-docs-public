@@ -1,6 +1,6 @@
 ---
-title: Digital Platform API - Multi-buyer Seller Deal Metrics
-description: Use the multi-buyer seller deal metrics to view key information about deal metrics, performance, and rejection reasons that is relevant to seller.
+title: Digital Platform API - Multi-Buyer Seller Deal Metrics
+description: Use the Multi-Buyer Seller Deal Metrics report to view key information about deal metrics, performance, and rejection reasons that is relevant to seller.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -23,7 +23,7 @@ The `report_interval` field in the JSON request can be set to one of the followi
 - last_14_Days
 - last_30_days
 
-**Data retention period**
+### Data retention period
 
 Data retention period for this report is 30 days.
 
@@ -108,7 +108,7 @@ Data retention period for this report is 30 days.
 
 ## Example
 
-### Create the JSON formatted report request
+### Create a JSON formatted report request
 
 The JSON file should include the `report_type` of `"multi_buyer_seller_deal_metrics"`, as well as the `columns` (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`year`, `month`, `day`), and specify the `"format"` in which the data should be returned (`"csv"`, `"excel"`, or `"html"`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](./report-service.md).
 

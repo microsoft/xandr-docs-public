@@ -1,11 +1,11 @@
 ---
 title: Network Video Error Analytics Report
-description: Use the network video error analytics report to troubleshoot video settings and eliminate errors related to buy-side and sell-side video advertising.
+description: Use the Network Video Error Analytics report to troubleshoot video settings and eliminate errors related to buy-side and sell-side video advertising.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Network video error analytics report
+# Network Video Error Analytics report
 
 The **Network Video Error Report** gives insight into video errors and their cause.
 
@@ -34,12 +34,12 @@ The `report_interval` field can be set to one of the following:
 - last_month
 - custom
 
-**Data retention period**
+### Data retention period
 
 Data in this report is retained for 420 days.
 
 > [!NOTE]
->  - To run a report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these fields, see [Report Service](./report-service.md).
+> - To run a report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these fields, see [Report Service](./report-service.md).
 >
 > - For impressions older than 100 days, the day will be returned rather than the hour.
 
@@ -119,7 +119,7 @@ Data in this report is retained for 420 days.
 | `errors` | int | `5` | errors | The total number of times an error occurred. |
 | `cost_per_complete` | double | `2.056` | cost/completions | The cost per video completion. |
 | `revenue_per_video_complete` | double | `15.869` | revenue/completions | The revenue per video completion. |
-| `ad_responses` | int | `100` | `ad_responses` | The number of video ad responses. |
+| `ad_responses` | int | `100` | ad_responses | The number of video ad responses. |
 | `vast_100_error_count` | int | `10` | vast_100_error_count | The number of occurrences of VAST 100 errors. |
 | `vast_101_error_count` | int | `10` | vast_101_error_count | The number of occurrences of VAST 101 errors. |
 | `vast_102_error_count` | int | `10` | vast_102_error_count | The number of occurrences of VAST 102 errors. |
@@ -190,7 +190,7 @@ Data in this report is retained for 420 days.
 
 ## Example
 
-### Create JSON formatted report request
+### Create a JSON formatted report request
 
 The JSON file should include the `report_type` of `video_error_analytics_network`, as well as the columns (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`year`, `month`, `day`), and specify the format in which the data should be returned (`csv`, `excel`, or `html`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](./report-service.md).
 

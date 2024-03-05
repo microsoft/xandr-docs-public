@@ -1,10 +1,9 @@
 ---
 title: App Email Service
-description: The app email service manages automatic email notifications sent to admin users when apps are installed, modified, or deleted.
+description: The App Email service manages automatic email notifications sent to admin users when apps are installed, modified, or deleted.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
-
 
 # App email service
 
@@ -17,24 +16,24 @@ The app email service is an admin-only service that manages automatic email noti
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | https://api.appnexus.com/app-email<br> <br>(new_email JSON) | Add an app email |
-| `PUT` | https://api.appnexus.com/app-email?id=ID <br>(update_email JSON) | Modify an existing app email |
-| `GET` | https://api.appnexus.com/app-email | View all app emails |
-| `GET` | https://api.appnexus.com/app-email?id=ID | View a specific app email |
-| `DELETE` | https://api.appnexus.com/app-email?id=ID | Delete an app email |
+| `POST` | `https://api.appnexus.com/app-email`<br> <br>(`new_email` JSON) | Add an app email |
+| `PUT` | `https://api.appnexus.com/app-email?id=ID` <br>(`update_email` JSON) | Modify an existing app email |
+| `GET` | `https://api.appnexus.com/app-email` | View all app emails |
+| `GET` | `https://api.appnexus.com/app-email?id=ID` | View a specific app email |
+| `DELETE` | `https://api.appnexus.com/app-email?id=ID` | Delete an app email |
 
 ## JSON fields
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `id` | int | **Read Only**. The auto-generated ID of the email being sent through the app_email service.<br>**Required On**: `PUT`, `DELETE` |
+| `id` | int | **Read Only**. The auto-generated ID of the email being sent through the `app_email` service.<br>**Required On**: `PUT`, `DELETE` |
 | `recipient` | string | The name of the person, people, team, or teams receiving the email. Name(s) may contain up to 225 characters.<br>**Required On**: `POST (JSON)` |
 | `type` | string | The type field is used to assign a category to the email - for example `"data team"` or `"services bugs"`. It may contain up to 225 characters.<br>**Default**: `null` |
 | `action` | enum | The event that trigger the notification email. Possible values are <br> - `"put"` <br> - `"post"` <br> - `"delete"`. <br><br>**Default**: `POST`<br>**Required On**: `POST (JSON)` |
 | `recipient_emails` | string | The email addresses of the people who should receive the notification. Can contain specific email addresses separated by commas and/or a variable that pulls specific emails from the database to populate the field.<br><br>Examples:<br>- `name1@appnexus.com` <br>- `name1@appnexus.com,name2@appnexus.com`<br>- `%developer_email%,name1@appnexus.com`<br> - `%developer_email%,%installer_email%`<br><br>**Required On**: `POST (JSON)` |
 | `subject` | string | The text that will appear in the subject field of the email.<br>**Required On**: `POST (JSON)` |
 | `body` | string | The body of the email. Does not have a character limit.<br>**Required On**: `POST (JSON)` |
-| `bcc` | string | The email addresses of the people who should receive the notification as bcc recipients. Can contain specific email addresses separated by commas and/or a variable that pulls specific emails from the database to populate the field.<br><br>Examples:<br> - name1@appnexus.com <br> - name1@appnexus.com,name2@appnexus.com<br> - %developer_email%,name1@appnexus.com<br> - %developer_email%,%installer_email%<br><br>**Default**: `null` |
+| `bcc` | string | The email addresses of the people who should receive the notification as bcc recipients. Can contain specific email addresses separated by commas and/or a variable that pulls specific emails from the database to populate the field.<br><br>Examples:<br> - `name1@appnexus.com` <br> - `name1@appnexus.com,name2@appnexus.com`<br> - `%developer_email%,name1@appnexus.com`<br> - `%developer_email%,%installer_email%`<br><br>**Default**: `null` |
 
 ## Examples
 

@@ -1,11 +1,11 @@
 ---
 title: Mobile App Instance List Service
-description: The mobile app instance list service provides a list of mobile app instances for campaigns that can be used to create new mobile apps in the system.
+description: The Mobile App Instance List service provides a list of mobile app instances for campaigns that can be used to create new mobile apps in the system.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Mobile app instance list service
+# Mobile App Instance List service
 
 The Mobile App Instance List Service is used to define a list of [mobile app instances](./mobile-app-instance-service.md) that you can target with campaigns. Think of it as the mobile app version of the [Domain List Service](./domain-list-service.md).
 
@@ -17,10 +17,10 @@ This service also has the side effect of creating mobile apps in the system if t
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/mobile-app-instance-list?id=4 | View a single mobile app instance list. |
-| `POST` | https://api.appnexus.com/mobile-app-instance-list <br>(mobile app instance list JSON) | Add a mobile app instance list to the system. |
-| `GET` | https://api.appnexus.com/mobile-app-instance-list | View all of your mobile app instance lists. |
-| `GET` | https://api.appnexus.com/mobile-app-instance-list?search=SEARCH_TERM | Search for mobile app instances with names or descriptions containing certain characters. |
+| `GET` | `https://api.appnexus.com/mobile-app-instance-list?id=4` | View a single mobile app instance list. |
+| `POST` | `https://api.appnexus.com/mobile-app-instance-list` <br>(mobile app instance list JSON) | Add a mobile app instance list to the system. |
+| `GET` | `https://api.appnexus.com/mobile-app-instance-list` | View all of your mobile app instance lists. |
+| `GET` | `https://api.appnexus.com/mobile-app-instance-list?search=SEARCH_TERM` | Search for mobile app instances with names or descriptions containing certain characters. |
 
 ## JSON fields
 

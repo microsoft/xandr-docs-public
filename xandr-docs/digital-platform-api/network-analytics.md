@@ -1,6 +1,6 @@
 ---
 title: Network Analytics
-description: Use the network analytics report to view the buy and sell-side data for network members, including direct advertiser impressions and direct publishers sold across platforms.
+description: Use the Network Analytics report to view the buy and sell-side data for network members, including direct advertiser impressions and direct publishers sold across platforms.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -14,7 +14,7 @@ The Network Analytics report can be used to view both buy and sell-side data for
 
 To drill down into more granular analytics for a specific advertiser or publisher, see the [Network Advertiser Analytics](./network-advertiser-analytics.md) and [Network Publisher Analytics](./network-publisher-analytics.md) reports.
 
-For instructions on retrieving a report, please see [Report Service](./report-service.md) or the [example](#example) below.
+For instructions on retrieving a report, see [Report Service](./report-service.md) or the [example](#example) below.
 
 ## Time frame
 
@@ -34,7 +34,7 @@ The `report_interval` field can be set to one of the following:
 - last_month
 - lifetime
 
-**Data retention period**
+### Data retention period
 
 Most data in this report is maintained permanently (exceptions noted below). After:
 
@@ -49,9 +49,9 @@ In some cases Analytics reports can show delivery that does not match statistics
 > [!NOTE]
 > To run a report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these fields, see [Report Service](./report-service.md).
 
-**Time ranges including dates occurring greater than 45 days ago**
+### Time ranges including dates occurring greater than 45 days ago
 
-If you create network analytics reports with the `report_interval` set to `"lifetime"` or `"quarter_to_date"` (where the end date is greater than 45 days from today), your report (regardless of metrics included) will be added to a special queue for `"resource-intensive" `reports. As a result, the report may take longer than usual to complete. In addition, these resource-intensive reports may, due to the amount of data being requested, fail before being completed. If your report fails to complete, you will receive a notification. If your report request fails or is deleted, you can:
+If you create network analytics reports with the `report_interval` set to `"lifetime"` or `"quarter_to_date"` (where the end date is greater than 45 days from today), your report (regardless of metrics included) will be added to a special queue for `"resource-intensive"` reports. As a result, the report may take longer than usual to complete. In addition, these resource-intensive reports may, due to the amount of data being requested, fail before being completed. If your report fails to complete, you will receive a notification. If your report request fails or is deleted, you can:
 
 - re-run the report at a later time.
 - use a report type other than `network_analytics`.
@@ -424,7 +424,7 @@ If you are frequently requesting network analytics reports via the API which inc
 
 ## Example
 
-### Create JSON formatted report request
+### Create a JSON formatted report request
 
 The JSON file should include the `report_type` `"network_analytics"`, as well as the columns (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`year`, `month`, `day`), and specify the format in which the data should be returned (`csv`, `excel`, or `html`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](./report-service.md).
 
@@ -472,7 +472,6 @@ The JSON file should include the `report_type` `"network_analytics"`, as well as
 Make a `GET` call with the report ID to retrieve the status of the report. Continue making this call until the `execution_status` is `"ready"`. Then use the **report-download** service to save the reporting data to a file (described in the next step).
 
 ```
-Make a GET call with the Report ID to retrieve the status of the report. Continue making this GET call until the {{execution_status}} is "ready". Then use the *report-download* service to save the report data to a file, as described in the next step.
 {code}$ curl -b cookies 'https://api.appnexus.com/report?id=097f59fc3ab7d02c5d60db42081d9b69'
 {
    "response":{

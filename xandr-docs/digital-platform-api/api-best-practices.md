@@ -7,11 +7,13 @@ ms.custom: digital-platform-api
 
 # Digital Platform API - API best practices
 
-We're thrilled that you're taking advantage of our platform by grabbing raw data, hooking in your own pieces of the ad serving puzzle, or otherwise building on top of our infrastructure. There are a few ground rules that will make sure you have the best experience possible, and keep your applications healthy as our API evolves. Please stay in touch with your implementation consultant as you get started building.
+We're thrilled that you're taking advantage of our platform by grabbing raw data, hooking in your own pieces of the ad serving puzzle, or otherwise building on top of our infrastructure. There are a few ground rules that will make sure you have the best experience possible, and keep your applications healthy as our API evolves. Stay in touch with your implementation consultant as you get started building.
 
 ## API Dos
 
-### GET multiple objects by ID
+**Retrieve only the objects you need.**
+
+### Get multiple objects by ID
 
 Most services support the retrieval of multiple specific objects by ID. To do this, you append a comma-separated list of IDs to the query string. For example, the following request would return only the publishers with the specified IDs.
 
@@ -52,7 +54,8 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/creative?start_element=0&
 To retrieve the next 50, you would simply set `start_element=50`.
 
 > [!TIP]
-> The maximum number of objects that can be returned, regardless of pagination, is 100. Please note that if you request over 100 objects, we will only return the first 100 and will not provide an error message.
+> The maximum number of objects that can be returned, regardless of pagination, is 100. .
+ note that if you request over 100 objects, we will only return the first 100 and will not provide an error message.
 
 ### Throttle your calls
 
@@ -109,7 +112,7 @@ If we were to use `append=true` in the `PUT` call to update to this object, we 
 
 #### JSON update data
 
-``` pre
+```
 // Update Object
 {
     "profile": {
@@ -190,10 +193,10 @@ When we introduce a breaking change, we will support two versions of the API in 
 > When two versions of the API are being supported for 60 days, the breaking change will be implemented in the *newer version*.
 >
 > - In order to access the *current version* (with *no* breaking changes) use a format like:
->   - [https://api.appnexus.com/](https://api.appnexus.com/)
->   - [https://api.appnexus.com/current/](https://api.appnexus.com/)
+>   - `https://api.appnexus.com/`
+>   - `https://api.appnexus.com/current/`
 > - In order to access the *newer version* (with the breaking change features) use a format like:
->   - [https://api.appnexus.com/v1.16/](https://api.appnexus.com/v1.16/)
+>   - `https://api.appnexus.com/v1.16/`
 
 ### Be mindful of object limits
 
@@ -232,7 +235,7 @@ If you need to update all of the objects in a set - for instance, updating the 
 
 ### Don't authenticate unnecessarily
 
-When you authenticate, your token remains valid for 2 hours. You do not need to re-authenticate within this time. If you do re-authenticate, please note the following limitation: The API permits you to authenticate successfully 10 times per 5-minute period. Any subsequent authentication attempts within those 5 minutes will result in an error.
+When you authenticate, your token remains valid for 2 hours. You do not need to re-authenticate within this time. If you do re-authenticate, . note the following limitation: The API permits you to authenticate successfully 10 times per 5-minute period. Any subsequent authentication attempts within those 5 minutes will result in an error.
 
 > [!TIP]
 > It is best practice to listen for the `"NOAUTH"` `error_id` in your call responses and re-authenticate only after receiving it.

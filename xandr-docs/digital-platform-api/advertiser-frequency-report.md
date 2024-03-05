@@ -1,11 +1,11 @@
 ---
 title: Advertiser Frequency Report
-description: Use the advertiser frequency report to view how frequently users are viewing a specific advertiser's creatives.
+description: Use the Advertiser Frequency report to view how frequently users are viewing a specific advertiser's creatives.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Advertiser frequency report
+# Advertiser Frequency report
 
 > [!NOTE]
 > This service is currently available to a limited set of clients and Microsoft employees only.
@@ -30,8 +30,8 @@ The `report_interval` field in the JSON request can be set to one of the follo
 
 | Column | Type | Description |
 |:---|:---|:---|
-| `hour` | time | The hour of the auction.<br><br>Example: `"2010-02-01 06:00:00"`<br><br>**Group**: Yes<br>**Filter**: Yes |
-| day | time | The day of the auction.<br>Example: `"2010-02-01"`<br><br>**Group**: Yes<br>**Filter**: Yes |
+| `hour` | time | The hour of the auction.<br>Example: `"2010-02-01 06:00:00"`<br><br>**Group**: Yes<br>**Filter**: Yes |
+| `day` | time | The day of the auction.<br>Example: `"2010-02-01"`<br><br>**Group**: Yes<br>**Filter**: Yes |
 | `month` | time | The month of the auction.<br>Example: `"2010-02"`<br><br>**Group**: Yes<br>**Filter**: Yes |
 | `buyer_member_id` | int | The ID of the buying member. If the impression was not purchased, this field shows one of the following values: <br>`229` = PSA <br>`0` = Blank <br>`319` = Default.<br>Example: `123`<br><br>**Group**: Yes<br>**Filter**: Yes |
 | `insertion_order_id` | int | The ID of the insertion order.<br><br>**Group**: Yes<br>**Filter**: Yes |
@@ -41,7 +41,7 @@ The `report_interval` field in the JSON request can be set to one of the follo
 | `advertiser_name` | string | The name of the advertiser.<br>Example: `"Verizon Wireless"`<br><br>**Group**: No<br>**Filter**: No |
 | `advertiser` | string | **Deprecated** (as of October 17, 2016). |
 | `insertion_order_name` | string | The name of the insertion order.<br><br>**Group**: No<br>**Filter**: No |
-| i`nsertion_order_code` | string | The custom code for the insertion order.<br>**Group**: No<br>**Filter**: No |
+| `insertion_order_code` | string | The custom code for the insertion order.<br>**Group**: No<br>**Filter**: No |
 | `line_item_name` | string | The name of the line item.<br>Example: `"Default Line Item"`<br><br>**Group**: No<br>**Filter**: No |
 | `line_item_code` | string | The custom code for the line item.<br><br>**Group**: No<br>**Filter**: No |
 | `insertion_order` | string | **Deprecated** (as of October 17, 2016). |
@@ -84,7 +84,7 @@ The `report_interval` field in the JSON request can be set to one of the follo
 | `cpm` | money | The cost per 1000 impressions | `1.6605` | (cost / imps) x 1000 |
 | `total_convs` | int | The total number of post-view and post-click conversions. | `9` | post_click_convs + post_view_convs |
 | `convs_rate` | double | The rate of conversions to impressions. | `0.0002218770` | total_convs / imps |
-| ctr | double | The rate of clicks to impressions. | `0.0002218777` | clicks / imps |
+| `ctr` | double | The rate of clicks to impressions. | `0.0002218777` | clicks / imps |
 | `post_view_convs` | int | The total number of recorded post-view converstions. | `5` | post_view_convs |
 | `post_click_convs` | int | The total number of recorded post-click conversions. | `4` | post_click_convs |
 | `post_click_convs_rate` | double | The rate of post-click conversion to impressions. | `0.0002` | post_click_convs / imps |
@@ -98,7 +98,7 @@ The `report_interval` field in the JSON request can be set to one of the follo
 
 ## Example
 
-### Step 1. Create the JSON report request
+### Step 1. Create a JSON report request
 
 The JSON file should include the following:
 

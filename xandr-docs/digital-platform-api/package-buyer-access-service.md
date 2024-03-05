@@ -1,11 +1,11 @@
 ---
 title: Digital Platform API - Package Buyer Access Service
-description: Buyers can view and generate deals for sellers' packages through package buyer access service. Packages are deals sellers are prepared to offer to buyers.
+description: Buyers can view and generate deals for sellers' packages through Package Buyer Access service. Packages are deals sellers are prepared to offer to buyers.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Digital Platform API - Package buyer access service
+# Digital Platform API - Package Buyer Access service
 
 This read-only service lets buyers view information about sellers' packages. A package is a deal that a seller is prepared to offer to any buyer. Buyers browse through available packages and then use the [Deal From Package Service](./deal-from-package-service.md) to generate deals for themselves.
 
@@ -13,13 +13,13 @@ This read-only service lets buyers view information about sellers' packages. A 
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET`  | https://api.appnexus.com/package-buyer-access | View all available packages. |
-| `GET` | https://api.appnexus.com/package-buyer-access?member_id=SELLER_MEMBER_ID  | View all packages offered by a specific seller. |
-| `GET`  | https://api.appnexus.com/package-buyer-access?id=PACKAGE_ID | View a specific package. |
-| `GET`  | https://api.appnexus.com/package-buyer-access?id=1,2,3 |  View multiple packages by ID using a comma-separated list. |
-| `GET` | https://api.appnexus.com/package-buyer-access?sizes=WIDTHxHEIGHT,WIDTHxHEIGHT  | View all packages including specific sizes. |
-| `GET`  | [https://api.appnexus.com/package-buyer-access?search=PACKAGE_ID or NAME](https://api.appnexus.com/package-buyer-access?search=PACKAGE_ID%20or%20NAME) | Search for a package by name or ID. |
-| `GET` | https://api.appnexus.com/package/meta | Find out which fields you can filter and sort by. |
+| `GET`  | `https://api.appnexus.com/package-buyer-access` | View all available packages. |
+| `GET` | `https://api.appnexus.com/package-buyer-access?member_id=SELLER_MEMBER_ID`  | View all packages offered by a specific seller. |
+| `GET`  | `https://api.appnexus.com/package-buyer-access?id=PACKAGE_ID` | View a specific package. |
+| `GET`  | `https://api.appnexus.com/package-buyer-access?id=1,2,3` |  View multiple packages by ID using a comma-separated list. |
+| `GET` | `https://api.appnexus.com/package-buyer-access?sizes=WIDTHxHEIGHT,WIDTHxHEIGHT`  | View all packages including specific sizes. |
+| `GET`  | `https://api.appnexus.com/package-buyer-access?search=PACKAGE_ID or NAME` | Search for a package by name or ID. |
+| `GET` |`https://api.appnexus.com/package/meta` | Find out which fields you can filter and sort by. |
 
 ## JSON fields
 
@@ -94,7 +94,6 @@ Each object in the `sizes` array contains the following fields.
 |:---|:---|:---|
 | `width` | string | The width of the creative. |
 | `height` | string | The height of the creative. |
-
 
 ## Examples
 

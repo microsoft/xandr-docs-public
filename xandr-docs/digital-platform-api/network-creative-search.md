@@ -1,6 +1,6 @@
 ---
 title: Network Creative Search
-description: Use the network creative search report to view the list of creatives who have served on inventory within a network. 
+description: Use the Network Creative Search report to view the list of creatives that have served on inventory within a network. 
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -50,7 +50,7 @@ The `report_interval` field in the JSON request can be set to one of the followi
 
 ## Example
 
-1. **Create the JSON-formatted report request**
+1. **Create a JSON-formatted report request**
 
     The JSON file should include the `report_type` `"network_creative_search"`, as well as the columns (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`month`, `day`), and specify the format in which the data should be returned (`csv`, `excel`, or `html`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](./report-service.md).
 

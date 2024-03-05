@@ -1,11 +1,11 @@
 ---
 title: Native Layout Service
-description: The native layout service allows sellers to specify and retrieve layouts for native creatives from a database using renderer and layout IDs.
+description: The Native Layout service allows sellers to specify and retrieve layouts for native creatives from a database using renderer and layout IDs.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Native layout service
+# Native Layout service
 
 This service allows the seller to specify the layout for a native creative. Once the layout is in our database, it can be retrieved using the `renderer_id`, and subsequently the `layout_id`.
 
@@ -13,9 +13,9 @@ This service allows the seller to specify the layout for a native creative. Once
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | https://api.appnexus.com/native-layout?member_id=456 | Create a new layout. |
-| `PUT` | https://api.appnexus.com/native-layout?id=16&member_id=456 | Edit an existing layout. |
-| `DELETE` | https://api.appnexus.com/native-layout?id=123&member_id=456 | Delete a layout. |
+| `POST` | `https://api.appnexus.com/native-layout?member_id=456` | Create a new layout. |
+| `PUT` | `https://api.appnexus.com/native-layout?id=16&member_id=456` | Edit an existing layout. |
+| `DELETE` | `https://api.appnexus.com/native-layout?id=123&member_id=456` | Delete a layout. |
 
 ## JSON fields
 

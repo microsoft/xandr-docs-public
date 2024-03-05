@@ -1,6 +1,6 @@
 ---
 title: Network Creative Frequency and Recency
-description: Use the network creative frequency and recency report to view granular creative data for specific advertisers based on user views.
+description: Use the Network Creative Frequency and Recency report to view granular creative data for specific advertisers based on user views.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -9,7 +9,7 @@ ms.custom: digital-platform-api
 
 The **Network Creative Frequency & Recency** report can be used to view creative data for a specific advertiser based on the frequency and recency of user views. This report is more granular than the [Advertiser Creative Frequency and Recency](./advertiser-creative-frequency-and-recency.md) report and is available to network users only.
 
-For instructions on retrieving a report, please see [Report Service](./report-service.md) or the [example](#example) below. This report requires specifying the advertiser ID as part of the URL, for example:
+For instructions on retrieving a report, see [Report Service](./report-service.md) or the [example](#example) below. This report requires specifying the advertiser ID as part of the URL, for example:
 
 ```
 https://api.appnexus.com/report?advertiser_id=ADVERTISER_ID
@@ -32,7 +32,7 @@ The `report_interval` field can be set to one of the following:
 - last_100_days
 - custom
 
-**Data retention period**
+### Data retention period
 
 Data retention period for this report is 120 days (no data before February 26, 2017).
 
@@ -168,7 +168,7 @@ Data retention period for this report is 120 days (no data before February 26, 2
 
 ## Example
 
-### Create JSON formatted report request
+### Create a JSON formatted report request
 
 ```
 $ cat network_advertiser_frequency_recency

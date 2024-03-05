@@ -15,7 +15,7 @@ For instructions on creating your own roles, see [Create a Custom Role using the
 
 ## Step 1. Create user role JSON
 
-In this example we'll add a user to the role with role ID 35. Here's the JSON we need. Note that the `user_id` and `role_id` are required:
+In this example we'll add a user to the role with role ID `35`. Here's the JSON we need. Note that the `user_id` and `role_id` are required:
 
 ```
 $ cat add-user-role.json

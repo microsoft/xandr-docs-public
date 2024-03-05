@@ -1,6 +1,6 @@
 ---
 title: Network Attributed Conversions
-description: Use the network attributed conversions report to view information on conversion pixel IDs, order IDs, and times of attributed clicks or impressions for members or networks.
+description: Use the Network Attributed Conversions report to view information on conversion pixel IDs, order IDs, and times of attributed clicks or impressions for members or networks.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -39,7 +39,7 @@ The `report_interval` field can be set to one of the following:
 
 Alternately, the `start_date` and `end_date` fields can be set to a range within the last 33 days. The `timezone` field in the JSON request can be set only to `UTC`, but this is not necessary, as the timezone defaults to `UTC` if not specified.
 
-**Data retention period**
+### Data retention period
 
 Date retention period for the report is 90 days.
 
@@ -95,7 +95,7 @@ Date retention period for the report is 90 days.
 
 ## Example
 
-### Create JSON formatted report request
+### Create a JSON formatted report request
 
 In this example, we set a filter to get information about universal pixel `30fa5f0b-d4ec-455f-af6a-36347f888991`.
 

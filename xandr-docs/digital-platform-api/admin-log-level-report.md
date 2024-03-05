@@ -1,11 +1,11 @@
 ---
 title: Admin Log-Level Report
-description: Learn the process to use the admin log-level report in order to run select queries for log-level data.
+description: Learn the process to use the Admin Log-Level report in order to run select queries for log-level data.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Admin log-level report
+# Admin Log-Level report
 
 > [!NOTE]
 > This service is currently available to a limited set of clients and Microsoft employees only.

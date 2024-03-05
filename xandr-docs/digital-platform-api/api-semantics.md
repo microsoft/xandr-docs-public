@@ -21,7 +21,7 @@ The Digital Platform API supports HTTP Protocol version 1.1 or later. While some
 
 ## API endpoints
 
-The URL for the production API endpoint is: [https://api.appnexus.com](https://api.appnexus.com/). Please note that non-secure access to the product API (HTTP) is not available.
+The URL for the production API endpoint is: `https://api.appnexus.com`. Note that non-secure access to the product API (HTTP) is not available.
 
 Changes made with this API affect the production environment. Only authorized users should alter information or settings in this environment.
 
@@ -155,8 +155,7 @@ When making a `POST` or `PUT` request, you must include a [JSON](http://json.org
 
 ## Using cURL
 
-In our documentation we use [curl](http://us2.php.net/curl) to make HTTP requests. Curl is a command-line tool for transferring files with URL syntax, supporting FTP, FTPS, HTTP, HTTPS, SCP, SFTP, TFTP, TELNET, DICT, LDAP, LDAPS, and more. Example scripts have been provided on each API wiki page to illustrate the structure of the `curl`
-commands you will need to run Xandr API services. In addition, an example of how to a make a generic `POST` request is shown below. This example uses the [Authentication Service](./authentication-service.md):
+In our documentation we use [curl](http://us2.php.net/curl) to make HTTP requests. Curl is a command-line tool for transferring files with URL syntax, supporting FTP, FTPS, HTTP, HTTPS, SCP, SFTP, TFTP, TELNET, DICT, LDAP, LDAPS, and more. Example scripts have been provided on each API wiki page to illustrate the structure of the `curl` commands you will need to run Xandr API services. In addition, an example of how to a make a generic `POST` request is shown below. This example uses the [Authentication Service](./authentication-service.md):
 
 ```
 $ curl -b cookies -c cookies -X POST -d @auth.json 'https://api.appnexus.com/auth'
@@ -171,7 +170,7 @@ $ curl -b cookies -c cookies -X POST -d @auth.json 'https://api.appnexus.com/aut
 | `'https://api.appnexus.com/auth'` | The URL of the service you are making the request to. Use quotes in case you have any special characters in your URL. |
 
 > [!TIP]
-> **Use Single Quotes Around Your Request URL**
+> **Use single quotes around your request URL**
 >
 > Some requests require single quotes around your request URL, as in the above `curl` request. If you get an error message from your UNIX shell, make sure your request URL has single quotes before troubleshooting further. For more information on how UNIX shell quotes and escaping work, see [this documentation on quotes and escaping in shells](http://wiki.bash-hackers.org/syntax/quoting).
 
@@ -181,7 +180,6 @@ Most API Services support filtering and sorting. Filtering allows you to specify
 
 > [!TIP]
 > Please also see the [Search Service](search-service.md) and [Lookup Service](lookup-service.md) for ways of looking up objects across your member.
-
 > [!NOTE]
 > When filtering by fields, the filter "may" only be respected if the fields used for filtering are passed in the fields query string parameter.
 
@@ -205,13 +203,15 @@ $ curl -bc -cc 'https://api.appnexus.com/campaign?id=1,2,3
 
 Pass a query string parameter for the field with a comma-separated list of IDs.
 
-### Example: Request all campaigns for certain line items
+### Examples
+
+#### Request all campaigns for certain line items
 
 ```
 $ curl -b cookies 'https://api.appnexus.com/campaign?advertiser_id=40&line_item_id=1,2,3' 
 ```
 
-### Example: Request certain advertisers
+#### Request certain advertisers
 
 ```
 $ curl -b cookies 'https://api.appnexus.com/advertiser?id=3'
@@ -269,7 +269,7 @@ $ curl -b cookies "https://api.appnexus.com/user?current&fields=username,user_ty
     
 ```
 
-## Misc filters on field
+## Miscellaneous filters on field
 
 We support the following additional field-based filters on API responses:
 
@@ -283,7 +283,7 @@ We support the following additional field-based filters on API responses:
 - `having_min_*`
 - `having_max_*`
 
-Example:
+### Example
 
 ```
 $ curl -b cookies 'https://api.appnexus.com/placement?like_[fieldName]=partialValue'

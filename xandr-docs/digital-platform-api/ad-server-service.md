@@ -1,11 +1,11 @@
 ---
 title: Digital Platform API - Ad Server Service
-description: Ad server service allows access to information about ad servers for third-party creatives delivery or data collection during content delivery.
+description: Ad Server service allows access to information about ad servers for third-party creatives delivery or data collection during content delivery.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Digital Platform API - Ad server service
+# Digital Platform API - Ad Server service
 
 This read-only service allows you to view information about ad servers that can deliver third-party creatives or that can be called for data collection purposes during the delivery of Xandr-hosted or third-party creatives.
 
@@ -13,14 +13,14 @@ This read-only service allows you to view information about ad servers that can 
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | [https://api.appnexus.com/adserver](https://api.appnexus.com/adserver) | View all ad servers |
-| `GET` | [https://api.appnexus.com/adserver?id=ADSERVER_ID](https://api.appnexus.com/adserver) | View information about a specific ad server |
+| `GET` | `https://api.appnexus.com/adserver` | View all ad servers |
+| `GET` |`https://api.appnexus.com/adserver?id=ADSERVER_ID` | View information about a specific ad server |
 
 ## JSON fields
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `declare_to_adx` | boolean | If true, the ad server is identified when bidding on Google Ad Manager inventory. Identification is required to be in full compliance with Google Ad Manager creative policies [https://support.google.com/adwordspolicy/answer/94230?hl=en&rd=1](https://support.google.com/adwordspolicy/answer/94230?hl=en&rd=1). |
+| `declare_to_adx` | boolean | If true, the ad server is identified when bidding on Google Ad Manager inventory. Identification is required to be in full compliance with [Google Ad Manager creative policies](https://support.google.com/adwordspolicy/answer/94230?hl=en&rd=1). |
 | `description` | string | The description of the ad server. |
 | `hostnames` | array of objects | A list of host names that can be associated with the ad server. This field can be edited only by an administrator. |
 | `id` | int | The internal ID associated with the ad server. |
@@ -126,7 +126,7 @@ curl -b cookies -c cookies 'https://api.appnexus.com/adserver'
 }
 ```
 
-### View information about ad server 5
+### View information about ad server `5`
 
 ```
 curl -b cookies -c cookies 'https://api.appnexus.com/adserver?id=5'

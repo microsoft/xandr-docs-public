@@ -1,29 +1,27 @@
 ---
 title: Mediated Network Service
-description: Use the mediated network service to create and maintain mediated networks.
+description: Use the Mediated Network service to create and maintain mediated networks.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Mediated Network Service
+# Mediated Network service
 
 > [!NOTE]
 > Only available to Microsoft Monetize Ad Server customers.
 
-This service is used to create and maintain mediated networks.
-
-Use this service to define your integration with an external network.
+This service is used to create and maintain mediated networks. Use this service to define your integration with an external network.
 
 ## REST API
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | https://api.appnexus.com/mediated-network <br>(+ JSON payload) | Add a new mediated network |
-| `PUT` | https://api.appnexus.com/mediated-network?id=ID <br>(+ JSON payload) | Modify a mediated network |
-| `GET` | https://api.appnexus.com/mediated-network | View all mediated networks |
-| `GET` | https://api.appnexus.com/mediated-network?id=ID | View a specific mediated network |
-| `DELETE` | https://api.appnexus.com/mediated-network?id=ID | Delete a mediated network |
-| `GET` | https://api.appnexus.com/mediated-network/meta | Find out which fields you can filter and sort by |
+| `POST` | `https://api.appnexus.com/mediated-network` <br>(+ JSON payload) | Add a new mediated network |
+| `PUT` | `https://api.appnexus.com/mediated-network?id=ID` <br>(+ JSON payload) | Modify a mediated network |
+| `GET` | `https://api.appnexus.com/mediated-network` | View all mediated networks |
+| `GET` | `https://api.appnexus.com/mediated-network?id=ID` | View a specific mediated network |
+| `DELETE` | `https://api.appnexus.com/mediated-network?id=ID` | Delete a mediated network |
+| `GET` | `https://api.appnexus.com/mediated-network/meta` | Find out which fields you can filter and sort by |
 
 ## JSON fields
 

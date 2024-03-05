@@ -1,11 +1,11 @@
 ---
 title: Mediated Bid Service
-description: Use the mediated bid service to create and view mediated bids.
+description: Use the Mediated Bid service to create and view mediated bids.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Mediated bid service
+# Mediated Bid service
 
 > [!NOTE]
 > Only available to Microsoft Monetize Ad Server customers.
@@ -18,11 +18,11 @@ Every bid is associated with a mediated network. For more information about medi
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/mediated-bid?member_id=MEMBER_ID | View all of a member's bids. |
-| `GET` | https://api.appnexus.com/mediated-bid?id=BID_ID | View a specific bid. |
-| `POST` | https://api.appnexus.com/mediated-bid?member_id=MEMBER_ID <br>(+ JSON payload) | Create a new bid. |
-| `PUT` | https://api.appnexus.com/mediated-bid?member_id=MEMBER_ID <br>(+ JSON payload) | Modify a bid. |
-| `DELETE` | http://api.apnexus.com/mediated-bid?id=BID_ID | Delete a bid. |
+| `GET` | `https://api.appnexus.com/mediated-bid?member_id=MEMBER_ID` | View all of a member's bids. |
+| `GET` | `https://api.appnexus.com/mediated-bid?id=BID_ID` | View a specific bid. |
+| `POST` | `https://api.appnexus.com/mediated-bid?member_id=MEMBER_ID` <br>(+ JSON payload) | Create a new bid. |
+| `PUT` | `https://api.appnexus.com/mediated-bid?member_id=MEMBER_ID` <br>(+ JSON payload) | Modify a bid. |
+| `DELETE` | `http://api.apnexus.com/mediated-bid?id=BID_ID` | Delete a bid. |
 
 ## JSON fields
 

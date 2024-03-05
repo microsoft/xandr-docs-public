@@ -1,6 +1,6 @@
 ---
 title: Digital Platform API - Member Service
-description: This article provides information on member service. Each member has multiple users with their own UI and API credentials managed by the User Service.
+description: This article provides information on Member service. Each member has multiple users with their own UI and API credentials managed by the User Service.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -9,18 +9,19 @@ ms.custom: digital-platform-api
 
 A member is any entity that has a financial relationship with Xandr, and each client is a single member. Members are registered with the Member Service by Xandr personnel, and all API activity must be associated with a member. Note that the Member Service does not grant API or UI access. Each member has multiple users who have their own UI and API credentials, and are managed by the [User Service](./user-service.md).
 
-**Members and Contracts**
-<br>Before they can buy or sell ads, a member needs a contract with Xandr. This contract will establish financial terms and credit facilities (if applicable), and bind the member to the terms and conditions of Xandr, such as content quality and use of personally identifiable information.
+## Members and Contracts
+
+Before they can buy or sell ads, a member needs a contract with Xandr. This contract will establish financial terms and credit facilities (if applicable), and bind the member to the terms and conditions of Xandr, such as content quality and use of personally identifiable information.
 
 ## REST API
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/member | View your member |
-| `GET` | https://api.appnexus.com/member?id=MEMBER_ID | View a particular member, if you have multiple |
-| `GET` | https://api.appnexus.com/member/meta | Find out which fields you can filter and sort by |
-| `PUT` | https://api.appnexus.com/member?id=MEMBER_ID | Modify an existing member |
-| `POST` | https://api.appnexus.com/member | Add a new member (**Admin-only**) |
+| `GET` | `https://api.appnexus.com/member` | View your member |
+| `GET` |`https://api.appnexus.com/member?id=MEMBER_ID` | View a particular member, if you have multiple |
+| `GET` | `https://api.appnexus.com/member/meta` | Find out which fields you can filter and sort by |
+| `PUT` | `https://api.appnexus.com/member?id=MEMBER_ID` | Modify an existing member |
+| `POST` | `https://api.appnexus.com/member` | Add a new member (**Admin-only**) |
 
 ## JSON fields
 
@@ -33,7 +34,7 @@ A member is any entity that has a financial relationship with Xandr, and each cl
 | `buyer_clearing_fee_pct` | double | **Admin-only**. The percent of the CPM paid for inventory charged as a fee in certain cases. See your contract for more information. |  |  |  |  |  |  |  |  |  |
 | `buyer_credit_limit` | double | **Admin-only**. The credit limit with Xandr taken into consideration when the member is buying inventory. |  |  |  |  |  |  |  |  |  |
 | `contact_email` | string | The email contact for this member. |  |  |  |  |  |  |  |  |  |
-| `content_categories` | array of objects | A list of available categories that you can apply to publishers, sites, and placements. Can be customized by the member. [The array is of the following format](#content-categories-array-format). |  |  |  |  |  |  |  |  |  |
+| `content_categories` | array of objects | A list of available categories that you can apply to publishers, sites, and placements. Can be customized by the member. [The array is of this format](#content_categories-array-format). |  |  |  |  |  |  |  |  |  |
 | `contract_allows_unaudited` | Boolean | **Admin-only**. See `default_campaign_trust` and `default_campaign_allow_unaudited` for information about Xandr-reviewed inventory. If your contract does not allow you to run on non-Xandr-reviewed inventory for some reason, this will be `false`.<br><br>**Default**: `true` |  |  |  |  |  |  |  |  |  |
 | `creative_size_fee_per_gb` | float | **Read-only**. The fee that is charged per GB for a creative that exceeds the `creative_size_minimum_bytes`. |  |  |  |  |  |  |  |  |  |
 | `creative_size_minimum_bytes` | int | **Read-only**. The size above which a creative is considered over-sized. The member is charged a creative overage fee for serving an over-sized creative. |  |  |  |  |  |  |  |  |  |
@@ -55,7 +56,7 @@ A member is any entity that has a financial relationship with Xandr, and each cl
 | `default_campaign_trust` | enum | Xandr reviews a significant portion of inventory and applies quality attributes, and also encourages members who sell on our platform to review their inventory in the same manner. If you would like campaigns to by default run only on Xandr-reviewed inventory, then set this field to `"appnexus"`. If you want to default to your seller trust settings, which may include seller-reviewed and unreviewed inventory, set this field to `"seller"`. You can override this with the campaign's [profile](./profile-service.md).<br>Possible values:<br> - `seller`<br> - `appnexus`<br><br>**Default**: `appnexus` |  |  |  |  |  |  |  |  |  |
 | `default_content_retrieval_timeout_ms` | int | The default timeout, specified in milliseconds, for all placements created by this member. The default value of `0` will mean that mediated content will not be served.<br><br>**Note**: This setting can still be overridden by the `content_retrieval_timeout_ms` field on the placement itself.<br><br>**Default**: `0` |  |  |  |  |  |  |  |  |  |
 | `default_country` | array of objects | The objects are:<br> - `"country_id"`<br>- `"country_name"`<br> - `"country_code"`<br><br>**Default**: `null` |  |  |  |  |  |  |  |  |  |
-| `default_currency` | string | The default currency for this member. Can be overridden at more granular levels. For possible currency values, please use the [Currency Service](./currency-service.md).<br><br>**Default**: `USD` |  |  |  |  |  |  |  |  |  |
+| `default_currency` | string | The default currency for this member. Can be overridden at more granular levels. For possible currency values, use the [Currency Service](./currency-service.md).<br><br>**Default**: `USD` |  |  |  |  |  |  |  |  |  |
 | `default_enable_for_mediation` | Boolean | Whether placements created by this member are enabled to serve mediation creatives by default. Even if this field is set to `false`, the `enable_for_mediation` field on the placement itself can still override the behavior defined here.<br><br>**Default**: `false` |  |  |  |  |  |  |  |  |  |
 | `default_placement_id` | int | The placement ID to be used as a default when an inactive or nonexistent seller tag is called. |  |  |  |  |  |  |  |  |  |
 | `developer_id` | int | **Read-only**. The ID of the developer, if the member is developing on Xandr's platform (e.g., for the Apps Marketplace). |  |  |  |  |  |  |  |  |  |
@@ -81,11 +82,11 @@ A member is any entity that has a financial relationship with Xandr, and each cl
 | `no_reselling_priority` | int | This value is used to determine whether RTB bids are allowed to compete with your managed campaigns. In order for an RTB bid to be able to compete with a managed bid for an impression, this field's value must be greater than the priority of the managed bid.<br><br>For example, let's say you have the following [auction and settings](#auction-and-settings-for-no_reselling_priority). In this example, the RTB bid will not compete, even though its bid price is higher. In order for RTB to compete on this impression, `no_reselling_priority` would have to be 9 or higher.<br><br>In addition, when reselling is allowed for an impression, the highest priority standard managed demand will be allowed to compete with the highest priority guaranteed demand (as well as with RTB). |
 | `pitbull_segment_id` | int | **Note**: This field has been deprecated. |  |  |  |  |  |  |  |  |  |
 | `pitbull_segment_value` | int | **Note**: This field has been deprecated. |  |  |  |  |  |  |  |  |  |
-| `platform_exposure` | enum | This determines whether and how your member appears in the **Buyers** tab of the Ad Quality Manager in and in the [Platform Member](./platform-member-service.md) service. Possible values:<br> - `"public"` = Your member name is shown.<br> - `"private"` = Your member ID is shown.<br> - `"hidden"` = Your member does not appear.<br><br>**Note**:<br> - Setting `platform_exposure` to `"hidden"` will hide your member `"name"` and `"domain"` fields in our [sellers.json](https://acdn.adnxs.com/sellers/1d/appnexus/sellers.json) file and list your member seat as `"is_confidential": 1`. See [example](#setting-platform_exposure-to-hidden). <br>This can limit the monetization of your inventory as some DSPs may not choose to buy impressions from sellers who are not transparent in the `"schain"` object.<br><br> - Setting `platform_exposure` to `"public"` will display your member `"name"` and `"domain"` fields in our [sellers.json](https://acdn.adnxs.com/sellers/1d/appnexus/sellers.json) file. See [example](#setting-platform_exposure-to-public).<br><br> - Note that `primary_type` must be either `"buyer"` or `"network"` in order for it to appear in the **Buyers** tab of the Ad Quality Manager in.<br><br>**Default**: `"public"` |  |  |  |  |  |  |  |  |  |
+| `platform_exposure` | enum | This determines whether and how your member appears in the **Buyers** tab of the Ad Quality Manager in and in the [Platform Member](./platform-member-service.md) service. Possible values:<br> - `"public"` = Your member name is shown.<br> - `"private"` = Your member ID is shown.<br> - `"hidden"` = Your member does not appear.<br><br>**Note**:<br> - Setting `platform_exposure` to `"hidden"` will hide your member `"name"` and `"domain"` fields in our [sellers.json](https://acdn.adnxs.com/sellers/1d/appnexus/sellers.json) file and list your member seat as `"is_confidential": 1`. See [example](#setting-platform_exposure-to-hidden). <br>This can limit the monetization of your inventory as some DSPs may not choose to buy impressions from sellers who are not transparent in the `"schain"` object.<br><br> - Setting `platform_exposure` to `"public"` will display your member `"name"` and `"domain"` fields in our [sellers.json](https://acdn.adnxs.com/sellers/1d/appnexus/sellers.json) file. See [example](#setting-platform_exposure-to-public).<br><br> - `primary_type` must be either `"buyer"` or `"network"` in order for it to appear in the **Buyers** tab of the Ad Quality Manager in.<br><br>**Default**: `"public"` |  |  |  |  |  |  |  |  |  |
 | `plugins` | array | The plugins that users see on the Apps tab in. See [Plugins](#plugins) below for more details. |  |  |  |  |  |  |  |  |  |
 | `plugins_enabled` | Boolean | **Admin-only**. If `true`, the **Apps** tab is shown in.<br><br>**Default**: `false` |  |  |  |  |  |  |  |  |  |
 | `pops_enabled_UI` | Boolean | **Admin-only**. If `true`, pop ad support is shown in.<br><br>**Default**: `false` |  |  |  |  |  |  |  |  |  |
-| `prioritize_margin` | Boolean | If set to `true` Xandr will perform a bid/no bid check for managed campaigns based on line item minimum margin settings. If set to `false` Xandr will not not perform any bid/no bid check for managed campaigns based on the line item minimum.<br>**Default**: `false` |  |  |  |  |  |  |  |  |  |
+| `prioritize_margin` | Boolean | If set to `true` Xandr will perform a bid/no bid check for managed campaigns based on line item minimum margin settings. If set to `false` Xandr will not not perform any bid/no bid check for managed campaigns based on the line item minimum.<br><br>**Default**: `false` |  |  |  |  |  |  |  |  |  |
 | `reporting_decimal_type` | enum | The decimal mark used in reporting. This setting can be overridden at the user and report levels (see `"reporting_decimal_type"` in the [User Service](./user-service.md) and [Report Service](./report-service.md)). Possible values:<br> - `"comma"`<br> - `"decimal"` (period)<br><br>**Default**: `"decimal"` |  |  |  |  |  |  |  |  |  |
 | `reselling_description` | string | This description is not currently used in. |  |  |  |  |  |  |  |  |  |
 | `reselling_exposure` | enum | Whether or not to expose the member's inventory to the platform for reselling in the real-time marketplace. Possible values: `"public"` or `"private"`.<br><br>**Default**: `"private"`  |  |  |  |  |  |  |  |  |  |
@@ -103,7 +104,7 @@ A member is any entity that has a financial relationship with Xandr, and each cl
 | `visibility_profile_id` | int | The ID of the optional visibility profile attached to the member. See the [Visibility Profile Service](./visibility-profile-service.md) for more details.<br><br>**Default**: `null` |  |  |  |  |  |  |  |  |  |
 | `website_url` | string | The company website for this member. This is used in a number of areas where contact details are displayed. |  |  |  |  |  |  |  |  |  |
 
-### Content categories array format
+### `Content_categories` array format
 
 ```
 [{"id":"2950","name":"Animals"},{"id":"2951","name":"Arts
@@ -200,7 +201,7 @@ All fields in the `seller_member_group` object can be written by admins only.
 
 | Field | Type | Description | Required On |
 |:---|:---|:---|:---|
-| `brand_idd` | int | The ID of the brand whose associated creatives you would like to allow to serve more than once per page load on page-cap-enabled publishers' inventory. This setting will only take effect on those publishers which you've enable for page capping by setting the `seller_page_cap_enabled` field to `true` on the [Publisher Service](./publisher-service.md). For more information about brands, see the [Brand Service](./brand-service.md). |  |
+| `brand_id` | int | The ID of the brand whose associated creatives you would like to allow to serve more than once per page load on page-cap-enabled publishers' inventory. This setting will only take effect on those publishers which you've enable for page capping by setting the `seller_page_cap_enabled` field to `true` on the [Publisher Service](./publisher-service.md). For more information about brands, see the [Brand Service](./brand-service.md). |  |
 
 ### Floor optimization
 

@@ -1,6 +1,6 @@
 ---
 title: Adjustment Service
-description: This article explains about the adjustment service and the types.
+description: This article explains about the Adjustment service and the types.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -8,8 +8,10 @@ ms.custom: digital-platform-api
 # Adjustment service
 
 > [!NOTE]
-> **This service is currently available to a limited set of clients and Microsoft employees only.**: These docs (and the related feature) are visible to select clients only. Please do not send links to these docs or mention this feature to clients unless you've confirmed they should have access.
-
+> **This service is currently available to a limited set of clients and Microsoft employees only.**
+>
+>These docs (and the related feature) are visible to select clients only. Do not send links to these docs or mention this feature to clients unless you've confirmed they should have access.
+>
 > The Adjustment Service is used to make changes to booked revenue and media cost values in reporting.
 
 ## Adjustment types
@@ -23,7 +25,7 @@ You can currently make three types of reporting adjustments:
 
 ### Publisher adjustments
 
-- `"publisher"` - This adjustment type changes the media cost and/or impressions, clicks, and conversions you see in reporting for a publisher.
+`"publisher"` - This adjustment type changes the media cost and/or impressions, clicks, and conversions you see in reporting for a publisher.
 
 ## Adjustment status
 
@@ -48,13 +50,13 @@ Status can be one of the following values:
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | https://api.appnexus.com/adjustment | To add a new adjustment |
-| `PUT` | https://api.appnexus.com/adjustment?id=ADJUSTMENT_ID | To modify or cancel an existing adjustment: |
-| `GET` | https://api.appnexus.com/adjustment | To view all adjustments: |
-| `GET` | https://api.appnexus.com/adjustment?advertiser_id=ADVERTISER_ID | To view all adjustments for an advertiser: |
-| `GET` | https://api.appnexus.com/adjustment?id=ADJUSTMENT_ID | To view a specific adjustment: |
-| `GET` | https://api.appnexus.com/adjustment<br>`state=new,processing,propagating,pending,completed,failed,cancelled` | To view all adjustments in a given state: |
-| `GET` | https://api.appnexus.com/adjustment?like_start_date=START_DATE&like_end_date=END_DATE | To view all adjustments within a given time period: |
+| `POST` | `https://api.appnexus.com/adjustment` | To add a new adjustment |
+| `PUT` | `https://api.appnexus.com/adjustment?id=ADJUSTMENT_ID` | To modify or cancel an existing adjustment: |
+| `GET` | `https://api.appnexus.com/adjustment` | To view all adjustments: |
+| `GET` | `https://api.appnexus.com/adjustment?advertiser_id=ADVERTISER_ID` | To view all adjustments for an advertiser: |
+| `GET` | `https://api.appnexus.com/adjustment?id=ADJUSTMENT_ID` | To view a specific adjustment: |
+| `GET` | `https://api.appnexus.com/adjustment?state=new,processing,propagating,pending,completed,failed,cancelled` | To view all adjustments in a given state: |
+| `GET` | `https://api.appnexus.com/adjustment?like_start_date=START_DATE&like_end_date=END_DATE` | To view all adjustments within a given time period: |
 
 ## JSON fields
 
@@ -104,7 +106,7 @@ Status can be one of the following values:
 | `site_id` | int | The ID of the site for which data will be adjusted. |
 | `width` | int | The width of placements for which data will be adjusted. |
 
-### Examples
+## Examples
 
 #### Adjusting advertiser revenue and impression count with attribution to publishers
 
@@ -191,7 +193,7 @@ $ cat adjustment
 | NY Post | Business | Home Page | $2 CPM | US | 300x250 | Banner | Owner CPM | 2 | 1000 |
 | NY Post | Business | Home Page | 60% Revshare | GB | 300x250 | Banner | Owner Revshare | 1.25 | 500 |
 
-To adjust media cost down to $10 and impressions to 3500, you create and POST the following JSON-formatted file:
+To adjust media cost down to $10 and impressions to 3500, you create and `POST` the following JSON-formatted file:
 
 ```
 $ cat adjustment

@@ -1,6 +1,6 @@
 ---
 title: Network Publisher Analytics
-description: Use the network publisher analytics report to view granular performance data for specific publishers within a network, only available to network users.
+description: Use the Network Publisher Analytics report to view granular performance data for specific publishers within a network, only available to network users.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -33,7 +33,7 @@ The `report_interval` field can be set to one of the following:
 - last_month
 - lifetime
 
-**Data retention period**
+### Data retention period
 
 Data retention period for the report is 428 days.
 

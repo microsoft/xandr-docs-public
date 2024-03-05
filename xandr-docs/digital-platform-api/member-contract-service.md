@@ -1,11 +1,11 @@
 ---
 title: Member Contract Service
-description: Sales op admins can use the member contract service to view, create, update, and delete member contracts.
+description: Sales operations admins can use the Member Contract service to view, create, update, and delete member contracts.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Member contract service
+# Member Contract service
 
 > [!NOTE]
 > This service is currently available to a limited set of clients and Microsoft employees only.
@@ -17,12 +17,11 @@ There are two types of pricing terms denoted by the `pricing_version` field.
 
 > [!NOTE]
 > This service is available only to Xandr admin users who have the `is_sales_ops` field set to true. Note that the `is_sales_ops` field can be set to true only via a direct database update. Valid reasons to have your `is_sales_ops` field set in production include:
-> 
+>
 > - You are a member of the Sales Ops team, and it is your regular job to create and update contracts.
 > - You are an engineer, product manager, or test engineer who needs access to create or update contracts for your job.
 > - You want to see Katharine, Jennifer Yang, and Alison cry. (Yes, really.)
-> - If you are in Services and need to create or update contracts in sand, you should request a direct DB write for your sand user but please understand that you won't have the same capability in production.
-
+> - If you are in Services and need to create or update contracts in sand, you should request a direct DB write for your sand user but understand that you won't have the same capability in production.
 > [!WARNING]
 > On a `PUT` call, if you include only specific contracts, the contracts not included will be **deleted**. Therefore it is best to include all contracts on `PUT`.
 > [!NOTE]
@@ -36,12 +35,12 @@ There are two types of pricing terms denoted by the `pricing_version` field.
 
 | HTTP Methods | Enpoints | Descriptions |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/member-contract?member_id=MEMBER_ID | View all contracts for a specific member |
-| `GET` | https://api.appnexus.com/member-contract<br>(contract JSON) | View a specific contract |
-| `POST` | https://api.appnexus.com/member-contract<br>(contract JSON) | Add a new contract |
-| `PUT` | https://api.appnexus.com/member-contract?id=CONTRACT_ID <br>(contract JSON) | Modify a contract |
-| `DELETE` | https://api.appnexus.com/member-contract?id=CONTRACT_ID | Delete a contract |
-| `GET` | https://api.appnexus.com/member-contract/meta | Find out which fields you can filter and sort by |
+| `GET` | `https://api.appnexus.com/member-contract?member_id=MEMBER_ID` | View all contracts for a specific member |
+| `GET` | `https://api.appnexus.com/member-contract`<br>(contract JSON) | View a specific contract |
+| `POST` | `https://api.appnexus.com/member-contract`<br>(contract JSON) | Add a new contract |
+| `PUT` | `https://api.appnexus.com/member-contract?id=CONTRACT_ID` <br>(contract JSON) | Modify a contract |
+| `DELETE` | `https://api.appnexus.com/member-contract?id=CONTRACT_ID` | Delete a contract |
+| `GET` | `https://api.appnexus.com/member-contract/meta` | Find out which fields you can filter and sort by |
 
 ## JSON fields
 

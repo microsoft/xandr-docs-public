@@ -1,11 +1,11 @@
 ---
 title: Network Audio Analytics
-description: Use the network audio analytics report to view audio event metrics for network members.
+description: Use the Network Audio Analytics report to view audio event metrics for network members.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Network Audio Analytics
+# Network audio analytics
 
 The **Network Audio Analytics** report can be used to view audio event metrics for a network member.
 
@@ -32,7 +32,7 @@ The `report_interval` field can be set to one of the following:
 - last_100_days
 - last_365_days
 
-**Data retention period**
+### Data retention period
 
 Data retention period for the report is 420 days.
 
@@ -194,7 +194,7 @@ Data retention period for the report is 420 days.
 
 ## Example
 
-### Create JSON formatted report request
+### Create a JSON formatted report request
 
 The JSON file should include the `report_type` `"audio_analytics_network"`, as well as the columns (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`year`, `month`, `day`), and specify the format in which the data should be returned (`csv`, `excel`, or `html`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](./report-service.md).
 

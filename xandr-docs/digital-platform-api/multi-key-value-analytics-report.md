@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Multi key value analytics report
+# Multi Key Value Analytics report
 
 The Multi Key Value Analytics report shows you the information associated with your network's defined targeting keys and values. This report helps seller need to view different keys associated with the same bid as a flat report and enables users to filter the report based on their keys. Currently, it is available to selected partners only (3 partners or 3 keys).
 
@@ -36,7 +36,7 @@ The `report_interval` field in the JSON request can be set to one of the followi
 - month_to_date
 - quarter_to_date
 
-**Data retention period**
+### Data retention period
 
 Data in this report is retained for 428 days.
 
@@ -141,7 +141,7 @@ Data in this report is retained for 428 days.
 
 ## Example
 
-### Create the JSON report request
+### Create a JSON report request
 
 The JSON file should include the `report_type` of `"multi_key_value_analytics"`, as well as the columns (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`year`, `month`, `day`), and specify the `"format"` in which the data should be returned (`"csv"`, `"excel"`, or `"html"`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](./report-service.md).
 

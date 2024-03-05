@@ -1,6 +1,6 @@
 ---
 title: Package Service
-description: Sellers can use the package buyer access service to create and manage pre-made packages for buyers to browse and negotiate deals from.
+description: Sellers can use the Package Service to create and manage their packages.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -15,12 +15,12 @@ In cases where packages don't meet a buyer's needs, sellers can use the [Deal Se
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | https://api.appnexus.com/package<br>(`add_package` JSON) | Add a new package. |
-| `PUT` | https://api.appnexus.com/package?id=PACKAGE_ID<br>(`modify_package` JSON) | Update a package. |
-| `GET` | https://api.appnexus.com/package | View all of your packages. |
-| `GET` | https://api.appnexus.com/package?id=PACKAGE_ID | View a specific package. |
-| `DELETE` | https://api.appnexus.com/package?id=PACKAGE_ID | Delete a package. <br><br>**CAUTION**: Deleting a package deletes all of its associated deals as well. Campaigns targeting these associated deals will stop serving. The deletions are permanent and cannot be reverted. Although deleted deals continue to be available in reporting, you will no longer have visibility into their specific settings. |
-| `GET` | https://api.appnexus.com/package/meta | Find out which fields you can filter and sort by. |
+| `POST` | `https://api.appnexus.com/package`<br><br>(`add_package` JSON) | Add a new package. |
+| `PUT` | `https://api.appnexus.com/package?id=PACKAGE_ID`<br><br>(`modify_package` JSON) | Update a package. |
+| `GET` | `https://api.appnexus.com/package` | View all of your packages. |
+| `GET` | `https://api.appnexus.com/package?id=PACKAGE_ID` | View a specific package. |
+| `DELETE` | `https://api.appnexus.com/package?id=PACKAGE_ID` | Delete a package. <br><br>**CAUTION**: Deleting a package deletes all of its associated deals as well. Campaigns targeting these associated deals will stop serving. The deletions are permanent and cannot be reverted. Although deleted deals continue to be available in reporting, you will no longer have visibility into their specific settings. |
+| `GET` | `https://api.appnexus.com/package/meta` | Find out which fields you can filter and sort by. |
 
 ## JSON fields
 
@@ -62,7 +62,6 @@ The `seller` object contains the following fields:
 |:---|:---|:---|
 | `id` | int | **Read-only**. The member ID of the seller.<br><br>**Default**: Seller's member ID<br>**Required On**: `POST` |
 | `name` | string | **Read-only**. The member name of the seller.<br><br>**Default**: Seller's member name |
-
 
 ### Default deal type
 

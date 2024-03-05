@@ -1,6 +1,6 @@
 ---
 title: Placement Service
-description: Use the placement service to create and modify ad tags for managed publishers or direct media buys with customizable IDs stored server-side.
+description: Use the Placement service to create and modify ad tags for managed publishers or direct media buys with customizable IDs stored server-side.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -24,7 +24,7 @@ Once you have the placement ID, you format the placement tag as follows and hand
 > [!TIP]
 > You can include placeholders to pass in additional query string parameters to our platform during the ad call.
 > [!IMPORTANT]
-> When serving your placement tags on secure inventory (SSL), you should alter the below tags to use the host: "https://secure.adnxs.com/..."
+> When serving your placement tags on secure inventory (SSL), you should alter the below tags to use the host: `"https://secure.adnxs.com/..."`
 
 ### IFRAME
 
@@ -58,12 +58,12 @@ Once you have the placement ID, you format the placement tag as follows and hand
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | https://api.appnexus.com/placement?publisher_id=PUBLISHER_ID<br>https://api.appnexus.com/placement?site_id=SITE_ID<br>(placement JSON) | Add a placement (NETWORK). |
-| `PUT` | https://api.appnexus.com/placement?id=PLACEMENT_ID&publisher_id=PUBLISHER_ID<br>https://api.appnexus.com/placement?code=PLACEMENT_ID&site_id=SITE_ID<br>(placement JSON) | Modify an existing placement (NETWORK). |
-| `DELETE` | https://api.appnexus.com/placement?id=PLACEMENT_ID&publisher_id=PUBLISHER_ID<br>https://api.appnexus.com/placement?code=PLACEMENT_CODE&publisher_code=PUBLISHER_CODE | Delete an existing placement. |
-| `GET` | https://api.appnexus.com/placement?publisher_id=PUBLISHER_ID | View all of the placements for one of your publishers. |
-| `GET` | https://api.appnexus.com/placement?id=PLACEMENT_ID | View a specific placement for one of your publishers. |
-| `GET` | https://api.appnexus.com/placement?id=1,2,3 | View all placements for a site. |
+| `POST` |`https://api.appnexus.com/placement?publisher_id=PUBLISHER_ID`<br><br>`https://api.appnexus.com/placement?site_id=SITE_ID`<br>(placement JSON) | Add a placement (NETWORK). |
+| `PUT` | `https://api.appnexus.com/placement?id=PLACEMENT_ID&publisher_id=PUBLISHER_ID`<br><br>`https://api.appnexus.com/placement?code=PLACEMENT_ID&site_id=SITE_ID`<br>(placement JSON) | Modify an existing placement (NETWORK). |
+| `DELETE` | `https://api.appnexus.com/placement?id=PLACEMENT_ID&publisher_id=PUBLISHER_ID`<br><br>`https://api.appnexus.com/placement?code=PLACEMENT_CODE&publisher_code=PUBLISHER_CODE` | Delete an existing placement. |
+| `GET` | `https://api.appnexus.com/placement?publisher_id=PUBLISHER_ID` | View all of the placements for one of your publishers. |
+| `GET` | `https://api.appnexus.com/placement?id=PLACEMENT_ID` | View a specific placement for one of your publishers. |
+| `GET` | `https://api.appnexus.com/placement?id=1,2,3` | View all placements for a site. |
 
 ## JSON fields
 
@@ -159,7 +159,7 @@ Creatives are categorized by media type and media subtype. Media type defines th
 | `media_type_group_id` | int | The group ID for the media type. |
 
 > [!NOTE]
-> **Notes on Supported Media Types and Media Subtypes**
+> **Supported Media Types and Media Subtypes**
 >
 > - If you do not specify either supported media types or supported media subtypes, the `"Banner"` media type and all of its subtypes will be allowed by default.
 > - You can combine the `"Banner"` and `"Text"` media types, and any combination of their media subtypes, on a single placement, but you cannot combine any of the other media types and media subtypes. This limitation ensures that only appropriate creatives are served on a placement. For example, a placement that allows creatives of the media type `"Video"` is intended to be fed to a video player; it would not make sense to allow creatives of any other media type, such as `"Interstitial"`, to serve on the placement.
@@ -286,7 +286,7 @@ You use this array to assign default creatives to the placement. Please note the
 
 ### Pop values
 
-If the `supported_media_type` is `"Pop"`, or the `supported_media_subtypes` is `"Popup"` or `"Popunder"`, these fields should be included in the `pop_values` array. Please see below for an example.
+If the `supported_media_type` is `"Pop"`, or the `supported_media_subtypes` is `"Popup"` or `"Popunder"`, these fields should be included in the `pop_values` array. See below for an example.
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -320,7 +320,7 @@ This array determines the specific placement sizes that are allowed to serve for
 
 The `stats` object has been deprecated (as of October 17, 2016). Use the [Report Service](./report-service.md) to obtain statistical information instead.
 
-**Toolbar & browser plug-in declaration**
+#### Toolbar & browser plug-in declaration
 
 According to [platform policy](./placement-service.md), sellers must identify all toolbar/browser plug-in inventory and segregate it from other inventory on its own placements. To identify toolbar inventory, sellers must:
 

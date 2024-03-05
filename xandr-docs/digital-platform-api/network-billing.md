@@ -1,6 +1,6 @@
 ---
 title: Network Billing
-description: Use the network billing analytics report to view billing data for direct advertiser impressions and publishers across different platforms.
+description: Use the Network Billing Analytics report to view billing data for direct advertiser impressions and publishers across different platforms.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -41,7 +41,7 @@ The `report_interval` field can be set to one of the following:
 - last_month
 - lifetime
 
-**Data retention period**
+### Data retention period
 
 Data retention period for this report is 30 days.
 
@@ -140,7 +140,7 @@ Data retention period for this report is 30 days.
 
 ## Example
 
-### Create JSON formatted report request
+### Create a JSON formatted report request
 
 The JSON file should include the report_type `"network_analytics"`, as well as the columns (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`year`, `month`, `day`), and specify the format in which the data should be returned (`csv`, `excel`, or `html`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](./report-service.md).
 

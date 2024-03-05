@@ -5,18 +5,18 @@ ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Admin custom report
+# Admin Custom report
 
 > [!NOTE]
 > This service is currently available to a limited set of clients and Microsoft employees only.
 
-Xandr admins can use this report to run custom queries against the internal Reporting cluster. Please use with caution, i.e., avoid running heavy queries.
+Xandr admins can use this report to run custom queries against the internal Reporting cluster. Use with caution, i.e., avoid running heavy queries.
 
 ## REST API
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | https://api.com/report<br><br>(report JSON) | Retrieve the report |
+| `POST` | `https://api.com/report`<br><br>(report JSON) | Retrieve the report |
 
 > [!NOTE]
 > See the [example](#example) below for the complete procedure.
@@ -31,7 +31,7 @@ Xandr admins can use this report to run custom queries against the internal Repo
 
 ## Example
 
-1. **Create the JSON-formatted report request**
+1. **Create a JSON-formatted report request**
 
     ```
     $ cat admin_custom_report

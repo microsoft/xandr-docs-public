@@ -1,11 +1,11 @@
 ---
 title: Mobile App Service
-description: Retrieve audited mobile apps and their associated instances, with mobile apps being the canonical representation and ports being specific device instances.
+description: Use the Mobile App service to retrieve audited mobile apps and their associated instances, with mobile apps being the canonical representation.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Mobile app service
+# Mobile App service
 
 This read-only service is used to retrieve **mobile apps that have been audited by Xandr**, as well as their associated instances. For the purposes of this service, a *mobile app* is defined as the canonical representation of an application, while a version of that app designed to run on a particular device (a "port") would be an *instance* of that app. This is analogous to the distinction between a class and an instance of a class.
 
@@ -15,9 +15,9 @@ For example, if `"Happy Pirate Party Pro"` is a mobile app, in order to represe
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/mobile-app | Retrieve all mobile apps registered with the system |
-| `GET` | https://api.appnexus.com/mobile-app?id=4 | Retrieve information about a single mobile app, including its instances |
-| `GET` | [https://api.appnexus.com/mobile-app?search="The app name"](https://api.appnexus.com/mobile-app?search=%22The%20app%20name%22) | Search for a mobile app |
+| `GET` | `https://api.appnexus.com/mobile-app` | Retrieve all mobile apps registered with the system |
+| `GET` | `https://api.appnexus.com/mobile-app?id=4` | Retrieve information about a single mobile app, including its instances |
+| `GET` | `https://api.appnexus.com/mobile-app?search="The app name"` | Search for a mobile app |
 
 ## JSON fields
 

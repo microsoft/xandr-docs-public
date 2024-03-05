@@ -1,11 +1,11 @@
 ---
 title: Member Profile Service
-description: Use the member profile service to create a global profile to limit third-party impressions.
+description: Use the Member Profile service to create a global profile to limit third-party impressions.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Member profile service
+# Member Profile service
 
 The Member Profile Service allows you to establish a single, global profile to limit the countries and domains from which you accept third-party impressions. Your campaigns will not bid on third-party impressions that do not match the requirements of the member profile.
 
@@ -20,11 +20,11 @@ Be sure to align your campaign [profiles](./profile-service.md) with your member
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | https://api.appnexus.com/member-profile <br>(member-profile JSON) | Create your member profile |
-| `PUT`  | https://api.appnexus.com/member-profile <br>(member-profile JSON) | Update your member profile |
-| `GET`  | https://api.appnexus.com/member-profile | View your member profile |
-| `DELETE`  | https://api.appnexus.com/member-profile | Delete your member profile |
-| `GET`  | https://api.appnexus.com/member-profile/meta | Find out which fields you can filter and sort by |
+| `POST` | `https://api.appnexus.com/member-profile` <br>(member-profile JSON) | Create your member profile |
+| `PUT`  | `https://api.appnexus.com/member-profile` <br>(member-profile JSON) | Update your member profile |
+| `GET`  | `https://api.appnexus.com/member-profile` | View your member profile |
+| `DELETE`  | `https://api.appnexus.com/member-profile` | Delete your member profile |
+| `GET`  | `https://api.appnexus.com/member-profile/meta` | Find out which fields you can filter and sort by |
 
 > [!NOTE]
 > Since you have only one member profile, you do not need to include the profile ID in `PUT`, `GET`, or `DELETE` requests.
@@ -34,7 +34,7 @@ Be sure to align your campaign [profiles](./profile-service.md) with your member
 | Field | Type | Description |
 |:---|:---|:---|
 | `id` | int | The ID of the member profile. |
-| `domain_list_action` | enum | The action to perform on `domain_list_targets`. Possible values:<br> - `"include"` - You will accept third-party impressions only from the domains in the specified domain lists. <br> - `"exclude"` - You will accept third-party impressions from all domains except those in the specified domain lists.<br><br>**Default**: `"exclude"` |
+| `domain_list_action` | enum | The action to perform on `domain_list_targets`. <br><br>Possible values:<br> - `"include"` - You will accept third-party impressions only from the domains in the specified domain lists. <br> - `"exclude"` - You will accept third-party impressions from all domains except those in the specified domain lists.<br><br>**Default**: `"exclude"` |
 | `domain_list_targets` | array | The [domain lists](./domain-list-service.md) to include or exclude. See the [examples](#examples) below for formatting. |
 | `country_targets` | array | The countries from which you will accept third-party impressions. You will accept impressions only from these countries. Note that if you do not specify any countries, you will accept third-party impressions from all countries. See [examples](#examples) below.   |
 | `last_modified` | date | **Read-only**. The date on which the member profile was last modified. |

@@ -70,7 +70,7 @@ To retrieve the next 50, you would simply set `start_element=50`.
 - All GET responses will have a "count" property showing the total number of elements matching that GET request.
 - This will also apply to non-reporting services, such as the creative search service, that are requested with methods other than GETs.
 
-### Examples
+### Example
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/segment?start_element=0&num_elements=100'

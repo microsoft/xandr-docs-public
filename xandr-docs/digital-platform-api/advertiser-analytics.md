@@ -1,6 +1,6 @@
 ---
 title: Advertiser Analytics
-description: Use the advertiser analytics report to view performance, revenue, and profit data across a specific advertiser's creatives and campaigns.
+description: Use the Advertiser Analytics report to view performance, revenue, and profit data across a specific advertiser's creatives and campaigns.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -9,7 +9,7 @@ ms.custom: digital-platform-api
 
 The Advertiser Analytics report can be used to view performance, revenue, and profit data across a specific advertiser's creatives and campaigns. This report is available to network and advertiser users.
 
-For instructions on retrieving a report, please see [Report Service](./report-service.md) or the [example](#examples) below. This report requires specifying the advertiser ID as part of the URL, for example:
+For instructions on retrieving a report, see [Report Service](./report-service.md) or the [example](#examples) below. This report requires specifying the advertiser ID as part of the URL, for example:
 
 ```
 https://api.appnexus.com/report?advertiser_id=ADVERTISER_ID
@@ -33,7 +33,7 @@ The `report_interval` field in the JSON request can be set to one of the followi
 - last_month
 - lifetime
 
-**Data retention period**
+### Data retention period
 
 Most data in this report is maintained permanently (exceptions noted below). After:
 
@@ -84,10 +84,10 @@ In some cases Analytics reports can show delivery that does not match statistics
 | `size` | string | Yes | `"728x90"` | The size of the placement/creative served. |
 | `geo_country` | string | Yes | `"US"` | The code for the geographic country. |
 | `geo_country_name` | string | No | `"United States"` | The name of the geographic country. |
-| `creative_recency_bucket` | string | Yes | `"15-30 minutes"` | **Deprecated**. If you request this dimension, only a default value will be returned. Please use the [Advertiser Creative Frequency & Recency report](./advertiser-creative-frequency-and-recency.md) to view creative recency data. |
-| `creative_recency_bucket_id` | string | No | `3` | **Deprecated**. If you request this dimension, only a default value will be returned. Please use the [Advertiser Creative Frequency & Recency report](./advertiser-creative-frequency-and-recency.md) to view creative recency data. |
-| `creative_frequency_bucket` | string | Yes | `"11-20"` | **Deprecated**. If you request this dimension, only a default value will be returned. Please use the [Advertiser Creative Frequency & Recency report](./advertiser-creative-frequency-and-recency.md) to view creative frequency data. |
-| `creative_frequency_bucket_id` | string | No | `4` | **Deprecated**. If you request this dimension, only a default value will be returned. Please use the [Advertiser Creative Frequency & Recency report](./advertiser-creative-frequency-and-recency.md) to view creative frequency data. |
+| `creative_recency_bucket` | string | Yes | `"15-30 minutes"` | **Deprecated**. If you request this dimension, only a default value will be returned. Use the [Advertiser Creative Frequency & Recency report](./advertiser-creative-frequency-and-recency.md) to view creative recency data. |
+| `creative_recency_bucket_id` | string | No | `3` | **Deprecated**. If you request this dimension, only a default value will be returned. Use the [Advertiser Creative Frequency & Recency report](./advertiser-creative-frequency-and-recency.md) to view creative recency data. |
+| `creative_frequency_bucket` | string | Yes | `"11-20"` | **Deprecated**. If you request this dimension, only a default value will be returned. Use the [Advertiser Creative Frequency & Recency report](./advertiser-creative-frequency-and-recency.md) to view creative frequency data. |
+| `creative_frequency_bucket_id` | string | No | `4` | **Deprecated**. If you request this dimension, only a default value will be returned. Use the [Advertiser Creative Frequency & Recency report](./advertiser-creative-frequency-and-recency.md) to view creative frequency data. |
 | `gender` | string | Yes | `"m"`, `"f"`, `"u"` | The gender of the user.<br><br>**Note**:<br>For impressions older than 100 days, the gender will be `"u"`.<br>The value of the gender is defined by the publisher in the bid request. Xandr does not have control over it apart from processing the value. |
 | `imp_type_id` | int | Yes | `1` | The ID for the type of impression. Possible values (associated types in parentheses):<br> - `1 ("Blank")`: No creative served.<br> - `2 ("PSA")`: A public service announcement served because there were no valid bids and no default creative was available.<br> - `3 ("Default Error")`: A default creative served due to a timeout issue.<br> - `4 ("Default")`: A default creative served because there were no valid bids.<br> - `5 ("Kept")`: Your advertiser's creative served on your publisher's site.<br> - `6 ("Resold")`: Your publisher's impression was sold to a third-party buyer.<br> - `7 ("RTB")`: Your advertiser's creative served on third-party inventory.<br> - `8 ("PSA Error")`: A public service announcement served due to a timeout issue or lack of a default creative.<br> - `9 ("External Impression")`: An impression from an impression tracker.<br> - `10 ("External Click")`: A click from a click tracker. |
 | `imp_type` | string | Yes | `"Kept"` | The type of impression. For possible values, see `imp_type_id`. |
@@ -180,7 +180,7 @@ In some cases Analytics reports can show delivery that does not match statistics
 
 ## Examples
 
-### Create the JSON-formatted report request
+### Create a JSON-formatted report request
 
 ```
 $ cat advertiser_analytics 

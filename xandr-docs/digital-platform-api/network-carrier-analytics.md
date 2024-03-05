@@ -1,6 +1,6 @@
 ---
 title: Network Carrier Analytics
-description: Use the network carrier analytics report to view data on carrier impact on campaign performance and advertiser payment for buy-side and sell-side performance analysis.
+description: Use the Network Carrier Analytics report to view data on carrier impact on campaign performance and advertiser payment for buy-side and sell-side performance analysis.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -25,7 +25,7 @@ The `report_interval` field can be set to one of the following (in UTC timezone)
 
 Alternately, the `start_date` and `end_date` fields can be set to a range within the last 14 days. However, since hourly data is not available for this report, the `start_date` and `end_date` cannot be identical and must be formatted as `"YYYY-MM-DD"` rather than `"YYYY-MM-DD HH:MM:SS"`. The `timezone` field in the JSON request can be set only to `"UTC"`, but this is not necessary, as the timezone defaults to `"UTC"` if not specified.
 
-**Data retention period**
+### Data retention period
 
 Data retention period for the report is 46 days.
 
@@ -146,7 +146,7 @@ Data retention period for the report is 46 days.
 
 ## Example
 
-### Create JSON formatted report request
+### Create a JSON formatted report request
 
 The JSON file should include the `report_type` of `"network_carrier_analytics"`, as well as the columns (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`year`, `month`, `day`), and specify the `"format"` in which the data should be returned (`csv`, `excel`, or `html`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](./report-service.md). In this example, we want to see how campaigns are performing on mobile phones and tablets across three specific carriers. Specifically, for each combination of carrier and device type, we want the number of impressions, the number of clicks, the total money spent, the money spent per 1000 impressions, the money paid to us by the advertiser, and the total profit (money earned - money spent).
 
@@ -203,7 +203,7 @@ $ curl -b cookies -c cookies -X POST -d @network_carrier_analytics 'https://api.
 }
 ```
 
-### GET the report status from the report service
+### `GET` the report status from the report service
 
 Make a `GET` call with the Report ID to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is `"ready"`. Then use the **report-download** service to save the report data to a file, as described in the next step.
 

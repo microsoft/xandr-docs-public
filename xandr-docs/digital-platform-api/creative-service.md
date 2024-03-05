@@ -1,5 +1,5 @@
 ---
-title: Digital Platform API - Creative Service
+title: Creative Service
 description: In this article, learn about the Digital Platform API's Creative service, their JSON fields, and REST API with thorough examples.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api

@@ -1,22 +1,22 @@
 ---
 title: Mobile App Instance Service
-description: Use the mobile app instance service to retrieve app instances, which can be created via the mobile app instance list service.
+description: Use the Mobile App Instance service to retrieve app instances, which can be created via the Mobile App Instance List service.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Mobile app instance service
+# Mobile App Instance service
 
 This **read-only** service is used to retrieve app "instances". Each object retrieved by a call to this service is an "instance" of an app described in the [Mobile App Service](./mobile-app-service.md). App instances can be created via the [Mobile App Instance List Service](./mobile-app-instance-list-service.md).
 
-You can add or remove mobile app instances from your campaign targeting the [Profile Service](./profile-service.md) – see the [Examples](#examples) section below.
+You can add or remove mobile app instances from your campaign targeting the [Profile Service](./profile-service.md). See the [Examples](#examples) section below.
 
 ## REST API
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET`  | https://api.appnexus.com/mobile-app-instance?id=8 | Retrieve a specific instance of a mobile app |
-| `GET` |  https://api.appnexus.com/mobile-app-instance | View all of the mobile app instances in our system |
+| `GET`  | `https://api.appnexus.com/mobile-app-instance?id=8` | Retrieve a specific instance of a mobile app |
+| `GET` |  `https://api.appnexus.com/mobile-app-instance` | View all of the mobile app instances in our system |
 
 ## JSON fields
 

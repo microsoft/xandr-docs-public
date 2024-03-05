@@ -1,11 +1,11 @@
 ---
 title: App Asset Service
-description: Use the app asset service to add app-related images to Akamai.
+description: Use the App Asset service to add app-related images to Akamai.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# App asset service
+# App Asset service
 
 > [!NOTE]
 > This service is currently available to a limited set of clients and Microsoft employees only.
@@ -16,11 +16,11 @@ This is an admin-only service that allows Xandr personnel to add app-related ima
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | https://api.appnexus.com/app-asset | Add an image |
-| `GET` | https://api.appnexus.com/app-asset | View all images |
-| `GET` | https://api.appnexus.com/app-asset?id=ID | View a specific image |
-| `GET` | https://api.appnexus.com/app-asset?plugin_id=PLUGIN_ID | View all images associated to a specific app |
-| `DELETE` | https://api.appnexus.com/app-asset?id=ID | Delete an image |
+| `POST` | `https://api.appnexus.com/app-asset` | Add an image |
+| `GET` | `https://api.appnexus.com/app-asset` | View all images |
+| `GET` | `https://api.appnexus.com/app-asset?id=ID` | View a specific image |
+| `GET` | `https://api.appnexus.com/app-asset?plugin_id=PLUGIN_ID` | View all images associated to a specific app |
+| `DELETE` | `https://api.appnexus.com/app-asset?id=ID` | Delete an image |
 
 ## JSON fields
 

@@ -1,11 +1,11 @@
 ---
 title: Member Currency Service
-description: Member currency service is read-only and shows you the list of currencies used by a member's publisher.
+description: Member Currency service is read-only and shows you the list of currencies used by a member's publisher.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Member currency service
+# Member Currency service
 
 > [!NOTE]
 > This service is currently available to a limited set of clients and Microsoft employees only.
@@ -16,7 +16,7 @@ This is a read-only service that shows you the list of currencies used by a memb
 
 | HTTP Methods | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/member-currency?member_id=MEMBER_ID | View all available currencies |
+| `GET` | `https://api.appnexus.com/member-currency?member_id=MEMBER_ID` | View all available currencies |
 
 ## JSON fields
 

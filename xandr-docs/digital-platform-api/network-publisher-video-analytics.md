@@ -1,6 +1,6 @@
 ---
 title: Network Publisher Video Analytics
-description: Use the network publisher video analytics report to view granular video event metrics for specific publishers within a network, available to network users only.
+description: Use the Network Publisher Video Analytics report to view granular video event metrics for specific publishers within a network, available to network users only.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -38,7 +38,7 @@ The `report_interval` field can be set to one of the following:
 - last_30_available_days
 - last_month
 
-**Data Retention Period**
+### Data retention period
 
 Data in this report is retained for 420 days.
 
@@ -156,14 +156,14 @@ Data in this report is retained for 420 days.
 ### Player size
 
 | ID | Name |
-|:---:|:---:|
+|:---|:---|
 | `0` | small |
 | `1` | medium |
 | `2` | large |
 
 ## Example
 
-### Create JSON formatted report request
+### Create a JSON formatted report request
 
 ```
 $ cat video_analytics_network_publisher

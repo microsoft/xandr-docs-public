@@ -10,7 +10,7 @@ ms.custom: digital-platform-api
 Customers who plan to integrate with Xandr APIs need to complete the following steps in our API onboarding process.
 
 > [!NOTE]
-> The Xandr API endpoints are accessible only to current customers. If you're not currently a Xandr customer but are interested in becoming one, [request a consultation](https://www.xandr.com/contact-us/).
+> The Xandr API endpoints are accessible only to current customers. If you're not currently a Xandr customer but are interested in becoming one, [request a consultation](https://about.ads.microsoft.com/en-us/solutions/xandr/contact-xandr).
 
 To know more about Xandr's API, go to [Reference](./reference.md) page.
 
@@ -18,8 +18,8 @@ To know more about Xandr's API, go to [Reference](./reference.md) page.
 
 The first step you must take to begin using the Xandr API is to [contact the support team](http://help.xandr.com) to gain access to the API endpoints. In order to be granted API access, you must meet the following criteria:
 
-- Be a current Xandr UI customer with a *current* user ID and member ID. (Support cannot create a new user to fulfill a request for API access.)
-- Be a Network, Network Observer, Advertiser, or Publisher user. We cannot grant API access to Network Advertiser Manager or Network Publisher Manager users. (See [User Service](./user-service.md) for more on user types.)
+- Be a current Xandr UI customer with a *current* user ID and member ID. Support cannot create a new user to fulfill a request for API access.
+- Be a Network, Network Observer, Advertiser, or Publisher user. We cannot grant API access to Network Advertiser Manager or Network Publisher Manager users. See [User Service](./user-service.md) for more on user types.
 
 When you open your support ticket, use the title "Request for API Access". In the body of the support ticket, include the following information:
 
@@ -30,16 +30,16 @@ The support team cannot grant access to clients who are not platform UI or Inves
 
 After you've been granted access, you can use the following endpoints:
 
-- Monetize UI: [https://monetize.xandr.com](https://monetize.xandr.com)
-- Invest UI: [https://invest.xandr.com](https://invest.xandr.com)
-- Digital Platform API: [https://api.appnexus.com](https://api.appnexus.com)
+- Monetize UI: `https://monetize.xandr.com`
+- Invest UI: `https://invest.xandr.com`
+- Digital Platform API: `https://api.appnexus.com`
 
 ## Read the documentation
 
 The API documentation provides insight into the structure of the API and will help you determine the best approach for integration as well as provide details on typical use cases. Read through the [Reference](./reference.md) to find information and examples for the individual services that are available to you.
 
 > [!TIP]
-> **API change info**
+> **API change information**
 >
 > We will notify customers of API changes. You can sign up to receive emails of API changes, as well as other Xandr news. If you have a Xandr user account, you should receive relevant communications automatically.
 
